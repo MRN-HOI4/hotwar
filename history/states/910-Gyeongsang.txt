@@ -1,0 +1,40 @@
+state=
+{
+	id=910
+	name="STATE_910"
+	manpower = 9793000
+
+		state_category = city
+	history=
+	{
+		owner = KOR
+		buildings = {
+			infrastructure = 4
+			air_base = 10
+			anti_air_building = 1
+			industrial_complex = 5
+			arms_factory = 3
+			dockyard = 3
+			4056 = {
+				naval_base = 4
+			}
+		}
+		victory_points = {
+			4086 10
+		}
+		victory_points = {
+			4056 20 
+		}
+		victory_points = {
+			7121 9 
+		}
+		add_claim_by = PRK
+		add_core_of = KOR
+
+	}
+	provinces={
+		1081 4056 4086 4103 7121 11912 12060 12089 
+	}
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

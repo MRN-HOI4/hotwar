@@ -1,0 +1,5 @@
+animation = {
+	name = "f5_idle_animation"
+	file = "f_5_idle.anim"
+}
+

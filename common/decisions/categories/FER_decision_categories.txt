@@ -1,0 +1,11 @@
+FER_rebellion_bop_decisions = {
+	priority = 12
+
+	allowed = {
+		original_tag = FER
+		
+	}
+
+	visible = {
+	}
+}

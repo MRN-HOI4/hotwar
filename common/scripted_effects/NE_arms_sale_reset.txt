@@ -1,0 +1,928 @@
+
+clear_all_carts = {
+#####refresh function######
+	clear_variable = infantry_key
+	clear_variable = armor_key
+	clear_variable = air_key
+	clear_variable = naval_key
+	clear_variable = cart_key
+	clear_variable = cart_num
+	clear_variable = cart_brand_1
+	clear_variable = cart_brand_2
+	clear_variable = cart_brand_3
+	clear_variable = cart_brand_4
+	clear_variable = cart_brand_5
+	clear_variable = cart_brand_6
+	clear_variable = cart_brand_7
+	clear_variable = cart_cost_1
+	clear_variable = cart_cost_2
+	clear_variable = cart_cost_3
+	clear_variable = cart_cost_4
+	clear_variable = cart_cost_5
+	clear_variable = cart_cost_6
+	clear_variable = cart_cost_7
+	clear_variable = cart_stock_1
+	clear_variable = cart_stock_2
+	clear_variable = cart_stock_3
+	clear_variable = cart_stock_4
+	clear_variable = cart_stock_5
+	clear_variable = cart_stock_6
+	clear_variable = cart_stock_7
+	clear_variable = cart_rate_1
+	clear_variable = cart_rate_2
+	clear_variable = cart_rate_3
+	clear_variable = cart_rate_4
+	clear_variable = cart_rate_5
+	clear_variable = cart_rate_6
+	clear_variable = cart_rate_7
+	clear_variable = brand_pointer
+	clear_variable = cost_pointer
+	clear_variable = stock_pointer	
+	clear_variable = rate_pointer		
+	clear_variable = cart_1_purchase_num
+	clear_variable = cart_2_purchase_num	
+	clear_variable = cart_3_purchase_num	
+	clear_variable = cart_4_purchase_num
+	clear_variable = cart_5_purchase_num
+	clear_variable = cart_6_purchase_num	
+	clear_variable = cart_num_change
+	clear_variable = cart_1_purchase_cost
+	clear_variable = cart_2_purchase_cost	
+	clear_variable = cart_3_purchase_cost	
+	clear_variable = cart_4_purchase_cost
+	clear_variable = cart_5_purchase_cost
+	clear_variable = cart_6_purchase_cost
+	clear_variable = econo_total_cost
+	clear_variable = trade_attitude_value
+	clear_variable = trade_attitude_kinds
+
+	
+    calculate_available_point = yes 
+}
+
+reset_infantry_listtt = {
+###infantry_weapons
+
+	set_variable = { econo_stock_infantry_equipment_0 = Prev.num_equipment@infantry_equipment_0 }##stocked
+	set_variable = { rate_infantry_equipment_0 = econo_stock_infantry_equipment_0 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@infantry_equipment_0=0}}             }else={divide_variable={rate_infantry_equipment_0=Prev.num_equipment_in_armies@infantry_equipment_0}}
+	
+	set_variable = { econo_stock_infantry_equipment_1 = Prev.num_equipment@infantry_equipment_1 }
+	set_variable = { rate_infantry_equipment_1 = econo_stock_infantry_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@infantry_equipment_1=0}}             }else={divide_variable={rate_infantry_equipment_1=Prev.num_equipment_in_armies@infantry_equipment_1}}
+	
+	set_variable = { econo_stock_infantry_equipment_2 = Prev.num_equipment@infantry_equipment_2 }
+	set_variable = { rate_infantry_equipment_2 = econo_stock_infantry_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@infantry_equipment_2=0}}             }else={divide_variable={rate_infantry_equipment_2=Prev.num_equipment_in_armies@infantry_equipment_2}}
+	
+	set_variable = { econo_stock_infantry_equipment_3 = Prev.num_equipment@infantry_equipment_3 }
+	set_variable = { rate_infantry_equipment_3 = econo_stock_infantry_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@infantry_equipment_3=0}}             }else={divide_variable={rate_infantry_equipment_3=Prev.num_equipment_in_armies@infantry_equipment_3}}
+	
+	set_variable = { econo_stock_support_equipment = Prev.num_equipment@support_equipment }
+	set_variable = { rate_support_equipment = econo_stock_support_equipment }
+	if={limit={check_variable={Prev.num_equipment_in_armies@support_equipment=0}}             }else={divide_variable={rate_support_equipment=Prev.num_equipment_in_armies@support_equipment}}
+	
+	set_variable = { econo_stock_motorized_equipment = Prev.num_equipment@motorized_equipment }
+	set_variable = { rate_motorized_equipment = econo_stock_motorized_equipment }
+	if={limit={check_variable={Prev.num_equipment_in_armies@motorized_equipment=0}}             }else={divide_variable={rate_motorized_equipment=Prev.num_equipment_in_armies@motorized_equipment}}
+
+	set_variable = { econo_stock_mechanized_equipment = Prev.num_equipment@mechanized_equipment }
+	set_variable = { rate_mechanized_equipment = econo_stock_mechanized_equipment }
+	if={limit={check_variable={Prev.num_equipment_in_armies@mechanized_equipment=0}}             }else={divide_variable={rate_mechanized_equipment=Prev.num_equipment_in_armies@mechanized_equipment}}
+
+	set_variable = { econo_stock_artillery_equipment_1 = Prev.num_equipment@artillery_equipment_1 }
+	set_variable = { rate_artillery_equipment_1 = econo_stock_artillery_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@artillery_equipment_1=0}}             }else={divide_variable={rate_artillery_equipment_1=Prev.num_equipment_in_armies@artillery_equipment_1}}
+	
+	set_variable = { econo_stock_artillery_equipment_2 = Prev.num_equipment@artillery_equipment_2 }
+	set_variable = { rate_artillery_equipment_2 = econo_stock_artillery_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@artillery_equipment_2=0}}             }else={divide_variable={rate_artillery_equipment_2=Prev.num_equipment_in_armies@artillery_equipment_2}}
+	
+	set_variable = { econo_stock_artillery_equipment_3 = Prev.num_equipment@artillery_equipment_3 }
+	set_variable = { rate_artillery_equipment_3 = econo_stock_artillery_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@artillery_equipment_3=0}}             }else={divide_variable={rate_artillery_equipment_3=Prev.num_equipment_in_armies@artillery_equipment_3}}
+
+	set_variable = { econo_stock_rocket_artillery_equipment_1 = Prev.num_equipment@rocket_artillery_equipment_1 }
+	set_variable = { rate_rocket_artillery_equipment_1 = econo_stock_rocket_artillery_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@rocket_artillery_equipment_1=0}}             }else={divide_variable={rate_rocket_artillery_equipment_1=Prev.num_equipment_in_armies@rocket_artillery_equipment_1}}
+	
+	set_variable = { econo_stock_rocket_artillery_equipment_2 = Prev.num_equipment@rocket_artillery_equipment_2 }
+	set_variable = { rate_rocket_artillery_equipment_2 = econo_stock_rocket_artillery_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@rocket_artillery_equipment_2=0}}             }else={divide_variable={rate_rocket_artillery_equipment_2=Prev.num_equipment_in_armies@rocket_artillery_equipment_2}}
+
+	set_variable = { econo_stock_motorized_rocket_equipment = Prev.num_equipment@motorized_rocket_equipment }
+	set_variable = { rate_motorized_rocket_equipment = econo_stock_motorized_rocket_equipment }
+	if={limit={check_variable={Prev.num_equipment_in_armies@motorized_rocket_equipment=0}}             }else={divide_variable={rate_motorized_rocket_equipment=Prev.num_equipment_in_armies@motorized_rocket_equipment}}
+
+	set_variable = { econo_stock_anti_tank_equipment_1 = Prev.num_equipment@anti_tank_equipment_1 }
+	set_variable = { rate_anti_tank_equipment_1 = econo_stock_anti_tank_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@anti_tank_equipment_1=0}}             }else={divide_variable={rate_anti_tank_equipment_1=Prev.num_equipment_in_armies@anti_tank_equipment_1}}
+	
+	set_variable = { econo_stock_anti_tank_equipment_2 = Prev.num_equipment@anti_tank_equipment_2 }
+	set_variable = { rate_anti_tank_equipment_2 = econo_stock_anti_tank_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@anti_tank_equipment_2=0}}             }else={divide_variable={rate_anti_tank_equipment_2=Prev.num_equipment_in_armies@anti_tank_equipment_2}}
+	
+	set_variable = { econo_stock_anti_tank_equipment_3 = Prev.num_equipment@anti_tank_equipment_3 }
+	set_variable = { rate_anti_tank_equipment_3 = econo_stock_anti_tank_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@anti_tank_equipment_3=0}}             }else={divide_variable={rate_anti_tank_equipment_3=Prev.num_equipment_in_armies@anti_tank_equipment_3}}
+	
+	set_variable = { econo_stock_anti_air_equipment_1 = Prev.num_equipment@anti_air_equipment_1 }
+	set_variable = { rate_anti_air_equipment_1 = econo_stock_anti_air_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@anti_air_equipment_1=0}}             }else={divide_variable={rate_anti_air_equipment_1=Prev.num_equipment_in_armies@anti_air_equipment_1}}
+	
+	set_variable = { econo_stock_anti_air_equipment_2 = Prev.num_equipment@anti_air_equipment_2 }
+	set_variable = { rate_anti_air_equipment_2 = econo_stock_anti_air_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@anti_air_equipment_2=0}}             }else={divide_variable={rate_anti_air_equipment_2=Prev.num_equipment_in_armies@anti_air_equipment_2}}
+	
+	set_variable = { econo_stock_anti_air_equipment_3 = Prev.num_equipment@anti_air_equipment_3 }
+	set_variable = { rate_anti_air_equipment_3 = econo_stock_anti_air_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@anti_air_equipment_3=0}}             }else={divide_variable={rate_anti_air_equipment_3=Prev.num_equipment_in_armies@anti_air_equipment_3}}
+}
+
+reset_armor_listtt = {
+###armor weapons
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		NE_nostepback_reset_armor_list = yes
+	}
+	else = {
+		NE_default_reset_armor_list = yes
+	}
+}
+
+NE_nostepback_reset_armor_list = {
+
+	set_variable = { econo_stock_light_tank_equipment_1 = Prev.num_equipment@light_tank_chassis_1 }
+	set_variable = { rate_light_tank_equipment_1 = econo_stock_light_tank_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_chassis_1=0}}             }else={divide_variable={rate_light_tank_equipment_1=Prev.num_equipment_in_armies@light_tank_chassis_1}}
+	
+	set_variable = { econo_stock_light_tank_equipment_2 = Prev.num_equipment@light_tank_chassis_2 }
+	set_variable = { rate_light_tank_equipment_2 = econo_stock_light_tank_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_chassis_2=0}}             }else={divide_variable={rate_light_tank_equipment_2=Prev.num_equipment_in_armies@light_tank_chassis_2}}
+	
+	set_variable = { econo_stock_light_tank_equipment_3 = Prev.num_equipment@light_tank_chassis_3 }
+	set_variable = { rate_light_tank_equipment_3 = econo_stock_light_tank_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_chassis_3=0}}             }else={divide_variable={rate_light_tank_equipment_3=Prev.num_equipment_in_armies@light_tank_chassis_3}}
+	
+	set_variable = { econo_stock_light_tank_artillery_equipment_1 = Prev.num_equipment@light_tank_artillery_chassis_1 }
+	set_variable = { rate_light_tank_artillery_equipment_1 = econo_stock_light_tank_artillery_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_artillery_chassis_1=0}}             }else={divide_variable={rate_light_tank_artillery_equipment_1=Prev.num_equipment_in_armies@light_tank_artillery_chassis_1}}
+	
+	set_variable = { econo_stock_light_tank_artillery_equipment_2 = Prev.num_equipment@light_tank_artillery_chassis_2 }
+	set_variable = { rate_light_tank_artillery_equipment_2 = econo_stock_light_tank_artillery_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_artillery_chassis_2=0}}             }else={divide_variable={rate_light_tank_artillery_equipment_2=Prev.num_equipment_in_armies@light_tank_artillery_chassis_2}}
+	
+	set_variable = { econo_stock_light_tank_artillery_equipment_3 = Prev.num_equipment@light_tank_artillery_chassis_3 }
+	set_variable = { rate_light_tank_artillery_equipment_3 = econo_stock_light_tank_artillery_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_artillery_chassis_3=0}}             }else={divide_variable={rate_light_tank_artillery_equipment_3=Prev.num_equipment_in_armies@light_tank_artillery_chassis_3}}
+	
+	set_variable = { econo_stock_light_tank_destroyer_equipment_1 = Prev.num_equipment@light_tank_destroyer_chassis_1 }
+	set_variable = { rate_light_tank_destroyer_equipment_1 = econo_stock_light_tank_destroyer_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_destroyer_chassis_1=0}}             }else={divide_variable={rate_light_tank_destroyer_equipment_1=Prev.num_equipment_in_armies@light_tank_destroyer_chassis_1}}
+	
+	set_variable = { econo_stock_light_tank_destroyer_equipment_2 = Prev.num_equipment@light_tank_destroyer_chassis_2 }
+	set_variable = { rate_light_tank_destroyer_equipment_2 = econo_stock_light_tank_destroyer_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_destroyer_chassis_2=0}}             }else={divide_variable={rate_light_tank_destroyer_equipment_2=Prev.num_equipment_in_armies@light_tank_destroyer_chassis_2}}
+	
+	set_variable = { econo_stock_light_tank_destroyer_equipment_3 = Prev.num_equipment@light_tank_destroyer_chassis_3 }
+	set_variable = { rate_light_tank_destroyer_equipment_3 = econo_stock_light_tank_destroyer_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_destroyer_chassis_3=0}}             }else={divide_variable={rate_light_tank_destroyer_equipment_3=Prev.num_equipment_in_armies@light_tank_destroyer_chassis_3}}
+	
+	set_variable = { econo_stock_light_tank_aa_equipment_1 = Prev.num_equipment@light_tank_aa_chassis_1 }
+	set_variable = { rate_light_tank_aa_equipment_1 = econo_stock_light_tank_aa_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_aa_chassis_1=0}}             }else={divide_variable={rate_light_tank_aa_equipment_1=Prev.num_equipment_in_armies@light_tank_aa_chassis_1}}
+	
+	set_variable = { econo_stock_light_tank_aa_equipment_2 = Prev.num_equipment@light_tank_aa_chassis_2 }
+	set_variable = { rate_light_tank_aa_equipment_2 = econo_stock_light_tank_aa_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_aa_chassis_2=0}}             }else={divide_variable={rate_light_tank_aa_equipment_2=Prev.num_equipment_in_armies@light_tank_aa_chassis_2}}
+	
+	set_variable = { econo_stock_light_tank_aa_equipment_3 = Prev.num_equipment@light_tank_aa_chassis_3 }
+	set_variable = { rate_light_tank_aa_equipment_3 = econo_stock_light_tank_aa_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_aa_chassis_3=0}}             }else={divide_variable={rate_light_tank_aa_equipment_3=Prev.num_equipment_in_armies@light_tank_aa_chassis_3}}
+	
+	set_variable = { econo_stock_medium_tank_equipment_1 = Prev.num_equipment@medium_tank_chassis_1 }
+	set_variable = { rate_medium_tank_equipment_1 = econo_stock_medium_tank_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_chassis_1=0}}             }else={divide_variable={rate_medium_tank_equipment_1=Prev.num_equipment_in_armies@medium_tank_chassis_1}}
+	
+	set_variable = { econo_stock_medium_tank_equipment_2 = Prev.num_equipment@medium_tank_chassis_2 }
+	set_variable = { rate_medium_tank_equipment_2 = econo_stock_medium_tank_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_chassis_2=0}}             }else={divide_variable={rate_medium_tank_equipment_2=Prev.num_equipment_in_armies@medium_tank_chassis_2}}
+	
+	set_variable = { econo_stock_medium_tank_equipment_3 = Prev.num_equipment@medium_tank_chassis_3 }
+	set_variable = { rate_medium_tank_equipment_3 = econo_stock_medium_tank_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_chassis_3=0}}             }else={divide_variable={rate_medium_tank_equipment_3=Prev.num_equipment_in_armies@medium_tank_chassis_3}}
+	
+	set_variable = { econo_stock_medium_tank_artillery_equipment_1 = Prev.num_equipment@medium_tank_artillery_chassis_1 }
+	set_variable = { rate_medium_tank_artillery_equipment_1 = econo_stock_medium_tank_artillery_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_artillery_chassis_1=0}}             }else={divide_variable={rate_medium_tank_artillery_equipment_1=Prev.num_equipment_in_armies@medium_tank_artillery_chassis_1}}
+	
+	set_variable = { econo_stock_medium_tank_artillery_equipment_2 = Prev.num_equipment@medium_tank_artillery_chassis_2 }
+	set_variable = { rate_medium_tank_artillery_equipment_2 = econo_stock_medium_tank_artillery_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_artillery_chassis_2=0}}             }else={divide_variable={rate_medium_tank_artillery_equipment_2=Prev.num_equipment_in_armies@medium_tank_artillery_chassis_2}}
+	
+	set_variable = { econo_stock_medium_tank_artillery_equipment_3 = Prev.num_equipment@medium_tank_artillery_chassis_3 }
+	set_variable = { rate_medium_tank_artillery_equipment_3 = econo_stock_medium_tank_artillery_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_artillery_chassis_3=0}}             }else={divide_variable={rate_medium_tank_artillery_equipment_3=Prev.num_equipment_in_armies@medium_tank_artillery_chassis_3}}
+	
+	set_variable = { econo_stock_medium_tank_destroyer_equipment_1 = Prev.num_equipment@medium_tank_destroyer_chassis_1 }
+	set_variable = { rate_medium_tank_destroyer_equipment_1 = econo_stock_medium_tank_destroyer_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_destroyer_chassis_1=0}}             }else={divide_variable={rate_medium_tank_destroyer_equipment_1=Prev.num_equipment_in_armies@medium_tank_destroyer_chassis_1}}
+	
+	set_variable = { econo_stock_medium_tank_destroyer_equipment_2 = Prev.num_equipment@medium_tank_destroyer_chassis_2 }
+	set_variable = { rate_medium_tank_destroyer_equipment_2 = econo_stock_medium_tank_destroyer_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_destroyer_chassis_2=0}}             }else={divide_variable={rate_medium_tank_destroyer_equipment_2=Prev.num_equipment_in_armies@medium_tank_destroyer_chassis_2}}
+	
+	set_variable = { econo_stock_medium_tank_destroyer_equipment_3 = Prev.num_equipment@medium_tank_destroyer_chassis_3 }
+	set_variable = { rate_medium_tank_destroyer_equipment_3 = econo_stock_medium_tank_destroyer_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_destroyer_chassis_3=0}}             }else={divide_variable={rate_medium_tank_destroyer_equipment_3=Prev.num_equipment_in_armies@medium_tank_destroyer_chassis_3}}
+	
+	set_variable = { econo_stock_medium_tank_aa_equipment_1 = Prev.num_equipment@medium_tank_aa_chassis_1 }
+	set_variable = { rate_medium_tank_aa_equipment_1 = econo_stock_medium_tank_aa_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_aa_chassis_1=0}}             }else={divide_variable={rate_medium_tank_aa_equipment_1=Prev.num_equipment_in_armies@medium_tank_aa_chassis_1}}
+	
+	set_variable = { econo_stock_medium_tank_aa_equipment_2 = Prev.num_equipment@medium_tank_aa_chassis_2 }
+	set_variable = { rate_medium_tank_aa_equipment_2 = econo_stock_medium_tank_aa_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_aa_chassis_2=0}}             }else={divide_variable={rate_medium_tank_aa_equipment_2=Prev.num_equipment_in_armies@medium_tank_aa_chassis_2}}
+	
+	set_variable = { econo_stock_medium_tank_aa_equipment_3 = Prev.num_equipment@medium_tank_aa_chassis_3 }
+	set_variable = { rate_medium_tank_aa_equipment_3 = econo_stock_medium_tank_aa_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_aa_chassis_3=0}}             }else={divide_variable={rate_medium_tank_aa_equipment_3=Prev.num_equipment_in_armies@medium_tank_aa_chassis_3}}
+	
+	set_variable = { econo_stock_heavy_tank_equipment_1 = Prev.num_equipment@heavy_tank_chassis_1 }
+	set_variable = { rate_heavy_tank_equipment_1 = econo_stock_heavy_tank_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_chassis_1=0}}             }else={divide_variable={rate_heavy_tank_equipment_1=Prev.num_equipment_in_armies@heavy_tank_chassis_1}}
+	
+	set_variable = { econo_stock_heavy_tank_equipment_2 = Prev.num_equipment@heavy_tank_chassis_2 }
+	set_variable = { rate_heavy_tank_equipment_2 = econo_stock_heavy_tank_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_chassis_2=0}}             }else={divide_variable={rate_heavy_tank_equipment_2=Prev.num_equipment_in_armies@heavy_tank_chassis_2}}
+	
+	set_variable = { econo_stock_heavy_tank_equipment_3 = Prev.num_equipment@heavy_tank_chassis_3 }
+	set_variable = { rate_heavy_tank_equipment_3 = econo_stock_heavy_tank_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_chassis_3=0}}             }else={divide_variable={rate_heavy_tank_equipment_3=Prev.num_equipment_in_armies@heavy_tank_chassis_3}}
+	
+	set_variable = { econo_stock_heavy_tank_artillery_equipment_1 = Prev.num_equipment@heavy_tank_artillery_chassis_1 }
+	set_variable = { rate_heavy_tank_artillery_equipment_1 = econo_stock_heavy_tank_artillery_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_artillery_chassis_1=0}}             }else={divide_variable={rate_heavy_tank_artillery_equipment_1=Prev.num_equipment_in_armies@heavy_tank_artillery_chassis_1}}
+	
+	set_variable = { econo_stock_heavy_tank_artillery_equipment_2 = Prev.num_equipment@heavy_tank_artillery_chassis_2 }
+	set_variable = { rate_heavy_tank_artillery_equipment_2 = econo_stock_heavy_tank_artillery_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_artillery_chassis_2=0}}             }else={divide_variable={rate_heavy_tank_artillery_equipment_2=Prev.num_equipment_in_armies@heavy_tank_artillery_chassis_2}}
+	
+	set_variable = { econo_stock_heavy_tank_artillery_equipment_3 = Prev.num_equipment@heavy_tank_artillery_chassis_3 }
+	set_variable = { rate_heavy_tank_artillery_equipment_3 = econo_stock_heavy_tank_artillery_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_artillery_chassis_3=0}}             }else={divide_variable={rate_heavy_tank_artillery_equipment_3=Prev.num_equipment_in_armies@heavy_tank_artillery_chassis_3}}
+	
+	set_variable = { econo_stock_super_heavy_tank_artillery_equipment_1 = Prev.num_equipment@super_heavy_tank_artillery_chassis_1 }
+	set_variable = { rate_super_heavy_tank_artillery_equipment_1 = econo_stock_super_heavy_tank_artillery_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@super_heavy_tank_artillery_chassis_1=0}}             }else={divide_variable={rate_super_heavy_tank_artillery_equipment_1=Prev.num_equipment_in_armies@super_heavy_tank_artillery_chassis_1}}
+	
+	set_variable = { econo_stock_heavy_tank_destroyer_equipment_1 = Prev.num_equipment@heavy_tank_destroyer_chassis_1 }
+	set_variable = { rate_heavy_tank_destroyer_equipment_1 = econo_stock_heavy_tank_destroyer_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_destroyer_chassis_1=0}}             }else={divide_variable={rate_heavy_tank_destroyer_equipment_1=Prev.num_equipment_in_armies@heavy_tank_destroyer_chassis_1}}
+	
+	set_variable = { econo_stock_heavy_tank_destroyer_equipment_2 = Prev.num_equipment@heavy_tank_destroyer_chassis_2 }
+	set_variable = { rate_heavy_tank_destroyer_equipment_2 = econo_stock_heavy_tank_destroyer_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_destroyer_chassis_2=0}}             }else={divide_variable={rate_heavy_tank_destroyer_equipment_2=Prev.num_equipment_in_armies@heavy_tank_destroyer_chassis_2}}
+	
+	set_variable = { econo_stock_heavy_tank_destroyer_equipment_3 = Prev.num_equipment@heavy_tank_destroyer_chassis_3 }
+	set_variable = { rate_heavy_tank_destroyer_equipment_3 = econo_stock_heavy_tank_destroyer_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_destroyer_chassis_3=0}}             }else={divide_variable={rate_heavy_tank_destroyer_equipment_3=Prev.num_equipment_in_armies@heavy_tank_destroyer_chassis_3}}
+	
+	set_variable = { econo_stock_super_heavy_tank_destroyer_equipment_1 = Prev.num_equipment@super_heavy_tank_destroyer_chassis_1 }
+	set_variable = { rate_super_heavy_tank_destroyer_equipment_1 = econo_stock_super_heavy_tank_destroyer_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@super_heavy_tank_destroyer_chassis_1=0}}             }else={divide_variable={rate_super_heavy_tank_destroyer_equipment_1=Prev.num_equipment_in_armies@super_heavy_tank_destroyer_chassis_1}}
+	
+	set_variable = { econo_stock_heavy_tank_aa_equipment_1 = Prev.num_equipment@heavy_tank_aa_chassis_1 }
+	set_variable = { rate_heavy_tank_aa_equipment_1 = econo_stock_heavy_tank_aa_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_aa_chassis_1=0}}             }else={divide_variable={rate_heavy_tank_aa_equipment_1=Prev.num_equipment_in_armies@heavy_tank_aa_chassis_1}}
+	
+	set_variable = { econo_stock_heavy_tank_aa_equipment_2 = Prev.num_equipment@heavy_tank_aa_chassis_2 }
+	set_variable = { rate_heavy_tank_aa_equipment_2 = econo_stock_heavy_tank_aa_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_aa_chassis_2=0}}             }else={divide_variable={rate_heavy_tank_aa_equipment_2=Prev.num_equipment_in_armies@heavy_tank_aa_chassis_2}}
+	
+	set_variable = { econo_stock_heavy_tank_aa_equipment_3 = Prev.num_equipment@heavy_tank_aa_chassis_3 }
+	set_variable = { rate_heavy_tank_aa_equipment_3 = econo_stock_heavy_tank_aa_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_aa_chassis_3=0}}             }else={divide_variable={rate_heavy_tank_aa_equipment_3=Prev.num_equipment_in_armies@heavy_tank_aa_chassis_3}}
+	
+	set_variable = { econo_stock_super_heavy_tank_aa_equipment_1 = Prev.num_equipment@super_heavy_tank_aa_chassis_1 }
+	set_variable = { rate_super_heavy_tank_aa_equipment_1 = econo_stock_super_heavy_tank_aa_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@super_heavy_tank_aa_chassis_1=0}}             }else={divide_variable={rate_super_heavy_tank_aa_equipment_1=Prev.num_equipment_in_armies@super_heavy_tank_aa_chassis_1}}
+	
+	set_variable = { econo_stock_modern_tank_equipment = Prev.num_equipment@modern_tank_chassis }
+	set_variable = { rate_modern_tank_equipment = econo_stock_modern_tank_equipment }
+	if={limit={check_variable={Prev.num_equipment_in_armies@modern_tank_chassis=0}}             }else={divide_variable={rate_modern_tank_equipment=Prev.num_equipment_in_armies@modern_tank_chassis}}
+
+	set_variable = { econo_stock_modern_tank_artillery_equipment = Prev.num_equipment@modern_tank_artillery_chassis }
+	set_variable = { rate_modern_tank_artillery_equipment = econo_stock_modern_tank_artillery_equipment }
+	if={limit={check_variable={Prev.num_equipment_in_armies@modern_tank_artillery_chassis=0}}             }else={divide_variable={rate_modern_tank_artillery_equipment=Prev.num_equipment_in_armies@modern_tank_artillery_chassis}}
+
+	set_variable = { econo_stock_modern_tank_destroyer_equipment = Prev.num_equipment@modern_tank_destroyer_chassis }
+	set_variable = { rate_modern_tank_destroyer_equipment = econo_stock_modern_tank_destroyer_equipment }
+	if={limit={check_variable={Prev.num_equipment_in_armies@modern_tank_destroyer_chassis=0}}             }else={divide_variable={rate_modern_tank_destroyer_equipment=Prev.num_equipment_in_armies@modern_tank_destroyer_chassis}}
+
+	set_variable = { econo_stock_modern_tank_aa_equipment = Prev.num_equipment@modern_tank_aa_chassis }
+	set_variable = { rate_modern_tank_aa_equipment = econo_stock_modern_tank_aa_equipment }
+	if={limit={check_variable={Prev.num_equipment_in_armies@modern_tank_aa_chassis=0}}             }else={divide_variable={rate_modern_tank_aa_equipment=Prev.num_equipment_in_armies@modern_tank_aa_chassis}}
+
+}
+
+NE_default_reset_armor_list = {
+
+	set_variable = { econo_stock_light_tank_equipment_1 = Prev.num_equipment@light_tank_equipment_1 }
+	set_variable = { rate_light_tank_equipment_1 = econo_stock_light_tank_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_equipment_1=0}}             }else={divide_variable={rate_light_tank_equipment_1=Prev.num_equipment_in_armies@light_tank_equipment_1}}
+	
+	set_variable = { econo_stock_light_tank_equipment_2 = Prev.num_equipment@light_tank_equipment_2 }
+	set_variable = { rate_light_tank_equipment_2 = econo_stock_light_tank_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_equipment_2=0}}             }else={divide_variable={rate_light_tank_equipment_2=Prev.num_equipment_in_armies@light_tank_equipment_2}}
+	
+	set_variable = { econo_stock_light_tank_equipment_3 = Prev.num_equipment@light_tank_equipment_3 }
+	set_variable = { rate_light_tank_equipment_3 = econo_stock_light_tank_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_equipment_3=0}}             }else={divide_variable={rate_light_tank_equipment_3=Prev.num_equipment_in_armies@light_tank_equipment_3}}
+	
+	set_variable = { econo_stock_light_tank_artillery_equipment_1 = Prev.num_equipment@light_tank_artillery_equipment_1 }
+	set_variable = { rate_light_tank_artillery_equipment_1 = econo_stock_light_tank_artillery_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_artillery_equipment_1=0}}             }else={divide_variable={rate_light_tank_artillery_equipment_1=Prev.num_equipment_in_armies@light_tank_artillery_equipment_1}}
+	
+	set_variable = { econo_stock_light_tank_artillery_equipment_2 = Prev.num_equipment@light_tank_artillery_equipment_2 }
+	set_variable = { rate_light_tank_artillery_equipment_2 = econo_stock_light_tank_artillery_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_artillery_equipment_2=0}}             }else={divide_variable={rate_light_tank_artillery_equipment_2=Prev.num_equipment_in_armies@light_tank_artillery_equipment_2}}
+	
+	set_variable = { econo_stock_light_tank_artillery_equipment_3 = Prev.num_equipment@light_tank_artillery_equipment_3 }
+	set_variable = { rate_light_tank_artillery_equipment_3 = econo_stock_light_tank_artillery_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_artillery_equipment_3=0}}             }else={divide_variable={rate_light_tank_artillery_equipment_3=Prev.num_equipment_in_armies@light_tank_artillery_equipment_3}}
+	
+	set_variable = { econo_stock_light_tank_destroyer_equipment_1 = Prev.num_equipment@light_tank_destroyer_equipment_1 }
+	set_variable = { rate_light_tank_destroyer_equipment_1 = econo_stock_light_tank_destroyer_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_destroyer_equipment_1=0}}             }else={divide_variable={rate_light_tank_destroyer_equipment_1=Prev.num_equipment_in_armies@light_tank_destroyer_equipment_1}}
+	
+	set_variable = { econo_stock_light_tank_destroyer_equipment_2 = Prev.num_equipment@light_tank_destroyer_equipment_2 }
+	set_variable = { rate_light_tank_destroyer_equipment_2 = econo_stock_light_tank_destroyer_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_destroyer_equipment_2=0}}             }else={divide_variable={rate_light_tank_destroyer_equipment_2=Prev.num_equipment_in_armies@light_tank_destroyer_equipment_2}}
+	
+	set_variable = { econo_stock_light_tank_destroyer_equipment_3 = Prev.num_equipment@light_tank_destroyer_equipment_3 }
+	set_variable = { rate_light_tank_destroyer_equipment_3 = econo_stock_light_tank_destroyer_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_destroyer_equipment_3=0}}             }else={divide_variable={rate_light_tank_destroyer_equipment_3=Prev.num_equipment_in_armies@light_tank_destroyer_equipment_3}}
+	
+	set_variable = { econo_stock_light_tank_aa_equipment_1 = Prev.num_equipment@light_tank_aa_equipment_1 }
+	set_variable = { rate_light_tank_aa_equipment_1 = econo_stock_light_tank_aa_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_aa_equipment_1=0}}             }else={divide_variable={rate_light_tank_aa_equipment_1=Prev.num_equipment_in_armies@light_tank_aa_equipment_1}}
+	
+	set_variable = { econo_stock_light_tank_aa_equipment_2 = Prev.num_equipment@light_tank_aa_equipment_2 }
+	set_variable = { rate_light_tank_aa_equipment_2 = econo_stock_light_tank_aa_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_aa_equipment_2=0}}             }else={divide_variable={rate_light_tank_aa_equipment_2=Prev.num_equipment_in_armies@light_tank_aa_equipment_2}}
+	
+	set_variable = { econo_stock_light_tank_aa_equipment_3 = Prev.num_equipment@light_tank_aa_equipment_3 }
+	set_variable = { rate_light_tank_aa_equipment_3 = econo_stock_light_tank_aa_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@light_tank_aa_equipment_3=0}}             }else={divide_variable={rate_light_tank_aa_equipment_3=Prev.num_equipment_in_armies@light_tank_aa_equipment_3}}
+	
+	set_variable = { econo_stock_medium_tank_equipment_1 = Prev.num_equipment@medium_tank_equipment_1 }
+	set_variable = { rate_medium_tank_equipment_1 = econo_stock_medium_tank_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_equipment_1=0}}             }else={divide_variable={rate_medium_tank_equipment_1=Prev.num_equipment_in_armies@medium_tank_equipment_1}}
+	
+	set_variable = { econo_stock_medium_tank_equipment_2 = Prev.num_equipment@medium_tank_equipment_2 }
+	set_variable = { rate_medium_tank_equipment_2 = econo_stock_medium_tank_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_equipment_2=0}}             }else={divide_variable={rate_medium_tank_equipment_2=Prev.num_equipment_in_armies@medium_tank_equipment_2}}
+	
+	set_variable = { econo_stock_medium_tank_equipment_3 = Prev.num_equipment@medium_tank_equipment_3 }
+	set_variable = { rate_medium_tank_equipment_3 = econo_stock_medium_tank_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_equipment_3=0}}             }else={divide_variable={rate_medium_tank_equipment_3=Prev.num_equipment_in_armies@medium_tank_equipment_3}}
+	
+	set_variable = { econo_stock_medium_tank_artillery_equipment_1 = Prev.num_equipment@medium_tank_artillery_equipment_1 }
+	set_variable = { rate_medium_tank_artillery_equipment_1 = econo_stock_medium_tank_artillery_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_artillery_equipment_1=0}}             }else={divide_variable={rate_medium_tank_artillery_equipment_1=Prev.num_equipment_in_armies@medium_tank_artillery_equipment_1}}
+	
+	set_variable = { econo_stock_medium_tank_artillery_equipment_2 = Prev.num_equipment@medium_tank_artillery_equipment_2 }
+	set_variable = { rate_medium_tank_artillery_equipment_2 = econo_stock_medium_tank_artillery_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_artillery_equipment_2=0}}             }else={divide_variable={rate_medium_tank_artillery_equipment_2=Prev.num_equipment_in_armies@medium_tank_artillery_equipment_2}}
+	
+	set_variable = { econo_stock_medium_tank_artillery_equipment_3 = Prev.num_equipment@medium_tank_artillery_equipment_3 }
+	set_variable = { rate_medium_tank_artillery_equipment_3 = econo_stock_medium_tank_artillery_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_artillery_equipment_3=0}}             }else={divide_variable={rate_medium_tank_artillery_equipment_3=Prev.num_equipment_in_armies@medium_tank_artillery_equipment_3}}
+	
+	set_variable = { econo_stock_medium_tank_destroyer_equipment_1 = Prev.num_equipment@medium_tank_destroyer_equipment_1 }
+	set_variable = { rate_medium_tank_destroyer_equipment_1 = econo_stock_medium_tank_destroyer_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_destroyer_equipment_1=0}}             }else={divide_variable={rate_medium_tank_destroyer_equipment_1=Prev.num_equipment_in_armies@medium_tank_destroyer_equipment_1}}
+	
+	set_variable = { econo_stock_medium_tank_destroyer_equipment_2 = Prev.num_equipment@medium_tank_destroyer_equipment_2 }
+	set_variable = { rate_medium_tank_destroyer_equipment_2 = econo_stock_medium_tank_destroyer_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_destroyer_equipment_2=0}}             }else={divide_variable={rate_medium_tank_destroyer_equipment_2=Prev.num_equipment_in_armies@medium_tank_destroyer_equipment_2}}
+	
+	set_variable = { econo_stock_medium_tank_destroyer_equipment_3 = Prev.num_equipment@medium_tank_destroyer_equipment_3 }
+	set_variable = { rate_medium_tank_destroyer_equipment_3 = econo_stock_medium_tank_destroyer_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_destroyer_equipment_3=0}}             }else={divide_variable={rate_medium_tank_destroyer_equipment_3=Prev.num_equipment_in_armies@medium_tank_destroyer_equipment_3}}
+	
+	set_variable = { econo_stock_medium_tank_aa_equipment_1 = Prev.num_equipment@medium_tank_aa_equipment_1 }
+	set_variable = { rate_medium_tank_aa_equipment_1 = econo_stock_medium_tank_aa_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_aa_equipment_1=0}}             }else={divide_variable={rate_medium_tank_aa_equipment_1=Prev.num_equipment_in_armies@medium_tank_aa_equipment_1}}
+	
+	set_variable = { econo_stock_medium_tank_aa_equipment_2 = Prev.num_equipment@medium_tank_aa_equipment_2 }
+	set_variable = { rate_medium_tank_aa_equipment_2 = econo_stock_medium_tank_aa_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_aa_equipment_2=0}}             }else={divide_variable={rate_medium_tank_aa_equipment_2=Prev.num_equipment_in_armies@medium_tank_aa_equipment_2}}
+	
+	set_variable = { econo_stock_medium_tank_aa_equipment_3 = Prev.num_equipment@medium_tank_aa_equipment_3 }
+	set_variable = { rate_medium_tank_aa_equipment_3 = econo_stock_medium_tank_aa_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@medium_tank_aa_equipment_3=0}}             }else={divide_variable={rate_medium_tank_aa_equipment_3=Prev.num_equipment_in_armies@medium_tank_aa_equipment_3}}
+	
+	set_variable = { econo_stock_heavy_tank_equipment_1 = Prev.num_equipment@heavy_tank_equipment_1 }
+	set_variable = { rate_heavy_tank_equipment_1 = econo_stock_heavy_tank_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_equipment_1=0}}             }else={divide_variable={rate_heavy_tank_equipment_1=Prev.num_equipment_in_armies@heavy_tank_equipment_1}}
+	
+	set_variable = { econo_stock_heavy_tank_equipment_2 = Prev.num_equipment@heavy_tank_equipment_2 }
+	set_variable = { rate_heavy_tank_equipment_2 = econo_stock_heavy_tank_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_equipment_2=0}}             }else={divide_variable={rate_heavy_tank_equipment_2=Prev.num_equipment_in_armies@heavy_tank_equipment_2}}
+	
+	set_variable = { econo_stock_heavy_tank_equipment_3 = Prev.num_equipment@heavy_tank_equipment_3 }
+	set_variable = { rate_heavy_tank_equipment_3 = econo_stock_heavy_tank_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_equipment_3=0}}             }else={divide_variable={rate_heavy_tank_equipment_3=Prev.num_equipment_in_armies@heavy_tank_equipment_3}}
+	
+	set_variable = { econo_stock_heavy_tank_artillery_equipment_1 = Prev.num_equipment@heavy_tank_artillery_equipment_1 }
+	set_variable = { rate_heavy_tank_artillery_equipment_1 = econo_stock_heavy_tank_artillery_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_artillery_equipment_1=0}}             }else={divide_variable={rate_heavy_tank_artillery_equipment_1=Prev.num_equipment_in_armies@heavy_tank_artillery_equipment_1}}
+	
+	set_variable = { econo_stock_heavy_tank_artillery_equipment_2 = Prev.num_equipment@heavy_tank_artillery_equipment_2 }
+	set_variable = { rate_heavy_tank_artillery_equipment_2 = econo_stock_heavy_tank_artillery_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_artillery_equipment_2=0}}             }else={divide_variable={rate_heavy_tank_artillery_equipment_2=Prev.num_equipment_in_armies@heavy_tank_artillery_equipment_2}}
+	
+	set_variable = { econo_stock_heavy_tank_artillery_equipment_3 = Prev.num_equipment@heavy_tank_artillery_equipment_3 }
+	set_variable = { rate_heavy_tank_artillery_equipment_3 = econo_stock_heavy_tank_artillery_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_artillery_equipment_3=0}}             }else={divide_variable={rate_heavy_tank_artillery_equipment_3=Prev.num_equipment_in_armies@heavy_tank_artillery_equipment_3}}
+	
+	set_variable = { econo_stock_super_heavy_tank_artillery_equipment_1 = Prev.num_equipment@super_heavy_tank_artillery_equipment_1 }
+	set_variable = { rate_super_heavy_tank_artillery_equipment_1 = econo_stock_super_heavy_tank_artillery_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@super_heavy_tank_artillery_equipment_1=0}}             }else={divide_variable={rate_super_heavy_tank_artillery_equipment_1=Prev.num_equipment_in_armies@super_heavy_tank_artillery_equipment_1}}
+	
+	set_variable = { econo_stock_heavy_tank_destroyer_equipment_1 = Prev.num_equipment@heavy_tank_destroyer_equipment_1 }
+	set_variable = { rate_heavy_tank_destroyer_equipment_1 = econo_stock_heavy_tank_destroyer_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_destroyer_equipment_1=0}}             }else={divide_variable={rate_heavy_tank_destroyer_equipment_1=Prev.num_equipment_in_armies@heavy_tank_destroyer_equipment_1}}
+	
+	set_variable = { econo_stock_heavy_tank_destroyer_equipment_2 = Prev.num_equipment@heavy_tank_destroyer_equipment_2 }
+	set_variable = { rate_heavy_tank_destroyer_equipment_2 = econo_stock_heavy_tank_destroyer_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_destroyer_equipment_2=0}}             }else={divide_variable={rate_heavy_tank_destroyer_equipment_2=Prev.num_equipment_in_armies@heavy_tank_destroyer_equipment_2}}
+	
+	set_variable = { econo_stock_heavy_tank_destroyer_equipment_3 = Prev.num_equipment@heavy_tank_destroyer_equipment_3 }
+	set_variable = { rate_heavy_tank_destroyer_equipment_3 = econo_stock_heavy_tank_destroyer_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_destroyer_equipment_3=0}}             }else={divide_variable={rate_heavy_tank_destroyer_equipment_3=Prev.num_equipment_in_armies@heavy_tank_destroyer_equipment_3}}
+	
+	set_variable = { econo_stock_super_heavy_tank_destroyer_equipment_1 = Prev.num_equipment@super_heavy_tank_destroyer_equipment_1 }
+	set_variable = { rate_super_heavy_tank_destroyer_equipment_1 = econo_stock_super_heavy_tank_destroyer_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@super_heavy_tank_destroyer_equipment_1=0}}             }else={divide_variable={rate_super_heavy_tank_destroyer_equipment_1=Prev.num_equipment_in_armies@super_heavy_tank_destroyer_equipment_1}}
+	
+	set_variable = { econo_stock_heavy_tank_aa_equipment_1 = Prev.num_equipment@heavy_tank_aa_equipment_1 }
+	set_variable = { rate_heavy_tank_aa_equipment_1 = econo_stock_heavy_tank_aa_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_aa_equipment_1=0}}             }else={divide_variable={rate_heavy_tank_aa_equipment_1=Prev.num_equipment_in_armies@heavy_tank_aa_equipment_1}}
+	
+	set_variable = { econo_stock_heavy_tank_aa_equipment_2 = Prev.num_equipment@heavy_tank_aa_equipment_2 }
+	set_variable = { rate_heavy_tank_aa_equipment_2 = econo_stock_heavy_tank_aa_equipment_2 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_aa_equipment_2=0}}             }else={divide_variable={rate_heavy_tank_aa_equipment_2=Prev.num_equipment_in_armies@heavy_tank_aa_equipment_2}}
+	
+	set_variable = { econo_stock_heavy_tank_aa_equipment_3 = Prev.num_equipment@heavy_tank_aa_equipment_3 }
+	set_variable = { rate_heavy_tank_aa_equipment_3 = econo_stock_heavy_tank_aa_equipment_3 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@heavy_tank_aa_equipment_3=0}}             }else={divide_variable={rate_heavy_tank_aa_equipment_3=Prev.num_equipment_in_armies@heavy_tank_aa_equipment_3}}
+	
+	set_variable = { econo_stock_super_heavy_tank_aa_equipment_1 = Prev.num_equipment@super_heavy_tank_aa_equipment_1 }
+	set_variable = { rate_super_heavy_tank_aa_equipment_1 = econo_stock_super_heavy_tank_aa_equipment_1 }
+	if={limit={check_variable={Prev.num_equipment_in_armies@super_heavy_tank_aa_equipment_1=0}}             }else={divide_variable={rate_super_heavy_tank_aa_equipment_1=Prev.num_equipment_in_armies@super_heavy_tank_aa_equipment_1}}
+	
+	set_variable = { econo_stock_modern_tank_equipment = Prev.num_equipment@modern_tank_equipment }
+	set_variable = { rate_modern_tank_equipment = econo_stock_modern_tank_equipment }
+	if={limit={check_variable={Prev.num_equipment_in_armies@modern_tank_equipment=0}}             }else={divide_variable={rate_modern_tank_equipment=Prev.num_equipment_in_armies@modern_tank_equipment}}
+
+	set_variable = { econo_stock_modern_tank_artillery_equipment = Prev.num_equipment@modern_tank_artillery_equipment }
+	set_variable = { rate_modern_tank_artillery_equipment = econo_stock_modern_tank_artillery_equipment }
+	if={limit={check_variable={Prev.num_equipment_in_armies@modern_tank_artillery_equipment=0}}             }else={divide_variable={rate_modern_tank_artillery_equipment=Prev.num_equipment_in_armies@modern_tank_artillery_equipment}}
+
+	set_variable = { econo_stock_modern_tank_destroyer_equipment = Prev.num_equipment@modern_tank_destroyer_equipment }
+	set_variable = { rate_modern_tank_destroyer_equipment = econo_stock_modern_tank_destroyer_equipment }
+	if={limit={check_variable={Prev.num_equipment_in_armies@modern_tank_destroyer_equipment=0}}             }else={divide_variable={rate_modern_tank_destroyer_equipment=Prev.num_equipment_in_armies@modern_tank_destroyer_equipment}}
+
+	set_variable = { econo_stock_modern_tank_aa_equipment = Prev.num_equipment@modern_tank_aa_equipment }
+	set_variable = { rate_modern_tank_aa_equipment = econo_stock_modern_tank_aa_equipment }
+	if={limit={check_variable={Prev.num_equipment_in_armies@modern_tank_aa_equipment=0}}             }else={divide_variable={rate_modern_tank_aa_equipment=Prev.num_equipment_in_armies@modern_tank_aa_equipment}}
+
+}
+
+reset_air_listtt = {
+
+	set_variable = { econo_stock_fighter_equipment_0 = Prev.num_equipment@fighter_equipment_0 }
+	set_variable = { rate_fighter_equipment_0 = econo_stock_fighter_equipment_0 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@fighter_equipment_0=0}}             }else={divide_variable={rate_fighter_equipment_0=Prev.num_deployed_planes_with_type@fighter_equipment_0}}
+	
+	set_variable = { econo_stock_fighter_equipment_1 = Prev.num_equipment@fighter_equipment_1 }
+	set_variable = { rate_fighter_equipment_1 = econo_stock_fighter_equipment_1 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@fighter_equipment_1=0}}             }else={divide_variable={rate_fighter_equipment_1=Prev.num_deployed_planes_with_type@fighter_equipment_1}}
+	
+	set_variable = { econo_stock_fighter_equipment_2 = Prev.num_equipment@fighter_equipment_2 }
+	set_variable = { rate_fighter_equipment_2 = econo_stock_fighter_equipment_2 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@fighter_equipment_2=0}}             }else={divide_variable={rate_fighter_equipment_2=Prev.num_deployed_planes_with_type@fighter_equipment_2}}
+	
+	set_variable = { econo_stock_fighter_equipment_3 = Prev.num_equipment@fighter_equipment_3 }
+	set_variable = { rate_fighter_equipment_3 = econo_stock_fighter_equipment_3 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@fighter_equipment_3=0}}             }else={divide_variable={rate_fighter_equipment_3=Prev.num_deployed_planes_with_type@fighter_equipment_3}}
+
+	set_variable = { econo_stock_cv_fighter_equipment_0 = Prev.num_equipment@cv_fighter_equipment_0 }
+	set_variable = { rate_cv_fighter_equipment_0 = econo_stock_cv_fighter_equipment_0 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@cv_fighter_equipment_0=0}}             }else={divide_variable={rate_cv_fighter_equipment_0=Prev.num_deployed_planes_with_type@cv_fighter_equipment_0}}
+	
+	set_variable = { econo_stock_cv_fighter_equipment_1 = Prev.num_equipment@cv_fighter_equipment_1 }
+	set_variable = { rate_cv_fighter_equipment_1 = econo_stock_cv_fighter_equipment_1 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@cv_fighter_equipment_1=0}}             }else={divide_variable={rate_cv_fighter_equipment_1=Prev.num_deployed_planes_with_type@cv_fighter_equipment_1}}
+	
+	set_variable = { econo_stock_cv_fighter_equipment_2 = Prev.num_equipment@cv_fighter_equipment_2 }
+	set_variable = { rate_cv_fighter_equipment_2 = econo_stock_cv_fighter_equipment_2 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@cv_fighter_equipment_2=0}}             }else={divide_variable={rate_cv_fighter_equipment_2=Prev.num_deployed_planes_with_type@cv_fighter_equipment_2}}
+	
+	set_variable = { econo_stock_cv_fighter_equipment_3 = Prev.num_equipment@cv_fighter_equipment_3 }
+	set_variable = { rate_cv_fighter_equipment_3 = econo_stock_cv_fighter_equipment_3 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@cv_fighter_equipment_3=0}}             }else={divide_variable={rate_cv_fighter_equipment_3=Prev.num_deployed_planes_with_type@cv_fighter_equipment_3}}
+
+	set_variable = { econo_stock_jet_fighter_equipment_1 = Prev.num_equipment@jet_fighter_equipment_1 }
+	set_variable = { rate_jet_fighter_equipment_1 = econo_stock_jet_fighter_equipment_1 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@jet_fighter_equipment_1=0}}             }else={divide_variable={rate_jet_fighter_equipment_1=Prev.num_deployed_planes_with_type@jet_fighter_equipment_1}}
+	
+	set_variable = { econo_stock_jet_fighter_equipment_2 = Prev.num_equipment@jet_fighter_equipment_2 }
+	set_variable = { rate_jet_fighter_equipment_2 = econo_stock_jet_fighter_equipment_2 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@jet_fighter_equipment_2=0}}             }else={divide_variable={rate_jet_fighter_equipment_2=Prev.num_deployed_planes_with_type@jet_fighter_equipment_2}}
+	
+	set_variable = { econo_stock_heavy_fighter_equipment_1 = Prev.num_equipment@heavy_fighter_equipment_1 }
+	set_variable = { rate_heavy_fighter_equipment_1 = econo_stock_heavy_fighter_equipment_1 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@heavy_fighter_equipment_1=0}}             }else={divide_variable={rate_heavy_fighter_equipment_1=Prev.num_deployed_planes_with_type@heavy_fighter_equipment_1}}
+	
+	set_variable = { econo_stock_heavy_fighter_equipment_2 = Prev.num_equipment@heavy_fighter_equipment_2 }
+	set_variable = { rate_heavy_fighter_equipment_2 = econo_stock_heavy_fighter_equipment_2 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@heavy_fighter_equipment_2=0}}             }else={divide_variable={rate_heavy_fighter_equipment_2=Prev.num_deployed_planes_with_type@heavy_fighter_equipment_2}}
+	
+	set_variable = { econo_stock_heavy_fighter_equipment_3 = Prev.num_equipment@heavy_fighter_equipment_3 }
+	set_variable = { rate_heavy_fighter_equipment_3 = econo_stock_heavy_fighter_equipment_3 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@heavy_fighter_equipment_3=0}}             }else={divide_variable={rate_heavy_fighter_equipment_3=Prev.num_deployed_planes_with_type@heavy_fighter_equipment_3}}
+	
+	set_variable = { econo_stock_CAS_equipment_1 = Prev.num_equipment@CAS_equipment_1 }
+	set_variable = { rate_CAS_equipment_1 = econo_stock_CAS_equipment_1 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@CAS_equipment_1=0}}             }else={divide_variable={rate_CAS_equipment_1=Prev.num_deployed_planes_with_type@CAS_equipment_1}}
+	
+	set_variable = { econo_stock_CAS_equipment_2 = Prev.num_equipment@CAS_equipment_2 }
+	set_variable = { rate_CAS_equipment_2 = econo_stock_CAS_equipment_2 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@CAS_equipment_2=0}}             }else={divide_variable={rate_CAS_equipment_2=Prev.num_deployed_planes_with_type@CAS_equipment_2}}
+	
+	set_variable = { econo_stock_CAS_equipment_3 = Prev.num_equipment@CAS_equipment_3 }
+	set_variable = { rate_CAS_equipment_3 = econo_stock_CAS_equipment_3 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@CAS_equipment_3=0}}             }else={divide_variable={rate_CAS_equipment_3=Prev.num_deployed_planes_with_type@CAS_equipment_3}}
+
+	set_variable = { econo_stock_cv_CAS_equipment_1 = Prev.num_equipment@cv_CAS_equipment_1 }
+	set_variable = { rate_cv_CAS_equipment_1 = econo_stock_cv_CAS_equipment_1 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@cv_CAS_equipment_1=0}}             }else={divide_variable={rate_cv_CAS_equipment_1=Prev.num_deployed_planes_with_type@cv_CAS_equipment_1}}
+	
+	set_variable = { econo_stock_cv_CAS_equipment_2 = Prev.num_equipment@cv_CAS_equipment_2 }
+	set_variable = { rate_cv_CAS_equipment_2 = econo_stock_cv_CAS_equipment_2 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@cv_CAS_equipment_2=0}}             }else={divide_variable={rate_cv_CAS_equipment_2=Prev.num_deployed_planes_with_type@cv_CAS_equipment_2}}
+	
+	set_variable = { econo_stock_cv_CAS_equipment_3 = Prev.num_equipment@cv_CAS_equipment_3 }
+	set_variable = { rate_cv_CAS_equipment_3 = econo_stock_cv_CAS_equipment_3 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@cv_CAS_equipment_3=0}}             }else={divide_variable={rate_cv_CAS_equipment_3=Prev.num_deployed_planes_with_type@cv_CAS_equipment_3}}
+	
+	set_variable = { econo_stock_nav_bomber_equipment_1 = Prev.num_equipment@nav_bomber_equipment_1 }
+	set_variable = { rate_nav_bomber_equipment_1 = econo_stock_nav_bomber_equipment_1 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@nav_bomber_equipment_1=0}}             }else={divide_variable={rate_nav_bomber_equipment_1=Prev.num_deployed_planes_with_type@nav_bomber_equipment_1}}
+	
+	set_variable = { econo_stock_nav_bomber_equipment_2 = Prev.num_equipment@nav_bomber_equipment_2 }
+	set_variable = { rate_nav_bomber_equipment_2 = econo_stock_nav_bomber_equipment_2 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@nav_bomber_equipment_2=0}}             }else={divide_variable={rate_nav_bomber_equipment_2=Prev.num_deployed_planes_with_type@nav_bomber_equipment_2}}
+	
+	set_variable = { econo_stock_nav_bomber_equipment_3 = Prev.num_equipment@nav_bomber_equipment_3 }
+	set_variable = { rate_nav_bomber_equipment_3 = econo_stock_nav_bomber_equipment_3 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@nav_bomber_equipment_3=0}}             }else={divide_variable={rate_nav_bomber_equipment_3=Prev.num_deployed_planes_with_type@nav_bomber_equipment_3}}
+
+	set_variable = { econo_stock_cv_nav_bomber_equipment_1 = Prev.num_equipment@cv_nav_bomber_equipment_1 }
+	set_variable = { rate_cv_nav_bomber_equipment_1 = econo_stock_cv_nav_bomber_equipment_1 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@cv_nav_bomber_equipment_1=0}}             }else={divide_variable={rate_cv_nav_bomber_equipment_1=Prev.num_deployed_planes_with_type@cv_nav_bomber_equipment_1}}
+	
+	set_variable = { econo_stock_cv_nav_bomber_equipment_2 = Prev.num_equipment@cv_nav_bomber_equipment_2 }
+	set_variable = { rate_cv_nav_bomber_equipment_2 = econo_stock_cv_nav_bomber_equipment_2 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@cv_nav_bomber_equipment_2=0}}             }else={divide_variable={rate_cv_nav_bomber_equipment_2=Prev.num_deployed_planes_with_type@cv_nav_bomber_equipment_2}}
+	
+	set_variable = { econo_stock_cv_nav_bomber_equipment_3 = Prev.num_equipment@cv_nav_bomber_equipment_3 }
+	set_variable = { rate_cv_nav_bomber_equipment_3 = econo_stock_cv_nav_bomber_equipment_3 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@cv_nav_bomber_equipment_3=0}}             }else={divide_variable={rate_cv_nav_bomber_equipment_3=Prev.num_deployed_planes_with_type@cv_nav_bomber_equipment_3}}
+
+	set_variable = { econo_stock_tac_bomber_equipment_0 = Prev.num_equipment@tac_bomber_equipment_0 }
+	set_variable = { rate_tac_bomber_equipment_0 = econo_stock_tac_bomber_equipment_0 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@tac_bomber_equipment_0=0}}             }else={divide_variable={rate_tac_bomber_equipment_0=Prev.num_deployed_planes_with_type@tac_bomber_equipment_0}}
+	
+	set_variable = { econo_stock_tac_bomber_equipment_1 = Prev.num_equipment@tac_bomber_equipment_1 }
+	set_variable = { rate_tac_bomber_equipment_1 = econo_stock_tac_bomber_equipment_1 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@tac_bomber_equipment_1=0}}             }else={divide_variable={rate_tac_bomber_equipment_1=Prev.num_deployed_planes_with_type@tac_bomber_equipment_1}}
+	
+	set_variable = { econo_stock_tac_bomber_equipment_2 = Prev.num_equipment@tac_bomber_equipment_2 }
+	set_variable = { rate_tac_bomber_equipment_2 = econo_stock_tac_bomber_equipment_2 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@tac_bomber_equipment_2=0}}             }else={divide_variable={rate_tac_bomber_equipment_2=Prev.num_deployed_planes_with_type@tac_bomber_equipment_2}}
+	
+	set_variable = { econo_stock_tac_bomber_equipment_3 = Prev.num_equipment@tac_bomber_equipment_3 }
+	set_variable = { rate_tac_bomber_equipment_3 = econo_stock_tac_bomber_equipment_3 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@tac_bomber_equipment_3=0}}             }else={divide_variable={rate_tac_bomber_equipment_3=Prev.num_deployed_planes_with_type@tac_bomber_equipment_3}}
+	
+
+	set_variable = { econo_stock_strat_bomber_equipment_1 = Prev.num_equipment@strat_bomber_equipment_1 }
+	set_variable = { rate_strat_bomber_equipment_1 = econo_stock_strat_bomber_equipment_1 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@strat_bomber_equipment_1=0}}             }else={divide_variable={rate_strat_bomber_equipment_1=Prev.num_deployed_planes_with_type@strat_bomber_equipment_1}}
+	
+	set_variable = { econo_stock_strat_bomber_equipment_2 = Prev.num_equipment@strat_bomber_equipment_2 }
+	set_variable = { rate_strat_bomber_equipment_2 = econo_stock_strat_bomber_equipment_2 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@strat_bomber_equipment_2=0}}             }else={divide_variable={rate_strat_bomber_equipment_2=Prev.num_deployed_planes_with_type@strat_bomber_equipment_2}}
+	
+	set_variable = { econo_stock_strat_bomber_equipment_3 = Prev.num_equipment@strat_bomber_equipment_3 }
+	set_variable = { rate_strat_bomber_equipment_3 = econo_stock_strat_bomber_equipment_3 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@strat_bomber_equipment_3=0}}             }else={divide_variable={rate_strat_bomber_equipment_3=Prev.num_deployed_planes_with_type@strat_bomber_equipment_3}}
+
+	set_variable = { econo_stock_scout_plane_equipment_1 = Prev.num_equipment@scout_plane_equipment_1 }
+	set_variable = { rate_scout_plane_equipment_1 = econo_stock_scout_plane_equipment_1 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@scout_plane_equipment_1=0}}             }else={divide_variable={rate_scout_plane_equipment_1=Prev.num_deployed_planes_with_type@scout_plane_equipment_1}}
+	
+	set_variable = { econo_stock_scout_plane_equipment_2 = Prev.num_equipment@scout_plane_equipment_2 }
+	set_variable = { rate_scout_plane_equipment_2 = econo_stock_scout_plane_equipment_2 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@scout_plane_equipment_2=0}}             }else={divide_variable={rate_scout_plane_equipment_2=Prev.num_deployed_planes_with_type@scout_plane_equipment_2}}
+
+	set_variable = { econo_stock_jet_tac_bomber_equipment_1 = Prev.num_equipment@jet_tac_bomber_equipment_1 }
+	set_variable = { rate_jet_tac_bomber_equipment_1 = econo_stock_jet_tac_bomber_equipment_1 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@jet_tac_bomber_equipment_1=0}}             }else={divide_variable={rate_jet_tac_bomber_equipment_1=Prev.num_deployed_planes_with_type@jet_tac_bomber_equipment_1}}
+	
+	set_variable = { econo_stock_jet_tac_bomber_equipment_2 = Prev.num_equipment@jet_tac_bomber_equipment_2 }
+	set_variable = { rate_jet_tac_bomber_equipment_2 = econo_stock_jet_tac_bomber_equipment_2 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@jet_tac_bomber_equipment_2=0}}             }else={divide_variable={rate_jet_tac_bomber_equipment_2=Prev.num_deployed_planes_with_type@jet_tac_bomber_equipment_2}}
+	
+	set_variable = { econo_stock_jet_strat_bomber_equipment_1 = Prev.num_equipment@jet_strat_bomber_equipment_1 }
+	set_variable = { rate_jet_strat_bomber_equipment_1 = econo_stock_jet_strat_bomber_equipment_1 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@jet_strat_bomber_equipment_1=0}}             }else={divide_variable={rate_jet_strat_bomber_equipment_1=Prev.num_deployed_planes_with_type@jet_strat_bomber_equipment_1}}
+
+	set_variable = { econo_stock_rocket_suicide_equipment_1 = Prev.num_equipment@rocket_suicide_equipment_1 }
+	set_variable = { rate_rocket_suicide_equipment_1 = econo_stock_rocket_suicide_equipment_1 }
+	if={limit={check_variable={Prev.num_deployed_planes_with_type@rocket_suicide_equipment_1=0}}             }else={divide_variable={rate_rocket_suicide_equipment_1=Prev.num_deployed_planes_with_type@rocket_suicide_equipment_1}}
+	
+}
+
+reset_naval_listtt = {
+
+	set_variable = { econo_amounts_convoy = 30   } ##10 constant convoys
+	set_variable = { rate_convoy = econo_amounts_convoy }
+	##divide_variable = { rate_convoy = Prev.num_ships }
+
+	set_variable = { econo_amounts_submarine = Prev.num_ships_with_type@submarine } ##SS
+	set_variable = { rate_submarine = econo_amounts_submarine }
+	if={limit={check_variable={Prev.num_ships=0}}             }else={divide_variable={rate_submarine=Prev.num_ships}}
+	
+	set_variable = { econo_amounts_destroyer = Prev.num_ships_with_type@destroyer } ##DD
+	set_variable = { rate_destroyer = econo_amounts_destroyer }
+	if={limit={check_variable={Prev.num_ships=0}}             }else={divide_variable={rate_destroyer=Prev.num_ships}}
+
+	set_variable = { econo_amounts_light_cruiser = Prev.num_ships_with_type@light_cruiser }##CL
+	set_variable = { rate_light_cruiser = econo_amounts_light_cruiser }
+	if={limit={check_variable={Prev.num_ships=0}}             }else={divide_variable={rate_light_cruiser=Prev.num_ships}}
+	
+	set_variable = { econo_amounts_heavy_cruiser = Prev.num_ships_with_type@heavy_cruiser }##CA
+	set_variable = { rate_heavy_cruiser = econo_amounts_heavy_cruiser }
+	if={limit={check_variable={Prev.num_ships=0}}             }else={divide_variable={rate_heavy_cruiser=Prev.num_ships}}
+
+	set_variable = { econo_amounts_battle_cruiser = Prev.num_ships_with_type@battle_cruiser }##BC
+	set_variable = { rate_battle_cruiser = econo_amounts_battle_cruiser }
+	if={limit={check_variable={Prev.num_ships=0}}             }else={divide_variable={rate_battle_cruiser=Prev.num_ships}}
+	
+	set_variable = { econo_amounts_battleship = Prev.num_ships_with_type@battleship }##BB
+	set_variable = { rate_battleship = econo_amounts_battleship }
+	if={limit={check_variable={Prev.num_ships=0}}             }else={divide_variable={rate_battleship=Prev.num_ships}}
+	
+	set_variable = { econo_amounts_carrier = Prev.num_ships_with_type@carrier } ##CV
+	set_variable = { rate_carrier = econo_amounts_carrier }
+	if={limit={check_variable={Prev.num_ships=0}}             }else={divide_variable={rate_carrier=Prev.num_ships}}
+
+}
+
+clear_arm_trade_all = {
+
+	clear_all_carts = yes
+	
+	clear_variable = econo_kind_selected
+	
+	clear_variable = econo_purchase_limit
+
+	clear_variable = econo_stock_infantry_equipment_0
+	clear_variable = rate_infantry_equipment_0
+	clear_variable = econo_stock_infantry_equipment_1
+	clear_variable = rate_infantry_equipment_1
+	clear_variable = econo_stock_infantry_equipment_2
+	clear_variable = rate_infantry_equipment_2
+	clear_variable = econo_stock_infantry_equipment_3
+	clear_variable = rate_infantry_equipment_3
+	clear_variable = econo_stock_support_equipment
+	clear_variable = rate_support_equipment
+	clear_variable = econo_stock_motorized_equipment 
+	clear_variable = rate_motorized_equipment 
+	clear_variable = econo_stock_mechanized_equipment
+	clear_variable = rate_mechanized_equipment 	
+	clear_variable = econo_stock_artillery_equipment_1 
+	clear_variable = rate_artillery_equipment_1
+	clear_variable = econo_stock_artillery_equipment_2
+	clear_variable = rate_artillery_equipment_2
+	clear_variable = econo_stock_artillery_equipment_3
+	clear_variable = rate_artillery_equipment_3
+	clear_variable = econo_stock_rocket_artillery_equipment_1
+	clear_variable = rate_rocket_artillery_equipment_1
+	clear_variable = econo_stock_rocket_artillery_equipment_2
+	clear_variable = rate_rocket_artillery_equipment_2
+	clear_variable = econo_stock_motorized_rocket_equipment
+	clear_variable = rate_motorized_rocket_equipment
+	clear_variable = econo_stock_anti_tank_equipment_1
+	clear_variable = rate_anti_tank_equipment_1
+	clear_variable = econo_stock_anti_tank_equipment_2
+	clear_variable = rate_anti_tank_equipment_2
+	clear_variable = econo_stock_anti_tank_equipment_3
+	clear_variable = rate_anti_tank_equipment_3
+	clear_variable = econo_stock_anti_air_equipment_1
+	clear_variable = rate_anti_air_equipment_1
+	clear_variable = econo_stock_anti_air_equipment_2
+	clear_variable = rate_anti_air_equipment_2
+	clear_variable = econo_stock_anti_air_equipment_3
+	clear_variable = rate_anti_air_equipment_3
+
+	clear_variable = econo_stock_light_tank_equipment_1
+	clear_variable = rate_light_tank_equipment_1
+	clear_variable = econo_stock_light_tank_equipment_2
+	clear_variable = rate_light_tank_equipment_2
+	clear_variable = econo_stock_light_tank_equipment_3
+	clear_variable = rate_light_tank_equipment_3
+	clear_variable = econo_stock_light_tank_artillery_equipment_1
+	clear_variable = rate_light_tank_artillery_equipment_1 	
+	clear_variable = econo_stock_light_tank_artillery_equipment_2 
+	clear_variable = rate_light_tank_artillery_equipment_2 
+	clear_variable = econo_stock_light_tank_artillery_equipment_3
+	clear_variable = rate_light_tank_artillery_equipment_3	
+	clear_variable = econo_stock_light_tank_destroyer_equipment_1
+	clear_variable = rate_light_tank_destroyer_equipment_1	
+	clear_variable = econo_stock_light_tank_destroyer_equipment_2
+	clear_variable = rate_light_tank_destroyer_equipment_2
+	clear_variable = econo_stock_light_tank_destroyer_equipment_3
+	clear_variable = rate_light_tank_destroyer_equipment_3
+	clear_variable = econo_stock_light_tank_aa_equipment_1
+	clear_variable = rate_light_tank_aa_equipment_1
+	clear_variable = econo_stock_light_tank_aa_equipment_2
+	clear_variable = rate_light_tank_aa_equipment_2
+	clear_variable = econo_stock_light_tank_aa_equipment_3
+	clear_variable = rate_light_tank_aa_equipment_3
+	clear_variable = econo_stock_medium_tank_equipment_1
+	clear_variable = rate_medium_tank_equipment_1
+	clear_variable = econo_stock_medium_tank_equipment_2
+	clear_variable = rate_medium_tank_equipment_2
+	clear_variable = econo_stock_medium_tank_equipment_3
+	clear_variable = rate_medium_tank_equipment_3
+	clear_variable = econo_stock_medium_tank_artillery_equipment_1
+	clear_variable = rate_medium_tank_artillery_equipment_1
+	clear_variable = econo_stock_medium_tank_artillery_equipment_2
+	clear_variable = rate_medium_tank_artillery_equipment_2
+	clear_variable = econo_stock_medium_tank_artillery_equipment_3
+	clear_variable = rate_medium_tank_artillery_equipment_3
+	clear_variable = econo_stock_medium_tank_destroyer_equipment_1
+	clear_variable = rate_medium_tank_destroyer_equipment_1
+	clear_variable = econo_stock_medium_tank_destroyer_equipment_2
+	clear_variable = rate_medium_tank_destroyer_equipment_2
+	clear_variable = econo_stock_medium_tank_destroyer_equipment_3
+	clear_variable = rate_medium_tank_destroyer_equipment_3
+	clear_variable = econo_stock_medium_tank_aa_equipment_1
+	clear_variable = rate_medium_tank_aa_equipment_1
+	clear_variable = econo_stock_medium_tank_aa_equipment_2
+	clear_variable = rate_medium_tank_aa_equipment_2
+	clear_variable = econo_stock_medium_tank_aa_equipment_3
+	clear_variable = rate_medium_tank_aa_equipment_3
+	clear_variable = econo_stock_heavy_tank_equipment_1
+	clear_variable = rate_heavy_tank_equipment_1
+	clear_variable = econo_stock_heavy_tank_equipment_2
+	clear_variable = rate_heavy_tank_equipment_2
+	clear_variable = econo_stock_heavy_tank_equipment_3
+	clear_variable = rate_heavy_tank_equipment_3		
+	clear_variable = econo_stock_heavy_tank_artillery_equipment_1
+	clear_variable = rate_heavy_tank_artillery_equipment_1
+	clear_variable = econo_stock_heavy_tank_artillery_equipment_2
+	clear_variable = rate_heavy_tank_artillery_equipment_2
+	clear_variable = econo_stock_heavy_tank_artillery_equipment_3
+	clear_variable = rate_heavy_tank_artillery_equipment_3
+	clear_variable = econo_stock_super_heavy_tank_artillery_equipment_1
+	clear_variable = rate_super_heavy_tank_artillery_equipment_1
+	clear_variable = econo_stock_heavy_tank_destroyer_equipment_1
+	clear_variable = rate_heavy_tank_destroyer_equipment_1
+	clear_variable = econo_stock_heavy_tank_destroyer_equipment_2
+	clear_variable = rate_heavy_tank_destroyer_equipment_2
+	clear_variable = econo_stock_heavy_tank_destroyer_equipment_3
+	clear_variable = rate_heavy_tank_destroyer_equipment_3
+	clear_variable = econo_stock_super_heavy_tank_destroyer_equipment_1
+	clear_variable = rate_super_heavy_tank_destroyer_equipment_1
+	clear_variable = econo_stock_heavy_tank_aa_equipment_1
+	clear_variable = rate_heavy_tank_aa_equipment_1
+	clear_variable = econo_stock_heavy_tank_aa_equipment_2
+	clear_variable = rate_heavy_tank_aa_equipment_2
+	clear_variable = econo_stock_heavy_tank_aa_equipment_3
+	clear_variable = rate_heavy_tank_aa_equipment_3
+	clear_variable = econo_stock_super_heavy_tank_aa_equipment_1
+	clear_variable = rate_super_heavy_tank_aa_equipment_1
+	clear_variable = econo_stock_modern_tank_equipment
+	clear_variable = rate_modern_tank_equipment
+	clear_variable = econo_stock_modern_tank_artillery_equipment
+	clear_variable = rate_modern_tank_artillery_equipment
+	clear_variable = econo_stock_modern_tank_destroyer_equipment
+	clear_variable = rate_modern_tank_destroyer_equipment
+	clear_variable = econo_stock_modern_tank_aa_equipment
+	clear_variable = rate_modern_tank_aa_equipment
+	
+	clear_variable = econo_stock_fighter_equipment_0
+	clear_variable = rate_fighter_equipment_0
+	clear_variable = econo_stock_fighter_equipment_1
+	clear_variable = rate_fighter_equipment_1
+	clear_variable = econo_stock_fighter_equipment_2
+	clear_variable = rate_fighter_equipment_2
+	clear_variable = econo_stock_fighter_equipment_3
+	clear_variable = rate_fighter_equipment_3
+	clear_variable = econo_stock_cv_fighter_equipment_0
+	clear_variable = rate_cv_fighter_equipment_0
+	clear_variable = econo_stock_cv_fighter_equipment_1
+	clear_variable = rate_cv_fighter_equipment_1
+	clear_variable = econo_stock_cv_fighter_equipment_2
+	clear_variable = rate_cv_fighter_equipment_2
+	clear_variable = econo_stock_cv_fighter_equipment_3
+	clear_variable = rate_cv_fighter_equipment_3
+	clear_variable = econo_stock_jet_fighter_equipment_1
+	clear_variable = rate_jet_fighter_equipment_1
+	clear_variable = econo_stock_jet_fighter_equipment_2
+	clear_variable = rate_jet_fighter_equipment_2
+	clear_variable = econo_stock_heavy_fighter_equipment_1
+	clear_variable = rate_heavy_fighter_equipment_1
+	clear_variable = econo_stock_heavy_fighter_equipment_2
+	clear_variable = rate_heavy_fighter_equipment_2
+	clear_variable = econo_stock_heavy_fighter_equipment_3
+	clear_variable = rate_heavy_fighter_equipment_3
+	clear_variable = econo_stock_CAS_equipment_1
+	clear_variable = rate_CAS_equipment_1
+	clear_variable = econo_stock_CAS_equipment_2
+	clear_variable = rate_CAS_equipment_2
+	clear_variable = econo_stock_CAS_equipment_3
+	clear_variable = rate_CAS_equipment_3
+	clear_variable = econo_stock_cv_CAS_equipment_1
+	clear_variable = rate_cv_CAS_equipment_1
+	clear_variable = econo_stock_cv_CAS_equipment_2
+	clear_variable = rate_cv_CAS_equipment_2
+	clear_variable = econo_stock_cv_CAS_equipment_3	
+	clear_variable = rate_cv_CAS_equipment_3	
+	clear_variable = econo_stock_nav_bomber_equipment_1
+	clear_variable = rate_nav_bomber_equipment_1
+	clear_variable = econo_stock_nav_bomber_equipment_2
+	clear_variable = rate_nav_bomber_equipment_2
+	clear_variable = econo_stock_nav_bomber_equipment_3
+	clear_variable = rate_nav_bomber_equipment_3
+	clear_variable = econo_stock_cv_nav_bomber_equipment_1
+	clear_variable = rate_cv_nav_bomber_equipment_1
+	clear_variable = econo_stock_cv_nav_bomber_equipment_2
+	clear_variable = rate_cv_nav_bomber_equipment_2
+	clear_variable = econo_stock_cv_nav_bomber_equipment_3
+	clear_variable = rate_cv_nav_bomber_equipment_3
+	clear_variable = econo_stock_tac_bomber_equipment_0
+	clear_variable = rate_tac_bomber_equipment_0
+	clear_variable = econo_stock_tac_bomber_equipment_1
+	clear_variable = rate_tac_bomber_equipment_1
+	clear_variable = econo_stock_tac_bomber_equipment_2
+	clear_variable = rate_tac_bomber_equipment_2
+	clear_variable = econo_stock_tac_bomber_equipment_3
+	clear_variable = rate_tac_bomber_equipment_3
+	clear_variable = econo_stock_strat_bomber_equipment_1
+	clear_variable = rate_strat_bomber_equipment_1
+	clear_variable = econo_stock_strat_bomber_equipment_2
+	clear_variable = rate_strat_bomber_equipment_2
+	clear_variable = econo_stock_strat_bomber_equipment_3
+	clear_variable = rate_strat_bomber_equipment_3
+	clear_variable = econo_stock_scout_plane_equipment_1
+	clear_variable = rate_scout_plane_equipment_1
+	clear_variable = econo_stock_scout_plane_equipment_2
+	clear_variable = rate_scout_plane_equipment_2
+	clear_variable = econo_stock_jet_tac_bomber_equipment_1
+	clear_variable = rate_jet_tac_bomber_equipment_1
+	clear_variable = econo_stock_jet_tac_bomber_equipment_2
+	clear_variable = rate_jet_tac_bomber_equipment_2
+	clear_variable = econo_stock_jet_strat_bomber_equipment_1
+	clear_variable = rate_jet_strat_bomber_equipment_1
+	clear_variable = econo_stock_rocket_suicide_equipment_1
+	clear_variable = rate_rocket_suicide_equipment_1
+
+	clear_variable = econo_amounts_convoy
+	clear_variable = rate_convoy
+	clear_variable = econo_amounts_submarine
+	clear_variable = rate_submarine
+	clear_variable = econo_amounts_destroyer
+	clear_variable = rate_destroyer
+	clear_variable = econo_amounts_light_cruiser
+	clear_variable = rate_light_cruiser
+	clear_variable = econo_amounts_heavy_cruiser
+	clear_variable = rate_heavy_cruiser
+	clear_variable = econo_amounts_battle_cruiser
+	clear_variable = rate_battle_cruiser
+	clear_variable = econo_amounts_battleship
+	clear_variable = rate_battleship
+	clear_variable = econo_amounts_carrier
+	clear_variable = rate_carrier
+}

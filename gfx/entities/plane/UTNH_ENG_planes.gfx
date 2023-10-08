@@ -1,0 +1,136 @@
+objectTypes = {
+	pdxmesh = {
+		name = "ENG_METEOR_mesh"
+		file = "gfx/models/units/planes/ENG/fighter/meteor.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "meteor.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ENG_VAMPIRE_mesh"
+		file = "gfx/models/units/planes/ENG/fighter/vampire.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "Vampire_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ENG_VAMPIREC_mesh"
+		file = "gfx/models/units/planes/ENG/fighter/vampire.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "Vampire_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ENG_HUNTER_mesh"
+		file = "gfx/models/units/planes/ENG/fighter/hunter.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "hunter.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ENG_HUNTERC_mesh"
+		file = "gfx/models/units/planes/ENG/fighter/hunter.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "hunter.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ENG_F4_mesh"
+		file = "gfx/models/units/planes/ENG/fighter/F4N.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F4NENG_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ENG_HARRIER_mesh"
+		file = "gfx/models/units/planes/ENG/cvfighter/av8a.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "AV8AENG_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ENG_HARRIER2_mesh"
+		file = "gfx/models/units/planes/ENG/cvfighter/av8b.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "AV8BENG_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ENG_LIGHTNING_mesh"
+		file = "gfx/models/units/planes/ENG/interceptor/Lightning.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "lightning_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ENG_JAVELIN_mesh"
+		file = "gfx/models/units/planes/ENG/interceptor/Javelin.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "Javelin_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ENG_BUCCANEER_mesh"
+		file = "gfx/models/units/planes/ENG/cvcas/Buccaneer.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "Buccaneer_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ENG_VULCAN_mesh"
+		file = "gfx/models/units/planes/ENG/stratbomber/vulcan.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "Vulcan_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ENG_VICTOR_mesh"
+		file = "gfx/models/units/planes/ENG/stratbomber/Victor.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "VictorB1_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ENG_CANBERRA_mesh"
+		file = "gfx/models/units/planes/ENG/tacbomber/Canberra.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "Canberrra.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ENG_TORNADO_mesh"
+		file = "gfx/models/units/planes/ENG/tacbomber/TornadoADV.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "TornadoADV_diffuse.dds"
+		}
+	}
+}

@@ -1,0 +1,182 @@
+objectTypes = {
+	pdxmesh = {
+		name = "PRC_MIG9_mesh"
+		file = "gfx/models/units/planes/PRC/fighter/MiG9.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "MIG9_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "PRC_MIG15_mesh"
+		file = "gfx/models/units/planes/PRC/fighter/MiG15.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "MIG15PRC_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "PRC_MIG19_mesh"
+		file = "gfx/models/units/planes/PRC/fighter/MiG19.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "MIG19PRC_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "PRC_Q5_mesh"
+		file = "gfx/models/units/planes/PRC/fighter/MiG19.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "MIG19PRC_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "PRC_MIG21_mesh"
+		file = "gfx/models/units/planes/PRC/fighter/MiG21.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "MIG21_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "PRC_MIG23_mesh"
+		file = "gfx/models/units/planes/PRC/fighter/mig23.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "mig23_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "PRC_SU27_mesh"
+		file = "gfx/models/units/planes/PRC/fighter/su27.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "su27_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "PRC_SU7_mesh"
+		file = "gfx/models/units/planes/PRC/cas/su7.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "su7_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "PRC_SU24_mesh"
+		file = "gfx/models/units/planes/PRC/cas/su7.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "su24_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "PRC_SU11_mesh"
+		file = "gfx/models/units/planes/PRC/interceptor/su11.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "su11_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "PRC_MIG31_mesh"
+		file = "gfx/models/units/planes/PRC/interceptor/mig31.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "mig31.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "PRC_BE6_mesh"
+		file = "gfx/models/units/planes/PRC/nav/Be6.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "Be6.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "PRC_TU2_mesh"
+		file = "gfx/models/units/planes/PRC/nav/Tu2.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "Tu2_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "PRC_TU16_mesh"
+		file = "gfx/models/units/planes/PRC/stratbomber/tu16.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "Tu16_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "PRC_TU22_mesh"
+		file = "gfx/models/units/planes/PRC/stratbomber/tu22.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "Tu22_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "PRC_TU95_mesh"
+		file = "gfx/models/units/planes/PRC/stratbomber/tu95.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "Tu95_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "PRC_IL28_mesh"
+		file = "gfx/models/units/planes/PRC/tacbomber/il28.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "il28.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "PRC_MIG27_mesh"
+		file = "gfx/models/units/planes/PRC/tacbomber/mig27.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "mig27_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "PRC_YAK28_mesh"
+		file = "gfx/models/units/planes/PRC/tacbomber/YAK28.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "Yak28_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "PRC_IL76_mesh"
+		file = "gfx/models/units/planes/SOV/transport/il_76.mesh"
+		animation = { id = "idle" type = "il76_idle_animation" }
+		scale = 1.00
+	meshsettings = {
+			texture_diffuse = "prc_il_76_diffuse.dds"
+		}
+	}
+}

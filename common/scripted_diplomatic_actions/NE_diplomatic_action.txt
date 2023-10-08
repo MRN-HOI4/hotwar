@@ -1,0 +1,805 @@
+scripted_diplomatic_actions = {
+
+###########weapon trade function##########
+	offer_weapon_trade = {
+	
+		allowed = {
+			always = yes
+		}
+		visible = {
+			always = yes
+		}
+		selectable = { 
+			NOT = {
+				has_relation_modifier = {
+					target = ROOT
+					modifier = freeze_static_modifier
+				}
+				has_war_with = ROOT
+			}
+		}
+
+		requires_acceptance = yes
+		show_acceptance_on_action_button = yes  # set to no if acceptance shouldn't be displayed on the action button
+		##cost = 10
+		cost = 0
+
+		icon = 1
+
+		on_sent_effect = {
+			set_country_flag = {
+				flag = arms_sale_waiting
+				days = 60	##interval
+				value = 1
+			}
+			ROOT = {
+				if = {##########if ai,go this one
+					limit = {
+						is_ai = yes
+					}
+					NE_ai_select_weapons = yes
+				}
+				calculate_available_point = yes
+			}
+		}
+		complete_effect = {
+			weapon_import_effets = yes
+			NE_reset_trade_waiting_flag = yes
+		}
+		
+		reject_effect = {
+			####return_trade_cost = yes
+			NE_reset_trade_waiting_flag = yes
+		}
+		send_scripted_gui = economy_weapon_lists
+		
+		reset_send_effect = {
+			clear_arm_trade_all = yes
+		}
+		
+		can_be_sent = { # send button will be disabled if no
+			AND = {
+				check_variable = {
+					var = econo_total_cost
+					value = 0.1
+					compare = greater_than_or_equals
+				}
+				check_variable = { econo_total_cost < Root.econo_purchase_limit }
+			}
+		}
+		
+		receive_description = trade_receive_info ##
+
+		#receive_scripted_gui = offer_weapon_trade_received
+
+		ai_desire = {#>100->ai go this
+			base = -10
+			modifier = {
+				ROOT = {
+					has_war = yes
+				}
+			add = 50
+			}
+			modifier = {
+				NOT = { has_war = yes }
+			add = 10
+			}
+			modifier = {
+				NOT = { has_government = ROOT }#not same party
+			add = -20
+			}
+			modifier = {
+				is_ally_with = ROOT
+			add = 10
+			}
+			modifier = {
+				has_non_aggression_pact_with = ROOT
+			add = 5
+			}
+			modifier = {
+				ROOT = {
+					any_allied_country = {
+						has_war_with = PREV.PREV ##ally at war with target
+					}
+				}
+			add = -50
+			}			
+			modifier = {
+				check_variable = { num_equipment@infantry_equipment > 10000 }
+			add = 15
+			}
+			modifier = {
+				check_variable = { num_equipment@infantry_equipment < 1000 }
+			add = -20
+			}
+			modifier = {
+				check_variable = { num_equipment@infantry_equipment = 0 }#nothing export
+			add = -100
+			}
+			modifier = {
+				check_variable = { num_equipment@support_equipment > 1000 }
+			add = 10
+			}
+			modifier = {
+				check_variable = { num_equipment@support_equipment < 100 }
+			add = -10
+			}
+			modifier = {
+				check_variable = { num_equipment@artillery_equipment > 1000 }
+			add = 10
+			}
+			modifier = {
+				check_variable = { num_equipment@artillery_equipment < 100 }
+			add = -10
+			}
+			modifier = {
+				check_variable = { num_equipment@fighter_equipment > 100 }
+			add = 10
+			}
+			modifier = {
+				has_relation_modifier = {##case of mtr
+					target = ROOT
+					modifier = trade_partner_static_modifier
+				}
+			add = 50
+			}
+			modifier = {
+				has_country_flag = arms_sale_waiting##receiver has been sended
+			add = -200
+			}
+			modifier = {
+				ROOT = {
+					check_variable = { weapon_import_research > 0 }##already imported
+				}
+			add = -200
+			}
+		}
+		ai_acceptance = {
+			base_will = {
+				#base = 200
+				base = -10
+			}
+			
+            between_opinion = {
+                base = 0                
+                modifier = {
+					has_opinion = {
+						target = ROOT
+						value > 50
+					}
+				add = 15
+                }
+                modifier = {
+					has_opinion = {
+						target = ROOT
+						value > 20
+					}
+				add = 5
+                }
+                modifier = {
+					has_opinion = {
+						target = ROOT
+						value < -20
+					}
+				add = -5
+                }
+                modifier = {
+					has_opinion = {
+						target = ROOT
+						value < -50
+					}
+				add = -15
+                }
+                modifier = {
+					is_puppet_of = ROOT 
+				add = 50
+                }
+            }
+			selected_weapons = {#player only
+				base = 0
+				modifier = {
+					ROOT = { is_ai = no }
+				add = var:trade_attitude_value
+				}
+			}
+			at_war = {
+                base = 0                
+                modifier = {
+					has_war = yes
+				add = -10
+                }			
+			}
+			ai_group = {##sender is AI
+                base = 0                
+                modifier = {
+					ROOT = { is_ai = yes }
+				add = 20
+                }
+			}
+			as_mtr = {
+				base = 0
+				modifier = {
+					has_relation_modifier = {
+						target = ROOT
+						modifier = trade_partner_static_modifier
+					}
+				add = 20
+				}
+			}
+		}
+	}
+############form major trade partner function###########
+	form_major_trade_partner = {
+		allowed = {
+			always = yes
+		}
+		visible = {
+			ROOT = {
+				NOT = {
+					has_relation_modifier = {
+						target = PREV
+						modifier = trade_partner_static_modifier
+					}
+					has_relation_modifier = {
+						target = PREV
+						modifier = freeze_static_modifier
+					}
+					has_idea = closed_economy
+				}
+			}
+		}
+		selectable = {
+			IF = {
+				limit = {
+					OR = {
+					has_war_with = ROOT
+					has_idea = closed_economy
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = FORM_MTR_DENIED
+					always = no
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = FORM_MTR_ALLOWED
+					always = yes
+				}
+			}
+		}
+		cost = 15
+		command_power = 0
+		requires_acceptance = yes
+		show_acceptance_on_action_button = yes
+		icon = 1
+		on_sent_effect = {
+			set_country_flag = {
+				flag = trade_partner_waiting
+				days = 30	##interval
+				value = 1
+			}
+		}
+		complete_effect = {
+			form_mtp_effects = yes
+		}
+		reject_effect = {####prolong trade_partner_waiting
+			form_mtr_disregard = yes
+		}
+		reset_send_effect = {
+		}
+		send_description = send_form_mtr_info
+		receive_description = receive_form_mtr_info
+
+		ai_desire = {
+			base = 0
+			modifier = {
+				is_neighbor_of = ROOT
+			add = 15
+			}
+			modifier = {
+				NOT = { is_neighbor_of = ROOT }
+			add = -5
+			}
+			modifier = {
+				has_government = ROOT #same party
+			add = 5
+			}
+			modifier = {
+				has_opinion = {
+					target = ROOT
+					value > 50
+				}
+			add = 30
+			}
+			modifier = {
+				has_opinion = {
+					target = ROOT
+					value > 20
+				}
+			add = 10
+			}
+			modifier = {
+				has_opinion = {
+					target = ROOT
+					value < -20
+				}
+			add = -10
+			}
+			modifier = {
+				has_opinion = {
+					target = ROOT
+					value < -50
+				}
+			add = -30
+			}
+			modifier = {
+				is_ally_with = ROOT
+			add = 10
+			}
+			modifier = {
+				is_commensurate_economy = yes
+			add = 20
+			}
+			modifier = {
+				ROOT = {
+					any_allied_country = {
+						has_war_with = PREV.PREV ##ally at war with target
+					}
+				}
+			add = -25
+			}
+			modifier = {
+				has_war_with = ROOT
+			add = -50
+			}
+			modifier = {###avoid repeat
+				has_country_flag = trade_partner_waiting
+			add = -300
+			}
+		}
+		ai_acceptance = {
+			distance = {
+                base = 0
+                modifier = {
+					is_neighbor_of = ROOT
+				add = 10
+                }
+                modifier = {
+					NOT = { is_neighbor_of = ROOT }
+				add = -10
+                }				
+			}
+			relation = {
+                base = 0                
+                modifier = {
+					has_opinion = {
+						target = ROOT
+						value > 50
+					}
+				add = 15
+                }
+                modifier = {
+					has_opinion = {
+						target = ROOT
+						value > 20
+					}
+				add = 5
+                }
+                modifier = {
+					has_opinion = {
+						target = ROOT
+						value < -20
+					}
+				add = -5
+                }
+                modifier = {
+					has_opinion = {
+						target = ROOT
+						value < -50
+					}
+				add = -15
+                }
+                modifier = {
+					is_puppet_of = ROOT 
+				add = 25
+                }		
+			}
+			party_fit = {
+                base = 0                
+                modifier = {
+					NOT = { has_government = ROOT }#not same party
+				add = -10
+                }
+			}
+			ally_or_not = {
+                base = 0                
+                modifier = {
+					is_ally_with = ROOT
+				add = 10
+                }				
+			}
+			befitting_economy = {
+                base = 0                
+                modifier = {
+					is_commensurate_economy = yes
+				add = 10
+                }				
+			}			
+		}
+	}
+	cancel_major_trade_partner = {
+		allowed = {
+			always = yes
+		}
+		visible = {
+			ROOT = {
+				has_relation_modifier = {
+				target = PREV
+				modifier = trade_partner_static_modifier
+				}
+			}
+		}
+		selectable = {
+			IF = {
+				limit = {
+					ROOT = {
+						OR = {
+							is_subject_of  = PREV
+							is_puppet_of  = PREV
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = CANCEL_MTR_DENIED
+					always = no
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = CANCEL_MTR_ALLOWED
+					always = yes
+				}
+			}
+		}
+		cost = 20
+		command_power = 0
+		requires_acceptance = no##
+		icon = 1
+		complete_effect = {
+			cancel_mtp_effects = yes
+		}
+		send_description = send_cancel_mtr_info
+		receive_description = receive_cancel_mtr_info
+
+		ai_desire = {
+			base = 0
+			modifier = {
+				has_war_with = ROOT
+				####
+			add = 100
+			}
+			modifier = {
+				ROOT = {
+					any_allied_country = {
+						has_war_with = PREV.PREV ##ally at war with target
+					}
+				}
+			add = 20
+			}
+			modifier = {
+				has_opinion = {
+					target = ROOT
+					value < -50
+				}
+			add = 50
+			}
+		}
+	}
+############freezing assets function########	
+	freeze_assets = {
+
+		allowed = {
+			always = yes
+		}
+		visible = {
+			ROOT = {
+				NOT = {
+					has_relation_modifier = {
+						target = PREV
+						modifier = freeze_static_modifier
+					}
+					has_idea = closed_economy
+					is_ally_with = PREV
+				}
+			}
+			PREV = {
+				NOT = { is_ally_with = ROOT }
+			}
+		}
+
+		selectable = {
+			IF = {
+				limit = {
+					PREV = {
+						OR = {
+						has_war_together_with = ROOT
+						is_in_faction_with = ROOT 
+						has_non_aggression_pact_with = ROOT 
+						has_war_with = ROOT
+						#is_subject_of = ROOT 
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = FREEZE_DENIED
+					always = no
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = FREEZE_ALLOWED
+					always = yes
+				}
+			}
+		}
+
+		cost = 20
+		command_power = 0
+
+		show_acceptance_on_action_button = no
+
+		requires_acceptance = no
+
+		accept_title = IMPOSE_ASSET_FREEZING_TARGET_TITLE
+		accept_description = IMPOSE_ASSET_FREEZING_TARGET_DESC
+
+		can_be_sent = {
+			always = yes
+		}
+
+		icon = 1
+
+		complete_effect = {
+			impose_asset_freezing = yes
+		}
+		send_description = send_freeze_info
+
+		ai_desire = {
+			base = 1
+			modifier = { #If opinion is lower than -50 they will impose embargo if no puppet 
+				ROOT = {
+					AND = {
+						is_puppet = no
+						has_opinion = {
+							target = PREV
+							value < -50
+						}
+					}
+				}
+			add = 50
+			}
+			modifier = { #enenemy of my enenemy
+				ROOT = {
+					any_enemy_country = {
+						has_war_with = PREV.PREV
+					}
+				}
+			add = -300
+			}
+			modifier = {
+				has_government = ROOT #same party
+			add = -50
+			}
+			modifier = { #If opinion is higher than -50 they won't impose embargo if no puppet
+				ROOT = {
+					AND = {
+						is_puppet = no
+						has_opinion = {
+							target = PREV
+							value > -50
+						}
+					}
+				}
+			add = -50
+			}
+			modifier = { #Counter Embargo
+				PREV = {
+					has_relation_modifier = {
+						target = ROOT
+						modifier = freeze_static_modifier
+					}
+				}
+			add = 100
+			}
+			modifier = { #if opinion is higher than 50 they'll never impose embargo
+				ROOT = {
+					has_opinion = {
+						target = PREV
+						value > 49
+					}
+				}
+			add = -100
+			}
+			modifier = { #if ally is at war with target they'll impose embargo regardless of autonomy state 
+				ROOT = {
+					any_allied_country = {
+						has_war_with = PREV.PREV
+					}
+				}
+			add = 300
+			}
+			modifier = { #if puppet they'll follow master #fixed DLC use now without any DLC
+						AND = {
+							ROOT = {
+								is_puppet = yes
+							}
+							any_other_country = {
+								has_subject = ROOT
+								has_relation_modifier = {
+									target = PREV
+									modifier = freeze_static_modifier
+								}
+							}
+						}
+			add = 300
+			}
+			modifier = {
+				ROOT = {
+					has_country_flag = impose_asset_recess
+				}
+			add = -300
+			}
+		}
+	}
+
+	cancel_freeze_assets = {
+		allowed = {
+			always = yes
+		}
+		visible = {
+			ROOT = {
+				has_relation_modifier = {
+				target = PREV
+				modifier = freeze_static_modifier
+				}
+			}
+		}
+		selectable = {
+			IF = {
+				limit = {
+					ROOT = {
+						has_relation_modifier = { target = PREV modifier = freeze_static_modifier }
+					}
+					PREV = {
+						AND = {
+							OR = {
+							is_subject_of = ROOT
+							NOT = { has_war_with = ROOT }
+							}
+						}
+					}
+				}
+				custom_trigger_tooltip = {
+					tooltip = CANCEL_FREEZING_ALLOWED
+					always = yes
+				}
+			}
+			else = {
+				custom_trigger_tooltip = {
+					tooltip = CANCEL_FREEZING_DENIED
+					always = no
+				}
+			}
+		}
+		cost = 10
+		command_power = 0
+		requires_acceptance = no
+		show_acceptance_on_action_button = no
+		accept_title = CANCEL_FREEZING_TARGET_TITLE
+		accept_description = CANCEL_FREEZING_TARGET_DESC
+		can_be_sent = {
+			always = yes
+		}
+		icon = 1
+		complete_effect = {
+			cancel_freezing = yes
+		}
+		send_description = send_cancel_freeze_info
+		ai_desire = {
+			base = 1
+			modifier = { #if opinion is higher -50 they'll cancel emb if not puppet
+				ROOT = {
+					AND = {
+						is_puppet = no
+						has_opinion = {
+							target = PREV
+							value > -50
+						}
+					}
+				}
+			add = 50
+			}
+			modifier = { #enenemy of my enenemy
+				ROOT = {
+					any_enemy_country = {
+						has_war_with = PREV.PREV
+					}
+				}
+			add = 300
+			}
+			modifier = {
+				has_government = ROOT #same party
+			add = 25
+			}
+			modifier = { #if opinion is lower -50 they won't cancel if not puppet
+				ROOT = {
+					AND = {
+						is_puppet = no
+						has_opinion = {
+							target = PREV
+							value < -50
+						}
+					}
+				}
+			add = -50
+			}
+			modifier = { #if ally has war with target they won't cancel
+				ROOT = {
+					any_allied_country = {
+						has_war_with = PREV.PREV
+					}
+				}
+			add = -300
+			}
+			modifier = { #see above #won't cancel if master has embargo
+						AND = {
+							ROOT = {
+								is_puppet = yes
+							}
+							any_other_country = {
+								has_subject = ROOT
+								has_relation_modifier = {
+									target = PREV
+									modifier = freeze_static_modifier
+								}
+							}
+						}
+			add = -300
+			}
+			modifier = { #this is used to lift embargo when master has lifted
+				AND = {
+					ROOT = {
+						AND = {
+							is_puppet = yes
+							has_relation_modifier = {
+								target = PREV
+								modifier = freeze_static_modifier
+							}
+						}
+					}
+					any_other_country = {
+						has_subject = ROOT
+						NOT = {
+							has_relation_modifier = {
+								target = PREV
+								modifier = freeze_static_modifier
+							}
+						}
+					}
+				}
+			add = 300
+			}
+
+			modifier = { #Counter Embargo
+				PREV = {
+					has_relation_modifier = {
+						target = ROOT
+						modifier = freeze_static_modifier
+					}
+				}
+			add = -300
+			}
+		}
+	}
+}

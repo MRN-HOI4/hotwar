@@ -1,0 +1,627 @@
+﻿capital = 48
+
+#TROOPS
+oob = "BUL_1936" #VANILLA & DLC
+set_convoys = 5 #VANILLA & DLC
+
+set_stability = 1.0
+set_war_support = 1.0
+add_command_power = 999
+
+#기본 연구
+set_technology = {
+	#보병
+	support_weapons = 1
+	support_weapons2 = 1
+	support_weapons3 = 1
+	support_weapons4 = 1
+	night_vision = 1
+	night_vision2 = 1
+	night_vision3 = 1
+	infantry_weapons = 1
+	infantry_weapons1 = 1
+	infantry_weapons2 = 1
+	improved_infantry_weapons = 1
+	improved_infantry_weapons_2 = 1
+	advanced_infantry_weapons = 1
+	advanced_infantry_weapons2 = 1
+	infantry_cw1 = 1
+	infantry_at = 1
+	infantry_at2 = 1
+	infantry_at3 = 1
+	motorised_infantry = 1
+	motorised_infantry2 = 1
+	mechanised_infantry = 1
+	mechanised_infantry2 = 1
+	mechanised_infantry3 = 1
+	mechanised_infantry4 = 1
+	motorized_rocket_unit = 1
+	motorized_rocket_unit2 = 1
+	amphibious_mechanized_infantry = 1
+	amphibious_mechanized_infantry_2 = 1
+	amphibious_mechanized_infantry_3 = 1
+	armored_car1 = 1
+	armored_car2 = 1
+	armored_car3 = 1
+	armored_car4 = 1
+	armored_car_at_upgrade = 1
+	marines = 1
+	marines2 = 1
+	marines3 = 1
+	marines4 = 1
+	paratroopers = 1
+	paratroopers2 = 1
+	paratroopers3 = 1
+	paratroopers4 = 1
+	commandos = 1
+	commandos2 = 1
+	commandos3 = 1
+	tech_mountaineers = 1
+	tech_mountaineers2 = 1
+	tech_mountaineers3 = 1
+	tech_mountaineers4 = 1
+	forestis = 1
+	forestis2 = 1
+	forestis3 = 1
+	forestis4 = 1
+	desertis = 1
+	desertis2 = 1
+	desertis3 = 1
+	desertis4 = 1
+	shocks = 1
+	shocks2 = 1
+	shocks3 = 1
+	shocks4 = 1
+	tech_special_forces = 1
+	elite_forces = 1
+	#지원중대
+	tech_support = 1
+	tech_engineers = 1
+	tech_engineers2 = 1
+	tech_engineers3 = 1
+	tech_engineers4 = 1
+	tech_engineers5 = 1
+	tech_recon = 1
+	tech_recon2 = 1
+	tech_recon3 = 1
+	tech_recon4 = 1
+	tech_recon5 = 1
+	tech_military_police = 1
+	tech_military_police2 = 1
+	tech_military_police3 = 1
+	tech_military_police4 = 1
+	tech_military_police5 = 1
+	tech_maintenance_company = 1
+	tech_maintenance_company2 = 1
+	tech_maintenance_company3 = 1
+	tech_maintenance_company4 = 1
+	tech_maintenance_company5 = 1
+	tech_field_hospital = 1
+	tech_field_hospital2 = 1
+	tech_field_hospital3 = 1
+	tech_field_hospital4 = 1
+	tech_field_hospital5 = 1
+	tech_logistics_company = 1
+	tech_logistics_company2 = 1
+	tech_logistics_company3 = 1
+	tech_logistics_company4 = 1
+	tech_logistics_company5 = 1
+	tech_signal_company = 1
+	tech_signal_company2 = 1
+	tech_signal_company3 = 1
+	tech_signal_company4 = 1
+	tech_signal_company5 = 1
+	basic_train = 1
+	wartime_train = 1
+	armored_train = 1
+	train_50 = 1
+	#기갑
+	gwtank_chassis = 1
+	basic_light_tank_chassis = 1
+	improved_light_tank_chassis = 1
+	advanced_light_tank_chassis = 1
+	modern_light_tank_1 = 1
+	modern_light_tank_2 = 1
+	amphibious_tank_chassis = 1
+	amphibious_drive = 1
+	basic_medium_tank_chassis = 1
+	improved_medium_tank_chassis = 1
+	advanced_medium_tank_chassis = 1
+	main_battle_tank_chassis = 1
+	main_battle_tank_chassis_1 = 1
+	cw_heavy_tank_chassis = 1
+	cw_heavy_tank_chassis_1 = 1
+	basic_heavy_tank_chassis = 1
+	improved_heavy_tank_chassis = 1
+	advanced_heavy_tank_chassis = 1
+	super_heavy_tank_chassis = 1
+	armor_tech_1 = 1
+	armor_tech_2 = 1
+	armor_tech_3 = 1
+	armor_tech_4 = 1
+	armor_tech_5 = 1
+	engine_tech_1 = 1
+	engine_tech_2 = 1
+	engine_tech_3 = 1
+	engine_tech_4 = 1
+	engine_tech_5 = 1
+	#포
+	gw_artillery = 1
+	interwar_artillery = 1
+	artillery1 = 1
+	artillery2 = 1
+	artillery3 = 1
+	artillery4 = 1
+	artillery5 = 1
+	cwart1 =1 
+	rocket_artillery = 1
+	rocket_artillery2 = 1
+	rocket_artillery3 = 1
+	rocket_artillery4 = 1
+	rocket_artillery5 = 1
+	interwar_antiair = 1
+	antiair1 = 1
+	antiair2 = 1
+	antiair3 = 1
+	antiair4 = 1
+	antiair5 = 1
+	antiair6 = 1
+	interwar_antitank = 1
+	antitank1 = 1
+	antitank2 = 1
+	antitank3 = 1
+	antitank4 = 1
+	antitank5 = 1
+	antitank6 = 1
+	#해군
+	early_ship_hull_light = 1
+	basic_ship_hull_light = 1
+	improved_ship_hull_light = 1
+	advanced_ship_hull_light = 1
+	ship_hull_light_5 = 1
+	smoke_generator = 1
+	basic_depth_charges = 1
+	improved_depth_charges = 1
+	advanced_depth_charges = 1
+	modern_depth_charges = 1
+	depth_charges_5 = 1
+	sonar = 1
+	improved_sonar = 1
+	early_ship_hull_cruiser = 1
+	basic_ship_hull_cruiser = 1
+	improved_ship_hull_cruiser = 1
+	advanced_ship_hull_cruiser = 1
+	ship_hull_cruiser_5 = 1
+	improved_airplane_launcher = 1
+	basic_helicopter_launcher = 1
+	basic_cruiser_armor_scheme = 1
+	improved_cruiser_armor_scheme = 1
+	advanced_cruiser_armor_scheme = 1
+	early_ship_hull_heavy = 1
+	basic_ship_hull_heavy = 1
+	ship_hull_super_heavy = 1
+	improved_ship_hull_heavy = 1
+	advanced_ship_hull_heavy = 1
+	basic_heavy_armor_scheme = 1
+	improved_heavy_armor_scheme = 1
+	early_ship_hull_carrier = 1
+	basic_ship_hull_carrier = 1
+	improved_ship_hull_carrier = 1
+	advanced_ship_hull_carrier = 1
+	ship_hull_carrier_5 = 1
+	basic_torpedo = 1
+	magnetic_detonator = 1
+	homing_torpedo = 1
+	electric_torpedo = 1
+	improved_ship_torpedo_launcher = 1
+	advanced_ship_torpedo_launcher = 1
+	modern_ship_torpedo_launcher = 1
+	ship_torpedo_launcher_5 = 1
+	early_ship_hull_submarine = 1
+	basic_ship_hull_submarine = 1
+	improved_ship_hull_submarine = 1
+	advanced_ship_hull_submarine = 1
+	ship_hull_submarine_5 = 1
+	basic_submarine_snorkel = 1
+	improved_submarine_snorkel = 1
+	snorkel50 = 1
+	basic_battery = 1
+	basic_light_battery = 1
+	improved_light_battery = 1
+	advanced_light_battery = 1
+	basic_light_shell = 1
+	improved_light_shell = 1
+	basic_medium_battery = 1
+	improved_medium_battery = 1
+	advanced_medium_battery = 1
+	basic_medium_shell = 1
+	improved_medium_shell = 1
+	basic_heavy_battery = 1
+	improved_heavy_battery = 1
+	advanced_heavy_battery = 1
+	basic_heavy_shell = 1
+	improved_heavy_shell = 1
+	basic_secondary_battery = 1
+	improved_secondary_battery = 1
+	dp_secondary_battery = 1
+	damage_control_1 = 1
+	damage_control_2 = 1
+	damage_control_3 = 1
+	fire_control_methods_1 = 1
+	fire_control_methods_2 = 1
+	fire_control_methods_3 = 1
+	mtg_transport = 1
+	mtg_landing_craft = 1
+	mtg_tank_landing_craft = 1
+	#공학
+	electronic_mechanical_engineering = 1
+	radio = 1
+	radio_detection = 1
+	decimetric_radar = 1
+	improved_decimetric_radar = 1
+	centimetric_radar = 1
+	improved_centimetric_radar = 1
+	advanced_centimetric_radar = 1
+	mechanical_computing = 1
+	computing_machine = 1
+	improved_computing_machine = 1
+	advanced_computing_machine = 1
+	basic_vacuum_computer = 1
+	basic_fire_control_system = 1
+	improved_fire_control_system = 1
+	advanced_fire_control_system = 1
+	experimental_rockets = 1
+	rocket_engines = 1
+	improved_rocket_engines = 1
+	advanced_rocket_engines = 1
+	jet_engines = 1
+	heli_engines = 1
+	#산업
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	advanced_machine_tools = 1
+	assembly_line_production = 1
+	flexible_line = 1
+	streamlined_line = 1
+	advanced_line_production = 1
+	advanced_line_production2 = 1
+	improved_equipment_conversion = 1
+	advanced_equipment_conversion = 1
+	fuel_silos = 1
+	fuel_refining = 1
+	fuel_refining2 = 1
+	fuel_refining3 = 1
+	fuel_refining4 = 1
+	fuel_refining5 = 1
+	synth_oil_experiments = 1
+	oil_processing = 1
+	improved_oil_processing = 1
+	advanced_oil_processing = 1
+	modern_oil_processing = 1
+	rubber_processing = 1
+	improved_rubber_processing = 1
+	advanced_rubber_processing = 1
+	modern_rubber_processing = 1
+	modern_rubber_processing1 = 1
+	construction1 = 1
+	excavation1 = 1
+	construction2 = 1
+	excavation2 = 1
+	construction3 = 1
+	excavation3 = 1
+	construction4 = 1
+	excavation4 = 1
+	construction5 = 1
+	excavation5 = 1
+	construction6 = 1
+	excavation6 = 1
+	construction7 = 1
+	excavation7 = 1
+}
+#You don't want Bulgarian party names? Just remove these lines
+set_party_name = { # DLC
+	ideology = communism
+	name = BUL_communism_party_bulgarian
+	long_name = BUL_communism_party_bulgarian_long
+}
+set_party_name = { # DLC
+	ideology = fascism
+	name = BUL_fascism_party_bulgarian
+	long_name = BUL_fascism_party_bulgarian_long
+}
+
+if = { #DLC
+	limit = {
+		has_dlc = "Battle for the Bosporus"
+	}
+
+	#You don't want Bulgarian party names? Just remove these lines
+	set_party_name = { # DLC
+		ideology = democratic
+		name = BUL_democratic_party_bftb
+		long_name = BUL_democratic_party_bftb_bulgarian_long
+	}	
+
+	###################
+	#### 3D MODELS ####
+	###################
+
+	#Cosmetic tags used (3D models will look for these cosmetic tags when hooking themselves):
+	#BUL_communism
+	#BUL_democratic
+	#BUL_fascism
+	#BUL_neutrality
+	set_cosmetic_tag = BUL_neutrality
+
+	#IDEAS SETUP
+	add_ideas = { #DLC
+		BUL_army_restrictions
+		volunteer_only
+		AST_citizen_military_forces
+		SPR_soviet_industrial_aid
+		WTO
+	}
+
+	#Army limitations due to Treaty of Neuilly sur Seine
+	set_rule = { #DLC
+		can_not_declare_war = yes
+	}
+	country_lock_all_division_template = yes
+
+	#SET FLAGS AND VARIABLES
+	#Internal Affairs
+	set_country_flag = BUL_factions_unlocked_flag
+	set_variable = { BUL_zveno_loyalty = 15 }
+	set_variable = { BUL_zveno_popularity = 50 }
+	set_variable = { BUL_bs_loyalty = 25 }
+	set_variable = { BUL_bs_popularity = 60 }
+	set_variable = { BUL_bzns_loyalty = 30 }
+	set_variable = { BUL_bzns_popularity = 70 }
+	set_variable = { BUL_nsm_loyalty = 60 }
+	set_variable = { BUL_nsm_popularity = 40 }
+	set_variable = { BUL_faction_interaction_cost_standard = 20 }
+	set_variable = { BUL_broad_socialist_opression_cost_standard = 20 }
+	set_variable = { BUL_faction_days_remove_very_low = 7 } #Allow Speech, Discredit, Repress
+	set_variable = { BUL_faction_days_remove_low = 14 } #Joint Act, Ban Media, Anti-faction Speech
+	set_variable = { BUL_faction_days_remove_medium = 21 } #Bolster Zveno, Imprison leaders
+	set_variable = { BUL_faction_days_remove_high = 30 } #Legalize, Fund, Appoint, Raid, Destroy
+	set_variable = { BUL_faction_days_remove_very_high = 60 } #Integrate
+	set_variable = { BUL_faction_days_reenable_low = 7 } #Allow Speech, Discredit
+	set_variable = { BUL_faction_days_reenable_medium = 14 } #Joint Act, Anti-faction Speech
+	set_variable = { BUL_faction_days_reenable_high = 60 } #Fund
+	set_variable = { BUL_faction_days_reenable_very_high = 120 } #Raid
+	set_variable = { BUL_faction_low_increase = 5 }
+	set_variable = { BUL_faction_medium_increase = 10 }
+	set_variable = { BUL_faction_high_increase = 15 }
+	set_variable = { BUL_faction_low_decrease = -5 }
+	set_variable = { BUL_faction_medium_decrease = -10 }
+	set_variable = { BUL_faction_high_decrease = -15 }
+	set_variable = { BUL_zveno_coup_timer_delay_low = 7 } #Time to be added to zveno coup timer when completing certain internal faction decisions related to the Zveno
+	set_variable = { BUL_zveno_coup_timer_delay_medium = 15 } #Time to be added to zveno coup timer when completing certain internal faction decisions related to the Zveno
+	set_variable = { BUL_zveno_coup_timer_delay_high = 30 } #Time to be added to zveno coup timer when completing certain internal faction decisions related to the Zveno
+	set_variable = { BUL_ff_missions_base_days_to_add = 60 } #Base amount of days to be added to Impending FF Coup mission
+	set_variable = { BUL_ff_missions_popularity_factor = 1 } #More popularity means more days to add
+	set_variable = { BUL_ff_missions_loyalty_factor = 1 } #More loyalty means less days to add
+	set_variable = { BUL_ff_preventive_actions_against_coup = 0 } #This will be used to reduce the chances of the FF staging the coup after they have planned it
+	set_variable = { BUL_ff_preventive_actions_base_value = 5 } #The value added to the variable above every time a decision to prevent the coup is taken
+	set_variable = { BUL_ff_preventive_actions_cap_value = 50 } #This is a cap to the player's ability to prevent the coup
+	set_variable = { BUL_purchase_equipment_cost = 25 }
+	set_variable = { BUL_foreign_military_agreements_cost = 50 }
+	set_variable = { BUL_german_civ_industries_cost = 75 }
+	set_variable = { BUL_british_civ_industries_cost = 75 }
+	set_variable = { BUL_soviet_civ_industries_cost = 75 }
+	set_variable = { BUL_foreign_industry_consumer_goods_modifier = 0 } #Used by Foreign Industry Dynamic Modifier
+	set_variable = { BUL_foreign_industry_production_efficiency_modifier = -0.05 } #Used by Foreign Industry Dynamic Modifier
+	set_variable = { BUL_foreign_industry_construction_speed_modifier = -0.1 } #Used by Foreign Industry Dynamic Modifier
+	set_variable = { BUL_german_industrial_investments = 0 }
+	set_variable = { BUL_british_industrial_investments = 0 }
+	set_variable = { BUL_soviet_industrial_investments = 0 }
+	set_variable = { BUL_industrial_investments_basic_cap = 3 }
+	set_variable = { BUL_industrial_investments_medium_cap = 5 }
+	set_variable = { BUL_industrial_investments_max_cap = 10 }
+	#IMRO
+	set_variable = { BUL_imro_garrisons_mp_value = 5000 }
+	#Purchase foreign equipment
+	set_variable = { BUL_quantity_purchased_infantry_equipment = 1000 }
+	set_variable = { BUL_quantity_purchased_artillery = 100 }
+	set_variable = { BUL_quantity_purchased_motorized = 100 }
+	set_variable = { BUL_quantity_purchased_mechanized = 50 }
+	set_variable = { BUL_quantity_purchased_armored_car = 50 }
+	set_variable = { BUL_quantity_purchased_light_armor = 40 }
+	set_variable = { BUL_quantity_purchased_medium_armor = 20 }
+	set_variable = { BUL_quantity_purchased_heavy_armor = 10 }
+	set_variable = { BUL_quantity_purchased_fighter = 40 }
+	set_variable = { BUL_quantity_purchased_naval_bomber = 30 }
+	set_variable = { BUL_quantity_purchased_tactical_bomber = 20 }
+	#Plot Against Boris
+	set_variable = { BUL_regicide_execution_time = 90 }
+	#Free Balkan States dynamic modifier (NS)
+	set_variable = { BUL_our_duty_in_the_balkans_consumer_goods_modifier = -0.01 }
+	set_variable = { BUL_our_duty_in_the_balkans_stability_modifier = 0.05 }
+	#Monthly extra chance of Boris dieing of "natural causes" (increased by 5 each month from 1943.1.1)
+	set_variable = { BUL_tsar_boris_death_monthly_probability_factor = 0 }
+
+	randomize_variable = {
+		var = BUL_tsars_destination
+		distribution = uniform
+		min = 2
+		max = 13
+	}
+	round_variable = BUL_tsars_destination
+	randomize_variable = {
+		var = BUL_march_destination
+		distribution = uniform
+		min = 2
+		max = 13
+	}
+	round_variable = BUL_march_destination
+	48 = { set_state_flag = BUL_initial_bulgarian_state_flag }
+	212 = { set_state_flag = BUL_initial_bulgarian_state_flag }
+	801 = { set_state_flag = BUL_initial_bulgarian_state_flag }
+	211  = { set_state_flag = BUL_initial_bulgarian_state_flag }
+	77 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
+	803 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
+	106 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
+	731 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
+	184 = { set_state_flag = BUL_historical_bulgarian_claim_flag }
+
+	#International Relations
+	add_opinion_modifier = { 
+		target = GRE
+		modifier = BFTB_incongruous_neighbors
+	}
+	add_opinion_modifier = { 
+		target = ROM
+		modifier = BFTB_incongruous_neighbors
+	}
+	add_opinion_modifier = { 
+		target = TUR
+		modifier = BFTB_incongruous_neighbors
+	}
+	add_opinion_modifier = { 
+		target = YUG
+		modifier = BFTB_incongruous_neighbors
+	}
+
+	#DLC POLIICS
+	set_popularities = { #DLC
+		democratic = 0
+		fascism = 0
+		neutrality = 0
+		communism = 100
+	}
+
+	recruit_character = BUL_boris_iii
+	recruit_character = BUL_georgi_dimitrov
+	recruit_character = BUL_nikola_mushanov
+	recruit_character = BUL_hristo_lukov
+	recruit_character = BUL_atanas_shalapatov
+	recruit_character = BUL_nikola_mihov
+	recruit_character = BUL_georgi_popov
+	recruit_character = BUL_vasil_boydev
+	recruit_character = BUL_ivan_markov
+	recruit_character = BUL_georgi_markov
+	recruit_character = BUL_asen_nikolov
+	recruit_character = BUL_konstantin_lukash
+	recruit_character = BUL_nikola_stoychev
+	recruit_character = BUL_damian_velchev
+	recruit_character = BUL_angel_dotsev
+	recruit_character = BUL_theodosi_daskalov
+	recruit_character = BUL_trifon_trifonov
+	recruit_character = BUL_sava_ivanov
+	recruit_character = BUL_vladimir_stoychev
+	recruit_character = BUL_stoyan_stoyanov
+	recruit_character = BUL_zachari_zachariev
+	recruit_character = BUL_stefan_tsanev
+	recruit_character = BUL_kiril_dimitrov_yanchulev
+	recruit_character = BUL_georgi_petsov
+	recruit_character = BUL_ivan_sapundzhiev
+	recruit_character = BUL_atanas_zhilkov
+	recruit_character = BUL_kiril_stanchev
+	recruit_character = BUL_ferdinand_kozovski
+	recruit_character = BUL_georgi_drenikov
+	recruit_character = BUL_stoyan_trendafilov
+	recruit_character = BUL_ivan_variklechkov
+	recruit_character = BUL_gancho_manchev
+	recruit_character = BUL_dimitr_ayryanov
+	recruit_character = BUL_nikola_hadzipetkov
+	recruit_character = BUL_asen_toshev
+	recruit_character = BUL_bogdan_filov_fascism
+	recruit_character = BUL_dobri_bozhilov
+	recruit_character = BUL_dimitrana_ivanova
+	recruit_character = BUL_bogdan_filov
+	recruit_character = BUL_stoycho_mushanov
+	recruit_character = BUL_aleksandar_tsankov
+	recruit_character = BUL_todor_pavlov
+	recruit_character = BUL_kimon_georgiev
+	recruit_character = BUL_ivan_dochev
+	recruit_character = BUL_georgi_ivanov_kyoseivanov
+	recruit_character = BUL_stefan_stefanov
+	recruit_character = BUL_nikola_zhekov
+	recruit_character = BUL_valko_chervenkov
+	recruit_character = BUL_vasil_kolarov
+	recruit_character = BUL_konstantin_muraviev
+	recruit_character = BUL_nikola_petkov
+
+	recruit_character = BUL_ferdinand_i #Starts as empty, can become country leader later
+	recruit_character = BUL_regency_council #Starts as empty, can become country leader later (tons of versions! :D)
+	recruit_character = BUL_nikola_nakov #Starts as empty, can become unit leader later
+
+	activate_advisor = BUL_georgi_ivanov_kyoseivanov
+
+	if = {
+		limit = {
+			has_dlc = "La Resistance"
+		}
+		create_operative_leader = { #DLC
+			name = "Vladimir Zaimov"
+			GFX = GFX_portrait_bul_vladimir_zaimov
+			traits = { operative_infiltrator operative_commando }
+			bypass_recruitment = no
+			available_to_spy_master = yes
+			nationalities = { BUL }
+		}
+		recruit_character = BUL_stefan_nedev
+	}
+
+	#TECHNOLOGY
+	set_research_slots = 5 #DLC
+
+	#RULING PARTY
+	set_politics = { #DLC
+		ruling_party = communism
+		last_election = "1935.1.22"
+		election_frequency = 48
+		elections_allowed = no
+	}
+
+	else = { #VANILLA
+		#SET UP IDEAS
+		add_ideas = { #VANILLA
+			limited_conscription
+		}
+
+		#POLITICS
+		set_popularities = { #VANILLA
+			democratic = 0
+			fascism = 0
+			neutrality = 0
+			communism = 100
+		}
+		set_politics = { #VANILLA
+			ruling_party = communism
+			last_election = "1931.6.21"
+			election_frequency = 48
+			elections_allowed = no
+		}
+
+		recruit_character = BUL_boris_iii
+		recruit_character = BUL_georgi_dimitrov
+		recruit_character = BUL_nikola_petkov
+		recruit_character = BUL_hristo_lukov
+		recruit_character = BUL_georgi_popov
+		recruit_character = BUL_vasil_boydev
+		recruit_character = BUL_asen_nikolov
+		recruit_character = BUL_georgi_petsov
+		recruit_character = BUL_atanas_zhilkov
+		recruit_character = BUL_bonyu_stoev_pironkov
+		recruit_character = BUL_ivan_gaidimitriv
+		recruit_character = BUL_kiril_stanchev
+		recruit_character = BUL_blagoi_ivanov
+		recruit_character = BUL_stoyan_stoyanov
+		recruit_character = BUL_nikola_hadzipetkov
+		recruit_character = BUL_kiril_dimitrov_yanchulev
+		recruit_character = BUL_nikola_totev_markov
+		recruit_character = BUL_georgi_ivanov_kyoseivanov
+		recruit_character = BUL_dobri_bozhilov
+		recruit_character = BUL_konstantin_muraviev
+
+	}
+
+}
+
+# Starting tech
+
+
+
+

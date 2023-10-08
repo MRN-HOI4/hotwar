@@ -1,0 +1,98 @@
+objectTypes = {
+
+	pdxmesh = {
+		name = "YUG_F80_mesh"
+		file = "gfx/models/units/planes/YUG/fighter/F80.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "YUGF80_diffuse.dds"
+		}
+		scale = 3.00
+	}
+
+	pdxmesh = {
+		name = "YUG_F86_mesh"
+		file = "gfx/models/units/planes/YUG/fighter/F86.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "YUGF86_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "YUG_MIG21_mesh"
+		file = "gfx/models/units/planes/YUG/fighter/MiG21.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "YUGMiG21_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "YUG_MIG23_mesh"
+		file = "gfx/models/units/planes/YUG/fighter/mig23.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "YUGmig23_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "YUG_MIG29_mesh"
+		file = "gfx/models/units/planes/YUG/fighter/mig29.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "YUGmig29_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "YUG_J21_mesh"
+		file = "gfx/models/units/planes/YUG/cas/soko_j21.mesh"
+		animation = { id = "idle" type = "J21_idle_animation" }
+		scale = 4.00
+	meshsettings = {
+			texture_diffuse = "J21_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "YUG_J22_mesh"
+		file = "gfx/models/units/planes/YUG/cas/soko_j22.mesh"
+		animation = { id = "idle" type = "J22_idle_animation" }
+		scale = 4.00
+	meshsettings = {
+			texture_diffuse = "J22_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "YUG_G2_mesh"
+		file = "gfx/models/units/planes/YUG/cas/g2galeb.mesh"
+		animation = { id = "idle" type = "G2_idle_animation" }
+		scale = 4.00
+	meshsettings = {
+			texture_diffuse = "g2_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "YUG_G4_mesh"
+		file = "gfx/models/units/planes/YUG/cas/g_4_supergaleb.mesh"
+		animation = { id = "idle" type = "G4_idle_animation" }
+		scale = 4.00
+	meshsettings = {
+			texture_diffuse = "g4_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "YUG_F84F_mesh"
+		file = "gfx/models/units/planes/YUG/cas/F84F.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F84FYUG_diffuse.dds"
+		}
+	}
+
+}

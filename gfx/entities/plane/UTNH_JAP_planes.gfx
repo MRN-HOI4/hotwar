@@ -1,0 +1,75 @@
+objectTypes = {
+	pdxmesh = {
+		name = "JAP_F4_mesh"
+		file = "gfx/models/units/planes/JAP/fighter/F4E.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F4EJAP_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "JAP_F15A_mesh"
+		file = "gfx/models/units/planes/JAP/fighter/F15A.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F15AJAP_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "JAP_F86_mesh"
+		file = "gfx/models/units/planes/JAP/fighter/F86.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F86_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "JAP_F86D_mesh"
+		file = "gfx/models/units/planes/JAP/fighter/F86D.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F86DJAP_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "JAP_F104_mesh"
+		file = "gfx/models/units/planes/JAP/fighter/F104.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F104JAP_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "JAP_T1_mesh"
+		file = "gfx/models/units/planes/JAP/fighter/T1.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "T1_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "JAP_P3C_mesh"
+		file = "gfx/models/units/planes/JAP/naval/p3c.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "P3C_diffuse.dds"
+		}
+	}
+
+
+	pdxmesh = {
+		name = "JAP_C130_mesh"
+		file = "gfx/models/units/planes/JAP/transport/c_130.mesh"
+		animation = { id = "idle" type = "c130_idle_animation" }
+		scale = 4.00
+	meshsettings = {
+			texture_diffuse = "jap_c_130_diffuse.dds"
+		}
+	}
+}

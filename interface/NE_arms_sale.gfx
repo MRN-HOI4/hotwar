@@ -1,0 +1,89 @@
+############### surface ############
+spriteTypes = {	
+
+#	corneredTileSpriteType = {
+#		name = "GFX_tiled_window_1b_border"
+#		size= { x=192 y=192 }
+#		textureFile = "gfx//interface//tiles//tiled_window_1b_border.dds"
+#		borderSize = { x=64 y=64 }
+#		tilingCenter = yes
+#	}
+	
+	corneredTileSpriteType = {
+		name = "GFX_trade_1b_border"
+		size= { x=192 y=192 }
+		texturefile = "gfx/weapon_trade_ui/trade_1b_border.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+	}
+	SpriteType = { 
+		name = "GFX_trade_bg_border"
+		texturefile = "gfx/weapon_trade_ui/trade_bg_border.dds"
+	}
+	SpriteType = { 
+		name = "GFX_econo_trade_icon"
+		texturefile = "gfx/weapon_trade_ui/econo_trade_icon.dds"
+	}
+	SpriteType = { 
+		name = "GFX_trade_bg_half"
+		texturefile = "gfx/weapon_trade_ui/trade_bg_half.dds"
+	}
+	SpriteType = { 
+		name = "GFX_trade_text_bg_short"
+		texturefile = "gfx/weapon_trade_ui/trade_text_bg_short.dds"
+	}
+	SpriteType = { 
+		name = "GFX_trade_add_1"
+		texturefile = "gfx/weapon_trade_ui/trade_add_1.dds"
+	}
+	SpriteType = { 
+		name = "GFX_trade_sub_1"
+		texturefile = "gfx/weapon_trade_ui/trade_sub_1.dds"
+	}
+	SpriteType = { 
+		name = "GFX_trade_add_10"
+		texturefile = "gfx/weapon_trade_ui/trade_add_10.dds"
+	}
+	SpriteType = { 
+		name = "GFX_trade_sub_10"
+		texturefile = "gfx/weapon_trade_ui/trade_sub_10.dds"
+	}
+	SpriteType = { 
+		name = "GFX_trade_add_100"
+		texturefile = "gfx/weapon_trade_ui/trade_add_100.dds"
+	}
+	SpriteType = { 
+		name = "GFX_trade_sub_100"
+		texturefile = "gfx/weapon_trade_ui/trade_sub_100.dds"
+	}
+	SpriteType = { 
+		name = "GFX_trade_add_1000"
+		texturefile = "gfx/weapon_trade_ui/trade_add_1000.dds"
+	}
+	SpriteType = { 
+		name = "GFX_trade_sub_1000"
+		texturefile = "gfx/weapon_trade_ui/trade_sub_1000.dds"
+	}
+	SpriteType = { 
+		name = "GFX_trade_add_10000"
+		texturefile = "gfx/weapon_trade_ui/trade_add_10000.dds"
+	}
+	SpriteType = { 
+		name = "GFX_trade_sub_10000"
+		texturefile = "gfx/weapon_trade_ui/trade_sub_10000.dds"
+	}
+	
+}
+
+bitmapfonts = {
+
+    bitmapfont_override = {
+		name = "hoi_22typewriter"
+		fontfiles = {
+			"gfx/fonts/hoi_20bs"
+			"gfx/fonts/hoi_20bs_cryllic"
+		}
+	languages = { "l_russian" "l_polish" } 
+	}
+	
+}

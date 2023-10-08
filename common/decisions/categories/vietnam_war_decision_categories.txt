@@ -1,0 +1,33 @@
+Support_vietnam_war_category = {
+	priority = 12
+
+	picture = GFX_decision_cat_picture_vietnam_war
+
+	allowed = {
+
+		NOT = {
+			OR = {
+				original_tag = ROV
+				original_tag = VIN
+			}
+		}
+		
+	}
+
+	visible = {
+		AND = {
+			NOT = {
+				OR = {
+					original_tag = ROV
+					original_tag = VIN
+				}
+			}
+			OR = {
+				VIN = { has_war_with = ROV }
+				ROV = { has_war_with = VIN }
+			}
+		}
+		
+		
+	}
+}

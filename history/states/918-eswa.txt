@@ -1,0 +1,20 @@
+state={
+	id=918
+	name="STATE_918"
+	history={
+		owner = SAF
+		add_core_of = SAF
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 2
+			air_base = 1
+		}
+	}
+	provinces={
+		7900 
+	}
+	manpower=100000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=0.000
+}

@@ -1,0 +1,25 @@
+state={
+	id=894
+	name="STATE_894"
+	manpower = 69300
+	state_category = wasteland
+
+	history={
+		owner = ZZZ
+		add_core_of = ZZZ
+		buildings = {
+			infrastructure = 2
+
+		}
+		
+		add_core_of = NMB
+		set_demilitarized_zone = yes
+
+	}
+	provinces={
+		10957 10978 12921 
+	}
+	
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

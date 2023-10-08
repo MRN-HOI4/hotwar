@@ -1,0 +1,104 @@
+peace_constituion_category = {
+
+    peace_constituion_reinterpretation_1st = {
+
+        visible = {
+            has_idea = JAP_peace_constituion_4
+        }
+
+        cost = 30
+
+        available = {
+            OR = {
+                threat > 0.3
+                has_war = yes
+            }
+        }
+
+        ai_will_do = {
+			factor = 100
+		}
+
+        remove_effect = {
+            peace_constituion_level_down = yes
+        }
+        days_remove = 60
+    }
+
+    peace_constituion_reinterpretation_2st = {
+        visible = {
+            has_idea = JAP_peace_constituion_3
+        }
+
+        cost = 50
+
+        available = {
+            OR = {
+                threat > 0.5
+                has_war = yes
+            }
+        }
+
+        ai_will_do = {
+			factor = 100
+		}
+
+        remove_effect = {
+            peace_constituion_level_down = yes
+        }
+        days_remove = 60
+    }
+
+    peace_constituion_constitutional_amendment = {
+
+        visible = {
+            has_idea = JAP_peace_constituion_2
+        }
+
+        cost = 200
+
+        available = {
+            OR = {
+                threat > 0.7
+                has_war = yes
+            }
+
+        }
+
+        ai_will_do = {
+			factor = 100
+		}
+
+        remove_effect = {
+            peace_constituion_level_down = yes
+        }
+        days_remove = 180
+
+    }
+
+    peace_constituion_abolition = {
+
+        visible = {
+            has_idea = JAP_peace_constituion_1
+        }
+
+        cost = 500
+
+        available = {
+            OR = {
+                threat > 0.7
+                has_war = yes
+            }
+        }
+
+        ai_will_do = {
+			factor = 100
+		}
+
+        complete_effect = {
+            remove_ideas = JAP_peace_constituion_1
+            add_ideas = JAP_preparation_war
+        }
+
+    }
+}

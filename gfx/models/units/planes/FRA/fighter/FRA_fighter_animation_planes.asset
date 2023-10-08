@@ -1,0 +1,5 @@
+animation = {
+	name = "mirage2000_idle_animation"
+	file = "mirage_2000_idle.anim"
+}
+

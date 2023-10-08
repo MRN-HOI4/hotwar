@@ -1,0 +1,331 @@
+###	UTT Test - Destroyers
+### Prepared by Gregaro
+
+UTT_mine_layer_early = {
+	category = naval
+	roles = { naval_mine_layer }
+	priority = {
+		base = 1
+	}
+	EARLY_MINE_LAYER_1 = { # to make task force reinforcement work
+		role_icon_index = 4
+		priority = {
+			base = 0
+		}
+
+		target_variant = {
+			type = ship_hull_light_1
+			match_value = 1000
+		}
+	}
+}
+
+UTT_mine_layer_A = {
+	category = naval
+	roles = { naval_mine_layer }
+	priority = {
+		base = 2
+		modifier = { factor = 0 NOT = { has_tech = basic_naval_mines } }
+	}
+
+	EARLY_MINE_LAYER_DESTROYER = {
+		role_icon_index = 4
+		priority = {
+			base = -1
+			modifier = { add = 2 has_tech = early_ship_hull_light }
+			modifier = { add = -0.9 has_tech = basic_ship_hull_light }
+		}
+
+		target_variant = {
+			type = ship_hull_light_1
+			match_value = 2000
+
+			modules = {
+				fixed_ship_battery_slot = ship_light_battery
+				fixed_ship_anti_air_slot = empty
+				fixed_ship_fire_control_system_slot = empty
+				fixed_ship_radar_slot = empty
+				fixed_ship_torpedo_slot = empty
+				fixed_ship_engine_slot = light_ship_engine
+				mid_1_custom_slot = ship_mine_layer
+				rear_1_custom_slot = ship_mine_layer
+			}
+		}
+
+		requirements = {
+			module = ship_mine_layer
+		}
+	}
+	 BASIC_MINE_LAYER_DESTROYER = {
+	 	role_icon_index = 4
+	 	priority = {
+	 		base = -1
+	 		modifier = { add = 2 has_tech = basic_ship_hull_light }
+	 		modifier = { add = -0.9 has_tech = improved_ship_hull_light }
+	 	}
+
+	 	target_variant = {
+	 		type = ship_hull_light_2
+	 		match_value = 2000
+
+	 		modules = {
+	 			fixed_ship_battery_slot = ship_light_battery
+	 			fixed_ship_anti_air_slot = empty
+	 			fixed_ship_fire_control_system_slot = empty
+	 			fixed_ship_radar_slot = empty
+	 			fixed_ship_torpedo_slot = empty
+	 			fixed_ship_engine_slot = { module = light_ship_engine_2 upgrade = current }
+	 			mid_1_custom_slot = ship_mine_layer
+	 			rear_1_custom_slot = ship_mine_layer
+	 		}
+	 	}
+
+	 	requirements = {
+	 		module = ship_mine_layer
+	 	}
+	 }
+	 IMPROVED_MINE_LAYER_DESTROYER = {
+	 	role_icon_index = 4
+	 	priority = {
+	 		base = -1
+	 		modifier = { add = 2 has_tech = improved_ship_hull_light }
+	 		modifier = { add = -0.9 has_tech = advanced_ship_hull_light }
+	 	}
+
+	 	target_variant = {
+	 		type = ship_hull_light_3
+	 		match_value = 4000
+
+			modules = {
+	 			fixed_ship_battery_slot = ship_light_battery
+	 			fixed_ship_anti_air_slot = empty
+	 			fixed_ship_fire_control_system_slot = empty
+	 			fixed_ship_radar_slot = empty
+	 			fixed_ship_torpedo_slot = empty
+	 			fixed_ship_engine_slot = { module = light_ship_engine_3 upgrade = current }
+	 			front_1_custom_slot = empty
+	 			mid_1_custom_slot = ship_mine_layer
+	 			rear_1_custom_slot = ship_mine_layer
+	 		}
+	 	}
+
+	 	requirements = {
+	 		module = ship_mine_layer
+	 	}
+	 }
+	 ADVANCED_MINE_LAYER_DESTROYER = {
+	 	role_icon_index = 4
+	 	priority = {
+	 		base = -1
+	 		modifier = { add = 2 has_tech = advanced_ship_hull_light }
+			modifier = { add = -0.9 has_tech = ship_hull_light_5 }
+	 	}
+
+	 	target_variant = {
+	 		type = ship_hull_light_4
+	 		match_value = 6000
+
+	 		modules = {
+	 			fixed_ship_battery_slot = ship_light_battery
+	 			fixed_ship_anti_air_slot = ship_anti_air
+	 			fixed_ship_fire_control_system_slot = empty
+	 			fixed_ship_radar_slot = { any_of = { ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+	 			fixed_ship_torpedo_slot = empty
+	 			fixed_ship_engine_slot = { module = light_ship_engine_4 upgrade = current }
+	 			front_1_custom_slot = ship_anti_air
+	 			mid_1_custom_slot = ship_mine_layer
+	 			mid_2_custom_slot = ship_mine_layer
+	 			rear_1_custom_slot = ship_mine_layer
+	 		}
+	 	}
+
+	 	requirements = {
+	 		module = ship_mine_layer
+	 	}
+	 }
+	 
+	 UTT_MINE_LAYER_DESTROYER_5 = {
+	 	role_icon_index = 4
+	 	priority = {
+	 		base = -1
+	 		modifier = { add = 2 has_tech = ship_hull_light_5 }
+			modifier =  { add = -0.9 has_tech = ship_hull_light_6 }
+	 	}
+
+	 	target_variant = {
+	 		type = ship_hull_light_5
+	 		match_value = 8000
+
+	 		modules = {
+	 			fixed_ship_battery_slot = ship_light_battery_4
+	 			fixed_ship_anti_air_slot = ship_anti_air_5
+	 			fixed_ship_fire_control_system_slot = empty
+	 			fixed_ship_radar_slot = { any_of = { ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+	 			fixed_ship_torpedo_slot = empty
+	 			fixed_ship_engine_slot = { module = light_ship_engine_5 upgrade = current }
+	 			front_1_custom_slot = ship_anti_air_4
+	 			mid_1_custom_slot = ship_mine_layer
+	 			mid_2_custom_slot = ship_mine_layer
+	 			rear_1_custom_slot = ship_mine_layer
+	 		}
+	 	}
+
+	 	requirements = {
+	 		module = ship_mine_layer
+	 	}
+	 }
+	 
+	 UTT_MINE_LAYER_DESTROYER_6 = {
+	 	role_icon_index = 4
+	 	priority = {
+	 		base = -1
+	 		modifier = { add = 2 has_tech = ship_hull_light_6 }
+			modifier =  { add = -0.9 has_tech = ship_hull_light_7 }
+	 	}
+
+	 	target_variant = {
+	 		type = ship_hull_light_6
+	 		match_value = 10000
+
+	 		modules = {
+	 			fixed_ship_battery_slot = ship_light_battery_4
+	 			fixed_ship_anti_air_slot = ship_anti_air_5
+	 			fixed_ship_fire_control_system_slot = { any_of = { ship_fire_control_system_3 ship_fire_control_system_2 ship_fire_control_system_1 ship_fire_control_system_0 } }
+	 			fixed_ship_radar_slot = { any_of = { ship_radar_5 ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+	 			fixed_ship_torpedo_slot = empty
+	 			fixed_ship_engine_slot = { module = light_ship_engine_6 upgrade = current }
+	 			front_1_custom_slot = ship_light_ASM_battery_1
+	 			mid_1_custom_slot = ship_mine_layer
+	 			mid_2_custom_slot = ship_mine_layer
+	 			rear_1_custom_slot = ship_sam_missile_battery_1
+	 		}
+	 	}
+
+	 	requirements = {
+	 		module = ship_mine_layer
+	 	}
+	 }
+	 
+	 UTT_MINE_LAYER_DESTROYER_7 = {
+	 	role_icon_index = 4
+	 	priority = {
+	 		base = -1
+	 		modifier = { add = 2 has_tech = ship_hull_light_7 }
+			modifier =  { add = -0.9 has_tech = ship_hull_light_8 }
+	 	}
+
+	 	target_variant = {
+	 		type = ship_hull_light_7
+	 		match_value = 12000
+
+	 		modules = {
+	 			fixed_ship_battery_slot = ship_60_light_battery
+	 			fixed_ship_anti_air_slot = ship_anti_air_6
+	 			fixed_ship_fire_control_system_slot = { any_of = { ship_fire_control_system_3 ship_fire_control_system_2 ship_fire_control_system_1 ship_fire_control_system_0 } }
+	 			fixed_ship_radar_slot = { any_of = { ship_radar_6 ship_radar_5 ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+	 			fixed_ship_torpedo_slot = empty
+	 			fixed_ship_engine_slot = { module = light_ship_engine_7 upgrade = current }
+	 			front_1_custom_slot = ship_light_ASM_battery_2
+	 			mid_1_custom_slot = ship_mine_layer
+	 			mid_2_custom_slot = ship_mine_layer
+	 			rear_1_custom_slot = ship_sam_missile_battery_2
+	 		}
+	 	}
+
+	 	requirements = {
+	 		module = ship_mine_layer
+	 	}
+	 }
+	 
+	 UTT_MINE_LAYER_DESTROYER_8 = {
+	 	role_icon_index = 4
+	 	priority = {
+	 		base = -1
+	 		modifier = { add = 2 has_tech = ship_hull_light_8 }
+			modifier =  { add = -0.9 has_tech = ship_hull_light_9 }
+	 	}
+
+	 	target_variant = {
+	 		type = ship_hull_light_8
+	 		match_value = 14000
+
+	 		modules = {
+	 			fixed_ship_battery_slot = ship_70_light_battery
+	 			fixed_ship_anti_air_slot = ship_anti_air_7
+	 			fixed_ship_fire_control_system_slot = { any_of = { ship_fire_control_system_3 ship_fire_control_system_2 ship_fire_control_system_1 ship_fire_control_system_0 } }
+	 			fixed_ship_radar_slot = { any_of = { ship_radar_7 ship_radar_6 ship_radar_5 ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+	 			fixed_ship_torpedo_slot = ship_light_ASM_battery_3
+	 			fixed_ship_engine_slot = { module = light_ship_engine_8 upgrade = current }
+	 			front_1_custom_slot = ship_light_ASM_battery_3
+	 			mid_1_custom_slot = ship_mine_layer
+	 			mid_2_custom_slot = ship_mine_layer
+	 			rear_1_custom_slot = ship_sam_missile_battery_3
+	 		}
+	 	}
+
+	 	requirements = {
+	 		module = ship_mine_layer
+	 	}
+	 }
+	 
+	 UTT_MINE_LAYER_DESTROYER_9 = {
+	 	role_icon_index = 4
+	 	priority = {
+	 		base = -1
+	 		modifier = { add = 2 has_tech = ship_hull_light_9 }
+			modifier =  { add = -0.9 has_tech = ship_hull_light_10 }
+	 	}
+
+	 	target_variant = {
+	 		type = ship_hull_light_9
+	 		match_value = 16000
+
+	 		modules = {
+	 			fixed_ship_battery_slot = ship_80_light_battery
+	 			fixed_ship_anti_air_slot = ship_ciws_1
+	 			fixed_ship_fire_control_system_slot = { any_of = { ship_fire_control_system_3 ship_fire_control_system_2 ship_fire_control_system_1 ship_fire_control_system_0 } }
+	 			fixed_ship_radar_slot = { any_of = { ship_radar_8 ship_radar_7 ship_radar_6 ship_radar_5 ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+	 			fixed_ship_torpedo_slot = ship_light_ASM_battery_4
+	 			fixed_ship_engine_slot = { module = light_ship_engine_9 upgrade = current }
+	 			front_1_custom_slot = ship_light_ASM_battery_4
+	 			mid_1_custom_slot = ship_mine_layer
+	 			mid_2_custom_slot = ship_mine_layer
+	 			rear_1_custom_slot = ship_sam_missile_battery_4
+	 		}
+	 	}
+
+	 	requirements = {
+	 		module = ship_mine_layer
+	 	}
+	 }
+	 
+	 UTT_MINE_LAYER_DESTROYER_10 = {
+	 	role_icon_index = 4
+	 	priority = {
+	 		base = -1
+	 		modifier = { add = 2 has_tech = ship_hull_light_10 }
+	 	}
+
+	 	target_variant = {
+	 		type = ship_hull_light_10
+	 		match_value = 18000
+
+	 		modules = {
+	 			fixed_ship_battery_slot = ship_90_light_battery
+	 			fixed_ship_anti_air_slot = ship_ciws_2
+	 			fixed_ship_fire_control_system_slot = { any_of = { ship_fire_control_system_3 ship_fire_control_system_2 ship_fire_control_system_1 ship_fire_control_system_0 } }
+	 			fixed_ship_radar_slot = { any_of = { ship_radar_9 ship_radar_8 ship_radar_7 ship_radar_6 ship_radar_5 ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+	 			fixed_ship_torpedo_slot = ship_light_ASM_battery_5
+	 			fixed_ship_engine_slot = { module = light_ship_engine_10 upgrade = current }
+	 			front_1_custom_slot = ship_light_ASM_battery_5
+	 			mid_1_custom_slot = ship_mine_layer
+	 			mid_2_custom_slot = ship_mine_layer
+	 			rear_1_custom_slot = ship_sam_missile_battery_5
+	 		}
+	 	}
+
+	 	requirements = {
+	 		module = ship_mine_layer
+	 	}
+	 }
+}

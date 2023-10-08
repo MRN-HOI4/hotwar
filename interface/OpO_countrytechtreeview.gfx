@@ -1,0 +1,21 @@
+spriteTypes = { 
+	
+	spriteType = {
+		name = "GFX_infantry_weapons_folder_tab"
+		textureFile = "gfx//interface//techtree//techtree_infantry_weapons_tab.dds"
+		noOfFrames = 2		
+	}
+	
+	spriteType = {
+		name = "GFX_air_bomber_techs_folder_tab"
+		textureFile = "gfx//interface//techtree//techtree_air_tab.dds"
+		noOfFrames = 2		
+	}
+	
+	spriteType = {
+		name = "GFX_air_fighter_techs_folder_tab"
+		textureFile = "gfx//interface//techtree//techtree_air_fighter_tab.dds"
+		noOfFrames = 2		
+	}
+
+}

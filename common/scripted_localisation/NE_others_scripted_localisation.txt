@@ -1,0 +1,23 @@
+
+defined_text = { 
+	name = GetGDPTooltip
+
+	text = {
+		localization_key = GDP_TOOLTIP_BASE
+	}
+}
+
+defined_text = { 
+	name = econo_ai_will_accept
+
+	text = {
+		trigger = {
+			econo_trade_accept = yes
+		}
+		localization_key = econo_ai_will_accept_it
+	}
+	
+	text = {
+		localization_key = econo_ai_will_not_accept
+	}
+}

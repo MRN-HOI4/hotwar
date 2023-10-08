@@ -1,0 +1,78 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_idea_JAP_japanese_miracle"
+        texturefile = "gfx/interface/ideas/JAP/idea_JAP_japanese_miracle.dds"
+    }
+
+    spriteType = {
+        name = "GFX_idea_CHI_aggressive_investment"
+        texturefile = "gfx/interface/ideas/CHI/r56_idea_aggressive_investment.dds"
+    }
+    
+    spriteType = {
+		name = "GFX_idea_hayashikane_dockyard"
+		texturefile = "gfx/interface/ideas/JAP/idea_hayashikane_dockyard.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_kawasaki_dockyard"
+		texturefile = "gfx/interface/ideas/JAP/idea_kawasaki_dockyard.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_mitsubishi_aircraft"
+		texturefile = "gfx/interface/ideas/JAP/idea_mitsubishi.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_IHI_aircraft"
+		texturefile = "gfx/interface/ideas/JAP/idea_IHI_aircraft.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_howa_arsenal"
+		texturefile = "gfx/interface/ideas/JAP/idea_howa_arsenal.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_toyota_arsenal"
+		texturefile = "gfx/interface/ideas/JAP/idea_toyota_arsenal.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_mitsubishi_arsenal"
+		texturefile = "gfx/interface/ideas/JAP/idea_mitsubishi.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_obayashi_tech"
+		texturefile = "gfx/interface/ideas/JAP/idea_obayashi_tech.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_sony_tech"
+		texturefile = "gfx/interface/ideas/JAP/idea_sony_tech.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_sony_tech"
+		texturefile = "gfx/interface/ideas/JAP/idea_sony_tech.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_sumitomo_tech"
+		texturefile = "gfx/interface/ideas/JAP/idea_sumitomo_tech.dds"
+	}
+
+    spriteType = {
+		name = "GFX_idea_JAP_hasimoto_domisabulo"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_hasimoto_domisabulo.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PRC_Cultural_Revolution"
+		texturefile = "gfx/interface/ideas/PRC/idea_PRC_Cultural_Revolution.dds"
+	}
+
+}

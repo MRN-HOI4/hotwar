@@ -1,0 +1,83 @@
+
+add_namespace = un
+
+news_event = {
+	id = un.1
+	title = un.1.t
+	desc = un.1.d
+	picture = GFX_news_event_generic_rally_3
+	
+	major = yes
+	
+	is_triggered_only = yes
+
+	
+	option = {
+		name = un.1.a
+		trigger = {
+			NOT = {
+				TAG = PRC
+				TAG = USA
+                TAG = SOV
+                TAG = FRA
+                TAG = ENG
+			}
+		}
+	}
+	option = {
+		name = un.1.b
+    }
+	
+}
+
+news_event = {
+	id = un.2
+	title = un.2.t
+	desc = un.2.d
+	picture = GFX_news_event_generic_rally_3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = un.2.a
+		trigger = {
+			NOT = {
+				TAG = PRC
+				TAG = USA
+                TAG = SOV
+                TAG = FRA
+                TAG = ENG
+			}
+		}
+	}
+	option = {
+		name = un.2.b
+		trigger = { 
+            TAG = PRC
+			TAG = USA
+            TAG = SOV
+            TAG = FRA
+            TAG = ENG
+        }
+    }
+}
+
+news_event = {
+	id = un.3
+	title = un.3.t
+	desc = un.3.d
+	picture = GFX_news_event_generic_rally_3
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = un.3.a
+		trigger = {
+			all_country = {}
+		}
+	}
+}

@@ -1,0 +1,93 @@
+objectTypes = {
+	pdxmesh = {
+		name = "ITA_CL13_mesh"
+		file = "gfx/models/units/planes/ITA/fighter/F86.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F86CANITA_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ITA_F86D_mesh"
+		file = "gfx/models/units/planes/ITA/fighter/F86D.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F86ITA_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ITA_G91_mesh"
+		file = "gfx/models/units/planes/ITA/fighter/g_91.mesh"
+		animation = { id = "idle" type = "g91_idle_animation" }
+		scale = 4.00
+	meshsettings = {
+			texture_diffuse = "g_91_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ITA_F104_mesh"
+		file = "gfx/models/units/planes/ITA/fighter/F104.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F104ITA_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ITA_F16A_mesh"
+		file = "gfx/models/units/planes/ITA/fighter/F16A.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F16AITA_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ITA_F16B_mesh"
+		file = "gfx/models/units/planes/ITA/fighter/F16C.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F16CITA_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ITA_F84_mesh"
+		file = "gfx/models/units/planes/ITA/cas/F84.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F84ITA_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ITA_F84F_mesh"
+		file = "gfx/models/units/planes/ITA/cas/F84F.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F84FITA_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ITA_F84F_mesh"
+		file = "gfx/models/units/planes/ITA/cas/F84F.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F84FITA_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "ITA_TORNADO_mesh"
+		file = "gfx/models/units/planes/ITA/cas/TornadoADV.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "TornadoADV_diffuse.dds"
+		}
+	}
+
+}

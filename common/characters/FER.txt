@@ -1,0 +1,17 @@
+characters={
+
+    FER_Mikhail_Grigoryevich_Schmlo = {
+        name="미하일 그레고리예비치 슈믈로"
+        portraits={
+			civilian={
+				large="gfx/leaders/FER/Mikhail_Grigoryevich_Schmlo.dds"
+			}
+		}
+        country_leader={
+			ideology=leninism
+			expire="1947.1.1.1"
+			id=-1
+		}
+    }
+
+}

@@ -1,0 +1,219 @@
+Oil_Crisis_category = {
+
+    Oil_crisis_alternative_tradeway = {
+        visible = {
+            OR = {
+                has_idea = oil_crisis_idea_1
+                has_idea = oil_crisis_idea_2
+                has_idea = oil_crisis_idea_3
+                has_idea = oil_crisis_idea_4
+                has_idea = oil_crisis_idea_5
+                has_idea = oil_crisis_idea_6
+            }
+        }
+        cost = 200
+        available = {
+            OR = {
+                has_idea = oil_crisis_idea_2
+                has_idea = oil_crisis_idea_3
+                has_idea = oil_crisis_idea_4
+                has_idea = oil_crisis_idea_5
+                has_idea = oil_crisis_idea_6
+            }
+        }
+        icon = ger_mefo_bills
+        ai_will_do = {
+			factor = 200
+		}
+        complete_effect = {
+        }
+        remove_effect = {
+            
+            custom_effect_tooltip = oil_crisis_level_down_tt
+            hidden_effect = {
+                oil_crisis_level_down = yes
+            }
+        }
+        days_remove = 150
+    }
+
+    Oil_crisis_negotiations_USA = {
+        visible = {
+            AND = {
+                country_exists = LIB
+				NOT = {
+                    is_in_faction_with = LIB
+                }
+				NOT = {
+					LIB = { has_civil_war = yes }
+				}
+			}
+            OR = {
+                has_idea = oil_crisis_idea_1
+                has_idea = oil_crisis_idea_2
+                has_idea = oil_crisis_idea_3
+                has_idea = oil_crisis_idea_4
+                has_idea = oil_crisis_idea_5
+                has_idea = oil_crisis_idea_6
+            }
+        }
+        cost = 300
+        available = {
+            OR = {
+                has_idea = oil_crisis_idea_2
+                has_idea = oil_crisis_idea_3
+                has_idea = oil_crisis_idea_4
+                has_idea = oil_crisis_idea_5
+                has_idea = oil_crisis_idea_6
+            }
+        }
+        icon = ger_mefo_bills
+        ai_will_do = {
+			factor = 200
+		}
+        complete_effect = {
+            add_stability = -0.05
+            add_war_support = -0.05
+        }
+        remove_effect = {
+            
+            custom_effect_tooltip = oil_crisis_level_down_tt
+            hidden_effect = {
+                oil_crisis_level_down = yes
+            }
+        }
+        days_remove = 100
+    }
+
+    Oil_crisis_negotiations_SOV = {
+        visible = {
+            AND = {
+                country_exists = IRQ
+				NOT = {
+                    is_in_faction_with = IRQ
+                }
+				NOT = {
+					IRQ = { has_civil_war = yes }
+				}
+			}
+            OR = {
+                has_idea = oil_crisis_idea_1
+                has_idea = oil_crisis_idea_2
+                has_idea = oil_crisis_idea_3
+                has_idea = oil_crisis_idea_4
+                has_idea = oil_crisis_idea_5
+                has_idea = oil_crisis_idea_6
+            }
+        }
+        cost = 300
+        available = {
+            OR = {
+                has_idea = oil_crisis_idea_2
+                has_idea = oil_crisis_idea_3
+                has_idea = oil_crisis_idea_4
+                has_idea = oil_crisis_idea_5
+                has_idea = oil_crisis_idea_6
+            }
+        }
+        icon = ger_mefo_bills
+        ai_will_do = {
+			factor = 200
+		}
+        complete_effect = {
+            add_stability = -0.05
+            add_war_support = -0.05
+        }
+        remove_effect = {
+            
+            custom_effect_tooltip = oil_crisis_level_down_tt
+            hidden_effect = {
+                oil_crisis_level_down = yes
+            }
+        }
+        days_remove = 100
+    }
+
+    Oil_crisis_energy_saving_campaign = {
+        visible = {
+            OR = {
+                has_idea = oil_crisis_idea_1
+                has_idea = oil_crisis_idea_2
+                has_idea = oil_crisis_idea_3
+                has_idea = oil_crisis_idea_4
+                has_idea = oil_crisis_idea_5
+                has_idea = oil_crisis_idea_6
+            }
+        }
+        cost = 150
+        available = {
+            OR = {
+                has_idea = oil_crisis_idea_3
+                has_idea = oil_crisis_idea_4
+                has_idea = oil_crisis_idea_5
+                has_idea = oil_crisis_idea_6
+            }
+        }
+        icon = hol_attract_foreign_investors
+        ai_will_do = {
+			factor = 10
+		}
+        complete_effect = {
+            add_timed_idea = {
+                idea = energy_saving_campaign
+                days = 100
+            }
+            custom_effect_tooltip = oil_crisis_level_temporary_tt
+            hidden_effect = {
+                oil_crisis_level_down = yes
+            }
+        }
+        remove_effect = {
+            hidden_effect = {
+                oil_crisis_level_up = yes
+            }
+        }
+        days_remove = 100
+    }
+
+    Oil_crisis_oil_rationing_system = {
+        visible = {
+            OR = {
+                has_idea = oil_crisis_idea_1
+                has_idea = oil_crisis_idea_2
+                has_idea = oil_crisis_idea_3
+                has_idea = oil_crisis_idea_4
+                has_idea = oil_crisis_idea_5
+                has_idea = oil_crisis_idea_6
+            }
+        }
+        cost = 150
+        available = {
+            OR = {
+                has_idea = oil_crisis_idea_3
+                has_idea = oil_crisis_idea_4
+                has_idea = oil_crisis_idea_5
+                has_idea = oil_crisis_idea_6
+            }
+        }
+        icon = generic_political_rally
+        ai_will_do = {
+			factor = 10
+		}
+        complete_effect = {
+            add_timed_idea = {
+                idea = oil_rationing_system
+                days = 100
+            }
+            custom_effect_tooltip = oil_crisis_level_temporary_tt
+            hidden_effect = {
+                oil_crisis_level_down = yes
+            }
+        }
+        remove_effect = {
+            hidden_effect = {
+                oil_crisis_level_up = yes
+            }
+        }
+        days_remove = 100
+    }
+}

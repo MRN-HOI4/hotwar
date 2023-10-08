@@ -1,0 +1,10 @@
+Oil_Crisis_category = {
+    icon = gre_paying_ifc_debt
+
+    picture = GFX_decision_cat_generic_mefo_bills
+
+    allowed = { 
+        all_country = {}
+    }
+    priority = 100
+}

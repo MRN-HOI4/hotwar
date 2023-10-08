@@ -1,0 +1,501 @@
+Support_vietnam_war_category = {
+
+
+    Choice_ROV_support = {
+
+        available = {
+			NOT = {
+                OR = {
+                    has_idea = WTO
+                    original_tag = SWI
+                }
+                
+            }
+		}
+
+        visible = {
+            NOT = {
+                OR = {
+                    has_country_flag = support_rov
+                    has_country_flag = support_vin
+                    has_country_flag = support_both
+                }
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = support_rov
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+
+    }
+
+    Choice_VIN_support = {
+
+        available = {
+			NOT = {
+                OR = {
+                    has_idea = NATO
+                    original_tag = SWI
+                }
+                
+            }
+		}
+
+        visible = {
+            NOT = {
+                OR = {
+                    has_country_flag = support_rov
+                    has_country_flag = support_vin
+                    has_country_flag = support_both
+                }
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = support_vin
+        }
+
+        ai_will_do = {
+            base = 1000
+        }
+
+    }
+
+    Choice_BOTH_support = {
+
+        available = {
+			NOT = {
+                OR = {
+                    has_idea = NATO
+                    has_idea = WTO
+                }
+
+            }
+		}
+
+        visible = {
+            NOT = {
+                OR = {
+                    has_country_flag = support_rov
+                    has_country_flag = support_vin
+                    has_country_flag = support_both
+                }
+            }
+        }
+
+        complete_effect = {
+            set_country_flag = support_both
+        }
+
+        ai_will_do = {
+            base = 2000
+        }
+
+    }
+
+    #########################################################
+
+    Infrastructure_support = {
+
+        available = {
+            if = {
+                limit = {
+                    has_country_flag = support_both
+                }
+                AND = {
+                    ROV = {
+                        NOT = {
+                            all_core_state = {
+                                infrastructure = 5
+                            }
+                        }
+                    }   
+                    VIN = {
+                        NOT = {
+                            all_core_state = {
+                                infrastructure = 5
+                            }
+                        }
+                    }              
+                }
+            }
+            if = {
+                limit = {
+                    has_country_flag = support_rov
+                }
+                ROV = {
+                    NOT = {
+                        all_core_state = {
+                            infrastructure = 5
+                        }
+                    }
+                }                
+            }
+            if = {
+                limit = {
+                    has_country_flag = support_vin
+                }
+                VIN = {
+                    NOT = {
+                        all_core_state = {
+                            infrastructure = 5
+                        }
+                    }
+                }                
+            }
+        }
+
+        visible = {
+            OR = {
+                has_country_flag = support_rov
+                has_country_flag = support_vin
+                has_country_flag = support_both
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+
+        modifier = {
+            civilian_factory_use = 2
+        }
+        cost = 50
+
+        remove_effect = {
+            custom_effect_tooltip = random_infrastructure_support_tt
+            hidden_effect = {
+                if = {
+                    limit = {
+                        has_country_flag = support_both
+                    }
+                    random_list = {
+                        50 = {
+                            ROV = {
+                                random_core_state = {
+                                    add_building_construction = {
+                                        type = infrastructure
+                                        level = 1
+                                    }
+                                }
+                            }
+                        }
+                        50 = {
+                            VIN = {
+                                random_core_state = {
+                                    add_building_construction = {
+                                        type = infrastructure
+                                        level = 1
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                if = {
+                    limit = {
+                        has_country_flag = support_rov
+                    }
+                    ROV = {
+                        random_core_state = {
+                            add_building_construction = {
+                                type = infrastructure
+                                level = 1
+                            }
+                        }
+                    } 
+                }
+                if = {
+                    limit = {
+                        has_country_flag = support_vin
+                    }
+                    VIN = {
+                        random_core_state = {
+                            add_building_construction = {
+                                type = infrastructure
+                                level = 1
+                            }
+                        }
+                    } 
+                }
+            }
+        }
+        days_remove = 60
+
+        days_re_enable = 30
+
+    }
+
+    Economic_support = {
+
+        available = {
+        }
+
+        visible = {
+            OR = {
+                has_country_flag = support_rov
+                has_country_flag = support_vin
+                has_country_flag = support_both
+            }
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+
+        modifier = {
+            civilian_factory_use = 4
+        }
+        cost = 50
+
+        remove_effect = {
+            custom_effect_tooltip = random_industrial_complex_support_tt
+            hidden_effect = {
+                if = {
+                    limit = {
+                        has_country_flag = support_both
+                    }
+                    random_list = {
+                        50 = {
+                            ROV = {
+                                random_core_state = {
+                                    add_building_construction = {
+                                        type = industrial_complex
+                                        level = 1
+                                    }
+                                }
+                            }
+                        }
+                        50 = {
+                            VIN = {
+                                random_core_state = {
+                                    add_building_construction = {
+                                        type = industrial_complex
+                                        level = 1
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+
+                if = {
+                    limit = {
+                        has_country_flag = support_rov
+                    }
+                    ROV = {
+                        random_core_state = {
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                            }
+                        }
+                    } 
+                }
+                if = {
+                    limit = {
+                        has_country_flag = support_vin
+                    }
+                    VIN = {
+                        random_core_state = {
+                            add_building_construction = {
+                                type = industrial_complex
+                                level = 1
+                            }
+                        }
+                    } 
+                }
+            }
+        }
+        days_remove = 120
+
+        days_re_enable = 30
+
+    }
+
+    Arsenal_support = {
+
+        available = {
+        }
+
+        visible = {
+            OR = {
+                has_country_flag = support_rov
+                has_country_flag = support_vin
+            }
+        }
+
+        modifier = {
+            civilian_factory_use = 5
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+
+        cost = 100
+
+        remove_effect = {
+            custom_effect_tooltip = random_arms_factory_support_tt
+            hidden_effect = {
+                if = {
+                    limit = {
+                        has_country_flag = support_rov
+                    }
+                    ROV = {
+                        random_core_state = {
+                            add_building_construction = {
+                                type = arms_factory
+                                level = 1
+                            }
+                        }
+                    } 
+                }
+                if = {
+                    limit = {
+                        has_country_flag = support_vin
+                    }
+                    VIN = {
+                        random_core_state = {
+                            add_building_construction = {
+                                type = arms_factory
+                                level = 1
+                            }
+                        }
+                    } 
+                }
+            }
+        }
+        days_remove = 120
+
+        days_re_enable = 30
+
+    }
+
+    Equipment_support = {
+
+        available = {
+            AND = {
+                has_manpower > 50000
+                has_equipment = {
+                    infantry_equipment_1 > 5000
+                }                
+            }
+
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+
+        visible = {
+            OR = {
+                has_country_flag = support_rov
+                has_country_flag = support_vin
+            }
+        }
+
+        custom_cost_trigger = { 
+			has_equipment = { infantry_equipment > 4999 }
+		}
+
+        custom_cost_text = decision_cost_ie_5000
+
+        complete_effect = {
+            add_equipment_to_stockpile = {
+                type = infantry_equipment
+                amount = -5000
+            }
+            add_manpower = -50000
+        }
+
+        remove_effect = {
+            custom_effect_tooltip = equipment_support_tt
+            hidden_effect = {
+                if = {
+                    limit = {
+                        has_country_flag = support_rov
+                    }
+                    send_equipment = {
+                        equipment = infantry_equipment
+                        amount = 5000
+                        target = ROV
+                    }
+                    ROV = {
+                        add_manpower = 50000
+                    }
+                }
+                if = {
+                    limit = {
+                        has_country_flag = support_vin
+                    }
+                    send_equipment = {
+                        equipment = infantry_equipment
+                        amount = 5000
+                        target = VIN
+                    }  
+                    VIN = {
+                        add_manpower = 50000
+                    }
+                }
+            }
+        }
+        days_remove = 10
+
+        days_re_enable = 60
+
+    }
+
+#    Training_support = {
+#
+#        available = {
+#        }
+#
+#        visible = {
+#            OR = {
+#                has_country_flag = support_rov
+#                has_country_flag = support_vin
+#            }
+#        }
+#
+#        cost = 100
+#
+#        modifier = {
+#            max_command_power = -100
+#        }
+#
+#        remove_effect = {
+#            custom_effect_tooltip = training_support_tt
+#            hidden_effect = {
+#                if = {
+#                    limit = {
+#                        has_country_flag = support_rov
+#                    }
+#                    ROV = {
+#                    }
+#                }
+#                if = {
+#                    limit = {
+#                        has_country_flag = support_vin
+#                    }
+#                    VIN = {
+#                    }
+#                }
+#            }
+#        }
+#        days_remove = 120
+#
+#        days_re_enable = 30
+#
+#    }
+
+###########################################################
+
+    
+
+}

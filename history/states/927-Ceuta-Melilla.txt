@@ -1,0 +1,34 @@
+state={
+	id=927
+	name="STATE_927"
+	state_category=rural
+	history={
+		owner = SPR
+		add_core_of = SPR
+		add_claim_by = MOR
+		victory_points = {
+			9945 3 
+		}
+		victory_points = {
+			12100 2 
+		}
+		buildings = {
+			infrastructure = 3
+			12100 = {
+				naval_base = 3
+
+			}
+			9945 = {
+				naval_base = 3
+
+			}
+		}
+
+	}
+	provinces={
+		9945 12100 
+	}
+	manpower=115000
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

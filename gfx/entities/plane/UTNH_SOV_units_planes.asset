@@ -1,0 +1,1431 @@
+
+entity = {
+	name = "SOV_jet_fighter_equipment_1_entity"
+	pdxmesh = "SOV_MIG9_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "mig15pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "mig15pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_jet_fighter_equipment_2_entity"
+	pdxmesh = "SOV_MIG15_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "mig15pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "mig15pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_jet_fighter_equipment_3_entity"
+	pdxmesh = "SOV_MIG19_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "mig15pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "mig15pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_jet_fighter_equipment_4_entity"
+	pdxmesh = "SOV_MIG21_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "gsh23pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "gsh23pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_jet_fighter_equipment_5_entity"
+	pdxmesh = "SOV_MIG21_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "gsh23pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "gsh23pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_jet_fighter_equipment_6_entity"
+	pdxmesh = "SOV_MIG23_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "gsh23pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "gsh23pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_jet_fighter_equipment_7_entity"
+	pdxmesh = "SOV_MIG29_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "gsh23pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "gsh23pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_jet_fighter_equipment_8_entity"
+	pdxmesh = "SOV_SU27_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "gsh23pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "gsh23pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_cv_fighter_equipment_4_entity"
+	pdxmesh = "SOV_MIG9_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "mig15pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "mig15pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_cv_fighter_equipment_5_entity"
+	pdxmesh = "SOV_MIG15_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "mig15pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "mig15pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_cv_fighter_equipment_6_entity"
+	pdxmesh = "SOV_MIG19_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "mig15pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "mig15pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_cv_fighter_equipment_7_entity"
+	pdxmesh = "SOV_MIG21_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "gsh23pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "gsh23pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_cv_fighter_equipment_8_entity"
+	pdxmesh = "SOV_MIG21_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "gsh23pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "gsh23pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_cv_fighter_equipment_9_entity"
+	pdxmesh = "SOV_MIG23_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "gsh23pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "gsh23pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_cv_fighter_equipment_10_entity"
+	pdxmesh = "SOV_MIG29_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "gsh23pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "gsh23pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_cv_fighter_equipment_11_entity"
+	pdxmesh = "SOV_SU27_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "gsh23pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "gsh23pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_heavy_fighter_equipment_4_entity"
+	pdxmesh = "SOV_MIG15_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "mig15pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "mig15pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_heavy_fighter_equipment_5_entity"
+	pdxmesh = "SOV_MIG15_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "mig15pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "mig15pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_heavy_fighter_equipment_6_entity"
+	pdxmesh = "SOV_SU11_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "mig15pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "mig15pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_heavy_fighter_equipment_7_entity"
+	pdxmesh = "SOV_SU11_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "mig15pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "mig15pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_heavy_fighter_equipment_8_entity"
+	pdxmesh = "SOV_SU15_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "gsh23pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "gsh23pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_heavy_fighter_equipment_9_entity"
+	pdxmesh = "SOV_MIG25_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "gsh23pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "gsh23pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_heavy_fighter_equipment_10_entity"
+	pdxmesh = "SOV_MIG31_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "gsh23pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "gsh23pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_heavy_fighter_equipment_10_entity"
+	pdxmesh = "SOV_mig31_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "gsh23pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "gsh23pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_CAS_equipment_5_entity"
+	pdxmesh = "SOV_IL40_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "airplane_light_fire" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_CAS_equipment_6_entity"
+	pdxmesh = "SOV_IL40_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "mig15pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "mig15pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_CAS_equipment_7_entity"
+	pdxmesh = "SOV_SU7_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "mig15pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "mig15pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_CAS_equipment_8_entity"
+	pdxmesh = "SOV_SU7_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "mig15pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "mig15pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_CAS_equipment_9_entity"
+	pdxmesh = "SOV_SU22_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "mig15pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "mig15pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_CAS_equipment_10_entity"
+	pdxmesh = "SOV_SU25_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "gsh23pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "gsh23pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_CAS_equipment_11_entity"
+	pdxmesh = "SOV_SU25_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "gsh23pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "gsh23pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_cv_CAS_equipment_4_entity"
+	pdxmesh = "SOV_IL40_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "mig15pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "mig15pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.19
+}
+
+entity = {
+	name = "SOV_cv_CAS_equipment_5_entity"
+	pdxmesh = "SOV_IL40_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "mig15pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "mig15pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.19
+}
+
+entity = {
+	name = "SOV_cv_CAS_equipment_6_entity"
+	pdxmesh = "SOV_SU7_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "mig15pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "mig15pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_cv_CAS_equipment_7_entity"
+	pdxmesh = "SOV_SU7_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "mig15pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "mig15pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_cv_CAS_equipment_8_entity"
+	pdxmesh = "SOV_SU7_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "mig15pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "mig15pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_cv_CAS_equipment_9_entity"
+	pdxmesh = "SOV_SU25_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "gsh23pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "gsh23pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_cv_CAS_equipment_10_entity"
+	pdxmesh = "SOV_SU25_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "gsh23pew" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "gsh23pew" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_jet_strat_bomber_equipment_1_entity"
+	pdxmesh = "SOV_M4_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "airplane_light_fire" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_jet_strat_bomber_equipment_2_entity"
+	pdxmesh = "SOV_TU16_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "airplane_light_fire" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_jet_strat_bomber_equipment_3_entity"
+	pdxmesh = "SOV_TU95_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "airplane_light_fire" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_jet_strat_bomber_equipment_4_entity"
+	pdxmesh = "SOV_TU22_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "airplane_light_fire" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_jet_strat_bomber_equipment_5_entity"
+	pdxmesh = "SOV_TU160_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "airplane_light_fire" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_jet_tac_bomber_equipment_1_entity"
+	pdxmesh = "SOV_IL28_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "airplane_light_fire" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_jet_tac_bomber_equipment_2_entity"
+	pdxmesh = "SOV_YAK28_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "airplane_light_fire" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.2
+}
+
+entity = {
+	name = "SOV_jet_tac_bomber_equipment_3_entity"
+	pdxmesh = "SOV_YAK28_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "airplane_light_fire" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.2
+}
+
+entity = {
+	name = "SOV_jet_tac_bomber_equipment_4_entity"
+	pdxmesh = "SOV_MIG27_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "airplane_light_fire" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.10
+}
+
+entity = {
+	name = "SOV_jet_tac_bomber_equipment_5_entity"
+	pdxmesh = "SOV_SU24_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "airplane_light_fire" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_nav_bomber_equipment_4_entity"
+	pdxmesh = "SOV_TU8_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "airplane_light_fire" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_nav_bomber_equipment_5_entity"
+	pdxmesh = "SOV_BE10_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "airplane_light_fire" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_nav_bomber_equipment_6_entity"
+	pdxmesh = "SOV_BE12_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "airplane_light_fire" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+
+entity = {
+	name = "SOV_nav_bomber_equipment_7_entity"
+	pdxmesh = "SOV_IL38_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "airplane_light_fire" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.19
+}
+
+entity = {
+	name = "SOV_transport_plane_equipment_5_entity"
+	pdxmesh = "SOV_IL76_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "airplane_light_fire" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_transport_plane_equipment_6_entity"
+	pdxmesh = "SOV_IL76_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "airplane_light_fire" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}
+
+entity = {
+	name = "SOV_transport_plane_equipment_7_entity"
+	pdxmesh = "SOV_IL76_mesh"
+	state = { name = "fire" animation = "idle"
+		event = { time = 0 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes sound = { soundeffect = "airplane_light_fire" } }
+		event = { time = 0.1 node = "gun1"	particle = "plane_mg_muzzle_particle" keep_particle = yes }
+		event = { sound = { soundeffect = "airplane_light_fire" } }
+	}
+	state = { name = "bomb" animation = "idle"
+		event = { time = 0 particle = "bomb_particle" keep_particle = yes sound = { soundeffect = "airplane_bomb" } }
+	}
+	state = { name = "idle" animation = "idle"
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_jet_idle" } }
+	}
+	state = { name = "crash" animation = "idle"
+		event = { time = 0 node = "root"	particle = "explosion_particle" keep_particle = yes sound = { soundeffect = "airplane_crash" } }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+		}
+	state = { name = "explode" animation = "idle"
+		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
+		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
+	}
+	scale = 0.144
+}

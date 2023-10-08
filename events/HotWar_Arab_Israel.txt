@@ -1,0 +1,118 @@
+add_namespace = hotwar_arab_israel
+
+news_event = {
+    id = hotwar_arab_israel.1
+	title = hotwar_arab_israel.1.t
+	desc = hotwar_arab_israel.1.d
+	picture = GFX_end_biafra_war_event
+
+    major = yes
+
+    trigger = {
+		date > 1973.10.6
+        NOT = { has_global_flag = start_arab_israel_war }
+	}
+
+    mean_time_to_happen = {
+		days = 1
+	}
+
+    immediate = {
+        hidden_effect = {
+            set_global_flag = start_arab_israel_war
+            EGY = {
+                declare_war_on = {
+                    target = ISR
+                    type = take_core_state
+                }
+            }
+        }
+	}
+
+    option = {
+		name = hotwar_arab_israel.1.a
+        trigger = {
+            NOT = {
+                OR = {
+                    TAG = EGY
+                    TAG = ISR
+                }
+
+            }
+			
+		}
+	}
+    option = {
+        name = hotwar_arab_israel.1.b
+        trigger = {
+			TAG = EGY
+		}
+    }
+    option = {
+        name = hotwar_arab_israel.1.c
+        trigger = {
+			TAG = ISR
+		}
+    }
+}
+
+#country_event = {
+#    id = hotwar_arab_israel.3
+#	title = hotwar_arab_israel.3.t
+#	desc = hotwar_arab_israel.3.d
+#	#picture = GFX_end_biafra_war_event
+#
+#    trigger = {
+#        always = no
+#    }
+#
+#    immediate = {
+#        set_global_flag = arab_peace
+#    }
+#
+#    option = {
+#        name = hotwar_arab_israel.3.a
+#        white_peace = ISR
+#        EGY = {
+#            transfer_state = 453
+#            transfer_state = 928
+#        }
+#        add_war_support = -0.1
+#
+#    }
+#    option = {
+#        name = hotwar_arab_israel.3.b
+#        add_war_support = 0.1
+#
+#    }
+#
+#
+#}
+#
+#news_event = {
+#    id = hotwar_arab_israel.2
+#
+#    hidden = yes
+#
+#    trigger = {
+#        NOT = { has_global_flag = arab_peace }
+#		EGY = {
+#            controls_state = 453
+#            controls_state = 928
+#        }
+#	}
+#
+#    mean_time_to_happen = {
+#		days = 1
+#	}
+#
+#    immediate = {
+#        EGY = { country_event = { id = hotwar_arab_israel.3 } }
+#    }
+#
+#    option = {
+#		name = hotwar_arab_israel.2.a
+#        EGY = { country_event = { id = hotwar_arab_israel.3 } }
+#	}
+#}
+

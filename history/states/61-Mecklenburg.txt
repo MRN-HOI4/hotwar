@@ -1,0 +1,38 @@
+state={
+	id=61
+	name="STATE_61"
+	manpower = 836353
+
+
+	state_category = city
+
+	history={
+		owner = DDR
+		add_core_of = DDR
+		add_claim_by = WGR
+		victory_points = {
+			321 5
+		}
+		victory_points = {
+			11305 3
+		}
+		buildings = {
+			infrastructure = 5
+            air_base = 10
+			anti_air_building = 1
+            industrial_complex = 3
+            arms_factory = 3
+            dockyard = 5
+			321 = {
+				naval_base = 6
+
+			}
+		}
+	}
+
+	provinces={
+		268 293 321 9294 11276 11305 
+	}
+
+	local_supplies=3.0 
+}

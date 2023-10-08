@@ -1,0 +1,41 @@
+
+state={
+	id=527
+	name="STATE_527"
+	manpower=6222100
+	history={
+		owner = PRK
+		add_core_of = PRK
+		add_claim_by = KOR
+		buildings = {
+			infrastructure = 5
+			air_base = 10
+			anti_air_building = 1
+			industrial_complex = 3
+			arms_factory = 6
+			dockyard = 2
+			4052 = {
+				naval_base = 2
+			}
+			11835 = {
+				naval_base = 2
+			}
+		}
+		victory_points = {
+			4052 25
+		}
+		victory_points = {
+			10065 9 
+		}
+		victory_points = {
+			11835 12 
+		}
+
+	}
+	provinces={
+		912 3912 4052 7171 9790 9795 9918 10065 11770 11835 11896 
+	}
+	buildings_max_level_factor=1.000
+	state_category = city
+	local_supplies=0.000
+}

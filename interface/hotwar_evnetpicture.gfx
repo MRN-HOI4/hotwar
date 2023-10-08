@@ -1,0 +1,13 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_end_biafra_war_event"
+		texturefile = "gfx/event_pictures/ZZZ_end_biafra_war.dds"
+    }
+
+    spriteType = {
+        name = "GFX_end_north_yemen_war_event"
+		texturefile = "gfx/event_pictures/ZZZ_end_north_yemen_war.dds"
+    }
+
+}

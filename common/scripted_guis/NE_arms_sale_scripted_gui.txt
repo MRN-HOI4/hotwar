@@ -1,0 +1,2112 @@
+scripted_gui = {
+	
+	economy_weapon_lists = {
+	
+		context_type = diplomatic_action
+		
+		window_name = "economy_weapon_lists"
+		
+		visible = {
+			always = yes
+		}
+		
+		ai_enabled = {
+			always = no
+        }
+		
+		dynamic_lists = {
+
+		}
+
+        properties = {
+			#change flag textures to actual flag texture
+            trade_buyer_flag = {
+                image = "[ROOT.GetFlag]"
+            }
+            trade_seller_flag = {
+                image = "[FROM.GetFlag]"
+            }
+		}
+		
+		effects = {
+			infantry_button_click = {
+				set_variable = { econo_kind_selected = 1 }
+				FROM = {
+				set_cart_assistant = yes
+				reset_infantry_listtt = yes 
+				}			
+			}
+		
+			armor_button_click = {
+				set_variable = { econo_kind_selected = 2 }
+				FROM = {
+				set_cart_assistant = yes
+				reset_armor_listtt = yes 
+				}	
+			}
+			
+			air_button_click = {
+				set_variable = { econo_kind_selected = 3 }
+				FROM = {
+				set_cart_assistant = yes
+				reset_air_listtt = yes 
+				}
+			}
+			
+			naval_button_click = {
+				set_variable = { econo_kind_selected = 4 }
+				FROM = {
+				set_cart_assistant = yes
+				reset_naval_listtt = yes 
+				}
+			}
+
+			econo_refresh_click = {   			###refresh
+				set_variable = { econo_kind_selected = 0 }
+				FROM = {
+				clear_all_carts = yes 
+				}
+			}
+
+		}
+		
+		triggers = {
+##########check accept or not		
+			econo_accept_icon_yes_visible = {
+				econo_trade_accept = yes
+			}
+
+			econo_accept_icon_no_visible = {
+				NOT = { econo_trade_accept = yes }
+			}
+
+			econo_accept_icon_yes_visible = {
+				econo_trade_accept = yes
+			}
+			
+			econo_accept_icon_no_visible = {
+				NOT = { econo_trade_accept = yes }
+			}			
+		
+		
+#####################infantry_weapon_list###############
+
+
+			econo_stock_infantry_equipment_0_visible = {######infantry_equipment
+				check_variable = { econo_kind_selected = 1 }
+			}
+			stock_infantry_equipment_0_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			infantry_equipment_0_buy_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			
+			econo_stock_infantry_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			stock_infantry_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			infantry_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+
+			econo_stock_infantry_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			stock_infantry_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			infantry_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+
+			econo_stock_infantry_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			stock_infantry_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			infantry_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			
+			econo_stock_support_equipment_visible = {######support_equipment
+				check_variable = { econo_kind_selected = 1 }
+			}
+			stock_support_equipment_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			support_equipment_buy_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+
+			econo_stock_motorized_equipment_visible = {######motorized_equipment
+				check_variable = { econo_kind_selected = 1 }
+			}
+			stock_motorized_equipment_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			motorized_equipment_buy_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			
+			econo_stock_mechanized_equipment_visible = {######mechanized_equipment
+				check_variable = { econo_kind_selected = 1 }
+			}
+			stock_mechanized_equipment_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			mechanized_equipment_buy_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			
+			econo_stock_artillery_equipment_1_visible = {######artillery_equipment
+				check_variable = { econo_kind_selected = 1 }
+			}
+			stock_artillery_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			artillery_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			
+			econo_stock_artillery_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			stock_artillery_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			artillery_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+
+			econo_stock_artillery_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			stock_artillery_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			artillery_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			
+			econo_stock_rocket_artillery_equipment_1_visible = {######rocket_artillery_equipment
+				check_variable = { econo_kind_selected = 1 }
+			}
+			stock_rocket_artillery_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			rocket_artillery_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			
+			econo_stock_rocket_artillery_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			stock_rocket_artillery_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			rocket_artillery_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			
+			econo_stock_motorized_rocket_equipment_visible = {######motorized_rocket_equipment
+				check_variable = { econo_kind_selected = 1 }
+			}
+			stock_motorized_rocket_equipment_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			motorized_rocket_equipment_buy_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+
+			econo_stock_anti_tank_equipment_1_visible = {######anti_tank_equipment
+				check_variable = { econo_kind_selected = 1 }
+			}
+			stock_anti_tank_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			anti_tank_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			
+			econo_stock_anti_tank_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			stock_anti_tank_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			anti_tank_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+
+			econo_stock_anti_tank_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			stock_anti_tank_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			anti_tank_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+
+			econo_stock_anti_air_equipment_1_visible = {######anti_air_equipment
+				check_variable = { econo_kind_selected = 1 }
+			}
+			stock_anti_air_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			anti_air_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			
+			econo_stock_anti_air_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			stock_anti_air_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			anti_air_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+
+			econo_stock_anti_air_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			stock_anti_air_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			anti_air_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 1 }
+			}
+			
+			
+#####################armor_weapon_list###############	
+
+			
+			econo_stock_light_tank_equipment_1_visible = {######light_tank_equipment
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_light_tank_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			light_tank_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_light_tank_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_light_tank_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			light_tank_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_light_tank_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_light_tank_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			light_tank_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_light_tank_artillery_equipment_1_visible = {######light_tank_artillery_equipment
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_light_tank_artillery_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			light_tank_artillery_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_light_tank_artillery_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_light_tank_artillery_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			light_tank_artillery_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+			econo_stock_light_tank_artillery_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_light_tank_artillery_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			light_tank_artillery_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+			econo_stock_light_tank_destroyer_equipment_1_visible = {######light_tank_destroyer_equipment
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_light_tank_destroyer_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			light_tank_destroyer_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_light_tank_destroyer_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_light_tank_destroyer_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			light_tank_destroyer_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_light_tank_destroyer_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_light_tank_destroyer_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			light_tank_destroyer_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+			econo_stock_light_tank_aa_equipment_1_visible = {######light_tank_aa_equipment
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_light_tank_aa_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			light_tank_aa_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+			econo_stock_light_tank_aa_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_light_tank_aa_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			light_tank_aa_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+			econo_stock_light_tank_aa_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_light_tank_aa_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			light_tank_aa_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_medium_tank_equipment_1_visible = {######medium_tank_equipment
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_medium_tank_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			medium_tank_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+			econo_stock_medium_tank_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_medium_tank_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			medium_tank_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+			econo_stock_medium_tank_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_medium_tank_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			medium_tank_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+			econo_stock_medium_tank_artillery_equipment_1_visible = {######medium_tank_artillery_equipment
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_medium_tank_artillery_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			medium_tank_artillery_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_medium_tank_artillery_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_medium_tank_artillery_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			medium_tank_artillery_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+			econo_stock_medium_tank_artillery_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_medium_tank_artillery_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			medium_tank_artillery_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+			econo_stock_medium_tank_destroyer_equipment_1_visible = {######medium_tank_destroyer_equipment
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_medium_tank_destroyer_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			medium_tank_destroyer_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+			econo_stock_medium_tank_destroyer_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_medium_tank_destroyer_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			medium_tank_destroyer_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_medium_tank_destroyer_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_medium_tank_destroyer_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			medium_tank_destroyer_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+			econo_stock_medium_tank_aa_equipment_1_visible = {######medium_tank_aa_equipment
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_medium_tank_aa_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			medium_tank_aa_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+			econo_stock_medium_tank_aa_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_medium_tank_aa_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			medium_tank_aa_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+				
+			econo_stock_medium_tank_aa_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_medium_tank_aa_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			medium_tank_aa_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_heavy_tank_equipment_1_visible = {######heavy_tank_equipment
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_heavy_tank_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			heavy_tank_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+			econo_stock_heavy_tank_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_heavy_tank_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			heavy_tank_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+			econo_stock_heavy_tank_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_heavy_tank_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			heavy_tank_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_heavy_tank_artillery_equipment_1_visible = {######heavy_tank_artillery_equipment
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_heavy_tank_artillery_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			heavy_tank_artillery_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_heavy_tank_artillery_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_heavy_tank_artillery_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			heavy_tank_artillery_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_heavy_tank_artillery_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_heavy_tank_artillery_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			heavy_tank_artillery_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_super_heavy_tank_artillery_equipment_1_visible = {######super_heavy_tank_artillery
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_super_heavy_tank_artillery_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			super_heavy_tank_artillery_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_heavy_tank_destroyer_equipment_1_visible = {######heavy_tank_destroyer_equipment
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_heavy_tank_destroyer_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			heavy_tank_destroyer_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_heavy_tank_destroyer_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_heavy_tank_destroyer_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			heavy_tank_destroyer_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_heavy_tank_destroyer_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_heavy_tank_destroyer_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			heavy_tank_destroyer_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_super_heavy_tank_destroyer_equipment_1_visible = {######super_heavy_tank_destroyer_equipment
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_super_heavy_tank_destroyer_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			super_heavy_tank_destroyer_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_heavy_tank_aa_equipment_1_visible = {######heavy_tank_aa_equipment
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_heavy_tank_aa_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			heavy_tank_aa_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_heavy_tank_aa_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_heavy_tank_aa_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			heavy_tank_aa_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+
+			econo_stock_heavy_tank_aa_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_heavy_tank_aa_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			heavy_tank_aa_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+			econo_stock_super_heavy_tank_aa_equipment_1_visible = {######super_heavy_tank_aa_equipment
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_super_heavy_tank_aa_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			super_heavy_tank_aa_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+			econo_stock_modern_tank_equipment_visible = {######modern_tank_equipment
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_modern_tank_equipment_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			modern_tank_equipment_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+			econo_stock_modern_tank_artillery_equipment_visible = {######modern_tank_artillery_equipmen
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_modern_tank_artillery_equipment_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			modern_tank_artillery_equipment_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+			econo_stock_modern_tank_destroyer_equipment_visible = {######modern_tank_destroyer_equipment
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_modern_tank_destroyer_equipment_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			modern_tank_destroyer_equipment_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+			econo_stock_modern_tank_aa_equipment_visible = {######modern_tank_aa_equipment
+				check_variable = { econo_kind_selected = 2 }
+			}
+			stock_modern_tank_aa_equipment_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			modern_tank_aa_equipment_buy_visible = {
+				check_variable = { econo_kind_selected = 2 }
+			}
+			
+#####################air_weapon_list###############
+			
+			econo_stock_fighter_equipment_0_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_fighter_equipment_0_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			fighter_equipment_0_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_fighter_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_fighter_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			fighter_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_fighter_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_fighter_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			fighter_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_fighter_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_fighter_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			fighter_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}	
+
+			econo_stock_cv_fighter_equipment_0_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_cv_fighter_equipment_0_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			cv_fighter_equipment_0_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_cv_fighter_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_cv_fighter_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			cv_fighter_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_cv_fighter_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_cv_fighter_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			cv_fighter_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_cv_fighter_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_cv_fighter_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			cv_fighter_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}	
+
+			econo_stock_jet_fighter_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_jet_fighter_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			jet_fighter_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_jet_fighter_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_jet_fighter_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			jet_fighter_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_heavy_fighter_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_heavy_fighter_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			heavy_fighter_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_heavy_fighter_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_heavy_fighter_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			heavy_fighter_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_heavy_fighter_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_heavy_fighter_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			heavy_fighter_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_CAS_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_CAS_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			CAS_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_CAS_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_CAS_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			CAS_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_CAS_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_CAS_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			CAS_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_cv_CAS_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_cv_CAS_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			cv_CAS_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_cv_CAS_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_cv_CAS_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			cv_CAS_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_cv_CAS_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_cv_CAS_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			cv_CAS_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_nav_bomber_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_nav_bomber_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			nav_bomber_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}	
+
+			econo_stock_nav_bomber_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_nav_bomber_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			nav_bomber_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}	
+
+			econo_stock_nav_bomber_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_nav_bomber_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			nav_bomber_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}	
+
+			econo_stock_cv_nav_bomber_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_cv_nav_bomber_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			cv_nav_bomber_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_cv_nav_bomber_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_cv_nav_bomber_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			cv_nav_bomber_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}	
+
+			econo_stock_cv_nav_bomber_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_cv_nav_bomber_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			cv_nav_bomber_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}	
+
+			econo_stock_tac_bomber_equipment_0_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_tac_bomber_equipment_0_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			tac_bomber_equipment_0_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}	
+
+			econo_stock_tac_bomber_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_tac_bomber_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			tac_bomber_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_tac_bomber_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_tac_bomber_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			tac_bomber_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}	
+
+			econo_stock_tac_bomber_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_tac_bomber_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			tac_bomber_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_strat_bomber_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_strat_bomber_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			strat_bomber_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_strat_bomber_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_strat_bomber_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			strat_bomber_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_strat_bomber_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_strat_bomber_equipment_3_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			strat_bomber_equipment_3_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}	
+
+			econo_stock_scout_plane_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_scout_plane_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			scout_plane_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_scout_plane_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_scout_plane_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			scout_plane_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}	
+
+			econo_stock_jet_tac_bomber_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_jet_tac_bomber_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			jet_tac_bomber_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_jet_tac_bomber_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_jet_tac_bomber_equipment_2_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			jet_tac_bomber_equipment_2_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}	
+
+			econo_stock_jet_strat_bomber_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_jet_strat_bomber_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			jet_strat_bomber_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+
+			econo_stock_rocket_suicide_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			stock_rocket_suicide_equipment_1_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}
+			rocket_suicide_equipment_1_buy_visible = {
+				check_variable = { econo_kind_selected = 3 }
+			}			
+
+#####################naval_weapon_list###############
+
+			econo_amounts_convoy_visible = {                 ##Convoys
+				check_variable = { econo_kind_selected = 4 }
+			}
+			stock_convoy_visible = {      
+				check_variable = { econo_kind_selected = 4 }
+			}
+			convoy_buy_visible = {
+				check_variable = { econo_kind_selected = 4 }
+			}
+
+			econo_amounts_submarine_visible = {                 ##SS
+				check_variable = { econo_kind_selected = 4 }
+			}
+			stock_submarine_visible = {      
+				check_variable = { econo_kind_selected = 4 }
+			}
+			submarine_buy_visible = {
+				check_variable = { econo_kind_selected = 4 }
+			}
+			
+			econo_amounts_destroyer_visible = {                 ##DD
+				check_variable = { econo_kind_selected = 4 }
+			}
+			stock_destroyer_visible = {         
+				check_variable = { econo_kind_selected = 4 }
+			}
+			destroyer_buy_visible = {
+				check_variable = { econo_kind_selected = 4 }
+			}
+
+
+			econo_amounts_light_cruiser_visible = {                 ##CL
+				check_variable = { econo_kind_selected = 4 }
+			}
+			stock_light_cruiser_visible = {     
+				check_variable = { econo_kind_selected = 4 }
+			}
+			light_cruiser_buy_visible = {
+				check_variable = { econo_kind_selected = 4 }
+			}
+
+
+			econo_amounts_heavy_cruiser_visible = {                 ##CA
+				check_variable = { econo_kind_selected = 4 }
+			}
+			stock_heavy_cruiser_visible = {        
+				check_variable = { econo_kind_selected = 4 }
+			}
+			heavy_cruiser_buy_visible = {
+				check_variable = { econo_kind_selected = 4 }
+			}
+
+			econo_amounts_battle_cruiser_visible = {        			##BC
+				check_variable = { econo_kind_selected = 4 }
+			}
+			stock_battle_cruiser_visible = {        	
+				check_variable = { econo_kind_selected = 4 }
+			}
+			battle_cruiser_buy_visible = {
+				check_variable = { econo_kind_selected = 4 }
+			}
+			
+			econo_amounts_battleship_visible = {        			##BB
+				check_variable = { econo_kind_selected = 4 }
+			}
+			stock_battleship_visible = { 
+				check_variable = { econo_kind_selected = 4 }
+			}
+			battleship_buy_visible = {
+				check_variable = { econo_kind_selected = 4 }
+			}
+
+			econo_amounts_carrier_visible = {           			##CV
+				check_variable = { econo_kind_selected = 4 }
+			}
+			stock_carrier_visible = {
+				check_variable = { econo_kind_selected = 4 }
+			}
+			carrier_buy_visible = {
+				check_variable = { econo_kind_selected = 4 }					##SHBB not used
+			}
+
+####################################
+		}
+
+		effects = {	
+#######################infantry_shop#####################
+			infantry_equipment_0_buy_click = {
+				cart_indicator_move = yes		
+				set_variable = { infantry_key = 1 }
+				infantry_add_to_cart = yes
+			}
+			infantry_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { infantry_key = 2 }
+				infantry_add_to_cart = yes
+			}
+			infantry_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { infantry_key = 3 }
+				infantry_add_to_cart = yes
+			}
+			infantry_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { infantry_key = 4 }
+				infantry_add_to_cart = yes
+			}
+			support_equipment_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { infantry_key = 5 }
+				infantry_add_to_cart = yes
+			}
+			motorized_equipment_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { infantry_key = 6 }
+				infantry_add_to_cart = yes
+			}
+			mechanized_equipment_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { infantry_key = 7 }
+				infantry_add_to_cart = yes
+			}
+			artillery_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { infantry_key = 8 }
+				infantry_add_to_cart = yes
+			}
+			artillery_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { infantry_key = 9 }
+				infantry_add_to_cart = yes
+			}
+			artillery_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { infantry_key = 10 }
+				infantry_add_to_cart = yes
+			}
+			rocket_artillery_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { infantry_key = 11 }
+				infantry_add_to_cart = yes
+			}
+			rocket_artillery_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { infantry_key = 12 }
+				infantry_add_to_cart = yes
+			}
+			motorized_rocket_equipment_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { infantry_key = 13 }
+				infantry_add_to_cart = yes
+			}
+			anti_tank_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { infantry_key = 14 }
+				infantry_add_to_cart = yes
+			}
+			anti_tank_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { infantry_key = 15 }
+				infantry_add_to_cart = yes
+			}
+			anti_tank_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { infantry_key = 16 }
+				infantry_add_to_cart = yes
+			}
+			anti_air_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { infantry_key = 17 }
+				infantry_add_to_cart = yes
+			}
+			anti_air_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { infantry_key = 18 }
+				infantry_add_to_cart = yes
+			}
+			anti_air_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { infantry_key = 19 }
+				infantry_add_to_cart = yes
+			}
+########################armor_shop	#####################		
+			light_tank_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 1 }
+				armor_add_to_cart = yes
+			}
+			light_tank_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 2 }
+				armor_add_to_cart = yes
+			}
+			light_tank_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 3 }
+				armor_add_to_cart = yes
+			}
+			light_tank_artillery_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 4 }
+				armor_add_to_cart = yes
+			}
+			light_tank_artillery_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 5 }
+				armor_add_to_cart = yes
+			}
+			light_tank_artillery_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 6 }
+				armor_add_to_cart = yes
+			}
+			light_tank_destroyer_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 7 }
+				armor_add_to_cart = yes
+			}
+			light_tank_destroyer_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 8 }
+				armor_add_to_cart = yes
+			}
+			light_tank_destroyer_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 9 }
+				armor_add_to_cart = yes
+			}
+			light_tank_aa_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 10 }
+				armor_add_to_cart = yes
+			}
+			light_tank_aa_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 11 }
+				armor_add_to_cart = yes
+			}
+			light_tank_aa_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 12 }
+				armor_add_to_cart = yes
+			}
+			medium_tank_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 13 }
+				armor_add_to_cart = yes
+			}
+			medium_tank_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 14 }
+				armor_add_to_cart = yes
+			}
+			medium_tank_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 15 }
+				armor_add_to_cart = yes
+			}
+			medium_tank_artillery_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 16 }
+				armor_add_to_cart = yes
+			}
+			medium_tank_artillery_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 17 }
+				armor_add_to_cart = yes
+			}
+			medium_tank_artillery_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 18 }
+				armor_add_to_cart = yes
+			}
+			medium_tank_destroyer_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 19 }
+				armor_add_to_cart = yes
+			}
+			medium_tank_destroyer_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 20 }
+				armor_add_to_cart = yes
+			}
+			medium_tank_destroyer_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 21 }
+				armor_add_to_cart = yes
+			}
+			medium_tank_aa_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 22 }
+				armor_add_to_cart = yes
+			}
+			medium_tank_aa_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 23 }
+				armor_add_to_cart = yes
+			}
+			medium_tank_aa_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 24 }
+				armor_add_to_cart = yes
+			}
+			heavy_tank_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 25 }
+				armor_add_to_cart = yes
+			}
+			heavy_tank_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 26 }
+				armor_add_to_cart = yes
+			}
+			heavy_tank_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 27 }
+				armor_add_to_cart = yes
+			}
+			heavy_tank_artillery_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 28 }
+				armor_add_to_cart = yes
+			}
+			heavy_tank_artillery_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 29 }
+				armor_add_to_cart = yes
+			}
+			heavy_tank_artillery_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 30 }
+				armor_add_to_cart = yes
+			}
+			super_heavy_tank_artillery_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 31 }
+				armor_add_to_cart = yes
+			}
+			heavy_tank_destroyer_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 32 }
+				armor_add_to_cart = yes
+			}
+			heavy_tank_destroyer_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 33 }
+				armor_add_to_cart = yes
+			}
+			heavy_tank_destroyer_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 34 }
+				armor_add_to_cart = yes
+			}
+			super_heavy_tank_destroyer_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 35 }
+				armor_add_to_cart = yes
+			}
+			heavy_tank_aa_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 36 }
+				armor_add_to_cart = yes
+			}
+			heavy_tank_aa_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 37 }
+				armor_add_to_cart = yes
+			}
+			heavy_tank_aa_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 38 }
+				armor_add_to_cart = yes
+			}
+			super_heavy_tank_aa_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 39 }
+				armor_add_to_cart = yes
+			}
+			modern_tank_equipment_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 40 }
+				armor_add_to_cart = yes
+			}
+			modern_tank_artillery_equipment_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 41 }
+				armor_add_to_cart = yes
+			}
+			modern_tank_destroyer_equipment_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 42 }
+				armor_add_to_cart = yes
+			}
+			modern_tank_aa_equipment_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { armor_key = 43 }
+				armor_add_to_cart = yes
+			}
+########################air_shop#####################
+			fighter_equipment_0_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 1 }
+				air_add_to_cart = yes
+			}
+			fighter_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 2 }
+				air_add_to_cart = yes
+			}
+			fighter_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 3 }
+				air_add_to_cart = yes
+			}
+			fighter_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 4 }
+				air_add_to_cart = yes
+			}
+			cv_fighter_equipment_0_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 5 }
+				air_add_to_cart = yes
+			}
+			cv_fighter_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 6 }
+				air_add_to_cart = yes
+			}
+			cv_fighter_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 7 }
+				air_add_to_cart = yes
+			}
+			cv_fighter_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 8 }
+				air_add_to_cart = yes
+			}
+			jet_fighter_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 9 }
+				air_add_to_cart = yes
+			}
+			jet_fighter_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 10 }
+				air_add_to_cart = yes
+			}
+			heavy_fighter_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 11 }
+				air_add_to_cart = yes
+			}
+			heavy_fighter_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 12 }
+				air_add_to_cart = yes
+			}
+			heavy_fighter_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 13 }
+				air_add_to_cart = yes
+			}
+			CAS_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 14 }
+				air_add_to_cart = yes
+			}
+			CAS_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 15 }
+				air_add_to_cart = yes
+			}
+			CAS_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 16 }
+				air_add_to_cart = yes
+			}
+			cv_CAS_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 17 }
+				air_add_to_cart = yes
+			}
+			cv_CAS_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 18 }
+				air_add_to_cart = yes
+			}
+			cv_CAS_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 19 }
+				air_add_to_cart = yes
+			}
+			nav_bomber_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 20 }
+				air_add_to_cart = yes
+			}
+			nav_bomber_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 21 }
+				air_add_to_cart = yes
+			}
+			nav_bomber_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 22 }
+				air_add_to_cart = yes
+			}
+			cv_nav_bomber_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 23 }
+				air_add_to_cart = yes
+			}
+			cv_nav_bomber_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 24 }
+				air_add_to_cart = yes
+			}
+			cv_nav_bomber_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 25 }
+				air_add_to_cart = yes
+			}
+			tac_bomber_equipment_0_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 26 }
+				air_add_to_cart = yes
+			}
+			tac_bomber_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 27 }
+				air_add_to_cart = yes
+			}
+			tac_bomber_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 28 }
+				air_add_to_cart = yes
+			}
+			tac_bomber_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 29 }
+				air_add_to_cart = yes
+			}
+			strat_bomber_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 30 }
+				air_add_to_cart = yes
+			}
+			strat_bomber_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 31 }
+				air_add_to_cart = yes
+			}
+			strat_bomber_equipment_3_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 32 }
+				air_add_to_cart = yes
+			}
+			scout_plane_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 33 }
+				air_add_to_cart = yes
+			}
+			scout_plane_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 34 }
+				air_add_to_cart = yes
+			}
+			jet_tac_bomber_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 35 }
+				air_add_to_cart = yes
+			}
+			jet_tac_bomber_equipment_2_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 36 }
+				air_add_to_cart = yes
+			}
+			jet_strat_bomber_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 37 }
+				air_add_to_cart = yes
+			}
+			rocket_suicide_equipment_1_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { air_key = 38 }
+				air_add_to_cart = yes
+			}
+########################naval_shop#####################
+			convoy_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { naval_key = 1 }
+				naval_add_to_cart = yes
+			}
+			submarine_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { naval_key = 2 }
+				naval_add_to_cart = yes
+			}
+			destroyer_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { naval_key = 3 }
+				naval_add_to_cart = yes
+			}
+			light_cruiser_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { naval_key = 4 }
+				naval_add_to_cart = yes
+			}
+			heavy_cruiser_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { naval_key = 5 }
+				naval_add_to_cart = yes
+			}
+			battle_cruiser_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { naval_key = 6 }
+				naval_add_to_cart = yes
+			}
+			battleship_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { naval_key = 7 }
+				naval_add_to_cart = yes
+			}
+			carrier_buy_click = {
+				cart_indicator_move = yes
+				set_variable = { naval_key = 8 }
+				naval_add_to_cart = yes
+			}
+############################################################
+				
+		}
+		effects = {	                      ####buy count function   and    calcualte	 cost
+			cart_1_sub_10000_click = {               #-10000
+				set_variable = { cart_key = 1 }
+				set_variable = { cart_num_change = -10000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_1_sub_1000_click = {                #-1000
+				set_variable = { cart_key = 1 }
+				set_variable = { cart_num_change = -1000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_1_sub_100_click = {                #-100
+				set_variable = { cart_key = 1 }
+				set_variable = { cart_num_change = -100 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_1_sub_10_click = {                #-10
+				set_variable = { cart_key = 1 }
+				set_variable = { cart_num_change = -10 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_1_sub_1_click = {                #-1
+				set_variable = { cart_key = 1 }
+				set_variable = { cart_num_change = -1 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_1_add_1_click = {                #+1
+				set_variable = { cart_key = 1 }
+				set_variable = { cart_num_change = 1 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_1_add_10_click = {                #+10
+				set_variable = { cart_key = 1 }
+				set_variable = { cart_num_change = 10 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_1_add_100_click = {                #+100
+				set_variable = { cart_key = 1 }
+				set_variable = { cart_num_change = 100 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_1_add_1000_click = {                #+1000
+				set_variable = { cart_key = 1 }
+				set_variable = { cart_num_change = 1000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_1_add_10000_click = {                #+10000
+				set_variable = { cart_key = 1 }
+				set_variable = { cart_num_change = 10000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			
+
+			cart_2_sub_10000_click = {               #-10000
+				set_variable = { cart_key = 2 }
+				set_variable = { cart_num_change = -10000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_2_sub_1000_click = {                #-1000
+				set_variable = { cart_key = 2 }
+				set_variable = { cart_num_change = -1000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_2_sub_100_click = {                #-100
+				set_variable = { cart_key = 2 }
+				set_variable = { cart_num_change = -100 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_2_sub_10_click = {                #-10
+				set_variable = { cart_key = 2 }
+				set_variable = { cart_num_change = -10 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_2_sub_1_click = {                #-1
+				set_variable = { cart_key = 2 }
+				set_variable = { cart_num_change = -1 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_2_add_1_click = {                #+1
+				set_variable = { cart_key = 2 }
+				set_variable = { cart_num_change = 1 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_2_add_10_click = {                #+10
+				set_variable = { cart_key = 2 }
+				set_variable = { cart_num_change = 10 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_2_add_100_click = {                #+100
+				set_variable = { cart_key = 2 }
+				set_variable = { cart_num_change = 100 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_2_add_1000_click = {                #+1000
+				set_variable = { cart_key = 2 }
+				set_variable = { cart_num_change = 1000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_2_add_10000_click = {                #+10000
+				set_variable = { cart_key = 2 }
+				set_variable = { cart_num_change = 10000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+
+
+			cart_3_sub_10000_click = {               #-10000
+				set_variable = { cart_key = 3 }
+				set_variable = { cart_num_change = -10000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_3_sub_1000_click = {                #-1000
+				set_variable = { cart_key = 3 }
+				set_variable = { cart_num_change = -1000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_3_sub_100_click = {                #-100
+				set_variable = { cart_key = 3 }
+				set_variable = { cart_num_change = -100 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_3_sub_10_click = {                #-10
+				set_variable = { cart_key = 3 }
+				set_variable = { cart_num_change = -10 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_3_sub_1_click = {                #-1
+				set_variable = { cart_key = 3 }
+				set_variable = { cart_num_change = -1 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_3_add_1_click = {                #+1
+				set_variable = { cart_key = 3 }
+				set_variable = { cart_num_change = 1 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_3_add_10_click = {                #+10
+				set_variable = { cart_key = 3 }
+				set_variable = { cart_num_change = 10 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_3_add_100_click = {                #+100
+				set_variable = { cart_key = 3 }
+				set_variable = { cart_num_change = 100 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_3_add_1000_click = {                #+1000
+				set_variable = { cart_key = 3 }
+				set_variable = { cart_num_change = 1000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_3_add_10000_click = {                #+10000
+				set_variable = { cart_key = 3 }
+				set_variable = { cart_num_change = 10000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+
+
+			cart_4_sub_10000_click = {               #-10000
+				set_variable = { cart_key = 4 }
+				set_variable = { cart_num_change = -10000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_4_sub_1000_click = {                #-1000
+				set_variable = { cart_key = 4 }
+				set_variable = { cart_num_change = -1000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_4_sub_100_click = {                #-100
+				set_variable = { cart_key = 4 }
+				set_variable = { cart_num_change = -100 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_4_sub_10_click = {                #-10
+				set_variable = { cart_key = 4 }
+				set_variable = { cart_num_change = -10 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_4_sub_1_click = {                #-1
+				set_variable = { cart_key = 4 }
+				set_variable = { cart_num_change = -1 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_4_add_1_click = {                #+1
+				set_variable = { cart_key = 4 }
+				set_variable = { cart_num_change = 1 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_4_add_10_click = {                #+10
+				set_variable = { cart_key = 4 }
+				set_variable = { cart_num_change = 10 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_4_add_100_click = {                #+100
+				set_variable = { cart_key = 4 }
+				set_variable = { cart_num_change = 100 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_4_add_1000_click = {                #+1000
+				set_variable = { cart_key = 4 }
+				set_variable = { cart_num_change = 1000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_4_add_10000_click = {                #+10000
+				set_variable = { cart_key = 4 }
+				set_variable = { cart_num_change = 10000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+
+			cart_5_sub_10000_click = {               #-10000
+				set_variable = { cart_key = 5 }
+				set_variable = { cart_num_change = -10000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_5_sub_1000_click = {                #-1000
+				set_variable = { cart_key = 5 }
+				set_variable = { cart_num_change = -1000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_5_sub_100_click = {                #-100
+				set_variable = { cart_key = 5 }
+				set_variable = { cart_num_change = -100 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_5_sub_10_click = {                #-10
+				set_variable = { cart_key = 5 }
+				set_variable = { cart_num_change = -10 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_5_sub_1_click = {                #-1
+				set_variable = { cart_key = 5 }
+				set_variable = { cart_num_change = -1 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_5_add_1_click = {                #+1
+				set_variable = { cart_key = 5 }
+				set_variable = { cart_num_change = 1 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_5_add_10_click = {                #+10
+				set_variable = { cart_key = 5 }
+				set_variable = { cart_num_change = 10 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_5_add_100_click = {                #+100
+				set_variable = { cart_key = 5 }
+				set_variable = { cart_num_change = 100 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_5_add_1000_click = {                #+1000
+				set_variable = { cart_key = 5 }
+				set_variable = { cart_num_change = 1000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_5_add_10000_click = {                #+10000
+				set_variable = { cart_key = 5 }
+				set_variable = { cart_num_change = 10000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+
+
+			cart_6_sub_10000_click = {               #-10000
+				set_variable = { cart_key = 6 }
+				set_variable = { cart_num_change = -10000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_6_sub_1000_click = {                #-1000
+				set_variable = { cart_key = 6 }
+				set_variable = { cart_num_change = -1000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_6_sub_100_click = {                #-100
+				set_variable = { cart_key = 6 }
+				set_variable = { cart_num_change = -100 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_6_sub_10_click = {                #-10
+				set_variable = { cart_key = 6 }
+				set_variable = { cart_num_change = -10 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_6_sub_1_click = {                #-1
+				set_variable = { cart_key = 6 }
+				set_variable = { cart_num_change = -1 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_6_add_1_click = {                #+1
+				set_variable = { cart_key = 6 }
+				set_variable = { cart_num_change = 1 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_6_add_10_click = {                #+10
+				set_variable = { cart_key = 6 }
+				set_variable = { cart_num_change = 10 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_6_add_100_click = {                #+100
+				set_variable = { cart_key = 6 }
+				set_variable = { cart_num_change = 100 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_6_add_1000_click = {                #+1000
+				set_variable = { cart_key = 6 }
+				set_variable = { cart_num_change = 1000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			cart_6_add_10000_click = {                #+10000
+				set_variable = { cart_key = 6 }
+				set_variable = { cart_num_change = 10000 }
+				purchase_num_change = yes
+				econo_check_out = yes
+			}
+			
+		}		
+       
+	}
+	
+}
+

@@ -1,0 +1,70 @@
+United_Nations_category = {
+    
+    UN_call_Permanent_Members = {
+        visible = {
+            OR = {
+                original_tag = USA
+                original_tag = SOV
+                original_tag = FRA
+                original_tag = ENG
+                original_tag = PRC
+                original_tag = CHI
+            }
+        }
+        cost = 10
+        available = {
+            always = yes
+        }
+        days_remove = 7
+        icon = ger_mefo_bills
+        remove_effect = {
+            news_event = {
+                id = un.2
+            }
+            add_political_power = 10
+        }
+    }
+
+    UN_call_Security_Council = {
+        visible = {
+            OR = {
+                original_tag = USA
+                original_tag = SOV
+                original_tag = FRA
+                original_tag = ENG
+                original_tag = PRC
+                original_tag = CHI
+            }
+        }
+        cost = 10
+        available = {
+            always = yes
+        }
+        days_remove = 7
+        icon = ger_mefo_bills
+        remove_effect = {
+            news_event = {
+                id = un.1
+            }
+            add_political_power = 10
+        }
+    }
+
+    UN_call_General_Assembly = {
+        visible = {
+            all_country = {}
+        }
+        cost = 10
+        available = {
+            always = yes
+        }
+        days_remove = 7
+        icon = ger_mefo_bills
+        remove_effect = {
+            news_event = {
+                id = un.3
+            }
+            add_political_power = 10
+        }
+    }
+}

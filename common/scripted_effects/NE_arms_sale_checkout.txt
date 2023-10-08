@@ -1,0 +1,588 @@
+calculate_available_point = { ####ROOT
+
+	set_variable = { Root.econo_purchase_limit = Root.gdpmn }
+	subtract_from_variable = { Root.econo_purchase_limit = Root.weapon_import }
+	divide_variable = { Root.econo_purchase_limit = 5 }
+
+}
+
+NE_reset_trade_waiting_flag = {#3 days left
+	if={
+		limit = {
+			has_country_flag = arms_sale_waiting
+		}
+		set_country_flag = {
+			flag = arms_sale_waiting
+			days = 3
+			value = 1
+		}
+	}
+}
+
+econo_check_out = {
+
+	set_variable ={ econo_total_cost = 0 }
+
+	set_variable = { cart_1_purchase_cost = cart_1_purchase_num }   ##seperate
+	multiply_variable = { cart_1_purchase_cost = cart_cost_1 }
+	
+	set_variable = { cart_2_purchase_cost = cart_2_purchase_num }
+	multiply_variable = { cart_2_purchase_cost = cart_cost_2 }	
+	
+	set_variable = { cart_3_purchase_cost = cart_3_purchase_num }	
+	multiply_variable = { cart_3_purchase_cost = cart_cost_3 }
+	
+	set_variable = { cart_4_purchase_cost = cart_4_purchase_num }
+	multiply_variable = { cart_4_purchase_cost = cart_cost_4 }
+	
+	set_variable = { cart_5_purchase_cost = cart_5_purchase_num }
+	multiply_variable = { cart_5_purchase_cost = cart_cost_5 }
+	
+	set_variable = { cart_6_purchase_cost = cart_6_purchase_num }
+	multiply_variable = { cart_6_purchase_cost = cart_cost_6 }
+	
+	
+	add_to_variable = { econo_total_cost = cart_1_purchase_cost }   ##add all
+	add_to_variable = { econo_total_cost = cart_2_purchase_cost }
+	add_to_variable = { econo_total_cost = cart_3_purchase_cost }
+	add_to_variable = { econo_total_cost = cart_4_purchase_cost }
+	add_to_variable = { econo_total_cost = cart_5_purchase_cost }
+	add_to_variable = { econo_total_cost = cart_6_purchase_cost }
+
+	divide_variable = { econo_total_cost = 100 }   ##due to 100 enlarge avoid data error
+
+	ai_trade_attitude = yes
+}
+
+ai_trade_attitude = {
+
+	set_variable = { trade_attitude_value = 0 }
+	set_variable = { trade_attitude_kinds = 0 }
+
+	set_temp_variable = { asis_cart_brand = cart_brand_1 }
+	set_temp_variable = { asis_cart_rate = cart_rate_1 }
+	ai_trade_attitude_asis = yes
+	
+	set_temp_variable = { asis_cart_brand = cart_brand_2 }
+	set_temp_variable = { asis_cart_rate = cart_rate_2 }
+	ai_trade_attitude_asis = yes
+
+	set_temp_variable = { asis_cart_brand = cart_brand_3 }
+	set_temp_variable = { asis_cart_rate = cart_rate_3 }
+	ai_trade_attitude_asis = yes
+
+	set_temp_variable = { asis_cart_brand = cart_brand_4 }
+	set_temp_variable = { asis_cart_rate = cart_rate_4 }
+	ai_trade_attitude_asis = yes
+
+	set_temp_variable = { asis_cart_brand = cart_brand_5 }
+	set_temp_variable = { asis_cart_rate = cart_rate_5 }
+	ai_trade_attitude_asis = yes
+
+	set_temp_variable = { asis_cart_brand = cart_brand_6 }
+	set_temp_variable = { asis_cart_rate = cart_rate_6 }
+	ai_trade_attitude_asis = yes
+	
+	divide_variable = { trade_attitude_value = trade_attitude_kinds }
+
+}
+
+ai_trade_attitude_asis = {
+
+	if = {
+		limit = { 
+			check_variable = { asis_cart_brand > 0 }	##equipments
+			check_variable = { asis_cart_brand < 101 }				
+		}
+		add_to_variable = { trade_attitude_kinds = 1 }
+		if = {
+			limit = { 
+				check_variable = { asis_cart_rate > 1.0 }		
+			}
+			add_to_variable = { trade_attitude_value = 15 }
+		}
+		else_if = {		
+			limit = { 
+				check_variable = { asis_cart_rate < 0.3 }			
+			}
+			subtract_from_variable = { trade_attitude_value = 15 }			
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { asis_cart_brand = 101 }##convoy
+		}
+		add_to_variable = { trade_attitude_kinds = 1 }	
+	}
+	else_if = {
+		limit = { 
+			check_variable = { asis_cart_brand = 102 }##warships
+		}
+		add_to_variable = { trade_attitude_kinds = 1 }
+		if = {
+			limit = { 
+				check_variable = { asis_cart_rate > 0.4 }				
+			}		
+			add_to_variable = { trade_attitude_value = 15 }
+		}
+		else_if = {
+			limit = { 
+				check_variable = { asis_cart_rate < 0.1 }				
+			}		
+			subtract_from_variable = { trade_attitude_value = 15 }
+		}		
+	}
+	else_if = {
+		limit = { 
+			check_variable = { asis_cart_brand = 103 }		
+		}
+		add_to_variable = { trade_attitude_kinds = 1 }
+		if = {
+			limit = { 
+				check_variable = { asis_cart_rate > 0.4 }				
+			}		
+			add_to_variable = { trade_attitude_value = 15 }
+		}
+		else_if = {
+			limit = { 
+				check_variable = { asis_cart_rate < 0.1 }				
+			}		
+			subtract_from_variable = { trade_attitude_value = 15 }
+		}		
+	}
+	else_if = {
+		limit = { 
+			check_variable = { asis_cart_brand = 104 }		
+		}
+		add_to_variable = { trade_attitude_kinds = 1 }
+		if = {
+			limit = { 
+				check_variable = { asis_cart_rate > 0.2 }				
+			}		
+			add_to_variable = { trade_attitude_value = 15 }
+		}
+		else_if = {
+			limit = { 
+				check_variable = { asis_cart_rate < 0.05 }				
+			}		
+			subtract_from_variable = { trade_attitude_value = 15 }
+		}		
+	}
+	else_if = {
+		limit = { 
+			check_variable = { asis_cart_brand = 105 }		
+		}
+		add_to_variable = { trade_attitude_kinds = 1 }
+		if = {
+			limit = { 
+				check_variable = { asis_cart_rate > 0.15 }				
+			}		
+			add_to_variable = { trade_attitude_value = 15 }
+		}
+		else_if = {
+			limit = { 
+				check_variable = { asis_cart_rate < 0.04 }				
+			}		
+			subtract_from_variable = { trade_attitude_value = 15 }
+		}		
+	}
+	else_if = {
+		limit = { 
+			check_variable = { asis_cart_brand = 106 }		
+		}
+		add_to_variable = { trade_attitude_kinds = 1 }
+		if = {
+			limit = { 
+				check_variable = { asis_cart_rate > 0.1 }				
+			}		
+			add_to_variable = { trade_attitude_value = 15 }
+		}
+		else_if = {
+			limit = { 
+				check_variable = { asis_cart_rate < 0.02 }				
+			}		
+			subtract_from_variable = { trade_attitude_value = 15 }
+		}		
+	}
+	else_if = {
+		limit = { 
+			check_variable = { asis_cart_brand = 107 }		
+		}
+		add_to_variable = { trade_attitude_kinds = 1 }
+		if = {
+			limit = { 
+				check_variable = { asis_cart_rate > 0.12 }				
+			}		
+			add_to_variable = { trade_attitude_value = 15 }
+		}
+		else_if = {
+			limit = { 
+				check_variable = { asis_cart_rate < 0.03 }				
+			}		
+			subtract_from_variable = { trade_attitude_value = 15 }
+		}		
+	}
+	else_if = {
+		limit = { 
+			check_variable = { asis_cart_brand = 108 }		
+		}
+		add_to_variable = { trade_attitude_kinds = 1 }
+		if = {
+			limit = { 
+				check_variable = { asis_cart_rate > 0.15 }				
+			}		
+			add_to_variable = { trade_attitude_value = 15 }
+		}
+		else_if = {
+			limit = { 
+				check_variable = { asis_cart_rate < 0.04 }				
+			}		
+			subtract_from_variable = { trade_attitude_value = 15 }
+		}		
+	}
+
+}
+
+weapon_import_effets = {
+#################################Buyer
+	ROOT = {
+		add_to_variable = { This.weapon_import = PREV.PREV.econo_total_cost }               ##total_import
+#######################import effects	
+		set_variable = { temp11 = This.weapon_import }	
+		divide_variable = { temp11 = This.gdpmn }
+		divide_variable = { temp11 = 2 }
+		if = {
+			limit = {
+				check_variable = { temp11 > 0.5 }					
+			}
+			set_variable ={ temp11 = 0.5 } 	#the cap value 50%	
+		}
+		set_variable ={ This.weapon_import_consumer = temp11 }
+		clear_variable = temp11
+		set_variable ={ This.weapon_import_research = This.weapon_import_consumer }
+		divide_variable = { This.weapon_import_research = 2 }
+		set_variable = { PREV.PREV.ne_cost_compare = PREV.PREV.econo_total_cost }
+		divide_variable = { PREV.PREV.ne_cost_compare = This.weapon_import }
+		if = {
+			limit = {
+				NOT = {		
+					has_dynamic_modifier = {
+						modifier = weapon_import_modifiers
+					}
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = weapon_import_modifiers
+				days = 180
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { PREV.PREV.ne_cost_compare > 0.5 }
+			}
+			add_dynamic_modifier = {
+				modifier = weapon_import_modifiers
+				days = 180
+			}
+		}
+		add_opinion_modifier = { target = PREV  modifier = econo_trade_success }  #+15 opinion
+		
+	}
+##############################Seller
+	FROM = {
+	
+		add_to_variable = { This.weapon_export = econo_total_cost }	               ##total_export
+#######################export effects
+		set_variable = { temp12 = This.weapon_export }	
+		divide_variable = { temp12 = This.gdpmn }			
+		multiply_variable = { temp12 = 2.5 }		
+		if = {
+			limit = {
+				check_variable = { temp12 > 3 }					
+			}
+			set_variable ={ temp12 = 3 } 	#the cap value 300%	
+		}
+		set_variable ={ This.weapon_export_construction = temp12 }
+		set_variable ={ This.weapon_export_construction_75p = temp12 }
+		clear_variable = temp12
+		multiply_variable = { This.weapon_export_construction_75p = 0.75 }
+		set_variable = { ne_cost_compare = econo_total_cost }
+		divide_variable = { ne_cost_compare = This.weapon_export }
+		if = {
+			limit = {
+				NOT = {		
+					has_dynamic_modifier = {
+						modifier = weapon_export_modifiers
+						scope = PREV
+					}
+				}
+			}
+			add_dynamic_modifier = {
+				modifier = weapon_export_modifiers
+				scope = PREV
+				days = 180
+			}
+		}
+		else_if = {
+			limit = {
+				check_variable = { ne_cost_compare > 0.5 }
+			}
+			add_dynamic_modifier = {##refresh
+				modifier = weapon_export_modifiers
+				scope = PREV
+				days = 180
+			}
+		}
+		clear_variable = ne_cost_compare
+
+####send weapon	
+		if = {
+			limit = { 
+				check_variable = { cart_num > 0 }				
+			}
+			set_temp_variable = { temp_cart_brand = cart_brand_1 }
+			set_temp_variable = { temp_cart_purchase_num = cart_1_purchase_num }
+			econo_equipment_send = yes
+		}
+		if = {
+			limit = { 
+				check_variable = { cart_num > 1 }				
+			}			
+			set_temp_variable = { temp_cart_brand = cart_brand_2 }
+			set_temp_variable = { temp_cart_purchase_num = cart_2_purchase_num }
+			econo_equipment_send = yes
+		}
+		if = {
+			limit = { 
+				check_variable = { cart_num > 2 }				
+			}			
+			set_temp_variable = { temp_cart_brand = cart_brand_3 }
+			set_temp_variable = { temp_cart_purchase_num = cart_3_purchase_num }
+			econo_equipment_send = yes
+		}
+		if = {
+			limit = { 
+				check_variable = { cart_num > 3 }				
+			}			
+			set_temp_variable = { temp_cart_brand = cart_brand_4 }
+			set_temp_variable = { temp_cart_purchase_num = cart_4_purchase_num }
+			econo_equipment_send = yes
+		}
+		if = {
+			limit = { 
+				check_variable = { cart_num > 4 }				
+			}			
+			set_temp_variable = { temp_cart_brand = cart_brand_5 }
+			set_temp_variable = { temp_cart_purchase_num = cart_5_purchase_num }
+			econo_equipment_send = yes
+		}
+		if = {
+			limit = { 
+				check_variable = { cart_num > 5 }				
+			}			
+			set_temp_variable = { temp_cart_brand = cart_brand_6 }
+			set_temp_variable = { temp_cart_purchase_num = cart_6_purchase_num }
+			econo_equipment_send = yes
+		}
+
+	}
+
+}
+
+econo_equipment_send = {
+
+	if = { limit = { check_variable = { temp_cart_brand = 1 } } send_equipment = { equipment = infantry_equipment_0 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 2 } } send_equipment = { equipment = infantry_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 3 } } send_equipment = { equipment = infantry_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 4 } } send_equipment = { equipment = infantry_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 5 } } send_equipment = { equipment = support_equipment amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 6 } } send_equipment = { equipment = motorized_equipment amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 7 } } send_equipment = { equipment = mechanized_equipment amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 8 } } send_equipment = { equipment = artillery_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 9 } } send_equipment = { equipment = artillery_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 10 } } send_equipment = { equipment = artillery_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 11 } } send_equipment = { equipment = rocket_artillery_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 12 } } send_equipment = { equipment = rocket_artillery_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 13 } } send_equipment = { equipment = motorized_rocket_equipment amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 14 } } send_equipment = { equipment = anti_tank_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 15 } } send_equipment = { equipment = anti_tank_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 16 } } send_equipment = { equipment = anti_tank_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 17 } } send_equipment = { equipment = anti_air_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 18 } } send_equipment = { equipment = anti_air_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 19 } } send_equipment = { equipment = anti_air_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		NE_nostepback_armor_send = yes
+	}
+	else = {
+		NE_default_armor_send = yes
+	}
+	if = { limit = { check_variable = { temp_cart_brand = 63 } } send_equipment = { equipment = fighter_equipment_0 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 64 } } send_equipment = { equipment = fighter_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 65 } } send_equipment = { equipment = fighter_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 66 } } send_equipment = { equipment = fighter_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 67 } } send_equipment = { equipment = cv_fighter_equipment_0 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 68 } } send_equipment = { equipment = cv_fighter_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 69 } } send_equipment = { equipment = cv_fighter_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 70 } } send_equipment = { equipment = cv_fighter_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 71 } } send_equipment = { equipment = jet_fighter_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 72 } } send_equipment = { equipment = jet_fighter_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 73 } } send_equipment = { equipment = heavy_fighter_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 74 } } send_equipment = { equipment = heavy_fighter_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 75 } } send_equipment = { equipment = heavy_fighter_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 76 } } send_equipment = { equipment = CAS_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 77 } } send_equipment = { equipment = CAS_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 78 } } send_equipment = { equipment = CAS_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 79 } } send_equipment = { equipment = cv_CAS_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 80 } } send_equipment = { equipment = cv_CAS_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 81 } } send_equipment = { equipment = cv_CAS_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 82 } } send_equipment = { equipment = nav_bomber_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 83 } } send_equipment = { equipment = nav_bomber_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 84 } } send_equipment = { equipment = nav_bomber_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 85 } } send_equipment = { equipment = cv_nav_bomber_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 86 } } send_equipment = { equipment = cv_nav_bomber_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 87 } } send_equipment = { equipment = cv_nav_bomber_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 88 } } send_equipment = { equipment = tac_bomber_equipment_0 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 89 } } send_equipment = { equipment = tac_bomber_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 90 } } send_equipment = { equipment = tac_bomber_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 91 } } send_equipment = { equipment = tac_bomber_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 92 } } send_equipment = { equipment = strat_bomber_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 93 } } send_equipment = { equipment = strat_bomber_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 94 } } send_equipment = { equipment = strat_bomber_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 95 } } send_equipment = { equipment = scout_plane_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 96 } } send_equipment = { equipment = scout_plane_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 97 } } send_equipment = { equipment = jet_tac_bomber_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 98 } } send_equipment = { equipment = jet_tac_bomber_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 99 } } send_equipment = { equipment = jet_strat_bomber_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 100 } } send_equipment = { equipment = rocket_suicide_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	############navy
+
+#	else_if = {
+#		limit = { 
+#			check_variable = { 
+#				temp_cart_brand = 101 
+#			} 			
+#		}
+#		set_temp_variable = { navy_send_loop = 0 }
+#		while_loop_effect = {
+#			limit = {
+#				check_variable = { 
+#					navy_send_loop < temp_cart_purchase_num 
+#				} 
+#			}
+#			transfer_ship = {
+#				type = submarine
+#				target = ROOT
+#			}
+#			add_to_temp_variable = { navy_send_loop = 1 }
+#		}
+#	}
+	##else_if = { limit = { check_variable = { temp_cart_brand = 101 } } ROOT = {	add_equipment_to_stockpile = {	type = convoy_1	amount = 100	}	} 	}
+	else_if = {limit = {check_variable = {temp_cart_brand = 101}} set_temp_variable = {nega_purchase_num = 0 } subtract_from_temp_variable = { nega_purchase_num = temp_cart_purchase_num }	ROOT = {add_equipment_to_stockpile = {type = convoy_1	amount = temp_cart_purchase_num	}}	PREV = {add_equipment_to_stockpile = {type = convoy_1	amount = nega_purchase_num }}}
+	else_if = {limit = {check_variable = {temp_cart_brand = 102}} set_temp_variable = {navy_send_loop = 0} while_loop_effect = {limit = {check_variable = {navy_send_loop < temp_cart_purchase_num}} transfer_ship = {type = submarine target = ROOT} add_to_temp_variable = {navy_send_loop = 1}}}	
+	else_if = {limit = {check_variable = {temp_cart_brand = 103}} set_temp_variable = {navy_send_loop = 0} while_loop_effect = {limit = {check_variable = {navy_send_loop < temp_cart_purchase_num}} transfer_ship = {type = destroyer target = ROOT} add_to_temp_variable = {navy_send_loop = 1}}}
+	else_if = {limit = {check_variable = {temp_cart_brand = 104}} set_temp_variable = {navy_send_loop = 0} while_loop_effect = {limit = {check_variable = {navy_send_loop < temp_cart_purchase_num}} transfer_ship = {type = light_cruiser target = ROOT} add_to_temp_variable = {navy_send_loop = 1}}}	
+	else_if = {limit = {check_variable = {temp_cart_brand = 105}} set_temp_variable = {navy_send_loop = 0} while_loop_effect = {limit = {check_variable = {navy_send_loop < temp_cart_purchase_num}} transfer_ship = {type = heavy_cruiser target = ROOT} add_to_temp_variable = {navy_send_loop = 1}}}
+	else_if = {limit = {check_variable = {temp_cart_brand = 106}} set_temp_variable = {navy_send_loop = 0} while_loop_effect = {limit = {check_variable = {navy_send_loop < temp_cart_purchase_num}} transfer_ship = {type = battle_cruiser target = ROOT} add_to_temp_variable = {navy_send_loop = 1}}}	
+	else_if = {limit = {check_variable = {temp_cart_brand = 107}} set_temp_variable = {navy_send_loop = 0} while_loop_effect = {limit = {check_variable = {navy_send_loop < temp_cart_purchase_num}} transfer_ship = {type = battleship target = ROOT} add_to_temp_variable = {navy_send_loop = 1}}}
+	else_if = {limit = {check_variable = {temp_cart_brand = 108}} set_temp_variable = {navy_send_loop = 0} while_loop_effect = {limit = {check_variable = {navy_send_loop < temp_cart_purchase_num}} transfer_ship = {type = carrier target = ROOT} add_to_temp_variable = {navy_send_loop = 1}}}		
+}
+
+
+NE_nostepback_armor_send = {
+
+	if = { limit = { check_variable = { temp_cart_brand = 20 } } send_equipment = { equipment = light_tank_chassis_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 21 } } send_equipment = { equipment = light_tank_chassis_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 22 } } send_equipment = { equipment = light_tank_chassis_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 23 } } send_equipment = { equipment = light_tank_artillery_chassis_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 24 } } send_equipment = { equipment = light_tank_artillery_chassis_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 25 } } send_equipment = { equipment = light_tank_artillery_chassis_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 26 } } send_equipment = { equipment = light_tank_destroyer_chassis_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 27 } } send_equipment = { equipment = light_tank_destroyer_chassis_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 28 } } send_equipment = { equipment = light_tank_destroyer_chassis_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 29 } } send_equipment = { equipment = light_tank_aa_chassis_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 30 } } send_equipment = { equipment = light_tank_aa_chassis_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 31 } } send_equipment = { equipment = light_tank_aa_chassis_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 32 } } send_equipment = { equipment = medium_tank_chassis_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 33 } } send_equipment = { equipment = medium_tank_chassis_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 34 } } send_equipment = { equipment = medium_tank_chassis_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 35 } } send_equipment = { equipment = medium_tank_artillery_chassis_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 36 } } send_equipment = { equipment = medium_tank_artillery_chassis_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 37 } } send_equipment = { equipment = medium_tank_artillery_chassis_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 38 } } send_equipment = { equipment = medium_tank_destroyer_chassis_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 39 } } send_equipment = { equipment = medium_tank_destroyer_chassis_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 40 } } send_equipment = { equipment = medium_tank_destroyer_chassis_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 41 } } send_equipment = { equipment = medium_tank_aa_chassis_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 42 } } send_equipment = { equipment = medium_tank_aa_chassis_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 43 } } send_equipment = { equipment = medium_tank_aa_chassis_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 44 } } send_equipment = { equipment = heavy_tank_chassis_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 45 } } send_equipment = { equipment = heavy_tank_chassis_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 46 } } send_equipment = { equipment = heavy_tank_chassis_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 47 } } send_equipment = { equipment = heavy_tank_artillery_chassis_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 48 } } send_equipment = { equipment = heavy_tank_artillery_chassis_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 49 } } send_equipment = { equipment = heavy_tank_artillery_chassis_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 50 } } send_equipment = { equipment = super_heavy_tank_artillery_chassis_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 51 } } send_equipment = { equipment = heavy_tank_destroyer_chassis_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 52 } } send_equipment = { equipment = heavy_tank_destroyer_chassis_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 53 } } send_equipment = { equipment = heavy_tank_destroyer_chassis_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 54 } } send_equipment = { equipment = super_heavy_tank_destroyer_chassis_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 55 } } send_equipment = { equipment = heavy_tank_aa_chassis_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 56 } } send_equipment = { equipment = heavy_tank_aa_chassis_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 57 } } send_equipment = { equipment = heavy_tank_aa_chassis_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 58 } } send_equipment = { equipment = super_heavy_tank_aa_chassis_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 59 } } send_equipment = { equipment = modern_tank_chassis amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 60 } } send_equipment = { equipment = modern_tank_artillery_chassis amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 61 } } send_equipment = { equipment = modern_tank_destroyer_chassis amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 62 } } send_equipment = { equipment = modern_tank_aa_chassis amount = temp_cart_purchase_num target = ROOT } }
+
+}
+
+NE_default_armor_send = {
+
+	if = { limit = { check_variable = { temp_cart_brand = 20 } } send_equipment = { equipment = light_tank_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 21 } } send_equipment = { equipment = light_tank_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 22 } } send_equipment = { equipment = light_tank_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 23 } } send_equipment = { equipment = light_tank_artillery_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 24 } } send_equipment = { equipment = light_tank_artillery_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 25 } } send_equipment = { equipment = light_tank_artillery_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 26 } } send_equipment = { equipment = light_tank_destroyer_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 27 } } send_equipment = { equipment = light_tank_destroyer_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 28 } } send_equipment = { equipment = light_tank_destroyer_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 29 } } send_equipment = { equipment = light_tank_aa_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 30 } } send_equipment = { equipment = light_tank_aa_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 31 } } send_equipment = { equipment = light_tank_aa_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 32 } } send_equipment = { equipment = medium_tank_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 33 } } send_equipment = { equipment = medium_tank_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 34 } } send_equipment = { equipment = medium_tank_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 35 } } send_equipment = { equipment = medium_tank_artillery_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 36 } } send_equipment = { equipment = medium_tank_artillery_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 37 } } send_equipment = { equipment = medium_tank_artillery_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 38 } } send_equipment = { equipment = medium_tank_destroyer_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 39 } } send_equipment = { equipment = medium_tank_destroyer_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 40 } } send_equipment = { equipment = medium_tank_destroyer_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 41 } } send_equipment = { equipment = medium_tank_aa_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 42 } } send_equipment = { equipment = medium_tank_aa_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 43 } } send_equipment = { equipment = medium_tank_aa_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 44 } } send_equipment = { equipment = heavy_tank_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 45 } } send_equipment = { equipment = heavy_tank_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 46 } } send_equipment = { equipment = heavy_tank_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 47 } } send_equipment = { equipment = heavy_tank_artillery_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 48 } } send_equipment = { equipment = heavy_tank_artillery_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 49 } } send_equipment = { equipment = heavy_tank_artillery_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 50 } } send_equipment = { equipment = super_heavy_tank_artillery_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 51 } } send_equipment = { equipment = heavy_tank_destroyer_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 52 } } send_equipment = { equipment = heavy_tank_destroyer_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 53 } } send_equipment = { equipment = heavy_tank_destroyer_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 54 } } send_equipment = { equipment = super_heavy_tank_destroyer_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 55 } } send_equipment = { equipment = heavy_tank_aa_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 56 } } send_equipment = { equipment = heavy_tank_aa_equipment_2 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 57 } } send_equipment = { equipment = heavy_tank_aa_equipment_3 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 58 } } send_equipment = { equipment = super_heavy_tank_aa_equipment_1 amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 59 } } send_equipment = { equipment = modern_tank_equipment amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 60 } } send_equipment = { equipment = modern_tank_artillery_equipment amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 61 } } send_equipment = { equipment = modern_tank_destroyer_equipment amount = temp_cart_purchase_num target = ROOT } }
+	else_if = { limit = { check_variable = { temp_cart_brand = 62 } } send_equipment = { equipment = modern_tank_aa_equipment amount = temp_cart_purchase_num target = ROOT } }
+
+}

@@ -1,0 +1,10 @@
+United_Nations_category = {
+    icon = generic_foreign_policy
+
+    picture = GFX_decision_cat_picture_soviet_comecon
+
+    allowed = {
+        all_country = {}
+    }
+    priority = -100
+}

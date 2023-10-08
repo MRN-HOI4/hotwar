@@ -1,0 +1,288 @@
+bookmarks = {
+	bookmark = {
+		name = "HOTWAR_NAME"
+		desc = "HOTWAR_DESC"
+		date = 1970.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "GER"
+		default = yes
+
+		"USA"={
+			history = "USA_HOTWAR_DESC"
+			ideology = democratic
+			ideas = {
+				home_of_the_free
+				great_depression
+				undisturbed_isolation
+			}
+			focuses = {
+				USA_war_plan_black
+				USA_limited_intervention
+				USA_reestablish_the_gold_standard
+			}
+		}
+
+		"ENG"={
+			history = "ENG_HOTWAR_DESC"
+			ideology = democratic
+			ideas = {
+				stiff_upper_lip
+				ENG_the_war_to_end_all_wars
+				george_v
+			}
+			focuses = {
+				ENG_imperial_federation
+				ENG_the_kings_party
+				ENG_organize_the_blackshirts
+			}
+		}
+
+		"FRA"={
+			history = "FRA_HOTWAR_DESC"
+			ideology = democratic
+			ideas = {
+				FRA_victors_of_wwi
+				FRA_disjointed_government
+				FRA_protected_by_the_maginot_line
+			}
+			focuses = {
+				FRA_invite_communist_ministers
+				FRA_utilize_the_leagues
+				FRA_je_suis_la_deluge
+			}
+		}
+
+		"SWI"={
+			history = "SWI_HOTWAR_DESC"
+			ideology = democratic
+			ideas = {
+				SWI_swiss_neutrality
+				SWI_foreign_fascist_propaganda
+			}
+			focuses = {
+				SWI_national_redoubt
+				SWI_take_a_stance
+				SWI_the_new_eidgenossenschaft
+			}
+		}
+
+		"POL"={
+			history = "POL_HOTWAR_DESC"
+			ideology = communism
+			ideas = {
+				POL_april_constitution_1
+				POL_looming_peasants_strike
+			}
+			focuses = {
+				POL_complete_april_constitution
+				POL_organize_the_peasants_strike
+				POL_fulfil_fifth_of_november
+			}
+		}
+			
+		"PRC"={
+			history = "PRC_HOTWAR_DESC"
+			ideology = communism
+			ideas = {
+				PRC_the_long_march_1
+				PRC_low_popular_support_3
+				PRC_power_struggles
+			}
+			focuses = {
+				PRC_infiltration
+				PRC_maoism
+				PRC_anti_japanese_expedition
+			}
+		}
+
+		"SOV"={
+			history = "SOV_HOTWAR_DESC"
+			ideology = communism
+			ideas = {
+				trotskyite_plot_nsb
+				SOV_second_five_year_plan_fake_1936_ns
+				SOV_politicized_military
+			}
+			focuses = {
+				SOV_behead_the_snake
+				SOV_the_supreme_soviet
+				SOV_reconvene_the_zemsky_sobor
+			}	
+		}
+
+		"---"={
+			history = "OTHER_HOTWAR_DESC"
+		}
+
+
+		# minors from DLC ####
+		"JAP"={
+			minor = yes
+			history = "JAP_HOTWAR_DESC"
+			ideology = democratic
+			ideas = {
+				state_shintoism
+				JAP_zaibatsus
+				JAP_militarism
+			}	
+			focuses = {
+				JAP_the_zero
+				JAP_warrior_spirit
+				JAP_strike_on_the_southern_resource_area
+			}	
+		}
+
+		"CHI"={
+			minor = yes
+			history = "CHI_HOTWAR_DESC"
+			ideology = democratic
+			ideas = {
+				CHI_army_corruption_1
+				CHI_hyper_inflation_1
+				CHI_nine_power_treaty
+			}
+			focuses = {
+				CHI_united_front
+				CHI_army_reform
+				CHI_invite_the_flying_tigers
+			}
+		}
+
+		"NZL"={
+			minor = yes
+			history = "NZL_HOTWAR_DESC"
+			ideology = democratic
+			ideas = {
+				AST_great_depression_1
+			}
+			focuses = {
+				AST_never_another_gallipoli
+				AST_support_indonesian_uprising
+				AST_delegation_to_china
+			}
+		}
+
+		"SAF"={
+			minor = yes
+			history = "SAF_HOTWAR_DESC"
+			ideology = democratic
+			ideas = {
+				SAF_ossewabrandwag
+				SAF_history_of_segregation
+			}
+			focuses = {
+				SAF_secure_interests_in_africa
+				SAF_support_the_german_coup
+				SAF_anti_colonialist_crusade
+			}
+		}
+		
+		"SWE"={
+			minor = yes
+			history = "SWE_HOTWAR_DESC"
+			ideology = democratic
+			ideas = {
+				AST_great_depression_1
+			}
+			focuses = {
+				AST_never_another_gallipoli
+				AST_support_indonesian_uprising
+				AST_delegation_to_china
+			}
+		}
+		
+		"TUR"={
+			minor = yes
+			history = "TUR_HOTWAR_DESC"
+			ideology = democratic
+			ideas = {
+				TUR_sectarian_woes
+				TUR_disorganised_armed_forces
+				TUR_debt_council
+			}
+			focuses = {
+				TUR_ratify_the_six_arrows
+				TUR_reaffirm_the_balkan_pact
+				TUR_pivot_to_the_past
+			}
+		}
+
+		"WGR"={
+			minor = yes
+			history = "DDR_HOTWAR_DESC"
+			ideology = democratic
+			ideas = {
+				AST_great_depression_1
+			}
+			focuses = {
+				AST_never_another_gallipoli
+				AST_support_indonesian_uprising
+				AST_delegation_to_china
+			}
+		}
+
+		"DDR"={
+			minor = yes
+			history = "DDR_HOTWAR_DESC"
+			ideology = communism
+			ideas = {
+				AST_great_depression_1
+			}
+			focuses = {
+				AST_never_another_gallipoli
+				AST_support_indonesian_uprising
+				AST_delegation_to_china
+			}
+		}
+		
+		"CUB"={
+			minor = yes
+			history = "DDR_HOTWAR_DESC"
+			ideology = communism
+			ideas = {
+				AST_great_depression_1
+			}
+			focuses = {
+				AST_never_another_gallipoli
+				AST_support_indonesian_uprising
+				AST_delegation_to_china
+			}
+		}	
+
+		"ITA"={
+			minor = yes
+			history = "ITA_HOTWAR_DESC"
+			ideology = democratic
+			ideas = {
+				vittoria_mutilata
+				victor_emmanuel
+			}	
+			focuses = {
+				ITA_pact_of_steel
+				ITA_spanish_italian_faction
+				ITA_italy_first
+			}		
+		}
+
+		"BUL"={
+			minor = yes
+			history = "BUL_HOTWAR_DESC"
+			ideology = communism
+			ideas = {
+				BUL_second_national_catastrophe
+				BUL_army_restrictions
+				BUL_imro_01
+			}
+			focuses = {
+				BUL_the_fatherland_front
+				BUL_restore_the_bulgarian_patriarchate
+				BUL_prussia_of_the_balkans
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

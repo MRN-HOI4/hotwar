@@ -1,0 +1,762 @@
+defined_text = {
+    name = stock_infantry_equipment_0
+	text = { trigger = { check_variable = { rate_infantry_equipment_0 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_infantry_equipment_0 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_infantry_equipment_0 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_infantry_equipment_1	
+	text = { trigger = { check_variable = { rate_infantry_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_infantry_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_infantry_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_infantry_equipment_2	
+	text = { trigger = { check_variable = { rate_infantry_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_infantry_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_infantry_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_infantry_equipment_3	
+	text = { trigger = { check_variable = { rate_infantry_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_infantry_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_infantry_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_support_equipment	
+	text = { trigger = { check_variable = { rate_support_equipment = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_support_equipment > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_support_equipment < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_motorized_equipment	
+	text = { trigger = { check_variable = { rate_motorized_equipment = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_motorized_equipment > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_motorized_equipment < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_mechanized_equipment	
+	text = { trigger = { check_variable = { rate_mechanized_equipment = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_mechanized_equipment > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_mechanized_equipment < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_artillery_equipment_1	
+	text = { trigger = { check_variable = { rate_artillery_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_artillery_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_artillery_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_artillery_equipment_2	
+	text = { trigger = { check_variable = { rate_artillery_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_artillery_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_artillery_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_artillery_equipment_3	
+	text = { trigger = { check_variable = { rate_artillery_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_artillery_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_artillery_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_rocket_artillery_equipment_1	
+	text = { trigger = { check_variable = { rate_rocket_artillery_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_rocket_artillery_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_rocket_artillery_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_rocket_artillery_equipment_2	
+	text = { trigger = { check_variable = { rate_rocket_artillery_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_rocket_artillery_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_rocket_artillery_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_motorized_rocket_equipment	
+	text = { trigger = { check_variable = { rate_motorized_rocket_equipment = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_motorized_rocket_equipment > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_motorized_rocket_equipment < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_anti_tank_equipment_1	
+	text = { trigger = { check_variable = { rate_anti_tank_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_anti_tank_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_anti_tank_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_anti_tank_equipment_2	
+	text = { trigger = { check_variable = { rate_anti_tank_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_anti_tank_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_anti_tank_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_anti_tank_equipment_3	
+	text = { trigger = { check_variable = { rate_anti_tank_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_anti_tank_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_anti_tank_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_anti_air_equipment_1	
+	text = { trigger = { check_variable = { rate_anti_air_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_anti_air_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_anti_air_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_anti_air_equipment_2	
+	text = { trigger = { check_variable = { rate_anti_air_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_anti_air_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_anti_air_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_anti_air_equipment_3	
+	text = { trigger = { check_variable = { rate_anti_air_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_anti_air_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_anti_air_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+
+#########armor
+defined_text = {
+    name = stock_light_tank_equipment_1	
+	text = { trigger = { check_variable = { rate_light_tank_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_light_tank_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_light_tank_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_light_tank_equipment_2	
+	text = { trigger = { check_variable = { rate_light_tank_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_light_tank_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_light_tank_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_light_tank_equipment_3	
+	text = { trigger = { check_variable = { rate_light_tank_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_light_tank_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_light_tank_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_light_tank_artillery_equipment_1	
+	text = { trigger = { check_variable = { rate_light_tank_artillery_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_light_tank_artillery_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_light_tank_artillery_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_light_tank_artillery_equipment_2	
+	text = { trigger = { check_variable = { rate_light_tank_artillery_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_light_tank_artillery_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_light_tank_artillery_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_light_tank_artillery_equipment_3	
+	text = { trigger = { check_variable = { rate_light_tank_artillery_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_light_tank_artillery_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_light_tank_artillery_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_light_tank_destroyer_equipment_1	
+	text = { trigger = { check_variable = { rate_light_tank_destroyer_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_light_tank_destroyer_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_light_tank_destroyer_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_light_tank_destroyer_equipment_2	
+	text = { trigger = { check_variable = { rate_light_tank_destroyer_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_light_tank_destroyer_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_light_tank_destroyer_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_light_tank_destroyer_equipment_3	
+	text = { trigger = { check_variable = { rate_light_tank_destroyer_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_light_tank_destroyer_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_light_tank_destroyer_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_light_tank_aa_equipment_1	
+	text = { trigger = { check_variable = { rate_light_tank_aa_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_light_tank_aa_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_light_tank_aa_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_light_tank_aa_equipment_2	
+	text = { trigger = { check_variable = { rate_light_tank_aa_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_light_tank_aa_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_light_tank_aa_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_light_tank_aa_equipment_3	
+	text = { trigger = { check_variable = { rate_light_tank_aa_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_light_tank_aa_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_light_tank_aa_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_medium_tank_equipment_1	
+	text = { trigger = { check_variable = { rate_medium_tank_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_medium_tank_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_medium_tank_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_medium_tank_equipment_2	
+	text = { trigger = { check_variable = { rate_medium_tank_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_medium_tank_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_medium_tank_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_medium_tank_equipment_3	
+	text = { trigger = { check_variable = { rate_medium_tank_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_medium_tank_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_medium_tank_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_medium_tank_artillery_equipment_1	
+	text = { trigger = { check_variable = { rate_medium_tank_artillery_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_medium_tank_artillery_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_medium_tank_artillery_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_medium_tank_artillery_equipment_2	
+	text = { trigger = { check_variable = { rate_medium_tank_artillery_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_medium_tank_artillery_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_medium_tank_artillery_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_medium_tank_artillery_equipment_3	
+	text = { trigger = { check_variable = { rate_medium_tank_artillery_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_medium_tank_artillery_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_medium_tank_artillery_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_medium_tank_destroyer_equipment_1	
+	text = { trigger = { check_variable = { rate_medium_tank_destroyer_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_medium_tank_destroyer_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_medium_tank_destroyer_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_medium_tank_destroyer_equipment_2	
+	text = { trigger = { check_variable = { rate_medium_tank_destroyer_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_medium_tank_destroyer_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_medium_tank_destroyer_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_medium_tank_destroyer_equipment_3	
+	text = { trigger = { check_variable = { rate_medium_tank_destroyer_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_medium_tank_destroyer_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_medium_tank_destroyer_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_medium_tank_aa_equipment_1	
+	text = { trigger = { check_variable = { rate_medium_tank_aa_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_medium_tank_aa_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_medium_tank_aa_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_medium_tank_aa_equipment_2	
+	text = { trigger = { check_variable = { rate_medium_tank_aa_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_medium_tank_aa_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_medium_tank_aa_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_medium_tank_aa_equipment_3	
+	text = { trigger = { check_variable = { rate_medium_tank_aa_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_medium_tank_aa_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_medium_tank_aa_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_heavy_tank_equipment_1	
+	text = { trigger = { check_variable = { rate_heavy_tank_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_heavy_tank_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_heavy_tank_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_heavy_tank_equipment_2	
+	text = { trigger = { check_variable = { rate_heavy_tank_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_heavy_tank_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_heavy_tank_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_heavy_tank_equipment_3	
+	text = { trigger = { check_variable = { rate_heavy_tank_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_heavy_tank_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_heavy_tank_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_heavy_tank_artillery_equipment_1	
+	text = { trigger = { check_variable = { rate_heavy_tank_artillery_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_heavy_tank_artillery_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_heavy_tank_artillery_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_heavy_tank_artillery_equipment_2	
+	text = { trigger = { check_variable = { rate_heavy_tank_artillery_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_heavy_tank_artillery_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_heavy_tank_artillery_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_heavy_tank_artillery_equipment_3	
+	text = { trigger = { check_variable = { rate_heavy_tank_artillery_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_heavy_tank_artillery_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_heavy_tank_artillery_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_super_heavy_tank_artillery_equipment_1	
+	text = { trigger = { check_variable = { rate_super_heavy_tank_artillery_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_super_heavy_tank_artillery_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_super_heavy_tank_artillery_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_heavy_tank_destroyer_equipment_1	
+	text = { trigger = { check_variable = { rate_heavy_tank_destroyer_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_heavy_tank_destroyer_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_heavy_tank_destroyer_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_heavy_tank_destroyer_equipment_2	
+	text = { trigger = { check_variable = { rate_heavy_tank_destroyer_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_heavy_tank_destroyer_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_heavy_tank_destroyer_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_heavy_tank_destroyer_equipment_3	
+	text = { trigger = { check_variable = { rate_heavy_tank_destroyer_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_heavy_tank_destroyer_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_heavy_tank_destroyer_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_super_heavy_tank_destroyer_equipment_1	
+	text = { trigger = { check_variable = { rate_super_heavy_tank_destroyer_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_super_heavy_tank_destroyer_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_super_heavy_tank_destroyer_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_heavy_tank_aa_equipment_1	
+	text = { trigger = { check_variable = { rate_heavy_tank_aa_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_heavy_tank_aa_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_heavy_tank_aa_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_heavy_tank_aa_equipment_2	
+	text = { trigger = { check_variable = { rate_heavy_tank_aa_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_heavy_tank_aa_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_heavy_tank_aa_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_heavy_tank_aa_equipment_3	
+	text = { trigger = { check_variable = { rate_heavy_tank_aa_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_heavy_tank_aa_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_heavy_tank_aa_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_super_heavy_tank_aa_equipment_1	
+	text = { trigger = { check_variable = { rate_super_heavy_tank_aa_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_super_heavy_tank_aa_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_super_heavy_tank_aa_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_modern_tank_equipment	
+	text = { trigger = { check_variable = { rate_modern_tank_equipment = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_modern_tank_equipment > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_modern_tank_equipment < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_modern_tank_artillery_equipment	
+	text = { trigger = { check_variable = { rate_modern_tank_artillery_equipment = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_modern_tank_artillery_equipment > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_modern_tank_artillery_equipment < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_modern_tank_destroyer_equipment	
+	text = { trigger = { check_variable = { rate_modern_tank_destroyer_equipment = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_modern_tank_destroyer_equipment > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_modern_tank_destroyer_equipment < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_modern_tank_aa_equipment	
+	text = { trigger = { check_variable = { rate_modern_tank_aa_equipment = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_modern_tank_aa_equipment > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_modern_tank_aa_equipment < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+
+######air
+defined_text = {
+    name = stock_fighter_equipment_0	
+	text = { trigger = { check_variable = { rate_fighter_equipment_0 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_fighter_equipment_0 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_fighter_equipment_0 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_fighter_equipment_1	
+	text = { trigger = { check_variable = { rate_fighter_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_fighter_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_fighter_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_fighter_equipment_2	
+	text = { trigger = { check_variable = { rate_fighter_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_fighter_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_fighter_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_fighter_equipment_3	
+	text = { trigger = { check_variable = { rate_fighter_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_fighter_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_fighter_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_cv_fighter_equipment_0	
+	text = { trigger = { check_variable = { rate_cv_fighter_equipment_0 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_cv_fighter_equipment_0 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_cv_fighter_equipment_0 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_cv_fighter_equipment_1	
+	text = { trigger = { check_variable = { rate_cv_fighter_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_cv_fighter_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_cv_fighter_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_cv_fighter_equipment_2	
+	text = { trigger = { check_variable = { rate_cv_fighter_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_cv_fighter_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_cv_fighter_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_cv_fighter_equipment_3	
+	text = { trigger = { check_variable = { rate_cv_fighter_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_cv_fighter_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_cv_fighter_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_jet_fighter_equipment_1	
+	text = { trigger = { check_variable = { rate_jet_fighter_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_jet_fighter_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_jet_fighter_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_jet_fighter_equipment_2	
+	text = { trigger = { check_variable = { rate_jet_fighter_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_jet_fighter_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_jet_fighter_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_heavy_fighter_equipment_1	
+	text = { trigger = { check_variable = { rate_heavy_fighter_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_heavy_fighter_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_heavy_fighter_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_heavy_fighter_equipment_2	
+	text = { trigger = { check_variable = { rate_heavy_fighter_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_heavy_fighter_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_heavy_fighter_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_heavy_fighter_equipment_3	
+	text = { trigger = { check_variable = { rate_heavy_fighter_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_heavy_fighter_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_heavy_fighter_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_CAS_equipment_1	
+	text = { trigger = { check_variable = { rate_CAS_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_CAS_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_CAS_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_CAS_equipment_2	
+	text = { trigger = { check_variable = { rate_CAS_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_CAS_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_CAS_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_CAS_equipment_3	
+	text = { trigger = { check_variable = { rate_CAS_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_CAS_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_CAS_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_cv_CAS_equipment_1	
+	text = { trigger = { check_variable = { rate_cv_CAS_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_cv_CAS_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_cv_CAS_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_cv_CAS_equipment_2	
+	text = { trigger = { check_variable = { rate_cv_CAS_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_cv_CAS_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_cv_CAS_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_cv_CAS_equipment_3	
+	text = { trigger = { check_variable = { rate_cv_CAS_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_cv_CAS_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_cv_CAS_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_nav_bomber_equipment_1	
+	text = { trigger = { check_variable = { rate_nav_bomber_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_nav_bomber_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_nav_bomber_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_nav_bomber_equipment_2	
+	text = { trigger = { check_variable = { rate_nav_bomber_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_nav_bomber_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_nav_bomber_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_nav_bomber_equipment_3	
+	text = { trigger = { check_variable = { rate_nav_bomber_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_nav_bomber_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_nav_bomber_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_cv_nav_bomber_equipment_1	
+	text = { trigger = { check_variable = { rate_cv_nav_bomber_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_cv_nav_bomber_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_cv_nav_bomber_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_cv_nav_bomber_equipment_2	
+	text = { trigger = { check_variable = { rate_cv_nav_bomber_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_cv_nav_bomber_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_cv_nav_bomber_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_cv_nav_bomber_equipment_3	
+	text = { trigger = { check_variable = { rate_cv_nav_bomber_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_cv_nav_bomber_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_cv_nav_bomber_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_tac_bomber_equipment_0	
+	text = { trigger = { check_variable = { rate_tac_bomber_equipment_0 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_tac_bomber_equipment_0 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_tac_bomber_equipment_0 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_tac_bomber_equipment_1	
+	text = { trigger = { check_variable = { rate_tac_bomber_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_tac_bomber_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_tac_bomber_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_tac_bomber_equipment_2	
+	text = { trigger = { check_variable = { rate_tac_bomber_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_tac_bomber_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_tac_bomber_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_tac_bomber_equipment_3	
+	text = { trigger = { check_variable = { rate_tac_bomber_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_tac_bomber_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_tac_bomber_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_strat_bomber_equipment_1	
+	text = { trigger = { check_variable = { rate_strat_bomber_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_strat_bomber_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_strat_bomber_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_strat_bomber_equipment_2	
+	text = { trigger = { check_variable = { rate_strat_bomber_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_strat_bomber_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_strat_bomber_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_strat_bomber_equipment_3	
+	text = { trigger = { check_variable = { rate_strat_bomber_equipment_3 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_strat_bomber_equipment_3 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_strat_bomber_equipment_3 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_scout_plane_equipment_1	
+	text = { trigger = { check_variable = { rate_scout_plane_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_scout_plane_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_scout_plane_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_scout_plane_equipment_2	
+	text = { trigger = { check_variable = { rate_scout_plane_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_scout_plane_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_scout_plane_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_jet_tac_bomber_equipment_1	
+	text = { trigger = { check_variable = { rate_jet_tac_bomber_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_jet_tac_bomber_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_jet_tac_bomber_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_jet_tac_bomber_equipment_2	
+	text = { trigger = { check_variable = { rate_jet_tac_bomber_equipment_2 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_jet_tac_bomber_equipment_2 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_jet_tac_bomber_equipment_2 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_jet_strat_bomber_equipment_1	
+	text = { trigger = { check_variable = { rate_jet_strat_bomber_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_jet_strat_bomber_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_jet_strat_bomber_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_rocket_suicide_equipment_1	
+	text = { trigger = { check_variable = { rate_rocket_suicide_equipment_1 = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_rocket_suicide_equipment_1 > 1.0 } } localization_key = "ENOUGH" }
+    text = { trigger = { check_variable = { rate_rocket_suicide_equipment_1 < 0.3 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+##########warships
+
+defined_text = {
+    name = stock_convoy	
+	##text = { trigger = { check_variable = { rate_convoy = 0 } }localization_key = "EMPTY" }
+    ##text = { trigger = { check_variable = { rate_convoy > 1.0 } } localization_key = "ENOUGH" }#101
+    ##text = { trigger = { check_variable = { rate_convoy < 0.1 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_submarine	
+	text = { trigger = { check_variable = { rate_submarine = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_submarine > 0.4 } } localization_key = "ENOUGH" }#102
+    text = { trigger = { check_variable = { rate_submarine < 0.1 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_destroyer	
+	text = { trigger = { check_variable = { rate_destroyer = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_destroyer > 0.4 } } localization_key = "ENOUGH" }#103
+    text = { trigger = { check_variable = { rate_destroyer < 0.1 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_light_cruiser	
+	text = { trigger = { check_variable = { rate_light_cruiser = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_light_cruiser > 0.2 } } localization_key = "ENOUGH" }#104
+    text = { trigger = { check_variable = { rate_light_cruiser < 0.05 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_heavy_cruiser	
+	text = { trigger = { check_variable = { rate_heavy_cruiser = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_heavy_cruiser > 0.15 } } localization_key = "ENOUGH" }#105
+    text = { trigger = { check_variable = { rate_heavy_cruiser < 0.04 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_battle_cruiser	
+	text = { trigger = { check_variable = { rate_battle_cruiser = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_battle_cruiser > 0.1 } } localization_key = "ENOUGH" }#106
+    text = { trigger = { check_variable = { rate_battle_cruiser < 0.02 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_battleship	
+	text = { trigger = { check_variable = { rate_battleship = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_battleship > 0.12 } } localization_key = "ENOUGH" }#107
+    text = { trigger = { check_variable = { rate_battleship < 0.03 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}
+defined_text = {
+    name = stock_carrier	
+	text = { trigger = { check_variable = { rate_carrier = 0 } }localization_key = "EMPTY" }
+    text = { trigger = { check_variable = { rate_carrier > 0.15 } } localization_key = "ENOUGH" }#108
+    text = { trigger = { check_variable = { rate_carrier < 0.04 } }localization_key = "LACK" }
+	text = { localization_key = "NOMAL" }
+}

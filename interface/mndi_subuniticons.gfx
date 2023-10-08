@@ -1,0 +1,28 @@
+spriteTypes = {
+	###############################
+	### MOD More Nato Division Icons ###
+	
+	# sprite numbers need to be continuous!
+	# base game uses         0 -  43
+	# anniversary DLC uses  44 -  64
+	# MNDI uses 			65 - 135
+
+	###########################################
+	### Small images for DIVISION TEMPLATES ###
+    
+    spriteType = { 
+		name = "GFX_div_templ_44_small"										
+		textureFile = "gfx/interface/counters/division_templates_small/dorai_1stcanada.dds" 
+	}
+
+
+	###########################################
+	### Large images for DIVISION TEMPLATES ###
+	
+	spriteType = { 
+		name = "GFX_div_templ_44_large"										
+		textureFile = "gfx/interface/counters/division_templates_large/dorai_1stcanada_sm.dds" 
+	}
+}
+
+

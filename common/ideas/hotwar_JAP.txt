@@ -1,0 +1,110 @@
+ideas = {
+
+    economy = {
+        law = yes
+		use_list_view = yes
+
+        JAP_japanese_miracle = {
+			
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+
+            picture = JAP_japanese_miracle
+		
+			modifier = {
+				consumer_goods_factor = 0.05
+				production_speed_industrial_complex_factor = 1
+				production_speed_arms_factory_factor = -0.3
+				conversion_cost_civ_to_mil_factor= 0.3
+				conversion_cost_mil_to_civ_factor = 0.3
+				max_fuel_factor = -0.25
+				fuel_gain_factor = -0.4
+			}
+            allowed_to_remove = {
+				always = no#임시
+			}
+			
+			cancel_if_invalid = no
+		}
+
+
+    }
+
+    country = {
+        JAP_peace_constituion_1 = {
+
+            picture = generic_constitutional_guarantees
+
+            removal_cost = -1
+
+            rule = {
+                can_not_declare_war = yes
+			}
+
+            modifier = {
+                production_speed_arms_factory_factor = -0.5
+            }
+        }
+		JAP_peace_constituion_2 = {
+
+            picture = generic_constitutional_guarantees
+
+            removal_cost = -1
+
+            rule = {
+                can_not_declare_war = yes
+			}
+
+            modifier = {
+                production_speed_arms_factory_factor = -1
+            }
+        }
+		JAP_peace_constituion_3 = {
+
+            picture = generic_constitutional_guarantees
+
+            removal_cost = -1
+
+            rule = {
+                can_not_declare_war = yes
+			}
+
+            modifier = {
+                production_speed_arms_factory_factor = -1.5
+            }
+        }
+		JAP_peace_constituion_4 = {
+
+            picture = generic_constitutional_guarantees
+
+            removal_cost = -1
+
+            rule = {
+                can_not_declare_war = yes
+			}
+
+            modifier = {
+                production_speed_arms_factory_factor = -2
+            }
+        }
+
+		JAP_preparation_war = {
+
+			picture = idea_hun_secret_rearmament
+
+			removal_cost = -1
+
+			modifier = {
+                conversion_cost_civ_to_mil_factor = -0.4
+				production_speed_arms_factory_factor = 0.2
+				add_war_support = 0.1
+				conscription = 0.02
+            }
+
+		}
+    }
+
+}

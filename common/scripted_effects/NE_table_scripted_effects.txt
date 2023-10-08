@@ -1,0 +1,94 @@
+# depreciated with 1.9
+start_create_sorted_array_ideology = {
+	clear_array = array_to_sort
+	for_each_scope_loop = {
+		array = country_array
+		add_to_array = {
+			ROOT.array_to_sort = THIS
+		}
+	}
+	clear_array = country_array
+	while_loop_effect = {
+		limit = { check_variable = { array_to_sort^num > 0 } }
+		for_each_scope_loop = {
+			array = array_to_sort
+			if = {
+				limit = {
+					NOT = {
+						is_in_array = {
+							array = ROOT.country_array
+							value = THIS
+						}
+					}
+				}
+				set_variable = { ROOT.current_country = THIS }
+				set_temp_variable = { break = 0 }
+			}
+		}
+		var:current_country = {
+			remove_from_array = { ROOT.array_to_sort = THIS }
+			country_event = table.1 #fires get_same_ideology
+		}
+		clear_variable = ROOT.current_country
+	}
+	clear_variable = last_sort_var
+}
+
+
+start_create_sorted_array = {
+	if = {
+		limit = { 
+			check_variable = { last_sort_var = sort_var } 
+		}
+		set_variable = { middle = country_array^num }
+		set_temp_variable = { len = country_array^num }
+		subtract_from_temp_variable = { len = 1 }
+		divide_variable = { middle = 2 }
+		round_variable = middle
+		for_loop_effect = {
+            start = 0
+            end = middle
+
+			set_temp_variable = { reverse = len }
+			subtract_from_temp_variable = { reverse = v }
+			set_temp_variable = { swap = country_array^v }
+			set_variable = { country_array^v = country_array^reverse }
+			set_variable = { country_array^reverse = swap }
+		}
+		clear_variable = middle
+	}
+	else = {
+		set_temp_variable = { table_qs_compare = 0 }
+		set_variable = { high = country_array^num }
+		subtract_from_variable = { high = 1 }
+		set_variable = { low = 0 }
+		table_quicksort = yes
+		set_variable = { last_sort_var = sort_var }
+		clear_variable = high
+		clear_variable = low
+	}
+}
+
+
+
+open_table = {
+	update_table_country_array = yes
+	set_variable = { gdp_table_open = 1 }
+}
+
+update_table_country_array = {
+	clear_variable = last_sort_var
+	clear_array = country_array
+	every_country = {
+		limit = { is_major = yes }
+		add_to_array = {
+			PREV.country_array = THIS
+		}
+	}
+	every_country = {
+		limit = { is_major = no }
+		add_to_array = {
+			PREV.country_array = THIS
+		}
+	}
+}

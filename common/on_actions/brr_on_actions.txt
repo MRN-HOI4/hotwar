@@ -1,0 +1,34 @@
+on_actions = {
+
+  on_daily = {
+
+    effect = {
+
+      every_country = {
+        limit = {
+          NOT = { has_country_flag = bonus_research_slot_assigned }
+        }
+        country_event = { id = bonus_research_slot.100 }
+      }
+
+      if = {
+        limit = {
+          has_game_rule = {
+            rule = bonus_research_zeitgeist_rule
+            option = RULE_OPTION_YES
+          }
+        }
+        every_country = {
+          limit = {
+            has_dlc = "Together for Victory"
+            #NOT = { is_in_tech_sharing_group = zeitgeist_research }
+          }
+        }
+        add_to_tech_sharing_group = zeitgeist_research
+      }
+
+    }
+
+  }
+
+}

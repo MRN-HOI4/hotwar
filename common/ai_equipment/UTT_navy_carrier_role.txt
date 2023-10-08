@@ -1,0 +1,607 @@
+###	UTT Test - Battle Cruisers
+### Prepared by Toaster
+
+UTT_carrier_early = {
+	category = naval
+	roles = { naval_carrier }
+	priority = {
+		base = 1
+	}
+
+	EARLY_CARRIER_1 = { # to make task force reinforcement work
+		role_icon_index = 1
+		priority = {
+			base = 0
+		}
+
+		target_variant = {
+			type = ship_hull_carrier_conversion_bb
+			match_value = 1000
+		}
+	}
+	EARLY_CARRIER_2 = { # to make task force reinforcement work
+		role_icon_index = 1
+		priority = {
+			base = 0
+		}
+
+		target_variant = {
+			type = ship_hull_carrier_conversion_ca
+			match_value = 1000
+		}
+	}
+	JAP_CV = {
+		role_icon_index = 1
+		priority = {
+			base = 1
+		}
+		enable = { original_tag = JAP }
+
+		target_variant = {
+			type = ship_hull_carrier_1
+			match_value = 1000
+
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = carrier_ship_engine_1
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				front_1_custom_slot = ship_deck_space
+			}
+		}
+	}
+}
+
+UTT_carrier_A = {
+	category = naval
+	roles = { naval_carrier }
+	priority = {
+		base = 100
+	}
+
+	BASIC_CARRIER_A_1 = {
+		role_icon_index = 7
+		priority = {
+			base = -1
+			modifier = { add = 1000 has_tech = basic_ship_hull_carrier }
+			modifier = { add = -900 OR = { has_tech = improved_ship_hull_carrier has_tech = decimetric_radar } }
+		}
+
+		target_variant = {
+			type = ship_hull_carrier_1
+			match_value = 2000
+
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = { module = carrier_ship_engine_2 upgrade = current }
+				fixed_ship_secondaries_slot = ship_secondaries
+				front_1_custom_slot = ship_deck_space
+			}
+		}
+
+		requirements = {
+			module = ship_deck_space
+		}
+	}
+	BASIC_CARRIER_A_2 = {
+		role_icon_index = 7
+		priority = {
+			base = -1
+			modifier = { add = 1000 has_tech = basic_ship_hull_carrier has_tech = decimetric_radar }
+			modifier = { add = -900 has_tech = improved_ship_hull_carrier }
+		}
+
+		target_variant = {
+			type = ship_hull_carrier_1
+			match_value = 2000
+
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_radar_slot = { any_of = { ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+				fixed_ship_engine_slot = { module = carrier_ship_engine_2 upgrade = current }
+				fixed_ship_secondaries_slot = ship_secondaries
+				front_1_custom_slot = ship_deck_space
+			}
+		}
+
+		requirements = {
+			module = ship_deck_space
+			module = ship_radar
+		}
+	}
+
+	IMPROVED_CARRIER_A_1 = {
+		role_icon_index = 7
+		priority = {
+			base = -1
+			modifier = { add = 1000 has_tech = improved_ship_hull_carrier }
+			modifier = { add = -900 OR = { has_tech = advanced_ship_hull_carrier has_tech = decimetric_radar } }
+		}
+
+		target_variant = {
+			type = ship_hull_carrier_2
+			match_value = 4000
+
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = { module = carrier_ship_engine_3 upgrade = current }
+				fixed_ship_secondaries_slot = ship_secondaries
+				front_1_custom_slot = ship_deck_space
+				mid_1_custom_slot = ship_deck_space
+			}
+		}
+
+		requirements = {
+			module = ship_deck_space
+		}
+	}
+	IMPROVED_CARRIER_A_2 = {
+		role_icon_index = 7
+		priority = {
+			base = -1
+			modifier = { add = 1000 has_tech = improved_ship_hull_carrier has_tech = decimetric_radar }
+			modifier = { add = -900 has_tech = advanced_ship_hull_carrier }
+		}
+
+		target_variant = {
+			type = ship_hull_carrier_2
+			match_value = 4000
+
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_radar_slot = { any_of = { ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+				fixed_ship_engine_slot = { module = carrier_ship_engine_3 upgrade = current }
+				fixed_ship_secondaries_slot = ship_secondaries
+				front_1_custom_slot = ship_deck_space
+				mid_1_custom_slot = ship_deck_space
+			}
+		}
+
+		requirements = {
+			module = ship_deck_space
+			module = ship_radar
+		}
+	}
+
+	ADVANCED_CARRIER_A_1 = {
+		role_icon_index = 7
+		priority = {
+			base = -1
+			modifier = { add = 1000 has_tech = advanced_ship_hull_carrier }
+			modifier = { add = -900 has_tech = decimetric_radar has_tech = ship_hull_carrier_5 }
+		}
+
+		target_variant = {
+			type = ship_hull_carrier_3
+			match_value = 6000
+
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = { module = carrier_ship_engine_4 upgrade = current }
+				fixed_ship_secondaries_slot = ship_secondaries
+				front_1_custom_slot = ship_deck_space
+				mid_1_custom_slot = ship_deck_space
+				mid_2_custom_slot = ship_deck_space
+			}
+		}
+
+		requirements = {
+			module = ship_deck_space
+		}
+	}
+	ADVANCED_CARRIER_A_2 = {
+		role_icon_index = 7
+		priority = {
+			base = -1
+			modifier = { add = 1000 has_tech = advanced_ship_hull_carrier has_tech = decimetric_radar }
+			modifier = { add = -900 has_tech = ship_hull_carrier_5 }
+		}
+
+		target_variant = {
+			type = ship_hull_carrier_3
+			match_value = 8000
+
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_4
+				fixed_ship_radar_slot = { any_of = { ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+				fixed_ship_engine_slot = { module = carrier_ship_engine_4 upgrade = current }
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+				front_1_custom_slot = ship_deck_space
+				mid_1_custom_slot = ship_armor_carrier_deck
+				mid_2_custom_slot = ship_deck_space
+			}
+		}
+
+		requirements = {
+			module = ship_deck_space
+			module = ship_radar
+		}
+	}
+	
+	UTT_CARRIER_5 = {
+		role_icon_index = 7
+		priority = {
+			base = -1
+			modifier = { add = 1000 has_tech = ship_hull_carrier_5 }
+			modifier = { add = -900 has_tech = ship_hull_carrier_6 }
+		}
+
+		target_variant = {
+			type = ship_hull_carrier_5
+			match_value = 10000
+
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_5
+				fixed_ship_radar_slot = { any_of = { ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+				fixed_ship_engine_slot = { module = carrier_ship_engine_5 upgrade = current }
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+				front_1_custom_slot = ship_deck_space
+				mid_1_custom_slot = ship_armor_carrier_deck
+				mid_2_custom_slot = ship_deck_space
+				rear_1_custom_slot = ship_deck_space
+				rear_2_custom_slot = ship_armor_carrier_deck
+			}
+		}
+
+		requirements = {
+			module = ship_deck_space
+			module = ship_radar
+		}
+	}
+	
+	UTT_CARRIER_6_A = {
+		role_icon_index = 7
+		priority = {
+			base = -1
+			modifier = { add = 1000 has_tech = ship_hull_carrier_6 }
+			modifier = { add = -900 has_tech = ship_hull_carrier_7 has_tech = ship_sam_missile_battery_2 has_tech = ship_radar_6 }
+		}
+
+		target_variant = {
+			type = ship_hull_carrier_6
+			match_value = 12000
+
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_5
+				fixed_ship_radar_slot = { any_of = { ship_radar_5 ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+				fixed_ship_engine_slot = { module = carrier_ship_engine_6 upgrade = current }
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+				front_1_custom_slot = ship_deck_space
+				mid_1_custom_slot = ship_sam_missile_battery_1
+				mid_2_custom_slot = ship_deck_space
+				mid_3_custom_slot = ship_deck_space
+				rear_1_custom_slot = ship_armor_carrier_deck
+				rear_2_custom_slot = ship_sam_missile_battery_1
+			}
+		}
+
+		requirements = {
+			module = ship_deck_space
+			module = ship_radar
+		}
+	}
+	
+	UTT_CARRIER_6_B = {
+		role_icon_index = 7
+		priority = {
+			base = -1
+			modifier = { add = 1000 has_tech = ship_hull_carrier_6 has_tech = ship_sam_missile_battery_2 has_tech = ship_radar_6 }
+			modifier = { add = -900 has_tech = ship_hull_carrier_7 }
+		}
+
+		target_variant = {
+			type = ship_hull_carrier_6
+			match_value = 12000
+
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_radar_slot = { any_of = { ship_radar_9 ship_radar_8 ship_radar_7 ship_radar_6 ship_radar_5 ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+				fixed_ship_engine_slot = { module = carrier_ship_engine_6 upgrade = current }
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+				front_1_custom_slot = ship_deck_space
+				mid_1_custom_slot = { any_of = { ship_sam_missile_battery_5 ship_sam_missile_battery_4 ship_sam_missile_battery_3 ship_sam_missile_battery_2 ship_sam_missile_battery_1 } }
+				mid_2_custom_slot = ship_deck_space
+				mid_3_custom_slot = ship_deck_space
+				rear_1_custom_slot = ship_armor_carrier_deck
+				rear_2_custom_slot = { any_of = { ship_sam_missile_battery_5 ship_sam_missile_battery_4 ship_sam_missile_battery_3 ship_sam_missile_battery_2 ship_sam_missile_battery_1 } }
+			}
+		}
+
+		requirements = {
+			module = ship_deck_space
+			module = ship_radar
+		}
+	}
+	
+	UTT_CARRIER_7_A = {
+		role_icon_index = 7
+		priority = {
+			base = -1
+			modifier = { add = 1000 has_tech = ship_hull_carrier_7 }
+			modifier = { add = -900 has_tech = ship_hull_carrier_8 has_tech = ship_sam_missile_battery_3 has_tech = ship_radar_7  }
+		}
+
+		target_variant = {
+			type = ship_hull_carrier_7
+			match_value = 14000
+
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air_6
+				fixed_ship_radar_slot = { any_of = { ship_radar_6 ship_radar_5 ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+				fixed_ship_engine_slot = { module = carrier_ship_engine_7 upgrade = current }
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+				front_1_custom_slot = ship_deck_space
+				mid_1_custom_slot = ship_sam_missile_battery_2
+				mid_2_custom_slot = ship_deck_space
+				mid_3_custom_slot = ship_sam_missile_battery_2
+				rear_1_custom_slot = ship_armor_carrier_deck
+				rear_2_custom_slot = ship_sam_missile_battery_2
+			}
+		}
+
+		requirements = {
+			module = ship_deck_space
+			module = ship_radar
+		}
+	}
+	
+	UTT_CARRIER_7_B = {
+		role_icon_index = 7
+		priority = {
+			base = -1
+			modifier = { add = 1000 has_tech = ship_hull_carrier_7 has_tech = ship_sam_missile_battery_3 has_tech = ship_radar_7  }
+			modifier = { add = -900 has_tech = ship_hull_carrier_8 }
+		}
+
+		target_variant = {
+			type = ship_hull_carrier_7
+			match_value = 14000
+
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_radar_slot = { any_of = { ship_radar_9 ship_radar_8 ship_radar_7 ship_radar_6 ship_radar_5 ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+				fixed_ship_engine_slot = { module = carrier_ship_engine_7 upgrade = current }
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+				front_1_custom_slot = ship_deck_space
+				mid_1_custom_slot = { any_of = {ship_sam_missile_battery_5 ship_sam_missile_battery_4 ship_sam_missile_battery_3 ship_sam_missile_battery_2 ship_sam_missile_battery_1 } }
+				mid_2_custom_slot = ship_deck_space
+				mid_3_custom_slot = { any_of = {ship_sam_missile_battery_5 ship_sam_missile_battery_4 ship_sam_missile_battery_3 ship_sam_missile_battery_2 ship_sam_missile_battery_1 } }
+				rear_1_custom_slot = ship_armor_carrier_deck
+				rear_2_custom_slot = { any_of = {ship_sam_missile_battery_5 ship_sam_missile_battery_4 ship_sam_missile_battery_3 ship_sam_missile_battery_2 ship_sam_missile_battery_1 } }
+			}
+		}
+
+		requirements = {
+			module = ship_deck_space
+			module = ship_radar
+		}
+	}
+	
+	UTT_CARRIER_8_A = {
+		role_icon_index = 7
+		priority = {
+			base = -1
+			modifier = { add = 1000 has_tech = ship_hull_carrier_8 }
+			modifier = { add = -900 has_tech = ship_hull_carrier_9 has_tech = ship_sam_missile_battery_4 has_tech = ship_radar_8 }
+		}
+
+		target_variant = {
+			type = ship_hull_carrier_8
+			match_value = 16000
+
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_radar_slot = { any_of = { ship_radar_7 ship_radar_6 ship_radar_5 ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+				fixed_ship_engine_slot = { module = carrier_ship_engine_8 upgrade = current }
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+				front_1_custom_slot = ship_deck_space
+				mid_1_custom_slot = ship_sam_missile_battery_3
+				mid_2_custom_slot = ship_deck_space
+				mid_3_custom_slot = ship_sam_missile_battery_3
+				rear_1_custom_slot = ship_armor_carrier_deck
+				rear_2_custom_slot = ship_sam_missile_battery_3
+			}
+		}
+
+		requirements = {
+			module = ship_deck_space
+			module = ship_radar
+		}
+	}
+	
+	UTT_CARRIER_8_B = {
+		role_icon_index = 7
+		priority = {
+			base = -1
+			modifier = { add = 1000 has_tech = ship_hull_carrier_8 has_tech = ship_sam_missile_battery_4 has_tech = ship_radar_8 }
+			modifier = { add = -900 has_tech = ship_hull_carrier_9 }
+		}
+
+		target_variant = {
+			type = ship_hull_carrier_8
+			match_value = 16000
+
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_anti_air_slot = ship_anti_air
+				fixed_ship_radar_slot = { any_of = { ship_radar_9 ship_radar_8 ship_radar_7 ship_radar_6 ship_radar_5 ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+				fixed_ship_engine_slot = { module = carrier_ship_engine_8 upgrade = current }
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+				front_1_custom_slot = ship_deck_space
+				mid_1_custom_slot = { any_of = {ship_sam_missile_battery_5 ship_sam_missile_battery_4 ship_sam_missile_battery_3 ship_sam_missile_battery_2 ship_sam_missile_battery_1 } }
+				mid_2_custom_slot = ship_deck_space
+				mid_3_custom_slot = { any_of = {ship_sam_missile_battery_5 ship_sam_missile_battery_4 ship_sam_missile_battery_3 ship_sam_missile_battery_2 ship_sam_missile_battery_1 } }
+				rear_1_custom_slot = ship_armor_carrier_deck
+				rear_2_custom_slot = { any_of = {ship_sam_missile_battery_5 ship_sam_missile_battery_4 ship_sam_missile_battery_3 ship_sam_missile_battery_2 ship_sam_missile_battery_1 } }
+			}
+		}
+
+		requirements = {
+			module = ship_deck_space
+			module = ship_radar
+		}
+	}
+	
+	UTT_CARRIER_9_A = {
+		role_icon_index = 7
+		priority = {
+			base = -1
+			modifier = { add = 1000 has_tech = ship_hull_carrier_9 }
+			modifier = { add = -900 has_tech = ship_hull_carrier_10 has_tech = ship_sam_missile_battery_5 has_tech = ship_radar_9  }
+		}
+
+		target_variant = {
+			type = ship_hull_carrier_9
+			match_value = 18000
+
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_radar_slot = { any_of = { ship_radar_8 ship_radar_7 ship_radar_6 ship_radar_5 ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+				fixed_ship_engine_slot = { module = carrier_ship_engine_9 upgrade = current }
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+				front_1_custom_slot = ship_ciws_1
+				mid_1_custom_slot = ship_sam_missile_battery_4
+				mid_2_custom_slot = ship_deck_space
+				mid_3_custom_slot = ship_sam_missile_battery_4
+				rear_1_custom_slot = ship_deck_space
+				rear_2_custom_slot = ship_ciws_1
+			}
+		}
+
+		requirements = {
+			module = ship_deck_space
+			module = ship_radar
+		}
+	}
+	
+	UTT_CARRIER_9_B = {
+		role_icon_index = 7
+		priority = {
+			base = -1
+			modifier = { add = 1000 has_tech = ship_hull_carrier_9 has_tech = ship_sam_missile_battery_5 has_tech = ship_radar_9 }
+			modifier = { add = -900 has_tech = ship_hull_carrier_10 }
+		}
+
+		target_variant = {
+			type = ship_hull_carrier_9
+			match_value = 18000
+
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_radar_slot = { any_of = { ship_radar_9 ship_radar_8 ship_radar_7 ship_radar_6 ship_radar_5 ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+				fixed_ship_engine_slot = { module = carrier_ship_engine_9 upgrade = current }
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+				front_1_custom_slot = ship_ciws_2
+				mid_1_custom_slot = ship_sam_missile_battery_5
+				mid_2_custom_slot = ship_deck_space
+				mid_3_custom_slot = ship_sam_missile_battery_5
+				rear_1_custom_slot = ship_deck_space
+				rear_2_custom_slot = ship_ciws_2
+			}
+		}
+
+		requirements = {
+			module = ship_deck_space
+			module = ship_radar
+		}
+	}
+	
+	UTT_CARRIER_10 = {
+		role_icon_index = 7
+
+
+		priority = {
+			base = -1
+			modifier = { add = 1000 has_tech = ship_hull_carrier_10 }
+		}
+
+		target_variant = {
+			type = ship_hull_carrier_10
+			match_value = 20000
+
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_radar_slot = { any_of = { ship_radar_9 ship_radar_8 ship_radar_7 ship_radar_6 ship_radar_5 ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+				fixed_ship_engine_slot = { module = carrier_ship_engine_10 upgrade = current }
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+				front_1_custom_slot = ship_ciws_2
+				mid_1_custom_slot = ship_sam_missile_battery_5
+				mid_2_custom_slot = ship_deck_space
+				mid_3_custom_slot = ship_sam_missile_battery_5
+				rear_1_custom_slot = ship_deck_space
+				rear_2_custom_slot = ship_ciws_2
+			}
+		}
+
+		requirements = {
+			module = ship_deck_space
+			module = ship_radar
+		}
+	}
+	
+	UTT_CARRIER_10 = {
+		role_icon_index = 7
+
+		priority = {
+			base = -1
+			modifier = { add = 1000 has_tech = ship_hull_carrier_10 }
+		}
+
+		target_variant = {
+			type = ship_hull_carrier_10
+			match_value = 20000
+
+			modules = {
+				fixed_ship_deck_slot_1 = ship_deck_space
+				fixed_ship_deck_slot_2 = ship_deck_space
+				fixed_ship_radar_slot = { any_of = { ship_radar_9 ship_radar_8 ship_radar_7 ship_radar_6 ship_radar_5 ship_radar_4 ship_radar_3 ship_radar_2 ship_radar_1 } }
+				fixed_ship_engine_slot = { module = carrier_ship_engine_10 upgrade = current }
+				fixed_ship_secondaries_slot = dp_ship_secondaries
+				front_1_custom_slot = ship_ciws_2
+				mid_1_custom_slot = ship_sam_missile_battery_5
+				mid_2_custom_slot = ship_deck_space
+				mid_3_custom_slot = ship_sam_missile_battery_5
+				rear_1_custom_slot = ship_deck_space
+				rear_2_custom_slot = ship_ciws_2
+			}
+		}
+
+		requirements = {
+			module = ship_deck_space
+			module = ship_radar
+		}
+	}
+}

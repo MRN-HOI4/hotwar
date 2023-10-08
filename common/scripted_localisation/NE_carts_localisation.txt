@@ -1,0 +1,724 @@
+defined_text = {
+    name = GETCARTNAME_1       #####GETCARTNAME_1
+#####################################	infantry
+    text = { trigger = { check_variable = { cart_brand_1 = 1 } }localization_key = "infantry_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_1 = 2 } }localization_key = "infantry_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 3 } }localization_key = "infantry_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 4 } }localization_key = "infantry_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_1 = 5 } }localization_key = "support_equipment" }
+    text = { trigger = { check_variable = { cart_brand_1 = 6 } }localization_key = "motorized_equipment" }
+    text = { trigger = { check_variable = { cart_brand_1 = 7 } }localization_key = "mechanized_equipment" }
+    text = { trigger = { check_variable = { cart_brand_1 = 8 } }localization_key = "artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 9 } }localization_key = "artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 10 } }localization_key = "artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_1 = 11 } }localization_key = "rocket_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 12 } }localization_key = "rocket_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 13 } }localization_key = "motorized_rocket_equipment" }
+    text = { trigger = { check_variable = { cart_brand_1 = 14 } }localization_key = "anti_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 15 } }localization_key = "anti_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 16 } }localization_key = "anti_tank_equipment_3"}
+    text = { trigger = { check_variable = { cart_brand_1 = 17 } }localization_key = "anti_air_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 18 } }localization_key = "anti_air_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 19 } }localization_key = "anti_air_equipment_3" }
+#####################################	armor
+    text = { trigger = { check_variable = { cart_brand_1 = 20 } }localization_key = "light_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 21 } }localization_key = "light_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 22 } }localization_key = "light_tank_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_1 = 23 } }localization_key = "light_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 24 } }localization_key = "light_tank_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 25 } }localization_key = "light_tank_artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_1 = 26 } }localization_key = "light_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 27 } }localization_key = "light_tank_destroyer_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 28 } }localization_key = "light_tank_destroyer_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_1 = 29 } }localization_key = "light_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 30 } }localization_key = "light_tank_aa_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 31 } }localization_key = "light_tank_aa_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_1 = 32 } }localization_key = "medium_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 33 } }localization_key = "medium_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 34 } }localization_key = "medium_tank_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_1 = 35 } }localization_key = "medium_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 36 } }localization_key = "medium_tank_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 37 } }localization_key = "medium_tank_artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_1 = 38 } }localization_key = "medium_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 39 } }localization_key = "medium_tank_destroyer_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 40 } }localization_key = "medium_tank_destroyer_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_1 = 41 } }localization_key = "medium_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 42 } }localization_key = "medium_tank_aa_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 43 } }localization_key = "medium_tank_aa_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_1 = 44 } }localization_key = "heavy_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 45 } }localization_key = "heavy_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 46 } }localization_key = "heavy_tank_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_1 = 47 } }localization_key = "heavy_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 48 } }localization_key = "heavy_tank_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 49 } }localization_key = "heavy_tank_artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_1 = 50 } }localization_key = "super_heavy_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 51 } }localization_key = "heavy_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 52 } }localization_key = "heavy_tank_destroyer_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 53 } }localization_key = "heavy_tank_destroyer_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_1 = 54 } }localization_key = "super_heavy_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 55 } }localization_key = "heavy_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 56 } }localization_key = "heavy_tank_aa_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 57 } }localization_key = "heavy_tank_aa_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_1 = 58 } }localization_key = "super_heavy_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 59 } }localization_key = "modern_tank_equipment" }
+    text = { trigger = { check_variable = { cart_brand_1 = 60 } }localization_key = "modern_tank_artillery_equipment" }
+    text = { trigger = { check_variable = { cart_brand_1 = 61 } }localization_key = "modern_tank_destroyer_equipment" }
+    text = { trigger = { check_variable = { cart_brand_1 = 62 } }localization_key = "modern_tank_aa_equipment" }
+############################## aircraft
+    text = { trigger = { check_variable = { cart_brand_1 = 63 } }localization_key = "fighter_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_1 = 64 } }localization_key = "fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 65 } }localization_key = "fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 66 } }localization_key = "fighter_equipment_3" }
+	text = { trigger = { check_variable = { cart_brand_1 = 67 } }localization_key = "cv_fighter_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_1 = 68 } }localization_key = "cv_fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 69 } }localization_key = "cv_fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 70 } }localization_key = "cv_fighter_equipment_3" }
+	text = { trigger = { check_variable = { cart_brand_1 = 71 } }localization_key = "jet_fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 72 } }localization_key = "jet_fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 73 } }localization_key = "heavy_fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 74 } }localization_key = "heavy_fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 75 } }localization_key = "heavy_fighter_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_1 = 76 } }localization_key = "CAS_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 77 } }localization_key = "CAS_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 78 } }localization_key = "CAS_equipment_3" }
+	text = { trigger = { check_variable = { cart_brand_1 = 79 } }localization_key = "cv_CAS_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 80 } }localization_key = "cv_CAS_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 81 } }localization_key = "cv_CAS_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_1 = 82 } }localization_key = "nav_bomber_equipment_1" }
+	text = { trigger = { check_variable = { cart_brand_1 = 83 } }localization_key = "nav_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 84 } }localization_key = "nav_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_1 = 85 } }localization_key = "cv_nav_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 86 } }localization_key = "cv_nav_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 87 } }localization_key = "cv_nav_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_1 = 88 } }localization_key = "tac_bomber_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_1 = 89 } }localization_key = "tac_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 90 } }localization_key = "tac_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 91 } }localization_key = "tac_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_1 = 92 } }localization_key = "strat_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 93 } }localization_key = "strat_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 94 } }localization_key = "strat_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_1 = 95 } }localization_key = "scout_plane_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 96 } }localization_key = "scout_plane_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 97 } }localization_key = "jet_tac_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 98 } }localization_key = "jet_tac_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_1 = 99 } }localization_key = "jet_strat_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_1 = 100 } }localization_key = "rocket_suicide_equipment_1" }
+
+####################### warships
+	text = { trigger = { check_variable = { cart_brand_1 = 101 } }localization_key = "convoy" }
+	text = { trigger = { check_variable = { cart_brand_1 = 102 } }localization_key = "submarine" }
+    text = { trigger = { check_variable = { cart_brand_1 = 103 } }localization_key = "destroyer" }
+    text = { trigger = { check_variable = { cart_brand_1 = 104 } }localization_key = "light_cruiser" }
+	text = { trigger = { check_variable = { cart_brand_1 = 105 } }localization_key = "heavy_cruiser" }
+	text = { trigger = { check_variable = { cart_brand_1 = 106 } }localization_key = "battle_cruiser" }
+	text = { trigger = { check_variable = { cart_brand_1 = 107 } }localization_key = "battleship" }
+    text = { trigger = { check_variable = { cart_brand_1 = 108 } }localization_key = "carrier" }
+
+####################### default
+	text = { localization_key = "" }
+}
+
+
+defined_text = {
+    name = GETCARTNAME_2       #####GETCARTNAME_2
+#####################################	infantry
+    text = { trigger = { check_variable = { cart_brand_2 = 1 } }localization_key = "infantry_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_2 = 2 } }localization_key = "infantry_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 3 } }localization_key = "infantry_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 4 } }localization_key = "infantry_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_2 = 5 } }localization_key = "support_equipment" }
+    text = { trigger = { check_variable = { cart_brand_2 = 6 } }localization_key = "motorized_equipment" }
+    text = { trigger = { check_variable = { cart_brand_2 = 7 } }localization_key = "mechanized_equipment" }
+    text = { trigger = { check_variable = { cart_brand_2 = 8 } }localization_key = "artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 9 } }localization_key = "artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 10 } }localization_key = "artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_2 = 11 } }localization_key = "rocket_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 12 } }localization_key = "rocket_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 13 } }localization_key = "motorized_rocket_equipment" }
+    text = { trigger = { check_variable = { cart_brand_2 = 14 } }localization_key = "anti_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 15 } }localization_key = "anti_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 16 } }localization_key = "anti_tank_equipment_3"}
+    text = { trigger = { check_variable = { cart_brand_2 = 17 } }localization_key = "anti_air_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 18 } }localization_key = "anti_air_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 19 } }localization_key = "anti_air_equipment_3" }
+#####################################	armor
+    text = { trigger = { check_variable = { cart_brand_2 = 20 } }localization_key = "light_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 21 } }localization_key = "light_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 22 } }localization_key = "light_tank_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_2 = 23 } }localization_key = "light_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 24 } }localization_key = "light_tank_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 25 } }localization_key = "light_tank_artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_2 = 26 } }localization_key = "light_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 27 } }localization_key = "light_tank_destroyer_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 28 } }localization_key = "light_tank_destroyer_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_2 = 29 } }localization_key = "light_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 30 } }localization_key = "light_tank_aa_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 31 } }localization_key = "light_tank_aa_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_2 = 32 } }localization_key = "medium_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 33 } }localization_key = "medium_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 34 } }localization_key = "medium_tank_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_2 = 35 } }localization_key = "medium_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 36 } }localization_key = "medium_tank_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 37 } }localization_key = "medium_tank_artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_2 = 38 } }localization_key = "medium_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 39 } }localization_key = "medium_tank_destroyer_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 40 } }localization_key = "medium_tank_destroyer_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_2 = 41 } }localization_key = "medium_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 42 } }localization_key = "medium_tank_aa_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 43 } }localization_key = "medium_tank_aa_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_2 = 44 } }localization_key = "heavy_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 45 } }localization_key = "heavy_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 46 } }localization_key = "heavy_tank_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_2 = 47 } }localization_key = "heavy_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 48 } }localization_key = "heavy_tank_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 49 } }localization_key = "heavy_tank_artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_2 = 50 } }localization_key = "super_heavy_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 51 } }localization_key = "heavy_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 52 } }localization_key = "heavy_tank_destroyer_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 53 } }localization_key = "heavy_tank_destroyer_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_2 = 54 } }localization_key = "super_heavy_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 55 } }localization_key = "heavy_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 56 } }localization_key = "heavy_tank_aa_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 57 } }localization_key = "heavy_tank_aa_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_2 = 58 } }localization_key = "super_heavy_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 59 } }localization_key = "modern_tank_equipment" }
+    text = { trigger = { check_variable = { cart_brand_2 = 60 } }localization_key = "modern_tank_artillery_equipment" }
+    text = { trigger = { check_variable = { cart_brand_2 = 61 } }localization_key = "modern_tank_destroyer_equipment" }
+    text = { trigger = { check_variable = { cart_brand_2 = 62 } }localization_key = "modern_tank_aa_equipment" }
+############################## aircraft
+    text = { trigger = { check_variable = { cart_brand_2 = 63 } }localization_key = "fighter_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_2 = 64 } }localization_key = "fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 65 } }localization_key = "fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 66 } }localization_key = "fighter_equipment_3" }
+	text = { trigger = { check_variable = { cart_brand_2 = 67 } }localization_key = "cv_fighter_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_2 = 68 } }localization_key = "cv_fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 69 } }localization_key = "cv_fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 70 } }localization_key = "cv_fighter_equipment_3" }
+	text = { trigger = { check_variable = { cart_brand_2 = 71 } }localization_key = "jet_fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 72 } }localization_key = "jet_fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 73 } }localization_key = "heavy_fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 74 } }localization_key = "heavy_fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 75 } }localization_key = "heavy_fighter_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_2 = 76 } }localization_key = "CAS_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 77 } }localization_key = "CAS_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 78 } }localization_key = "CAS_equipment_3" }
+	text = { trigger = { check_variable = { cart_brand_2 = 79 } }localization_key = "cv_CAS_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 80 } }localization_key = "cv_CAS_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 81 } }localization_key = "cv_CAS_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_2 = 82 } }localization_key = "nav_bomber_equipment_1" }
+	text = { trigger = { check_variable = { cart_brand_2 = 83 } }localization_key = "nav_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 84 } }localization_key = "nav_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_2 = 85 } }localization_key = "cv_nav_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 86 } }localization_key = "cv_nav_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 87 } }localization_key = "cv_nav_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_2 = 88 } }localization_key = "tac_bomber_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_2 = 89 } }localization_key = "tac_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 90 } }localization_key = "tac_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 91 } }localization_key = "tac_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_2 = 92 } }localization_key = "strat_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 93 } }localization_key = "strat_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 94 } }localization_key = "strat_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_2 = 95 } }localization_key = "scout_plane_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 96 } }localization_key = "scout_plane_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 97 } }localization_key = "jet_tac_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 98 } }localization_key = "jet_tac_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_2 = 99 } }localization_key = "jet_strat_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_2 = 100 } }localization_key = "rocket_suicide_equipment_1" }
+
+####################### warships
+	text = { trigger = { check_variable = { cart_brand_2 = 101 } }localization_key = "convoy" }
+	text = { trigger = { check_variable = { cart_brand_2 = 102 } }localization_key = "submarine" }
+    text = { trigger = { check_variable = { cart_brand_2 = 103 } }localization_key = "destroyer" }
+    text = { trigger = { check_variable = { cart_brand_2 = 104 } }localization_key = "light_cruiser" }
+	text = { trigger = { check_variable = { cart_brand_2 = 105 } }localization_key = "heavy_cruiser" }
+	text = { trigger = { check_variable = { cart_brand_2 = 106 } }localization_key = "battle_cruiser" }
+	text = { trigger = { check_variable = { cart_brand_2 = 107 } }localization_key = "battleship" }
+    text = { trigger = { check_variable = { cart_brand_2 = 108 } }localization_key = "carrier" }
+
+####################### default
+	text = { localization_key = "" }
+}
+
+
+defined_text = {
+    name = GETCARTNAME_3       #####GETCARTNAME_3
+#####################################	infantry
+    text = { trigger = { check_variable = { cart_brand_3 = 1 } } localization_key = "infantry_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_3 = 2 } }localization_key = "infantry_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 3 } }localization_key = "infantry_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 4 } }localization_key = "infantry_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_3 = 5 } }localization_key = "support_equipment" }
+    text = { trigger = { check_variable = { cart_brand_3 = 6 } }localization_key = "motorized_equipment" }
+    text = { trigger = { check_variable = { cart_brand_3 = 7 } }localization_key = "mechanized_equipment" }
+    text = { trigger = { check_variable = { cart_brand_3 = 8 } }localization_key = "artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 9 } }localization_key = "artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 10 } }localization_key = "artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_3 = 11 } }localization_key = "rocket_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 12 } }localization_key = "rocket_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 13 } }localization_key = "motorized_rocket_equipment" }
+    text = { trigger = { check_variable = { cart_brand_3 = 14 } }localization_key = "anti_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 15 } }localization_key = "anti_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 16 } }localization_key = "anti_tank_equipment_3"}
+    text = { trigger = { check_variable = { cart_brand_3 = 17 } }localization_key = "anti_air_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 18 } }localization_key = "anti_air_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 19 } }localization_key = "anti_air_equipment_3" }
+#####################################	armor
+    text = { trigger = { check_variable = { cart_brand_3 = 20 } }localization_key = "light_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 21 } }localization_key = "light_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 22 } }localization_key = "light_tank_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_3 = 23 } }localization_key = "light_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 24 } }localization_key = "light_tank_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 25 } }localization_key = "light_tank_artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_3 = 26 } }localization_key = "light_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 27 } }localization_key = "light_tank_destroyer_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 28 } }localization_key = "light_tank_destroyer_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_3 = 29 } }localization_key = "light_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 30 } }localization_key = "light_tank_aa_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 31 } }localization_key = "light_tank_aa_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_3 = 32 } }localization_key = "medium_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 33 } }localization_key = "medium_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 34 } }localization_key = "medium_tank_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_3 = 35 } }localization_key = "medium_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 36 } }localization_key = "medium_tank_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 37 } }localization_key = "medium_tank_artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_3 = 38 } }localization_key = "medium_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 39 } }localization_key = "medium_tank_destroyer_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 40 } }localization_key = "medium_tank_destroyer_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_3 = 41 } }localization_key = "medium_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 42 } }localization_key = "medium_tank_aa_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 43 } }localization_key = "medium_tank_aa_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_3 = 44 } }localization_key = "heavy_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 45 } }localization_key = "heavy_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 46 } }localization_key = "heavy_tank_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_3 = 47 } }localization_key = "heavy_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 48 } }localization_key = "heavy_tank_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 49 } }localization_key = "heavy_tank_artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_3 = 50 } }localization_key = "super_heavy_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 51 } }localization_key = "heavy_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 52 } }localization_key = "heavy_tank_destroyer_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 53 } }localization_key = "heavy_tank_destroyer_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_3 = 54 } }localization_key = "super_heavy_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 55 } }localization_key = "heavy_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 56 } }localization_key = "heavy_tank_aa_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 57 } }localization_key = "heavy_tank_aa_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_3 = 58 } }localization_key = "super_heavy_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 59 } }localization_key = "modern_tank_equipment" }
+    text = { trigger = { check_variable = { cart_brand_3 = 60 } }localization_key = "modern_tank_artillery_equipment" }
+    text = { trigger = { check_variable = { cart_brand_3 = 61 } }localization_key = "modern_tank_destroyer_equipment" }
+    text = { trigger = { check_variable = { cart_brand_3 = 62 } }localization_key = "modern_tank_aa_equipment" }
+############################## aircraft
+    text = { trigger = { check_variable = { cart_brand_3 = 63 } }localization_key = "fighter_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_3 = 64 } }localization_key = "fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 65 } }localization_key = "fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 66 } }localization_key = "fighter_equipment_3" }
+	text = { trigger = { check_variable = { cart_brand_3 = 67 } }localization_key = "cv_fighter_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_3 = 68 } }localization_key = "cv_fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 69 } }localization_key = "cv_fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 70 } }localization_key = "cv_fighter_equipment_3" }
+	text = { trigger = { check_variable = { cart_brand_3 = 71 } }localization_key = "jet_fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 72 } }localization_key = "jet_fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 73 } }localization_key = "heavy_fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 74 } }localization_key = "heavy_fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 75 } }localization_key = "heavy_fighter_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_3 = 76 } }localization_key = "CAS_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 77 } }localization_key = "CAS_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 78 } }localization_key = "CAS_equipment_3" }
+	text = { trigger = { check_variable = { cart_brand_3 = 79 } }localization_key = "cv_CAS_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 80 } }localization_key = "cv_CAS_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 81 } }localization_key = "cv_CAS_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_3 = 82 } }localization_key = "nav_bomber_equipment_1" }
+	text = { trigger = { check_variable = { cart_brand_3 = 83 } }localization_key = "nav_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 84 } }localization_key = "nav_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_3 = 85 } }localization_key = "cv_nav_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 86 } }localization_key = "cv_nav_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 87 } }localization_key = "cv_nav_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_3 = 88 } }localization_key = "tac_bomber_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_3 = 89 } }localization_key = "tac_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 90 } }localization_key = "tac_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 91 } }localization_key = "tac_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_3 = 92 } }localization_key = "strat_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 93 } }localization_key = "strat_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 94 } }localization_key = "strat_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_3 = 95 } }localization_key = "scout_plane_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 96 } }localization_key = "scout_plane_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 97 } }localization_key = "jet_tac_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 98 } }localization_key = "jet_tac_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_3 = 99 } }localization_key = "jet_strat_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_3 = 100 } }localization_key = "rocket_suicide_equipment_1" }
+
+####################### warships
+	text = { trigger = { check_variable = { cart_brand_3 = 101 } }localization_key = "convoy" }
+	text = { trigger = { check_variable = { cart_brand_3 = 102 } }localization_key = "submarine" }
+    text = { trigger = { check_variable = { cart_brand_3 = 103 } }localization_key = "destroyer" }
+    text = { trigger = { check_variable = { cart_brand_3 = 104 } }localization_key = "light_cruiser" }
+	text = { trigger = { check_variable = { cart_brand_3 = 105 } }localization_key = "heavy_cruiser" }
+	text = { trigger = { check_variable = { cart_brand_3 = 106 } }localization_key = "battle_cruiser" }
+	text = { trigger = { check_variable = { cart_brand_3 = 107 } }localization_key = "battleship" }
+    text = { trigger = { check_variable = { cart_brand_3 = 108 } }localization_key = "carrier" }
+
+####################### default
+	text = { localization_key = "" }
+}
+
+
+defined_text = {
+    name = GETCARTNAME_4       #####GETCARTNAME_4
+#####################################	infantry
+    text = { trigger = { check_variable = { cart_brand_4 = 1 } } localization_key = "infantry_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_4 = 2 } }localization_key = "infantry_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 3 } }localization_key = "infantry_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 4 } }localization_key = "infantry_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_4 = 5 } }localization_key = "support_equipment" }
+    text = { trigger = { check_variable = { cart_brand_4 = 6 } }localization_key = "motorized_equipment" }
+    text = { trigger = { check_variable = { cart_brand_4 = 7 } }localization_key = "mechanized_equipment" }
+    text = { trigger = { check_variable = { cart_brand_4 = 8 } }localization_key = "artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 9 } }localization_key = "artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 10 } }localization_key = "artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_4 = 11 } }localization_key = "rocket_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 12 } }localization_key = "rocket_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 13 } }localization_key = "motorized_rocket_equipment" }
+    text = { trigger = { check_variable = { cart_brand_4 = 14 } }localization_key = "anti_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 15 } }localization_key = "anti_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 16 } }localization_key = "anti_tank_equipment_3"}
+    text = { trigger = { check_variable = { cart_brand_4 = 17 } }localization_key = "anti_air_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 18 } }localization_key = "anti_air_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 19 } }localization_key = "anti_air_equipment_3" }
+#####################################	armor
+    text = { trigger = { check_variable = { cart_brand_4 = 20 } }localization_key = "light_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 21 } }localization_key = "light_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 22 } }localization_key = "light_tank_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_4 = 23 } }localization_key = "light_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 24 } }localization_key = "light_tank_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 25 } }localization_key = "light_tank_artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_4 = 26 } }localization_key = "light_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 27 } }localization_key = "light_tank_destroyer_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 28 } }localization_key = "light_tank_destroyer_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_4 = 29 } }localization_key = "light_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 30 } }localization_key = "light_tank_aa_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 31 } }localization_key = "light_tank_aa_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_4 = 32 } }localization_key = "medium_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 33 } }localization_key = "medium_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 34 } }localization_key = "medium_tank_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_4 = 35 } }localization_key = "medium_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 36 } }localization_key = "medium_tank_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 37 } }localization_key = "medium_tank_artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_4 = 38 } }localization_key = "medium_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 39 } }localization_key = "medium_tank_destroyer_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 40 } }localization_key = "medium_tank_destroyer_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_4 = 41 } }localization_key = "medium_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 42 } }localization_key = "medium_tank_aa_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 43 } }localization_key = "medium_tank_aa_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_4 = 44 } }localization_key = "heavy_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 45 } }localization_key = "heavy_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 46 } }localization_key = "heavy_tank_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_4 = 47 } }localization_key = "heavy_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 48 } }localization_key = "heavy_tank_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 49 } }localization_key = "heavy_tank_artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_4 = 50 } }localization_key = "super_heavy_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 51 } }localization_key = "heavy_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 52 } }localization_key = "heavy_tank_destroyer_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 53 } }localization_key = "heavy_tank_destroyer_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_4 = 54 } }localization_key = "super_heavy_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 55 } }localization_key = "heavy_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 56 } }localization_key = "heavy_tank_aa_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 57 } }localization_key = "heavy_tank_aa_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_4 = 58 } }localization_key = "super_heavy_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 59 } }localization_key = "modern_tank_equipment" }
+    text = { trigger = { check_variable = { cart_brand_4 = 60 } }localization_key = "modern_tank_artillery_equipment" }
+    text = { trigger = { check_variable = { cart_brand_4 = 61 } }localization_key = "modern_tank_destroyer_equipment" }
+    text = { trigger = { check_variable = { cart_brand_4 = 62 } }localization_key = "modern_tank_aa_equipment" }
+############################## aircraft
+    text = { trigger = { check_variable = { cart_brand_4 = 63 } }localization_key = "fighter_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_4 = 64 } }localization_key = "fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 65 } }localization_key = "fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 66 } }localization_key = "fighter_equipment_3" }
+	text = { trigger = { check_variable = { cart_brand_4 = 67 } }localization_key = "cv_fighter_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_4 = 68 } }localization_key = "cv_fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 69 } }localization_key = "cv_fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 70 } }localization_key = "cv_fighter_equipment_3" }
+	text = { trigger = { check_variable = { cart_brand_4 = 71 } }localization_key = "jet_fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 72 } }localization_key = "jet_fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 73 } }localization_key = "heavy_fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 74 } }localization_key = "heavy_fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 75 } }localization_key = "heavy_fighter_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_4 = 76 } }localization_key = "CAS_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 77 } }localization_key = "CAS_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 78 } }localization_key = "CAS_equipment_3" }
+	text = { trigger = { check_variable = { cart_brand_4 = 79 } }localization_key = "cv_CAS_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 80 } }localization_key = "cv_CAS_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 81 } }localization_key = "cv_CAS_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_4 = 82 } }localization_key = "nav_bomber_equipment_1" }
+	text = { trigger = { check_variable = { cart_brand_4 = 83 } }localization_key = "nav_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 84 } }localization_key = "nav_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_4 = 85 } }localization_key = "cv_nav_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 86 } }localization_key = "cv_nav_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 87 } }localization_key = "cv_nav_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_4 = 88 } }localization_key = "tac_bomber_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_4 = 89 } }localization_key = "tac_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 90 } }localization_key = "tac_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 91 } }localization_key = "tac_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_4 = 92 } }localization_key = "strat_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 93 } }localization_key = "strat_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 94 } }localization_key = "strat_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_4 = 95 } }localization_key = "scout_plane_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 96 } }localization_key = "scout_plane_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 97 } }localization_key = "jet_tac_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 98 } }localization_key = "jet_tac_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_4 = 99 } }localization_key = "jet_strat_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_4 = 100 } }localization_key = "rocket_suicide_equipment_1" }
+
+####################### warships
+	text = { trigger = { check_variable = { cart_brand_4 = 101 } }localization_key = "convoy" }
+	text = { trigger = { check_variable = { cart_brand_4 = 102 } }localization_key = "submarine" }
+    text = { trigger = { check_variable = { cart_brand_4 = 103 } }localization_key = "destroyer" }
+    text = { trigger = { check_variable = { cart_brand_4 = 104 } }localization_key = "light_cruiser" }
+	text = { trigger = { check_variable = { cart_brand_4 = 105 } }localization_key = "heavy_cruiser" }
+	text = { trigger = { check_variable = { cart_brand_4 = 106 } }localization_key = "battle_cruiser" }
+	text = { trigger = { check_variable = { cart_brand_4 = 107 } }localization_key = "battleship" }
+    text = { trigger = { check_variable = { cart_brand_4 = 108 } }localization_key = "carrier" }
+
+####################### default
+	text = { localization_key = "" }
+}
+
+
+defined_text = {
+    name = GETCARTNAME_5       #####GETCARTNAME_5
+#####################################	infantry
+    text = { trigger = { check_variable = { cart_brand_5 = 1 } } localization_key = "infantry_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_5 = 2 } }localization_key = "infantry_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 3 } }localization_key = "infantry_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 4 } }localization_key = "infantry_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_5 = 5 } }localization_key = "support_equipment" }
+    text = { trigger = { check_variable = { cart_brand_5 = 6 } }localization_key = "motorized_equipment" }
+    text = { trigger = { check_variable = { cart_brand_5 = 7 } }localization_key = "mechanized_equipment" }
+    text = { trigger = { check_variable = { cart_brand_5 = 8 } }localization_key = "artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 9 } }localization_key = "artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 10 } }localization_key = "artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_5 = 11 } }localization_key = "rocket_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 12 } }localization_key = "rocket_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 13 } }localization_key = "motorized_rocket_equipment" }
+    text = { trigger = { check_variable = { cart_brand_5 = 14 } }localization_key = "anti_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 15 } }localization_key = "anti_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 16 } }localization_key = "anti_tank_equipment_3"}
+    text = { trigger = { check_variable = { cart_brand_5 = 17 } }localization_key = "anti_air_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 18 } }localization_key = "anti_air_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 19 } }localization_key = "anti_air_equipment_3" }
+#####################################	armor
+    text = { trigger = { check_variable = { cart_brand_5 = 20 } }localization_key = "light_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 21 } }localization_key = "light_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 22 } }localization_key = "light_tank_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_5 = 23 } }localization_key = "light_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 24 } }localization_key = "light_tank_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 25 } }localization_key = "light_tank_artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_5 = 26 } }localization_key = "light_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 27 } }localization_key = "light_tank_destroyer_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 28 } }localization_key = "light_tank_destroyer_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_5 = 29 } }localization_key = "light_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 30 } }localization_key = "light_tank_aa_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 31 } }localization_key = "light_tank_aa_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_5 = 32 } }localization_key = "medium_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 33 } }localization_key = "medium_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 34 } }localization_key = "medium_tank_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_5 = 35 } }localization_key = "medium_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 36 } }localization_key = "medium_tank_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 37 } }localization_key = "medium_tank_artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_5 = 38 } }localization_key = "medium_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 39 } }localization_key = "medium_tank_destroyer_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 40 } }localization_key = "medium_tank_destroyer_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_5 = 41 } }localization_key = "medium_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 42 } }localization_key = "medium_tank_aa_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 43 } }localization_key = "medium_tank_aa_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_5 = 44 } }localization_key = "heavy_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 45 } }localization_key = "heavy_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 46 } }localization_key = "heavy_tank_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_5 = 47 } }localization_key = "heavy_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 48 } }localization_key = "heavy_tank_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 49 } }localization_key = "heavy_tank_artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_5 = 50 } }localization_key = "super_heavy_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 51 } }localization_key = "heavy_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 52 } }localization_key = "heavy_tank_destroyer_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 53 } }localization_key = "heavy_tank_destroyer_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_5 = 54 } }localization_key = "super_heavy_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 55 } }localization_key = "heavy_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 56 } }localization_key = "heavy_tank_aa_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 57 } }localization_key = "heavy_tank_aa_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_5 = 58 } }localization_key = "super_heavy_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 59 } }localization_key = "modern_tank_equipment" }
+    text = { trigger = { check_variable = { cart_brand_5 = 60 } }localization_key = "modern_tank_artillery_equipment" }
+    text = { trigger = { check_variable = { cart_brand_5 = 61 } }localization_key = "modern_tank_destroyer_equipment" }
+    text = { trigger = { check_variable = { cart_brand_5 = 62 } }localization_key = "modern_tank_aa_equipment" }
+############################## aircraft
+    text = { trigger = { check_variable = { cart_brand_5 = 63 } }localization_key = "fighter_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_5 = 64 } }localization_key = "fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 65 } }localization_key = "fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 66 } }localization_key = "fighter_equipment_3" }
+	text = { trigger = { check_variable = { cart_brand_5 = 67 } }localization_key = "cv_fighter_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_5 = 68 } }localization_key = "cv_fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 69 } }localization_key = "cv_fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 70 } }localization_key = "cv_fighter_equipment_3" }
+	text = { trigger = { check_variable = { cart_brand_5 = 71 } }localization_key = "jet_fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 72 } }localization_key = "jet_fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 73 } }localization_key = "heavy_fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 74 } }localization_key = "heavy_fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 75 } }localization_key = "heavy_fighter_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_5 = 76 } }localization_key = "CAS_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 77 } }localization_key = "CAS_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 78 } }localization_key = "CAS_equipment_3" }
+	text = { trigger = { check_variable = { cart_brand_5 = 79 } }localization_key = "cv_CAS_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 80 } }localization_key = "cv_CAS_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 81 } }localization_key = "cv_CAS_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_5 = 82 } }localization_key = "nav_bomber_equipment_1" }
+	text = { trigger = { check_variable = { cart_brand_5 = 83 } }localization_key = "nav_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 84 } }localization_key = "nav_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_5 = 85 } }localization_key = "cv_nav_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 86 } }localization_key = "cv_nav_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 87 } }localization_key = "cv_nav_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_5 = 88 } }localization_key = "tac_bomber_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_5 = 89 } }localization_key = "tac_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 90 } }localization_key = "tac_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 91 } }localization_key = "tac_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_5 = 92 } }localization_key = "strat_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 93 } }localization_key = "strat_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 94 } }localization_key = "strat_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_5 = 95 } }localization_key = "scout_plane_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 96 } }localization_key = "scout_plane_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 97 } }localization_key = "jet_tac_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 98 } }localization_key = "jet_tac_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_5 = 99 } }localization_key = "jet_strat_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_5 = 100 } }localization_key = "rocket_suicide_equipment_1" }
+
+####################### warships
+	text = { trigger = { check_variable = { cart_brand_5 = 101 } }localization_key = "convoy" }
+	text = { trigger = { check_variable = { cart_brand_5 = 102 } }localization_key = "submarine" }
+    text = { trigger = { check_variable = { cart_brand_5 = 103 } }localization_key = "destroyer" }
+    text = { trigger = { check_variable = { cart_brand_5 = 104 } }localization_key = "light_cruiser" }
+	text = { trigger = { check_variable = { cart_brand_5 = 105 } }localization_key = "heavy_cruiser" }
+	text = { trigger = { check_variable = { cart_brand_5 = 106 } }localization_key = "battle_cruiser" }
+	text = { trigger = { check_variable = { cart_brand_5 = 107 } }localization_key = "battleship" }
+    text = { trigger = { check_variable = { cart_brand_5 = 108 } }localization_key = "carrier" }
+
+####################### default
+	text = { localization_key = "" }
+}
+
+
+defined_text = {
+    name = GETCARTNAME_6       #####GETCARTNAME_6
+#####################################	infantry
+    text = { trigger = { check_variable = { cart_brand_6 = 1 } } localization_key = "infantry_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_6 = 2 } }localization_key = "infantry_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 3 } }localization_key = "infantry_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 4 } }localization_key = "infantry_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_6 = 5 } }localization_key = "support_equipment" }
+    text = { trigger = { check_variable = { cart_brand_6 = 6 } }localization_key = "motorized_equipment" }
+    text = { trigger = { check_variable = { cart_brand_6 = 7 } }localization_key = "mechanized_equipment" }
+    text = { trigger = { check_variable = { cart_brand_6 = 8 } }localization_key = "artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 9 } }localization_key = "artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 10 } }localization_key = "artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_6 = 11 } }localization_key = "rocket_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 12 } }localization_key = "rocket_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 13 } }localization_key = "motorized_rocket_equipment" }
+    text = { trigger = { check_variable = { cart_brand_6 = 14 } }localization_key = "anti_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 15 } }localization_key = "anti_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 16 } }localization_key = "anti_tank_equipment_3"}
+    text = { trigger = { check_variable = { cart_brand_6 = 17 } }localization_key = "anti_air_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 18 } }localization_key = "anti_air_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 19 } }localization_key = "anti_air_equipment_3" }
+#####################################	armor
+    text = { trigger = { check_variable = { cart_brand_6 = 20 } }localization_key = "light_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 21 } }localization_key = "light_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 22 } }localization_key = "light_tank_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_6 = 23 } }localization_key = "light_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 24 } }localization_key = "light_tank_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 25 } }localization_key = "light_tank_artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_6 = 26 } }localization_key = "light_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 27 } }localization_key = "light_tank_destroyer_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 28 } }localization_key = "light_tank_destroyer_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_6 = 29 } }localization_key = "light_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 30 } }localization_key = "light_tank_aa_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 31 } }localization_key = "light_tank_aa_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_6 = 32 } }localization_key = "medium_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 33 } }localization_key = "medium_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 34 } }localization_key = "medium_tank_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_6 = 35 } }localization_key = "medium_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 36 } }localization_key = "medium_tank_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 37 } }localization_key = "medium_tank_artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_6 = 38 } }localization_key = "medium_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 39 } }localization_key = "medium_tank_destroyer_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 40 } }localization_key = "medium_tank_destroyer_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_6 = 41 } }localization_key = "medium_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 42 } }localization_key = "medium_tank_aa_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 43 } }localization_key = "medium_tank_aa_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_6 = 44 } }localization_key = "heavy_tank_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 45 } }localization_key = "heavy_tank_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 46 } }localization_key = "heavy_tank_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_6 = 47 } }localization_key = "heavy_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 48 } }localization_key = "heavy_tank_artillery_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 49 } }localization_key = "heavy_tank_artillery_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_6 = 50 } }localization_key = "super_heavy_tank_artillery_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 51 } }localization_key = "heavy_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 52 } }localization_key = "heavy_tank_destroyer_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 53 } }localization_key = "heavy_tank_destroyer_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_6 = 54 } }localization_key = "super_heavy_tank_destroyer_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 55 } }localization_key = "heavy_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 56 } }localization_key = "heavy_tank_aa_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 57 } }localization_key = "heavy_tank_aa_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_6 = 58 } }localization_key = "super_heavy_tank_aa_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 59 } }localization_key = "modern_tank_equipment" }
+    text = { trigger = { check_variable = { cart_brand_6 = 60 } }localization_key = "modern_tank_artillery_equipment" }
+    text = { trigger = { check_variable = { cart_brand_6 = 61 } }localization_key = "modern_tank_destroyer_equipment" }
+    text = { trigger = { check_variable = { cart_brand_6 = 62 } }localization_key = "modern_tank_aa_equipment" }
+############################## aircraft
+    text = { trigger = { check_variable = { cart_brand_6 = 63 } }localization_key = "fighter_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_6 = 64 } }localization_key = "fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 65 } }localization_key = "fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 66 } }localization_key = "fighter_equipment_3" }
+	text = { trigger = { check_variable = { cart_brand_6 = 67 } }localization_key = "cv_fighter_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_6 = 68 } }localization_key = "cv_fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 69 } }localization_key = "cv_fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 70 } }localization_key = "cv_fighter_equipment_3" }
+	text = { trigger = { check_variable = { cart_brand_6 = 71 } }localization_key = "jet_fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 72 } }localization_key = "jet_fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 73 } }localization_key = "heavy_fighter_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 74 } }localization_key = "heavy_fighter_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 75 } }localization_key = "heavy_fighter_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_6 = 76 } }localization_key = "CAS_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 77 } }localization_key = "CAS_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 78 } }localization_key = "CAS_equipment_3" }
+	text = { trigger = { check_variable = { cart_brand_6 = 79 } }localization_key = "cv_CAS_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 80 } }localization_key = "cv_CAS_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 81 } }localization_key = "cv_CAS_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_6 = 82 } }localization_key = "nav_bomber_equipment_1" }
+	text = { trigger = { check_variable = { cart_brand_6 = 83 } }localization_key = "nav_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 84 } }localization_key = "nav_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_6 = 85 } }localization_key = "cv_nav_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 86 } }localization_key = "cv_nav_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 87 } }localization_key = "cv_nav_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_6 = 88 } }localization_key = "tac_bomber_equipment_0" }
+    text = { trigger = { check_variable = { cart_brand_6 = 89 } }localization_key = "tac_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 90 } }localization_key = "tac_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 91 } }localization_key = "tac_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_6 = 92 } }localization_key = "strat_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 93 } }localization_key = "strat_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 94 } }localization_key = "strat_bomber_equipment_3" }
+    text = { trigger = { check_variable = { cart_brand_6 = 95 } }localization_key = "scout_plane_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 96 } }localization_key = "scout_plane_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 97 } }localization_key = "jet_tac_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 98 } }localization_key = "jet_tac_bomber_equipment_2" }
+    text = { trigger = { check_variable = { cart_brand_6 = 99 } }localization_key = "jet_strat_bomber_equipment_1" }
+    text = { trigger = { check_variable = { cart_brand_6 = 100 } }localization_key = "rocket_suicide_equipment_1" }
+
+####################### warships
+	text = { trigger = { check_variable = { cart_brand_6 = 101 } }localization_key = "convoy" }
+	text = { trigger = { check_variable = { cart_brand_6 = 102 } }localization_key = "submarine" }
+    text = { trigger = { check_variable = { cart_brand_6 = 103 } }localization_key = "destroyer" }
+    text = { trigger = { check_variable = { cart_brand_6 = 104 } }localization_key = "light_cruiser" }
+	text = { trigger = { check_variable = { cart_brand_6 = 105 } }localization_key = "heavy_cruiser" }
+	text = { trigger = { check_variable = { cart_brand_6 = 106 } }localization_key = "battle_cruiser" }
+	text = { trigger = { check_variable = { cart_brand_6 = 107 } }localization_key = "battleship" }
+    text = { trigger = { check_variable = { cart_brand_6 = 108 } }localization_key = "carrier" }
+
+####################### default
+	text = { localization_key = "" }
+}

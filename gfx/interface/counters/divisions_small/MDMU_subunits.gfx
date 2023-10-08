@@ -1,0 +1,29 @@
+spriteTypes = {	
+	spriteType = { name = "GFX_unit_modern_spg_brigade_icon_medium" 			textureFile = "gfx/interface/counters/divisions_large/unit_spg_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_modern_spaa_brigade_icon_medium"		textureFile = "gfx/interface/counters/divisions_large/unit_spaa_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_air_tank_icon_medium"			textureFile = "gfx/interface/counters/divisions_large/unit_light_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_air_assault_icon_medium"									textureFile = "gfx/interface/counters/divisions_large/unit_air_assault_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_attack_helicopter_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_attack_helicopter_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_air_recon_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_air_assault_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_gunship_support_icon_medium"					textureFile = "gfx/interface/counters/divisions_large/unit_attack_helicopter_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_AP_combat_mech_brigade_icon_medium" 			textureFile = "gfx/interface/counters/divisions_large/unit_AP_combat_mech_brigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_AT_combat_mech_brigade_icon_medium"		textureFile = "gfx/interface/counters/divisions_large/unit_AT_combat_mech_brigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_AA_combat_mech_brigade_icon_medium"		textureFile = "gfx/interface/counters/divisions_large/unit_AA_combat_mech_brigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_AP_combat_mech_company_icon_medium" 			textureFile = "gfx/interface/counters/divisions_large/unit_AP_combat_mech_brigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_AT_combat_mech_company_icon_medium"		textureFile = "gfx/interface/counters/divisions_large/unit_AT_combat_mech_brigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_AA_combat_mech_company_icon_medium"		textureFile = "gfx/interface/counters/divisions_large/unit_AA_combat_mech_brigade_icon.dds" noOfFrames = 2 }
+
+	spriteType = { name = "GFX_unit_air_assault_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_air_assault_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_attack_helicopter_batallion_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_attack_helicopter_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_air_recon_icon_medium_white"								textureFile = "gfx/interface/counters/divisions_small/onmap_unit_air_assault_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_gunship_support_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_attack_helicopter_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_modern_spg_brigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_spg_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_modern_spaa_brigade_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_spaa_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_air_tank_icon_medium_white"			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_light_tank_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_AP_combat_mech_brigade_icon_medium_white" 			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_AP_combat_mech_brigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_AT_combat_mech_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_AT_combat_mech_brigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_AA_combat_mech_brigade_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_AA_combat_mech_brigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_AP_combat_mech_company_icon_medium_white" 			textureFile = "gfx/interface/counters/divisions_small/onmap_unit_AP_combat_mech_brigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_AT_combat_mech_company_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_AT_combat_mech_brigade_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_AA_combat_mech_company_icon_medium_white"		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_AA_combat_mech_brigade_icon.dds" noOfFrames = 2 }
+	}

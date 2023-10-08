@@ -1,0 +1,39 @@
+﻿l_english:
+
+## 규칙들
+RULE_GROUP_research: "연구슬롯 추가"
+
+RULE_bonus_research_slot: "연구 슬롯 추가"
+RULE_OPTION_EVERYONE_ONE: "모두에게 한개씩"
+RULE_OPTION_EVERYONE_ONE_desc: "모든 나라는 연구슬롯을 한개씩 얻습니다."
+RULE_OPTION_EVERYONE_TWO: "모두에게 두개씩"
+RULE_OPTION_EVERYONE_TWO_desc: "모든 나라는 연구슬롯을 두개씩 얻습니다."
+RULE_OPTION_RANDOM_EXTRA: "랜덤"
+RULE_OPTION_RANDOM_EXTRA_desc: "모든 나라는 랜덤으로 연구슬롯을 0~3개씩 얻습니다."
+RULE_OPTION_RANDOM: "랜덤한 시작"
+RULE_OPTION_RANDOM_desc: "모든 나라는 랜덤으로 1~5개의 연구슬롯을 가진 채 시작합니다.(메이저국가에 가중치가 있습니다.)"
+RULE_OPTION_MINORS_ONE: "마이너에게 한개씩"
+RULE_OPTION_MINORS_ONE_desc: "마이너 국가가 연구슬롯을 한개씩 얻습니다."
+RULE_OPTION_MINORS_TWO: "마이너에게 두개씩"
+RULE_OPTION_MINORS_TWO_desc: "마이너 국가가 연구슬롯을 두개씩 얻습니다."
+RULE_OPTION_MAJORS_ONE: "메이저에게 한개씩"
+RULE_OPTION_MAJORS_ONE_desc: "메이저 국가가 연구슬롯을 한개씩 얻습니다."
+RULE_OPTION_MINORS_TWO_MAJORS_ONE: "마이너에게 두개, 메이저에게 한개"
+RULE_OPTION_MINORS_TWO_MAJORS_ONE_desc: "마이너 국가가 연구슬롯을 두개씩 얻고, 메이저 국가가 연구슬롯을 한개씩 얻습니다."
+RULE_OPTION_ABSOLUTE_FIVE: "모두가 5개로 시작"
+RULE_OPTION_ABSOLUTE_FIVE_desc: "모든 나라가 5개의 연구슬롯을 가진 채 시작합니다."
+RULE_OPTION_RANDOM_EXTREME: "매우 랜덤한 시작"
+RULE_OPTION_RANDOM_EXTREME_desc: "모든 나라는 랜덤으로 1~7개의 연구슬롯을 가진 채 시작합니다."
+RULE_OPTION_EVERYONE_ONLY_ONE: "모두가 1개로 시작"
+RULE_OPTION_EVERYONE_ONLY_ONE_desc: "모든 나라가 1개의 연구슬롯을 가진 채 시작합니다."
+RULE_OPTION_VANILLA: "일반게임"
+RULE_OPTION_VANILLA_brr_desc: "일반게임과 같습니다."
+
+RULE_zeitgeist: "세계적 연구 공유"
+RULE_zeitgeist_NO_desc: "세계적 연구 공유가 비활성화 됩니다."
+RULE_zeitgeist_YES_desc: "더 많은 국가가 기술을 연구할수록 다른 모든 국가에서 더 저렴해집니다. 마이너국가가 기술 격차를 메울 수 있도록 도와줍니다.\n\n게임 플레이 측면에서 모든 국가는 자동으로 약한 기술 공유 그룹에 포함됩니다. 단,다른 모든 국가가 연구한 기술을 볼 수 있다는 부작용이 있습니다."
+
+# 세계적 연구 공유
+
+zeitgeist_research_name: "세계적 연구 공유"
+zeitgeist_research_desc: "다른 나라에서 연구한 기술에 대한 연구 시간이 단축됩니다."

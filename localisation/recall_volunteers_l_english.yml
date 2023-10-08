@@ -1,0 +1,5 @@
+﻿l_english:
+ RECALL_VOLUNTEERS_TITLE:0 "의용군 철수"
+ RECALL_VOLUNTEERS_ACTION_DESC:0 "우리는 다른 나라에보낸 의용군을 철수시킬 수 있습니다."
+ RECALL_VOLUNTEERS_TOOLTIP:0 "§Y[This.GetNameWithFlag]§! §R에 우리가 철수 시킬 수 있는 의용군을 가지고 있어야합니다.§!"
+ RECALL_VOLUNTEERS_TOOLTIP_G:0 "§Y[This.GetNameWithFlag]§! 에 우리가 철수 시킬 수 있는 의용군을 가지고 있어야합니다."

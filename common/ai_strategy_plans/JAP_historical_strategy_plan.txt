@@ -1,0 +1,89 @@
+JAP_historical_plan = {
+	name = "Japan historical plan"
+	desc = "Historical behavior for Japan"
+
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		OR = {
+			AND = {
+				is_historical_focus_on = yes
+				OR = {
+					not = { has_dlc = "Waking the Tiger" }
+					has_game_rule = {
+						rule = JAP_ai_behavior
+						option = DEFAULT
+					}
+				}
+			}
+			has_game_rule = {
+				rule = JAP_ai_behavior
+				option = FASCIST
+			}
+			has_country_flag = JAP_AI_RANDOM_FASCIST
+		}
+		MAN = {
+			is_ai = yes
+		}
+	}
+	abort = {
+		MAN = {
+			has_completed_focus = MAN_assertiveness
+		}
+	}
+
+	ai_national_focuses = {
+		JAP_strengthen_civilian_government
+		JAP_research_spending
+		JAP_ally_with_the_zaibatsus
+		JAP_purge_the_militarists
+		JAP_pre_emptive_coup
+		#1937
+		JAP_the_showa_constitution
+		JAP_army_expansion_law
+		JAP_new_naval_estimates
+		JAP_rekindle_the_old_alliance
+		JAP_cruiser_modernization
+		#1938
+		JAP_carrier_warfare_experiments
+		JAP_small_arms_modernization
+		JAP_supremacy_of_technology
+		JAP_first_air_fleet
+		JAP_fighter_modernization
+		#1939
+		JAP_range_focus
+		JAP_bomber_modernization
+		JAP_strategic_bomber_effort
+		JAP_west_pacific_treaty_organization #backup if Britain non-democratic
+		JAP_pacific_guardian
+		JAP_the_korean_question
+		#1940
+		JAP_modern_artillery
+		JAP_armored_divisions
+		JAP_liberate_manchuria
+		JAP_anti_communist_bulwark
+		JAP_anti_communist_volunteers
+		#1941
+		JAP_ultimate_deterrence
+		JAP_modern_escorts
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

@@ -1,0 +1,80 @@
+ideas = {
+    country = {
+        gukto_jonghap_plan = {
+
+            picture = generic_constitutional_guarantees
+
+            removal_cost = -1
+
+            modifier = {
+                production_speed_industrial_complex_factor = 0.03
+                production_speed_infrastructure_factor = 0.05 
+            }
+        }
+        newtown_plan = {
+
+            picture = generic_constitutional_guarantees
+
+            removal_cost = -1
+
+            modifier = {
+                production_speed_rail_way_factor = 0.05 
+                production_speed_infrastructure_factor = 0.1
+                stability_factor = 0.1
+            }
+        }
+        third_fiveyearplan = {
+
+            picture = generic_constitutional_guarantees
+
+            removal_cost = -1
+
+            modifier = {
+                production_speed_industrial_complex_factor = 0.05
+                production_speed_arms_factory_factor = 0.05
+            }
+        }
+        tongil_rice = {
+
+            picture = generic_constitutional_guarantees
+
+            removal_cost = -1
+
+            modifier = {
+                monthly_population = 0.2
+                stability_factor = 0.05
+            }
+        }
+        Korea_brodcasting_channal = {
+
+            picture = generic_constitutional_guarantees
+
+            removal_cost = -1
+
+            modifier = {
+                political_power_gain = 0.2
+                stability_factor = 0.05
+            }
+        }
+        soyang_dam = {
+
+            picture = generic_constitutional_guarantees
+
+            removal_cost = -1
+
+            modifier = {
+                monthly_population = 0.02
+            }
+        }
+        paldang_dam = {
+
+            picture = generic_constitutional_guarantees
+
+            removal_cost = -1
+
+            modifier = {
+                monthly_population = 0.03
+            }
+        }
+    }
+}

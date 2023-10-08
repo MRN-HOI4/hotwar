@@ -1,0 +1,28 @@
+ideas = {
+
+    country = {
+
+        neutralism_idea = {
+
+            picture = generic_neutrality_drift_bonus
+
+            removal_cost = -1
+
+            modifier = {
+				min_export = 0.5
+				generate_wargoal_tension = 99.99
+				join_faction_tension = 99.99
+				lend_lease_tension = 99.99
+				send_volunteers_tension = 99.99
+				guarantee_tension = 99.99
+				ai_get_ally_desire_factor = -100
+				justify_war_goal_time = 9999.99
+				drift_defence_factor = 9999.99
+				enemy_justify_war_goal_time = 9999.99
+			}
+
+        }
+
+    }
+    
+}

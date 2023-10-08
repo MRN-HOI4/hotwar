@@ -1,0 +1,64 @@
+add_namespace = fer_rebellion
+
+country_event = {
+	id = fer_rebellion.1
+	title = fer_rebellion.1.t
+	desc = fer_rebellion.1.d
+	picture = GFX_report_event_eng_edward_and_wallis
+
+    fire_only_once = no
+
+    trigger = {
+        tag = FER
+        is_power_balance_in_range = {
+            id = FER_rebellion_bop
+            range = FER_rebellion_bop_fully_inmate
+        }
+	}
+
+    immediate = { 
+        hidden_effect = {
+            news_event = { id = oil.2 days = 1 random_days = 1 }
+            country_event = { id = arab_civilwar.2 days = 7 random_days = 1 }
+            country_event = { id = oil.3 days = 7 random_days = 1 }
+            BYA = {
+                transfer_state = 561
+                transfer_state = 562
+                transfer_state = 563
+                transfer_state = 564
+                transfer_state = 565
+                transfer_state = 574
+                FER = {
+                    every_core_state = {
+                        add_core_of = BYA
+                    }
+                }
+                declare_war_on = {
+                    target = FER
+                    type = civil_war
+                }
+                add_civil_war_target = FER
+            }
+            FER = {
+                transfer_units_fraction= {
+                    target = BYA
+                    size = 0.33
+                    stockpile_ratio = 0.33
+                    army_ratio = 0.33
+                    navy_ratio = 0.33
+                    air_ratio = 0.33
+                }
+                add_power_balance_value = {
+                    id = FER_rebellion_bop
+                    value = 2
+                }
+            }
+            
+        }
+    }
+    
+
+	option = {
+		name = fer_rebellion.1.a
+	}
+}

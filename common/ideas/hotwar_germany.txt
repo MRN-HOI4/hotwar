@@ -1,0 +1,44 @@
+ideas = {
+
+    country = {
+        wgrgrant_ddr = {
+            cancel = {
+                OR = {
+                    DDR = { has_war_with = WGR }
+                    WGR = { has_war_with = DDR }
+                }
+			}
+
+            picture = generic_foreign_capital
+
+            removal_cost = -1
+
+            modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+        }
+
+        wgrgrant_wgr = {
+            cancel = {
+				OR = {
+                    DDR = { has_war_with = WGR }
+                    WGR = { has_war_with = DDR }
+                }
+			}
+
+            picture = generic_foreign_capital
+
+            removal_cost = -1
+
+            modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+        }
+    }
+}

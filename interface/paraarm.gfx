@@ -1,0 +1,24 @@
+spriteTypes = {
+	####Hey PDX I hate your codings####
+	
+	#######subuniticons for paratank battalion#######
+	spriteType = { 
+		name = "GFX_unit_para_tank_icon_medium"
+		textureFile = "gfx/interface/counters/divisions_large/unit_paraarm_icon.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2 
+	}
+	spriteType = { 
+		name = "GFX_unit_para_tank_icon_medium_white"				
+		textureFile = "gfx/interface/counters/divisions_small/onmap_unit_paraarm_icon.dds" 
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_unit_para_tank_icon_small"
+		texturefile = "gfx/texticons/unit_paraarm_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2
+	}	
+}

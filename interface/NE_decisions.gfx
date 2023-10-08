@@ -1,0 +1,15 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_economy00_decision_category"
+		texturefile = "gfx/interface/decisions/economy00_decision_category.dds"
+		
+	}
+	
+	spriteType = {
+		name = "GFX_economy00_invest"
+		texturefile = "gfx/interface/decisions/economy00_decision_invest.dds"
+		
+	}
+
+}

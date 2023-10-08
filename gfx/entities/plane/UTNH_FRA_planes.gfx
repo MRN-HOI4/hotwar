@@ -1,0 +1,138 @@
+objectTypes = {
+	pdxmesh = {
+		name = "FRA_OURAGAN_mesh"
+		file = "gfx/models/units/planes/FRA/fighter/ouragan.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "ouragan_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "FRA_MIV_mesh"
+		file = "gfx/models/units/planes/FRA/fighter/mystereiv.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "mystereiv_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "FRA_MIRAGE3E_mesh"
+		file = "gfx/models/units/planes/FRA/fighter/mirageiiic.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "mirageiiie_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "FRA_MIRAGEF1_mesh"
+		file = "gfx/models/units/planes/FRA/fighter/MirageF1.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "MirageF1_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "FRA_F84F_mesh"
+		file = "gfx/models/units/planes/FRA/cas/F84F.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F84F_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "FRA_F100_mesh"
+		file = "gfx/models/units/planes/FRA/cas/F100.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F100FRA_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "FRA_ETENDARD_mesh"
+		file = "gfx/models/units/planes/FRA/cvfighter/etendardIV.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "Etendard_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "FRA_MIRAGE3C_mesh"
+		file = "gfx/models/units/planes/FRA/cvfighter/mirageiiic.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "mirageIIIC_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "FRA_MIRAGE2000_mesh"
+		file = "gfx/models/units/planes/FRA/fighter/mirage_2000.mesh"
+		animation = { id = "idle" type = "mirage2000_idle_animation" }
+		scale = 4.0
+	meshsettings = {
+			texture_diffuse = "mirage_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "FRA_ALPHAJET_mesh"
+		file = "gfx/models/units/planes/FRA/cas/alpha_jet.mesh"
+		animation = { id = "idle" type = "alphajet_idle_animation" }
+		scale = 4.0
+	meshsettings = {
+			texture_diffuse = "Alpha_Jet_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "FRA_SUPERETENDARD_mesh"
+		file = "gfx/models/units/planes/FRA/cvfighter/Superetendard.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "Superetendard_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "FRA_F86K_mesh"
+		file = "gfx/models/units/planes/FRA/interceptor/F86D.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F86DFRA_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "FRA_VAUTOUR_mesh"
+		file = "gfx/models/units/planes/FRA/interceptor/vautourii.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "VautourII_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "FRA_B47_mesh"
+		file = "gfx/models/units/planes/FRA/stratbomber/B47.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "B47_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "FRA_F111_mesh"
+		file = "gfx/models/units/planes/FRA/tacbomber/F111.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F111_diffuse.dds"
+		}
+	}
+}

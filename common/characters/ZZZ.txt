@@ -1,0 +1,16 @@
+characters={
+
+    ZZZ_John_Hersey_Michaelis = {
+        name="존 허시 마이켈리스"
+        portraits={
+			civilian={
+				large="gfx/leaders/ZZZ/John_Hersey_Michaelis.dds"
+			}
+		}
+        country_leader={
+			ideology=oligarchism
+			expire="1990.1.1.1"
+			id=-1
+		}
+    }
+}

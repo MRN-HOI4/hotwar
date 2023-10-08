@@ -1,0 +1,680 @@
+spriteTypes = {	
+	### HOLLAND ###	
+	SpriteType = {
+		name = "GFX_HOL_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/AUS/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HOL_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/HOL/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_HOL_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/HOL/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_HOL_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/HOL/LAND/INF4.dds"
+	}
+	### AUSTRIA ###	
+	SpriteType = {
+		name = "GFX_AUS_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/AUS/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_AUS_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/AUS/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_AUS_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/AUS/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_AUS_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/AUS/LAND/INF4.dds"
+	}
+	### SPAIN REP###	
+	SpriteType = {
+		name = "GFX_SPR_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/AUS/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPR_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/SPR/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPR_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_SPR_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF4.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPR_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPR_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF6.dds"
+	}
+	### SPAIN NAT###	
+	SpriteType = {
+		name = "GFX_SPA_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/AUS/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPA_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/SPR/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPA_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_SPA_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF4.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPA_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPA_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF6.dds"
+	}
+	### KR-QING ###	
+	SpriteType = {
+		name = "GFX_QIE_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/AUS/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_QIE_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/AUS/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_QIE_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/AUS/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_QIE_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/AUS/LAND/INF4.dds"
+	}
+	### SOVIET UNION ###	
+	SpriteType = {
+		name = "GFX_SOV_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_SOV_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF4.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_TUR_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/TUR/LAND/INF6.dds"
+	}
+	SpriteType = {
+		name = "GFX_TUR_infantry_cw3_medium"
+		texturefile = "gfx/interface/technologies/TUR/LAND/INF7.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF6.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_infantry_cw3_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF7.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_infantry_cw4_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF8.dds"
+	}
+	SpriteType = {
+		name = "GFX_SOV_infantry_cw5_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF9.dds"
+	}
+	### RUSSIA ###	
+	SpriteType = {
+		name = "GFX_RUS_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_RUS_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_RUS_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_RUS_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF4.dds"
+	}
+	SpriteType = {
+		name = "GFX_RUS_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_RUS_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF6.dds"
+	}
+	### FRANCE ###	
+	SpriteType = {
+		name = "GFX_FRA_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/FRA/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/FRA/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/FRA/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_FRA_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/FRA/LAND/INF4.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/FRA/LAND/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/FRA/LAND/INF6.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_infantry_cw3_medium"
+		texturefile = "gfx/interface/technologies/FRA/LAND/INF7.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_infantry_cw4_medium"
+		texturefile = "gfx/interface/technologies/FRA/LAND/INF8.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_infantry_cw5_medium"
+		texturefile = "gfx/interface/technologies/FRA/LAND/INF9.dds"
+	}
+	### FRANCE(NFA-KR) ###	
+	SpriteType = {
+		name = "GFX_NFA_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/FRA/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_NFA_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/FRA/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_NFA_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/FRA/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_NFA_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/FRA/LAND/INF4.dds"
+	}
+	SpriteType = {
+		name = "GFX_NFA_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/FRA/LAND/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_NFA_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/FRA/LAND/INF6.dds"
+	}
+	### PRC ###	
+	SpriteType = {
+		name = "GFX_PRC_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_PRC_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_PRC_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_PRC_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF4.dds"
+	}
+	SpriteType = {
+		name = "GFX_PRC_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/PRC/LAND/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_PRC_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/PRC/LAND/INF6.dds"
+	}
+	SpriteType = {
+		name = "GFX_PRC_infantry_cw3_medium"
+		texturefile = "gfx/interface/technologies/PRC/LAND/INF7.dds"
+	}
+	SpriteType = {
+		name = "GFX_PRC_infantry_cw4_medium"
+		texturefile = "gfx/interface/technologies/PRC/LAND/INF8.dds"
+	}
+	SpriteType = {
+		name = "GFX_PRC_infantry_cw5_medium"
+		texturefile = "gfx/interface/technologies/PRC/LAND/INF9.dds"
+	}
+	##YUGO##
+	SpriteType = {
+		name = "GFX_YUG_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/YUG/LAND/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_YUG_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/YUG/LAND/INF6.dds"
+	}
+	SpriteType = {
+		name = "GFX_YUG_infantry_cw3_medium"
+		texturefile = "gfx/interface/technologies/YUG/LAND/INF7.dds"
+	}
+	SpriteType = {
+		name = "GFX_YUG_infantry_cw4_medium"
+		texturefile = "gfx/interface/technologies/YUG/LAND/INF8.dds"
+	}
+	SpriteType = {
+		name = "GFX_YUG_infantry_cw5_medium"
+		texturefile = "gfx/interface/technologies/YUG/LAND/INF9.dds"
+	}
+	##Spain##
+	SpriteType = {
+		name = "GFX_SPA_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/SPA/LAND/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPA_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/SPA/LAND/INF6.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPA_infantry_cw3_medium"
+		texturefile = "gfx/interface/technologies/SPA/LAND/INF7.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPA_infantry_cw4_medium"
+		texturefile = "gfx/interface/technologies/SPA/LAND/INF8.dds"
+	}
+	SpriteType = {
+		name = "GFX_SPA_infantry_cw5_medium"
+		texturefile = "gfx/interface/technologies/SPA/LAND/INF9.dds"
+	}
+	### UNITED KINGDOM ###	
+	SpriteType = {
+		name = "GFX_ENG_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ENG/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/ENG/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ENG/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_ENG_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ENG/LAND/INF4.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/ENG/LAND/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/ENG/LAND/INF6.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_infantry_cw3_medium"
+		texturefile = "gfx/interface/technologies/ENG/LAND/INF6.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_infantry_cw4_medium"
+		texturefile = "gfx/interface/technologies/ENG/LAND/INF8.dds"
+	}
+	SpriteType = {
+		name = "GFX_ENG_infantry_cw5_medium"
+		texturefile = "gfx/interface/technologies/ENG/LAND/INF9.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SWE_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/SWE/LAND/INF6.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWE_infantry_cw4_medium"
+		texturefile = "gfx/interface/technologies/SWE/LAND/INF8.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWE_infantry_cw5_medium"
+		texturefile = "gfx/interface/technologies/SWE/LAND/INF9.dds"
+	}
+	### GERMANY ###	
+	SpriteType = {
+		name = "GFX_GER_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF4.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF6.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_infantry_cw3_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_infantry_cw4_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF8.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_infantry_cw5_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF9.dds"
+	}
+	### UNITED STATES ###	
+	SpriteType = {
+		name = "GFX_USA_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_USA_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/INF4.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/INF6.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_infantry_cw3_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/INF6.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_infantry_cw4_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/INF8.dds"
+	}
+	SpriteType = {
+		name = "GFX_USA_infantry_cw5_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/INF9.dds"
+	}
+	### GENERIC ###	
+	SpriteType = {
+		name = "GFX_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/AUS/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/ITA/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ITA/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/INF4.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/INF6.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_cw3_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF7.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_cw4_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/INF8.dds"
+	}
+	SpriteType = {
+		name = "GFX_infantry_cw5_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/INF9.dds"
+	}
+	### HUNGARY ###	
+	SpriteType = {
+		name = "GFX_HUN_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/AUS/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUN_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/HUN/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUN_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/HUN/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_HUN_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/HUN/LAND/INF4.dds"
+	}
+	### GREECE ###	
+	SpriteType = {
+		name = "GFX_GRE_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/AUS/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUN_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/HUN/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_HUN_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/HUN/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_HUN_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/HUN/LAND/INF4.dds"
+	}
+	### PORTUGAL ###	
+	SpriteType = {
+		name = "GFX_POR_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/AUS/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_POR_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/POR/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_POR_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/HOL/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_POR_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/POR/LAND/INF4.dds"
+	}
+	### CZECHOSLOVAKIA ###	
+	SpriteType = {
+		name = "GFX_CZE_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/CZE/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/CZE/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/CZE/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_CZE_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/CZE/LAND/INF4.dds"
+	}
+	### BELGIUM ###	
+	SpriteType = {
+		name = "GFX_BEL_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/BEL/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_BEL_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_BEL_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/BEL/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_BEL_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/BEL/LAND/INF4.dds"
+	}
+	### YUGOSLAVIA CHEEKE BRIKI ###	
+	SpriteType = {
+		name = "GFX_YUG_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/AUS/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_YUG_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/YUG/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_YUG_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/YUG/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_YUG_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/YUG/LAND/INF4.dds"
+	}
+	### GREECE ###	
+	SpriteType = {
+		name = "GFX_GER_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_GRE_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_GER_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF4.dds"
+	}
+	### POLAND ###		
+	SpriteType = {
+		name = "GFX_POL_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/POL/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/POL/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/POL/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_POL_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/POL/LAND/INF4.dds"
+	}
+	### POLAND ###		
+	SpriteType = {
+		name = "GFX_CHI_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/AUS/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_CHI_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/GER/LAND/INF2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_CHI_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_CHI_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/USA/LAND/INF4.dds"
+	}
+        #JAP
+		SpriteType = {
+		name = "GFX_JAP_infantry_cw3_medium"
+		texturefile = "gfx/interface/technologies/JAP/LAND/INF7.dds"
+	}
+		SpriteType = {
+		name = "GFX_JAP_infantry_cw5_medium"
+		texturefile = "gfx/interface/technologies/JAP/LAND/INF9.dds"
+	}
+	#ITA
+	SpriteType = {
+		name = "GFX_ITA_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/ITA/LAND/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_ITA_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/ITA/LAND/INF6.dds"
+	}
+	SpriteType = {
+		name = "GFX_ITA_infantry_cw3_medium"
+		texturefile = "gfx/interface/technologies/ITA/LAND/INF7.dds"
+	}
+	SpriteType = {
+		name = "GFX_ITA_infantry_cw4_medium"
+		texturefile = "gfx/interface/technologies/ITA/LAND/INF8.dds"
+	}
+	SpriteType = {
+		name = "GFX_ITA_infantry_cw5_medium"
+		texturefile = "gfx/interface/technologies/ITA/LAND/INF9.dds"
+	}
+	#POL
+	SpriteType = {
+		name = "GFX_POL_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF6.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_infantry_cw3_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF7.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_infantry_cw4_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF8.dds"
+	}
+	SpriteType = {
+		name = "GFX_POL_infantry_cw5_medium"
+		texturefile = "gfx/interface/technologies/POL/LAND/INF9.dds"
+	}
+}

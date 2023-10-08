@@ -1,0 +1,100 @@
+﻿division_template = {
+	name = "Liberation Army"				
+	division_names_group = VIN_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }	# Modelled on Chinese divisions
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+}
+division_template = {
+	name = "Vietnam People's Army Infantry"				
+	division_names_group = VIN_INF_01
+	regiments = {
+		infantry = { x = 0 y = 0 }	# Modelled on Chinese divisions
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+
+
+### OOB ###
+units = {
+	division = {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 1592
+		division_template = "Vietnam People's Army Infantry"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 10453
+		division_template = "Vietnam People's Army Infantry"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 1577
+		division_template = "Vietnam People's Army Infantry"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 1248
+		division_template = "Vietnam People's Army Infantry"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 10180
+		division_template = "Vietnam People's Army Infantry"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+	division = {	
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 4255
+		division_template = "Vietnam People's Army Infantry"
+		start_experience_factor = 0.4
+		start_equipment_factor = 1.0
+	}
+}
+
+### STARTING PRODUCTION ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "VIN"
+		}
+		requested_factories = 1
+		progress = 0.79
+		efficiency = 100
+	}
+}

@@ -1,0 +1,3953 @@
+guiTypes = {
+
+#########	
+	@NAME_POS = 60
+	@STOCK_POS = 285
+	@BUY_POS = 400
+	@LINE_1 = 25
+	@LINE_2 = 50
+	@LINE_3 = 75	
+	@LINE_4 = 100
+	@LINE_5 = 125
+	@LINE_6 = 150
+	@LINE_7 = 175
+	@LINE_8 = 200
+	@LINE_9 = 225
+	@LINE_10 = 250
+	@LINE_11 = 275
+	@LINE_12 = 300
+	@LINE_13 = 325
+	@LINE_14 = 350
+	@LINE_15 = 375
+	@LINE_16 = 400
+	@LINE_17 = 425
+	@LINE_18 = 450
+	@LINE_19 = 475
+	@LINE_20 = 500
+	@LINE_21 = 525
+	@LINE_22 = 550
+	@LINE_23 = 575
+	@LINE_24 = 600
+	@LINE_25 = 625
+	@LINE_26 = 650
+	@LINE_27 = 675
+	@LINE_28 = 700
+	@LINE_29 = 725
+	@LINE_30 = 750
+	@LINE_31 = 775
+	@LINE_32 = 800
+	@LINE_33 = 825
+	@LINE_34 = 850
+	@LINE_35 = 875
+	@LINE_36 = 900
+	@LINE_37 = 925
+	@LINE_38 = 950
+	@LINE_39 = 975
+	@LINE_40 = 1000
+	@LINE_41 = 1025
+	@LINE_42 = 1050
+	@LINE_43 = 1075
+	@CAET_ID_POS = -155
+	@CAET_NUM_POS = 45
+	##standard_22 vic_22
+	@GE_FONT = "hoi_16mbs"
+	
+#########
+	containerWindowType = {
+		name = "economy_weapon_lists"
+		size = { width = 589 height = 560 }
+		moveable = no
+		click_to_front = yes
+		orientation= center			
+
+		containerWindowType = {
+			name = "upper_square"
+			position = { x = 20 y = 50 }
+			size = { width = 508 height = 300 }	
+
+			background = {
+				name = "Background"
+				spriteType ="GFX_trade_bg_border" #trade_1b_border
+			}
+		}	
+
+		containerWindowType = {
+			name = "lower_square"
+			position = { x = 20 y = 362 }
+			size = { width = 560 height = 220 }	
+
+			background = {
+				name = "Background"
+				spriteType ="GFX_trade_1b_border"
+			}
+		}		
+		
+		containerWindowType = {
+			name = "tab_select"
+			position = { x = 16 y = 0 }
+			size = { width = 560 height = 250 }
+
+			iconType ={
+				name ="econo_trade_icon"
+				spriteType = "GFX_econo_trade_icon"
+				position = { x = 130 y = -47 }
+				Orientation = "UPPER_LEFT"
+			}
+			iconType = {
+				name = "trade_buyer_flag"
+				quadTextureSprite ="GFX_flag_small"
+				position = { x = 100 y = -35 }
+				Orientation = "UPPER_LEFT"
+				allwaystransparent = yes
+			}
+			iconType = {
+				name = "trade_seller_flag"
+				quadTextureSprite ="GFX_flag_small"
+				position = { x = 175 y = -35 }
+				Orientation = "UPPER_LEFT"
+				allwaystransparent = yes
+			}			
+			buttonType = {
+				name = "infantry_button"
+				position = { x = 0 y = 5 }
+				quadTextureSprite ="GFX_add_prod_inf_art_line"
+				pdx_tooltip = "INFANTRY_INFO"
+				clicksound = click_default
+				frame = 1
+			}	
+
+			buttonType = {
+				name = "armor_button"
+				position = { x= 90 y = 5 }
+				quadTextureSprite ="GFX_add_prod_armour_line"
+				pdx_tooltip = "ARMOR_INFO"
+				clicksound = click_default
+				frame = 1
+			}
+
+			buttonType = {
+				name = "air_button"
+				position = { x = 180 y = 5 }
+				quadTextureSprite ="GFX_add_prod_aircraft_line"
+				pdx_tooltip = "AIR_INFO"
+				clicksound = click_default
+				frame = 1
+			}
+			
+			buttonType = {
+				name = "naval_button"
+				position = { x = 270 y = 5 }
+				quadTextureSprite ="GFX_add_prod_naval_line"
+				pdx_tooltip = "NAVAL_INFO"
+				clicksound = click_default
+				frame = 1
+			}
+			
+		}
+
+		containerWindowType = {
+			name = "econo_total_cost"                      #####econo_total_cost
+			position = { x = 365 y = 10 }
+			size = { width = 250 height = 30 }
+			
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_generic_text_bg_203"
+			}
+			
+			instantTextboxType = {
+				name = "title"
+				position = {x = 50 y = 5 }
+				font = @GE_FONT
+				text = "NE_SALE_TOTAL_COST"
+				maxWidth = 200
+				maxHeight = 23
+				format = left
+				pdx_tooltip ="TOTAL_COST_LIMIT"
+			}
+		}
+		
+		containerWindowType = {                         ##show accept or not
+			name = "reply"
+			position = { x = 0 y = 520 }
+			size = { width = 400 height = 100 }
+
+
+			
+			instantTextBoxType = {
+				name = "econo_accept_tex"
+				position = { x = 175 y = 22 }
+				textureFile = ""
+				font = @GE_FONT##hoi_24header
+				borderSize = {x = 0 y = 0}
+				text = "[econo_ai_will_accept]"	
+				maxWidth = 200
+				maxHeight = 30	
+				format = centre
+			}
+			
+			iconType = {
+				name = "econo_accept_icon_yes"
+				position = { x = 195 y = 25 }
+				quadTextureSprite ="GFX_accept_decline_icon"
+				frame = 2
+			}
+			
+			iconType = {
+				name = "econo_accept_icon_no"
+				position = { x = 185 y = 25 }
+				quadTextureSprite ="GFX_accept_decline_icon"
+				frame = 1
+			}
+		}
+		
+###############weapon_lists_cata############	
+		containerWindowType = {
+			name = "economy_weapon_list"
+			position = { x = 0 y = 50 }
+			size = { width = 560 height = 330 }
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 15 bottom = 25}			
+			scroll_wheel_factor = 98
+			
+			background = {
+				name = "Background"		
+				spriteType ="GFX_tiled_window_transparent"
+			}
+			
+		
+     
+###############infantry_weapon_list############				
+			######################
+			
+			instantTextboxType = {
+				name = "econo_stock_infantry_equipment_0"
+				position = {x=@NAME_POS y=@LINE_1}
+				font = @GE_FONT
+				text = "infantry_equipment_0"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_infantry_equipment_0"
+				position = {x=@STOCK_POS y=@LINE_1}
+				font = @GE_FONT
+				text = "[stock_infantry_equipment_0]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "infantry_equipment_0_buy"
+				position = {x=@BUY_POS y=@LINE_1}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_stock_infantry_equipment_1"
+				position = {x=@NAME_POS y=@LINE_2}
+				font = @GE_FONT
+				text = "infantry_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_infantry_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_2}
+				font = @GE_FONT
+				text = "[stock_infantry_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "infantry_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_2}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			
+			instantTextboxType = {
+				name = "econo_stock_infantry_equipment_2"
+				position = {x=@NAME_POS y=@LINE_3}
+				font = @GE_FONT
+				text = "infantry_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_infantry_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_3}
+				font = @GE_FONT
+				text = "[stock_infantry_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "infantry_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_3}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_infantry_equipment_3"
+				position = {x=@NAME_POS y=@LINE_4}
+				font = @GE_FONT
+				text = "infantry_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_infantry_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_4}
+				font = @GE_FONT
+				text = "[stock_infantry_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "infantry_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_4}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_support_equipment"
+				position = {x=@NAME_POS y=@LINE_5}
+				font = @GE_FONT
+				text = "support_equipment"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_support_equipment"
+				position = {x=@STOCK_POS y=@LINE_5}
+				font = @GE_FONT
+				text = "[stock_support_equipment]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "support_equipment_buy"
+				position = {x=@BUY_POS y=@LINE_5}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_motorized_equipment"
+				position = {x=@NAME_POS y=@LINE_6}
+				font = @GE_FONT
+				text = "motorized_equipment"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_motorized_equipment"
+				position = {x=@STOCK_POS y=@LINE_6}
+				font = @GE_FONT
+				text = "[stock_motorized_equipment]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "motorized_equipment_buy"
+				position = {x=@BUY_POS y=@LINE_6}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_mechanized_equipment"
+				position = {x=@NAME_POS y=@LINE_7}
+				font = @GE_FONT
+				text = "mechanized_equipment"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_mechanized_equipment"
+				position = {x=@STOCK_POS y=@LINE_7}
+				font = @GE_FONT
+				text = "[stock_mechanized_equipment]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "mechanized_equipment_buy"
+				position = {x=@BUY_POS y=@LINE_7}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_artillery_equipment_1"
+				position = {x=@NAME_POS y=@LINE_8}
+				font = @GE_FONT
+				text = "artillery_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_artillery_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_8}
+				font = @GE_FONT
+				text = "[stock_artillery_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "artillery_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_8}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_artillery_equipment_2"
+				position = {x=@NAME_POS y=@LINE_9}
+				font = @GE_FONT
+				text = "artillery_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_artillery_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_9}
+				font = @GE_FONT
+				text = "[stock_artillery_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "artillery_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_9}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_artillery_equipment_3"
+				position = {x=@NAME_POS y=@LINE_10}
+				font = @GE_FONT
+				text = "artillery_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_artillery_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_10}
+				font = @GE_FONT
+				text = "[stock_artillery_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "artillery_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_10}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_rocket_artillery_equipment_1"
+				position = {x=@NAME_POS y=@LINE_11}
+				font = @GE_FONT
+				text = "rocket_artillery_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_rocket_artillery_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_11}
+				font = @GE_FONT
+				text = "[stock_rocket_artillery_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "rocket_artillery_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_11}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_rocket_artillery_equipment_2"
+				position = {x=@NAME_POS y=@LINE_12}
+				font = @GE_FONT
+				text = "rocket_artillery_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_rocket_artillery_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_12}
+				font = @GE_FONT
+				text = "[stock_rocket_artillery_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "rocket_artillery_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_12}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_motorized_rocket_equipment"
+				position = {x=@NAME_POS y=@LINE_13}
+				font = @GE_FONT
+				text = "motorized_rocket_equipment"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_motorized_rocket_equipment"
+				position = {x=@STOCK_POS y=@LINE_13}
+				font = @GE_FONT
+				text = "[stock_motorized_rocket_equipment]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "motorized_rocket_equipment_buy"
+				position = {x=@BUY_POS y=@LINE_13}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_anti_tank_equipment_1"
+				position = {x=@NAME_POS y=@LINE_14}
+				font = @GE_FONT
+				text = "anti_tank_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_anti_tank_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_14}
+				font = @GE_FONT
+				text = "[stock_anti_tank_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "anti_tank_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_14}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_anti_tank_equipment_2"
+				position = {x=@NAME_POS y=@LINE_15}
+				font = @GE_FONT
+				text = "anti_tank_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_anti_tank_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_15}
+				font = @GE_FONT
+				text = "[stock_anti_tank_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "anti_tank_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_15}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_stock_anti_tank_equipment_3"
+				position = {x=@NAME_POS y=@LINE_16}
+				font = @GE_FONT
+				text = "anti_tank_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_anti_tank_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_16}
+				font = @GE_FONT
+				text = "[stock_anti_tank_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "anti_tank_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_16}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_anti_air_equipment_1"
+				position = {x=@NAME_POS y=@LINE_17}
+				font = @GE_FONT
+				text = "anti_air_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_anti_air_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_17}
+				font = @GE_FONT
+				text = "[stock_anti_air_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "anti_air_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_17}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_anti_air_equipment_2"
+				position = {x=@NAME_POS y=@LINE_18}
+				font = @GE_FONT
+				text = "anti_air_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_anti_air_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_18}
+				font = @GE_FONT
+				text = "[stock_anti_air_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "anti_air_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_18}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_stock_anti_air_equipment_3"
+				position = {x=@NAME_POS y=@LINE_19}
+				font = @GE_FONT
+				text = "anti_air_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_anti_air_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_19}
+				font = @GE_FONT
+				text = "[stock_anti_air_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "anti_air_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_19}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+
+###############armor_weapon_list#########			
+			######################
+			instantTextboxType = {
+				name = "econo_stock_light_tank_equipment_1"
+				position = {x=@NAME_POS y=@LINE_1}
+				font = @GE_FONT
+				text = "light_tank_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_light_tank_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_1}
+				font = @GE_FONT
+				text = "[stock_light_tank_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "light_tank_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_1}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_stock_light_tank_equipment_2"
+				position = {x=@NAME_POS y=@LINE_2}
+				font = @GE_FONT
+				text = "light_tank_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_light_tank_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_2}
+				font = @GE_FONT
+				text = "[stock_light_tank_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "light_tank_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_2}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			
+			instantTextboxType = {
+				name = "econo_stock_light_tank_equipment_3"
+				position = {x=@NAME_POS y=@LINE_3}
+				font = @GE_FONT
+				text = "light_tank_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_light_tank_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_3}
+				font = @GE_FONT
+				text = "[stock_light_tank_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "light_tank_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_3}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_light_tank_artillery_equipment_1"
+				position = {x=@NAME_POS y=@LINE_4}
+				font = @GE_FONT
+				text = "light_tank_artillery_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_light_tank_artillery_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_4}
+				font = @GE_FONT
+				text = "[stock_light_tank_artillery_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "light_tank_artillery_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_4}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_light_tank_artillery_equipment_2"
+				position = {x=@NAME_POS y=@LINE_5}
+				font = @GE_FONT
+				text = "light_tank_artillery_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_light_tank_artillery_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_5}
+				font = @GE_FONT
+				text = "[stock_light_tank_artillery_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "light_tank_artillery_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_5}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_light_tank_artillery_equipment_3"
+				position = {x=@NAME_POS y=@LINE_6}
+				font = @GE_FONT
+				text = "light_tank_artillery_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_light_tank_artillery_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_6}
+				font = @GE_FONT
+				text = "[stock_light_tank_artillery_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "light_tank_artillery_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_6}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_light_tank_destroyer_equipment_1"
+				position = {x=@NAME_POS y=@LINE_7}
+				font = @GE_FONT
+				text = "light_tank_destroyer_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_light_tank_destroyer_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_7}
+				font = @GE_FONT
+				text = "[stock_light_tank_destroyer_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "light_tank_destroyer_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_7}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_light_tank_destroyer_equipment_2"
+				position = {x=@NAME_POS y=@LINE_8}
+				font = @GE_FONT
+				text = "light_tank_destroyer_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_light_tank_destroyer_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_8}
+				font = @GE_FONT
+				text = "[stock_light_tank_destroyer_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "light_tank_destroyer_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_8}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_light_tank_destroyer_equipment_3"
+				position = {x=@NAME_POS y=@LINE_9}
+				font = @GE_FONT
+				text = "light_tank_destroyer_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_light_tank_destroyer_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_9}
+				font = @GE_FONT
+				text = "[stock_light_tank_destroyer_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "light_tank_destroyer_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_9}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_light_tank_aa_equipment_1"
+				position = {x=@NAME_POS y=@LINE_10}
+				font = @GE_FONT
+				text = "light_tank_aa_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_light_tank_aa_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_10}
+				font = @GE_FONT
+				text = "[stock_light_tank_aa_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "light_tank_aa_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_10}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_light_tank_aa_equipment_2"
+				position = {x=@NAME_POS y=@LINE_11}
+				font = @GE_FONT
+				text = "light_tank_aa_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_light_tank_aa_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_11}
+				font = @GE_FONT
+				text = "[stock_light_tank_aa_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "light_tank_aa_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_11}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_stock_light_tank_aa_equipment_3"
+				position = {x=@NAME_POS y=@LINE_12}
+				font = @GE_FONT
+				text = "light_tank_aa_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_light_tank_aa_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_12}
+				font = @GE_FONT
+				text = "[stock_light_tank_aa_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "light_tank_aa_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_12}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_medium_tank_equipment_1"
+				position = {x=@NAME_POS y=@LINE_13}
+				font = @GE_FONT
+				text = "medium_tank_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_medium_tank_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_13}
+				font = @GE_FONT
+				text = "[stock_medium_tank_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "medium_tank_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_13}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_medium_tank_equipment_2"
+				position = {x=@NAME_POS y=@LINE_14}
+				font = @GE_FONT
+				text = "medium_tank_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_medium_tank_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_14}
+				font = @GE_FONT
+				text = "[stock_medium_tank_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "medium_tank_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_14}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_stock_medium_tank_equipment_3"
+				position = {x=@NAME_POS y=@LINE_15}
+				font = @GE_FONT
+				text = "medium_tank_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_medium_tank_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_15}
+				font = @GE_FONT
+				text = "[stock_medium_tank_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "medium_tank_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_15}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_medium_tank_artillery_equipment_1"
+				position = {x=@NAME_POS y=@LINE_16}
+				font = @GE_FONT
+				text = "medium_tank_artillery_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_medium_tank_artillery_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_16}
+				font = @GE_FONT
+				text = "[stock_medium_tank_artillery_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "medium_tank_artillery_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_16}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_medium_tank_artillery_equipment_2"
+				position = {x=@NAME_POS y=@LINE_17}
+				font = @GE_FONT
+				text = "medium_tank_artillery_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_medium_tank_artillery_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_17}
+				font = @GE_FONT
+				text = "[stock_medium_tank_artillery_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "medium_tank_artillery_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_17}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_stock_medium_tank_artillery_equipment_3"
+				position = {x=@NAME_POS y=@LINE_18}
+				font = @GE_FONT
+				text = "medium_tank_artillery_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_medium_tank_artillery_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_18}
+				font = @GE_FONT
+				text = "[stock_medium_tank_artillery_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "medium_tank_artillery_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_18}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_medium_tank_destroyer_equipment_1"
+				position = {x=@NAME_POS y=@LINE_19}
+				font = @GE_FONT
+				text = "medium_tank_destroyer_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_medium_tank_destroyer_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_19}
+				font = @GE_FONT
+				text = "[stock_medium_tank_destroyer_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "medium_tank_destroyer_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_19}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_medium_tank_destroyer_equipment_2"
+				position = {x=@NAME_POS y=@LINE_20}
+				font = @GE_FONT
+				text = "medium_tank_destroyer_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_medium_tank_destroyer_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_20}
+				font = @GE_FONT
+				text = "[stock_medium_tank_destroyer_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "medium_tank_destroyer_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_20}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_stock_medium_tank_destroyer_equipment_3"
+				position = {x=@NAME_POS y=@LINE_21}
+				font = @GE_FONT
+				text = "medium_tank_destroyer_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_medium_tank_destroyer_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_21}
+				font = @GE_FONT
+				text = "[stock_medium_tank_destroyer_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "medium_tank_destroyer_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_21}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_medium_tank_aa_equipment_1"
+				position = {x=@NAME_POS y=@LINE_22}
+				font = @GE_FONT
+				text = "medium_tank_aa_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_medium_tank_aa_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_22}
+				font = @GE_FONT
+				text = "[stock_medium_tank_aa_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "medium_tank_aa_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_22}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_medium_tank_aa_equipment_2"
+				position = {x=@NAME_POS y=@LINE_23}
+				font = @GE_FONT
+				text = "medium_tank_aa_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_medium_tank_aa_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_23}
+				font = @GE_FONT
+				text = "[stock_medium_tank_aa_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "medium_tank_aa_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_23}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_medium_tank_aa_equipment_3"
+				position = {x=@NAME_POS y=@LINE_24}
+				font = @GE_FONT
+				text = "medium_tank_aa_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_medium_tank_aa_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_24}
+				font = @GE_FONT
+				text = "[stock_medium_tank_aa_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "medium_tank_aa_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_24}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_heavy_tank_equipment_1"
+				position = {x=@NAME_POS y=@LINE_25}
+				font = @GE_FONT
+				text = "heavy_tank_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_heavy_tank_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_25}
+				font = @GE_FONT
+				text = "[stock_heavy_tank_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "heavy_tank_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_25}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_heavy_tank_equipment_2"
+				position = {x=@NAME_POS y=@LINE_26}
+				font = @GE_FONT
+				text = "heavy_tank_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_heavy_tank_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_26}
+				font = @GE_FONT
+				text = "[stock_heavy_tank_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "heavy_tank_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_26}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_stock_heavy_tank_equipment_3"
+				position = {x=@NAME_POS y=@LINE_27}
+				font = @GE_FONT
+				text = "heavy_tank_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_heavy_tank_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_27}
+				font = @GE_FONT
+				text = "[stock_heavy_tank_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "heavy_tank_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_27}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_heavy_tank_artillery_equipment_1"
+				position = {x=@NAME_POS y=@LINE_28}
+				font = @GE_FONT
+				text = "heavy_tank_artillery_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_heavy_tank_artillery_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_28}
+				font = @GE_FONT
+				text = "[stock_heavy_tank_artillery_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "heavy_tank_artillery_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_28}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_heavy_tank_artillery_equipment_2"
+				position = {x=@NAME_POS y=@LINE_29}
+				font = @GE_FONT
+				text = "heavy_tank_artillery_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_heavy_tank_artillery_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_29}
+				font = @GE_FONT
+				text = "[stock_heavy_tank_artillery_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "heavy_tank_artillery_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_29}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+		
+			instantTextboxType = {
+				name = "econo_stock_heavy_tank_artillery_equipment_3"
+				position = {x=@NAME_POS y=@LINE_30}
+				font = @GE_FONT
+				text = "heavy_tank_artillery_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_heavy_tank_artillery_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_30}
+				font = @GE_FONT
+				text = "[stock_heavy_tank_artillery_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "heavy_tank_artillery_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_30}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_super_heavy_tank_artillery_equipment_1"
+				position = {x=@NAME_POS y=@LINE_31}
+				font = @GE_FONT
+				text = "super_heavy_tank_artillery_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_super_heavy_tank_artillery_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_31}
+				font = @GE_FONT
+				text = "[stock_super_heavy_tank_artillery_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "super_heavy_tank_artillery_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_31}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_heavy_tank_destroyer_equipment_1"
+				position = {x=@NAME_POS y=@LINE_32}
+				font = @GE_FONT
+				text = "heavy_tank_destroyer_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_heavy_tank_destroyer_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_32}
+				font = @GE_FONT
+				text = "[stock_heavy_tank_destroyer_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "heavy_tank_destroyer_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_32}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_heavy_tank_destroyer_equipment_2"
+				position = {x=@NAME_POS y=@LINE_33}
+				font = @GE_FONT
+				text = "heavy_tank_destroyer_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_heavy_tank_destroyer_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_33}
+				font = @GE_FONT
+				text = "[stock_heavy_tank_destroyer_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "heavy_tank_destroyer_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_33}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_stock_heavy_tank_destroyer_equipment_3"
+				position = {x=@NAME_POS y=@LINE_34}
+				font = @GE_FONT
+				text = "heavy_tank_destroyer_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_heavy_tank_destroyer_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_34}
+				font = @GE_FONT
+				text = "[stock_heavy_tank_destroyer_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "heavy_tank_destroyer_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_34}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_super_heavy_tank_destroyer_equipment_1"
+				position = {x=@NAME_POS y=@LINE_35}
+				font = @GE_FONT
+				text = "super_heavy_tank_destroyer_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_super_heavy_tank_destroyer_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_35}
+				font = @GE_FONT
+				text = "[stock_super_heavy_tank_destroyer_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "super_heavy_tank_destroyer_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_35}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_stock_heavy_tank_aa_equipment_1"
+				position = {x=@NAME_POS y=@LINE_36}
+				font = @GE_FONT
+				text = "heavy_tank_aa_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_heavy_tank_aa_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_36}
+				font = @GE_FONT
+				text = "[stock_heavy_tank_aa_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "heavy_tank_aa_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_36}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_heavy_tank_aa_equipment_2"
+				position = {x=@NAME_POS y=@LINE_37}
+				font = @GE_FONT
+				text = "heavy_tank_aa_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_heavy_tank_aa_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_37}
+				font = @GE_FONT
+				text = "[stock_heavy_tank_aa_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "heavy_tank_aa_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_37}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_heavy_tank_aa_equipment_3"
+				position = {x=@NAME_POS y=@LINE_38}
+				font = @GE_FONT
+				text = "heavy_tank_aa_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_heavy_tank_aa_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_38}
+				font = @GE_FONT
+				text = "[stock_heavy_tank_aa_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "heavy_tank_aa_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_38}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_super_heavy_tank_aa_equipment_1"
+				position = {x=@NAME_POS y=@LINE_39}
+				font = @GE_FONT
+				text = "super_heavy_tank_aa_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_super_heavy_tank_aa_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_39}
+				font = @GE_FONT
+				text = "[stock_super_heavy_tank_aa_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "super_heavy_tank_aa_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_39}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			instantTextboxType = {
+				name = "econo_stock_modern_tank_equipment"
+				position = {x=@NAME_POS y=@LINE_40}
+				font = @GE_FONT
+				text = "modern_tank_equipment"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_modern_tank_equipment"
+				position = {x=@STOCK_POS y=@LINE_40}
+				font = @GE_FONT
+				text = "[stock_modern_tank_equipment]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "modern_tank_equipment_buy"
+				position = {x=@BUY_POS y=@LINE_40}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_modern_tank_artillery_equipment"
+				position = {x=@NAME_POS y=@LINE_41}
+				font = @GE_FONT
+				text = "modern_tank_artillery_equipment"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_modern_tank_artillery_equipment"
+				position = {x=@STOCK_POS y=@LINE_41}
+				font = @GE_FONT
+				text = "[stock_modern_tank_artillery_equipment]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "modern_tank_artillery_equipment_buy"
+				position = {x=@BUY_POS y=@LINE_41}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_stock_modern_tank_destroyer_equipment"
+				position = {x=@NAME_POS y=@LINE_42}
+				font = @GE_FONT
+				text = "modern_tank_destroyer_equipment"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_modern_tank_destroyer_equipment"
+				position = {x=@STOCK_POS y=@LINE_42}
+				font = @GE_FONT
+				text = "[stock_modern_tank_destroyer_equipment]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "modern_tank_destroyer_equipment_buy"
+				position = {x=@BUY_POS y=@LINE_42}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_modern_tank_aa_equipment"
+				position = {x=@NAME_POS y=@LINE_43}
+				font = @GE_FONT
+				text = "modern_tank_aa_equipment"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_modern_tank_aa_equipment"
+				position = {x=@STOCK_POS y=@LINE_43}
+				font = @GE_FONT
+				text = "[stock_modern_tank_aa_equipment]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "modern_tank_aa_equipment_buy"
+				position = {x=@BUY_POS y=@LINE_43}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+################air_weapon_list############			
+			######################
+			instantTextboxType = {
+				name = "econo_stock_fighter_equipment_0"
+				position = {x=@NAME_POS y=@LINE_1}
+				font = @GE_FONT
+				text = "fighter_equipment_0"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_fighter_equipment_0"
+				position = {x=@STOCK_POS y=@LINE_1}
+				font = @GE_FONT
+				text = "[stock_fighter_equipment_0]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "fighter_equipment_0_buy"
+				position = {x=@BUY_POS y=@LINE_1}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_stock_fighter_equipment_1"
+				position = {x=@NAME_POS y=@LINE_2}
+				font = @GE_FONT
+				text = "fighter_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_fighter_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_2}
+				font = @GE_FONT
+				text = "[stock_fighter_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "fighter_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_2}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			
+			instantTextboxType = {
+				name = "econo_stock_fighter_equipment_2"
+				position = {x=@NAME_POS y=@LINE_3}
+				font = @GE_FONT
+				text = "fighter_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_fighter_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_3}
+				font = @GE_FONT
+				text = "[stock_fighter_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "fighter_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_3}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_fighter_equipment_3"
+				position = {x=@NAME_POS y=@LINE_4}
+				font = @GE_FONT
+				text = "fighter_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_fighter_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_4}
+				font = @GE_FONT
+				text = "[stock_fighter_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "fighter_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_4}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_cv_fighter_equipment_0"
+				position = {x=@NAME_POS y=@LINE_5}
+				font = @GE_FONT
+				text = "cv_fighter_equipment_0"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_cv_fighter_equipment_0"
+				position = {x=@STOCK_POS y=@LINE_5}
+				font = @GE_FONT
+				text = "[stock_cv_fighter_equipment_0]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "cv_fighter_equipment_0_buy"
+				position = {x=@BUY_POS y=@LINE_5}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_cv_fighter_equipment_1"
+				position = {x=@NAME_POS y=@LINE_6}
+				font = @GE_FONT
+				text = "cv_fighter_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_cv_fighter_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_6}
+				font = @GE_FONT
+				text = "[stock_cv_fighter_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "cv_fighter_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_6}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_cv_fighter_equipment_2"
+				position = {x=@NAME_POS y=@LINE_7}
+				font = @GE_FONT
+				text = "cv_fighter_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_cv_fighter_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_7}
+				font = @GE_FONT
+				text = "[stock_cv_fighter_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "cv_fighter_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_7}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_cv_fighter_equipment_3"
+				position = {x=@NAME_POS y=@LINE_8}
+				font = @GE_FONT
+				text = "cv_fighter_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_cv_fighter_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_8}
+				font = @GE_FONT
+				text = "[stock_cv_fighter_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "cv_fighter_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_8}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_jet_fighter_equipment_1"
+				position = {x=@NAME_POS y=@LINE_9}
+				font = @GE_FONT
+				text = "jet_fighter_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_jet_fighter_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_9}
+				font = @GE_FONT
+				text = "[stock_jet_fighter_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "jet_fighter_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_9}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_jet_fighter_equipment_2"
+				position = {x=@NAME_POS y=@LINE_10}
+				font = @GE_FONT
+				text = "jet_fighter_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_jet_fighter_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_10}
+				font = @GE_FONT
+				text = "[stock_jet_fighter_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "jet_fighter_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_10}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_heavy_fighter_equipment_1"
+				position = {x=@NAME_POS y=@LINE_11}
+				font = @GE_FONT
+				text = "heavy_fighter_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_heavy_fighter_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_11}
+				font = @GE_FONT
+				text = "[stock_heavy_fighter_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "heavy_fighter_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_11}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_stock_heavy_fighter_equipment_2"
+				position = {x=@NAME_POS y=@LINE_12}
+				font = @GE_FONT
+				text = "heavy_fighter_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_heavy_fighter_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_12}
+				font = @GE_FONT
+				text = "[stock_heavy_fighter_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "heavy_fighter_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_12}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_heavy_fighter_equipment_3"
+				position = {x=@NAME_POS y=@LINE_13}
+				font = @GE_FONT
+				text = "heavy_fighter_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_heavy_fighter_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_13}
+				font = @GE_FONT
+				text = "[stock_heavy_fighter_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "heavy_fighter_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_13}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_CAS_equipment_1"
+				position = {x=@NAME_POS y=@LINE_14}
+				font = @GE_FONT
+				text = "CAS_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_CAS_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_14}
+				font = @GE_FONT
+				text = "[stock_CAS_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "CAS_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_14}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_stock_CAS_equipment_2"
+				position = {x=@NAME_POS y=@LINE_15}
+				font = @GE_FONT
+				text = "CAS_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_CAS_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_15}
+				font = @GE_FONT
+				text = "[stock_CAS_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "CAS_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_15}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_CAS_equipment_3"
+				position = {x=@NAME_POS y=@LINE_16}
+				font = @GE_FONT
+				text = "CAS_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_CAS_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_16}
+				font = @GE_FONT
+				text = "[stock_CAS_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "CAS_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_16}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_cv_CAS_equipment_1"
+				position = {x=@NAME_POS y=@LINE_17}
+				font = @GE_FONT
+				text = "cv_CAS_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_cv_CAS_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_17}
+				font = @GE_FONT
+				text = "[stock_cv_CAS_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "cv_CAS_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_17}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_stock_cv_CAS_equipment_2"
+				position = {x=@NAME_POS y=@LINE_18}
+				font = @GE_FONT
+				text = "cv_CAS_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_cv_CAS_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_18}
+				font = @GE_FONT
+				text = "[stock_cv_CAS_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "cv_CAS_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_18}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_cv_CAS_equipment_3"
+				position = {x=@NAME_POS y=@LINE_19}
+				font = @GE_FONT
+				text = "cv_CAS_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_cv_CAS_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_19}
+				font = @GE_FONT
+				text = "[stock_cv_CAS_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "cv_CAS_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_19}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_nav_bomber_equipment_1"
+				position = {x=@NAME_POS y=@LINE_20}
+				font = @GE_FONT
+				text = "nav_bomber_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_nav_bomber_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_20}
+				font = @GE_FONT
+				text = "[stock_nav_bomber_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "nav_bomber_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_20}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_stock_nav_bomber_equipment_2"
+				position = {x=@NAME_POS y=@LINE_21}
+				font = @GE_FONT
+				text = "nav_bomber_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_nav_bomber_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_21}
+				font = @GE_FONT
+				text = "[stock_nav_bomber_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "nav_bomber_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_21}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_nav_bomber_equipment_3"
+				position = {x=@NAME_POS y=@LINE_22}
+				font = @GE_FONT
+				text = "nav_bomber_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_nav_bomber_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_22}
+				font = @GE_FONT
+				text = "[stock_nav_bomber_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "nav_bomber_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_22}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_cv_nav_bomber_equipment_1"
+				position = {x=@NAME_POS y=@LINE_23}
+				font = @GE_FONT
+				text = "cv_nav_bomber_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_cv_nav_bomber_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_23}
+				font = @GE_FONT
+				text = "[stock_cv_nav_bomber_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "cv_nav_bomber_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_23}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_cv_nav_bomber_equipment_2"
+				position = {x=@NAME_POS y=@LINE_24}
+				font = @GE_FONT
+				text = "cv_nav_bomber_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_cv_nav_bomber_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_24}
+				font = @GE_FONT
+				text = "[stock_cv_nav_bomber_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "cv_nav_bomber_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_24}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_cv_nav_bomber_equipment_3"
+				position = {x=@NAME_POS y=@LINE_25}
+				font = @GE_FONT
+				text = "cv_nav_bomber_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_cv_nav_bomber_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_25}
+				font = @GE_FONT
+				text = "[stock_cv_nav_bomber_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "cv_nav_bomber_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_25}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_tac_bomber_equipment_0"
+				position = {x=@NAME_POS y=@LINE_26}
+				font = @GE_FONT
+				text = "tac_bomber_equipment_0"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_tac_bomber_equipment_0"
+				position = {x=@STOCK_POS y=@LINE_26}
+				font = @GE_FONT
+				text = "[stock_tac_bomber_equipment_0]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "tac_bomber_equipment_0_buy"
+				position = {x=@BUY_POS y=@LINE_26}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_stock_tac_bomber_equipment_1"
+				position = {x=@NAME_POS y=@LINE_27}
+				font = @GE_FONT
+				text = "tac_bomber_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_tac_bomber_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_27}
+				font = @GE_FONT
+				text = "[stock_tac_bomber_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "tac_bomber_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_27}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_tac_bomber_equipment_2"
+				position = {x=@NAME_POS y=@LINE_28}
+				font = @GE_FONT
+				text = "tac_bomber_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_tac_bomber_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_28}
+				font = @GE_FONT
+				text = "[stock_tac_bomber_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "tac_bomber_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_28}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_tac_bomber_equipment_3"
+				position = {x=@NAME_POS y=@LINE_29}
+				font = @GE_FONT
+				text = "tac_bomber_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_tac_bomber_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_29}
+				font = @GE_FONT
+				text = "[stock_tac_bomber_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "tac_bomber_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_29}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+		
+			instantTextboxType = {
+				name = "econo_stock_strat_bomber_equipment_1"
+				position = {x=@NAME_POS y=@LINE_30}
+				font = @GE_FONT
+				text = "strat_bomber_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_strat_bomber_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_30}
+				font = @GE_FONT
+				text = "[stock_strat_bomber_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "strat_bomber_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_30}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_strat_bomber_equipment_2"
+				position = {x=@NAME_POS y=@LINE_31}
+				font = @GE_FONT
+				text = "strat_bomber_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_strat_bomber_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_31}
+				font = @GE_FONT
+				text = "[stock_strat_bomber_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "strat_bomber_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_31}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_strat_bomber_equipment_3"
+				position = {x=@NAME_POS y=@LINE_32}
+				font = @GE_FONT
+				text = "strat_bomber_equipment_3"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_strat_bomber_equipment_3"
+				position = {x=@STOCK_POS y=@LINE_32}
+				font = @GE_FONT
+				text = "[stock_strat_bomber_equipment_3]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "strat_bomber_equipment_3_buy"
+				position = {x=@BUY_POS y=@LINE_32}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_scout_plane_equipment_1"
+				position = {x=@NAME_POS y=@LINE_33}
+				font = @GE_FONT
+				text = "scout_plane_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_scout_plane_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_33}
+				font = @GE_FONT
+				text = "[stock_scout_plane_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "scout_plane_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_33}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_stock_scout_plane_equipment_2"
+				position = {x=@NAME_POS y=@LINE_34}
+				font = @GE_FONT
+				text = "scout_plane_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_scout_plane_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_34}
+				font = @GE_FONT
+				text = "[stock_scout_plane_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "scout_plane_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_34}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_jet_tac_bomber_equipment_1"
+				position = {x=@NAME_POS y=@LINE_35}
+				font = @GE_FONT
+				text = "jet_tac_bomber_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_jet_tac_bomber_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_35}
+				font = @GE_FONT
+				text = "[stock_jet_tac_bomber_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "jet_tac_bomber_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_35}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_stock_jet_tac_bomber_equipment_2"
+				position = {x=@NAME_POS y=@LINE_36}
+				font = @GE_FONT
+				text = "jet_tac_bomber_equipment_2"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_jet_tac_bomber_equipment_2"
+				position = {x=@STOCK_POS y=@LINE_36}
+				font = @GE_FONT
+				text = "[stock_jet_tac_bomber_equipment_2]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "jet_tac_bomber_equipment_2_buy"
+				position = {x=@BUY_POS y=@LINE_36}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_jet_strat_bomber_equipment_1"
+				position = {x=@NAME_POS y=@LINE_37}
+				font = @GE_FONT
+				text = "jet_strat_bomber_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_jet_strat_bomber_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_37}
+				font = @GE_FONT
+				text = "[stock_jet_strat_bomber_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "jet_strat_bomber_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_37}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_stock_rocket_suicide_equipment_1"
+				position = {x=@NAME_POS y=@LINE_38}
+				font = @GE_FONT
+				text = "rocket_suicide_equipment_1"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_rocket_suicide_equipment_1"
+				position = {x=@STOCK_POS y=@LINE_38}
+				font = @GE_FONT
+				text = "[stock_rocket_suicide_equipment_1]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "rocket_suicide_equipment_1_buy"
+				position = {x=@BUY_POS y=@LINE_38}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+
+############naval_weapon_list###########			
+			######################
+			instantTextboxType = {
+				name = "econo_amounts_convoy"
+				position = {x=@NAME_POS y=@LINE_1}
+				font = @GE_FONT
+				text = "convoy"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_convoy"
+				position = {x=@STOCK_POS y=@LINE_1}
+				font = @GE_FONT
+				text = "[stock_convoy]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "convoy_buy"
+				position = {x=@BUY_POS y=@LINE_1}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_amounts_submarine"
+				position = {x=@NAME_POS y=@LINE_2}
+				font = @GE_FONT
+				text = "submarine"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_submarine"
+				position = {x=@STOCK_POS y=@LINE_2}
+				font = @GE_FONT
+				text = "[stock_submarine]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "submarine_buy"
+				position = {x=@BUY_POS y=@LINE_2}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			instantTextboxType = {
+				name = "econo_amounts_destroyer"
+				position = {x=@NAME_POS y=@LINE_3}
+				font = @GE_FONT
+				text = "destroyer"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_destroyer"
+				position = {x=@STOCK_POS y=@LINE_3}
+				font = @GE_FONT
+				text = "[stock_destroyer]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "destroyer_buy"
+				position = {x=@BUY_POS y=@LINE_3}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			instantTextboxType = {
+				name = "econo_amounts_light_cruiser"
+				position = {x=@NAME_POS y=@LINE_4}
+				font = @GE_FONT
+				text = "light_cruiser"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_light_cruiser"
+				position = {x=@STOCK_POS y=@LINE_4}
+				font = @GE_FONT
+				text = "[stock_light_cruiser]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "light_cruiser_buy"
+				position = {x=@BUY_POS y=@LINE_4}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_amounts_heavy_cruiser"
+				position = {x=@NAME_POS y=@LINE_5}
+				font = @GE_FONT
+				text = "heavy_cruiser"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_heavy_cruiser"
+				position = {x=@STOCK_POS y=@LINE_5}
+				font = @GE_FONT
+				text = "[stock_heavy_cruiser]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "heavy_cruiser_buy"
+				position = {x=@BUY_POS y=@LINE_5}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_amounts_battle_cruiser"
+				position = {x=@NAME_POS y=@LINE_6}
+				font = @GE_FONT
+				text = "battle_cruiser"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_battle_cruiser"
+				position = {x=@STOCK_POS y=@LINE_6}
+				font = @GE_FONT
+				text = "[stock_battle_cruiser]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "battle_cruiser_buy"
+				position = {x=@BUY_POS y=@LINE_6}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+			
+			instantTextboxType = {
+				name = "econo_amounts_battleship"
+				position = {x=@NAME_POS y=@LINE_7}
+				font = @GE_FONT
+				text = "battleship"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_battleship"
+				position = {x=@STOCK_POS y=@LINE_7}
+				font = @GE_FONT
+				text = "[stock_battleship]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "battleship_buy"
+				position = {x=@BUY_POS y=@LINE_7}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}
+
+			instantTextboxType = {
+				name = "econo_amounts_carrier"
+				position = {x=@NAME_POS y=@LINE_8}
+				font = @GE_FONT
+				text = "carrier"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			instantTextboxType = {
+				name = "stock_carrier"
+				position = {x=@STOCK_POS y=@LINE_8}
+				font = @GE_FONT
+				text = "[stock_carrier]"
+				maxWidth = 340
+				maxHeight = 23
+				format = left
+			}
+			buttonType = {
+				name = "carrier_buy"
+				position = {x=@BUY_POS y=@LINE_8}
+				font = @GE_FONT
+				text = "ECONO_BUY"
+				quadTextureSprite = "GFX_button_94x31"
+				format = center
+				pdx_tooltip = "BUY_INFO"
+				clicksound = click_default
+			}			
+			
+		}
+
+	
+############Carts###########
+		containerWindowType = {
+			name = "cart_list_1"
+			position = { x = 200 y = 375 }
+			clipping = no
+			
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_trade_bg_half"
+			}
+			
+			instantTextboxType = {
+				name = "cart_name_1"
+				position = { x = @CAET_ID_POS y = 3}
+				font = @GE_FONT
+				text = "CARTNAME_1"
+				#maxWidth = 300
+				#maxHeight = 20
+				#format = left
+			}
+			instantTextboxType = {
+				name = "cart_purchase_1"
+				position = { x = @CAET_NUM_POS y = 3}
+				font = @GE_FONT
+				text = "[?cart_1_purchase_num]"
+				#maxWidth = 300
+				#maxHeight = 20
+				#format = left
+			}
+			buttonType = {
+				name = "cart_1_sub_10000"
+				position = { x = 99 y = -1 }
+				spriteType = "GFX_trade_sub_10000"
+				pdx_tooltip = "CART_SUB_10000"
+			}
+			buttonType = {
+				name = "cart_1_sub_1000"
+				position = { x = 125 y = 0 }
+				spriteType = "GFX_trade_sub_1000"
+				pdx_tooltip = "CART_SUB_1000"
+			}
+			buttonType = {
+				name = "cart_1_sub_100"
+				position = { x = 150 y = 0 }
+				spriteType = "GFX_trade_sub_100"
+				pdx_tooltip = "CART_SUB_100"
+			}
+			buttonType = {
+				name = "cart_1_sub_10"
+				position = { x = 175 y = 0 }
+				spriteType = "GFX_trade_sub_10"
+				pdx_tooltip = "CART_SUB_10"
+			}
+			buttonType = {
+				name = "cart_1_sub_1"
+				position = { x = 200 y = 0 }
+				spriteType = "GFX_trade_sub_1"
+				pdx_tooltip = "CART_SUB_1"
+			}			
+			buttonType = {
+				name = "cart_1_add_1"
+				position = { x = 225 y = 0 }
+				spriteType = "GFX_trade_add_1"
+				pdx_tooltip = "CART_ADD_1"
+			}
+			buttonType = {
+				name = "cart_1_add_10"
+				position = { x = 250 y = 0 }
+				spriteType = "GFX_trade_add_10"
+				pdx_tooltip = "CART_ADD_10"
+			}
+			buttonType = {
+				name = "cart_1_add_100"
+				position = { x = 275 y = 0 }
+				spriteType = "GFX_trade_add_100"
+				pdx_tooltip = "CART_ADD_100"
+			}
+			buttonType = {
+				name = "cart_1_add_1000"
+				position = { x = 300 y = 0 }
+				spriteType = "GFX_trade_add_1000"
+				pdx_tooltip = "CART_ADD_1000"
+			}
+			buttonType = {
+				name = "cart_1_add_10000"
+				position = { x = 326 y = -1 }
+				spriteType = "GFX_trade_add_10000"
+				pdx_tooltip = "CART_ADD_10000"
+			}			
+			
+		}
+	
+		containerWindowType = {
+			name = "cart_list_2"
+			position = { x = 200 y = 400 }
+			clipping = no
+			
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_trade_bg_half"
+			}
+			
+			instantTextboxType = {
+				name = "cart_name_2"
+				position = { x = @CAET_ID_POS y = 3}
+				font = @GE_FONT
+				text = "CARTNAME_2"
+				#maxWidth = 300
+				#maxHeight = 20
+				#format = left
+			}
+			instantTextboxType = {
+				name = "cart_purchase_2"
+				position = { x = @CAET_NUM_POS y = 3}
+				font = @GE_FONT
+				text = "[?cart_2_purchase_num]"
+				#maxWidth = 300
+				#maxHeight = 20
+				#format = left
+			}
+			buttonType = {
+				name = "cart_2_sub_10000"
+				position = { x = 99 y = -1 }
+				spriteType = "GFX_trade_sub_10000"
+				pdx_tooltip = "CART_SUB_10000"
+			}
+			buttonType = {
+				name = "cart_2_sub_1000"
+				position = { x = 125 y = 0 }
+				spriteType = "GFX_trade_sub_1000"
+				pdx_tooltip = "CART_SUB_1000"
+			}
+			buttonType = {
+				name = "cart_2_sub_100"
+				position = { x = 150 y = 0 }
+				spriteType = "GFX_trade_sub_100"
+				pdx_tooltip = "CART_SUB_100"
+			}
+			buttonType = {
+				name = "cart_2_sub_10"
+				position = { x = 175 y = 0 }
+				spriteType = "GFX_trade_sub_10"
+				pdx_tooltip = "CART_SUB_10"
+			}
+			buttonType = {
+				name = "cart_2_sub_1"
+				position = { x = 200 y = 0 }
+				spriteType = "GFX_trade_sub_1"
+				pdx_tooltip = "CART_SUB_1"
+			}			
+			buttonType = {
+				name = "cart_2_add_1"
+				position = { x = 225 y = 0 }
+				spriteType = "GFX_trade_add_1"
+				pdx_tooltip = "CART_ADD_1"
+			}
+			buttonType = {
+				name = "cart_2_add_10"
+				position = { x = 250 y = 0 }
+				spriteType = "GFX_trade_add_10"
+				pdx_tooltip = "CART_ADD_10"
+			}
+			buttonType = {
+				name = "cart_2_add_100"
+				position = { x = 275 y = 0 }
+				spriteType = "GFX_trade_add_100"
+				pdx_tooltip = "CART_ADD_100"
+			}
+			buttonType = {
+				name = "cart_2_add_1000"
+				position = { x = 300 y = 0 }
+				spriteType = "GFX_trade_add_1000"
+				pdx_tooltip = "CART_ADD_1000"
+			}
+			buttonType = {
+				name = "cart_2_add_10000"
+				position = { x = 326 y = -1 }
+				spriteType = "GFX_trade_add_10000"
+				pdx_tooltip = "CART_ADD_10000"
+			}			
+			
+		}
+		
+		containerWindowType = {
+			name = "cart_list_3"
+			position = { x =200 y = 425 }
+			clipping = no
+			
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_trade_bg_half"
+			}
+			
+			instantTextboxType = {
+				name = "cart_name_3"
+				position = { x = @CAET_ID_POS y = 3}
+				font = @GE_FONT
+				text = "CARTNAME_3"
+				#maxWidth = 300
+				#maxHeight = 20
+				#format = left
+			}
+			instantTextboxType = {
+				name = "cart_purchase_3"
+				position = { x = @CAET_NUM_POS y = 3}
+				font = @GE_FONT
+				text = "[?cart_3_purchase_num]"
+				#maxWidth = 300
+				#maxHeight = 20
+				#format = left
+			}
+			buttonType = {
+				name = "cart_3_sub_10000"
+				position = { x = 99 y = -1 }
+				spriteType = "GFX_trade_sub_10000"
+				pdx_tooltip = "CART_SUB_10000"
+			}
+			buttonType = {
+				name = "cart_3_sub_1000"
+				position = { x = 125 y = 0 }
+				spriteType = "GFX_trade_sub_1000"
+				pdx_tooltip = "CART_SUB_1000"
+			}
+			buttonType = {
+				name = "cart_3_sub_100"
+				position = { x = 150 y = 0 }
+				spriteType = "GFX_trade_sub_100"
+				pdx_tooltip = "CART_SUB_100"
+			}
+			buttonType = {
+				name = "cart_3_sub_10"
+				position = { x = 175 y = 0 }
+				spriteType = "GFX_trade_sub_10"
+				pdx_tooltip = "CART_SUB_10"
+			}
+			buttonType = {
+				name = "cart_3_sub_1"
+				position = { x = 200 y = 0 }
+				spriteType = "GFX_trade_sub_1"
+				pdx_tooltip = "CART_SUB_1"
+			}			
+			buttonType = {
+				name = "cart_3_add_1"
+				position = { x = 225 y = 0 }
+				spriteType = "GFX_trade_add_1"
+				pdx_tooltip = "CART_ADD_1"
+			}
+			buttonType = {
+				name = "cart_3_add_10"
+				position = { x = 250 y = 0 }
+				spriteType = "GFX_trade_add_10"
+				pdx_tooltip = "CART_ADD_10"
+			}
+			buttonType = {
+				name = "cart_3_add_100"
+				position = { x = 275 y = 0 }
+				spriteType = "GFX_trade_add_100"
+				pdx_tooltip = "CART_ADD_100"
+			}
+			buttonType = {
+				name = "cart_3_add_1000"
+				position = { x = 300 y = 0 }
+				spriteType = "GFX_trade_add_1000"
+				pdx_tooltip = "CART_ADD_1000"
+			}
+			buttonType = {
+				name = "cart_3_add_10000"
+				position = { x = 326 y = -1 }
+				spriteType = "GFX_trade_add_10000"
+				pdx_tooltip = "CART_ADD_10000"
+			}		
+			
+		}
+		
+	
+		containerWindowType = {
+			name = "cart_list_4"
+			position = { x = 200 y = 450 }
+			clipping = no
+			
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_trade_bg_half"
+			}
+			
+			instantTextboxType = {
+				name = "cart_name_4"
+				position = { x = @CAET_ID_POS y = 3}
+				font = @GE_FONT
+				text = "CARTNAME_4"
+				#maxWidth = 300
+				#maxHeight = 20
+				#format = left
+			}
+			instantTextboxType = {
+				name = "cart_purchase_4"
+				position = { x = @CAET_NUM_POS y = 3}
+				font = @GE_FONT
+				text = "[?cart_4_purchase_num]"
+				#maxWidth = 300
+				#maxHeight = 20
+				#format = left
+			}
+			buttonType = {
+				name = "cart_4_sub_10000"
+				position = { x = 99 y = -1 }
+				spriteType = "GFX_trade_sub_10000"
+				pdx_tooltip = "CART_SUB_10000"
+			}
+			buttonType = {
+				name = "cart_4_sub_1000"
+				position = { x = 125 y = 0 }
+				spriteType = "GFX_trade_sub_1000"
+				pdx_tooltip = "CART_SUB_1000"
+			}
+			buttonType = {
+				name = "cart_4_sub_100"
+				position = { x = 150 y = 0 }
+				spriteType = "GFX_trade_sub_100"
+				pdx_tooltip = "CART_SUB_100"
+			}
+			buttonType = {
+				name = "cart_4_sub_10"
+				position = { x = 175 y = 0 }
+				spriteType = "GFX_trade_sub_10"
+				pdx_tooltip = "CART_SUB_10"
+			}
+			buttonType = {
+				name = "cart_4_sub_1"
+				position = { x = 200 y = 0 }
+				spriteType = "GFX_trade_sub_1"
+				pdx_tooltip = "CART_SUB_1"
+			}			
+			buttonType = {
+				name = "cart_4_add_1"
+				position = { x = 225 y = 0 }
+				spriteType = "GFX_trade_add_1"
+				pdx_tooltip = "CART_ADD_1"
+			}
+			buttonType = {
+				name = "cart_4_add_10"
+				position = { x = 250 y = 0 }
+				spriteType = "GFX_trade_add_10"
+				pdx_tooltip = "CART_ADD_10"
+			}
+			buttonType = {
+				name = "cart_4_add_100"
+				position = { x = 275 y = 0 }
+				spriteType = "GFX_trade_add_100"
+				pdx_tooltip = "CART_ADD_100"
+			}
+			buttonType = {
+				name = "cart_4_add_1000"
+				position = { x = 300 y = 0 }
+				spriteType = "GFX_trade_add_1000"
+				pdx_tooltip = "CART_ADD_1000"
+			}
+			buttonType = {
+				name = "cart_4_add_10000"
+				position = { x = 326 y = -1 }
+				spriteType = "GFX_trade_add_10000"
+				pdx_tooltip = "CART_ADD_10000"
+			}			
+			
+		}
+
+		containerWindowType = {
+			name = "cart_list_5"
+			position = { x = 200 y = 475 }
+			clipping = no
+			
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_trade_bg_half"
+			}
+			
+			instantTextboxType = {
+				name = "cart_name_5"
+				position = { x = @CAET_ID_POS y = 3}
+				font = @GE_FONT
+				text = "CARTNAME_5"
+				#maxWidth = 300
+				#maxHeight = 20
+				#format = left
+			}
+			instantTextboxType = {
+				name = "cart_purchase_5"
+				position = { x = @CAET_NUM_POS y = 3}
+				font = @GE_FONT
+				text = "[?cart_5_purchase_num]"
+				#maxWidth = 300
+				#maxHeight = 20
+				#format = left
+			}
+			buttonType = {
+				name = "cart_5_sub_10000"
+				position = { x = 99 y = -1 }
+				spriteType = "GFX_trade_sub_10000"
+				pdx_tooltip = "CART_SUB_10000"
+			}
+			buttonType = {
+				name = "cart_5_sub_1000"
+				position = { x = 125 y = 0 }
+				spriteType = "GFX_trade_sub_1000"
+				pdx_tooltip = "CART_SUB_1000"
+			}
+			buttonType = {
+				name = "cart_5_sub_100"
+				position = { x = 150 y = 0 }
+				spriteType = "GFX_trade_sub_100"
+				pdx_tooltip = "CART_SUB_100"
+			}
+			buttonType = {
+				name = "cart_5_sub_10"
+				position = { x = 175 y = 0 }
+				spriteType = "GFX_trade_sub_10"
+				pdx_tooltip = "CART_SUB_10"
+			}
+			buttonType = {
+				name = "cart_5_sub_1"
+				position = { x = 200 y = 0 }
+				spriteType = "GFX_trade_sub_1"
+				pdx_tooltip = "CART_SUB_1"
+			}			
+			buttonType = {
+				name = "cart_5_add_1"
+				position = { x = 225 y = 0 }
+				spriteType = "GFX_trade_add_1"
+				pdx_tooltip = "CART_ADD_1"
+			}
+			buttonType = {
+				name = "cart_5_add_10"
+				position = { x = 250 y = 0 }
+				spriteType = "GFX_trade_add_10"
+				pdx_tooltip = "CART_ADD_10"
+			}
+			buttonType = {
+				name = "cart_5_add_100"
+				position = { x = 275 y = 0 }
+				spriteType = "GFX_trade_add_100"
+				pdx_tooltip = "CART_ADD_100"
+			}
+			buttonType = {
+				name = "cart_5_add_1000"
+				position = { x = 300 y = 0 }
+				spriteType = "GFX_trade_add_1000"
+				pdx_tooltip = "CART_ADD_1000"
+			}
+			buttonType = {
+				name = "cart_5_add_10000"
+				position = { x = 326 y = -1 }
+				spriteType = "GFX_trade_add_10000"
+				pdx_tooltip = "CART_ADD_10000"
+			}		
+			
+		}
+		
+		containerWindowType = {
+			name = "cart_list_6"
+			position = { x = 200 y = 500 }
+			clipping = no
+
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_trade_bg_half"
+			}
+			
+			instantTextboxType = {
+				name = "cart_name_6"
+				position = { x = @CAET_ID_POS y = 3}
+				font = @GE_FONT
+				text = "CARTNAME_6"
+				#maxWidth = 300
+				#maxHeight = 20
+				#format = left
+			}
+			instantTextboxType = {
+				name = "cart_purchase_6"
+				position = { x = @CAET_NUM_POS y = 3}
+				font = @GE_FONT
+				text = "[?cart_6_purchase_num]"
+				#maxWidth = 300
+				#maxHeight = 20
+				#format = left
+			}
+			buttonType = {
+				name = "cart_6_sub_10000"
+				position = { x = 99 y = -1 }
+				spriteType = "GFX_trade_sub_10000"
+				pdx_tooltip = "CART_SUB_10000"
+			}
+			buttonType = {
+				name = "cart_6_sub_1000"
+				position = { x = 125 y = 0 }
+				spriteType = "GFX_trade_sub_1000"
+				pdx_tooltip = "CART_SUB_1000"
+			}
+			buttonType = {
+				name = "cart_6_sub_100"
+				position = { x = 150 y = 0 }
+				spriteType = "GFX_trade_sub_100"
+				pdx_tooltip = "CART_SUB_100"
+			}
+			buttonType = {
+				name = "cart_6_sub_10"
+				position = { x = 175 y = 0 }
+				spriteType = "GFX_trade_sub_10"
+				pdx_tooltip = "CART_SUB_10"
+			}
+			buttonType = {
+				name = "cart_6_sub_1"
+				position = { x = 200 y = 0 }
+				spriteType = "GFX_trade_sub_1"
+				pdx_tooltip = "CART_SUB_1"
+			}			
+			buttonType = {
+				name = "cart_6_add_1"
+				position = { x = 225 y = 0 }
+				spriteType = "GFX_trade_add_1"
+				pdx_tooltip = "CART_ADD_1"
+			}
+			buttonType = {
+				name = "cart_6_add_10"
+				position = { x = 250 y = 0 }
+				spriteType = "GFX_trade_add_10"
+				pdx_tooltip = "CART_ADD_10"
+			}
+			buttonType = {
+				name = "cart_6_add_100"
+				position = { x = 275 y = 0 }
+				spriteType = "GFX_trade_add_100"
+				pdx_tooltip = "CART_ADD_100"
+			}
+			buttonType = {
+				name = "cart_6_add_1000"
+				position = { x = 300 y = 0 }
+				spriteType = "GFX_trade_add_1000"
+				pdx_tooltip = "CART_ADD_1000"
+			}
+			buttonType = {
+				name = "cart_6_add_10000"
+				position = { x = 326 y = -1 }
+				spriteType = "GFX_trade_add_10000"
+				pdx_tooltip = "CART_ADD_10000"
+			}		
+			
+		}
+		
+############Available Point###########
+		containerWindowType = {
+			name = "purchase_limit"
+			position = { x = 350 y = 540 }
+			size = { width = 250 height = 30 }
+			clipping = no
+			
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_generic_text_bg_203"
+			}
+			
+			instantTextboxType = {
+				name = "max_spend_limit"
+				position = {x = 55 y = 5 }
+				font = @GE_FONT
+				text = "[?Root.econo_purchase_limit]B Available"
+				maxWidth = 200
+				maxHeight = 23
+				format = left				
+				pdx_tooltip ="COST_LIMITS"
+			}
+
+##############refresh button#########
+			buttonType = {
+				name = "econo_refresh"
+				position = { x = -295 y = -5 }
+				font = @GE_FONT
+				text = "ECONO_REFRESH"
+				quadTextureSprite = "GFX_button_123x34"
+				format = center
+				pdx_tooltip = "REFRESH_INFO"
+				clicksound = click_default
+			}			
+			
+		}
+
+	}
+	
+}

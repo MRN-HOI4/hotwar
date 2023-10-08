@@ -1,0 +1,18 @@
+animation = {
+	name = "J21_idle_animation"
+	file = "soko_j21_idle.anim"
+}
+
+animation = {
+	name = "J22_idle_animation"
+	file = "soko_j22_idle.anim"
+}
+animation = {
+	name = "G2_idle_animation"
+	file = "g2galeb_idle.anim"
+}
+animation = {
+	name = "G4_idle_animation"
+	file = "g4super_idle.anim"
+}
+

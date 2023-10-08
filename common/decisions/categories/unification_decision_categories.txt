@@ -1,0 +1,17 @@
+Unification_category = {
+    icon = generic_foreign_policy
+
+    picture = GFX_decision_cat_picture_chi_political_support
+
+    allowed = { 
+        OR = {
+            original_tag = DDR
+            original_tag = WGR
+            original_tag = KOR
+            original_tag = PRK
+            original_tag = ROV
+            original_tag = VIN
+        }
+    }
+    priority = 100
+}

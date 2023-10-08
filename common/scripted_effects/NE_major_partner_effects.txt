@@ -1,0 +1,34 @@
+form_mtp_effects = {
+	ROOT = {
+		add_opinion_modifier = { target = PREV modifier = mtr_formed }
+		add_relation_modifier = { target = PREV modifier = trade_partner_static_modifier }
+		add_opinion_modifier = { target = PREV modifier = mtr_formed_opinion }
+	}
+	PREV = {
+		add_opinion_modifier = { target = ROOT modifier = mtr_formed }
+		add_relation_modifier = { target = ROOT modifier = trade_partner_static_modifier }
+		add_opinion_modifier = { target = ROOT modifier = mtr_formed_opinion }
+	}
+}
+
+cancel_mtp_effects = {
+	ROOT = {
+		remove_opinion_modifier = { target = PREV modifier = mtr_formed }
+		remove_relation_modifier = { target = PREV modifier = trade_partner_static_modifier }
+		remove_opinion_modifier = { target = PREV modifier = mtr_formed_opinion }
+	}
+	PREV = {
+		remove_opinion_modifier = { target = ROOT modifier = mtr_formed }
+		remove_relation_modifier = { target = ROOT modifier = trade_partner_static_modifier }
+		remove_opinion_modifier = { target = ROOT modifier = mtr_formed_opinion }
+		add_opinion_modifier = { target = ROOT modifier = mtr_cancelled_opinion }
+	}
+}
+
+form_mtr_disregard = {
+	set_country_flag = {
+		flag = trade_partner_waiting
+		days = 180
+		value = 1
+	}
+}

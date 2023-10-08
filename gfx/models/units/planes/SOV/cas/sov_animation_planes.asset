@@ -1,0 +1,5 @@
+animation = {
+	name = "il40_idle_animation"
+	file = "il_40_idle.anim"
+}
+

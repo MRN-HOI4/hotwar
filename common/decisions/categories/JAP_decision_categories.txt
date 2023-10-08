@@ -1,0 +1,10 @@
+peace_constituion_category = {
+    icon = generic_political_actions
+
+    picture = GFX_decision_cat_picture_government_in_exile
+
+    allowed = { 
+        original_tag = JAP
+    }
+    priority = 100
+}

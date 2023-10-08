@@ -1,0 +1,110 @@
+objectTypes = {
+	pdxmesh = {
+		name = "POL_F16_mesh"
+		file = "gfx/models/units/planes/POL/fighter/F16C.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F16CPOL_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "POL_MIG9_mesh"
+		file = "gfx/models/units/planes/POL/fighter/MiG9.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "MiG9POL_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "POL_MIG15_mesh"
+		file = "gfx/models/units/planes/POL/fighter/MiG15.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "MiG15POL_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "POL_MIG19_mesh"
+		file = "gfx/models/units/planes/POL/fighter/MiG19.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "MiG19POL_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "POL_MIG21_mesh"
+		file = "gfx/models/units/planes/POL/fighter/MiG21F13.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "MiG21POL_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "POL_MIG23_mesh"
+		file = "gfx/models/units/planes/POL/fighter/mig23.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "mig23POL_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "POL_MIG29_mesh"
+		file = "gfx/models/units/planes/POL/fighter/mig29.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "mig29POL_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "POL_SU7_mesh"
+		file = "gfx/models/units/planes/POL/cas/su7.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "su7POL_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "POL_SU22_mesh"
+		file = "gfx/models/units/planes/POL/cas/Su22.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "su22POL_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "POL_SU24_mesh"
+		file = "gfx/models/units/planes/POL/cas/su24.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "su24POL_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "POL_IL28_mesh"
+		file = "gfx/models/units/planes/POL/tacbomber/il28.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "il28POL.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "POL_IL76_mesh"
+		file = "gfx/models/units/planes/SOV/transport/il_76.mesh"
+		animation = { id = "idle" type = "il76_idle_animation" }
+		scale = 1.00
+	meshsettings = {
+			texture_diffuse = "pol_il_76_diffuse.dds"
+		}
+	}
+}

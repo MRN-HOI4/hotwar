@@ -1,0 +1,23 @@
+peace_constituion_level_down = {
+	if = {
+		limit = { has_idea = JAP_peace_constituion_2 }
+		swap_ideas = {
+			remove_idea = JAP_peace_constituion_2
+			add_idea = JAP_peace_constituion_1
+		}
+	}
+	else_if = {
+		limit = { has_idea = JAP_peace_constituion_3 }
+		swap_ideas = {
+			remove_idea = JAP_peace_constituion_3
+			add_idea = JAP_peace_constituion_2
+		}		
+	}
+	else_if = {
+		limit = { has_idea = JAP_peace_constituion_4 }
+		swap_ideas = {
+			remove_idea = JAP_peace_constituion_4
+			add_idea = JAP_peace_constituion_3
+		}
+	}
+}

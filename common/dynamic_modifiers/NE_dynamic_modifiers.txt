@@ -1,0 +1,53 @@
+
+GDP_core_modifiers = {
+
+	#icon = GFX_idea_GDP_core
+
+	enable = { always = yes }
+	
+	research_speed_factor = var:gdp_research_factor
+	
+	political_power_factor = var:gdp_political_power_factor
+	
+	#production_speed_industrial_complex_factor = var:gdp_per_production_speed_civ_factor
+	
+	stability_factor = var:gdp_per_stability_factor
+}
+
+NE_inflation_modifiers = {
+
+	production_speed_infrastructure_factor = var:ne_inflation_infra_factor
+
+	production_speed_industrial_complex_factor = var:ne_inflation_civ_factor
+	
+	stability_factor = var:ne_inflation_stability_factor
+
+}
+
+weapon_export_modifiers = {
+
+	enable = { always = yes }
+	
+	production_speed_infrastructure_factor = var:weapon_export_construction
+	
+	production_speed_arms_factory_factor = var:weapon_export_construction
+	
+	production_speed_dockyard_factor = var:weapon_export_construction
+	
+	production_speed_supply_node_factor = var:weapon_export_construction_75p
+	
+	production_speed_industrial_complex_factor = var:weapon_export_construction_75p
+
+}
+
+weapon_import_modifiers = {
+
+	enable = { always = yes }
+	
+	research_speed_factor = var:weapon_import_research	
+	
+	consumer_goods_factor = var:weapon_import_consumer
+
+}
+
+

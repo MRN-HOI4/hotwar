@@ -1,0 +1,37 @@
+
+import_variable_checker = {
+
+	if = {
+		limit = {
+			NOT = {		
+				has_dynamic_modifier = {
+					modifier = weapon_import_modifiers
+				}
+			}
+		}
+		set_variable = { weapon_import = 0 }
+		set_variable = { weapon_import_consumer = 0 }
+		set_variable = { weapon_import_research = 0 }
+	}
+
+}
+
+
+
+export_variable_checker = {
+
+	if = {
+		limit = {
+			NOT = {			
+				has_dynamic_modifier = {
+					modifier = weapon_export_modifiers
+					scope = THIS
+				}			
+			}
+		}
+		set_variable = { weapon_export = 0 }
+		set_variable = { weapon_export_construction = 0 }
+		set_variable = { weapon_export_construction_75p = 0 }
+	}
+
+}

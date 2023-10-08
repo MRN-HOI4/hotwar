@@ -1,0 +1,32 @@
+state={
+	id=916
+	name="STATE_916"
+	history={
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+            air_base = 5
+            anti_air_building = 1
+			industrial_complex = 1
+			7071 = {
+				naval_base = 1
+				coastal_bunker = 1
+				bunker = 1
+
+			}
+		}
+		victory_points = {
+			7071 20
+		}
+	}
+	
+	provinces={
+		7071 
+	}
+	manpower=2651727
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

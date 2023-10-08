@@ -1,0 +1,73 @@
+objectTypes = {
+	pdxmesh = {
+		name = "SWE_J21_mesh"
+		file = "gfx/models/units/planes/SWE/fighter/j21.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "j21_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "SWE_J29_mesh"
+		file = "gfx/models/units/planes/SWE/fighter/j29.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "j29_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "SWE_HUNTER_mesh"
+		file = "gfx/models/units/planes/SWE/fighter/Hunter.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "hawkerhunterSWE_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "SWE_J35_mesh"
+		file = "gfx/models/units/planes/SWE/fighter/draken.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "draken_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "SWE_J37_mesh"
+		file = "gfx/models/units/planes/SWE/fighter/viggen.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "viggen_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "SWE_SK60_mesh"
+		file = "gfx/models/units/planes/SWE/cas/sk60.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "sk60_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "SWE_J32_mesh"
+		file = "gfx/models/units/planes/SWE/cas/lansen.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "lansen_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "SWE_CANBERRA_mesh"
+		file = "gfx/models/units/planes/SWE/tacbomber/Canberra.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "Canberra.dds"
+		}
+	}
+}

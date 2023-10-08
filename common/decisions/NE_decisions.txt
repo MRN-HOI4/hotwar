@@ -1,0 +1,341 @@
+NE_economic_measures_decision = {
+
+	economy_invest_small = {
+		icon = GFX_economy00_invest
+		
+		ai_will_do = {
+			base = 1
+			modifier = {
+				add = 10
+				AND = {
+					check_variable = { gdpmn < 0.05 }
+					check_variable = { gdpmn > 0 }
+				}
+			}
+			modifier = {
+				add = 10
+				check_variable = { gdp_per_capita_core < 75 }
+			}
+			modifier = {
+				add = 5
+				check_variable = { gdp_proportion > 4 } #4%
+			}
+	    }
+		
+		visible = { }
+		
+        available = {
+			NOT = { 
+				has_decision = economy_invest_medium
+				has_decision = economy_invest_large 
+			}
+        }
+		
+		complete_effect = {
+		
+			set_variable = { economy_decison_invest = num_of_civilian_factories}
+			
+			multiply_variable = {var = economy_decison_invest value = 0.01} # 0.05*0.2		
+			
+			add_to_variable = { var = governmental_investment value = economy_decison_invest}
+		}
+		
+		modifier = {
+		    consumer_goods_factor = 0.05
+		    production_speed_industrial_complex_factor = 0.10
+		    production_speed_infrastructure_factor = 0.10
+			production_speed_fuel_silo_factor = 0.10
+			production_speed_synthetic_refinery_factor = 0.10
+			production_speed_supply_node_factor = 0.10
+			production_speed_rail_way_factor = 0.10
+			conscription = -0.001
+	    }
+		
+		fire_only_once = no
+		days_remove = 180
+		days_re_enable = 0
+		cost = 50
+		
+		remove_effect = { 
+			subtract_from_variable = { var = governmental_investment value = economy_decison_invest }		
+		}
+	}
+	economy_invest_medium = {
+		icon = GFX_economy00_invest
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 5
+				AND = {
+					check_variable = { gdpmn < 0.05 }
+					check_variable = { gdpmn > 0 }
+				}
+			}
+			modifier = {
+				add = 10
+				check_variable = { gdp_per_capita_core < 75 }
+			}
+			modifier = {
+				add = 3
+				check_variable = { gdp_proportion > 4 } #4%
+			}
+	    }
+		
+		visible = {
+			NOT = { has_government = democratic }
+		}
+		
+        available = {
+			NOT = { 
+				has_decision = economy_invest_small
+				has_decision = economy_invest_large 
+			}
+        }
+		
+		complete_effect = {
+		
+			set_variable = { economy_decison_invest = num_of_civilian_factories}
+			
+			multiply_variable = {var = economy_decison_invest value = 0.02} # 0.10*0.2		
+			
+			add_to_variable = { var = governmental_investment value = economy_decison_invest}
+		}
+		
+		modifier = {
+		    consumer_goods_factor = 0.10
+		    production_speed_industrial_complex_factor = 0.20
+		    production_speed_infrastructure_factor = 0.20
+			production_speed_fuel_silo_factor = 0.20
+			production_speed_synthetic_refinery_factor = 0.20
+			production_speed_supply_node_factor = 0.20
+			production_speed_rail_way_factor = 0.20
+			conscription = -0.002
+	    }
+		
+		fire_only_once = no
+		days_remove = 180
+		days_re_enable = 0
+		cost = 100
+		
+		remove_effect = { 
+			subtract_from_variable = { var = governmental_investment value = economy_decison_invest }		
+		}
+	}
+	economy_invest_large = {
+		icon = GFX_economy00_invest
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 5
+				AND = {
+					check_variable = { gdpmn < 0.05 }
+					check_variable = { gdpmn > 0 }
+				}
+			}
+			modifier = {
+				add = 5
+				check_variable = { gdp_per_capita_core < 75 }
+			}
+			modifier = {
+				add = 2
+				check_variable = { gdp_proportion > 4 } #4%
+			}
+	    }
+		
+		visible = {
+			OR = { 
+			has_government = communism
+			has_government = fascism			
+			}
+		}
+		
+        available = {
+			NOT = { 
+				has_decision = economy_invest_small
+				has_decision = economy_invest_medium 
+			}
+        }
+		
+		complete_effect = {
+		
+			set_variable = { economy_decison_invest = num_of_civilian_factories}
+			
+			multiply_variable = {var = economy_decison_invest value = 0.03} # 0.15*0.2	
+			
+			add_to_variable = { var = governmental_investment value = economy_decison_invest}
+		}
+		
+		modifier = {
+		    consumer_goods_factor = 0.15
+		    production_speed_industrial_complex_factor = 0.30
+		    production_speed_infrastructure_factor = 0.30
+			production_speed_fuel_silo_factor = 0.30
+			production_speed_synthetic_refinery_factor = 0.30
+			production_speed_supply_node_factor = 0.30
+			production_speed_rail_way_factor = 0.30
+			conscription = -0.003
+	    }
+		
+		fire_only_once = no
+		days_remove = 180
+		days_re_enable = 0
+		cost = 125
+		
+		remove_effect = { 
+			subtract_from_variable = { var = governmental_investment value = economy_decison_invest }		
+		}
+	}
+	NE_print_money_small = {
+		icon = GFX_economy00_invest
+		
+		ai_will_do = {
+			base = 1
+			modifier = {
+				add = 10
+				AND = {
+					check_variable = { gdpmn < 0.05 }
+					check_variable = { gdpmn > 0 }
+				}
+			}
+			modifier = {
+				add = 5
+				check_variable = { gdp_inflation = 0 }
+			}
+			modifier = {
+				add = -100
+				check_variable = { gdp_inflation > 50 } #50%
+			}
+	    }
+		
+		visible = { }
+		
+        available = {
+			NOT = { 
+				has_decision = NE_print_money_medium
+				has_decision = NE_print_money_large
+			}
+        }
+		
+		complete_effect = {
+			set_variable = { inflation_increase = 10 }
+		}
+		
+		modifier = {
+		    production_speed_industrial_complex_factor = 0.30
+		    production_speed_infrastructure_factor = 0.30
+	    }
+		
+		fire_only_once = no
+		days_remove = 90
+		days_re_enable = 0
+		cost = 50
+		
+		remove_effect = {
+			set_variable = { inflation_increase = 0 }
+		}
+	}
+	NE_print_money_medium = {
+		icon = GFX_economy00_invest
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 10
+				AND = {
+					check_variable = { gdpmn < 0.05 }
+					check_variable = { gdpmn > 0 }
+				}
+			}
+			modifier = {
+				add = 5
+				check_variable = { gdp_inflation = 0 }
+			}
+			modifier = {
+				add = -100
+				check_variable = { gdp_inflation > 50 } #50%
+			}
+	    }
+		
+		visible = { }
+		
+        available = {
+			NOT = { 
+				has_decision = NE_print_money_small
+				has_decision = NE_print_money_large
+			}
+        }
+		
+		complete_effect = {
+		
+			set_variable = { inflation_increase = 20 }
+	
+		}
+		
+		modifier = {
+		    production_speed_industrial_complex_factor = 0.50
+		    production_speed_infrastructure_factor = 0.50
+	    }
+		
+		fire_only_once = no
+		days_remove = 90
+		days_re_enable = 0
+		cost = 75
+		
+		remove_effect = {
+			set_variable = { inflation_increase = 0 }
+		}
+	}
+	NE_print_money_large = {
+		icon = GFX_economy00_invest
+		
+		ai_will_do = {
+			base = -10
+			modifier = {
+				add = 10
+				AND = {
+					check_variable = { gdpmn < 0.05 }
+					check_variable = { gdpmn > 0 }
+				}
+			}
+			modifier = {
+				add = 5
+				check_variable = { gdp_inflation = 0 }
+			}
+			modifier = {
+				add = -100
+				check_variable = { gdp_inflation > 50 } #50%
+			}
+	    }
+		
+		visible = { }
+		
+        available = {
+			NOT = { 
+				has_decision = NE_print_money_small
+				has_decision = NE_print_money_medium
+			}
+        }
+		
+		complete_effect = {
+		
+			set_variable = { inflation_increase = 30 }
+	
+		}
+		
+		modifier = {
+		    production_speed_industrial_complex_factor = 0.80
+		    production_speed_infrastructure_factor = 0.80
+	    }
+		
+		fire_only_once = no
+		days_remove = 90
+		days_re_enable = 0
+		cost = 100
+		
+		remove_effect = {
+			set_variable = { inflation_increase = 0 }
+		}
+	}
+}

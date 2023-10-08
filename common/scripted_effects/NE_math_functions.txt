@@ -1,0 +1,49 @@
+ne_square_root_calculation = {
+
+	set_variable = { error = 1000 }
+
+	set_variable = { min_border = 0 }
+	
+	set_variable = { transient = ne_square_root }#evaluated
+
+	while_loop_effect = {
+	
+		limit = {
+			OR = {
+				check_variable = { error > 1 }
+				check_variable = { error < -1 }
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { error > 0 }
+			}
+			set_variable = { max_border = transient}##
+		}
+		else = {
+			set_variable = { min_border = transient}
+		}
+
+		set_variable = { transient = min_border }
+		
+		add_to_variable = { transient = max_border }
+		
+		divide_variable = { transient = 2 } #median
+		
+		set_variable = { transient_mul = transient }
+		
+		multiply_variable = { transient_mul = transient }#^2
+		
+		set_variable = { error = transient_mul }
+		
+		subtract_from_variable = { error = ne_square_root }
+	}
+
+	set_variable = { ne_square_root = transient }
+	
+	clear_variable = error
+	clear_variable = min_border
+	clear_variable = max_border
+	clear_variable = transient
+	clear_variable = transient_mul
+}

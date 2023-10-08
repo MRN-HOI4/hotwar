@@ -1,0 +1,10 @@
+﻿PRK = {
+	male = {
+		names = { "Hee-Seok" "Jae-Hoon" "Shin-Woo" Sang Gun Kwang Woong Chul Hyuk "Yoon-Gi" "Han-gyeol" }
+	}
+	female = {
+		names = { "Ae-jung" Bora "Chae-won" "Hye-ja" "Ji-young" "Seong-ja" Sora "Yeo-jin" "Kyung-hee" }
+	}
+	surnames = { Kim Cho Lee Park Jeong Choe Jang Yun Rim Ryu Gang }
+	callsigns = { }
+}

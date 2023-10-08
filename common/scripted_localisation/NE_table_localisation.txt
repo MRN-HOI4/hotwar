@@ -1,0 +1,56 @@
+defined_text = {
+    name = GetGDPTitle
+    text = {
+        localization_key = "GDP_TITLE"
+    }
+
+}
+
+defined_text = { 
+    name = TableGetVariableToSort
+    text = {
+        trigger = { check_variable = { sort_var = 1 } }
+        localization_key = "gdpmn"
+    }
+    text = {
+        trigger = { check_variable = { sort_var = 2 } }
+        localization_key = "gdp_growth"
+    }
+    text = {
+        trigger = { check_variable = { sort_var = 3 } }
+        localization_key = "gdp_inflation"
+    }
+    text = {
+        trigger = { check_variable = { sort_var = 4 } }
+        localization_key = "max_manpower_k"
+    }
+    text = {
+        trigger = { check_variable = { sort_var = 5 } }
+        localization_key = "core_population"
+    }
+    text = {
+        trigger = { check_variable = { sort_var = 6 } }
+        localization_key = "gdp_per_capita"
+    }
+    text = {
+        trigger = { check_variable = { sort_var = 7 } }
+        localization_key = "gdp_per_capita_core"
+    }
+    text = {
+        trigger = { check_variable = { sort_var = 8 } }
+        localization_key = "gdp_proportion"
+    }
+
+}
+
+defined_text = {
+    name = TableGetQSCompare
+    text = {
+        trigger = { check_variable = { table_qs_compare = 1 } }
+        localization_key = "less_than_or_equals"
+    }
+    text = {
+        localization_key = "greater_than_or_equals"
+    }
+
+}

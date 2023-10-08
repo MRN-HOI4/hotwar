@@ -1,0 +1,281 @@
+ideas = {
+
+    country = {
+        oil_crisis_idea_1 = {
+
+            allowed = {
+				always = no
+			}
+
+			cancel = {
+                OR = {
+					AND = {
+						is_in_faction_with = LIB
+						NOT = {
+							LIB = { has_civil_war = yes }
+						}
+					}
+					AND = {
+						is_in_faction_with = IRQ
+						NOT = {
+							IRQ = { has_civil_war = yes }
+						}
+					}
+                }
+			}
+
+            picture = chi_hyper_inflation
+
+            removal_cost = -1
+
+            modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.1
+				fuel_gain_factor = -0.25
+				base_fuel_gain_factor = -0.25
+			}
+
+        }
+        oil_crisis_idea_2 = {
+
+            allowed = {
+				always = no
+			}
+
+			cancel = {
+                OR = {
+					AND = {
+						is_in_faction_with = LIB
+						NOT = {
+							LIB = { has_civil_war = yes }
+						}
+					}
+					AND = {
+						is_in_faction_with = IRQ
+						NOT = {
+							IRQ = { has_civil_war = yes }
+						}
+					}
+                }
+			}
+
+            picture = chi_hyper_inflation2
+
+            removal_cost = -1
+
+            modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				production_speed_buildings_factor = -0.2
+				research_speed_factor = -0.3
+				fuel_gain_factor = -0.50
+				base_fuel_gain_factor = -0.50
+			}
+
+        }
+        oil_crisis_idea_3 = {
+
+            allowed = {
+				always = no
+			}
+
+			cancel = {
+                OR = {
+					AND = {
+						is_in_faction_with = LIB
+						NOT = {
+							LIB = { has_civil_war = yes }
+						}
+					}
+					AND = {
+						is_in_faction_with = IRQ
+						NOT = {
+							IRQ = { has_civil_war = yes }
+						}
+					}
+                }
+			}
+
+            picture = chi_hyper_inflation3
+
+            removal_cost = -1
+
+            modifier = {
+				consumer_goods_factor = 0.25
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
+				production_speed_buildings_factor = -0.3
+				research_speed_factor = -0.4
+				fuel_gain_factor = -0.60
+				base_fuel_gain_factor = -0.60
+			}
+
+        }
+        oil_crisis_idea_4 = {
+
+            allowed = {
+				always = no
+			}
+
+			cancel = {
+                OR = {
+					AND = {
+						is_in_faction_with = LIB
+						NOT = {
+							LIB = { has_civil_war = yes }
+						}
+					}
+					AND = {
+						is_in_faction_with = IRQ
+						NOT = {
+							IRQ = { has_civil_war = yes }
+						}
+					}
+                }
+			}
+
+            picture = chi_hyper_inflation4
+
+            removal_cost = -1
+
+            modifier = {
+				consumer_goods_factor = 0.35
+				industrial_capacity_factory = -0.4
+				industrial_capacity_dockyard = -0.4
+				production_speed_buildings_factor = -0.4
+				research_speed_factor = -0.5
+				fuel_gain_factor = -0.70
+				base_fuel_gain_factor = -0.70
+			}
+
+        }
+        oil_crisis_idea_5 = {
+
+            allowed = {
+				always = no
+			}
+
+			cancel = {
+                OR = {
+					AND = {
+						is_in_faction_with = LIB
+						NOT = {
+							LIB = { has_civil_war = yes }
+						}
+					}
+					AND = {
+						is_in_faction_with = IRQ
+						NOT = {
+							IRQ = { has_civil_war = yes }
+						}
+					}
+                }
+			}
+
+            picture = chi_hyper_inflation5
+
+            removal_cost = -1
+
+            modifier = {
+				consumer_goods_factor = 0.45
+				industrial_capacity_factory = -0.5
+				industrial_capacity_dockyard = -0.5
+				production_speed_buildings_factor = -0.5
+				research_speed_factor = -0.6
+				fuel_gain_factor = -0.80
+				base_fuel_gain_factor = -0.80
+			}
+
+        }
+        oil_crisis_idea_6 = {
+
+            allowed = {
+				always = no
+			}
+
+			cancel = {
+                OR = {
+					AND = {
+						is_in_faction_with = LIB
+						NOT = {
+							LIB = { has_civil_war = yes }
+						}
+					}
+					AND = {
+						is_in_faction_with = IRQ
+						NOT = {
+							IRQ = { has_civil_war = yes }
+						}
+					}
+                }
+			}
+
+            picture = POL_disjointed_industry
+
+            removal_cost = -1
+
+            modifier = {
+				consumer_goods_factor = 0.55
+				industrial_capacity_factory = -0.6
+				industrial_capacity_dockyard = -0.6
+				production_speed_buildings_factor = -0.6
+				research_speed_factor = -0.7
+				fuel_gain_factor = -0.90
+				base_fuel_gain_factor = -0.90
+			}
+
+        }
+		energy_saving_campaign = {
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+                
+			}
+
+			picture = generic_flexible_foreign_policy2
+
+			modifier = {
+				stability_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.05
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_efficiency_gain_factor = -0.1
+				political_power_factor = -0.1
+			}
+
+		}
+		oil_rationing_system = {
+
+			allowed = {
+				always = no
+			}
+
+			cancel = {
+                
+			}
+
+			picture = hol_aloof_neutrality
+
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.10
+				industrial_capacity_factory = -0.02
+				industrial_capacity_dockyard = -0.02
+				production_speed_buildings_factor = -0.02
+				research_speed_factor = -0.02
+				political_power_factor = -0.3
+			}
+		}
+
+    }
+    
+}

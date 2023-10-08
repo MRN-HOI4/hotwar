@@ -1,0 +1,39 @@
+impose_asset_freezing = {
+	ROOT = {
+		add_opinion_modifier = { target = PREV modifier = new_freeze }
+		add_relation_modifier = { target = PREV modifier = freeze_static_modifier }
+		
+		every_other_country = {
+			if = {
+				limit = {
+					NOT = { is_ally_with = ROOT }##
+				}
+			add_opinion_modifier = { target = ROOT modifier = freeze_criticism }
+			}
+		}
+		set_country_flag = {
+			flag = impose_asset_recess
+			days = 15	##interval
+			value = 1
+		}
+	}
+	PREV = {
+		add_opinion_modifier = { target = ROOT modifier = new_freeze_opinion }
+		remove_opinion_modifier = { target = ROOT modifier = freeze_lifted }
+	}
+}
+
+cancel_freezing = {
+	ROOT = {
+		remove_opinion_modifier = { target = PREV modifier = new_freeze }
+		remove_relation_modifier = { target = PREV modifier = freeze_static_modifier }
+
+		every_other_country = {
+			remove_opinion_modifier = { target = ROOT modifier = freeze_criticism }
+		}
+	}
+	PREV = {
+		add_opinion_modifier = { target = ROOT modifier = freeze_lifted }
+		remove_opinion_modifier = { target = ROOT modifier = new_freeze_opinion }
+	}
+}

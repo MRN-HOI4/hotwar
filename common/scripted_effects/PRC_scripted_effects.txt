@@ -1,0 +1,68 @@
+cultural_revolution_aftereffect_level_up = {
+
+	if = {
+		limit = { has_idea = PRC_cultural_revolution_aftereffect_1 }
+		swap_ideas = {
+			remove_idea = PRC_cultural_revolution_aftereffect_1
+            add_idea = PRC_cultural_revolution_aftereffect_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = PRC_cultural_revolution_aftereffect_2 }
+		swap_ideas = {
+			remove_idea = PRC_cultural_revolution_aftereffect_2
+			add_idea = PRC_cultural_revolution_aftereffect_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = PRC_cultural_revolution_aftereffect_3 }
+		swap_ideas = {
+			remove_idea = PRC_cultural_revolution_aftereffect_3
+			add_idea = PRC_cultural_revolution_aftereffect_4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = PRC_cultural_revolution_aftereffect_4 }
+		swap_ideas = {
+			remove_idea = PRC_cultural_revolution_aftereffect_4
+			add_idea = PRC_cultural_revolution_aftereffect_5
+		}
+	}
+	else_if = {
+		limit = { has_idea = PRC_cultural_revolution_aftereffect_5 }
+		swap_ideas = {
+			remove_idea = PRC_cultural_revolution_aftereffect_5
+		}
+	}
+}
+
+villages_movement_level_up = {
+	if = {
+		limit = { has_idea = PRC_villages_movement_1 }
+		swap_ideas = {
+			remove_idea = PRC_villages_movement_1
+            add_idea = PRC_villages_movement_2
+		}
+	}
+	else_if = {
+		limit = { has_idea = PRC_villages_movement_2 }
+		swap_ideas = {
+			remove_idea = PRC_villages_movement_2
+			add_idea = PRC_villages_movement_3
+		}
+	}
+	else_if = {
+		limit = { has_idea = PRC_villages_movement_3 }
+		swap_ideas = {
+			remove_idea = PRC_villages_movement_3
+			add_idea = PRC_villages_movement_4
+		}		
+	}
+	else_if = {
+		limit = { has_idea = PRC_villages_movement_4 }
+		swap_ideas = {
+			remove_idea = PRC_villages_movement_4
+			add_idea = PRC_villages_movement_5
+		}
+	}
+}

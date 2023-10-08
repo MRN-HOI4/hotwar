@@ -1,0 +1,101 @@
+bonus_research_slot_rule = {
+	name = "RULE_bonus_research_slot"
+	group = "RULE_GROUP_research"
+	icon = GFX_decision_generic_research
+	option = {
+		name = "EVERYONE_ONE"
+		text = "RULE_OPTION_EVERYONE_ONE"
+		desc = "RULE_OPTION_EVERYONE_ONE_desc"
+		allow_achievements = yes
+	}
+  option = {
+    name = "EVERYONE_TWO"
+    text = "RULE_OPTION_EVERYONE_TWO"
+    desc = "RULE_OPTION_EVERYONE_TWO_desc"
+		allow_achievements = yes
+  }
+  option = {
+    name = "RANDOM_EXTRA"
+    text = "RULE_OPTION_RANDOM_EXTRA"
+    desc = "RULE_OPTION_RANDOM_EXTRA_desc"
+		allow_achievements = yes
+  }
+  option = {
+    name = "RANDOM"
+    text = "RULE_OPTION_RANDOM"
+    desc = "RULE_OPTION_RANDOM_desc"
+		allow_achievements = yes
+  }
+  option = {
+    name = "MINORS_ONE"
+    text = "RULE_OPTION_MINORS_ONE"
+    desc = "RULE_OPTION_MINORS_ONE_desc"
+		allow_achievements = yes
+  }
+	option = {
+		name = "MINORS_TWO"
+		text = "RULE_OPTION_MINORS_TWO"
+		desc = "RULE_OPTION_MINORS_TWO_desc"
+		allow_achievements = yes
+	}
+  option = {
+    name = "MAJORS_ONE"
+    text = "RULE_OPTION_MAJORS_ONE"
+    desc = "RULE_OPTION_MAJORS_ONE_desc"
+		allow_achievements = yes
+  }
+  option = {
+    name = "MINORS_TWO_MAJORS_ONE"
+    text = "RULE_OPTION_MINORS_TWO_MAJORS_ONE"
+    desc = "RULE_OPTION_MINORS_TWO_MAJORS_ONE_desc"
+		allow_achievements = yes
+  }
+  option = {
+    name = "ABSOLUTE_FIVE"
+    text = "RULE_OPTION_ABSOLUTE_FIVE"
+    desc = "RULE_OPTION_ABSOLUTE_FIVE_desc"
+		allow_achievements = yes
+  }
+  option = {
+    name = "RANDOM_EXTREME"
+    text = "RULE_OPTION_RANDOM_EXTREME"
+    desc = "RULE_OPTION_RANDOM_EXTREME_desc"
+		allow_achievements = yes
+  }
+  option = {
+    name = "EVERYONE_ONLY_ONE"
+    text = "RULE_OPTION_EVERYONE_ONLY_ONE"
+    desc = "RULE_OPTION_EVERYONE_ONLY_ONE_desc"
+		allow_achievements = yes
+  }
+	default = {
+    name = "RULE_OPTION_VANILLA"
+    text = "RULE_OPTION_VANILLA"
+    desc = "RULE_OPTION_VANILLA_brr_desc"
+		allow_achievements = yes
+  }
+  #option = {
+  #  name = "PLAYER_SELECT"
+  #  text = RULE_OPTION_EVERYONE_ONLY_ONE
+  #  desc = "RULE_OPTION_EVERYONE_ONLY_ONE_desc"
+  #}
+}
+
+bonus_research_zeitgeist_rule = {
+	name = "RULE_zeitgeist"
+	group = "RULE_GROUP_research"
+	required_dlc = "Together for Victory"
+  option = {
+		name = "RULE_OPTION_YES"
+		text = "RULE_OPTION_YES"
+		desc = "RULE_zeitgeist_YES_desc"
+		allow_achievements = yes
+	}
+	option = {
+		name = "RULE_OPTION_NO"
+		text = "RULE_OPTION_NO"
+		desc = "RULE_zeitgeist_NO_desc"
+		allow_achievements = yes
+	}
+	
+}

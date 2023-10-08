@@ -1,0 +1,29 @@
+animation = {
+	name = "leopard2_attack_animation"
+	file = "leopard2_attack.anim"
+}
+
+animation = {
+	name = "leopard2_idle_animation"
+	file = "leopard2_idle.anim"
+}
+
+animation = {
+	name = "leopard2_moving_animation"
+	file = "leopard2_moving.anim"
+}
+
+animation = {
+	name = "geo_leo2a4_idle_animation"
+	file = "geo_leo2a4_idle.anim"
+}
+
+animation = {
+	name = "geo_leo2a4_move_animation"
+	file = "geo_leo2a4_move.anim"
+}
+
+animation = {
+	name = "geo_leo2a4_attack_animation"
+	file = "geo_leo2a4_attack.anim"
+}

@@ -1,0 +1,64 @@
+add_namespace = hotwar_eng
+
+
+
+country_event = {
+	id = hotwar_eng.1
+	title = hotwar_eng.1.t
+	desc = hotwar_eng.1.d
+    picture = GFX_report_event_ast_army
+
+    fire_only_once = yes
+
+    is_triggered_only = yes
+	
+	option = {
+		name = hotwar_eng.1.a
+        ai_chance = { factor = 10 }
+        SAU = {
+            transfer_state = 765
+            transfer_state = 658
+            transfer_state = 294
+        }
+	}
+    option = {
+        name = hotwar_eng.1.b
+        ai_chance = { factor = 0 }
+        add_stability = -0.1
+        add_political_power  = -100
+    }
+    
+}
+news_event = {
+    id = hotwar_eng.2
+    title = hotwar_eng.2.t
+	desc = hotwar_eng.2.d
+    picture = GFX_report_event_ast_army
+
+    hidden = yes
+    trigger = {
+        AND = {
+            date > 1971.12.2
+            NOT = { has_global_flag = arab_emirates_independent }
+        }
+
+	}
+
+    mean_time_to_happen = {
+		days = 1
+	}
+
+    immediate = {
+        hidden_effect = {
+            set_global_flag = arab_emirates_independent     
+        }
+		
+	}
+
+    option = {
+		name = hotwar_eng.2.a
+        ENG = { country_event = { id = hotwar_eng.1 } }
+	}
+
+}
+

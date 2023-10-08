@@ -1,0 +1,14 @@
+technology_sharing_group = {
+
+	id = zeitgeist_research
+	name = zeitgeist_research_name
+	desc = zeitgeist_research_desc
+	picture = GFX_technology_sharing_default
+
+ research_sharing_per_country_bonus = 0.005
+
+	 available = {
+		 NOT = { has_country_flag = zeitgeist_research_isolated }
+	 }
+
+}

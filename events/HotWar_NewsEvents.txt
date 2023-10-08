@@ -1,0 +1,105 @@
+add_namespace = hotwar_news
+
+news_event = {
+	id = hotwar_news.1
+	title = hotwar_news.1.t
+	desc = hotwar_news.1.d
+	picture = GFX_end_biafra_war_event
+	
+	major = yes
+
+    trigger = {
+		date > 1970.1.15
+        NOT = { has_global_flag = end_biafra_war }
+	}
+
+    mean_time_to_happen = {
+		days = 1
+	}
+
+    immediate = {
+        hidden_effect = {
+            set_global_flag = end_biafra_war
+            558 = { set_demilitarized_zone = no } 
+            900 = { set_demilitarized_zone = no } 
+            901 = { set_demilitarized_zone = no } 
+            902 = { set_demilitarized_zone = no }
+        }
+		
+	}
+	
+	option = {
+		name = hotwar_news.1.a
+        trigger = {
+            NOT = {
+                TAG = ZZZ
+            }
+			
+		}
+	}
+    option = {
+        name = hotwar_news.1.b
+        trigger = {
+			TAG = ZZZ
+		}
+    }
+}
+
+news_event = {
+	id = hotwar_news.2
+	title = hotwar_news.2.t
+	desc = hotwar_news.2.d
+	picture = GFX_end_north_yemen_war_event
+	
+	major = yes
+
+    trigger = {
+		date > 1970.12.1
+        NOT = { has_global_flag = end_north_yemen_war }
+	}
+
+    mean_time_to_happen = {
+		days = 1
+	}
+
+    immediate = {
+        hidden_effect = {
+            set_global_flag = end_north_yemen_war
+            293 = { set_demilitarized_zone = no } 
+            293 = { add_core_of = EGY }
+            293= { remove_core_of = ZZZ }
+            EGY = {
+                transfer_state = 293
+                set_cosmetic_tag = EGY_yemen
+            }
+        }
+
+		
+	}
+	
+	option = {
+		name = hotwar_news.2.a
+        trigger = {
+            NOT = {
+                OR = {
+                    TAG = EGY
+                    TAG = SAU
+                }
+
+            }
+			
+		}
+	}
+    option = {
+        name = hotwar_news.2.b
+        trigger = {
+			TAG = EGY
+		}
+    }
+    option = {
+        name = hotwar_news.2.c
+        trigger = {
+			TAG = SAU
+		}
+    }
+}

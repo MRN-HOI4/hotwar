@@ -1,0 +1,126 @@
+characters={
+
+	KOR_paik_sonyup={
+		name="백선엽"
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Paik_Son_yup.dds"
+			}
+		}
+		field_marshal={
+			traits={ unyielding_defender }
+			skill=3
+			attack_skill=4
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	KOR_han_moohyup={
+		name="한무협"
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Han_Moo_Hyup_General.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	KOR_kang_munbong={
+		name="강문봉"
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Kang_Mun_Bong.dds"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+
+	KOR_chung_ilkwon={
+		name="정일권"
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Chung.dds"
+			}
+		}
+		field_marshal={
+			traits={ old_guard }
+			skill=3
+			attack_skill=5
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	KOR_chae_myungshin={
+		name="채명신"
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Chae_Myung_Shin.dds"
+			}
+		}
+		field_marshal={
+			skill=2
+			attack_skill=3
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	KOR_shin_hyunjoon={
+		name="신현준"
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Shin_Hyun_joon.dds"
+			}
+		}
+		corps_commander={
+			traits={ naval_invader }
+			skill=2
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+	KOR_chung_doohwan={
+		name="전두환"
+		portraits={
+			army={
+				large="gfx/leaders/KOR/Chung_Doo_hwan.dds"
+			}
+		}
+		corps_commander={
+			traits={ paratrooper }
+			skill=3
+			attack_skill=4
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+}

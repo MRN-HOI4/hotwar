@@ -1,0 +1,445 @@
+NE_ai_select_weapons = {####test
+	##initial
+	set_variable = { PREV.econo_total_cost = 0 }
+	set_variable = { PREV.cart_brand_1 = 0 }
+	set_variable = { PREV.cart_1_purchase_num = 0 }
+	set_variable = { PREV.cart_brand_2 = 0 }
+	set_variable = { PREV.cart_2_purchase_num = 0 }
+	set_variable = { PREV.cart_brand_3 = 0 }
+	set_variable = { PREV.cart_3_purchase_num = 0 }
+	
+	set_variable = { possession = ROOT.gdpmn }
+	multiply_variable = { possession = 10 }#100*enlarge
+	set_variable = { AITotalCost = 0 }
+	set_variable = { AICartBrand_1 = 0 }
+	set_variable = { AICartNums_1 = 0 }
+	set_variable = { AIAddPack_1 = 0 }
+	set_variable = { AICartNumsCap_1 = 0 }
+	set_variable = { AIUnitPrice_1 = 0 }
+	set_variable = { AICartBrand_2 = 0 }
+	set_variable = { AICartNums_2 = 0 }
+	set_variable = { AIAddPack_2 = 0 }
+	set_variable = { AICartNumsCap_2 = 0 }
+	set_variable = { AIUnitPrice_2 = 0 }
+	set_variable = { AICartBrand_3 = 0 }
+	set_variable = { AICartNums_3 = 0 }
+	set_variable = { AIAddPack_3 = 0 }
+	set_variable = { AICartNumsCap_3 = 0 }
+	set_variable = { AIUnitPrice_3 = 0 }
+	set_variable = { AICartBrand_P = 0 }
+	set_variable = { AIAddPack_P = 0 }
+	set_variable = { AICartNumsCap_P = 0 }
+	set_variable = { AIUnitPrice_P = 0 }
+	
+	set_variable = { rate_infantry_equipments = ROOT.num_equipment@infantry_equipment }##infantry
+	divide_variable = { rate_infantry_equipments = ROOT.num_equipment_in_armies@infantry_equipment }
+	multiply_variable = { rate_infantry_equipments = 1 }#amend.para
+	
+	set_variable = { rate_support_equipments = ROOT.num_equipment@support_equipment }##support_equipment
+	divide_variable = { rate_support_equipment = ROOT.num_equipment_in_armies@support_equipment }
+	multiply_variable = { rate_support_equipment = 1.5 }#amend.para
+	
+	set_variable = { rate_artillery_equipments = ROOT.num_equipment@artillery_equipment }##artillery
+	divide_variable = { rate_artillery_equipments = ROOT.num_equipment_in_armies@artillery_equipment }
+	multiply_variable = { rate_artillery_equipments = 1.25 }#amend.para
+	
+	set_variable = { rate_fighter_equipment_0 = ROOT.num_equipment@fighter_equipment }##fighter
+	divide_variable = { rate_fighter_equipments = ROOT.num_deployed_planes_with_type@fighter_equipment }
+	multiply_variable = { rate_fighter_equipments = 3 }#amend.para
+	
+	add_to_array = {
+		array = short_prior
+		value = var:rate_infantry_equipments
+	}
+
+	add_to_array = {
+		array = short_prior
+		value = var:rate_support_equipment
+	}
+
+	add_to_array = {
+		array = short_prior
+		value = var:rate_artillery_equipments
+	}
+
+	add_to_array = {
+		array = short_prior
+		value = var:rate_fighter_equipments
+	}		
+	
+	if={
+		limit = {
+			check_variable = { ROOT.num_ships > 100 }
+		}
+		set_variable = { rate_destroyer = ROOT.num_ships_with_type@destroyer } ##DD
+		divide_variable = { rate_destroyer = ROOT.num_ships }
+		multiply_variable = { rate_destroyer = 2 }#amend.para
+		add_to_array = {
+			array = short_prior
+			value = var:rate_destroyer
+		}		
+	}		
+	
+	find_lowest_in_array = {
+		array = short_prior
+	}
+	while_loop_effect = {
+		limit = {
+			AND = {
+				check_variable = { v < 0.5 }#min[short_prior] >= 0.5 loop out
+				check_variable = { AICartBrand_3 = 0 }#at most 3
+			}
+		}
+		if = {
+			limit = {
+				check_variable = { i = 0 }#infantry
+			}
+			if = {
+				limit = {
+					AND = {
+						has_tech = advanced_infantry_weapons
+						check_variable = { PREV.num_equipment@infantry_equipment_3 > 0 }
+					}
+				}
+				set_variable = { AICartBrand_P = 4 }#infantry_equipment_3
+				set_variable = { AIAddPack_P = 1000 }
+				set_variable = { AIUnitPrice_P = 0.007 }
+				set_variable = { AICartNumsCap_P = PREV.num_equipment@infantry_equipment_3 }
+				divide_variable = { AICartNumsCap_P = 3 }
+				round_variable = AICartNumsCap_P
+				AICartPush = yes
+			}
+			else_if = {
+				limit = {
+					AND = {
+						has_tech = improved_infantry_weapons
+						check_variable = { PREV.num_equipment@infantry_equipment_2 > 0 }
+					}
+				}
+				set_variable = { AICartBrand_P = 3 }#infantry_equipment_2
+				set_variable = { AIAddPack_P = 1000 }	
+				set_variable = { AIUnitPrice_P = 0.006 }
+				set_variable = { AICartNumsCap_P = PREV.num_equipment@infantry_equipment_2 }
+				divide_variable = { AICartNumsCap_P = 3 }
+				round_variable = AICartNumsCap_P
+				AICartPush = yes					
+			}
+			else_if = {
+				limit = {
+					AND = {					
+						has_tech = infantry_weapons1
+						check_variable = { PREV.num_equipment@infantry_equipment_1 > 0 }
+					}
+				}
+				set_variable = { AICartBrand_P = 2 }#infantry_equipment_1
+				set_variable = { AIAddPack_P = 1000 }
+				set_variable = { AIUnitPrice_P = 0.005 }		
+				set_variable = { AICartNumsCap_P = PREV.num_equipment@infantry_equipment_1 }
+				divide_variable = { AICartNumsCap_P = 3 }
+				round_variable = AICartNumsCap_P
+				AICartPush = yes					
+			}
+			else_if = {
+				limit = {
+					AND = {					
+						has_tech = infantry_weapons
+						check_variable = { PREV.num_equipment@infantry_equipment_0 > 0 }
+					}
+				}
+				set_variable = { AICartBrand_P = 1 }#infantry_equipment_0
+				set_variable = { AIAddPack_P = 1000 }	
+				set_variable = { AIUnitPrice_P = 0.004 }	
+				set_variable = { AICartNumsCap_P = PREV.num_equipment@infantry_equipment_0 }
+				divide_variable = { AICartNumsCap_P = 3 }
+				round_variable = AICartNumsCap_P					
+				AICartPush = yes					
+			}			
+			set_variable = { short_prior^i = 1000 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { i = 1 }#support
+			}
+			if = {
+				limit = {
+					check_variable = { PREV.num_equipment@support_equipment > 0 }		
+				}
+				set_variable = { AICartBrand_P = 5 }#support_equipment
+				set_variable = { AIAddPack_P = 100 }
+				set_variable = { AIUnitPrice_P = 0.05 }
+				set_variable = { AICartNumsCap_P = PREV.num_equipment@support_equipment }
+				divide_variable = { AICartNumsCap_P = 3 }
+				round_variable = AICartNumsCap_P					
+				AICartPush = yes				
+			}
+			set_variable = { short_prior^i = 1000 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { i = 2 }#artillery
+			}
+			if = {
+				limit = {
+					AND = {	
+						has_tech = artillery4
+						check_variable = { PREV.num_equipment@artillery_equipment_3 > 0 }
+					}
+				}
+				set_variable = { AICartBrand_P = 10 }#artillery_equipment_3
+				set_variable = { AIAddPack_P = 100 }
+				set_variable = { AIUnitPrice_P = 0.06 }	
+				set_variable = { AICartNumsCap_P = PREV.num_equipment@artillery_equipment_3 }
+				divide_variable = { AICartNumsCap_P = 3 }	
+				round_variable = AICartNumsCap_P					
+				AICartPush = yes					
+			}
+			else_if = {
+				limit = {
+					AND = {	
+						has_tech = artillery1
+						check_variable = { PREV.num_equipment@artillery_equipment_2 > 0 }
+					}
+				}
+				set_variable = { AICartBrand_P = 9 }#artillery_equipment_2
+				set_variable = { AIAddPack_P = 100 }			
+				set_variable = { AIUnitPrice_P = 0.045 }		
+				set_variable = { AICartNumsCap_P = PREV.num_equipment@artillery_equipment_2 }
+				divide_variable = { AICartNumsCap_P = 3 }	
+				round_variable = AICartNumsCap_P	
+				AICartPush = yes					
+			}
+			else_if = {
+				limit = {
+					AND = {	
+						has_tech = gw_artillery
+						check_variable = { PREV.num_equipment@artillery_equipment_1 > 0 }
+					}
+				}
+				set_variable = { AICartBrand_P = 8 }#artillery_equipment_1
+				set_variable = { AIAddPack_P = 100 }					
+				set_variable = { AIUnitPrice_P = 0.035 }
+				set_variable = { AICartNumsCap_P = PREV.num_equipment@artillery_equipment_1 }
+				divide_variable = { AICartNumsCap_P = 3 }
+				round_variable = AICartNumsCap_P	
+				AICartPush = yes
+			}
+			set_variable = { short_prior^i = 1000 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { i = 3 }#fighter
+			}
+			if = {
+				limit = {
+					AND = {	
+						has_tech = fighter3
+						check_variable = { PREV.num_equipment@fighter_equipment_3 > 0 }
+					}
+				}
+				set_variable = { AICartBrand_P = 66 }#fighter_equipment_3
+				set_variable = { AIAddPack_P = 10 }	
+				set_variable = { AIUnitPrice_P = 0.28 }
+				set_variable = { AICartNumsCap_P = PREV.num_equipment@fighter_equipment_3 }
+				divide_variable = { AICartNumsCap_P = 3 }
+				round_variable = AICartNumsCap_P
+				AICartPush = yes					
+			}
+			else_if = {
+				limit = {
+					AND = {	
+						has_tech = fighter2
+						check_variable = { PREV.num_equipment@fighter_equipment_2 > 0 }
+					}
+				}
+				set_variable = { AICartBrand_P = 65 }#fighter_equipment_2
+				set_variable = { AIAddPack_P = 10 }
+				set_variable = { AIUnitPrice_P = 0.26 }	
+				set_variable = { AICartNumsCap_P = PREV.num_equipment@fighter_equipment_2 }
+				divide_variable = { AICartNumsCap_P = 3 }
+				round_variable = AICartNumsCap_P
+				AICartPush = yes					
+			}
+			else_if = {
+				limit = {
+					AND = {	
+						has_tech = fighter1
+						check_variable = { PREV.num_equipment@fighter_equipment_1 > 0 }
+					}
+				}
+				set_variable = { AICartBrand_P = 64 }#fighter_equipment_1
+				set_variable = { AIAddPack_P = 10 }
+				set_variable = { AIUnitPrice_P = 0.24 }		
+				set_variable = { AICartNumsCap_P = PREV.num_equipment@fighter_equipment_1 }
+				divide_variable = { AICartNumsCap_P = 3 }
+				round_variable = AICartNumsCap_P
+				AICartPush = yes					
+			}
+			else_if = {
+				limit = {
+					AND = {	
+						has_tech = early_fighter
+						check_variable = { PREV.num_equipment@fighter_equipment_0 > 0 }
+					}
+				}
+				set_variable = { AICartBrand_P = 63 }#fighter_equipment_0
+				set_variable = { AIAddPack_P = 10 }
+				set_variable = { AIUnitPrice_P = 0.22 }		
+				set_variable = { AICartNumsCap_P = PREV.num_equipment@fighter_equipment_0 }
+				divide_variable = { AICartNumsCap_P = 3 }
+				round_variable = AICartNumsCap_P
+				AICartPush = yes					
+			}
+			set_variable = { short_prior^i = 1000 }
+		}
+		else_if = {
+			limit = {
+				check_variable = { i = 4 }#DD
+			}
+			if = {
+				limit = {
+					check_variable = { PREV.num_ships_with_type@destroyer > 0 }
+				}
+				set_variable = { AICartBrand_P = 103 }#destroyer
+				set_variable = { AIAddPack_P = 1 }
+				set_variable = { AIUnitPrice_P = 10 }
+				set_variable = { AICartNumsCap_P = PREV.num_ships_with_type@destroyer }
+				divide_variable = { AICartNumsCap_P = 3 }
+				round_variable = AICartNumsCap_P
+				AICartPush = yes
+			}					
+			set_variable = { short_prior^i = 1000 }
+		}
+		find_lowest_in_array = {
+			array = short_prior
+		}
+	}
+	
+	set_variable = { AICartBrand_P = 0 }
+	
+	while_loop_effect = {
+		limit = {
+			AND = {
+				check_variable = { possession > 0 }
+				check_variable = { AICartBrand_1 > 0 }
+				OR = {
+					check_variable = { AICartNums_1 < AICartNumsCap_1 }
+					check_variable = { AICartNums_2 < AICartNumsCap_2 }
+					check_variable = { AICartNums_3 < AICartNumsCap_3 }
+				}
+			}
+		}
+		if = {
+			limit = {
+				AND = {
+					check_variable = { possession > 0 }
+					check_variable = { AICartBrand_1 > 0 }
+					check_variable = { AICartNums_1 < AICartNumsCap_1 }
+				}
+			}
+			add_to_variable = { AICartNums_1 = AIAddPack_1 }
+			set_temp_variable = { temp20 = AIUnitPrice_1 }
+			multiply_temp_variable = { temp20 = AIAddPack_1 }
+			add_to_variable = { AITotalCost = temp20 }
+			subtract_from_variable = {possession = temp20}
+		}
+		if = {
+			limit = {
+				AND = {
+					check_variable = { possession > 0 }
+					check_variable = { AICartBrand_2 > 0 }
+					check_variable = { AICartNums_2 < AICartNumsCap_2 }
+				}
+			}
+			add_to_variable = { AICartNums_2 = AIAddPack_2 }
+			set_temp_variable = { temp20 = AIUnitPrice_2 }
+			multiply_temp_variable = { temp20 = AIAddPack_2 }
+			add_to_variable = { AITotalCost = temp20 }
+			subtract_from_variable = {possession = temp20}
+		}
+		if = {
+			limit = {
+				AND = {
+					check_variable = { possession > 0 }
+					check_variable = { AICartBrand_3 > 0 }
+					check_variable = { AICartNums_3 < AICartNumsCap_3 }
+				}
+			}
+			add_to_variable = { AICartNums_3 = AIAddPack_3 }
+			set_temp_variable = { temp20 = AIUnitPrice_3 }
+			multiply_temp_variable = { temp20 = AIAddPack_3 }
+			add_to_variable = { AITotalCost = temp20 }
+			subtract_from_variable = {possession = temp20}
+		}
+	}
+	divide_variable = { AITotalCost = 100 }##0.1GDP
+	set_variable = { PREV.econo_total_cost = AITotalCost }
+	set_variable = { PREV.cart_brand_1 = AICartBrand_1 }
+	set_variable = { PREV.cart_1_purchase_num = AICartNums_1 }
+	#set_variable = { PREV.cart_1_purchase_num = AIAddPack_1 }##pass
+	set_variable = { PREV.cart_brand_2 = AICartBrand_2 }
+	set_variable = { PREV.cart_2_purchase_num = AICartNums_2 }
+	set_variable = { PREV.cart_brand_3 = AICartBrand_3 }
+	set_variable = { PREV.cart_3_purchase_num = AICartNums_3 }
+	set_variable = { PREV.cart_num = 3 } ##
+	clear_sales_ai_related = yes
+
+}
+##assistFunctions
+AICartPush = {
+	if = {
+		limit = {
+			check_variable = { AICartBrand_1 = 0 }
+		}
+		set_variable = { AICartBrand_1 = AICartBrand_P }
+		set_variable = { AIAddPack_1 = AIAddPack_P }
+		set_variable = { AIUnitPrice_1 = AIUnitPrice_P }
+		set_variable = { AICartNumsCap_1 = AICartNumsCap_P }
+	}
+	else_if = {
+		limit = {
+			check_variable = { AICartBrand_2 = 0 }
+		}
+		set_variable = { AICartBrand_2 = AICartBrand_P }
+		set_variable = { AIAddPack_2 = AIAddPack_P }
+		set_variable = { AIUnitPrice_2 = AIUnitPrice_P }
+		set_variable = { AICartNumsCap_2 = AICartNumsCap_P }
+	 }
+	else_if = {
+		limit = {
+			check_variable = { AICartBrand_3 = 0 }
+		}
+		set_variable = { AICartBrand_3 = AICartBrand_P }
+		set_variable = { AIAddPack_3 = AIAddPack_P }
+		set_variable = { AIUnitPrice_3 = AIUnitPrice_P }
+		set_variable = { AICartNumsCap_3 = AICartNumsCap_P }
+	}
+}
+clear_sales_ai_related = {
+	clear_variable = possession
+	clear_variable = AITotalCost
+	clear_variable = AICartBrand_1	
+	clear_variable = AICartNums_1	
+	clear_variable = AIAddPack_1
+	clear_variable = AIUnitPrice_1
+	clear_variable = AICartBrand_2
+	clear_variable = AICartNums_2
+	clear_variable = AIAddPack_2
+	clear_variable = AIUnitPrice_2	
+	clear_variable = AICartBrand_3
+	clear_variable = AICartNums_3
+	clear_variable = AIAddPack_3
+	clear_variable = AIUnitPrice_3
+	clear_variable = AICartBrand_P	
+	clear_variable = AIAddPack_P
+	clear_variable = AIUnitPrice_P
+	clear_variable = AICartNumsCap_1
+	clear_variable = AICartNumsCap_2
+	clear_variable = AICartNumsCap_3	
+	clear_variable = AICartNumsCap_P
+	clear_variable = rate_infantry_equipments	
+	clear_variable = rate_support_equipments
+	clear_variable = rate_artillery_equipments
+	clear_variable = rate_fighter_equipment_0
+	clear_variable = rate_destroyer
+	clear_array = short_prior
+}

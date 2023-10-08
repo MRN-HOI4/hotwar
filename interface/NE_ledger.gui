@@ -1,0 +1,376 @@
+guiTypes = {
+############### surface ############
+	containerWindowType = {
+		name = "gdp_container"
+		position = { x = 1090 y = 4 }	#1100
+		
+		iconType ={
+			name ="gdp_bg"
+			spriteType = "GFX_generic_box"
+			position = { x=0 y=0 }
+		}
+		
+		iconType = {
+			name ="money_icon"
+			spriteType = "GFX_money"
+			position = { x= 3 y = 6 }
+		}
+		buttonType = {
+			name ="gdp_icon"
+			spriteType = "GFX_gdp_table_icon" #72
+			position = { x= 80 y = 1}
+			shortcut = "ctrl+e"
+			pdx_tooltip = "Table_OPEN"
+		}
+		
+		instantTextBoxType = {
+			name ="gdp_text"
+			position = { x= 23 y = 4 }
+			font = "hoi_18mbs"
+			text = "GDP_MAIN"
+			format = left
+			maxWidth = 100
+			maxHeight = 24
+			fixedsize = yes
+			
+			
+			pdx_tooltip = "GDP_TOOLTIP" 
+		}
+	}
+	
+############### table ############
+
+
+    containerWindowType = {
+		name = "table_container"
+		position = { x=0 y =0 }
+		size = {width=1024 height =703 }
+		clipping = no
+		Orientation = center
+		origo = center
+		moveable = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_table"
+		}
+		
+		buttonType = {
+			name = "close"
+			position = {x=-40 y=22}	
+			spriteType = "GFX_closebutton"
+			orientation = "UPPER_RIGHT"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+
+		instantTextBoxType = {
+			name = "gdp_title"
+			position = { x = 290 y = 18 }
+			
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0}
+			text = "GDP_TITLE_SL"	
+			maxWidth = 450
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		
+			Orientation = "UPPER_LEFT"
+		}
+
+
+        buttonType = {
+            name = "country_header"
+            position = { x=50 y =106}
+            font = "hoi_16mbs"
+            buttonText = "Table_Country"
+			quadTextureSprite = "GFX_ggg_overlay_150_20"
+			format = center
+			pdx_tooltip = "TABLE_REFRESH_TT"
+			clicksound = click_default
+        }
+	
+		containerWindowType = {
+			name = "countries_info_1"
+			position = { x=30 y =106 }
+			clipping = no
+
+
+            
+            buttonType = {
+                name = "gdp_header"
+                position = { x = 150 y = 0 }
+                font = "hoi_16mbs"
+                text = "Table_GDP"
+                quadTextureSprite = "GFX_ggg_overlay_100_20"
+                format = center
+                pdx_tooltip = "TABLE_SORT_TT"
+                clicksound = click_default
+            }
+
+            buttonType = {
+                name = "gdp_growth_header"
+                position = { x = 250 y = 0 }
+                font = "hoi_16mbs"
+                text = "Table_GDP_GROWTH"
+                quadTextureSprite = "GFX_ggg_overlay_100_20"
+                format = center
+                pdx_tooltip = "TABLE_SORT_TT"
+                clicksound = click_default
+            }
+
+            buttonType = {
+                name = "gdp_inflation_header"
+                position = { x = 350 y = 0 }
+                font = "hoi_16mbs"
+                text = "Table_GDP_INFLATION"
+                quadTextureSprite = "GFX_ggg_overlay_100_20"
+                format = center
+                pdx_tooltip = "TABLE_SORT_TT"
+                clicksound = click_default
+            }
+
+            buttonType = {
+                name = "population_header"
+                position = { x = 450 y = 0 }
+                font = "hoi_16mbs"
+                text = "Table_POPULATION"
+                quadTextureSprite = "GFX_ggg_overlay_100_20"
+                format = center
+                pdx_tooltip = "TABLE_SORT_TT"
+                clicksound = click_default
+            }
+
+
+            buttonType = {
+                name = "population_core_header"
+                position = { x = 550 y = 0 }
+                font = "hoi_16mbs"
+                text = "Table_POPULATION_CORE"
+                quadTextureSprite = "GFX_ggg_overlay_100_20"
+                format = center
+                pdx_tooltip = "TABLE_SORT_TT"
+                clicksound = click_default
+            }
+			
+			
+            buttonType = {
+                name = "gdp_per_capita_header"
+                position = { x = 650 y = 0 }
+                font = "hoi_16mbs"
+                text = "Table_GDP_PER_CAPITA"
+                quadTextureSprite = "GFX_ggg_overlay_100_20"
+                format = center
+                pdx_tooltip = "TABLE_SORT_TT"
+                clicksound = click_default
+            }
+
+
+            buttonType = {
+                name = "gdp_per_capita_core_header"
+                position = { x = 750 y = 0 }
+                font = "hoi_16mbs"
+                text = "Table_GDP_PER_CAPITA_CORE"
+                quadTextureSprite = "GFX_ggg_overlay_100_20"
+                format = center
+                pdx_tooltip = "TABLE_SORT_TT"
+                clicksound = click_default
+            }
+			
+			
+            buttonType = {
+                name = "proportion_header"
+                position = { x = 850 y = 0 }
+                font = "hoi_16mbs"
+                text = "Table_PROPORTION"
+                quadTextureSprite = "GFX_ggg_overlay_100_20"
+                format = center
+                pdx_tooltip = "TABLE_SORT_TT"
+                clicksound = click_default
+            }
+
+		}
+
+        containerWindowType = {
+            name = "countries_info_list"
+            position = { x=30 y =128 }
+            size = { width = 994 height=524 }
+            margin = { top = 8 bottom = 8 }
+            verticalScrollbar = "right_vertical_slider"
+            
+            background = {
+                name = "Background"
+                quadTextureSprite ="GFX_tiled_window_transparent"
+            }
+            
+            gridboxType = {
+                name ="country_list"
+                position = { x = 0 y = 0 }
+                padding = { top = 50 bottom = 50 }
+                size = { width = 100%% height = 100%% }
+                slotsize = { width = 270 height = 25 }
+                format = "UPPER_LEFT"
+                #add_horizontal = no
+                max_slots_horizontal = 1
+            }
+        }
+		
+	}
+
+	containerWindowType = {
+		name = "table_country_entry_1"
+		
+		iconType = {
+			name = "flag"
+			quadTextureSprite ="GFX_flag_small"
+			position = { x = 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			allwaystransparent = yes
+		}	
+
+		iconType ={
+			name ="major_overlay"
+			spriteType = "GFX_flag_small_golden_frame"
+			position = { x = 0 y = 0 }
+			Orientation = "UPPER_LEFT"
+			alwaystransparent = yes
+		}
+
+		instantTextBoxType = {
+			name = "country_name"
+			position = { x = 43 y = 0 }
+			
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[?this.GetName]"
+			pdx_tooltip = "TABLE_COUNTRY_TT"	
+			maxWidth = 175
+			maxHeight = 20
+			fixedsize = yes	
+		
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "gdp"
+			position = { x = 150 y = 0 }
+			
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[?this.gdpmn|3]B"
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "gdp_growth"
+			position = { x = 250 y = 0 }
+			
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[?this.gdp_growth|2]%"
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "gdp_inflation"
+			position = { x = 350 y = 0 }
+			
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[?this.gdp_inflation|2]%"
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = yes	
+			format = center
+		
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			name = "population"
+			position = { x = 450 y = 0 }
+			
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[?this.max_manpower_k|2]k"	
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = yes	
+			format = center			
+		
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "population_core"
+			position = { x = 550 y = 0 }
+			
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[?this.core_population|2]k"
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = yes	
+			format = center			
+		
+			Orientation = "UPPER_LEFT"
+		}
+		
+		instantTextBoxType = {
+			name = "gdp_per_capita"
+			position = { x = 650 y = 0 }
+			
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[?this.gdp_per_capita|2]"	
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = yes	
+			format = center		
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "gdp_per_capita_core"
+			position = { x = 750 y = 0 }
+			
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[?this.gdp_per_capita_core|2]"	
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = yes	
+			format = center		
+			Orientation = "UPPER_LEFT"
+		}
+
+		instantTextBoxType = {
+			name = "proportion"
+			position = { x = 850 y = 0 }
+			
+			font = "hoi_16mbs"
+			borderSize = {x = 0 y = 0}
+			text = "[?this.gdp_proportion|3]%"	
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = yes	
+			format = center		
+			Orientation = "UPPER_LEFT"
+		}
+		
+	}
+	
+
+}

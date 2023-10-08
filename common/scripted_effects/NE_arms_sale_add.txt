@@ -1,0 +1,1431 @@
+
+set_cart_assistant = {
+	if = {
+		limit = { 
+			has_variable = cart_num				
+		}
+##########do noting
+	}
+	else = {
+		set_variable = { cart_num = 0 }	
+############## ID		
+		set_variable = { cart_brand_1 = 0 }	
+		set_variable = { cart_brand_2 = 0 }	
+		set_variable = { cart_brand_3 = 0 }	
+		set_variable = { cart_brand_4 = 0 }	
+		set_variable = { cart_brand_5 = 0 }	
+		set_variable = { cart_brand_6 = 0 }	
+		set_variable = { cart_brand_7 = 0 }	#temp one
+############## IC
+		set_variable = { cart_cost_1 = 0 }	
+		set_variable = { cart_cost_2 = 0 }	
+		set_variable = { cart_cost_3 = 0 }	
+		set_variable = { cart_cost_4 = 0 }	
+		set_variable = { cart_cost_5 = 0 }	
+		set_variable = { cart_cost_6 = 0 }	
+		set_variable = { cart_cost_7 = 0 }	#temp one
+############## STOCK
+		set_variable = { cart_stock_1 = 0 }	
+		set_variable = { cart_stock_2 = 0 }	
+		set_variable = { cart_stock_3 = 0 }	
+		set_variable = { cart_stock_4 = 0 }	
+		set_variable = { cart_stock_5 = 0 }	
+		set_variable = { cart_stock_6 = 0 }	
+		set_variable = { cart_stock_7 = 0 }	#temp one
+############## RATE
+		set_variable = { cart_rate_1 = 0 }	
+		set_variable = { cart_rate_2 = 0 }	
+		set_variable = { cart_rate_3 = 0 }	
+		set_variable = { cart_rate_4 = 0 }	
+		set_variable = { cart_rate_5 = 0 }	
+		set_variable = { cart_rate_6 = 0 }	
+		set_variable = { cart_rate_7 = 0 }	#temp one
+	}
+}
+
+cart_indicator_move = {
+
+	add_to_variable = {cart_num = 1}
+
+	if = {
+		limit = { 
+			has_variable = cart_1_purchase_num				
+		}
+##########do noting
+	}
+	else = {	
+		set_variable = { cart_1_purchase_num = 0 }	
+		set_variable = { cart_2_purchase_num = 0 }	
+		set_variable = { cart_3_purchase_num = 0 }	
+		set_variable = { cart_4_purchase_num = 0 }	
+		set_variable = { cart_5_purchase_num = 0 }	
+		set_variable = { cart_6_purchase_num = 0 }			
+	}
+	
+}
+
+cart_brand_cost_pointer = {
+
+	if = {
+		limit = { 
+			check_variable = { cart_num = 1 }		##cart_num = 1	
+		}
+		set_variable = { cart_brand_1 = brand_pointer }
+		set_variable = { cart_cost_1 = cost_pointer }
+		set_variable = { cart_stock_1 = stock_pointer }
+		set_variable = { cart_rate_1 = rate_pointer }
+	}
+	else_if = {
+		limit = { 
+			check_variable = { cart_num = 2 }		##cart_num = 2		
+		}
+		if = {
+			limit = {
+				check_variable = { brand_pointer = cart_brand_1 }	###avoid same one							
+			}
+			subtract_from_variable = { cart_num = 1 }
+		}
+		else = {
+			set_variable = { cart_brand_2 = brand_pointer }
+			set_variable = { cart_cost_2 = cost_pointer }
+			set_variable = { cart_stock_2 = stock_pointer }
+			set_variable = { cart_rate_2 = rate_pointer }
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { cart_num = 3 }			##cart_num = 3	
+		}
+		if = {
+			limit = {
+				OR = {
+					check_variable = { brand_pointer = cart_brand_1 }
+					check_variable = { brand_pointer = cart_brand_2 }						
+				}			
+			}
+			subtract_from_variable = { cart_num = 1 }
+		}
+		else = {
+			set_variable = { cart_brand_3 = brand_pointer }
+			set_variable = { cart_cost_3 = cost_pointer }
+			set_variable = { cart_stock_3 = stock_pointer }
+			set_variable = { cart_rate_3 = rate_pointer }
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { cart_num = 4 }			##cart_num = 4	
+		}
+		if = {
+			limit = {
+				OR = {
+					check_variable = { brand_pointer = cart_brand_1 }
+					check_variable = { brand_pointer = cart_brand_2 }
+					check_variable = { brand_pointer = cart_brand_3 }						
+				}			
+			}
+			subtract_from_variable = { cart_num = 1 }
+		}
+		else = {
+			set_variable = { cart_brand_4 = brand_pointer }
+			set_variable = { cart_cost_4 = cost_pointer }
+			set_variable = { cart_stock_4 = stock_pointer }
+			set_variable = { cart_rate_4 = rate_pointer }
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { cart_num = 5 }			##cart_num = 5	
+		}
+		if = {
+			limit = {
+				OR = {
+					check_variable = { brand_pointer = cart_brand_1 }
+					check_variable = { brand_pointer = cart_brand_2 }
+					check_variable = { brand_pointer = cart_brand_3 }
+					check_variable = { brand_pointer = cart_brand_4 }						
+				}			
+			}
+			subtract_from_variable = { cart_num = 1 }
+		}
+		else = {
+			set_variable = { cart_brand_5 = brand_pointer }
+			set_variable = { cart_cost_5 = cost_pointer }
+			set_variable = { cart_stock_5 = stock_pointer }
+			set_variable = { cart_rate_5 = rate_pointer }
+		}
+	}
+	else_if = {
+		limit = { 
+			check_variable = { cart_num = 6 }			##cart_num = 6	
+		}
+		if = {
+			limit = {
+				OR = {
+					check_variable = { brand_pointer = cart_brand_1 }
+					check_variable = { brand_pointer = cart_brand_2 }
+					check_variable = { brand_pointer = cart_brand_3 }
+					check_variable = { brand_pointer = cart_brand_4 }
+					check_variable = { brand_pointer = cart_brand_5 }						
+				}			
+			}
+			subtract_from_variable = { cart_num = 1 }
+		}
+		else = {
+			set_variable = { cart_brand_6 = brand_pointer }
+			set_variable = { cart_cost_6 = cost_pointer }
+			set_variable = { cart_stock_6 = stock_pointer }
+			set_variable = { cart_rate_6 = rate_pointer }
+		}
+	}
+	else = {                                              ###cart_num > 6 beyond limit
+#####################do noting		
+	}
+}
+
+
+infantry_add_to_cart = {
+	if = {
+		limit = { 
+			check_variable = { infantry_key = 1 }		##### 1--19		
+		}
+		set_variable = { brand_pointer = 1 }	
+		set_variable = { cost_pointer = 0.004 }
+		set_variable = { stock_pointer = econo_stock_infantry_equipment_0 }	
+		set_variable = { rate_pointer = rate_infantry_equipment_0 }
+		cart_brand_cost_pointer = yes		
+	}
+	else_if = {
+		limit = { 
+			check_variable = { infantry_key = 2 }				
+		}
+		set_variable = { brand_pointer = 2 }	
+		set_variable = { cost_pointer = 0.005 }
+		set_variable = { stock_pointer = econo_stock_infantry_equipment_1 }
+		set_variable = { rate_pointer = rate_infantry_equipment_1 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { infantry_key = 3 }			
+		}
+		set_variable = { brand_pointer = 3 }	
+		set_variable = { cost_pointer = 0.006 }
+		set_variable = { stock_pointer = econo_stock_infantry_equipment_2 }
+		set_variable = { rate_pointer = rate_infantry_equipment_2 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { infantry_key = 4 }				
+		}
+		set_variable = { brand_pointer = 4 }	
+		set_variable = { cost_pointer = 0.007 }
+		set_variable = { stock_pointer = econo_stock_infantry_equipment_3 }
+		set_variable = { rate_pointer = rate_infantry_equipment_3 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { infantry_key = 5 }				
+		}
+		set_variable = { brand_pointer = 5 }	
+		set_variable = { cost_pointer = 0.05 }
+		set_variable = { stock_pointer = econo_stock_support_equipment }
+		set_variable = { rate_pointer = rate_support_equipment }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { infantry_key = 6 }			
+		}
+		set_variable = { brand_pointer = 6 }	
+		set_variable = { cost_pointer = 0.03 }	
+		set_variable = { stock_pointer = econo_stock_motorized_equipment }
+		set_variable = { rate_pointer = rate_motorized_equipment }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { infantry_key = 7 }	
+		}
+		set_variable = { brand_pointer = 7 }	
+		set_variable = { cost_pointer = 0.05 }
+		set_variable = { stock_pointer = econo_stock_mechanized_equipment }	
+		set_variable = { rate_pointer = rate_mechanized_equipment }
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { infantry_key = 8 }	
+		}
+		set_variable = { brand_pointer = 8 }	
+		set_variable = { cost_pointer = 0.035 }
+		set_variable = { stock_pointer = econo_stock_artillery_equipment_1 }	
+		set_variable = { rate_pointer = rate_artillery_equipment_1 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { infantry_key = 9 }
+		}
+		set_variable = { brand_pointer = 9 }	
+		set_variable = { cost_pointer = 0.045 }
+		set_variable = { stock_pointer = econo_stock_artillery_equipment_2 }
+		set_variable = { rate_pointer = rate_artillery_equipment_2 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { infantry_key = 10 }
+		}
+		set_variable = { brand_pointer = 10 }	
+		set_variable = { cost_pointer = 0.06 }
+		set_variable = { stock_pointer = econo_stock_artillery_equipment_3 }
+		set_variable = { rate_pointer = rate_artillery_equipment_3 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { infantry_key = 11 }
+		}
+		set_variable = { brand_pointer = 11 }	
+		set_variable = { cost_pointer = 0.05 }
+		set_variable = { stock_pointer = econo_stock_rocket_artillery_equipment_1 }	
+		set_variable = { rate_pointer = rate_rocket_artillery_equipment_1 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { infantry_key = 12 }
+		}
+		set_variable = { brand_pointer = 12 }	
+		set_variable = { cost_pointer = 0.06 }
+		set_variable = { stock_pointer = econo_stock_rocket_artillery_equipment_2 }
+		set_variable = { rate_pointer = rate_rocket_artillery_equipment_2 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { infantry_key = 13 }
+		}
+		set_variable = { brand_pointer = 13 }	
+		set_variable = { cost_pointer = 0.06 }
+		set_variable = { stock_pointer = econo_stock_motorized_rocket_equipment }
+		set_variable = { rate_pointer = rate_motorized_rocket_equipment }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { infantry_key = 14 }
+		}
+		set_variable = { brand_pointer = 14 }	
+		set_variable = { cost_pointer = 0.04 }
+		set_variable = { stock_pointer = econo_stock_anti_tank_equipment_1 }
+		set_variable = { rate_pointer = rate_anti_tank_equipment_1 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { infantry_key = 15 }
+		}
+		set_variable = { brand_pointer = 15 }	
+		set_variable = { cost_pointer = 0.05 }
+		set_variable = { stock_pointer = econo_stock_anti_tank_equipment_2 }
+		set_variable = { rate_pointer = rate_anti_tank_equipment_2 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { infantry_key = 16 }
+		}
+		set_variable = { brand_pointer = 16 }	
+		set_variable = { cost_pointer = 0.06 }
+		set_variable = { stock_pointer = econo_stock_anti_tank_equipment_3 }
+		set_variable = { rate_pointer = rate_anti_tank_equipment_3 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { infantry_key = 17 }
+		}
+		set_variable = { brand_pointer = 17 }	
+		set_variable = { cost_pointer = 0.04 }
+		set_variable = { stock_pointer = econo_stock_anti_air_equipment_1 }	
+		set_variable = { rate_pointer = rate_anti_air_equipment_1 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { infantry_key = 18 }
+		}
+		set_variable = { brand_pointer = 18 }	
+		set_variable = { cost_pointer = 0.05 }	
+		set_variable = { stock_pointer = econo_stock_anti_air_equipment_2 }
+		set_variable = { rate_pointer = rate_anti_air_equipment_2 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { infantry_key = 19 }
+		}
+		set_variable = { brand_pointer = 19 }	
+		set_variable = { cost_pointer = 0.06 }
+		set_variable = { stock_pointer = econo_stock_anti_air_equipment_3 }	
+		set_variable = { rate_pointer = rate_anti_air_equipment_3 }		
+		cart_brand_cost_pointer = yes			
+	}
+
+}
+
+#####################################################
+armor_add_to_cart = {										##### 20--62		
+	if = {
+		limit = { 
+			check_variable = { armor_key = 1 }				
+		}
+		set_variable = { brand_pointer = 20 }	
+		set_variable = { cost_pointer = 0.07 }
+		set_variable = { stock_pointer = econo_stock_light_tank_equipment_1 }
+		set_variable = { rate_pointer = rate_light_tank_equipment_1 }		
+		cart_brand_cost_pointer = yes		
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 2 }				
+		}
+		set_variable = { brand_pointer = 21 }	
+		set_variable = { cost_pointer = 0.08 }
+		set_variable = { stock_pointer = econo_stock_light_tank_equipment_2 }
+		set_variable = { rate_pointer = rate_light_tank_equipment_2 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 3 }			
+		}
+		set_variable = { brand_pointer = 22 }	
+		set_variable = { cost_pointer = 0.09 }
+		set_variable = { stock_pointer = econo_stock_light_tank_equipment_3 }
+		set_variable = { rate_pointer = rate_light_tank_equipment_3 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 4 }				
+		}
+		set_variable = { brand_pointer = 23 }	
+		set_variable = { cost_pointer = 0.08 }	
+		set_variable = { stock_pointer = econo_stock_light_tank_artillery_equipment_1 }
+		set_variable = { rate_pointer = rate_light_tank_artillery_equipment_1 }
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 5 }				
+		}
+		set_variable = { brand_pointer = 24 }	
+		set_variable = { cost_pointer = 0.09 }
+		set_variable = { stock_pointer = econo_stock_light_tank_artillery_equipment_2 }	
+		set_variable = { rate_pointer = rate_light_tank_artillery_equipment_2 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 6 }	
+		}
+		set_variable = { brand_pointer = 25 }	
+		set_variable = { cost_pointer = 0.1 }
+		set_variable = { stock_pointer = econo_stock_light_tank_artillery_equipment_3 }	
+		set_variable = { rate_pointer = rate_light_tank_artillery_equipment_3 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 7 }	
+		}
+		set_variable = { brand_pointer = 26 }	
+		set_variable = { cost_pointer = 0.08 }
+		set_variable = { stock_pointer = econo_stock_light_tank_destroyer_equipment_1 }
+		set_variable = { rate_pointer = rate_light_tank_destroyer_equipment_1 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 8 }	
+		}
+		set_variable = { brand_pointer = 27 }	
+		set_variable = { cost_pointer = 0.09 }
+		set_variable = { stock_pointer = econo_stock_light_tank_destroyer_equipment_2 }
+		set_variable = { rate_pointer = rate_light_tank_destroyer_equipment_2 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 9 }
+		}
+		set_variable = { brand_pointer = 28 }	
+		set_variable = { cost_pointer = 0.1 }
+		set_variable = { stock_pointer = econo_stock_light_tank_destroyer_equipment_3 }
+		set_variable = { rate_pointer = rate_light_tank_destroyer_equipment_3 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 10 }
+		}
+		set_variable = { brand_pointer = 29 }	
+		set_variable = { cost_pointer = 0.08 }
+		set_variable = { stock_pointer = econo_stock_light_tank_aa_equipment_1 }
+		set_variable = { rate_pointer = rate_light_tank_aa_equipment_1 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 11 }
+		}
+		set_variable = { brand_pointer = 30 }	
+		set_variable = { cost_pointer = 0.09 }
+		set_variable = { stock_pointer = econo_stock_light_tank_aa_equipment_2 }
+		set_variable = { rate_pointer = rate_light_tank_aa_equipment_2 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 12 }
+		}
+		set_variable = { brand_pointer = 31 }	
+		set_variable = { cost_pointer = 0.1 }
+		set_variable = { stock_pointer = econo_stock_light_tank_aa_equipment_3 }
+		set_variable = { rate_pointer = rate_light_tank_aa_equipment_3 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 13 }
+		}
+		set_variable = { brand_pointer = 32 }	
+		set_variable = { cost_pointer = 0.12 }
+		set_variable = { stock_pointer = econo_stock_medium_tank_equipment_1 }
+		set_variable = { rate_pointer = rate_medium_tank_equipment_1 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 14 }
+		}
+		set_variable = { brand_pointer = 33 }	
+		set_variable = { cost_pointer = 0.13 }
+		set_variable = { stock_pointer = econo_stock_medium_tank_equipment_2 }
+		set_variable = { rate_pointer = rate_medium_tank_equipment_2 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 15 }
+		}
+		set_variable = { brand_pointer = 34 }	
+		set_variable = { cost_pointer = 0.14 }
+		set_variable = { stock_pointer = econo_stock_medium_tank_equipment_3 }
+		set_variable = { rate_pointer = rate_medium_tank_equipment_3 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 16 }
+		}
+		set_variable = { brand_pointer = 35 }	
+		set_variable = { cost_pointer = 0.12 }
+		set_variable = { stock_pointer = econo_stock_medium_tank_artillery_equipment_1 }
+		set_variable = { rate_pointer = rate_medium_tank_artillery_equipment_1 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 17 }
+		}
+		set_variable = { brand_pointer = 36 }	
+		set_variable = { cost_pointer = 0.13 }
+		set_variable = { stock_pointer = econo_stock_medium_tank_artillery_equipment_2 }
+		set_variable = { rate_pointer = rate_medium_tank_artillery_equipment_2 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 18 }
+		}
+		set_variable = { brand_pointer = 37 }	
+		set_variable = { cost_pointer = 0.14 }
+		set_variable = { stock_pointer = econo_stock_medium_tank_artillery_equipment_3 }
+		set_variable = { rate_pointer = rate_medium_tank_artillery_equipment_3 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 19 }
+		}
+		set_variable = { brand_pointer = 38 }	
+		set_variable = { cost_pointer = 0.12 }
+		set_variable = { stock_pointer = econo_stock_medium_tank_destroyer_equipment_1 }
+		set_variable = { rate_pointer = rate_medium_tank_destroyer_equipment_1 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 20 }
+		}
+		set_variable = { brand_pointer = 39 }	
+		set_variable = { cost_pointer = 0.13 }
+		set_variable = { stock_pointer = econo_stock_medium_tank_destroyer_equipment_2 }
+		set_variable = { rate_pointer = rate_medium_tank_destroyer_equipment_2 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 21 }
+		}
+		set_variable = { brand_pointer = 40 }	
+		set_variable = { cost_pointer = 0.14 }
+		set_variable = { stock_pointer = econo_stock_medium_tank_destroyer_equipment_3 }
+		set_variable = { rate_pointer = rate_medium_tank_destroyer_equipment_3 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 22 }
+		}
+		set_variable = { brand_pointer = 41 }	
+		set_variable = { cost_pointer = 0.12 }
+		set_variable = { stock_pointer = econo_stock_medium_tank_aa_equipment_1 }
+		set_variable = { rate_pointer = rate_medium_tank_aa_equipment_1 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 23 }
+		}
+		set_variable = { brand_pointer = 42 }	
+		set_variable = { cost_pointer = 0.13 }
+		set_variable = { stock_pointer = econo_stock_medium_tank_aa_equipment_2 }
+		set_variable = { rate_pointer = rate_medium_tank_aa_equipment_2 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 24 }
+		}
+		set_variable = { brand_pointer = 43 }	
+		set_variable = { cost_pointer = 0.14 }
+		set_variable = { stock_pointer = econo_stock_medium_tank_aa_equipment_3 }
+		set_variable = { rate_pointer = rate_medium_tank_aa_equipment_3 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 25 }
+		}
+		set_variable = { brand_pointer = 44 }	
+		set_variable = { cost_pointer = 0.25 }
+		set_variable = { stock_pointer = econo_stock_heavy_tank_equipment_1 }
+		set_variable = { rate_pointer = rate_heavy_tank_equipment_1 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 26 }
+		}
+		set_variable = { brand_pointer = 45 }	
+		set_variable = { cost_pointer = 0.27 }
+		set_variable = { stock_pointer = econo_stock_heavy_tank_equipment_2 }
+		set_variable = { rate_pointer = rate_heavy_tank_equipment_2 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 27 }
+		}
+		set_variable = { brand_pointer = 46 }	
+		set_variable = { cost_pointer = 0.3 }
+		set_variable = { stock_pointer = econo_stock_heavy_tank_equipment_3 }
+		set_variable = { rate_pointer = rate_heavy_tank_equipment_3 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 28 }
+		}
+		set_variable = { brand_pointer = 47 }	
+		set_variable = { cost_pointer = 0.25 }
+		set_variable = { stock_pointer = econo_stock_heavy_tank_artillery_equipment_1 }
+		set_variable = { rate_pointer = rate_heavy_tank_artillery_equipment_1 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 29 }
+		}
+		set_variable = { brand_pointer = 48 }	
+		set_variable = { cost_pointer = 0.27 }
+		set_variable = { stock_pointer = econo_stock_heavy_tank_artillery_equipment_2 }	
+		set_variable = { rate_pointer = rate_heavy_tank_artillery_equipment_2 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 30 }
+		}
+		set_variable = { brand_pointer = 49 }	
+		set_variable = { cost_pointer = 0.3 }
+		set_variable = { stock_pointer = econo_stock_heavy_tank_artillery_equipment_3 }
+		set_variable = { rate_pointer = rate_heavy_tank_artillery_equipment_3 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 31 }
+		}
+		set_variable = { brand_pointer = 50 }	
+		set_variable = { cost_pointer = 1 }
+		set_variable = { stock_pointer = econo_stock_super_heavy_tank_artillery_equipment_1 }
+		set_variable = { rate_pointer = rate_super_heavy_tank_artillery_equipment_1 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 32 }
+		}
+		set_variable = { brand_pointer = 51 }	
+		set_variable = { cost_pointer = 0.25 }
+		set_variable = { stock_pointer = econo_stock_heavy_tank_destroyer_equipment_1 }	
+		set_variable = { rate_pointer = rate_heavy_tank_destroyer_equipment_1 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 33 }
+		}
+		set_variable = { brand_pointer = 52 }	
+		set_variable = { cost_pointer = 0.27 }
+		set_variable = { stock_pointer = econo_stock_heavy_tank_destroyer_equipment_2 }
+		set_variable = { rate_pointer = rate_heavy_tank_destroyer_equipment_2 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 34 }
+		}
+		set_variable = { brand_pointer = 53 }	
+		set_variable = { cost_pointer = 0.3 }
+		set_variable = { stock_pointer = econo_stock_heavy_tank_destroyer_equipment_3 }
+		set_variable = { rate_pointer = rate_heavy_tank_destroyer_equipment_3 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 35 }
+		}
+		set_variable = { brand_pointer = 54 }	
+		set_variable = { cost_pointer = 1 }
+		set_variable = { stock_pointer = econo_stock_super_heavy_tank_destroyer_equipment_1 }
+		set_variable = { rate_pointer = rate_super_heavy_tank_destroyer_equipment_1 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 36 }
+		}
+		set_variable = { brand_pointer = 55 }	
+		set_variable = { cost_pointer = 0.25 }
+		set_variable = { stock_pointer = econo_stock_heavy_tank_aa_equipment_1 }
+		set_variable = { rate_pointer = rate_heavy_tank_aa_equipment_1 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 37 }
+		}
+		set_variable = { brand_pointer = 56 }	
+		set_variable = { cost_pointer = 0.27 }
+		set_variable = { stock_pointer = econo_stock_heavy_tank_aa_equipment_2 }
+		set_variable = { rate_pointer = rate_heavy_tank_aa_equipment_2 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 38 }
+		}
+		set_variable = { brand_pointer = 57 }	
+		set_variable = { cost_pointer = 0.3 }
+		set_variable = { stock_pointer = econo_stock_heavy_tank_aa_equipment_3 }
+		set_variable = { rate_pointer = rate_heavy_tank_aa_equipment_3 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 39 }
+		}
+		set_variable = { brand_pointer = 58 }	
+		set_variable = { cost_pointer = 1 }
+		set_variable = { stock_pointer = econo_stock_super_heavy_tank_aa_equipment_1 }
+		set_variable = { rate_pointer = rate_super_heavy_tank_aa_equipment_1 }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 40 }
+		}
+		set_variable = { brand_pointer = 59 }	
+		set_variable = { cost_pointer = 0.28 }
+		set_variable = { stock_pointer = econo_stock_modern_tank_equipment }
+		set_variable = { rate_pointer = rate_modern_tank_equipment }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 41 }
+		}
+		set_variable = { brand_pointer = 60 }	
+		set_variable = { cost_pointer = 0.28 }
+		set_variable = { stock_pointer = econo_stock_modern_tank_artillery_equipment }
+		set_variable = { rate_pointer = rate_modern_tank_artillery_equipment }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 42 }
+		}
+		set_variable = { brand_pointer = 61 }	
+		set_variable = { cost_pointer = 0.28 }
+		set_variable = { stock_pointer = econo_stock_modern_tank_destroyer_equipment }
+		set_variable = { rate_pointer = rate_modern_tank_destroyer_equipment }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { armor_key = 43 }
+		}
+		set_variable = { brand_pointer = 62 }	
+		set_variable = { cost_pointer = 0.28 }
+		set_variable = { stock_pointer = econo_stock_modern_tank_aa_equipment }
+		set_variable = { rate_pointer = rate_modern_tank_aa_equipment }		
+		cart_brand_cost_pointer = yes			
+	}
+
+}
+#####################################################
+air_add_to_cart = {										##### 63--100
+
+	if = {
+		limit = { 
+			check_variable = { air_key = 1 }		
+		}
+		set_variable = { brand_pointer = 63 }	
+		set_variable = { cost_pointer = 0.22 }
+		set_variable = { stock_pointer = econo_stock_fighter_equipment_0 }
+		set_variable = { rate_pointer = rate_fighter_equipment_0 }		
+		cart_brand_cost_pointer = yes		
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 2 }	
+		}
+		set_variable = { brand_pointer = 64 }	
+		set_variable = { cost_pointer = 0.24 }
+		set_variable = { stock_pointer = econo_stock_fighter_equipment_1 }
+		set_variable = { rate_pointer = rate_fighter_equipment_1 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 3 }	
+		}
+		set_variable = { brand_pointer = 65 }	
+		set_variable = { cost_pointer = 0.26 }
+		set_variable = { stock_pointer = econo_stock_fighter_equipment_2 }
+		set_variable = { rate_pointer = rate_fighter_equipment_2 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 4 }	
+		}
+		set_variable = { brand_pointer = 66 }	
+		set_variable = { cost_pointer = 0.28 }
+		set_variable = { stock_pointer = econo_stock_fighter_equipment_3 }
+		set_variable = { rate_pointer = rate_fighter_equipment_3 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 5 }	
+		}
+		set_variable = { brand_pointer = 67 }	
+		set_variable = { cost_pointer = 0.26 }
+		set_variable = { stock_pointer = econo_stock_cv_fighter_equipment_0 }
+		set_variable = { rate_pointer = rate_cv_fighter_equipment_0 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 6 }	
+		}
+		set_variable = { brand_pointer = 68 }	
+		set_variable = { cost_pointer = 0.28 }
+		set_variable = { stock_pointer = econo_stock_cv_fighter_equipment_1 }
+		set_variable = { rate_pointer = rate_cv_fighter_equipment_1 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 7 }	
+		}
+		set_variable = { brand_pointer = 69 }	
+		set_variable = { cost_pointer = 0.3 }
+		set_variable = { stock_pointer = econo_stock_cv_fighter_equipment_2 }
+		set_variable = { rate_pointer = rate_cv_fighter_equipment_2 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 8 }	
+		}
+		set_variable = { brand_pointer = 70 }	
+		set_variable = { cost_pointer = 0.32 }
+		set_variable = { stock_pointer = econo_stock_cv_fighter_equipment_3 }
+		set_variable = { rate_pointer = rate_cv_fighter_equipment_3 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 9 }	
+		}
+		set_variable = { brand_pointer = 71 }	
+		set_variable = { cost_pointer = 0.3 }
+		set_variable = { stock_pointer = econo_stock_jet_fighter_equipment_1 }
+		set_variable = { rate_pointer = rate_jet_fighter_equipment_1 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 10 }	
+		}
+		set_variable = { brand_pointer = 72 }	
+		set_variable = { cost_pointer = 0.32 }
+		set_variable = { stock_pointer = econo_stock_jet_fighter_equipment_2 }
+		set_variable = { rate_pointer = rate_jet_fighter_equipment_2 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 11 }	
+		}
+		set_variable = { brand_pointer = 73 }	
+		set_variable = { cost_pointer = 0.28 }
+		set_variable = { stock_pointer = econo_stock_heavy_fighter_equipment_1 }
+		set_variable = { rate_pointer = rate_heavy_fighter_equipment_1 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 12 }	
+		}
+		set_variable = { brand_pointer = 74 }	
+		set_variable = { cost_pointer = 0.30 }
+		set_variable = { stock_pointer = econo_stock_heavy_fighter_equipment_2 }
+		set_variable = { rate_pointer = rate_heavy_fighter_equipment_2 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 13 }	
+		}
+		set_variable = { brand_pointer = 75 }	
+		set_variable = { cost_pointer = 0.32 }
+		set_variable = { stock_pointer = econo_stock_heavy_fighter_equipment_3 }
+		set_variable = { rate_pointer = rate_heavy_fighter_equipment_3 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 14 }	
+		}
+		set_variable = { brand_pointer = 76 }	
+		set_variable = { cost_pointer = 0.22 }
+		set_variable = { stock_pointer = econo_stock_CAS_equipment_1 }	
+		set_variable = { rate_pointer = rate_CAS_equipment_1 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 15 }	
+		}
+		set_variable = { brand_pointer = 77 }	
+		set_variable = { cost_pointer = 0.24 }
+		set_variable = { stock_pointer = econo_stock_CAS_equipment_2 }
+		set_variable = { rate_pointer = rate_CAS_equipment_2 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 16 }	
+		}
+		set_variable = { brand_pointer = 78 }	
+		set_variable = { cost_pointer = 0.26 }
+		set_variable = { stock_pointer = econo_stock_CAS_equipment_3 }
+		set_variable = { rate_pointer = rate_CAS_equipment_3 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 17 }	
+		}
+		set_variable = { brand_pointer = 79 }	
+		set_variable = { cost_pointer = 0.26 }
+		set_variable = { stock_pointer = econo_stock_cv_CAS_equipment_1 }
+		set_variable = { rate_pointer = rate_cv_CAS_equipment_1 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 18 }	
+		}
+		set_variable = { brand_pointer = 80 }	
+		set_variable = { cost_pointer = 0.28 }
+		set_variable = { stock_pointer = econo_stock_cv_CAS_equipment_2 }
+		set_variable = { rate_pointer = rate_cv_CAS_equipment_2 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 19 }	
+		}
+		set_variable = { brand_pointer = 81 }	
+		set_variable = { cost_pointer = 0.3 }
+		set_variable = { stock_pointer = econo_stock_cv_CAS_equipment_3 }
+		set_variable = { rate_pointer = rate_cv_CAS_equipment_3 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 20 }	
+		}
+		set_variable = { brand_pointer = 82 }	
+		set_variable = { cost_pointer = 0.26 }
+		set_variable = { stock_pointer = econo_stock_nav_bomber_equipment_1 }
+		set_variable = { rate_pointer = rate_nav_bomber_equipment_1 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 21 }	
+		}
+		set_variable = { brand_pointer = 83 }	
+		set_variable = { cost_pointer = 0.28 }
+		set_variable = { stock_pointer = econo_stock_nav_bomber_equipment_2 }
+		set_variable = { rate_pointer = rate_nav_bomber_equipment_2 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 22 }	
+		}
+		set_variable = { brand_pointer = 84 }	
+		set_variable = { cost_pointer = 0.3 }
+		set_variable = { stock_pointer = econo_stock_nav_bomber_equipment_3 }
+		set_variable = { rate_pointer = rate_nav_bomber_equipment_3 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 23 }	
+		}
+		set_variable = { brand_pointer = 85 }	
+		set_variable = { cost_pointer = 0.31 }
+		set_variable = { stock_pointer = econo_stock_cv_nav_bomber_equipment_1 }
+		set_variable = { rate_pointer = rate_cv_nav_bomber_equipment_1 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 24 }	
+		}
+		set_variable = { brand_pointer = 86 }	
+		set_variable = { cost_pointer = 0.33 }
+		set_variable = { stock_pointer = econo_stock_cv_nav_bomber_equipment_2 }
+		set_variable = { rate_pointer = rate_cv_nav_bomber_equipment_2 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 25 }	
+		}
+		set_variable = { brand_pointer = 87 }	
+		set_variable = { cost_pointer = 0.35 }
+		set_variable = { stock_pointer = econo_stock_cv_nav_bomber_equipment_3 }
+		set_variable = { rate_pointer = rate_cv_nav_bomber_equipment_3 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 26 }	
+		}
+		set_variable = { brand_pointer = 88 }	
+		set_variable = { cost_pointer = 0.35 }
+		set_variable = { stock_pointer = econo_stock_tac_bomber_equipment_0 }
+		set_variable = { rate_pointer = rate_tac_bomber_equipment_0 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 27 }	
+		}
+		set_variable = { brand_pointer = 89 }	
+		set_variable = { cost_pointer = 0.37 }
+		set_variable = { stock_pointer = econo_stock_tac_bomber_equipment_1 }
+		set_variable = { rate_pointer = rate_tac_bomber_equipment_1 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 28 }	
+		}
+		set_variable = { brand_pointer = 90 }	
+		set_variable = { cost_pointer = 0.39 }
+		set_variable = { stock_pointer = econo_stock_tac_bomber_equipment_2 }
+		set_variable = { rate_pointer = rate_tac_bomber_equipment_2 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 29 }	
+		}
+		set_variable = { brand_pointer = 91 }	
+		set_variable = { cost_pointer = 0.41 }
+		set_variable = { stock_pointer = econo_stock_tac_bomber_equipment_3 }
+				set_variable = { rate_pointer = rate_tac_bomber_equipment_3 }
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 30 }	
+		}
+		set_variable = { brand_pointer = 92 }	
+		set_variable = { cost_pointer = 0.6 }
+		set_variable = { stock_pointer = econo_stock_strat_bomber_equipment_1 }
+		set_variable = { rate_pointer = rate_strat_bomber_equipment_1 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 31 }	
+		}
+		set_variable = { brand_pointer = 93 }	
+		set_variable = { cost_pointer = 0.62 }
+		set_variable = { stock_pointer = econo_stock_strat_bomber_equipment_2 }
+		set_variable = { rate_pointer = rate_strat_bomber_equipment_2 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 32 }	
+		}
+		set_variable = { brand_pointer = 94 }	
+		set_variable = { cost_pointer = 0.64 }
+		set_variable = { stock_pointer = econo_stock_strat_bomber_equipment_3 }
+		set_variable = { rate_pointer = rate_strat_bomber_equipment_3 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 33 }	
+		}
+		set_variable = { brand_pointer = 95 }	
+		set_variable = { cost_pointer = 0.2 }
+		set_variable = { stock_pointer = econo_stock_scout_plane_equipment_1 }
+		set_variable = { rate_pointer = rate_scout_plane_equipment_1 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 34 }	
+		}
+		set_variable = { brand_pointer = 96 }	
+		set_variable = { cost_pointer = 0.3 }
+		set_variable = { stock_pointer = econo_stock_scout_plane_equipment_2 }
+		set_variable = { rate_pointer = rate_scout_plane_equipment_2 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 35 }	
+		}
+		set_variable = { brand_pointer = 97 }	
+		set_variable = { cost_pointer = 0.45 }
+		set_variable = { stock_pointer = econo_stock_jet_tac_bomber_equipment_1 }
+		set_variable = { rate_pointer = rate_jet_tac_bomber_equipment_1 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 36 }	
+		}
+		set_variable = { brand_pointer = 98 }	
+		set_variable = { cost_pointer = 0.5 }
+		set_variable = { stock_pointer = econo_stock_jet_tac_bomber_equipment_2 }
+		set_variable = { rate_pointer = rate_jet_tac_bomber_equipment_2 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 37 }	
+		}
+		set_variable = { brand_pointer = 99 }	
+		set_variable = { cost_pointer = 0.8 }
+		set_variable = { stock_pointer = econo_stock_jet_strat_bomber_equipment_1 }
+		set_variable = { rate_pointer = rate_jet_strat_bomber_equipment_1 }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { air_key = 38 }	
+		}
+		set_variable = { brand_pointer = 100 }	
+		set_variable = { cost_pointer = 0.3 }
+		set_variable = { stock_pointer = econo_stock_rocket_suicide_equipment_1 }
+		set_variable = { rate_pointer = rate_rocket_suicide_equipment_1 }		
+		cart_brand_cost_pointer = yes
+	}
+
+}
+	
+#####################################################
+naval_add_to_cart = {									####101-108
+	if = {
+		limit = { 
+			check_variable = { naval_key = 1 }		##convoys###not available		
+		}
+		set_variable = { brand_pointer = 101 }	
+		set_variable = { cost_pointer = 1 }
+		set_variable = { stock_pointer = econo_amounts_convoy }
+		set_variable = { rate_pointer = rate_convoy }		
+		cart_brand_cost_pointer = yes		
+	}
+	else_if = {
+		limit = { 
+			check_variable = { naval_key = 2 }		##SS				
+		}
+		set_variable = { brand_pointer = 102 }	
+		set_variable = { cost_pointer = 5 }
+		set_variable = { stock_pointer = econo_amounts_submarine }
+		set_variable = { rate_pointer = rate_submarine }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { naval_key = 3 }		##DD			
+		}
+		set_variable = { brand_pointer = 103 }	
+		set_variable = { cost_pointer = 10 }
+		set_variable = { stock_pointer = econo_amounts_destroyer }
+		set_variable = { rate_pointer = rate_destroyer }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { naval_key = 4 }		##CL				
+		}
+		set_variable = { brand_pointer = 104 }	
+		set_variable = { cost_pointer = 30 }
+		set_variable = { stock_pointer = econo_amounts_light_cruiser }
+		set_variable = { rate_pointer = rate_light_cruiser }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { naval_key = 5 }		##CA				
+		}
+		set_variable = { brand_pointer = 105 }	
+		set_variable = { cost_pointer = 40 }
+		set_variable = { stock_pointer = econo_amounts_heavy_cruiser }
+		set_variable = { rate_pointer = rate_heavy_cruiser }		
+		cart_brand_cost_pointer = yes
+	}
+	else_if = {
+		limit = { 
+			check_variable = { naval_key = 6 }		##BC	
+		}
+		set_variable = { brand_pointer = 106 }	
+		set_variable = { cost_pointer = 100 }
+		set_variable = { stock_pointer = econo_amounts_battle_cruiser }
+		set_variable = { rate_pointer = rate_battle_cruiser }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { naval_key = 7 }		##BB	
+		}
+		set_variable = { brand_pointer = 107 }	
+		set_variable = { cost_pointer = 120 }
+		set_variable = { stock_pointer = econo_amounts_battleship }	
+		set_variable = { rate_pointer = rate_battleship }		
+		cart_brand_cost_pointer = yes			
+	}
+	else_if = {
+		limit = { 
+			check_variable = { naval_key = 8 }		##CV	
+		}
+		set_variable = { brand_pointer = 108 }	
+		set_variable = { cost_pointer = 100 }
+		set_variable = { stock_pointer = econo_amounts_carrier }
+		set_variable = { rate_pointer = rate_carrier }		
+		cart_brand_cost_pointer = yes			
+	}
+
+}
+
+
+purchase_num_change = {
+
+	if = {
+		limit = { 
+			has_variable = cart_1_purchase_num	
+		}
+		if = {
+			limit = { 
+				check_variable = { cart_key = 1 }
+			}
+			add_to_variable = { cart_1_purchase_num = cart_num_change }
+			set_temp_variable = { max_purchase_amount = cart_stock_1 }
+			divide_temp_variable = { max_purchase_amount = 3 }
+			round_temp_variable = max_purchase_amount
+			if = {
+				limit = { 
+					check_variable = { cart_1_purchase_num > max_purchase_amount }
+				}
+				set_variable = { cart_1_purchase_num = max_purchase_amount }	    ###not surpass 1/3%
+			}			
+			if = {
+				limit = { 
+					check_variable = { cart_1_purchase_num < 0 }
+				}
+				set_variable = { cart_1_purchase_num = 0 }	             #####min value -- 0
+			}
+		}
+		else_if = {
+			limit = { 
+				check_variable = { cart_key = 2 }
+				check_variable = { cart_num > 1 }				
+			}
+			add_to_variable = { cart_2_purchase_num = cart_num_change }
+			set_temp_variable = { max_purchase_amount = cart_stock_2 }
+			divide_temp_variable = { max_purchase_amount = 3 }
+			round_temp_variable = max_purchase_amount
+			if = {
+				limit = { 
+					check_variable = { cart_2_purchase_num > max_purchase_amount }
+				}
+				set_variable = { cart_2_purchase_num = max_purchase_amount }	 
+			}			
+			if = {
+				limit = { 
+					check_variable = { cart_2_purchase_num < 0 }
+				}
+				set_variable = { cart_2_purchase_num = 0 }	            
+			}
+		}
+		else_if = {
+			limit = { 
+				check_variable = { cart_key = 3 }
+				check_variable = { cart_num > 2 }				
+			}
+			add_to_variable = { cart_3_purchase_num = cart_num_change }
+			set_temp_variable = { max_purchase_amount = cart_stock_3 }
+			divide_temp_variable = { max_purchase_amount = 3 }
+			round_temp_variable = max_purchase_amount
+			if = {
+				limit = { 
+					check_variable = { cart_3_purchase_num > max_purchase_amount }
+				}
+				set_variable = { cart_3_purchase_num = max_purchase_amount }	   
+			}			
+			if = {
+				limit = { 
+					check_variable = { cart_3_purchase_num < 0 }
+				}
+				set_variable = { cart_3_purchase_num = 0 }	          
+			}
+		}
+		else_if = {
+			limit = { 
+				check_variable = { cart_key = 4 }
+				check_variable = { cart_num > 3 }				
+			}
+			add_to_variable = { cart_4_purchase_num = cart_num_change }
+			set_temp_variable = { max_purchase_amount = cart_stock_4 }
+			divide_temp_variable = { max_purchase_amount = 3 }
+			round_temp_variable = max_purchase_amount
+			if = {
+				limit = { 
+					check_variable = { cart_4_purchase_num > max_purchase_amount }
+				}
+				set_variable = { cart_4_purchase_num = max_purchase_amount }	   
+			}			
+			if = {
+				limit = { 
+					check_variable = { cart_4_purchase_num < 0 }
+				}
+				set_variable = { cart_4_purchase_num = 0 }	            
+			}
+		}
+		else_if = {
+			limit = { 
+				check_variable = { cart_key = 5 }
+				check_variable = { cart_num > 4 }				
+			}
+			add_to_variable = { cart_5_purchase_num = cart_num_change }
+			set_temp_variable = { max_purchase_amount = cart_stock_5 }
+			divide_temp_variable = { max_purchase_amount = 3 }
+			round_temp_variable = max_purchase_amount
+			if = {
+				limit = { 
+					check_variable = { cart_5_purchase_num > max_purchase_amount }
+				}
+				set_variable = { cart_5_purchase_num = max_purchase_amount }	  
+			}			
+			if = {
+				limit = { 
+					check_variable = { cart_5_purchase_num < 0 }
+				}
+				set_variable = { cart_5_purchase_num = 0 }	          
+			}
+		}
+		else_if = {
+			limit = { 
+				check_variable = { cart_key = 6 }
+				check_variable = { cart_num > 5 }				
+			}
+			add_to_variable = { cart_6_purchase_num = cart_num_change }
+			set_temp_variable = { max_purchase_amount = cart_stock_6 }
+			divide_temp_variable = { max_purchase_amount = 3 }
+			round_temp_variable = max_purchase_amount
+			if = {
+				limit = { 
+					check_variable = { cart_6_purchase_num > max_purchase_amount }
+				}
+				set_variable = { cart_6_purchase_num = max_purchase_amount }	
+			}			
+			if = {
+				limit = { 
+					check_variable = { cart_6_purchase_num < 0 }
+				}
+				set_variable = { cart_6_purchase_num = 0 }	            
+			}
+		}
+
+	}
+	else = {
+	
+############do noting	
+	}
+	
+}

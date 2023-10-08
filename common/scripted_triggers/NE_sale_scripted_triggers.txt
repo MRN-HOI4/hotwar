@@ -1,0 +1,76 @@
+
+econo_trade_accept = {
+	# base
+	set_temp_variable = { trade_will_accept = -10 }
+
+	if = {
+		limit = { 
+			has_opinion = {
+				target = ROOT
+				value > 50
+			}			
+		}
+		add_to_temp_variable = { trade_will_accept = 20 }
+	}
+	else_if = {
+		limit = { 
+			has_opinion = {
+				target = ROOT
+				value > 20
+			}			
+		}
+		add_to_temp_variable = { trade_will_accept = 5 }
+	}
+	else_if = {
+		limit = { 
+			has_opinion = {
+				target = ROOT
+				value < -20
+			}			
+		}
+		subtract_from_temp_variable = { trade_will_accept = 5 }
+	}
+	else_if = {
+		limit = { 
+			has_opinion = {
+				target = ROOT
+				value < -50
+			}			
+		}
+		subtract_from_temp_variable = { trade_will_accept = 20 }
+	}
+	if = {
+		limit = { 
+			is_puppet_of = ROOT 			
+		}
+		add_to_temp_variable = { trade_will_accept = 50 }
+	}	
+	if = {
+		limit = {
+			has_war = yes		
+		}
+		subtract_from_temp_variable = { trade_will_accept = 10 }
+	}
+	if = {
+		limit = {
+			has_relation_modifier = {
+				target = ROOT
+				modifier = trade_partner_static_modifier
+			}
+		}
+		add_to_temp_variable = { trade_will_accept = 20 }
+	}
+	
+	add_to_temp_variable = { trade_will_accept = var:trade_attitude_value }
+
+	check_variable = { trade_will_accept > 0 }
+
+}
+
+is_commensurate_economy = {
+	set_temp_variable = { temp1 = ROOT.gdpmn }
+	set_temp_variable = { temp2 = THIS.gdpmn }
+	divide_temp_variable = { temp2 = 2 }#0.5
+	check_variable = { temp1 > temp2 }
+}
+

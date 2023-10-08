@@ -1,0 +1,47 @@
+on_actions = {
+    on_nuke_drop = {
+        effect = {
+            if = {
+                limit = { has_tech = my_nuke_tech_2 }
+                randomize_temp_variable = {
+                    var = nuke_drop_casualties
+                    distribution = uniform
+                    min = -13000
+                    max = -26000
+                }
+            }
+            else_if = {
+                limit = { has_tech = my_nuke_tech_3 }
+                randomize_temp_variable = {
+                    var = nuke_drop_casualties
+                    distribution = uniform
+                    min = -24000
+                    max = -28000
+                }
+            }
+            else_if = {
+                limit = { has_tech = my_nuke_tech_4 }
+                randomize_temp_variable = {
+                    var = nuke_drop_casualties
+                    distribution = uniform
+                    min = -26000
+                    max = -32000
+                }
+            }
+            else = {
+                # has_tech = my_nuke_tech_1 and fallback
+                randomize_temp_variable = {
+                    var = nuke_drop_casualties
+                    distribution = uniform
+                    min = -10000
+                    max = -15000
+                }
+            }
+
+            goto_state = FROM
+            FROM = {
+                add_manpower = var:nuke_drop_casualties
+            }
+        }
+    }
+}

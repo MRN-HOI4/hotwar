@@ -1,0 +1,5 @@
+JAP_tank_medium1.mesh = Type 90
+SOV_tank_medium1.mesh = T90
+SOV_modern_armor1.mesh = T-64
+SOV_modern_armor2.mesh = T-72
+SOV_modern_armor3.mesh = T-72 late

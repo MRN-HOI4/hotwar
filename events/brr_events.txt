@@ -1,0 +1,175 @@
+﻿add_namespace = bonus_research_slot
+
+country_event = {
+	id = bonus_research_slot.100
+
+	is_triggered_only = yes
+  hidden = yes
+
+  immediate = {
+
+		## Everyone One
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = bonus_research_slot_rule
+					option = EVERYONE_ONE
+				}
+			}
+			add_research_slot = 1
+		}
+		# Everyone Two
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = bonus_research_slot_rule
+					option = EVERYONE_TWO
+				}
+			}
+			add_research_slot = 2
+		}
+		# Random Extra
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = bonus_research_slot_rule
+					option = RANDOM_EXTRA
+				}
+			}
+			set_temp_variable = { temp1 = random }
+			divide_temp_variable = { temp1 = 3 }
+			multiply_temp_variable = { temp1 = 10 }
+			round_variable = temp1
+			add_research_slot = temp1
+		}
+		# Random
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = bonus_research_slot_rule
+					option = Random
+				}
+			}
+			if = {
+				limit = {
+					is_major = yes
+				}
+				set_research_slots = 2
+			}
+			if = {
+				limit = {
+					NOT = { is_major = yes }
+				}
+				set_research_slots = 1
+			}
+
+			set_temp_variable = { temp1 = random }
+			divide_temp_variable = { temp1 = 2 }
+			multiply_temp_variable = { temp1 = 10 }
+			round_variable = temp1
+
+			add_research_slot = temp1
+		}
+		# Minors One
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = bonus_research_slot_rule
+					option = MINORS_ONE
+				}
+				NOT = { is_major = yes }
+			}
+			add_research_slot = 1
+		}
+		# Minors Two
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = bonus_research_slot_rule
+					option = MINORS_TWO
+				}
+				NOT = { is_major = yes }
+			}
+			add_research_slot = 2
+		}
+		# Majors One
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = bonus_research_slot_rule
+					option = MAJORS_ONE
+				}
+				is_major = yes
+			}
+			add_research_slot = 1
+		}
+		# MINORS_TWO_MAJORS_ONE
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = bonus_research_slot_rule
+					option = MINORS_TWO_MAJORS_ONE
+				}
+			}
+			if = {
+				limit = {
+					is_major = yes
+				}
+				add_research_slot = 1
+			}
+			if = {
+				limit = {
+					NOT = { is_major = yes }
+				}
+				add_research_slot = 2
+			}
+		}
+		# Absolute Five
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = bonus_research_slot_rule
+					option = ABSOLUTE_FIVE
+				}
+			}
+			set_research_slots = 5
+		}
+		# Only One
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = bonus_research_slot_rule
+					option = EVERYONE_ONLY_ONE
+				}
+			}
+			set_research_slots = 1
+		}
+		# RANDOM_EXTREME
+		if = {
+			limit = {
+				has_game_rule = {
+					rule = bonus_research_slot_rule
+					option = RANDOM_EXTREME
+				}
+			}
+			set_research_slots = 1
+
+			set_temp_variable = { temp1 = random }
+			divide_temp_variable = { temp1 = 1.5 }
+			multiply_temp_variable = { temp1 = 10 }
+			round_variable = temp1
+
+			add_research_slot = temp1
+		}
+		## END
+		set_country_flag = bonus_research_slot_assigned
+	}
+
+	option = {
+		name = ara_brs.1.a
+	}
+
+}
+
+##original_research_slots > 3
+##amount_research_slots > 3

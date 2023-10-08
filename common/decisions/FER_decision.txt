@@ -1,0 +1,289 @@
+FER_rebellion_bop_decisions = {
+
+    FER_inmate_regularly_rebellion = {
+
+        icon = generic_civil_support
+
+        available = {
+			always = no
+		}
+
+        activation = {
+			always = yes
+		}
+
+        visible = {
+			always = yes
+		}	
+
+        days_mission_timeout = 14
+
+        fixed_random_seed = no
+
+        fire_only_once = no
+
+        is_good = no
+
+        timeout_effect = {
+            custom_effect_tooltip = random_rebellion_tt
+            hidden_effect = {
+                random_list = {
+                    20 = {
+                        add_power_balance_value = {
+                            id = FER_rebellion_bop
+                            value = -0.01
+                        }
+                    }
+                    20 = {
+                        add_power_balance_value = {
+                            id = FER_rebellion_bop
+                            value = -0.02
+                        }
+                    }
+                    20 = {
+                        add_power_balance_value = {
+                            id = FER_rebellion_bop
+                            value = -0.03
+                        }
+                    }
+                    20 = {
+                        add_power_balance_value = {
+                            id = FER_rebellion_bop
+                            value = -0.04
+                        }
+                    }
+                    20 = {
+                        add_power_balance_value = {
+                            id = FER_rebellion_bop
+                            value = -0.05
+                        }
+                    }
+                }
+            }
+            
+            
+		}
+    }
+
+
+    FER_propitiation_inmate = {
+
+        visible = {
+			always = yes
+		}	
+
+        available = {
+			always = yes
+		}
+
+        ai_will_do = {
+			base = 5
+            modifier  = {
+				add = 300
+				NOT = {
+					is_power_balance_in_range  = {
+						id = FER_rebellion_bop
+						range = FER_rebellion_bop_balanced
+					}
+				}
+			}
+		}
+
+        fire_only_once = no
+
+        days_re_enable = 30
+
+        cost = 50
+
+        complete_effect = {
+            add_stability = 0.05
+            add_power_balance_value = {
+				id = FER_rebellion_bop
+				value = 0.05
+			}
+        }
+
+
+    }
+    
+    FER_promotion_hardlabor = {
+
+        visible = {
+			NOT = {
+                has_idea = promotion_hardlabor_idea
+            }
+		}	
+
+        available = {
+			NOT = {
+                has_idea = promotion_hardlabor_idea
+            }
+		}
+
+        ai_will_do = {
+			base = 5
+            modifier  = {
+				add = 400
+				NOT = {
+					is_power_balance_in_range  = {
+						id = FER_rebellion_bop
+						range = FER_rebellion_bop_balanced
+					}
+				}
+			}
+		}
+
+        fire_only_once = no
+
+        days_re_enable = 30
+
+        cost = 100
+
+        complete_effect = {
+            add_stability = -0.15
+            add_power_balance_value = {
+				id = FER_rebellion_bop
+				value = 0.1
+			}
+            swap_ideas = {
+                remove_idea = stop_hardlabor_idea
+                add_idea = promotion_hardlabor_idea
+            }
+        }
+    }
+
+    FER_oppression_inmate = {
+
+        visible = {
+			always = yes
+		}	
+
+        available = {
+			always = yes
+		}
+
+        ai_will_do = {
+			base = 5
+            modifier  = {
+				add = 500
+				NOT = {
+					is_power_balance_in_range  = {
+						id = FER_rebellion_bop
+						range = FER_rebellion_bop_balanced
+					}
+				}
+			}
+		}
+
+        fire_only_once = no
+
+        days_re_enable = 30
+
+        cost = 150
+
+        complete_effect = {
+            add_stability = -0.1
+            add_power_balance_value = {
+				id = FER_rebellion_bop
+				value = 0.3
+			}
+        }
+    }
+
+    FER_residential_improvements = {
+        visible = {
+			always = yes
+		}	
+
+        available = {
+			always = yes
+		}
+
+        ai_will_do = {
+			factor = 0
+		}
+
+        fire_only_once = no
+
+        days_re_enable = 30
+
+        cost = 50
+
+        complete_effect = {
+            add_stability = 0.05
+            add_power_balance_value = {
+				id = FER_rebellion_bop
+				value = -0.05
+			}
+        }
+    
+    }
+
+    FER_stop_hardlabor = {
+
+        visible = {
+			NOT = {
+                has_idea = stop_hardlabor_idea
+            }
+		}	
+
+        available = {
+			NOT = {
+                has_idea = stop_hardlabor_idea
+            }
+		}
+
+        ai_will_do = {
+			factor = 0
+		}
+
+        fire_only_once = no
+
+        days_re_enable = 30
+
+        cost = 100
+
+        complete_effect = {
+            add_stability = 0.15
+            add_power_balance_value = {
+				id = FER_rebellion_bop
+				value = -0.1
+			}
+            swap_ideas = {
+                remove_idea = promotion_hardlabor_idea
+                add_idea = stop_hardlabor_idea
+            }
+            
+        }
+    }
+
+    FER_MainCharacter_PrisonTransfer = {
+
+        visible = {
+			always = yes
+		}	
+
+        available = {
+			always = yes
+		}
+
+        ai_will_do = {
+			factor = 0
+		}
+
+        fire_only_once = no
+
+        days_re_enable = 30
+
+        cost = 150
+
+        complete_effect = {
+            add_stability = -0.1
+            add_power_balance_value = {
+				id = FER_rebellion_bop
+				value = -0.3
+			}
+        }
+    }
+
+}

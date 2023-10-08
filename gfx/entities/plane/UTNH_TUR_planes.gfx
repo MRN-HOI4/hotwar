@@ -1,0 +1,131 @@
+objectTypes = {
+	pdxmesh = {
+		name = "TUR_F4_mesh"
+		file = "gfx/models/units/planes/TUR/fighter/USA_mr_f4.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	}
+
+	pdxmesh = {
+		name = "TUR_F4C_mesh"
+		file = "gfx/models/units/planes/TUR/fighter/USA_mr_f4.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	}
+
+	pdxmesh = {
+		name = "TUR_F84_mesh"
+		file = "gfx/models/units/planes/TUR/fighter/F84.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F84_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "TUR_F5_mesh"
+		file = "gfx/models/units/planes/TUR/fighter/f_5.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+		scale = 4.00
+	meshsettings = {
+			texture_diffuse = "F_5_new_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "TUR_F84C_mesh"
+		file = "gfx/models/units/planes/TUR/fighter/F84.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F84_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "TUR_F86_mesh"
+		file = "gfx/models/units/planes/TUR/fighter/F86.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F86_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "TUR_F80_mesh"
+		file = "gfx/models/units/planes/TUR/fighter/F80.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F80_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "TUR_F100_mesh"
+		file = "gfx/models/units/planes/TUR/fighter/F100.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F100_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "TUR_F100C_mesh"
+		file = "gfx/models/units/planes/TUR/fighter/F100.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F100_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "TUR_F101_mesh"
+		file = "gfx/models/units/planes/TUR/fighter/F101.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F101_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "TUR_F16A_mesh"
+		file = "gfx/models/units/planes/TUR/fighter/F16A.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F16A_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "TUR_F16AC_mesh"
+		file = "gfx/models/units/planes/TUR/fighter/F16A.mesh"
+		animation = { id = "idle" type = "bomber_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F16A_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "TUR_F16C_mesh"
+		file = "gfx/models/units/planes/TUR/fighter/F16C.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F16C_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "TUR_F102_mesh"
+		file = "gfx/models/units/planes/TUR/interceptor/F102.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F102_diffuse.dds"
+		}
+	}
+
+	pdxmesh = {
+		name = "TUR_F104_mesh"
+		file = "gfx/models/units/planes/TUR/interceptor/F104.mesh"
+		animation = { id = "idle" type = "fighter_default_idle_animation" }
+	meshsettings = {
+			texture_diffuse = "F104_diffuse.dds"
+		}
+	}
+}

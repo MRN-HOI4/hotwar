@@ -1,0 +1,98 @@
+PRC_cultural_revolution_category = {
+
+	PRC_villages_movement_lead = {
+
+		visible = {
+			OR = {
+				OR = {
+					has_idea = PRC_villages_movement_1
+					has_idea = PRC_villages_movement_2
+					has_idea = PRC_villages_movement_3
+					has_idea = PRC_villages_movement_4
+				}
+				OR = {
+				has_idea = PRC_cultural_revolution_aftereffect_1
+				has_idea = PRC_cultural_revolution_aftereffect_2
+				has_idea = PRC_cultural_revolution_aftereffect_3
+				has_idea = PRC_cultural_revolution_aftereffect_4
+				has_idea = PRC_cultural_revolution_aftereffect_5
+				}
+			}
+			
+		}
+		 
+		cost = 200
+		icon = ger_mefo_bills
+		modifier = {
+            political_power_factor = -0.5
+        }
+        remove_effect = {
+            
+            custom_effect_tooltip = PRC_cultural_revolution_aftereffect_up_tt
+            hidden_effect = {
+                cultural_revolution_aftereffect_level_up = yes
+            }
+			custom_effect_tooltip = PRC_villages_movement_up_tt
+            hidden_effect = {
+                villages_movement_level_up = yes
+            }
+        }
+        days_remove = 300
+		days_re_enable = 120
+	}
+
+	PRC_support_army = {
+		visible = {
+			OR = {
+				has_idea = PRC_cultural_revolution_aftereffect_1
+				has_idea = PRC_cultural_revolution_aftereffect_2
+				has_idea = PRC_cultural_revolution_aftereffect_3
+				has_idea = PRC_cultural_revolution_aftereffect_4
+				has_idea = PRC_cultural_revolution_aftereffect_5
+			}
+		}
+		 
+		cost = 100
+		icon = ger_mefo_bills
+		modifier = {
+            political_power_factor = -0.5
+        }
+        remove_effect = {
+            
+            custom_effect_tooltip = PRC_cultural_revolution_aftereffect_up_tt
+            hidden_effect = {
+                cultural_revolution_aftereffect_level_up = yes
+            }
+        }
+        days_remove = 150
+		days_re_enable = 60
+
+	}
+
+	PRC_support_education = {
+		visible = {
+			OR = {
+				has_idea = PRC_villages_movement_1
+				has_idea = PRC_villages_movement_2
+				has_idea = PRC_villages_movement_3
+				has_idea = PRC_villages_movement_4
+			}
+		}
+		 
+		cost = 100
+		icon = ger_mefo_bills
+		modifier = {
+            political_power_factor = -0.5
+        }
+        remove_effect = {
+            
+            custom_effect_tooltip = PRC_villages_movement_up_tt
+            hidden_effect = {
+                villages_movement_level_up = yes
+            }
+        }
+        days_remove = 150
+		days_re_enable = 60
+
+	}
+}

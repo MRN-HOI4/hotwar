@@ -1,0 +1,36 @@
+
+state={
+	id=446
+	name="STATE_446"
+
+	history={
+		owner = EGY
+		buildings = {
+			infrastructure = 3
+			12049 = {
+				naval_base = 2
+
+			}
+
+		}
+		victory_points = {
+			7011 20 
+		}
+		victory_points = {
+			12049 5 
+		}
+		victory_points = {
+			4073 3 
+		}
+		add_core_of = EGY
+
+	}
+
+	provinces={
+		4073 4143 7011 7188 10005 12004 12049 
+	}
+	manpower=131732
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+	local_supplies=0.000
+}

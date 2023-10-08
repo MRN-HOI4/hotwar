@@ -1,0 +1,14 @@
+animation = {
+	name = "Stuarty_moving_animation"
+	file = "Stuarty_moving.anim"
+}
+
+animation = {
+	name = "Stuarty_attack_animation"
+	file = "Stuarty_attack.anim"
+}
+
+animation = {
+	name = "Stuarty_idle_animation"
+	file = "Stuarty_idle.anim"
+}

@@ -1,0 +1,98 @@
+scripted_gui = {
+
+	main_surfff = {
+	    #ai_will_do = { factor = 0 }
+		context_type = player_context
+		window_name = "gdp_container"
+		visible = {
+            always = yes
+		}
+
+		effects = {
+		   gdp_icon_click = {
+				if = {
+					limit = { NOT = { has_variable = gdp_table_open } }
+					open_table = yes
+				}
+		   }		
+		}
+	}
+
+	table_sg = {
+		window_name = "table_container"
+
+		visible = {
+			is_ai = no
+			check_variable = { gdp_table_open > 0 }
+		}
+
+		ai_enabled = {
+           always = no
+       }
+
+		# we have two dynamic lists for this scripted gui
+		dynamic_lists = {
+			# this is the main grid that contains added countries
+			country_list = {
+				array = country_array
+				change_scope = yes
+				entry_container = "table_country_entry_[?Root.gdp_table_open]"
+			}
+		}
+
+        properties = {
+			#change flag textures to actual flag texture
+            flag = {
+                image = "[This.GetFlag]"
+            }
+		}
+		
+		effects = {
+			close_click = {
+				clear_variable = gdp_table_open
+			}
+		}
+		
+		effects = {
+			country_header_click = {
+				update_table_country_array = yes
+			}
+			gdp_header_click = {
+				set_temp_variable = { sort_var = 1 }
+				start_create_sorted_array = yes
+			}
+			gdp_growth_header_click = {
+				set_temp_variable = { sort_var = 2 }
+				start_create_sorted_array = yes
+			}
+			gdp_inflation_header_click = {
+				set_temp_variable = { sort_var = 3 }
+				start_create_sorted_array = yes
+			}
+			population_header_click = {
+				set_temp_variable = { sort_var = 4 }
+				start_create_sorted_array = yes
+			}
+			population_core_header_click = {
+				set_temp_variable = { sort_var = 5 }
+				start_create_sorted_array = yes
+			}
+			gdp_per_capita_header_click = {
+				set_temp_variable = { sort_var = 6 }
+				start_create_sorted_array = yes
+			}
+			gdp_per_capita_core_header_click = {
+				set_temp_variable = { sort_var = 7 }
+				start_create_sorted_array = yes
+			}
+			proportion_header_click = {
+				set_temp_variable = { sort_var = 8 }
+				start_create_sorted_array = yes
+			}
+
+		}
+
+	}
+	
+}
+

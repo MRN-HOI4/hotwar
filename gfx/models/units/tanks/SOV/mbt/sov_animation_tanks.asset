@@ -1,0 +1,77 @@
+
+animation = {
+	name = "t55_attack_animation"
+	file = "t55_attack.anim"
+}
+
+animation = {
+	name = "t55_idle_animation"
+	file = "t55_idle.anim"
+}
+
+animation = {
+	name = "t55_moving_animation"
+	file = "t55_moving.anim"
+}
+
+animation = {
+	name = "t72_attack_animation"
+	file = "t72_attack.anim"
+}
+
+animation = {
+	name = "t72_idle_animation"
+	file = "t72_idle.anim"
+}
+
+animation = {
+	name = "t72_moving_animation"
+	file = "t72_moving.anim"
+}
+
+animation = {
+	name = "t80_attack_animation"
+	file = "t80_attack.anim"
+}
+
+animation = {
+	name = "t80_idle_animation"
+	file = "t80_idle.anim"
+}
+
+animation = {
+	name = "t80_moving_animation"
+	file = "t80_moving.anim"
+}
+
+
+
+animation = {
+	name = "geo_t64_idle_animation"
+	file = "geo_t64_idle.anim"
+}
+
+animation = {
+	name = "geo_t64_move_animation"
+	file = "geo_t64_moving.anim"
+}
+
+animation = {
+	name = "geo_t64_attack_animation"
+	file = "geo_t64_attack.anim"
+}
+
+animation = {
+	name = "geo_t72_idle_animation"
+	file = "geo_t72_idle.anim"
+}
+
+animation = {
+	name = "geo_t72_move_animation"
+	file = "geo_t72_move.anim"
+}
+
+animation = {
+	name = "geo_t72_attack_animation"
+	file = "geo_t72_attack.anim"
+}

@@ -1,0 +1,5 @@
+animation = {
+	name = "g91_idle_animation"
+	file = "g_91_idle.anim"
+}
+

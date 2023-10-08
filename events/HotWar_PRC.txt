@@ -1,0 +1,25 @@
+add_namespace = hotwar_prc
+
+country_event = {
+	id = hotwar_prc.1
+
+    hidden = yes
+    
+    is_triggered_only = yes
+
+    trigger = {
+		date > 1971.9.13
+        NOT = { has_global_flag = lin_biao_coup_detat }
+	}
+
+    immediate = {
+        set_global_flag = lin_biao_coup_detat
+    }
+
+	option = {
+		name = hotwar_prc.1.a
+	}
+    
+}
+
+

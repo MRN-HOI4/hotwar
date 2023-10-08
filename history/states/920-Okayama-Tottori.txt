@@ -1,0 +1,26 @@
+state={
+	id=920
+	name="STATE_920"
+	history={
+		owner = JAP
+		add_core_of = JAP
+		buildings = {
+			infrastructure = 4
+			air_base = 3
+			dockyard = 2
+			arms_factory = 2
+			industrial_complex = 2
+
+		}
+		victory_points = {
+			7212 10
+		}
+	}
+	provinces={
+		1167 4197 7145 7212 10055 
+	}
+	manpower=2275803
+	buildings_max_level_factor=1.000
+	state_category=large_city
+	local_supplies=0.000
+}

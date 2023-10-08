@@ -1,0 +1,229 @@
+KOR_country_develop_decision = {
+    kyongbu_gosokdoro = {
+        fire_only_once = yes
+        complete_effect = {
+            910 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+        visible = {
+            has_completed_focus = KOR_gyeongbugosogdorogaetong
+        }
+    }
+    posco_build = {
+        fire_only_once = yes
+        available = {
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+
+        modifier = {
+            civilian_factory_use = 3
+        }
+        remove_effect = {
+            910 = {
+                add_resource = {
+                    type = steel
+                    amount = 30
+                }
+            }
+        }
+        days_remove = 300
+        visible = {
+            has_completed_focus = KOR_pohangjeceolgeonrib
+        }
+    }
+    gukto_jonghap_plan = {
+        fire_only_once = yes
+        complete_effect = {
+            add_ideas = {
+                gukto_jonghap_plan
+            }
+        }
+        visible = {
+            has_completed_focus = KOR_gugtojonghabgyehoegjejeong
+        }
+    }
+    newtown_plan = {
+        fire_only_once = yes
+        complete_effect = {
+            add_ideas = {
+                newtown_plan
+            }
+        }
+        visible = {
+            has_completed_focus = KOR_saemaeulundonggaesi
+        }
+    }
+    lightning_saup = {
+        fire_only_once = yes
+        available = {
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+
+        modifier = {
+            political_power_cost = 0.3
+            production_factory_efficiency_gain_factor = -0.1
+            production_factory_max_efficiency_factor = -0.1
+        }
+        remove_effect = {
+            add_tech_bonus = {
+                bonus = 0.75
+                uses = 1
+                category = artillery
+            }
+
+            add_tech_bonus = {
+                bonus = 0.75
+                uses = 1
+                category = infantry_weapons
+            }
+            add_tech_bonus = {
+                bonus = 0.75
+                uses = 1
+                category = motorized_equipment
+            }
+            add_tech_bonus = {
+                bonus = 0.75
+                uses = 1
+                category = armor
+            }
+        }
+        days_remove = 100
+        visible = {
+            has_completed_focus = KOR_beongaesaeobgaesi
+        }
+
+    }
+    third_fiveyearplan = {
+        fire_only_once = yes
+        complete_effect = {
+            add_ideas = {
+                third_fiveyearplan
+            }
+        }
+        visible = {
+            has_completed_focus = KOR_3cagyeongjegaebal5gaenyeongyehoegsijag
+        }
+    }
+    tongil_rice = {
+        fire_only_once = yes
+        complete_effect = {
+            add_ideas = {
+                tongil_rice
+            }
+        }
+        visible = {
+            has_completed_focus = KOR_tongilmigaebal
+        }
+    }
+    KBS_build = {
+        fire_only_once = yes
+        complete_effect = {
+            add_ideas = {
+                Korea_brodcasting_channal
+            }
+        }
+        visible = {
+            has_completed_focus = KOR_hangugbangsongseolrib
+        }
+    }
+    heavy_chemical_industry = {
+        fire_only_once = yes
+        available = {
+        }
+
+        ai_will_do = {
+            base = 10
+        }
+
+        modifier = {
+            production_speed_arms_factory_factor = 0.1
+            production_speed_synthetic_refinery_factor = 0.15
+        }
+        remove_effect = {
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 1
+                category = synth_resources
+            }
+        }
+        days_remove = 100
+        visible = {
+            has_completed_focus = KOR_junghwahaggongeobhwaseoneon
+        }
+
+    }
+    honam_gosokdoro = {
+        fire_only_once = yes
+        complete_effect = {
+            909 = {
+                add_building_construction = {
+                    type = infrastructure
+                    level = 1
+                    instant_build = yes
+                }
+            }
+        }
+        visible = {
+            has_completed_focus = KOR_honamgosogdorojungong
+        }
+    }
+    soyang_dam = {
+        fire_only_once = yes
+        complete_effect = {
+            add_ideas = {
+                soyang_dam
+            }
+        }
+        visible = {
+            has_completed_focus = KOR_soyanggangdaemjungong
+        }
+    }
+    paldang_dam = {
+        fire_only_once = yes
+        complete_effect = {
+            add_ideas = {
+                paldang_dam
+            }
+        }
+        visible = {
+            has_completed_focus = KOR_paldangdaemjungong
+        }
+    }
+    newtown_train = {
+        fire_only_once = yes
+        complete_effect = {
+            add_tech_bonus = {
+                bonus = 0.75
+                uses = 1
+                category = train_tech
+            }
+            
+        }
+        visible = {
+            has_completed_focus = KOR_saemaeulhounhaeng
+        }
+    }
+    civil_army = {
+        fire_only_once = yes
+        complete_effect = {
+            
+        }
+        visible = {
+            has_completed_focus = KOR_minbangwigyeolseong
+        }
+    }
+}
+
+
+

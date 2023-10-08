@@ -1,0 +1,192 @@
+focus_tree = {
+	id = kor-focus
+	continuous_focus_position = { x = -40 y = 2090 } 
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = KOR
+		}
+	}
+	#포항제철 건립
+	focus = {
+		id = KOR_pohangjeceolgeonrib
+		icon = GFX_goal_unknown
+		x = 4
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KOR_gyeongbugosogdorogaetong  }
+	}
+
+	#국토종합계획 제정
+	focus = {
+		id = KOR_gugtojonghabgyehoegjejeong
+		icon = GFX_goal_unknown
+		x = 3
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KOR_pohangjeceolgeonrib  }
+	}
+
+	#경부고속도로 개통
+	focus = {
+		id = KOR_gyeongbugosogdorogaetong
+		icon = GFX_goal_unknown
+		x = 4
+		y = 1
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+	}
+
+	#새마을운동 개시
+	focus = {
+		id = KOR_saemaeulundonggaesi
+		icon = GFX_goal_unknown
+		x = 5
+		y = 3
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KOR_pohangjeceolgeonrib  }
+	}
+
+	#번개사업 개시
+	focus = {
+		id = KOR_beongaesaeobgaesi
+		icon = GFX_goal_unknown
+		x = 4
+		y = 4
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KOR_gugtojonghabgyehoegjejeong  } prerequisite = { focus = KOR_saemaeulundonggaesi  }
+	}
+
+	#3차 경제개발 5개년 계획 시작
+	focus = {
+		id = KOR_3cagyeongjegaebal5gaenyeongyehoegsijag
+		icon = GFX_goal_unknown
+		x = 4
+		y = 5
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KOR_beongaesaeobgaesi  }
+	}
+
+	#통일미 개발
+	focus = {
+		id = KOR_tongilmigaebal
+		icon = GFX_goal_unknown
+		x = 4
+		y = 6
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KOR_3cagyeongjegaebal5gaenyeongyehoegsijag  }
+	}
+
+	#한국방송 설립
+	focus = {
+		id = KOR_hangugbangsongseolrib
+		icon = GFX_goal_unknown
+		x = 4
+		y = 7
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KOR_tongilmigaebal  }
+	}
+
+	#중화학공업화 선언
+	focus = {
+		id = KOR_junghwahaggongeobhwaseoneon
+		icon = GFX_goal_unknown
+		x = 4
+		y = 8
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KOR_hangugbangsongseolrib  }
+	}
+
+	#호남고속도로 준공
+	focus = {
+		id = KOR_honamgosogdorojungong
+		icon = GFX_goal_unknown
+		x = 4
+		y = 9
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KOR_junghwahaggongeobhwaseoneon  }
+	}
+
+	#소양강댐 준공
+	focus = {
+		id = KOR_soyanggangdaemjungong
+		icon = GFX_goal_unknown
+		x = 3
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KOR_honamgosogdorojungong  }
+	}
+
+	#팔당댐 준공
+	focus = {
+		id = KOR_paldangdaemjungong
+		icon = GFX_goal_unknown
+		x = 5
+		y = 10
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KOR_honamgosogdorojungong  }
+	}
+
+	#새마을호 운행
+	focus = {
+		id = KOR_saemaeulhounhaeng
+		icon = GFX_goal_unknown
+		x = 4
+		y = 11
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KOR_soyanggangdaemjungong  } prerequisite = { focus = KOR_paldangdaemjungong  }
+	}
+
+	#민방위 결성
+	focus = {
+		id = KOR_minbangwigyeolseong
+		icon = GFX_goal_unknown
+		x = 4
+		y = 12
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = KOR_saemaeulhounhaeng  }
+	}
+
+}
