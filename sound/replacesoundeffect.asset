@@ -1,0 +1,77 @@
+soundeffect = {
+    name = brrrt
+    falloff = "falloff_airplane_light"
+    loop = yes
+    sounds = {
+        sound = a10sound
+    }
+    max_audible = 8
+    max_audible_behaviour = fail
+    is3d = yes
+    volume = 0.6
+}
+
+soundeffect = {
+    name = OTAN20mm
+    falloff = "falloff_airplane_light"
+    loop = yes
+    sounds = {
+        sound = OTAN20mmsound
+    }
+    max_audible = 8
+    max_audible_behaviour = fail
+    is3d = yes
+    volume = 500
+}
+
+soundeffect = {
+    name = 50cals
+    falloff = "falloff_airplane_light"
+    loop = yes
+    sounds = {
+        sound = 50CALSsound
+    }
+    max_audible = 8
+    max_audible_behaviour = fail
+    is3d = yes
+    volume = 500
+}
+
+soundeffect = {
+    name = M61pew
+    falloff = "falloff_airplane_light"
+    loop = yes
+    sounds = {
+        sound = M61sound
+    }
+    max_audible = 8
+    max_audible_behaviour = fail
+    is3d = yes
+    volume = 500
+}
+
+soundeffect = {
+    name = gsh23pew
+    falloff = "falloff_airplane_light"
+    loop = yes
+    sounds = {
+        sound = gsh23sound
+    }
+    max_audible = 8
+    max_audible_behaviour = fail
+    is3d = yes
+    volume = 500
+}
+
+soundeffect = {
+    name = mig15pew
+    falloff = "falloff_airplane_light"
+    loop = yes
+    sounds = {
+        sound = mig15sound
+    }
+    max_audible = 8
+    max_audible_behaviour = fail
+    is3d = yes
+    volume = 500
+}

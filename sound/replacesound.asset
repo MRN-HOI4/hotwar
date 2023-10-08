@@ -1,0 +1,35 @@
+sound =
+{
+	name = "a10sound"
+	file = "a10brrt.wav"
+}
+
+sound =
+{
+	name = "OTAN20mmsound"
+	file = "20mm.wav"
+}
+
+sound =
+{
+	name = "50CALSsound"
+	file = "50CALS.wav"
+}
+
+sound =
+{
+	name = "M61sound"
+	file = "M61.wav"
+}
+
+sound =
+{
+	name = "gsh23sound"
+	file = "Gsh23.wav"
+}
+
+sound =
+{
+	name = "mig15sound"
+	file = "mig15.wav"
+}
