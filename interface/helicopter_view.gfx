@@ -1,0 +1,21 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_plane_designer_helicopter"
+		texturefile = "gfx/interface/equipmentdesigner/planes/role_icons/helicopter.dds"
+	}	
+	spriteType = {
+		name = "GFX_unit_category_helicopter"
+		texturefile = "gfx/interface/equipmentdesigner/planes/role_icons/helicopter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_category_helicopter_cas"
+		texturefile = "gfx/interface/equipmentdesigner/planes/role_icons/helicopter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_unit_category_helicopter_naval"
+		texturefile = "gfx/interface/equipmentdesigner/planes/role_icons/helicopter.dds"
+		legacy_lazy_load = no
+	}
+}

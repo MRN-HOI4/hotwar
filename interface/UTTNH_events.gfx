@@ -1,0 +1,12 @@
+spriteTypes = {
+	
+	spriteType = {
+		name = "GFX_report_event_shackles"
+		texturefile = "gfx/event_pictures/aishackles.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_uttnh"
+		texturefile = "gfx/event_pictures/uttnhsplash.dds"
+	}
+}

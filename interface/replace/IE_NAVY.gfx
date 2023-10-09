@@ -184,18 +184,6 @@ spriteTypes = {
 		name = "GFX_ship_light_ASM_battery_5_medium"
 		textureFile = "gfx/interface/technologies/ICONS/LML5.dds"
 	}
-	spriteType = {
-		name = "GFX_ship_fire_control_system_4_medium"
-		textureFile = "gfx/interface/technologies/ICONS/FC4.dds"
-	}
-	spriteType = {
-		name = "GFX_ship_fire_control_system_5_medium"
-		textureFile = "gfx/interface/technologies/ICONS/FC5.dds"
-	}
-	spriteType = {
-		name = "GFX_ship_fire_control_system_6_medium"
-		textureFile = "gfx/interface/technologies/ICONS/FC6.dds"
-	}
 	
 	spriteType = {
 		name = "GFX_ship_heavy_ASM_battery_1_medium"
@@ -795,6 +783,16 @@ spriteTypes = {
 		name = "GFX_USA_ship_hull_carrier_5_medium"
 		texturefile = "gfx/interface/technologies/USA/NAVAL/CVN5.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_FRA_ship_hull_carrier_5_medium"
+		texturefile = "gfx/interface/technologies/FRA/NAVAL/CVN5.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BRA_ship_hull_carrier_5_medium"
+		texturefile = "gfx/interface/technologies/FRA/NAVAL/CVN5.dds"
+	}
 	
 	SpriteType = {
 		name = "GFX_USA_ship_hull_carrier_6_medium"
@@ -972,9 +970,197 @@ spriteTypes = {
 		name = "GFX_USA_early_submarine_medium"
 		texturefile = "gfx/interface/technologies/USA/NAVAL/SUB1.dds"
 	}
+	###PRC
+
+		#LIGHT SHIPS#
+		SpriteType = {
+			name = "GFX_PRC_ship_hull_light_6_medium"
+			texturefile = "gfx/interface/technologies/PRC/NAVAL/DD6.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_ship_hull_light_7_medium"
+			texturefile = "gfx/interface/technologies/PRC/NAVAL/DD7.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_ship_hull_light_8_medium"
+			texturefile = "gfx/interface/technologies/PRC/NAVAL/DD8.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_ship_hull_light_9_medium"
+			texturefile = "gfx/interface/technologies/PRC/NAVAL/DD9.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_ship_hull_light_10_medium"
+			texturefile = "gfx/interface/technologies/PRC/NAVAL/DD10.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_advanced_ship_hull_light_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/DD4.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_improved_ship_hull_light_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/DD3.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_basic_ship_hull_light_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/DD2.dds"
+		}
+		SpriteType = {	
+			name = "GFX_PRC_early_ship_hull_light_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/DD1.dds"
+		}
+	
+		#CRUISER#
+		SpriteType = {
+			name = "GFX_PRC_ship_hull_cruiser_10_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/CA10.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_ship_hull_cruiser_9_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/CA9.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_ship_hull_cruiser_8_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/CA8.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_ship_hull_cruiser_7_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/CA7.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_ship_hull_cruiser_6_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/CA6.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_advanced_ship_hull_cruiser_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/CA4.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_improved_ship_hull_cruiser_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/CA3.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_basic_ship_hull_cruiser_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/CA2.dds"
+		}
+		SpriteType = {	
+			name = "GFX_PRC_early_ship_hull_cruiser_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/CA1.dds"
+		}
+		#SUBMARINES#
+		SpriteType = {	
+			name = "GFX_PRC_ship_hull_submarine_5_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/SUB5.dds"
+		}
+		SpriteType = {	
+			name = "GFX_PRC_ship_hull_submarine_6_medium"
+			texturefile = "gfx/interface/technologies/PRC/NAVAL/SUB6.dds"
+		}
+		SpriteType = {	
+			name = "GFX_PRC_ship_hull_submarine_7_medium"
+			texturefile = "gfx/interface/technologies/PRC/NAVAL/SUB7.dds"
+		}
+		SpriteType = {	
+			name = "GFX_PRC_ship_hull_submarine_8_medium"
+			texturefile = "gfx/interface/technologies/PRC/NAVAL/SUB8.dds"
+		}
+		SpriteType = {	
+			name = "GFX_PRC_ship_hull_submarine_9_medium"
+			texturefile = "gfx/interface/technologies/PRC/NAVAL/SUB9.dds"
+		}
+		SpriteType = {	
+			name = "GFX_PRC_ship_hull_submarine_10_medium"
+			texturefile = "gfx/interface/technologies/PRC/NAVAL/SUB10.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_advanced_ship_hull_submarine_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/SUB4.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_improved_ship_hull_submarine_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/SUB3.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_basic_ship_hull_submarine_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/SUB2.dds"
+		}
+		SpriteType = {	
+			name = "GFX_PRC_early_ship_hull_submarine_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/SUB1.dds"
+		}
+		#CARRIER#
+		SpriteType = {
+			name = "GFX_PRC_advanced_ship_hull_carrier_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/CVN4.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_improved_ship_hull_carrier_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/CVN3.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_basic_ship_hull_carrier_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/CVN2.dds"
+		}
+		SpriteType = {	
+			name = "GFX_PRC_early_ship_hull_carrier_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/CVN1.dds"
+		}
+		#HEAVY SHIPS#
+		SpriteType = {
+			name = "GFX_PRC_ship_hull_heavy_6_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/BB6.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_advanced_ship_hull_heavy_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/BB4.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_ship_hull_super_heavy_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/SHBB2.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_improved_ship_hull_heavy_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/BB3.dds"
+		}
+		SpriteType = {
+			name = "GFX_PRC_basic_ship_hull_heavy_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/BB2.dds"
+		}
+		SpriteType = {	
+			name = "GFX_PRC_early_ship_hull_heavy_medium"
+			texturefile = "gfx/interface/technologies/SOV/NAVAL/BB1.dds"
+		}	
+
+
+	###BRA
+
+	SpriteType = {
+		name = "GFX_BRA_ship_hull_light_10_medium"
+		texturefile = "gfx/interface/technologies/BRA/NAVAL/DD10.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BRA_ship_hull_light_8_medium"
+		texturefile = "gfx/interface/technologies/BRA/NAVAL/DD8.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BRA_ship_hull_carrier_6_medium"
+		texturefile = "gfx/interface/technologies/BRA/NAVAL/CVN6.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_BRA_ship_hull_cruiser_5_medium"
+		texturefile = "gfx/interface/technologies/BRA/NAVAL/CA5.dds"
+	}
+
+	
+
 	####JAPAN#####
 
 	#LIGHT SHIPS#
+
+	
 	SpriteType = {
 		name = "GFX_JAP_advanced_ship_hull_light_medium"
 		texturefile = "gfx/interface/technologies/JAP/NAVAL/DD4.dds"
@@ -990,6 +1176,34 @@ spriteTypes = {
 	SpriteType = {	
 		name = "GFX_JAP_early_ship_hull_light_medium"
 		texturefile = "gfx/interface/technologies/JAP/NAVAL/DD1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_JAP_ship_hull_light_5_medium"
+		texturefile = "gfx/interface/technologies/JAP/NAVAL/DD5.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_ship_hull_light_6_medium"
+		texturefile = "gfx/interface/technologies/JAP/NAVAL/DD6.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_ship_hull_light_7_medium"
+		texturefile = "gfx/interface/technologies/JAP/NAVAL/DD7.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_JAP_ship_hull_light_8_medium"
+		texturefile = "gfx/interface/technologies/JAP/NAVAL/DD8.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_ship_hull_light_9_medium"
+		texturefile = "gfx/interface/technologies/JAP/NAVAL/DD9.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_ship_hull_light_10_medium"
+		texturefile = "gfx/interface/technologies/JAP/NAVAL/DD10.dds"
 	}
 
 	#CRUISER#
@@ -1198,6 +1412,34 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/FRA/NAVAL/DD1.dds"
 	}
 
+	SpriteType = {
+		name = "GFX_FRA_ship_hull_light_5_medium"
+		texturefile = "gfx/interface/technologies/FRA/NAVAL/DD5.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_ship_hull_light_6_medium"
+		texturefile = "gfx/interface/technologies/FRA/NAVAL/DD6.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_ship_hull_light_7_medium"
+		texturefile = "gfx/interface/technologies/FRA/NAVAL/DD7.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_FRA_ship_hull_light_8_medium"
+		texturefile = "gfx/interface/technologies/FRA/NAVAL/DD8.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_ship_hull_light_9_medium"
+		texturefile = "gfx/interface/technologies/FRA/NAVAL/DD9.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_ship_hull_light_10_medium"
+		texturefile = "gfx/interface/technologies/FRA/NAVAL/DD10.dds"
+	}
+
 	#CRUISER#
 	SpriteType = {
 		name = "GFX_FRA_advanced_ship_hull_cruiser_medium"
@@ -1214,6 +1456,23 @@ spriteTypes = {
 	SpriteType = {	
 		name = "GFX_FRA_early_ship_hull_cruiser_medium"
 		texturefile = "gfx/interface/technologies/FRA/NAVAL/CA1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_FRA_ship_hull_cruiser_8_medium"
+		texturefile = "gfx/interface/technologies/FRA/NAVAL/CA8.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_ship_hull_cruiser_7_medium"
+		texturefile = "gfx/interface/technologies/FRA/NAVAL/CA7.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_ship_hull_cruiser_6_medium"
+		texturefile = "gfx/interface/technologies/FRA/NAVAL/CA6.dds"
+	}
+	SpriteType = {
+		name = "GFX_FRA_ship_hull_cruiser_5_medium"
+		texturefile = "gfx/interface/technologies/FRA/NAVAL/CA5.dds"
 	}
 	SpriteType = {
 		name = "GFX_ship_hull_torpedo_cruiser_medium"
@@ -1668,6 +1927,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/USA/NAVAL/DD10.dds"
 	}
 
+
 	#CRUISER#
 	SpriteType = {
 		name = "GFX_ship_hull_cruiser_10_medium"
@@ -1897,6 +2157,19 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_SMI_dp_ship_secondaries_4"
 		textureFile = "gfx/interface/modules/DPV.dds"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_fire_control_system_4"
+		textureFile = "gfx/interface/modules/FC4.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_fire_control_system_5"
+		textureFile = "gfx/interface/modules/FC5.dds"
+	}
+	spriteType = {
+		name = "GFX_SMI_ship_fire_control_system_6"
+		textureFile = "gfx/interface/modules/FC6.dds"
 	}
 	spriteType = {
 		name = "GFX_dp_ship_secondaries_1"

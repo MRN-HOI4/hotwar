@@ -2,6 +2,34 @@ spriteTypes = {
 
 	# generic ####################################################################
 
+	# generic helicopter
+
+	spriteType = {
+		name = "GFX_TC_helicopter_airframe_0"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/generic_helicopter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TC_helicopter_airframe_1"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/generic_helicopter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TC_helicopter_airframe_2"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/generic_helicopter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TC_helicopter_airframe_3"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/generic_helicopter.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_TC_helicopter_airframe_4"
+		textureFile = "gfx/interface/equipmentdesigner/planes/generic/generic_helicopter.dds"
+		legacy_lazy_load = no
+	}
+
 	# generic small_plane_airframe
 
 	spriteType = {

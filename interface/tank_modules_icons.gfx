@@ -1,10 +1,28 @@
 spriteTypes = {
-
 	spriteType = {
 		name = "GFX_EMI_expanded_fuel_tank"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_fuel_drum.dds"
 		legacy_lazy_load = no
 	}
+
+	spriteType = {
+		name = "GFX_EMI_besh"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/HESH.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_tank_nera_armor"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/NERA.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_add_on_armor"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/turret_skirt.dds"
+		legacy_lazy_load = no
+	}
+
 	spriteType = {
 		name = "GFX_EMI_tank_anti_air_cannon"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_aa_gun.dds"
@@ -755,6 +773,17 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_EMI_apfsds"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/apfsds.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_early_light_modern_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Light_Cannon_1.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_light_modern_cannon"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/Light_Cannon_2.dds"
 		legacy_lazy_load = no
 	}
 

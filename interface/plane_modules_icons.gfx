@@ -540,7 +540,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_ATGGM"
+		name = "GFX_EMI_ATGGM"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/ATGM1.dds"
 		legacy_lazy_load = no
 	}
@@ -997,7 +997,51 @@ spriteTypes = {
 	}
 
 	#### Category
-
+	spriteType = {
+		name = "GFX_EMI_helicopter_weapon"
+		textureFile = "gfx/interface/equipmentdesigner/helicopter/modules/CAN3.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_helicopter_cas_weapon"
+		textureFile = "gfx/interface/equipmentdesigner/helicopter/modules/BOMB.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_helicopter_nav_bomber_weapon"
+		textureFile = "gfx/interface/equipmentdesigner/helicopter/modules/TORPEDO.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_helicopter_mine_warfare_offense"
+		textureFile = "gfx/interface/equipmentdesigner/helicopter/modules/DC.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_helicopter_engine_type"
+		textureFile = "gfx/interface/equipmentdesigner/planes/modules/JE31.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_helicopter_rotor_type"
+		textureFile = "gfx/interface/equipmentdesigner/helicopter/modules/4H.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_helicopter_special_module"
+		textureFile = "gfx/interface/equipmentdesigner/helicopter/modules/ARMOR.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_helicopter_mine_warfare_defence"
+		textureFile = "gfx/interface/equipmentdesigner/helicopter/modules/MINESWEP.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_EMI_helicopter_electronic"
+		textureFile = "gfx/interface/equipmentdesigner/helicopter/modules/NIGHTVISION.dds"
+		legacy_lazy_load = no
+	}
 	spriteType = {
 		name = "GFX_EMI_fighter_weapon"
 		textureFile = "gfx/interface/equipmentdesigner/planes/modules/airplane_heavy_mg_4_icon.dds"

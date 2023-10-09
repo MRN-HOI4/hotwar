@@ -1,0 +1,223 @@
+guiTypes = {
+
+	# small_plane_airframe
+	containerWindowType = {
+		name = "equipment_designer_helicopter_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_helicopter_airframe_0"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_helicopter_airframe_0"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_helicopter_airframe_0"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_helicopter_airframe_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_helicopter_airframe_1"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_shelicopter_airframe_2"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_helicopter_airframe_2"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_helicopter_airframe_3"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_helicopter_airframe_3"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_helicopter_airframe_4"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_helicopter_airframe_4"
+			position = { x=0 y=0 }
+		}
+	}
+
+	# small_plane_cas_airframe
+	containerWindowType = {
+		name = "equipment_designer_helicopter_cas_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_helicopter_airframe_0"
+			position = { x=0 y=0 }
+		}
+	}
+	containerWindowType = {
+		name = "equipment_designer_helicopter_cas_airframe_0"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_helicopter_airframe_0"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_helicopter_cas_airframe_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_helicopter_airframe_1"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_helicopter_cas_airframe_2"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_helicopter_airframe_2"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_helicopter_cas_airframe_3"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_helicopter_airframe_3"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_helicopter_cas_airframe_4"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_helicopter_airframe_4"
+			position = { x=0 y=0 }
+		}
+	}
+
+
+	# small_plane_naval_bomber_airframe
+
+	containerWindowType = {
+		name = "equipment_designer_helicopter_naval_airframe"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_helicopter_airframe_0"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_helicopter_naval_airframe_0"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_helicopter_airframe_0"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_helicopter_naval_airframe_1"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_helicopter_airframe_1"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_helicopter_naval_airframe_2"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_helicopter_airframe_2"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_helicopter_naval_airframe_3"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_helicopter_airframe_3"
+			position = { x=0 y=0 }
+		}
+	}
+
+	containerWindowType = {
+		name = "equipment_designer_helicopter_naval_airframe_4"
+		position = { x=0 y=0 }
+		size = { width=508 height=248 }
+
+		iconType = {
+			name = "equipment_image_overlay"
+			spriteType = "GFX_TC_helicopter_airframe_4"
+			position = { x=0 y=0 }
+		}
+	}
+}
+
+

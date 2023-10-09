@@ -1,5 +1,60 @@
 spriteTypes = {
+#BRA 
 
+SpriteType = {
+	name = "GFX_BRA_CAS11_medium"
+	texturefile = "gfx/interface/technologies/BRA/AIR/CASJ8.dds"
+}
+SpriteType = {
+	name = "GFX_BRA_CAS8_medium"
+	texturefile = "gfx/interface/technologies/BRA/AIR/CASJ4.dds"
+}
+SpriteType = {
+	name = "GFX_BRA_CAS4_medium"
+	texturefile = "gfx/interface/technologies/BRA/AIR/CAS4.dds"
+}	
+SpriteType = {
+	name = "GFX_BRA_CAS3_medium"
+	texturefile = "gfx/interface/technologies/BRA/AIR/CAS3.dds"
+}	
+SpriteType = {
+	name = "GFX_BRA_CAS2_medium"
+	texturefile = "gfx/interface/technologies/BRA/AIR/CAS2.dds"
+}	
+SpriteType = {
+	name = "GFX_BRA_CAS1_medium"
+	texturefile = "gfx/interface/technologies/BRA/AIR/CAS1.dds"
+}
+
+#CZE
+SpriteType = {
+	name = "GFX_CZE_CAS11_medium"
+	texturefile = "gfx/interface/technologies/CZE/AIR/CASJ8.dds"
+}
+SpriteType = {
+	name = "GFX_CZE_CAS10_medium"
+	texturefile = "gfx/interface/technologies/CZE/AIR/CASJ7.dds"
+}
+SpriteType = {
+	name = "GFX_CZE_CAS9_medium"
+	texturefile = "gfx/interface/technologies/CZE/AIR/CASJ6.dds"
+}
+SpriteType = {
+	name = "GFX_CZE_CAS8_medium"
+	texturefile = "gfx/interface/technologies/CZE/AIR/CASJ5.dds"
+}
+SpriteType = {
+	name = "GFX_CZE_CAS7_medium"
+	texturefile = "gfx/interface/technologies/CZE/AIR/CASJ4.dds"
+}
+SpriteType = {
+	name = "GFX_CZE_CAS4_medium"
+	texturefile = "gfx/interface/technologies/CZE/AIR/CAS4.dds"
+}	
+SpriteType = {
+	name = "GFX_CZE_CAS3_medium"
+	texturefile = "gfx/interface/technologies/CZE/AIR/CAS3.dds"
+}	
 ##GEN TREE
 	SpriteType = {
 		name = "GFX_scout_plane1_medium"

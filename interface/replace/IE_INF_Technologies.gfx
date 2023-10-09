@@ -60,27 +60,27 @@ spriteTypes = {
 	}
 	### SPAIN NAT###	
 	SpriteType = {
-		name = "GFX_SPA_infantry_weapons_medium"
+		name = "GFX_D01_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/AUS/LAND/INF1.dds"
 	}
 	SpriteType = {
-		name = "GFX_SPA_infantry_weapons1_medium"
+		name = "GFX_D01_infantry_weapons1_medium"
 		texturefile = "gfx/interface/technologies/SPR/LAND/INF2.dds"
 	}
 	SpriteType = {
-		name = "GFX_SPA_improved_infantry_weapons_medium"
+		name = "GFX_D01_improved_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/GER/LAND/INF3.dds"
 	}	
 	SpriteType = {
-		name = "GFX_SPA_advanced_infantry_weapons_medium"
+		name = "GFX_D01_advanced_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/GER/LAND/INF4.dds"
 	}
 	SpriteType = {
-		name = "GFX_SPA_infantry_cw1_medium"
+		name = "GFX_D01_infantry_cw1_medium"
 		texturefile = "gfx/interface/technologies/GER/LAND/INF5.dds"
 	}
 	SpriteType = {
-		name = "GFX_SPA_infantry_cw2_medium"
+		name = "GFX_D01_infantry_cw2_medium"
 		texturefile = "gfx/interface/technologies/GER/LAND/INF6.dds"
 	}
 	### KR-QING ###	
@@ -348,10 +348,31 @@ spriteTypes = {
 		name = "GFX_ENG_infantry_cw5_medium"
 		texturefile = "gfx/interface/technologies/ENG/LAND/INF9.dds"
 	}
+	#SWEDEN
 
+	SpriteType = {
+		name = "GFX_SWE_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/SWE/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWE_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SWE/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_SWE_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SWE/LAND/INF4.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWE_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/SWE/LAND/INF5.dds"
+	}
 	SpriteType = {
 		name = "GFX_SWE_infantry_cw2_medium"
 		texturefile = "gfx/interface/technologies/SWE/LAND/INF6.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWE_infantry_cw3_medium"
+		texturefile = "gfx/interface/technologies/SWE/LAND/INF7.dds"
 	}
 	SpriteType = {
 		name = "GFX_SWE_infantry_cw4_medium"
@@ -435,6 +456,122 @@ spriteTypes = {
 		name = "GFX_USA_infantry_cw5_medium"
 		texturefile = "gfx/interface/technologies/USA/LAND/INF9.dds"
 	}
+
+	### Brazil ###	
+	SpriteType = {
+		name = "GFX_BRA_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/BRA/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_BRA_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/BRA/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_BRA_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/BRA/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_BRA_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/BRA/LAND/INF4.dds"
+	}
+	SpriteType = {
+		name = "GFX_BRA_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/BRA/LAND/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_BRA_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/BRA/LAND/INF6.dds"
+	}
+	SpriteType = {
+		name = "GFX_BRA_infantry_cw3_medium"
+		texturefile = "gfx/interface/technologies/BRA/LAND/INF7.dds"
+	}
+	SpriteType = {
+		name = "GFX_BRA_infantry_cw4_medium"
+		texturefile = "gfx/interface/technologies/BRA/LAND/INF8.dds"
+	}
+	SpriteType = {
+		name = "GFX_BRA_infantry_cw5_medium"
+		texturefile = "gfx/interface/technologies/BRA/LAND/INF9.dds"
+	}
+	#SWISS
+
+	SpriteType = {
+		name = "GFX_SWI_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SWI/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWI_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/SWI/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWI_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SWI/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_SWI_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SWI/INF4.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWI_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/SWI/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWI_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/SWI/INF6.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWI_infantry_cw3_medium"
+		texturefile = "gfx/interface/technologies/SWI/INF7.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWI_infantry_cw4_medium"
+		texturefile = "gfx/interface/technologies/SWI/INF8.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWI_infantry_cw5_medium"
+		texturefile = "gfx/interface/technologies/SWI/INF9.dds"
+	}
+
+	#CZECH
+
+	SpriteType = {
+		name = "GFX_CZE_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/CZE/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/CZE/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/CZE/LAND/INF3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_CZE_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/CZE/LAND/INF4.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/CZE/LAND/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/CZE/LAND/INF6.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_infantry_cw3_medium"
+		texturefile = "gfx/interface/technologies/CZE/LAND/INF7.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_infantry_cw4_medium"
+		texturefile = "gfx/interface/technologies/CZE/LAND/INF8.dds"
+	}
+	SpriteType = {
+		name = "GFX_CZE_infantry_cw5_medium"
+		texturefile = "gfx/interface/technologies/CZE/LAND/INF9.dds"
+	}
+
 	### GENERIC ###	
 	SpriteType = {
 		name = "GFX_infantry_weapons_medium"
@@ -523,23 +660,11 @@ spriteTypes = {
 		name = "GFX_POR_advanced_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/POR/LAND/INF4.dds"
 	}
-	### CZECHOSLOVAKIA ###	
+	###GREECE####
 	SpriteType = {
-		name = "GFX_CZE_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/CZE/LAND/INF1.dds"
-	}
-	SpriteType = {
-		name = "GFX_CZE_infantry_weapons1_medium"
-		texturefile = "gfx/interface/technologies/CZE/LAND/INF2.dds"
-	}
-	SpriteType = {
-		name = "GFX_CZE_improved_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/CZE/LAND/INF3.dds"
+		name = "GFX_GRE_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/GRE/LAND/INF3.dds"
 	}	
-	SpriteType = {
-		name = "GFX_CZE_advanced_infantry_weapons_medium"
-		texturefile = "gfx/interface/technologies/CZE/LAND/INF4.dds"
-	}
 	### BELGIUM ###	
 	SpriteType = {
 		name = "GFX_BEL_infantry_weapons_medium"
@@ -556,6 +681,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_BEL_advanced_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/BEL/LAND/INF4.dds"
+	}
+	SpriteType = {
+		name = "GFX_BEL_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/BEL/LAND/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_BEL_infantry_cw4_medium"
+		texturefile = "gfx/interface/technologies/BEL/LAND/INF8.dds"
 	}
 	### YUGOSLAVIA CHEEKE BRIKI ###	
 	SpriteType = {
@@ -626,12 +759,24 @@ spriteTypes = {
 		name = "GFX_CHI_advanced_infantry_weapons_medium"
 		texturefile = "gfx/interface/technologies/USA/LAND/INF4.dds"
 	}
-        #JAP
-		SpriteType = {
+    #JAP
+	SpriteType = {
+		name = "GFX_JAP_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/JAP/LAND/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_JAP_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/JAP/LAND/INF6.dds"
+	}
+	SpriteType = {
 		name = "GFX_JAP_infantry_cw3_medium"
 		texturefile = "gfx/interface/technologies/JAP/LAND/INF7.dds"
 	}
-		SpriteType = {
+	SpriteType = {
+		name = "GFX_JAP_infantry_cw4_medium"
+		texturefile = "gfx/interface/technologies/JAP/LAND/INF8.dds"
+	}
+	SpriteType = {
 		name = "GFX_JAP_infantry_cw5_medium"
 		texturefile = "gfx/interface/technologies/JAP/LAND/INF9.dds"
 	}
