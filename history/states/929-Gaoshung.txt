@@ -1,0 +1,41 @@
+state= #gaoshung and Tainan
+{
+	id=929
+	name="STATE_929"
+	manpower = 4770000
+	
+	state_category = large_town
+	history=
+	{
+		owner = CHI
+		add_core_of = CHI
+		add_core_of = PRC
+		buildings = {
+			infrastructure = 2
+            air_base = 10
+            anti_air_building = 1
+            industrial_complex = 2
+            arms_factory = 2
+            dockyard = 2
+			12068 = {
+				naval_base = 8
+			}
+			1091 = {
+				naval_base = 6
+			}
+
+		}
+		victory_points = {
+			1091 10
+		}
+		victory_points = {
+			12068 15
+		}
+
+	}
+	provinces={
+		1091 11914 12068
+		}
+
+	local_supplies=0.0 
+}
