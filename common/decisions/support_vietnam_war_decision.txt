@@ -225,9 +225,9 @@ Support_vietnam_war_category = {
                 }
             }
         }
-        days_remove = 90
+        days_remove = 180
 
-        days_re_enable = 30
+        days_re_enable = 60
 
     }
 
@@ -312,9 +312,9 @@ Support_vietnam_war_category = {
                 }
             }
         }
-        days_remove = 120
+        days_remove = 240
 
-        days_re_enable = 30
+        days_re_enable = 60
 
     }
 
@@ -371,9 +371,9 @@ Support_vietnam_war_category = {
                 }
             }
         }
-        days_remove = 120
+        days_remove = 240
 
-        days_re_enable = 30
+        days_re_enable = 60
 
     }
 
@@ -445,9 +445,9 @@ Support_vietnam_war_category = {
                 }
             }
         }
-        days_remove = 10
+        days_remove = 20
 
-        days_re_enable = 60
+        days_re_enable = 120
 
     }
 
