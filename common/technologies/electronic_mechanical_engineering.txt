@@ -782,16 +782,17 @@ technologies = {
 	basic_encryption = {
 
 		# encryption 1
-		encryption = 1
-		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
-		}		
+		encryption = 1	
 		research_cost = 1
 		start_year = 1938
 		
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 6 }
+		}
+
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
 		}
 		
 		ai_will_do = {
@@ -829,16 +830,17 @@ technologies = {
 	improved_encryption = {
 
 		# encryption 2
-		encryption = 1
-		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
-		}		
+		encryption = 1		
 		research_cost = 1
 		start_year = 1940
 		
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 10 }
+		}
+
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
 		}
 		
 		ai_will_do = {
@@ -876,16 +878,17 @@ technologies = {
 	advanced_encryption = {
 
 		# encryption 3
-		encryption = 1
-		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
-		}		
+		encryption = 1		
 		research_cost = 1
 		start_year = 1942
 		
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 14 }
+		}
+
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
 		}
 		
 		ai_will_do = {
@@ -923,16 +926,17 @@ technologies = {
 	basic_decryption = {
 
 		# decryption 1
-		decryption = 1
-		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
-		}		
+		decryption = 1	
 		research_cost = 1.5
 		start_year = 1938
 		
 		folder = {
 			name = electronics_folder
 			position = { x = 4 y = 6 }
+		}
+
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
 		}
 		
 		ai_will_do = {
@@ -966,16 +970,17 @@ technologies = {
 	improved_decryption = {
 
 		# decryption 2
-		decryption = 1
-		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
-		}		
+		decryption = 1	
 		research_cost = 1.5
 		start_year = 1940
 		
 		folder = {
 			name = electronics_folder
 			position = { x = 4 y = 10 }
+		}
+
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
 		}
 		
 		ai_will_do = {
@@ -1009,16 +1014,17 @@ technologies = {
 	advanced_decryption = {
 
 		# decryption 3
-		decryption = 1
-		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
-		}		
+		decryption = 1		
 		research_cost = 1.5
 		start_year = 1942
 		
 		folder = {
 			name = electronics_folder
 			position = { x = 4 y = 14 }
+		}
+
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
 		}
 		
 		ai_will_do = {
@@ -2289,7 +2295,7 @@ technologies = {
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 4 y = 22 }
+			position = { x = 4 y = 20 }
 		}
 		desc = "Allows the develpment of the early Air to Air missiles."		
 		ai_will_do = {
@@ -2375,16 +2381,17 @@ technologies = {
 	vacuum_encryption = {
 
 		#encryption 3
-		encryption = 1
-		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
-		}		
+		encryption = 1	
 		research_cost = 1
 		start_year = 1947
 		
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 16 }
+		}
+
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
 		}
 		
 		ai_will_do = {
@@ -2403,16 +2410,17 @@ technologies = {
 	vacuum2_encryption = {
 
 		#encryption 3
-		encryption = 1
-		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
-		}		
+		encryption = 1	
 		research_cost = 1
 		start_year = 1951
 		
 		folder = {
 			name = electronics_folder
 			position = { x = 0 y = 18 }
+		}
+
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
 		}
 		
 		ai_will_do = {
@@ -2431,12 +2439,13 @@ technologies = {
 	transistor_encryption = {
 
 		#encryption 3
-		encryption = 1
-		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
-		}		
+		encryption = 1	
 		research_cost = 1
 		start_year = 1955
+
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		
 		folder = {
 			name = electronics_folder
@@ -2459,16 +2468,17 @@ technologies = {
 	vacuum_decryption = {
 
 		#decryption 3
-		decryption = 1
-		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
-		}		
+		decryption = 1		
 		research_cost = 1.5
 		start_year = 1947
 		
 		folder = {
 			name = electronics_folder
 			position = { x = 4 y = 16 }
+		}
+
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
 		}
 		
 		ai_will_do = {
@@ -2488,11 +2498,12 @@ technologies = {
 
 		#decryption 3
 		decryption = 1
-		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
-		}		
 		research_cost = 1.5
 		start_year = 1951
+
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		
 		folder = {
 			name = electronics_folder
@@ -2515,16 +2526,17 @@ technologies = {
 	transistor_decryption = {
 
 		#decryption 3
-		decryption = 1
-		allow_branch = {
-			NOT = { has_dlc = "La Resistance" }
-		}		
+		decryption = 1		
 		research_cost = 1.5
 		start_year = 1955
+
+		allow_branch = {
+			NOT = { has_dlc = "La Resistance" }
+		}
 		
 		folder = {
 			name = electronics_folder
-			position = { x = 4 y = 20 }
+			position = { x = 4 y = 22 }
 		}
 		
 		ai_will_do = {
@@ -2550,6 +2562,8 @@ technologies = {
         	allow_branch = {
             		has_dlc = "Man the Guns"
         	}
+
+			start_year = 1955
         
         	research_cost = 1
         
@@ -2587,6 +2601,8 @@ technologies = {
         	allow_branch = {
             		has_dlc = "Man the Guns"
        		}
+
+			start_year = 1970
         
         	research_cost = 1
         
@@ -2618,6 +2634,9 @@ technologies = {
         	enable_equipment_modules = { 
             		ship_fire_control_system_6
         	}
+
+			start_year = 1990
+
         	dependencies = {
             		radar90 = 1
         	}

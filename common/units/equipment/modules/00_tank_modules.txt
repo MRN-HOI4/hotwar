@@ -713,7 +713,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
-		parent = tank_anti_air_cannon_2
+		parent = tank_anti_air_cannon_3
 		add_stats = {
 			soft_attack = 10
 			hard_attack = 5
@@ -742,7 +742,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
-		parent = tank_anti_air_cannon_2
+		parent = early_modern_anti_air_cannon
 		add_stats = {
 			soft_attack = 10
 			hard_attack = 5
@@ -766,12 +766,12 @@ equipment_modules = {
 		}
 	}
 	advanced_modern_anti_air_cannon = {
-		abbreviation = "aa5"
+		abbreviation = "aa6"
 		category = tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_air
 		forbid_equipment_type_exact_match = armor
-		parent = tank_anti_air_cannon_2
+		parent = modern_anti_air_cannon
 		add_stats = {
 			soft_attack = 10
 			hard_attack = 5
@@ -833,6 +833,54 @@ equipment_modules = {
 		can_convert_from = {
 			module_category = tank_small_main_armament
 			convert_cost_ic = 5
+		}
+	}
+
+	early_light_modern_cannon = {
+		abbreviation = "sc3"
+		category = tank_small_main_armament
+		sfx = sfx_ui_sd_module_turret
+		parent = tank_small_cannon_2
+		add_stats = {
+			soft_attack = 18
+			hard_attack = 25
+			ap_attack = 150
+			build_cost_ic = 8
+			maximum_speed = -0.3
+			reliability = -0.2
+		}
+		xp_cost = 1
+		can_convert_from = {
+			module_category = tank_small_main_armament
+			convert_cost_ic = 5
+		}
+		build_cost_resources = {
+			tungsten = 3
+			chromium = 1
+		}
+	}
+
+	light_modern_cannon = {
+		abbreviation = "sc4"
+		category = tank_small_main_armament
+		sfx = sfx_ui_sd_module_turret
+		parent = early_light_modern_cannon
+		add_stats = {
+			soft_attack = 22
+			hard_attack = 35
+			ap_attack = 250
+			build_cost_ic = 10
+			maximum_speed = -0.4
+			reliability = -0.21
+		}
+		xp_cost = 1
+		can_convert_from = {
+			module_category = tank_small_main_armament
+			convert_cost_ic = 5
+		}
+		build_cost_resources = {
+			tungsten = 4
+			chromium = 1
 		}
 	}
 
@@ -1028,6 +1076,7 @@ equipment_modules = {
 		category = tank_medium_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
+		parent = tank_high_velocity_cannon
 
 		add_stats = {
 			soft_attack = 15
@@ -1052,6 +1101,7 @@ equipment_modules = {
 		category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
+		parent = tank_high_velocity_cannon_2
 
 		add_stats = {
 			soft_attack = 20
@@ -1076,6 +1126,7 @@ equipment_modules = {
 		category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
+		parent = tank_high_velocity_cannon_3
 
 		add_stats = {
 			soft_attack = 25
@@ -1100,6 +1151,7 @@ equipment_modules = {
 		category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
+		parent = tank_early_modern_cannon
 
 		add_stats = {
 			soft_attack = 30
@@ -1124,6 +1176,7 @@ equipment_modules = {
 		category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
+		parent = tank_modern_cannon
 
 		add_stats = {
 			soft_attack = 35
@@ -1249,6 +1302,7 @@ equipment_modules = {
 		category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
+		parent = tank_heavy_howitzer
 
 		add_stats = {
 			soft_attack = 65
@@ -1274,6 +1328,7 @@ equipment_modules = {
 		category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
+		parent = tank_post_war_howitzer
 
 		add_stats = {
 			soft_attack = 90
@@ -1299,6 +1354,7 @@ equipment_modules = {
 		category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
+		parent = tank_early_modern_howitzer
 
 		add_stats = {
 			soft_attack = 105
@@ -1324,6 +1380,7 @@ equipment_modules = {
 		category = tank_heavy_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = artillery
+		parent = tank_modern_howitzer
 
 		add_stats = {
 			soft_attack = 120
@@ -1683,6 +1740,25 @@ equipment_modules = {
 			
 		}
 	}
+
+	besh = {
+		abbreviation = "hefs"
+		category = tank_shells_module
+		sfx = sfx_ui_sd_module_turret
+
+		add_stats = {
+			soft_attack = 60
+			hard_attack = 30
+			ap_attack = 20
+			build_cost_ic = 8
+			reliability = -0.05
+		}
+		xp_cost = 1
+		multiply_stats = {
+			
+		}
+	}
+
 	atgm = {
 		abbreviation = "atgm"
 		category = tank_shells_module
@@ -1717,6 +1793,7 @@ equipment_modules = {
 			
 		}
 	}
+	
 #NEW THINGS HERE
 	com_night_vision = {
 		abbreviation = "nvd"
@@ -1872,8 +1949,8 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			armor_value = 0.5
-			build_cost_ic = 0.15
+			armor_value = 0.6
+			build_cost_ic = 0.4
 
 		}
 	}
@@ -1888,8 +1965,8 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			armor_value = 0.6
-			build_cost_ic = 0.40
+			armor_value = 0.85
+			build_cost_ic = 0.60
 
 		}
 	}
@@ -1904,10 +1981,27 @@ equipment_modules = {
 		}
 
 		multiply_stats = {
-			armor_value = 0.85
-			build_cost_ic = 0.60
+			armor_value = 0.5
+			build_cost_ic = 0.15
 		}
 	}
+
+	tank_nera_armor = {
+		abbreviation = "nera"
+		category = tank_armor_type
+		sfx = sfx_ui_sd_module_sonar
+		xp_cost = 8
+		add_stats = {
+			defense = 20
+			breakthrough = 20
+		}
+
+		multiply_stats = {
+			armor_value = 0.95
+			build_cost_ic = 0.8
+		}
+	}
+
 	reactive_plate = {
 		abbreviation = "reac"
 		category = tank_special_module
@@ -1920,7 +2014,7 @@ equipment_modules = {
 
 		multiply_stats = {
 			armor_value = 0.3
-			build_cost_ic = 1
+			build_cost_ic = 0.3
 		}
 	}
 	advanced_reactive_plate = {
@@ -1935,7 +2029,23 @@ equipment_modules = {
 
 		multiply_stats = {
 			armor_value = 0.4
-			build_cost_ic = 2
+			build_cost_ic = 0.4
+
+		}
+	}
+
+	add_on_armor = {
+		abbreviation = "reac"
+		category = tank_special_module
+		sfx = sfx_ui_sd_module_sonar
+		xp_cost = 8
+		add_stats = {
+			defense = 10
+		}
+
+		multiply_stats = {
+			armor_value = 0.5
+			build_cost_ic = 0.3
 
 		}
 	}

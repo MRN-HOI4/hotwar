@@ -3299,7 +3299,7 @@ technologies = {
 
 	excavation6 = {
 		
-		local_resources_factor = 0.10
+		local_resources_factor = 0.15
 		
 		path = {
 			research_cost_coeff = 1
@@ -3368,7 +3368,7 @@ technologies = {
 	
 	excavation7 = {
 		
-		local_resources_factor = 0.10
+		local_resources_factor = 0.15
 		
 		path = {
 			research_cost_coeff = 1
@@ -3437,7 +3437,7 @@ technologies = {
 
 	excavation8 = {
 		
-		local_resources_factor = 0.10
+		local_resources_factor = 0.15
 		
 		path = {
 			research_cost_coeff = 1
@@ -3507,7 +3507,7 @@ technologies = {
 	
 	excavation9 = {
 		
-		local_resources_factor = 0.10
+		local_resources_factor = 0.15
 		
 		path = {
 			research_cost_coeff = 1
@@ -3576,7 +3576,7 @@ technologies = {
 	}
 	excavation10 = {
 		
-		local_resources_factor = 0.10
+		local_resources_factor = 0.15
 		
 		path = {
 			research_cost_coeff = 1
@@ -3645,7 +3645,7 @@ technologies = {
 	}
 	excavation11 = {
 		
-		local_resources_factor = 0.10
+		local_resources_factor = 0.15
 		
 		path = {
 			research_cost_coeff = 1
@@ -3714,7 +3714,7 @@ technologies = {
 	}
 	excavation12 = {
 		
-		local_resources_factor = 0.10
+		local_resources_factor = 0.15
 		
 		path = {
 			research_cost_coeff = 1
@@ -3782,7 +3782,7 @@ technologies = {
 	}
 	excavation13 = {
 		
-		local_resources_factor = 0.10
+		local_resources_factor = 0.15
 		
 		path = {
 			research_cost_coeff = 1
@@ -3851,7 +3851,7 @@ technologies = {
 	}
 	excavation14 = {
 		
-		local_resources_factor = 0.10
+		local_resources_factor = 0.15
 		
 		path = {
 			research_cost_coeff = 1
@@ -3915,7 +3915,7 @@ technologies = {
 	}
 	excavation15 = {
 		
-		local_resources_factor = 0.10
+		local_resources_factor = 0.15
 		
 		path = {
 			research_cost_coeff = 1

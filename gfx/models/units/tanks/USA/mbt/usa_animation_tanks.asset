@@ -1,4 +1,17 @@
 animation = {
+	name = "geo_m109_idle_animation"
+	file = "geo_m109_idle.anim"
+}
+animation = {
+	name = "geo_m109_move_animation"
+	file = "geo_m109_move.anim"
+}
+animation = {
+	name = "geo_m109_attack_animation"
+	file = "geo_m109_attack.anim"
+}
+
+animation = {
 	name = "m48_attack_animation"
 	file = "m48_attack.anim"
 }
@@ -59,6 +72,21 @@ animation = {
 }
 
 animation = {
+	name = "geo_m1a1_idle_animation"
+	file = "geo_m1a1_idle.anim"
+}
+
+animation = {
+	name = "geo_m1a1_move_animation"
+	file = "geo_m1a1_move.anim"
+}
+
+animation = {
+	name = "geo_m1a1_attack_animation"
+	file = "geo_m1a1_attack.anim"
+}
+
+animation = {
 	name = "m1_abrams_attack_animation"
 	file = "m1_abrams_attack.anim"
 }
@@ -74,16 +102,16 @@ animation = {
 }
 
 animation = {
-	name = "m60_attack_animation"
-	file = "m60_attack.anim"
+	name = "geo_m60_idle_animation"
+	file = "geo_m60_idle.anim"
 }
 
 animation = {
-	name = "m60_idle_animation"
-	file = "m60_idle.anim"
+	name = "geo_m60_move_animation"
+	file = "geo_m60_move.anim"
 }
 
 animation = {
-	name = "m60_moving_animation"
-	file = "m60_moving.anim"
+	name = "geo_m60_attack_animation"
+	file = "geo_m60_attack.anim"
 }

@@ -27,3 +27,15 @@ animation = {
 	name = "geo_leo2a4_attack_animation"
 	file = "geo_leo2a4_attack.anim"
 }
+animation = {
+	name = "geo_leo1_idle_animation"
+	file = "geo_leo1_idle.anim"
+}
+animation = {
+	name = "geo_leo1_move_animation"
+	file = "geo_leo1_move.anim"
+}
+animation = {
+	name = "geo_leo1_attack_animation"
+	file = "geo_leo1_attack.anim"
+}

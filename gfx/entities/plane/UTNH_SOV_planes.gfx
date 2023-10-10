@@ -1,5 +1,24 @@
 objectTypes = {
 	pdxmesh = {
+		name = "SOV_MI24_mesh"
+		file = "gfx/models/units/mi_24.mesh"
+		animation = { id = "idle" type = "MI24_idle_animation" }
+		animation =	{ id = "attack" type = "MI24_attack_animation" }
+		scale = 4.00
+	meshsettings = {
+			texture_diffuse = "Mi-24_Diffuse1.dds"
+		}
+	}
+	pdxmesh = {
+		name = "SOV_TB2_mesh"
+		file = "gfx/models/units/drone.mesh"
+		animation = { id = "idle" type = "TB2_idle_animation" }
+		scale = 0.1
+	meshsettings = {
+			texture_diffuse = "drone_diffuse.dds"
+		}
+	}
+	pdxmesh = {
 		name = "SOV_MIG9_mesh"
 		file = "gfx/models/units/planes/SOV/fighter/MiG9.mesh"
 		animation = { id = "idle" type = "fighter_default_idle_animation" }

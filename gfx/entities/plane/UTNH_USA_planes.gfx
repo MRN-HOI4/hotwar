@@ -1,5 +1,22 @@
 objectTypes = {
-
+	pdxmesh = {
+		name = "USA_AH1G_mesh"
+		file = "gfx/models/units/AH1G.mesh"
+		animation = { id = "idle" type = "AH1G_idle_animation" }
+		scale = 4.00
+	meshsettings = {
+			texture_diffuse = "ah1gdiffuse1.dds"
+		}
+	}
+	pdxmesh = {
+		name = "JAP_AH1G_mesh"
+		file = "gfx/models/units/AH1G.mesh"
+		animation = { id = "idle" type = "AH1G_idle_animation" }
+		scale = 4.00
+	meshsettings = {
+			texture_diffuse = "AH1Jdiffuse.dds"
+		}
+	}
 	pdxmesh = {
 		name = "USA_F80_mesh"
 		file = "gfx/models/units/planes/USA/fighter/F80.mesh"

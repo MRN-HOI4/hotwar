@@ -1,354 +1,1034 @@
 equipments = {
-	utility_helicopter_equipment = {
-		is_archetype = yes
-		picture = archetype_transport_plane_equipment			
-		type = air_transport
-		group_by = archetype
-		sprite = heavy_plane
-		carrier_capable = yes
-		default_carrier_composition_weight = 0
-		air_map_icon_frame = 12
-		
-		interface_category = interface_category_air
-		
-		# Transport
-		interface_overview_category_index = 6
-
-		upgrades = {
-			plane_range_upgrade
-			plane_engine_upgrade
-			plane_reliability_upgrade
+	helicopter_airframe = {
+		can_be_produced = {
+			NOT = {
+				has_idea = BUL_army_restrictions
+			}
 		}
-		
-		air_superiority = 0
-		reliability = 0.8
-		lend_lease_cost = 0
 
-		# Air vs Navy - high damage / low hit chance / hard to hurt
-		naval_strike_attack = 0.0
-		naval_strike_targetting = 0.0
-		
-		build_cost_ic = 15
-		resources = {
-			aluminium = 3
-			rubber = 2
-		}
-		
-		manpower = 10
-		fuel_consumption = 0.21
-		supply_truck = yes
-	}
-	
-	attack_helicopter_equipment = {
 		is_archetype = yes
-		picture = archetype_CAS_equipment
+		is_convertable = yes
+		picture = archetype_fighter_equipment
 		is_buildable = no
-		type = { cas }
+		type = fighter
+		type_override = fixed_main_weapon_slot
+		allowed_types = {
+			fighter
+			interceptor
+			cas
+			naval_bomber
+		}
+		allow_mission_type = training
 		group_by = archetype
 		sprite = light_plane
-		carrier_capable = yes
-		default_carrier_composition_weight = 0
-		air_map_icon_frame = 2
-		
+		air_map_icon_frame = 1
 		interface_category = interface_category_air
 		
-		# CAS
-		interface_overview_category_index = 0
-
-		upgrades = {
-			plane_range_upgrade
-			cv_plane_naval_upgrade
-			plane_engine_upgrade
-			plane_reliability_upgrade
-		}
-
+		interface_overview_category_index = 1
 		air_superiority = 1
 		reliability = 0.8
+		naval_strike_attack = 1
+		naval_strike_targetting = 1
 		lend_lease_cost = 8
-		
-		# Air vs Ground
-		air_ground_attack = 1.0
-
-		# Air vs Navy - medium damage / high hit chance / medium to hurt
-		naval_strike_attack = 8.333
-		naval_strike_targetting = 1
-		
-		build_cost_ic = 15
+		manpower = 20
+		fuel_consumption = 0.05
+		build_cost_ic = 16
 		resources = {
 			aluminium = 2
 			rubber = 1
 		}
-		fuel_consumption = 0.21
-		
-		manpower = 10
-	}
 
-	marine_helicopter_equipment = {
+		module_slots = {
+			fixed_main_weapon_slot = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_nav_bomber_weapon
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_1 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_2 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_mine_warfare_offense
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_3 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_mine_warfare_offense
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_4 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_mine_warfare_offense
+				}
+			}
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_engine_type
+				}
+			}
+
+			special_type_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_rotor_type
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+		}
+
+		module_count_limit = {
+			module = helicopter_rwr
+			count < 2
+		}
+
+		module_count_limit = {
+			module = helicopter_night_vision
+			count < 2
+		}
+
+		module_count_limit = {
+			module = helicopter_thermal_vision
+			count < 2
+		}
+
+		module_count_limit = {
+			module = helicopter_demining_coil
+			count < 2
+		}
+
+		module_count_limit = {
+			module = radar_ball
+			count < 2
+		}
+
+		module_count_limit = {
+			module = helicopter_flare
+			count < 2
+		}
+
+		module_count_limit = {
+			module = helicopter_airdropped_mines
+			count < 3
+		}
+
+		module_count_limit = {
+			module = helicopter_torpedo_mounting
+			count < 2
+		}
+
+		default_modules = {
+			fixed_main_weapon_slot = empty
+			fixed_auxiliary_weapon_slot_1 = empty
+			fixed_auxiliary_weapon_slot_2 = empty
+			fixed_auxiliary_weapon_slot_3 = empty
+			fixed_auxiliary_weapon_slot_4 = empty
+			engine_type_slot = empty
+			special_type_slot_1 = empty
+			special_type_slot_2 = empty
+			special_type_slot_3 = empty
+			special_type_slot_4 = empty
+		}
+	}
+	drone_airframe = {
+		can_be_produced = {
+			NOT = {
+				has_idea = BUL_army_restrictions
+			}
+		}
+
 		is_archetype = yes
-		picture = archetype_heavy_fighter_equipment		
+		is_convertable = yes
+		picture = archetype_fighter_equipment
 		is_buildable = no
-		type = { naval_bomber } #EAI
+		type = fighter
+		type_override = fixed_main_weapon_slot
+		allowed_types = {
+			cas
+			naval_bomber
+		}
+		allow_mission_type = training
 		group_by = archetype
 		sprite = light_plane
-		carrier_capable = yes
-		default_carrier_composition_weight = 1
-		air_map_icon_frame = 3
-		
+		air_map_icon_frame = 1
 		interface_category = interface_category_air
 		
-		# Naval bomber
-		interface_overview_category_index = 2
-
-		upgrades = {
-			plane_range_upgrade
-			cv_plane_naval_upgrade
-			plane_engine_upgrade
-			plane_reliability_upgrade
-		}
-
+		interface_overview_category_index = 1
 		air_superiority = 1
 		reliability = 0.8
-		lend_lease_cost = 0
-
-		# Air vs Navy - high damage / medium hit chance / easy to hurt
-		naval_strike_attack = 65
-		naval_strike_targetting = 1	#OpO
-		
-		build_cost_ic = 15
+		naval_strike_attack = 1
+		naval_strike_targetting = 1
+		lend_lease_cost = 8
+		manpower = 20
+		fuel_consumption = 0.05
+		build_cost_ic = 16
 		resources = {
 			aluminium = 2
 			rubber = 1
 		}
-		
-		manpower = 10
-		fuel_consumption = 0.21
+
+		module_slots = {
+			fixed_main_weapon_slot = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_cas_weapon
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_1 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_cas_weapon
+				}
+			}
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_engine_type
+				}
+			}
+
+			special_type_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_electronic
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_electronic
+				}
+			}
+		}
+
+		module_count_limit = {
+			module = helicopter_rwr
+			count < 2
+		}
+
+		module_count_limit = {
+			module = helicopter_night_vision
+			count < 2
+		}
+
+		module_count_limit = {
+			module = helicopter_thermal_vision
+			count < 2
+		}
+
+		module_count_limit = {
+			module = helicopter_demining_coil
+			count < 2
+		}
+
+		module_count_limit = {
+			module = radar_ball
+			count < 2
+		}
+
+		module_count_limit = {
+			module = helicopter_flare
+			count < 2
+		}
+
+		module_count_limit = {
+			module = helicopter_airdropped_mines
+			count < 3
+		}
+
+		module_count_limit = {
+			module = helicopter_torpedo_mounting
+			count < 2
+		}
+
+		default_modules = {
+			fixed_main_weapon_slot = empty
+			fixed_auxiliary_weapon_slot_1 = empty
+			engine_type_slot = empty
+			special_type_slot_1 = empty
+			special_type_slot_2 = empty
+		}
 	}
+	
 	#1950
-	utility_helicopter_equipment_1 = {
-		archetype = utility_helicopter_equipment
-	#	active = yes
+	helicopter_airframe_0 = {
+		archetype = helicopter_airframe
 		priority = 130
-		
-		air_range = 800
-		maximum_speed = 200
-		air_agility = 10
-		air_defence = 20
-	}
-
-	#1960
-	utility_helicopter_equipment_2 = {
-		archetype = utility_helicopter_equipment
-		parent = utility_helicopter_equipment_1
-	#	active = yes
-		priority = 130
-		
-		air_range = 850
-		maximum_speed = 225
-		air_agility = 10
-		air_defence = 20
-	}
-
-	#1970
-	utility_helicopter_equipment_3 = {
-		archetype = utility_helicopter_equipment
-		parent = utility_helicopter_equipment_2
-	#	active = yes
-		priority = 130
-		
-		air_range = 900
-		maximum_speed = 250
-		air_agility = 10
-		air_defence = 20
-	}
-
-	#1980
-	utility_helicopter_equipment_4 = {
-		archetype = utility_helicopter_equipment
-		parent = utility_helicopter_equipment_3
-	#	active = yes
-		priority = 130
-		
-		air_range = 950
-		maximum_speed = 275
-		air_agility = 10
-		air_defence = 20
-	}
-
-	#1990
-	utility_helicopter_equipment_5 = {
-		archetype = utility_helicopter_equipment
-		parent = utility_helicopter_equipment_4
-	#	active = yes
-		priority = 130
-		
-		air_range = 1000
-		maximum_speed = 300
-		air_agility = 10
-		air_defence = 20
-	}
-
-
-	#1955
-	attack_helicopter_equipment_1 = {
-		archetype = attack_helicopter_equipment
-		priority = 40
-
-		air_range = 800
-		maximum_speed = 200
-		air_agility = 10
-		air_attack = 6
-		air_defence = 17
-		air_ground_attack = 30
-		naval_strike_attack = 8.333
+		year = 1950
+		air_range = 650
+		maximum_speed = 0
+		air_agility = 50
+		air_defence = 9
+		weight = 4
+		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		
-	}
+		build_cost_ic = 17
+		resources = {
+			aluminium = 3
+			rubber = 1
+		}
+		module_slots = {
+			fixed_main_weapon_slot = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_nav_bomber_weapon
+				}
+			}
 
-	#1965
-	attack_helicopter_equipment_2 = {
-		archetype = attack_helicopter_equipment
-		parent = attack_helicopter_equipment_1
-		priority = 40
-	
-		air_range = 900
-		maximum_speed = 230
-		air_agility = 14
-		air_attack = 14
-		air_defence = 26
-		air_ground_attack = 45
-		naval_strike_attack = 11.667
-		naval_strike_targetting = 5
-		
-		build_cost_ic = 26
-		resources = {
-			aluminium = 3
-			rubber = 1
-		}		
-	}
-	
-	
-	#1975
-	attack_helicopter_equipment_3 = {
-		archetype = attack_helicopter_equipment
-		parent = attack_helicopter_equipment_2
-		priority = 60
-	
-		air_range = 1000
-		maximum_speed = 250
-		air_agility = 18
-		air_attack = 24
-		air_defence = 26
-		air_ground_attack = 60
-		naval_strike_attack = 13.333
-		naval_strike_targetting = 7
-		
-		build_cost_ic = 30
-		resources = {
-			aluminium = 3
-			rubber = 1
-		}	
-	}
-	
-	#1985
-	attack_helicopter_equipment_4 = {
-		archetype = attack_helicopter_equipment
-		parent = attack_helicopter_equipment_3
-		priority = 70
-	
-		air_range = 1050
-		maximum_speed = 285
-		air_agility = 22
-		air_attack = 26
-		air_defence = 30
-		air_ground_attack = 70
-		naval_strike_attack = 15
-		naval_strike_targetting = 9
-		
-		build_cost_ic = 38
-		resources = {
+			fixed_auxiliary_weapon_slot_1 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+				}
+			}
 
-			aluminium = 3
-			rubber = 1
-		}	
-	}
-	#1995
-	attack_helicopter_equipment_5 = {
-		archetype = attack_helicopter_equipment
-		parent = attack_helicopter_equipment_4
-		priority = 70
-	
-		air_range = 1050
-		maximum_speed = 300
-		air_agility = 24
-		air_attack = 26
-		air_defence = 30
-		air_ground_attack = 110
-		naval_strike_attack = 15
-		naval_strike_targetting = 9
-		
-		build_cost_ic = 40
-		resources = {
+			fixed_auxiliary_weapon_slot_2 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_mine_warfare_offense
+				}
+			}
 
-			aluminium = 3
-			rubber = 1
-		}	
+			fixed_auxiliary_weapon_slot_3 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_mine_warfare_offense
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_4 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_mine_warfare_offense
+				}
+			}
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_engine_type
+				}
+			}
+
+			special_type_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_rotor_type
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+		}
 	}
 
 	#1960
-	marine_helicopter_equipment_1 = {
-		archetype = marine_helicopter_equipment
-		priority = 60
+	helicopter_airframe_1 = {
+		archetype = helicopter_airframe
+		parent = helicopter_airframe_0
+		priority = 130
+		year = 1960
+		air_range = 650
+		maximum_speed = 0
+		air_agility = 50
+		air_defence = 9
+		weight = 4
+		naval_strike_attack = 1
+		naval_strike_targetting = 1
+		build_cost_ic = 17
+		resources = {
+			aluminium = 3
+			rubber = 1
+		}
+		module_slots = {
+			fixed_main_weapon_slot = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_nav_bomber_weapon
+				}
+			}
 
-		air_range = 850
-		maximum_speed = 230 
-		air_agility = 12
-		air_attack = 8
-		air_defence = 23
-		naval_strike_attack = 40
-		naval_strike_targetting = 3 #OPO
+			fixed_auxiliary_weapon_slot_1 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_2 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_mine_warfare_offense
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_3 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_mine_warfare_offense
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_4 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_mine_warfare_offense
+				}
+			}
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_engine_type
+				}
+			}
+
+			special_type_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_rotor_type
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+		}
 	}
-	#1970
-	marine_helicopter_equipment_2 = {
-		archetype = marine_helicopter_equipment
-		parent = marine_helicopter_equipment_1
-		priority = 60
 
-		air_range = 900
-		maximum_speed = 250
-		air_agility = 14
-		air_attack = 13
-		air_defence = 26
-		naval_strike_attack = 45
-		naval_strike_targetting = 3 #OPO
+	#1970
+	helicopter_airframe_2 = {
+		archetype = helicopter_airframe
+		parent = helicopter_airframe_1
+		priority = 130
+		year = 1970
+		air_range = 650
+		maximum_speed = 0
+		air_agility = 50
+		air_defence = 9
+		weight = 4
+		naval_strike_attack = 1
+		naval_strike_targetting = 1
+		build_cost_ic = 17
+		resources = {
+			aluminium = 3
+			rubber = 1
+		}
+		module_slots = {
+			fixed_main_weapon_slot = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_nav_bomber_weapon
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_1 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_2 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_mine_warfare_offense
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_3 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_mine_warfare_offense
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_4 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_mine_warfare_offense
+				}
+			}
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_engine_type
+				}
+			}
+
+			special_type_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_rotor_type
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+			special_type_slot_6 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+		}
+	}
+
+	#1980
+	helicopter_airframe_3 = {
+		archetype = helicopter_airframe
+		parent = helicopter_airframe_2
+		priority = 130
+		year = 1980
+		air_range = 650
+		maximum_speed = 0
+		air_agility = 50
+		air_defence = 9
+		weight = 4
+		naval_strike_attack = 1
+		naval_strike_targetting = 1
+		build_cost_ic = 17
+		resources = {
+			aluminium = 3
+			rubber = 1
+		}
+		module_slots = {
+			fixed_main_weapon_slot = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_nav_bomber_weapon
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_1 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_2 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_mine_warfare_offense
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_3 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_mine_warfare_offense
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_4 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_mine_warfare_offense
+				}
+			}
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_engine_type
+				}
+			}
+
+			special_type_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_rotor_type
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+			special_type_slot_6 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+		}
+	}
+
+	#1990
+	helicopter_airframe_4 = {
+		archetype = helicopter_airframe
+		parent = helicopter_airframe_3
+		priority = 130
+		year = 1990
+		air_range = 650
+		maximum_speed = 0
+		air_agility = 50
+		air_defence = 9
+		weight = 4
+		naval_strike_attack = 1
+		naval_strike_targetting = 1
+		build_cost_ic = 17
+		resources = {
+			aluminium = 3
+			rubber = 1
+		}
+		module_slots = {
+			fixed_main_weapon_slot = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_nav_bomber_weapon
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_1 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_2 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_mine_warfare_offense
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_3 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_mine_warfare_offense
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_4 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_weapon
+					helicopter_cas_weapon
+					helicopter_mine_warfare_offense
+				}
+			}
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_engine_type
+				}
+			}
+
+			special_type_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_rotor_type
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+			special_type_slot_3 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+			special_type_slot_4 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+			special_type_slot_5 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+			special_type_slot_6 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_special_module
+					helicopter_mine_warfare_defence
+					helicopter_electronic
+				}
+			}
+		}
 		
 	}
-	#1980
-	marine_helicopter_equipment_3 = {
-		archetype = marine_helicopter_equipment
-		parent = marine_helicopter_equipment_2
-		priority = 60
 
-		air_range = 950
-		maximum_speed = 275
-		air_agility = 16
-		air_attack = 13
-		air_defence = 26
-		naval_strike_attack = 50
-		naval_strike_targetting = 3 #OPO
-			
+	#1970
+	drone_airframe_0 = {
+		archetype = drone_airframe
+		priority = 130
+		year = 1970
+		air_range = 650
+		maximum_speed = 0
+		air_agility = 50
+		air_defence = 9
+		weight = 4
+		naval_strike_attack = 1
+		naval_strike_targetting = 1
+		build_cost_ic = 17
+		resources = {
+			aluminium = 3
+			rubber = 1
+		}
+		module_slots = {
+			fixed_main_weapon_slot = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_cas_weapon
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_1 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_cas_weapon
+				}
+			}
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_engine_type
+				}
+			}
+
+			special_type_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_electronic
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_electronic
+				}
+			}
+		}	
+	}
+	
+	#1980
+	drone_airframe_1 = {
+		archetype = drone_airframe
+		priority = 130
+		year = 1980
+		air_range = 650
+		maximum_speed = 0
+		air_agility = 50
+		air_defence = 9
+		weight = 4
+		naval_strike_attack = 1
+		naval_strike_targetting = 1
+		build_cost_ic = 17
+		resources = {
+			aluminium = 3
+			rubber = 1
+		}
+		module_slots = {
+			fixed_main_weapon_slot = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_cas_weapon
+				}
+			}
+
+			fixed_auxiliary_weapon_slot_1 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_cas_weapon
+				}
+			}
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_engine_type
+				}
+			}
+
+			special_type_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_electronic
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_electronic
+				}
+			}
+		}	
 	}
 	#1990
-	marine_helicopter_equipment_4 = {
-		archetype = marine_helicopter_equipment
-		parent = marine_helicopter_equipment_3
-		priority = 60
+	drone_airframe_2 = {
+		archetype = drone_airframe
+		priority = 130
+		year = 1990
+		air_range = 650
+		maximum_speed = 0
+		air_agility = 50
+		air_defence = 9
+		weight = 4
+		naval_strike_attack = 1
+		naval_strike_targetting = 1
+		build_cost_ic = 17
+		resources = {
+			aluminium = 3
+			rubber = 1
+		}
+		module_slots = {
+			fixed_main_weapon_slot = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_cas_weapon
+				}
+			}
 
-		air_range = 1000
-		maximum_speed = 300
-		air_agility = 18
-		air_attack = 13
-		air_defence = 26
-		naval_strike_attack = 60
-		naval_strike_targetting = 3 #OPO
+			fixed_auxiliary_weapon_slot_1 = { 
+				required = no
+				allowed_module_categories = {
+					helicopter_cas_weapon
+				}
+			}
+
+			engine_type_slot = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_engine_type
+				}
+			}
+
+			special_type_slot_1 = {
+				required = yes
+				allowed_module_categories = {
+					helicopter_electronic
+				}
+			}
+
+			special_type_slot_2 = {
+				required = no
+				allowed_module_categories = {
+					helicopter_electronic
+				}
+			}
+		}	
 	}
+	
 }

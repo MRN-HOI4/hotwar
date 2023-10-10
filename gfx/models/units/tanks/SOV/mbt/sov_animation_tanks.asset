@@ -15,8 +15,40 @@ animation = {
 }
 
 animation = {
+	name = "SOV_medium_tank_T_55A_idle_animation"
+	file = "SOV_medium_tank_T_55A_idle.anim"
+}
+
+animation = {
+	name = "SOV_medium_tank_T_55A_moving_animation"
+	file = "SOV_medium_tank_T_55A_moving.anim"
+}
+
+animation = {
+	name = "SOV_medium_tank_T_55A_attack_animation"
+	file = "SOV_medium_tank_T_55A_attack.anim"
+}
+animation = {
+	name = "SOV_medium_tank_T_55A_training_animation"
+	file = "SOV_medium_tank_T_55A_training.anim"
+}
+
+animation = {
 	name = "t72_attack_animation"
 	file = "t72_attack.anim"
+}
+
+animation = {
+	name = "geo_t80_idle_animation"
+	file = "geo_t80_idle.anim"
+}
+animation = {
+	name = "geo_t80_move_animation"
+	file = "geo_t80_move.anim"
+}
+animation = {
+	name = "geo_t80_attack_animation"
+	file = "geo_t80_attack.anim"
 }
 
 animation = {
@@ -44,6 +76,24 @@ animation = {
 	file = "t80_moving.anim"
 }
 
+### MBT T-90A
+
+animation = {
+	name = "SOV_medium_tank_T_90A_idle_animation"
+	file = "SOV_medium_tank_T_90A_idle.anim"
+}
+
+animation = {
+	name = "SOV_medium_tank_T_90A_moving_animation"
+	file = "SOV_medium_tank_T_90A_moving.anim"
+}
+
+animation = {
+	name = "SOV_medium_tank_T_90A_attack_animation"
+	file = "SOV_medium_tank_T_90A_attack.anim"
+}
+
+
 
 
 animation = {
@@ -59,6 +109,21 @@ animation = {
 animation = {
 	name = "geo_t64_attack_animation"
 	file = "geo_t64_attack.anim"
+}
+
+animation = {
+	name = "geo_2s19_idle_animation"
+	file = "geo_2s19_idle.anim"
+}
+
+animation = {
+	name = "geo_2s19_move_animation"
+	file = "geo_2s19_move.anim"
+}
+
+animation = {
+	name = "geo_2s19_attack_animation"
+	file = "geo_2s19_attack.anim"
 }
 
 animation = {

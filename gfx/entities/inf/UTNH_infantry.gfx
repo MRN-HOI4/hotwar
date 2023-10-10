@@ -29,7 +29,10 @@ objectTypes = {
 		name = "geo_m16a1_mesh"
 		file = "gfx/models/units/infantry/geo_m16a1.mesh"
 	}
-
+	pdxmesh = {
+		name = "geo_FAMAS_mesh"
+		file = "gfx/models/units/infantry/geo_famas.mesh"
+	}
 	pdxmesh = {
 		name = "geo_m16a2_mesh"
 		file = "gfx/models/units/infantry/geo_m16a2.mesh"

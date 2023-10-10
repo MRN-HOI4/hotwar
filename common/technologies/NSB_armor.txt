@@ -1027,6 +1027,7 @@ technologies = {
 		enable_equipment_modules = {
 			adv_optics
 			heat_fs
+			besh
 		}
 
 		research_cost = 2.5
@@ -2863,6 +2864,7 @@ technologies = {
 		enable_equipment_modules = {
 			reactive_plate
 			tank_spaced_armor
+			add_on_armor
 		}
 
 		path = {
@@ -2968,6 +2970,10 @@ technologies = {
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 3 y = @1990 }
+		}
+
+		enable_equipment_modules = {
+			tank_nera_armor
 		}
 
 		on_research_complete = {

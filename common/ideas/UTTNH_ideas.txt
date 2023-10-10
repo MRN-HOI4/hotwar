@@ -1,0 +1,59 @@
+ideas = {
+
+	economy = {
+		
+		unindustrialized = {
+			
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+		
+			modifier = {
+				consumer_goods_factor = 0.60
+				production_speed_industrial_complex_factor = -0.5
+				production_speed_arms_factory_factor = -0.8
+				production_speed_dockyard_factor = -0.5
+				conversion_cost_civ_to_mil_factor = 0.5
+				conversion_cost_mil_to_civ_factor = 0.5
+			}
+			
+			allowed_to_remove = {
+				OR = {
+					has_war = yes
+				}
+			}
+			cancel_if_invalid = no
+		}
+	}
+	
+	mobilization_laws = {
+	
+		uninterested = {
+	
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.001
+				generate_wargoal_tension = 1.00
+				join_faction_tension = 0.20
+				lend_lease_tension = 0.50
+				send_volunteers_tension = 1.00
+				guarantee_tension = 1.00
+				max_fuel_factor = -0.45
+				fuel_gain_factor = -0.6
+			}
+			
+			allowed_to_remove = {
+				OR = {
+					has_war = yes
+				}
+			}
+			cancel_if_invalid = no
+			
+		}
+	}
+}

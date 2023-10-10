@@ -15,18 +15,14 @@ GER_fighter = {
 
 	great_war_fighter_default = {
 		priority = {
-			factor = 1
-			modifier = { 
-				has_tech = basic_small_airframe
-				factor = 0 #let's not waste XP here
-			}
+			factor = 50
 		}
 
 		target_variant = {
-			match_value = 1000
+			match_value = 100
 			type = small_plane_airframe_0
 			modules = {
-				fixed_main_weapon_slot = light_mg_2x
+				fixed_main_weapon_slot = light_mg_4x
 				fixed_auxiliary_weapon_slot_1 = empty
 				engine_type_slot = engine_1_1x
 				special_type_slot_1 = empty
@@ -36,13 +32,13 @@ GER_fighter = {
 
 		allowed_modules = {
 			engine_1_1x
-			light_mg_2x
+			light_mg_4x
 		}
 	}
 
-	basic_fighter_default = { #BF 109 E
+	basic_fighter_default = {
 		priority = {
-			factor = 100
+			factor = 75
 			modifier = { 
 				has_tech = improved_small_airframe
 				factor = 0 #let's not waste XP here
@@ -50,28 +46,28 @@ GER_fighter = {
 		}
 
 		target_variant = {
-			match_value = 2000
+			match_value = 100
 			type = small_plane_airframe_1
 			modules = {
-				fixed_main_weapon_slot = light_mg_2x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_4x
 				engine_type_slot = engine_2_1x
-				special_type_slot_1 = empty
+				special_type_slot_1 = armor_plate_small
 				special_type_slot_2 = empty	
 			}
 		}
 
 		allowed_modules = {
-			light_mg_2x
-			aircraft_cannon_1_2x
+			light_mg_4x
+			aircraft_cannon_1_1x
 			engine_2_1x
 			armor_plate_small
 		}
 	}
 
-	improved_fighter_default = { #FW 190
+	improved_fighter_default = {
 		priority = {
-			factor = 100
+			factor = 75
 			modifier = { 
 				has_tech = advanced_small_airframe 
 				factor = 0 #let's not waste XP here
@@ -79,14 +75,14 @@ GER_fighter = {
 		}
 
 		target_variant = {
-			match_value = 3000
+			match_value = 100
 			type = small_plane_airframe_2
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
 				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
 				engine_type_slot = engine_3_1x
-				special_type_slot_1 = armor_plate_small
-				special_type_slot_2 = drop_tanks	
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty	
 			}
 		}
 
@@ -94,22 +90,25 @@ GER_fighter = {
 			light_mg_4x
 			aircraft_cannon_1_2x
 			engine_3_1x
-			armor_plate_small
-			drop_tanks
 		}
 	}
 
-	advanced_fighter_default = { #Ta 152
+	advanced_fighter_default = {
 		priority = {
-			factor = 150
+			factor = 75
+		}
+
+		modifier = { 
+			has_tech = modern_small_airframe
+			factor = 0 #let's not waste XP here
 		}
 
 		target_variant = {
-			match_value = 4000
+			match_value = 100
 			type = small_plane_airframe_3
 			modules = {
 				fixed_main_weapon_slot = aircraft_cannon_1_2x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_1x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
 				engine_type_slot = engine_4_1x
 				special_type_slot_1 = armor_plate_small
 				special_type_slot_2 = empty	
@@ -118,22 +117,27 @@ GER_fighter = {
 
 		allowed_modules = { 
 			aircraft_cannon_2_2x
-			aircraft_cannon_2_1x
+			heavy_mg_4x
 			engine_4_1x
 			armor_plate_small
 		}
 	}
-	jet_fighter_default = { #Me 262
+	jet_fighter_default = {
 		priority = {
 			factor = 200
+		}
+
+		modifier = { 
+			has_tech = modern_small_airframe_1
+			factor = 0 #let's not waste XP here
 		}
 
 		target_variant = {
 			match_value = 4000
 			type = small_plane_airframe_4
 			modules = {
-				fixed_main_weapon_slot = aircraft_cannon_2_2x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+				fixed_main_weapon_slot = aircraft_cannon_3_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_3_2x
 				engine_type_slot = jet_engine_2x
 				special_type_slot_1 = armor_plate_small
 				special_type_slot_2 = empty	
@@ -141,8 +145,8 @@ GER_fighter = {
 		}
 
 		allowed_modules = { 
-			aircraft_cannon_2_2x
-			aircraft_cannon_2_2x
+			aircraft_cannon_3_2x
+			aircraft_cannon_3_2x
 			jet_engine_2x
 			armor_plate_small
 		}
@@ -151,6 +155,11 @@ GER_fighter = {
 	jet_fighter_default_1 = {
 		priority = {
 			factor = 200
+		}
+
+		modifier = { 
+			has_tech = modern_small_airframe_2
+			factor = 0 #let's not waste XP here
 		}
 
 		target_variant = {
@@ -177,6 +186,11 @@ GER_fighter = {
 	jet_fighter_default_2 = {
 		priority = {
 			factor = 200
+		}
+
+		modifier = { 
+			has_tech = modern_small_airframe_3
+			factor = 0 #let's not waste XP here
 		}
 
 		target_variant = {
@@ -208,6 +222,11 @@ GER_fighter = {
 			factor = 200
 		}
 
+		modifier = { 
+			has_tech = modern_small_airframe_4
+			factor = 0 #let's not waste XP here
+		}
+
 		target_variant = {
 			match_value = 4000
 			type = small_plane_airframe_7
@@ -232,9 +251,14 @@ GER_fighter = {
 		}
 	}
 
-	jet_fighter_default_3 = {
+	jet_fighter_default_4 = {
 		priority = {
 			factor = 200
+		}
+
+		modifier = { 
+			has_tech = modern_small_airframe_5
+			factor = 0 #let's not waste XP here
 		}
 
 		target_variant = {
@@ -263,9 +287,13 @@ GER_fighter = {
 		}
 	}
 
-	jet_fighter_default_4 = {
+	jet_fighter_default_5 = {
 		priority = {
 			factor = 200
+		}
+		modifier = { 
+			has_tech = modern_small_airframe_6
+			factor = 0 #let's not waste XP here
 		}
 
 		target_variant = {
@@ -294,9 +322,13 @@ GER_fighter = {
 		}
 	}
 
-	jet_fighter_default_5 = {
+	jet_fighter_default_6 = {
 		priority = {
 			factor = 200
+		}
+		modifier = { 
+			has_tech = modern_small_airframe_7
+			factor = 0 #let's not waste XP here
 		}
 
 		target_variant = {
@@ -325,7 +357,7 @@ GER_fighter = {
 		}
 	}
 
-	jet_fighter_default_6 = {
+	jet_fighter_default_7 = {
 		priority = {
 			factor = 200
 		}

@@ -1,0 +1,1194 @@
+# equipments = {
+
+#  	helicopter_airframe = {
+#  		year = 1950
+
+#  		can_be_produced = {
+#  			NOT = {
+#  				has_idea = BUL_army_restrictions
+#  			}
+#  		}
+
+#  		is_archetype = yes
+#  		is_convertable = yes
+#  		carrier_capable = yes
+#  		default_carrier_composition_weight = 1
+#  		picture = archetype_transport_plane_equipment
+#  		is_buildable = no
+# 		type = air_transport
+# 		type_override = fixed_main_weapon_slot
+
+# 		allowed_types = {
+# 			fighter
+#  			cas
+#  			naval_bomber
+#  		}
+#  		allow_mission_type = training
+#  		group_by = archetype
+#  		sprite = medium_plane
+#  		air_map_icon_frame = 16
+#  		interface_category = interface_category_air
+		
+#  		interface_overview_category_index = 1
+#  		air_superiority = 1
+#  		reliability = 0.8
+#  		naval_strike_attack = 1
+#  		naval_strike_targetting = 1
+#  		lend_lease_cost = 8
+#  		manpower = 20
+#  		fuel_consumption = 0.05
+# 		build_cost_ic = 40
+#  		resources = {
+#  			aluminium = 2
+#  			rubber = 2
+#  		}
+
+#  		module_slots = {
+#  			fixed_main_weapon_slot = {
+#  				required = yes
+#  				allowed_module_categories = {
+#  					fighter_weapon
+#  					cas_weapon
+#  					nav_bomber_weapon
+#  					kamikaze_bomber_weapon
+#  				}
+#  			}
+
+#  			fixed_auxiliary_weapon_slot_1 = { 
+#  				required = no
+#  				allowed_module_categories = {
+# 					recon_camera
+#  					fighter_weapon
+#  					cas_weapon
+#  					nav_bomber_weapon
+#  					mine_warfare_offense
+#  					kamikaze_bomber_weapon
+#  				}
+#  			}
+#  			fixed_auxiliary_weapon_slot_2 = { 
+#  				required = no
+#  				allowed_module_categories = {
+#  					recon_camera
+#  					fighter_weapon
+#  					cas_weapon
+#  					nav_bomber_weapon
+#  					mine_warfare_offense
+#  					kamikaze_bomber_weapon
+#  				}
+#  			}
+#  			fixed_auxiliary_weapon_slot_3 = { 
+#  				required = no
+#  				allowed_module_categories = {
+#  					recon_camera
+#  					fighter_weapon
+#  					cas_weapon
+#  					nav_bomber_weapon
+#  					mine_warfare_offense
+#  					kamikaze_bomber_weapon
+#  				}
+#  			}
+
+#  			engine_type_slot = {
+#  				required = yes
+#  				allowed_module_categories = {
+#  					plane_engine_type
+#  					twin_plane_engine_type
+#  					plane_jet_engine_type
+#  					twin_plane_jet_engine_type
+#  				}
+#  			}
+
+#  			special_type_slot_1 = {
+#  				required = no
+#  				allowed_module_categories = {
+#  					plane_special_module_small
+#  					plane_special_module_defense_turret
+#  					plane_special_module_bomb_sights
+#  					plane_special_module_radio_navigation
+#  					plane_special_module_air_ground_radar
+#  					plane_special_module_air_air_radar
+#  				}
+#  			}
+
+#  			special_type_slot_2 = {
+#  				required = no
+#  				allowed_module_categories = {
+#  					plane_special_module_small
+#  					plane_special_module_defense_turret
+#  					plane_special_module_bomb_sights
+#  					plane_special_module_radio_navigation
+#  					plane_special_module_air_ground_radar
+#  					plane_special_module_air_air_radar
+#  				}
+#  			}
+#  			special_type_slot_3 = {
+#  				required = no
+#  				allowed_module_categories = {
+#  					plane_special_module_small
+#  					plane_special_module_defense_turret
+#  					plane_special_module_bomb_sights
+#  					plane_special_module_radio_navigation
+#  					plane_special_module_air_ground_radar
+#  					plane_special_module_air_air_radar
+#  				}
+#  			}
+#  		}
+
+#  		module_count_limit = {
+#  			module = fixed_explosive_charge
+#  			count < 2
+#  		}
+
+#  		module_count_limit = {
+#  			module = self_sealing_fuel_tanks_small
+#  			count < 2
+#  		}
+
+#  		module_count_limit = {
+#  			module = non_strategic_materials_small
+#  			count < 2
+#  		}
+
+#  		module_count_limit = {
+#  			module = drop_tanks
+#  			count < 2
+#  		}
+
+#  		module_count_limit = {
+#  			module = dive_brakes_small
+#  			count < 2
+#  		}
+
+#  		module_count_limit = {
+#  			module = torpedo_mounting
+#  			count < 2
+#  		}
+
+#  		module_count_limit = {
+#  			module = tank_buster_1
+#  			count < 3
+#  		}
+
+#  		module_count_limit = {
+#  			module = tank_buster_2
+#  			count < 2
+#  		}
+
+#  		module_count_limit = {
+#  			module = small_bomb_bay
+#  			count < 3
+#  		}
+
+#  		module_count_limit = {
+#  			module = floats 
+#  			count < 1
+#  		}
+
+#  		module_count_limit = {
+#  			module = recon_camera
+#  			count < 2
+#  		}
+
+#  		module_count_limit = {
+#  			category = plane_special_module_bomb_sights
+#  			count < 2
+#  		}
+
+# 		module_count_limit = {
+#  			category = plane_special_module_radio_navigation
+#  			count < 2
+#  		}
+
+#  		module_count_limit = {
+#  			category = plane_special_module_air_ground_radar
+#  			count < 2
+#  		}
+
+#  		module_count_limit = {
+#  			category = plane_special_module_air_air_radar
+#  			count < 2
+#  		}
+
+#  		module_count_limit = {
+#  			category = plane_special_module_defense_turret
+#  			count < 2
+#  		}
+
+# 		default_modules = {
+# 			fixed_main_weapon_slot = empty
+#  			fixed_auxiliary_weapon_slot_1 = empty
+#  			engine_type_slot = engine_1_1x
+#  			special_type_slot_1 = empty
+#  			special_type_slot_2 = empty
+#  		}
+# 	}
+
+#  	helicopter_airframe_0 = {
+#  		abbreviation = "afc7"
+#  		year = 1950
+
+#  		archetype = helicopter_airframe
+#  		priority = 5
+#  		air_range = 2500
+#  		maximum_speed = 0
+#  		air_agility = 120
+#  		air_defence = 30
+#  		weight = 10
+#  		naval_strike_attack = 1
+#  		naval_strike_targetting = 1
+#  		build_cost_ic = 40
+#  		resources = {
+#  			aluminium = 5
+#  			rubber = 1
+#  		}
+#  		module_slots = {
+#  			fixed_main_weapon_slot = {
+#  				required = yes
+#  				allowed_module_categories = {
+#  					fighter_weapon
+#  					cas_weapon
+#  					nav_bomber_weapon
+#  					kamikaze_bomber_weapon
+#  				}
+#  			}
+
+#  			fixed_auxiliary_weapon_slot_1 = { 
+#  				required = no
+#  				allowed_module_categories = {
+#  					recon_camera
+#  					fighter_weapon
+#  					cas_weapon
+#  					nav_bomber_weapon
+#  					mine_warfare_offense
+#  					kamikaze_bomber_weapon
+#  				}
+#  			}
+#  			fixed_auxiliary_weapon_slot_2 = { 
+#  				required = no
+#  				allowed_module_categories = {
+#  					recon_camera
+#  					fighter_weapon
+#  					cas_weapon
+#  					nav_bomber_weapon
+#  					mine_warfare_offense
+#  					kamikaze_bomber_weapon
+#  				}
+#  			}
+#  			fixed_auxiliary_weapon_slot_3 = { 
+#  				required = no
+#  				allowed_module_categories = {
+#  					recon_camera
+#  					fighter_weapon
+#  					cas_weapon
+#  					nav_bomber_weapon
+#  					mine_warfare_offense
+#  					kamikaze_bomber_weapon
+#  				}
+#  			}
+
+#  			engine_type_slot = {
+#  				required = yes
+#  				allowed_module_categories = {
+#  					plane_engine_type
+#  					twin_plane_engine_type
+#  					plane_jet_engine_type
+#  					twin_plane_jet_engine_type
+#  				}
+#  			}
+
+#  			special_type_slot_1 = {
+#  				required = no
+#  				allowed_module_categories = {
+#  					plane_special_module_small
+#  					plane_special_module_defense_turret
+#  					plane_special_module_bomb_sights
+#  					plane_special_module_radio_navigation
+# 					plane_special_module_air_ground_radar
+# 					plane_special_module_air_air_radar
+#  				}
+# 			}
+
+#  			special_type_slot_2 = {
+#  				required = no
+#  				allowed_module_categories = {
+#  					plane_special_module_small
+#  					plane_special_module_defense_turret
+# 					plane_special_module_bomb_sights
+#  					plane_special_module_radio_navigation
+#  					plane_special_module_air_ground_radar
+#  					plane_special_module_air_air_radar
+#  				}
+#  			}
+#  			special_type_slot_3 = {
+#  				required = no
+#  				allowed_module_categories = {
+# 					plane_special_module_small
+#  					plane_special_module_defense_turret
+#  					plane_special_module_bomb_sights
+#  					plane_special_module_radio_navigation
+#  					plane_special_module_air_ground_radar
+#  					plane_special_module_air_air_radar
+#  				}
+#  			}
+#  		}
+#  	}
+# }
+# 	helicopter_airframe_2 = { #modern
+# 		abbreviation = "afc8"
+# 		year = 1960
+
+# 		archetype = helicopter_airframe
+# 		parent = helicopter_airframe_1
+# 		priority = 5
+
+# 		air_range = 2750
+# 		maximum_speed = 0
+# 		air_agility = 130
+# 		air_defence = 34
+# 		weight = 10
+# 		naval_strike_attack = 1
+# 		naval_strike_targetting = 1
+# 		build_cost_ic = 45
+# 		resources = {
+# 			aluminium = 5
+# 			rubber = 1
+# 		}
+# 		module_slots = {
+# 			fixed_main_weapon_slot = {
+# 				required = yes
+# 				allowed_module_categories = {
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+
+# 			fixed_auxiliary_weapon_slot_1 = { 
+# 				required = no
+# 				allowed_module_categories = {
+# 					recon_camera
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					mine_warfare_offense
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+# 			fixed_auxiliary_weapon_slot_2 = { 
+# 				required = no
+# 				allowed_module_categories = {
+# 					recon_camera
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					mine_warfare_offense
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+# 			fixed_auxiliary_weapon_slot_3 = { 
+# 				required = no
+# 				allowed_module_categories = {
+# 					recon_camera
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					mine_warfare_offense
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+
+# 			engine_type_slot = {
+# 				required = yes
+# 				allowed_module_categories = {
+# 					plane_engine_type
+# 					twin_plane_engine_type
+# 					plane_jet_engine_type
+# 					twin_plane_jet_engine_type
+# 				}
+# 			}
+
+# 			special_type_slot_1 = {
+# 				required = no
+# 				allowed_module_categories = {
+# 					plane_special_module_small
+# 					plane_special_module_defense_turret
+# 					plane_special_module_bomb_sights
+# 					plane_special_module_radio_navigation
+# 					plane_special_module_air_ground_radar
+# 					plane_special_module_air_air_radar
+# 				}
+# 			}
+
+# 			special_type_slot_2 = {
+# 				required = no
+# 				allowed_module_categories = {
+# 					plane_special_module_small
+# 					plane_special_module_defense_turret
+# 					plane_special_module_bomb_sights
+# 					plane_special_module_radio_navigation
+# 					plane_special_module_air_ground_radar
+# 					plane_special_module_air_air_radar
+# 				}
+# 			}
+# 			special_type_slot_3 = {
+# 				required = no
+# 				allowed_module_categories = {
+# 					plane_special_module_small
+# 					plane_special_module_defense_turret
+# 					plane_special_module_bomb_sights
+# 					plane_special_module_radio_navigation
+# 					plane_special_module_air_ground_radar
+# 					plane_special_module_air_air_radar
+# 				}
+# 			}
+# 		}
+# 	}
+
+# 	helicopter_airframe_3 = { #modern
+# 		abbreviation = "afc9"
+# 		year = 1970
+
+# 		archetype = helicopter_airframe
+# 		parent = helicopter_airframe_2
+# 		priority = 5
+
+# 		air_range = 3000
+# 		maximum_speed = 0
+# 		air_agility = 150
+# 		air_defence = 36
+# 		weight = 10
+# 		naval_strike_attack = 1
+# 		naval_strike_targetting = 1
+# 		build_cost_ic = 50
+# 		resources = {
+# 			aluminium = 5
+# 			rubber = 2
+# 		}
+# 		module_slots = {
+# 			fixed_main_weapon_slot = {
+# 				required = yes
+# 				allowed_module_categories = {
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+
+# 			fixed_auxiliary_weapon_slot_1 = { 
+# 				required = no
+# 				allowed_module_categories = {
+# 					recon_camera
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					mine_warfare_offense
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+# 			fixed_auxiliary_weapon_slot_2 = { 
+# 				required = no
+# 				allowed_module_categories = {
+# 					recon_camera
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					mine_warfare_offense
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+# 			fixed_auxiliary_weapon_slot_3 = { 
+# 				required = no
+# 				allowed_module_categories = {
+# 					recon_camera
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					mine_warfare_offense
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+
+# 			engine_type_slot = {
+# 				required = yes
+# 				allowed_module_categories = {
+# 					plane_engine_type
+# 					twin_plane_engine_type
+# 					plane_jet_engine_type
+# 					twin_plane_jet_engine_type
+# 				}
+# 			}
+
+# 			special_type_slot_1 = {
+# 				required = no
+# 				allowed_module_categories = {
+# 					plane_special_module_small
+# 					plane_special_module_defense_turret
+# 					plane_special_module_bomb_sights
+# 					plane_special_module_radio_navigation
+# 					plane_special_module_air_ground_radar
+# 					plane_special_module_air_air_radar
+# 				}
+# 			}
+
+# 			special_type_slot_2 = {
+# 				required = no
+# 				allowed_module_categories = {
+# 					plane_special_module_small
+# 					plane_special_module_defense_turret
+# 					plane_special_module_bomb_sights
+# 					plane_special_module_radio_navigation
+# 					plane_special_module_air_ground_radar
+# 					plane_special_module_air_air_radar
+# 				}
+# 			}
+# 			special_type_slot_3 = {
+# 				required = no
+# 				allowed_module_categories = {
+# 					plane_special_module_small
+# 					plane_special_module_defense_turret
+# 					plane_special_module_bomb_sights
+# 					plane_special_module_radio_navigation
+# 					plane_special_module_air_ground_radar
+# 					plane_special_module_air_air_radar
+# 				}
+# 			}
+# 		}
+# 	}
+
+#     helicopter_airframe_4 = { #modern
+# 		abbreviation = "afc10"
+# 		year = 1980
+
+# 		archetype = helicopter_airframe
+# 		parent = helicopter_airframe_3
+# 		priority = 5
+
+# 		air_range = 3250
+# 		maximum_speed = 0
+# 		air_agility = 170
+# 		air_defence = 38
+# 		weight = 10
+# 		naval_strike_attack = 1
+# 		naval_strike_targetting = 1
+# 		build_cost_ic = 55
+# 		resources = {
+# 			aluminium = 6
+# 			rubber = 2
+# 		}
+# 		module_slots = {
+# 			fixed_main_weapon_slot = {
+# 				required = yes
+# 				allowed_module_categories = {
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+
+# 			fixed_auxiliary_weapon_slot_1 = { 
+# 				required = no
+# 				allowed_module_categories = {
+# 					recon_camera
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					mine_warfare_offense
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+# 			fixed_auxiliary_weapon_slot_2 = { 
+# 				required = no
+# 				allowed_module_categories = {
+# 					recon_camera
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					mine_warfare_offense
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+# 			fixed_auxiliary_weapon_slot_3 = { 
+# 				required = no
+# 				allowed_module_categories = {
+# 					recon_camera
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					mine_warfare_offense
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+
+# 			engine_type_slot = {
+# 				required = yes
+# 				allowed_module_categories = {
+# 					plane_engine_type
+# 					twin_plane_engine_type
+# 					plane_jet_engine_type
+# 					twin_plane_jet_engine_type
+# 				}
+# 			}
+
+# 			special_type_slot_1 = {
+# 				required = no
+# 				allowed_module_categories = {
+# 					plane_special_module_small
+# 					plane_special_module_defense_turret
+# 					plane_special_module_bomb_sights
+# 					plane_special_module_radio_navigation
+# 					plane_special_module_air_ground_radar
+# 					plane_special_module_air_air_radar
+# 				}
+# 			}
+
+# 			special_type_slot_2 = {
+# 				required = no
+# 				allowed_module_categories = {
+# 					plane_special_module_small
+# 					plane_special_module_defense_turret
+# 					plane_special_module_bomb_sights
+# 					plane_special_module_radio_navigation
+# 					plane_special_module_air_ground_radar
+# 					plane_special_module_air_air_radar
+# 				}
+# 			}
+# 			special_type_slot_3 = {
+# 				required = no
+# 				allowed_module_categories = {
+# 					plane_special_module_small
+# 					plane_special_module_defense_turret
+# 					plane_special_module_bomb_sights
+# 					plane_special_module_radio_navigation
+# 					plane_special_module_air_ground_radar
+# 					plane_special_module_air_air_radar
+# 				}
+# 			}
+# 		}
+# 	}
+
+# 	helicopter_airframe_5 = { #modern
+# 		abbreviation = "afc11"
+# 		year = 1990
+
+# 		archetype = helicopter_airframe
+# 		parent = helicopter_airframe_4
+# 		priority = 5
+
+# 		air_range = 3500
+# 		maximum_speed = 0
+# 		air_agility = 190
+# 		air_defence = 40
+# 		weight = 10
+# 		naval_strike_attack = 1
+# 		naval_strike_targetting = 1
+# 		build_cost_ic = 60
+# 		resources = {
+# 			aluminium = 7
+# 			rubber = 2
+# 		}
+# 		module_slots = {
+# 			fixed_main_weapon_slot = {
+# 				required = yes
+# 				allowed_module_categories = {
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+
+# 			fixed_auxiliary_weapon_slot_1 = { 
+# 				required = no
+# 				allowed_module_categories = {
+# 					recon_camera
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					mine_warfare_offense
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+# 			fixed_auxiliary_weapon_slot_2 = { 
+# 				required = no
+# 				allowed_module_categories = {
+# 					recon_camera
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					mine_warfare_offense
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+# 			fixed_auxiliary_weapon_slot_3 = { 
+# 				required = no
+# 				allowed_module_categories = {
+# 					recon_camera
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					mine_warfare_offense
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+
+# 			engine_type_slot = {
+# 				required = yes
+# 				allowed_module_categories = {
+# 					plane_engine_type
+# 					twin_plane_engine_type
+# 					plane_jet_engine_type
+# 					twin_plane_jet_engine_type
+# 				}
+# 			}
+
+# 			special_type_slot_1 = {
+# 				required = no
+# 				allowed_module_categories = {
+# 					plane_special_module_small
+# 					plane_special_module_defense_turret
+# 					plane_special_module_bomb_sights
+# 					plane_special_module_radio_navigation
+# 					plane_special_module_air_ground_radar
+# 					plane_special_module_air_air_radar
+# 				}
+# 			}
+
+# 			special_type_slot_2 = {
+# 				required = no
+# 				allowed_module_categories = {
+# 					plane_special_module_small
+# 					plane_special_module_defense_turret
+# 					plane_special_module_bomb_sights
+# 					plane_special_module_radio_navigation
+# 					plane_special_module_air_ground_radar
+# 					plane_special_module_air_air_radar
+# 				}
+# 			}
+# 			special_type_slot_3 = {
+# 				required = no
+# 				allowed_module_categories = {
+# 					plane_special_module_small
+# 					plane_special_module_defense_turret
+# 					plane_special_module_bomb_sights
+# 					plane_special_module_radio_navigation
+# 					plane_special_module_air_ground_radar
+# 					plane_special_module_air_air_radar
+# 				}
+# 			}
+# 		}
+# 	}
+
+# 	drone_airframe = {
+# 		year = 1970
+
+# 		can_be_produced = {
+# 			NOT = {
+# 				has_idea = BUL_army_restrictions
+# 			}
+# 		}
+
+# 		is_archetype = yes
+# 		is_convertable = yes
+# 		default_carrier_composition_weight = 1
+# 		picture = archetype_fighter_equipment
+# 		is_buildable = no
+# 		type = fighter
+# 		#ai_type = cv_fighter
+# 		type_override = fixed_main_weapon_slot
+# 		allowed_types = {
+# 			cas
+# 		}
+# 		allow_mission_type = training
+# 		group_by = archetype
+# 		sprite = light_plane
+# 		air_map_icon_frame = 16
+# 		interface_category = interface_category_air
+		
+# 		interface_overview_category_index = 1
+# 		air_superiority = 1
+# 		reliability = 0.8
+# 		naval_strike_attack = 1
+# 		naval_strike_targetting = 1
+# 		lend_lease_cost = 8
+# 		manpower = 2
+# 		fuel_consumption = 0.05
+# 		build_cost_ic = 18
+# 		resources = {
+# 			aluminium = 3
+# 			rubber = 1
+# 		}
+
+# 		module_slots = {
+# 			fixed_main_weapon_slot = {
+# 				required = yes
+# 				allowed_module_categories = {
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+
+# 			fixed_auxiliary_weapon_slot_1 = { 
+# 				required = no
+# 				allowed_module_categories = {
+# 					recon_camera
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					mine_warfare_offense
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+
+# 			engine_type_slot = {
+# 				required = yes
+# 				allowed_module_categories = {
+# 					plane_engine_type
+# 					twin_plane_engine_type
+# 					plane_jet_engine_type
+# 					twin_plane_jet_engine_type
+# 				}
+# 			}
+
+# 			special_type_slot_1 = {
+# 				required = no
+# 				allowed_module_categories = {
+# 					plane_special_module_small
+# 					plane_special_module_defense_turret
+# 					plane_special_module_bomb_sights
+# 					plane_special_module_radio_navigation
+# 					plane_special_module_air_ground_radar
+# 					plane_special_module_air_air_radar
+# 				}
+# 			}
+
+# 			special_type_slot_2 = {
+# 				required = no
+# 				allowed_module_categories = {
+# 					plane_special_module_small
+# 					plane_special_module_defense_turret
+# 					plane_special_module_bomb_sights
+# 					plane_special_module_radio_navigation
+# 					plane_special_module_air_ground_radar
+# 					plane_special_module_air_air_radar
+# 				}
+# 			}
+# 		}
+
+# 		module_count_limit = {
+# 			module = fixed_explosive_charge
+# 			count < 2
+# 		}
+
+# 		module_count_limit = {
+# 			module = self_sealing_fuel_tanks_small
+# 			count < 2
+# 		}
+
+# 		module_count_limit = {
+# 			module = non_strategic_materials_small
+# 			count < 2
+# 		}
+
+# 		module_count_limit = {
+# 			module = drop_tanks
+# 			count < 2
+# 		}
+
+# 		module_count_limit = {
+# 			module = dive_brakes_small
+# 			count < 2
+# 		}
+
+# 		module_count_limit = {
+# 			module = torpedo_mounting
+# 			count < 2
+# 		}
+
+# 		module_count_limit = {
+# 			module = tank_buster_1
+# 			count < 3
+# 		}
+
+# 		module_count_limit = {
+# 			module = tank_buster_2
+# 			count < 2
+# 		}
+
+# 		module_count_limit = {
+# 			module = small_bomb_bay
+# 			count < 3
+# 		}
+
+# 		module_count_limit = {
+# 			module = floats #can't put floats on carrier planes, that would be silly
+# 			count < 1
+# 		}
+
+# 		module_count_limit = {
+# 			module = recon_camera
+# 			count < 2
+# 		}
+
+# 		module_count_limit = {
+# 			category = plane_special_module_bomb_sights
+# 			count < 2
+# 		}
+
+# 		module_count_limit = {
+# 			category = plane_special_module_radio_navigation
+# 			count < 2
+# 		}
+
+# 		module_count_limit = {
+# 			category = plane_special_module_air_ground_radar
+# 			count < 2
+# 		}
+
+# 		module_count_limit = {
+# 			category = plane_special_module_air_air_radar
+# 			count < 2
+# 		}
+
+# 		module_count_limit = {
+# 			category = plane_special_module_defense_turret
+# 			count < 2
+# 		}
+
+# 		default_modules = {
+# 			fixed_main_weapon_slot = empty
+# 			fixed_auxiliary_weapon_slot_1 = empty
+# 			engine_type_slot = engine_1_1x
+# 			special_type_slot_1 = empty
+# 			special_type_slot_2 = empty
+# 		}
+# 	}
+
+# 	drone_airframe_1 = { #modern
+# 		abbreviation = "afc9"
+# 		year = 1970
+
+# 		archetype = drone_airframe
+# 		priority = 5
+
+# 		air_range = 1000
+# 		maximum_speed = 0
+# 		air_agility = 50
+# 		air_defence = 0
+# 		weight = 6
+# 		naval_strike_attack = 1
+# 		naval_strike_targetting = 1
+# 		build_cost_ic = 18
+# 		resources = {
+# 			aluminium = 3
+# 			rubber = 1
+# 		}
+# 		module_slots = {
+# 			fixed_main_weapon_slot = {
+# 				required = yes
+# 				allowed_module_categories = {
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+
+# 			fixed_auxiliary_weapon_slot_1 = { 
+# 				required = no
+# 				allowed_module_categories = {
+# 					recon_camera
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					mine_warfare_offense
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+
+# 			engine_type_slot = {
+# 				required = yes
+# 				allowed_module_categories = {
+# 					plane_engine_type
+# 					twin_plane_engine_type
+# 					plane_jet_engine_type
+# 					twin_plane_jet_engine_type
+# 				}
+# 			}
+
+# 			special_type_slot_1 = {
+# 				required = no
+# 				allowed_module_categories = {
+# 					plane_special_module_small
+# 					plane_special_module_defense_turret
+# 					plane_special_module_bomb_sights
+# 					plane_special_module_radio_navigation
+# 					plane_special_module_air_ground_radar
+# 					plane_special_module_air_air_radar
+# 				}
+# 			}
+
+# 			special_type_slot_2 = {
+# 				required = no
+# 				allowed_module_categories = {
+# 					plane_special_module_small
+# 					plane_special_module_defense_turret
+# 					plane_special_module_bomb_sights
+# 					plane_special_module_radio_navigation
+# 					plane_special_module_air_ground_radar
+# 					plane_special_module_air_air_radar
+# 				}
+# 			}
+# 		}
+# 	}
+
+#     drone_airframe_2 = { #modern
+# 		abbreviation = "afc10"
+# 		year = 1980
+
+# 		archetype = drone_airframe
+# 		parent = drone_airframe_1
+# 		priority = 5
+
+# 		air_range = 1200
+# 		maximum_speed = 0
+# 		air_agility = 60
+# 		air_defence = 0
+# 		weight = 8
+# 		naval_strike_attack = 1
+# 		naval_strike_targetting = 1
+# 		build_cost_ic = 20
+# 		resources = {
+# 			aluminium = 3
+# 			rubber = 1
+# 		}
+# 		module_slots = {
+# 			fixed_main_weapon_slot = {
+# 				required = yes
+# 				allowed_module_categories = {
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+
+# 			fixed_auxiliary_weapon_slot_1 = { 
+# 				required = no
+# 				allowed_module_categories = {
+# 					recon_camera
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					mine_warfare_offense
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+
+# 			engine_type_slot = {
+# 				required = yes
+# 				allowed_module_categories = {
+# 					plane_engine_type
+# 					twin_plane_engine_type
+# 					plane_jet_engine_type
+# 					twin_plane_jet_engine_type
+# 				}
+# 			}
+
+# 			special_type_slot_1 = {
+# 				required = no
+# 				allowed_module_categories = {
+# 					plane_special_module_small
+# 					plane_special_module_defense_turret
+# 					plane_special_module_bomb_sights
+# 					plane_special_module_radio_navigation
+# 					plane_special_module_air_ground_radar
+# 					plane_special_module_air_air_radar
+# 				}
+# 			}
+
+# 			special_type_slot_2 = {
+# 				required = no
+# 				allowed_module_categories = {
+# 					plane_special_module_small
+# 					plane_special_module_defense_turret
+# 					plane_special_module_bomb_sights
+# 					plane_special_module_radio_navigation
+# 					plane_special_module_air_ground_radar
+# 					plane_special_module_air_air_radar
+# 				}
+# 			}
+# 		}
+# 	}
+
+# 	drone_airframe_3 = { #modern
+# 		abbreviation = "afc11"
+# 		year = 1990
+
+# 		archetype = drone_airframe
+# 		parent = drone_airframe_2
+# 		priority = 5
+
+# 		air_range = 1300
+# 		maximum_speed = 0
+# 		air_agility = 65
+# 		air_defence = 0
+# 		weight = 10
+# 		naval_strike_attack = 1
+# 		naval_strike_targetting = 1
+# 		build_cost_ic = 25
+# 		resources = {
+# 			aluminium = 4
+# 			rubber = 1
+# 		}
+# 		module_slots = {
+# 			fixed_main_weapon_slot = {
+# 				required = yes
+# 				allowed_module_categories = {
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+
+# 			fixed_auxiliary_weapon_slot_1 = { 
+# 				required = no
+# 				allowed_module_categories = {
+# 					recon_camera
+# 					fighter_weapon
+# 					cas_weapon
+# 					nav_bomber_weapon
+# 					mine_warfare_offense
+# 					kamikaze_bomber_weapon
+# 				}
+# 			}
+
+# 			engine_type_slot = {
+# 				required = yes
+# 				allowed_module_categories = {
+# 					plane_engine_type
+# 					twin_plane_engine_type
+# 					plane_jet_engine_type
+# 					twin_plane_jet_engine_type
+# 				}
+# 			}
+
+# 			special_type_slot_1 = {
+# 				required = no
+# 				allowed_module_categories = {
+# 					plane_special_module_small
+# 					plane_special_module_defense_turret
+# 					plane_special_module_bomb_sights
+# 					plane_special_module_radio_navigation
+# 					plane_special_module_air_ground_radar
+# 					plane_special_module_air_air_radar
+# 				}
+# 			}
+# 		}
+# 	}
+# }

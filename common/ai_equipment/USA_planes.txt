@@ -21,15 +21,11 @@ USA_fighter = {
 
 	great_war_fighter_default = {
 		priority = {
-			factor = 1
-			modifier = { 
-				has_tech = basic_small_airframe
-				factor = 0 #let's not waste XP here
-			}
+			factor = 50
 		}
 
 		target_variant = {
-			match_value = 1000
+			match_value = 100
 			type = small_plane_airframe_0
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
@@ -48,7 +44,7 @@ USA_fighter = {
 
 	basic_fighter_default = {
 		priority = {
-			factor = 100
+			factor = 75
 			modifier = { 
 				has_tech = improved_small_airframe
 				factor = 0 #let's not waste XP here
@@ -56,20 +52,20 @@ USA_fighter = {
 		}
 
 		target_variant = {
-			match_value = 2000
+			match_value = 100
 			type = small_plane_airframe_1
 			modules = {
-				fixed_main_weapon_slot = heavy_mg_4x
-				fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_4x
 				engine_type_slot = engine_2_1x
-				special_type_slot_1 = empty
+				special_type_slot_1 = armor_plate_small
 				special_type_slot_2 = empty	
 			}
 		}
 
 		allowed_modules = {
-			heavy_mg_4x
-			heavy_mg_2x
+			light_mg_4x
+			aircraft_cannon_1_1x
 			engine_2_1x
 			armor_plate_small
 		}
@@ -77,7 +73,7 @@ USA_fighter = {
 
 	improved_fighter_default = {
 		priority = {
-			factor = 100
+			factor = 75
 			modifier = { 
 				has_tech = advanced_small_airframe 
 				factor = 0 #let's not waste XP here
@@ -85,19 +81,19 @@ USA_fighter = {
 		}
 
 		target_variant = {
-			match_value = 3000
+			match_value = 100
 			type = small_plane_airframe_2
 			modules = {
-				fixed_main_weapon_slot = heavy_mg_4x
-				fixed_auxiliary_weapon_slot_1 = heavy_mg_2x
+				fixed_main_weapon_slot = light_mg_4x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
 				engine_type_slot = engine_3_1x
-				special_type_slot_1 = drop_tanks
-				special_type_slot_2 = fuel_tanks_small	
+				special_type_slot_1 = empty
+				special_type_slot_2 = empty	
 			}
 		}
 
 		allowed_modules = {
-			heavy_mg_4x
+			light_mg_4x
 			aircraft_cannon_1_2x
 			engine_3_1x
 		}
@@ -105,24 +101,28 @@ USA_fighter = {
 
 	advanced_fighter_default = {
 		priority = {
-			factor = 150
+			factor = 75
+		}
+
+		modifier = { 
+			has_tech = modern_small_airframe
+			factor = 0 #let's not waste XP here
 		}
 
 		target_variant = {
-			match_value = 4000
+			match_value = 100
 			type = small_plane_airframe_3
 			modules = {
-				fixed_main_weapon_slot = heavy_mg_4x
-				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+				fixed_main_weapon_slot = aircraft_cannon_1_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
 				engine_type_slot = engine_4_1x
 				special_type_slot_1 = armor_plate_small
-				special_type_slot_2 = drop_tanks
-				special_type_slot_3 = fuel_tanks_small	
+				special_type_slot_2 = empty	
 			}
 		}
 
 		allowed_modules = { 
-			drop_tanks
+			aircraft_cannon_2_2x
 			heavy_mg_4x
 			engine_4_1x
 			armor_plate_small
@@ -133,12 +133,17 @@ USA_fighter = {
 			factor = 200
 		}
 
+		modifier = { 
+			has_tech = modern_small_airframe_1
+			factor = 0 #let's not waste XP here
+		}
+
 		target_variant = {
 			match_value = 4000
 			type = small_plane_airframe_4
 			modules = {
-				fixed_main_weapon_slot = aircraft_cannon_2_2x
-				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+				fixed_main_weapon_slot = aircraft_cannon_3_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_3_2x
 				engine_type_slot = jet_engine_2x
 				special_type_slot_1 = armor_plate_small
 				special_type_slot_2 = empty	
@@ -146,15 +151,21 @@ USA_fighter = {
 		}
 
 		allowed_modules = { 
-			aircraft_cannon_2_2x
-			aircraft_cannon_2_2x
+			aircraft_cannon_3_2x
+			aircraft_cannon_3_2x
 			jet_engine_2x
 			armor_plate_small
 		}
 	}
+
 	jet_fighter_default_1 = {
 		priority = {
 			factor = 200
+		}
+
+		modifier = { 
+			has_tech = modern_small_airframe_2
+			factor = 0 #let's not waste XP here
 		}
 
 		target_variant = {
@@ -181,6 +192,11 @@ USA_fighter = {
 	jet_fighter_default_2 = {
 		priority = {
 			factor = 200
+		}
+
+		modifier = { 
+			has_tech = modern_small_airframe_3
+			factor = 0 #let's not waste XP here
 		}
 
 		target_variant = {
@@ -212,6 +228,11 @@ USA_fighter = {
 			factor = 200
 		}
 
+		modifier = { 
+			has_tech = modern_small_airframe_4
+			factor = 0 #let's not waste XP here
+		}
+
 		target_variant = {
 			match_value = 4000
 			type = small_plane_airframe_7
@@ -236,9 +257,14 @@ USA_fighter = {
 		}
 	}
 
-	jet_fighter_default_3 = {
+	jet_fighter_default_4 = {
 		priority = {
 			factor = 200
+		}
+
+		modifier = { 
+			has_tech = modern_small_airframe_5
+			factor = 0 #let's not waste XP here
 		}
 
 		target_variant = {
@@ -267,9 +293,13 @@ USA_fighter = {
 		}
 	}
 
-	jet_fighter_default_4 = {
+	jet_fighter_default_5 = {
 		priority = {
 			factor = 200
+		}
+		modifier = { 
+			has_tech = modern_small_airframe_6
+			factor = 0 #let's not waste XP here
 		}
 
 		target_variant = {
@@ -298,9 +328,13 @@ USA_fighter = {
 		}
 	}
 
-	jet_fighter_default_5 = {
+	jet_fighter_default_6 = {
 		priority = {
 			factor = 200
+		}
+		modifier = { 
+			has_tech = modern_small_airframe_7
+			factor = 0 #let's not waste XP here
 		}
 
 		target_variant = {
@@ -329,7 +363,7 @@ USA_fighter = {
 		}
 	}
 
-	jet_fighter_default_6 = {
+	jet_fighter_default_7 = {
 		priority = {
 			factor = 200
 		}

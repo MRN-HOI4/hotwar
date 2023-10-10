@@ -1568,7 +1568,7 @@ technologies = {
 	tech_field_hospital5 = {
 
 		field_hospital = {
-			casualty_trickleback = 0.05
+			casualty_trickleback = 0.03
 			experience_loss_factor = -0.02
 		}
 		path = {
@@ -1601,7 +1601,7 @@ technologies = {
 	tech_field_hospital6 = {
 
 		field_hospital = {
-			casualty_trickleback = 0.05
+			casualty_trickleback = 0.03
 			experience_loss_factor = -0.02
 		}
 		path = {
@@ -1634,7 +1634,7 @@ technologies = {
 	tech_field_hospital7 = {
 
 		field_hospital = {
-			casualty_trickleback = 0.05
+			casualty_trickleback = 0.03
 			experience_loss_factor = -0.02
 		}
 		path = {
@@ -1667,7 +1667,7 @@ technologies = {
 	tech_field_hospital8 = {
 
 		field_hospital = {
-			casualty_trickleback = 0.05
+			casualty_trickleback = 0.03
 			experience_loss_factor = -0.02
 		}
 
@@ -2042,7 +2042,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = 50_train
+			leads_to_tech = train_50
 			research_cost_coeff = 1
 		}
 
@@ -2172,7 +2172,7 @@ technologies = {
 		}
 	}
 
-	50_train = {
+	train_50 = {
 		enable_equipments = {
 			train_equipment_4
 		}
@@ -2185,7 +2185,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = 60_train
+			leads_to_tech = train_60
 			research_cost_coeff = 1
 		}
 
@@ -2262,7 +2262,7 @@ technologies = {
 		}
 	}
 
-	60_train = {
+	train_60 = {
 		enable_equipments = {
 			train_equipment_5
 		}
@@ -2280,7 +2280,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = 70_train
+			leads_to_tech = train_70
 			research_cost_coeff = 1
 		}
 		
@@ -2352,7 +2352,7 @@ technologies = {
 		}
 	}
 
-	70_train = {
+	train_70 = {
 		enable_equipments = {
 			train_equipment_6
 		}
@@ -2365,7 +2365,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = 80_train
+			leads_to_tech = train_80
 			research_cost_coeff = 1
 		}
 
@@ -2442,7 +2442,7 @@ technologies = {
 		}
 	}
 
-	80_train = {
+	train_80 = {
 		enable_equipments = {
 			train_equipment_7
 		}
@@ -2455,7 +2455,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = 90_train
+			leads_to_tech = train_90
 			research_cost_coeff = 1
 		}
 
@@ -2532,7 +2532,7 @@ technologies = {
 		}
 	}
 
-	90_train = {
+	train_90 = {
 		enable_equipments = {
 			train_equipment_8
 		}

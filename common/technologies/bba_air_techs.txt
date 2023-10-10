@@ -672,6 +672,7 @@ technologies = {
 			medium_plane_airframe_0
 			medium_plane_fighter_airframe_0
 			medium_plane_scout_plane_airframe_0
+			transport_plane_equipment_1
 		}
 
 		path = {
@@ -761,6 +762,7 @@ technologies = {
 			medium_plane_airframe_2
 			medium_plane_fighter_airframe_2
 			medium_plane_scout_plane_airframe_2
+			transport_plane_equipment_2
 		}
 	
 		path = {
@@ -817,6 +819,7 @@ technologies = {
 			medium_plane_airframe_3
 			medium_plane_fighter_airframe_3
 			medium_plane_scout_plane_airframe_3
+			transport_plane_equipment_3
 		}
 		
 		path = {
@@ -867,6 +870,7 @@ technologies = {
 			medium_plane_airframe_4
 			medium_plane_fighter_airframe_4
 			medium_plane_scout_plane_airframe_4
+			transport_plane_equipment_4
 		}
 		
 		dependencies = {
@@ -949,6 +953,7 @@ technologies = {
 			medium_plane_airframe_6
 			medium_plane_fighter_airframe_6
 			medium_plane_scout_plane_airframe_6
+			transport_plane_equipment_5
 		}
 		
 		dependencies = {
@@ -990,6 +995,7 @@ technologies = {
 			medium_plane_airframe_7
 			medium_plane_fighter_airframe_7
 			medium_plane_scout_plane_airframe_7
+			transport_plane_equipment_6
 		}
 		
 		dependencies = {
@@ -1031,6 +1037,7 @@ technologies = {
 			medium_plane_airframe_8
 			medium_plane_fighter_airframe_8
 			medium_plane_scout_plane_airframe_8
+			transport_plane_equipment_7
 		}
 		
 		dependencies = {
@@ -2652,6 +2659,10 @@ technologies = {
 
 	jetengine = {
 
+		dependencies = {
+			jet_engines = 1
+		}
+
 		enable_equipment_modules = {
 			jet_engine_1x
 			jet_engine_2x
@@ -3252,5 +3263,721 @@ technologies = {
 			factor = 0
 		}
 		################
+	}
+
+	### SPECIAL AIR FOLDER
+
+	Helicopter_1 = {
+
+		enable_equipments = {
+			helicopter_airframe_0
+			helicopter_cas_airframe_0
+			helicopter_naval_airframe_0
+		}
+
+		enable_subunits = {
+			airmobile
+		}
+
+		path = {
+			leads_to_tech = Helicopter_2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1950
+		folder = {	#OpO
+			name = bba_air_special_techs_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Helicopter_2 = {
+
+		enable_equipments = {
+			helicopter_airframe_1
+			helicopter_cas_airframe_1
+			helicopter_naval_airframe_1
+		}
+
+		path = {
+			leads_to_tech = Helicopter_3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1960
+		folder = {	#OpO
+			name = bba_air_special_techs_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	Helicopter_3 = {
+
+		enable_equipments = {
+			helicopter_airframe_2
+			helicopter_cas_airframe_2
+			helicopter_naval_airframe_2
+		}
+
+		enable_subunits = {
+			attackheli
+		}
+
+		path = {
+			leads_to_tech = Helicopter_4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1970
+		folder = {	#OpO
+			name = bba_air_special_techs_folder
+			position = { x = 2 y = 10 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+	Helicopter_4 = {
+
+		enable_equipments = {
+			helicopter_airframe_3
+			helicopter_cas_airframe_3
+			helicopter_naval_airframe_3
+		}
+
+		path = {
+			leads_to_tech = Helicopter_5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 2
+		start_year = 1980
+		folder = {	#OpO
+			name = bba_air_special_techs_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	Helicopter_5 = {
+
+		enable_equipments = {
+			helicopter_airframe_4
+			helicopter_cas_airframe_4
+			helicopter_naval_airframe_4
+		}
+
+		research_cost = 2
+		start_year = 1990
+		folder = {	#OpO
+			name = bba_air_special_techs_folder
+			position = { x = 2 y = 18 }
+		}
+		
+		categories = {
+			air_equipment
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+	# attack_drone_1 = {
+
+	# 	enable_equipments = {
+	# 		drone_airframe_0
+	# 	}
+
+	# 	path = {
+	# 		leads_to_tech = attack_drone_2
+	# 		research_cost_coeff = 1
+	# 	}
+
+	# 	research_cost = 2
+	# 	start_year = 1970
+	# 	folder = {	#OpO
+	# 		name = bba_air_special_techs_folder
+	# 		position = { x = 2 y = 10 }
+	# 	}
+		
+	# 	categories = {
+	# 		air_equipment
+	# 	}
+		
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+
+	# attack_drone_2 = {
+
+	# 	enable_equipments = {
+	# 		drone_airframe_1
+	# 	}
+
+	# 	path = {
+	# 		leads_to_tech = attack_drone_3
+	# 		research_cost_coeff = 1
+	# 	}
+
+	# 	research_cost = 2
+	# 	start_year = 1980
+	# 	folder = {	#OpO
+	# 		name = bba_air_special_techs_folder
+	# 		position = { x = 2 y = 14 }
+	# 	}
+		
+	# 	categories = {
+	# 		air_equipment
+	# 	}
+		
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+
+	# attack_drone_3 = {
+
+	# 	enable_equipments = {
+	# 		drone_airframe_2
+	# 	}
+
+	# 	research_cost = 2
+	# 	start_year = 1990
+	# 	folder = {	#OpO
+	# 		name = bba_air_special_techs_folder
+	# 		position = { x = 2 y = 18 }
+	# 	}
+		
+	# 	categories = {
+	# 		air_equipment
+	# 	}
+		
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
+	helicopter_armor = {
+
+		enable_equipment_modules = {
+			helicopter_armor_plate_small
+		}
+		
+		research_cost = 1
+		start_year = 1950
+
+		path = {
+			leads_to_tech = helicopter_electronic1
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = bba_air_special_techs_folder
+			position = { x = 0 y = 2 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
+	}
+
+	helicopter_electronic1 = {
+
+		enable_equipment_modules = {
+			helicopter_night_vision
+			helicopter_rwr
+			helicopter_flare
+		}
+
+		path = {
+			leads_to_tech = helicopter_electronic2
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 1
+		start_year = 1970
+
+		folder = {
+			name = bba_air_special_techs_folder
+			position = { x = 0 y = 10 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
+	}
+
+	helicopter_electronic2 = {
+
+		enable_equipment_modules = {
+			helicopter_thermal_vision
+			radar_ball
+		}
+		
+		research_cost = 1
+		start_year = 1990
+
+		folder = {
+			name = bba_air_special_techs_folder
+			position = { x = 0 y = 18 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
+	}
+
+	helicopter_can_1 = {
+
+		enable_equipment_modules = {
+			helicopter_cannon_1
+		}
+		
+		research_cost = 1
+		start_year = 1950
+
+		path = {
+			leads_to_tech = helicopter_can_2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = helicopter_atgm_1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = helicopter_marine
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = helicopter_bomba
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = bba_air_special_techs_folder
+			position = { x = 0 y = 2 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
+	}
+
+	helicopter_marine = {
+
+		enable_equipment_modules = {
+			helicopter_demining_coil
+			helicopter_airdropped_mines
+			helicopter_torpedo_mounting
+		}
+		
+		research_cost = 1
+		start_year = 1960
+
+		folder = {
+			name = bba_air_special_techs_folder
+			position = { x = -2 y = 6 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
+	}
+
+	helicopter_bomba = {
+
+		enable_equipment_modules = {
+			helicopter_bomb
+			helicopter_rocket_pod
+		}
+		
+		research_cost = 1
+		start_year = 1950
+
+		folder = {
+			name = bba_air_special_techs_folder
+			position = { x = -2 y = 2 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
+	}
+
+	helicopter_atgm_1 = {
+
+		enable_equipment_modules = {
+			helicopter_atgm_1_1x
+			helicopter_atgm_1_2x
+		}
+		
+		research_cost = 1
+		start_year = 1950
+
+		path = {
+			leads_to_tech = helicopter_atgm_2
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = bba_air_special_techs_folder
+			position = { x = 2 y = 2 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
+	}
+
+	
+	helicopter_atgm_2 = {
+
+		enable_equipment_modules = {
+			helicopter_atgm_2_2x
+			helicopter_atgm_2_4x
+		}
+		
+		research_cost = 1
+		start_year = 1970
+
+		path = {
+			leads_to_tech = helicopter_atgm_3
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = helicopter_air_air
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = bba_air_special_techs_folder
+			position = { x = 2 y = 10 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
+	}
+
+	helicopter_air_air = {
+
+		enable_equipment_modules = {
+			helicopter_saam
+		}
+		
+		research_cost = 1
+		start_year = 1970
+
+		folder = {
+			name = bba_air_special_techs_folder
+			position = { x = 4 y = 10 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
+	}
+
+	helicopter_atgm_3 = {
+
+		enable_equipment_modules = {
+			helicopter_atgm_3_2x
+			helicopter_atgm_3_4x
+		}
+		
+		research_cost = 1
+		start_year = 1990
+
+		folder = {
+			name = bba_air_special_techs_folder
+			position = { x = 2 y = 18 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
+	}
+
+	helicopter_can_2 = {
+
+		enable_equipment_modules = {
+			helicopter_cannon_2
+		}
+		
+		research_cost = 1
+		start_year = 1970
+
+		path = {
+			leads_to_tech = helicopter_can_3
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = bba_air_special_techs_folder
+			position = { x = 0 y = 10 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
+	}
+
+	helicopter_can_3 = {
+
+		enable_equipment_modules = {
+			helicopter_cannon_3
+		}
+		
+		research_cost = 1
+		start_year = 1980
+
+		folder = {
+			name = bba_air_special_techs_folder
+			position = { x = 0 y = 14 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
+	}
+
+	helicopter_rotor_1 = {
+
+		enable_equipment_modules = {
+			helicopter_rotor_2x
+		}
+
+		dependencies = {
+			heli_engines = 1
+		}
+		
+		research_cost = 1
+		start_year = 1950
+
+		path = {
+			leads_to_tech = helicopter_rotor_2
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = bba_air_special_techs_folder
+			position = { x = 0 y = 2 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
+	}
+
+	helicopter_rotor_2 = {
+
+		enable_equipment_modules = {
+			helicopter_rotor_4x
+		}
+		
+		research_cost = 1
+		start_year = 1960
+
+		path = {
+			leads_to_tech = helicopter_rotor_3
+			research_cost_coeff = 1
+		}
+
+		folder = {
+			name = bba_air_special_techs_folder
+			position = { x = 0 y = 6 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
+	}
+
+	helicopter_rotor_3 = {
+
+		enable_equipment_modules = {
+			helicopter_rotor_2_4x
+		}
+		
+		research_cost = 1
+		start_year = 1980
+
+		folder = {
+			name = bba_air_special_techs_folder
+			position = { x = 0 y = 14 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
+	}
+	helicopter_engines_1 = {
+
+		enable_equipment_modules = {
+			helicopter_jet_engine_1x
+			helicopter_jet_engine_2x
+		}
+		
+		research_cost = 1
+		start_year = 1950
+		path = {
+			leads_to_tech = helicopter_engines_2
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = bba_air_special_techs_folder
+			position = { x = 0 y = 2 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
+	}
+
+	helicopter_engines_2 = {
+
+		enable_equipment_modules = {
+			helicopter_jet_engine_1x_1
+			helicopter_jet_engine_2x_1
+		}
+		
+		research_cost = 1
+		start_year = 1960
+
+		folder = {
+			name = bba_air_special_techs_folder
+			position = { x = 0 y = 6 }
+		}
+
+		path = {
+			leads_to_tech = helicopter_engines_3
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
+	}
+
+	helicopter_engines_3 = {
+
+		enable_equipment_modules = {
+			helicopter_jet_engine_1x_2
+			helicopter_jet_engine_2x_2
+		}
+		
+		research_cost = 1
+		start_year = 1980
+
+		folder = {
+			name = bba_air_special_techs_folder
+			position = { x = 0 y = 14 }
+		}
+
+		path = {
+			leads_to_tech = helicopter_engines_4
+			research_cost_coeff = 1
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
+	}
+
+	helicopter_engines_4 = {
+
+		enable_equipment_modules = {
+			helicopter_jet_engine_1x_3
+			helicopter_jet_engine_2x_3
+		}
+		
+		research_cost = 1
+		start_year = 1990
+
+		folder = {
+			name = bba_air_special_techs_folder
+			position = { x = 0 y = 18 }
+		}
+
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_engine
+		}
 	}
 }

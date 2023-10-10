@@ -2762,15 +2762,16 @@ equipment_modules = {
 		abbreviation = "asm"
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = naval_bomber
+		add_equipment_type = { naval_bomber maritime_patrol_plane } 
 
 		add_stats = {	
 			build_cost_ic = 15
 		}
 		xp_cost = 5
 		allow_mission_type = {
-			naval_bomber
-			port_strike
+			 naval_bomber
+           		 port_strike
+            	 	 naval_patrol
 		}
 		mission_type_stats = {
 			limit = {
@@ -2790,7 +2791,7 @@ equipment_modules = {
 		abbreviation = "asm"
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = naval_bomber
+		add_equipment_type = { naval_bomber maritime_patrol_plane } 
 		parent = guided_anti_ship_missile
 
 		add_stats = {	
@@ -2798,8 +2799,9 @@ equipment_modules = {
 		}
 		xp_cost = 5
 		allow_mission_type = {
-			naval_bomber
-			port_strike
+			 naval_bomber
+           		 port_strike
+            	 	 naval_patrol
 		}
 		mission_type_stats = {
 			limit = {
@@ -2819,7 +2821,7 @@ equipment_modules = {
 		abbreviation = "asm"
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = naval_bomber
+		add_equipment_type = { naval_bomber maritime_patrol_plane } 
 		parent = guided_anti_ship_missile_1
 
 		add_stats = {	
@@ -2827,8 +2829,9 @@ equipment_modules = {
 		}
 		xp_cost = 5
 		allow_mission_type = {
-			naval_bomber
-			port_strike
+			 naval_bomber
+           		 port_strike
+            	 	 naval_patrol
 		}
 		mission_type_stats = {
 			limit = {
@@ -2848,7 +2851,7 @@ equipment_modules = {
 		abbreviation = "asm"
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = naval_bomber
+		add_equipment_type = { naval_bomber maritime_patrol_plane } 
 		parent = guided_anti_ship_missile_2
 
 		add_stats = {	
@@ -2856,8 +2859,9 @@ equipment_modules = {
 		}
 		xp_cost = 5
 		allow_mission_type = {
-			naval_bomber
-			port_strike
+			 naval_bomber
+           		 port_strike
+            	 	 naval_patrol
 		}
 		mission_type_stats = {
 			limit = {
@@ -2877,7 +2881,7 @@ equipment_modules = {
 		abbreviation = "asm"
 		category = nav_bomber_weapon
 		sfx = sfx_ui_sd_module_turret
-		add_equipment_type = naval_bomber
+		add_equipment_type = { naval_bomber maritime_patrol_plane } 
 		parent = guided_anti_ship_missile_3
 
 		add_stats = {	
@@ -2885,8 +2889,9 @@ equipment_modules = {
 		}
 		xp_cost = 5
 		allow_mission_type = {
-			naval_bomber
-			port_strike
+			 naval_bomber
+           		 port_strike
+            	 	 naval_patrol
 		}
 		mission_type_stats = {
 			limit = {

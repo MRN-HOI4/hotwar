@@ -1,4 +1,19 @@
 animation = {
+	name = "Leopard1_attack_animation"
+	file = "Leopard1_attack.anim"
+}
+
+animation = {
+	name = "Leopard1_idle_animation"
+	file = "Leopard1_idle.anim"
+}
+
+animation = {
+	name = "Leopard1_moving_animation"
+	file = "Leopard1_moving.anim"
+}
+
+animation = {
 	name = "Stuarty_moving_animation"
 	file = "Stuarty_moving.anim"
 }
@@ -11,4 +26,49 @@ animation = {
 animation = {
 	name = "Stuarty_idle_animation"
 	file = "Stuarty_idle.anim"
+}
+
+animation = {
+	name = "ZTZ_96_idle_animation"
+	file = "CHI_medium_tank_ZTZ_96_idle.anim"
+}
+
+animation = {
+	name = "ZTZ_96_moving_animation"
+	file = "CHI_medium_tank_ZTZ_96_moving.anim"
+}
+
+animation = {
+	name = "ZTZ_96_attack_animation"
+	file = "CHI_medium_tank_ZTZ_96_attack.anim"
+}
+
+animation = {
+	name = "JAP_medium_tank_Type_90_idle_animation"
+	file = "JAP_medium_tank_Type_90_idle.anim"
+}
+
+animation = {
+	name = "JAP_medium_tank_Type_90_moving_animation"
+	file = "JAP_medium_tank_Type_90_moving.anim"
+}
+
+animation = {
+	name = "JAP_medium_tank_Type_90_attack_animation"
+	file = "JAP_medium_tank_Type_90_attack.anim"
+}
+
+animation = {
+	name = "FRA_medium_tank_AMX_56_Leclerc_idle_animation"
+	file = "FRA_medium_tank_AMX_56_Leclerc_idle.anim"
+}
+
+animation = {
+	name = "FRA_medium_tank_AMX_56_Leclerc_moving_animation"
+	file = "FRA_medium_tank_AMX_56_Leclerc_moving.anim"
+}
+
+animation = {
+	name = "FRA_medium_tank_AMX_56_Leclerc_attack_animation"
+	file = "FRA_medium_tank_AMX_56_Leclerc_attack.anim"
 }

@@ -41,6 +41,7 @@ sub_units = {
 		suppression = 4
 		weight = 1.5
 		initiative = 0.20
+		maximum_speed = -0.94
 		
 		supply_consumption = 0.18
 		
@@ -54,7 +55,7 @@ sub_units = {
 		transport = utility_helicopter_equipment
 
 		need = {
-			utility_helicopter_equipment = 30
+			helicopter_airframe = 30
 			infantry_equipment = 900
 		}
 
@@ -113,7 +114,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			attack_helicopter_equipment = 30
+			helicopter_airframe = 30
 		}
 		manpower = 500
 		max_organisation = 10
@@ -121,6 +122,7 @@ sub_units = {
 		default_morale = 0.3
 		training_time = 300
 		weight = 1.5
+		maximum_speed = -0.94
 		
 		supply_consumption = 0.30
 

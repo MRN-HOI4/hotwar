@@ -1,0 +1,1115 @@
+default = {
+	helicopter_airframe = {
+		pool = {
+			icons = { 
+				GFX_USA_utility_helicopter_equipment_1_medium
+				GFX_USA_utility_helicopter_equipment_3_medium
+				GFX_USA_attack_helicopter_equipment_2_medium
+				GFX_USA_attack_helicopter_equipment_4_medium
+			 }
+		}
+	}
+	helicopter_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_USA_utility_helicopter_equipment_1_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+
+	helicopter_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_USA_utility_helicopter_equipment_3_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+
+	helicopter_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_USA_attack_helicopter_equipment_2_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+
+	helicopter_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_USA_attack_helicopter_equipment_4_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+
+	helicopter_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_USA_attack_helicopter_equipment_3_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_USA_utility_helicopter_equipment_1_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_USA_utility_helicopter_equipment_3_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_USA_attack_helicopter_equipment_2_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_USA_attack_helicopter_equipment_4_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_USA_attack_helicopter_equipment_3_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_USA_marine_helicopter1_medium
+
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_USA_marine_helicopter1_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_USA_marine_helicopter2_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_USA_marine_helicopter3_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_USA_marine_helicopter4_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+}
+
+SOV = {
+	helicopter_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_SOV_utility_helicopter_equipment_1_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+
+	helicopter_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_SOV_utility_helicopter_equipment_3_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+
+	helicopter_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_SOV_attack_helicopter_equipment_2_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+
+	helicopter_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_SOV_attack_helicopter_equipment_4_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+
+	helicopter_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_SOV_attack_helicopter_equipment_3_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_SOV_utility_helicopter_equipment_1_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_SOV_utility_helicopter_equipment_3_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_SOV_attack_helicopter_equipment_2_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_SOV_attack_helicopter_equipment_4_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_SOV_attack_helicopter_equipment_3_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_SOV_marine_helicopter1_medium
+
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_SOV_marine_helicopter1_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_SOV_marine_helicopter2_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_SOV_marine_helicopter3_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_SOV_marine_helicopter4_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+}
+
+USA = {
+	helicopter_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_USA_utility_helicopter_equipment_1_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+
+	helicopter_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_USA_utility_helicopter_equipment_3_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+
+	helicopter_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_USA_attack_helicopter_equipment_2_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+
+	helicopter_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_USA_attack_helicopter_equipment_4_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+
+	helicopter_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_USA_attack_helicopter_equipment_3_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_USA_utility_helicopter_equipment_1_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_USA_utility_helicopter_equipment_3_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_USA_attack_helicopter_equipment_2_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_USA_attack_helicopter_equipment_4_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_USA_attack_helicopter_equipment_3_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_USA_marine_helicopter1_medium
+
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_USA_marine_helicopter1_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_USA_marine_helicopter2_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_USA_marine_helicopter3_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_USA_marine_helicopter4_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+}
+
+PRC = {
+	helicopter_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_PRC_utility_helicopter_equipment_1_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+
+	helicopter_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_PRC_utility_helicopter_equipment_3_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+
+	helicopter_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_PRC_attack_helicopter_equipment_2_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+
+	helicopter_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_PRC_attack_helicopter_equipment_4_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+
+	helicopter_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_PRC_attack_helicopter_equipment_3_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_PRC_utility_helicopter_equipment_1_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_PRC_utility_helicopter_equipment_3_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_PRC_attack_helicopter_equipment_2_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_PRC_attack_helicopter_equipment_4_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_PRC_attack_helicopter_equipment_3_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_PRC_marine_helicopter1_medium
+
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_PRC_marine_helicopter1_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_PRC_marine_helicopter2_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_PRC_marine_helicopter3_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_PRC_marine_helicopter4_medium
+			}
+			models = {
+				SOV_MI24_entity
+			}
+		}
+	}
+}
+
+FRA = {
+	helicopter_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_FRA_utility_helicopter_equipment_1_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+
+	helicopter_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_FRA_utility_helicopter_equipment_3_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+
+	helicopter_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_FRA_attack_helicopter_equipment_2_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+
+	helicopter_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_FRA_attack_helicopter_equipment_4_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+
+	helicopter_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_FRA_attack_helicopter_equipment_3_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_FRA_utility_helicopter_equipment_1_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_FRA_utility_helicopter_equipment_3_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_FRA_attack_helicopter_equipment_2_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_FRA_attack_helicopter_equipment_4_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_FRA_attack_helicopter_equipment_3_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_FRA_marine_helicopter1_medium
+
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_FRA_marine_helicopter1_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_FRA_marine_helicopter2_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_FRA_marine_helicopter3_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_FRA_marine_helicopter4_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+}
+
+ENG = {
+	helicopter_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_ENG_utility_helicopter_equipment_1_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+
+	helicopter_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_ENG_utility_helicopter_equipment_3_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+
+	helicopter_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_ENG_attack_helicopter_equipment_2_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+
+	helicopter_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_ENG_attack_helicopter_equipment_4_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+
+	helicopter_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_ENG_attack_helicopter_equipment_3_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_ENG_utility_helicopter_equipment_1_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_ENG_utility_helicopter_equipment_3_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_ENG_attack_helicopter_equipment_2_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_ENG_attack_helicopter_equipment_4_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_ENG_attack_helicopter_equipment_3_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_ENG_marine_helicopter1_medium
+
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_ENG_marine_helicopter1_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_ENG_marine_helicopter2_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_ENG_marine_helicopter3_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_ENG_marine_helicopter4_medium
+			}
+			models = {
+				USA_AH1G_entity
+			}
+		}
+	}
+}
+
+JAP = {
+	helicopter_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_JAP_utility_helicopter_equipment_1_medium
+			}
+			models = {
+				JAP_AH1G_entity
+			}
+		}
+	}
+
+	helicopter_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_JAP_utility_helicopter_equipment_3_medium
+			}
+			models = {
+				JAP_AH1G_entity
+			}
+		}
+	}
+
+	helicopter_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_JAP_attack_helicopter_equipment_2_medium
+			}
+			models = {
+				JAP_AH1G_entity
+			}
+		}
+	}
+
+	helicopter_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_JAP_attack_helicopter_equipment_4_medium
+			}
+			models = {
+				JAP_AH1G_entity
+			}
+		}
+	}
+
+	helicopter_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_JAP_attack_helicopter_equipment_3_medium
+			}
+			models = {
+				JAP_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_JAP_utility_helicopter_equipment_1_medium
+			}
+			models = {
+				JAP_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_JAP_utility_helicopter_equipment_3_medium
+			}
+			models = {
+				JAP_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_JAP_attack_helicopter_equipment_2_medium
+			}
+			models = {
+				JAP_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_JAP_attack_helicopter_equipment_4_medium
+			}
+			models = {
+				JAP_AH1G_entity
+			}
+		}
+	}
+	helicopter_cas_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_JAP_attack_helicopter_equipment_3_medium
+			}
+			models = {
+				JAP_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_0 = {
+		pool = {
+			icons = {
+				GFX_JAP_marine_helicopter1_medium
+
+			}
+			models = {
+				JAP_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_1 = {
+		pool = {
+			icons = {
+				GFX_JAP_marine_helicopter1_medium
+			}
+			models = {
+				JAP_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_2 = {
+		pool = {
+			icons = {
+				GFX_JAP_marine_helicopter2_medium
+			}
+			models = {
+				JAP_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_3 = {
+		pool = {
+			icons = {
+				GFX_JAP_marine_helicopter3_medium
+			}
+			models = {
+				JAP_AH1G_entity
+			}
+		}
+	}
+	helicopter_naval_airframe_4 = {
+		pool = {
+			icons = {
+				GFX_JAP_marine_helicopter4_medium
+			}
+			models = {
+				JAP_AH1G_entity
+			}
+		}
+	}
+}

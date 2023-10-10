@@ -25,7 +25,6 @@ equipments = {
 				allowed_module_categories = {
 					tank_small_main_armament
 					tank_medium_main_armament
-					tank_heavy_main_armament
 					tank_flamethrower
 				}
 			}
@@ -226,7 +225,7 @@ equipments = {
 			steel = 1
 		}
 
-		manpower = 2
+		manpower = 3
 
 	}
 
@@ -618,7 +617,7 @@ equipments = {
 			steel = 1
 		}
 
-		manpower = 2
+		manpower = 4
 
 	}
 	medium_tank_chassis_0 = { #used for interwar tanks
@@ -905,7 +904,7 @@ equipments = {
 			steel = 1
 		}
 
-		manpower = 2
+		manpower = 5
 
 	}
 
@@ -994,9 +993,9 @@ equipments = {
 		parent = heavy_tank_chassis_4
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 7
+		build_cost_ic = 16
 		reliability = 1.5
-		armor_value = 95
+		armor_value = 108
 		resources = {
 			steel = 3
 			chromium = 2
@@ -1010,9 +1009,9 @@ equipments = {
 		parent = heavy_tank_chassis_5
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 8
+		build_cost_ic = 24
 		reliability = 1.5
-		armor_value = 100
+		armor_value = 132
 		resources = {
 			steel = 4
 			chromium = 2
@@ -1020,7 +1019,7 @@ equipments = {
 	}
 
 	modern_tank_chassis = {
-		year = 1948
+		year = 1945
 		is_archetype = yes
 		is_buildable = no
 		can_be_produced = {
@@ -1218,6 +1217,18 @@ equipments = {
 			module = lean_fuel
 			count < 2
 		}
+		module_count_limit = {
+			module = add_on_armor
+			count < 2
+		}
+		module_count_limit = {
+			module = slopped_turret_armor
+			count < 2
+		}
+		module_count_limit = {
+			module = besh
+			count < 2
+		}
 
 		default_modules = {
 			main_armament_slot = empty
@@ -1238,7 +1249,7 @@ equipments = {
 			chromium = 1
 		}
 
-		manpower = 2
+		manpower = 4
 
 	}
 
@@ -1271,9 +1282,9 @@ equipments = {
 		parent = modern_tank_chassis_0
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 8
+		build_cost_ic = 10
 		reliability = 1.7
-		armor_value = 90
+		armor_value = 95
 		resources = {
 			steel = 2
 			chromium = 1
@@ -1292,7 +1303,7 @@ equipments = {
 		parent = modern_tank_chassis_1
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 10
+		build_cost_ic = 12
 		reliability = 1.7
 		armor_value = 100
 		resources = {
@@ -1312,7 +1323,7 @@ equipments = {
 		parent = modern_tank_chassis_2
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 12
+		build_cost_ic = 14
 		reliability = 1.7
 		armor_value = 110
 		resources = {
@@ -1333,7 +1344,7 @@ equipments = {
 		parent = modern_tank_chassis_3
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 14
+		build_cost_ic = 16
 		reliability = 1.7
 		armor_value = 120
 		resources = {
@@ -1354,7 +1365,7 @@ equipments = {
 		parent = modern_tank_chassis_4
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 16
+		build_cost_ic = 18
 		reliability = 1.7
 		armor_value = 130
 		resources = {
@@ -1374,7 +1385,7 @@ equipments = {
 		parent = modern_tank_chassis_5
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 18
+		build_cost_ic = 20
 		reliability = 1.7
 		armor_value = 140
 		resources = {
@@ -1394,7 +1405,7 @@ equipments = {
 		parent = modern_tank_chassis_6
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 20
+		build_cost_ic = 22
 		reliability = 1.8
 		armor_value = 150
 		resources = {
@@ -1414,7 +1425,7 @@ equipments = {
 		parent = modern_tank_chassis_7
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 22
+		build_cost_ic = 24
 		reliability = 1.8
 		armor_value = 160
 		resources = {
@@ -1434,7 +1445,7 @@ equipments = {
 		parent = modern_tank_chassis_8
 		priority = 2000
 		module_slots = inherit
-		build_cost_ic = 24
+		build_cost_ic = 26
 		reliability = 1.8
 		armor_value = 170
 		resources = {
@@ -1608,7 +1619,7 @@ equipments = {
 			chromium = 2
 		}
 
-		manpower = 2
+		manpower = 7
 
 	}
 
@@ -1669,7 +1680,6 @@ equipments = {
 				allowed_module_categories = {
 					tank_small_main_armament
 					tank_medium_main_armament
-					tank_heavy_main_armament
 				}
 			}
 
@@ -1865,7 +1875,7 @@ equipments = {
 			steel = 1
 		}
 
-		manpower = 2
+		manpower = 3
 
 	}
 
@@ -1983,7 +1993,6 @@ equipments = {
 				allowed_module_categories = {
 					tank_small_main_armament
 					tank_medium_main_armament
-					tank_heavy_main_armament
 				}
 			}
 
@@ -2186,7 +2195,7 @@ equipments = {
 			steel = 1
 		}
 
-		manpower = 2
+		manpower = 3
 
 	}
 	para_tank_chassis_1 = {
@@ -2492,7 +2501,7 @@ equipments = {
 			steel = 1
 		}
 
-		manpower = 2
+		manpower = 3
 
 	}
 	wheeled_tank_chassis_0 = {

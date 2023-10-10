@@ -20,35 +20,7 @@ sub_units = {
 		carrier_air_wing_size = 10
 		land_air_wing_size = 100
 	}
-	utility_helicopter = {
-        	sprite = heavy_plane
-        	priority = 6
-        	active = yes
-        	type =  air_transport 
-        	need = { utility_helicopter_equipment = 1 }
-        	carrier_air_wing_size = 10
-        	land_air_wing_size = 100
-   	}
 
-    	attack_helicopter = {
-        	sprite = light_plane
-        	priority = 6
-        	active = yes
-        	type =  cas 
-        	need = { attack_helicopter_equipment = 1 }
-        	carrier_air_wing_size = 10
-        	land_air_wing_size = 100
-    	}
-
-    	marine_helicopter = {
-        	sprite = light_plane
-        	priority = 6
-        	active = yes
-        	type = naval_bomber 
-        	need = { marine_helicopter_equipment = 1 }
-       	 	carrier_air_wing_size = 10
-        	land_air_wing_size = 100
-    	}
 	cas = {
 		sprite = light_plane
 		priority = 2
@@ -69,6 +41,46 @@ sub_units = {
 		land_air_wing_size = 100
 	}
 
+	drone_cas = {
+		sprite = light_plane
+		priority = 2
+		active = yes
+		type = cas
+		need = { drone_airframe = 1 }
+		categories = { category_cas }
+		carrier_air_wing_size = 10
+		land_air_wing_size = 100
+	}
+	helicopter_cas = {
+		sprite = light_plane
+		priority = 2
+		active = yes
+		type = cas
+		need = { helicopter_cas_airframe = 1 }
+		categories = { category_helicopter_cas }
+		carrier_air_wing_size = 10
+		land_air_wing_size = 100
+	}
+	helicopter_nav_bomber = {
+		sprite = light_plane
+		priority = 3
+		active = yes
+		type = naval_bomber
+		need = { helicopter_naval_airframe = 1 }
+		categories = { category_helicopter_naval}
+		carrier_air_wing_size = 10
+		land_air_wing_size = 100
+	}
+	helicopter_fighter = {
+		sprite = light_plane
+		priority = 6
+		active = yes
+		type = fighter
+		need = { helicopter_airframe = 1 }
+		categories = { category_helicopter }
+		land_air_wing_size = 100
+		carrier_air_wing_size = 10
+	}
 	nav_bomber = {
 		sprite = light_plane
 		priority = 3

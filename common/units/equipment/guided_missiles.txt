@@ -7,6 +7,7 @@ equipments = {
 				has_idea = BUL_army_restrictions
 			}
 		}
+
 		allow_mission_type = {
 			strategic_bomber
 		}
@@ -42,6 +43,10 @@ equipments = {
 	guided_missile_equipment_1 = {
 		year = 1944
 
+		allow_mission_type = {
+			strategic_bomber
+		}
+
 		archetype = guided_missile_equipment
 		is_buildable = no
 		one_use_only = yes
@@ -57,6 +62,10 @@ equipments = {
 
 	guided_missile_equipment_2 = {
 		year = 1945
+
+		allow_mission_type = {
+			strategic_bomber
+		}
 
 		archetype = guided_missile_equipment
 		parent = guided_missile_equipment_1
@@ -75,6 +84,10 @@ equipments = {
 
 		archetype = guided_missile_equipment
 		parent = guided_missile_equipment_2
+
+		allow_mission_type = {
+			strategic_bomber
+		}
 		is_buildable = no
 		one_use_only = yes
 		sprite = missile_default
@@ -91,6 +104,9 @@ equipments = {
 
 		archetype = guided_missile_equipment
 		parent = guided_missile_equipment_3
+		allow_mission_type = {
+			strategic_bomber
+		}
 		is_buildable = no
 		one_use_only = yes
 		sprite = missile_default
@@ -107,6 +123,9 @@ equipments = {
 
 		archetype = guided_missile_equipment
 		parent = guided_missile_equipment_4
+		allow_mission_type = {
+			strategic_bomber
+		}
 		is_buildable = no
 		one_use_only = yes
 		sprite = missile_default
@@ -123,6 +142,9 @@ equipments = {
 
 		archetype = guided_missile_equipment
 		parent = guided_missile_equipment_5
+		allow_mission_type = {
+			strategic_bomber
+		}
 		is_buildable = no
 		one_use_only = yes
 		sprite = missile_default
@@ -139,6 +161,9 @@ equipments = {
 
 		archetype = guided_missile_equipment
 		parent = guided_missile_equipment_6
+		allow_mission_type = {
+			strategic_bomber
+		}
 		is_buildable = no
 		one_use_only = yes
 		sprite = missile_default

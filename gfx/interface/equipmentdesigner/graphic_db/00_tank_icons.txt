@@ -1139,6 +1139,9 @@ GER = {
 				"gfx/interface/technologies/GER/m1TD.dds"
 				"gfx/interface/technologies/GER/m1.dds"
 			}
+			models = {
+				"geo_leo1_entity"
+			}
 		}
 	}
 	modern_tank_chassis_2 = {
@@ -1150,6 +1153,9 @@ GER = {
 				"gfx/interface/technologies/GER/m2SPG.dds"
 				"gfx/interface/technologies/GER/m2.dds"
 			}
+			models = {
+				"geo_leo1_entity"
+			}
 		}
 	}
 	modern_tank_chassis_3 = {
@@ -1160,6 +1166,9 @@ GER = {
 				"gfx/interface/technologies/GER/m3SPG.dds"
 				"gfx/interface/technologies/GER/m3TD.dds"
 				"gfx/interface/technologies/GER/m3.dds"
+			}
+			models = {
+				"geo_leo1_entity"
 			}
 		}
 	}
@@ -1173,6 +1182,9 @@ GER = {
 				"gfx/interface/technologies/GER/m4ATGM.dds"
 				"gfx/interface/technologies/GER/m4.dds"
 			}
+			models = {
+				"geo_leo1_entity"
+			}
 		}
 	}
 	modern_tank_chassis_5 = {
@@ -1185,6 +1197,9 @@ GER = {
 				"gfx/interface/technologies/GER/m5AA.dds"
 				"gfx/interface/technologies/GER/m5.dds"
 			}
+			models = {
+				"geo_leo1a5_entity"
+			}
 		}
 	}
 	modern_tank_chassis_6 = {
@@ -1196,6 +1211,9 @@ GER = {
 				"gfx/interface/technologies/GER/m6TD.dds"
 				"gfx/interface/technologies/GER/m6ATGM.dds"
 				"gfx/interface/technologies/GER/m6.dds"
+			}
+			models = {
+				"geo_leo1a5_entity"
 			}
 		}
 	}
@@ -1269,7 +1287,8 @@ SOV = {
 			icons = {
 				"gfx/interface/technologies/SOV/LAND/LT2.dds" 
 				"gfx/interface/technologies/SOV/LAND/SPARTL2.dds" 
-				"gfx/interface/technologies/SOV/LAND/SPATL2.dds" 
+				"gfx/interface/technologies/SOV/LAND/SPATL2.dds"
+				"gfx/interface/technologies/SOV/LAND/LT2.dds"  
 			}
 			models = {
 				"SOV_light_armor_0_entity"
@@ -1290,6 +1309,7 @@ SOV = {
 				"gfx/interface/technologies/SOV/LAND/LT3.dds" 
 				"gfx/interface/technologies/SOV/LAND/SPATL3.dds" 
 				"gfx/interface/technologies/SOV/LAND/SPARTL3.dds"
+				"gfx/interface/technologies/SOV/LAND/LT3.dds" 
 			}
 			models = {
 				"SOV_light_armor_0_entity"
@@ -1312,7 +1332,7 @@ SOV = {
 				"gfx/interface/technologies/SOV/lt1.dds"
 			}
 			models = {
-				"PRC_modern_light_tank_entity"
+				"PT76_entity"
 			}
 		}
 	}
@@ -1326,7 +1346,7 @@ SOV = {
 				"gfx/interface/technologies/SOV/lt2.dds"
 			}
 			models = {
-				"PRC_modern_light_tank_entity"
+				"PT76_entity"
 			}
 		}
 	}
@@ -1339,7 +1359,7 @@ SOV = {
 				"gfx/interface/technologies/SOV/lt3.dds"
 			}
 			models = {
-				"PRC_modern_light_tank_entity"
+				"PT76_entity"
 			}
 		}
 	}
@@ -1352,7 +1372,7 @@ SOV = {
 				"gfx/interface/technologies/SOV/lt4.dds"
 			}
 			models = {
-				"PRC_modern_light_tank_entity"
+				"PT76_entity"
 			}
 		}
 	}
@@ -1365,7 +1385,7 @@ SOV = {
 				"gfx/interface/technologies/SOV/lt5.dds"
 			}
 			models = {
-				"PRC_modern_light_tank_entity"
+				"PT76_entity"
 			}
 		}
 	}
@@ -1377,7 +1397,7 @@ SOV = {
 				"gfx/interface/technologies/SOV/lt6.dds"
 			}
 			models = {
-				"PRC_modern_light_tank_entity"
+				"PT76_entity"
 			}
 		}
 	}
@@ -1402,6 +1422,7 @@ SOV = {
 				"gfx/interface/technologies/SOV/LAND/m1chassis.dds" 
 				"gfx/interface/technologies/SOV/LAND/SPARTM1.dds" 
 				"gfx/interface/technologies/SOV/LAND/SPATM1.dds" 
+				"gfx/interface/technologies/SOV/LAND/m1chassis.dds" 
 			}
 			models = {
 				"SOV_medium_armor_2_entity"
@@ -1422,6 +1443,7 @@ SOV = {
 				"gfx/interface/technologies/SOV/LAND/m2chassis.dds" 
 				"gfx/interface/technologies/SOV/LAND/SPARTM2.dds" 
 				"gfx/interface/technologies/SOV/LAND/SPATM2.dds" 
+				"gfx/interface/technologies/SOV/LAND/m2chassis.dds" 
 			}
 			models = {
 				"SOV_medium_armor_2_entity"
@@ -1442,6 +1464,7 @@ SOV = {
 				"gfx/interface/technologies/SOV/LAND/m3chassis.dds" 
 				"gfx/interface/technologies/SOV/LAND/SPARTM3.dds" 
 				"gfx/interface/technologies/SOV/LAND/SPATM3.dds" 
+				"gfx/interface/technologies/SOV/LAND/m3chassis.dds" 
 			}
 			models = {
 				"SOV_medium_armor_entity"
@@ -1461,6 +1484,7 @@ SOV = {
 				"gfx/interface/technologies/SOV/LAND/hv1chassis.dds"
 				"gfx/interface/technologies/SOV/LAND/SPARTH1.dds"
 				"gfx/interface/technologies/SOV/LAND/SPATH1.dds"
+				"gfx/interface/technologies/SOV/LAND/hv1chassis.dds"
 			}
 			models = {
 				"SOV_heavy_armor_entity"
@@ -1478,6 +1502,7 @@ SOV = {
 				"gfx/interface/technologies/SOV/LAND/hv1chassis.dds"
 				"gfx/interface/technologies/SOV/LAND/SPARTH1.dds"
 				"gfx/interface/technologies/SOV/LAND/SPATH1.dds"
+				"gfx/interface/technologies/SOV/LAND/hv1chassis.dds"
 			}
 			models = {
 				"SOV_heavy_armor_entity"
@@ -1496,6 +1521,7 @@ SOV = {
 				"gfx/interface/technologies/SOV/LAND/hv2chassis.dds" 
 				"gfx/interface/technologies/SOV/LAND/SPARTH2.dds" 
 				"gfx/interface/technologies/SOV/LAND/SPATH2.dds" 
+				"gfx/interface/technologies/SOV/LAND/hv2chassis.dds" 
 			}
 			models = {
 				"SOV_heavy_armor_0_entity"
@@ -1514,6 +1540,7 @@ SOV = {
 				"gfx/interface/technologies/SOV/LAND/hv3chassis.dds" 
 				"gfx/interface/technologies/SOV/LAND/SPARTH3.dds" 
 				"gfx/interface/technologies/SOV/LAND/SPATH3.dds" 
+				"gfx/interface/technologies/SOV/LAND/hv3chassis.dds" 
 			}
 			models = {
 				"SOV_heavy_armor_entity"
@@ -1576,7 +1603,7 @@ SOV = {
 				"gfx/interface/technologies/GEN/aph1.dds"
 			}
 			models = {
-				"PRC_modern_light_tank_entity"
+				"PT76_entity"
 			}
 		}
 	}
@@ -1588,7 +1615,7 @@ SOV = {
 				"gfx/interface/technologies/GEN/aph2.dds"
 			}
 			models = {
-				"PRC_modern_light_tank_entity"
+				"PT76_entity"
 			}
 		}
 	}
@@ -1600,7 +1627,7 @@ SOV = {
 				"gfx/interface/technologies/SOV/aph3.dds"
 			}
 			models = {
-				"PRC_modern_light_tank_entity"
+				"PT76_entity"
 			}
 		}
 	}
@@ -1612,7 +1639,7 @@ SOV = {
 				"gfx/interface/technologies/SOV/aph4.dds"
 			}
 			models = {
-				"PRC_modern_light_tank_entity"
+				"PT76_entity"
 			}
 		}
 	}
@@ -1624,7 +1651,7 @@ SOV = {
 				"gfx/interface/technologies/SOV/p1.dds"
 			}
 			models = {
-				"PRC_modern_light_tank_entity"
+				"PT76_entity"
 			}
 		}
 	}
@@ -1636,7 +1663,7 @@ SOV = {
 				"gfx/interface/technologies/SOV/p2.dds"
 			}
 			models = {
-				"PRC_modern_light_tank_entity"
+				"PT76_entity"
 			}
 		}
 	}
@@ -1649,7 +1676,7 @@ SOV = {
 				"gfx/interface/technologies/SOV/p3.dds"
 			}
 			models = {
-				"PRC_modern_light_tank_entity"
+				"PT76_entity"
 			}
 		}
 	}
@@ -1731,6 +1758,7 @@ SOV = {
 			models = {
 				"SOV_t72desert_entity"
 				"SOV_t72_entity"
+				"SOV_t72bv_entity"
 			}
 		}
 	}
@@ -1740,10 +1768,13 @@ SOV = {
 				"gfx/interface/technologies/SOV/m6.dds"
 				"gfx/interface/technologies/SOV/m6AA.dds"
 				"gfx/interface/technologies/SOV/m6SPG.dds"
+				"gfx/interface/technologies/SOV/m6.dds"
 			}
 			models = {
+				"SOV_2S19_entity"
 				"SOV_t72desert_entity"
 				"SOV_t72_entity"
+				"SOV_t72bv_entity"
 			}
 		}
 	}
@@ -1754,10 +1785,11 @@ SOV = {
 				"gfx/interface/technologies/SOV/m7AA.dds"
 				"gfx/interface/technologies/SOV/m7SPG.dds"
 				"gfx/interface/technologies/SOV/m7AT.dds"
+				"gfx/interface/technologies/SOV/m7.dds"
 			}
 			models = {
-				"SOV_t72desert_entity"
-				"SOV_t72_entity"
+				"SOV_2S19_entity"
+				"SOV_t80b_entity"
 			}
 		}
 	}
@@ -1767,10 +1799,11 @@ SOV = {
 				"gfx/interface/technologies/SOV/m8.dds"
 				"gfx/interface/technologies/SOV/m8AA.dds"
 				"gfx/interface/technologies/SOV/m8SPG.dds"
+				"gfx/interface/technologies/SOV/m8.dds"
 			}
 			models = {
-				"SOV_t72desert_entity"
-				"SOV_t72_entity"
+				"SOV_2S19_entity"
+				"SOV_t80bv_entity"
 			}
 		}
 	}
@@ -1780,9 +1813,11 @@ SOV = {
 				"gfx/interface/technologies/SOV/m9.dds"
 				"gfx/interface/technologies/SOV/m9AA.dds"
 				"gfx/interface/technologies/SOV/m9SPG.dds"
+				"gfx/interface/technologies/SOV/m9.dds"
 			}
 			models = {
-				"SOV_modern1_armor_entity"
+				"SOV_2S19_entity"
+				"T90A_entity"
 			}
 		}
 	}
@@ -2112,6 +2147,10 @@ USA = {
 				"gfx/interface/technologies/USA/LAND/hv4SPG.dds"
 				"gfx/interface/technologies/USA/LAND/hv4.dds"
 			}
+			models = {
+				"M103_entity"
+				
+			}
 		}
 	}	
 	heavy_tank_chassis_5 = {
@@ -2121,6 +2160,553 @@ USA = {
 				"gfx/interface/technologies/USA/LAND/hv5AA.dds"
 				"gfx/interface/technologies/USA/LAND/hv5SPG.dds"
 				"gfx/interface/technologies/USA/LAND/hv5.dds"
+			}
+			models = {
+				"M103_entity"
+				"M109_entity"				
+			}
+		}
+	}	
+	heavy_tank_chassis_6 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/hv6.dds"
+				"gfx/interface/technologies/USA/LAND/hv6AA.dds"
+				"gfx/interface/technologies/USA/LAND/hv6SPG.dds"
+				"gfx/interface/technologies/USA/LAND/hv6.dds"
+			}
+			models = {
+				"M103_entity"
+				"M109_entity"
+			}
+		}
+	}
+
+	amphibious_tank_chassis = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/APMHT1.dds"
+			}
+			models = {
+				"USA_light_modern_tank_entity"
+			}
+		}
+	}
+	para_tank_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/p1.dds"
+				"gfx/interface/technologies/USA/LAND/p1AA.dds"
+				"gfx/interface/technologies/USA/LAND/p1SPG.dds"
+				"gfx/interface/technologies/USA/LAND/p1.dds"
+			}
+			models = {
+				"USA_light_modern_tank_entity"
+			}
+		}
+	}
+	para_tank_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/p2.dds"
+				"gfx/interface/technologies/USA/LAND/lt5AA.dds"
+				"gfx/interface/technologies/USA/LAND/lt5SPG.dds"
+				"gfx/interface/technologies/USA/LAND/p2.dds"
+			}
+			models = {
+				"USA_light_modern_tank_entity"
+			}
+		}
+	}
+	para_tank_chassis_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/p3.dds"
+				"gfx/interface/technologies/USA/LAND/lt4AA.dds"
+				"gfx/interface/technologies/USA/LAND/lt4SPG.dds"
+				"gfx/interface/technologies/USA/LAND/p3.dds"
+			}
+			models = {
+				"USA_light_modern_tank_entity"
+			}
+		}
+	}
+	para_tank_chassis_4 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/p4.dds"
+				"gfx/interface/technologies/USA/LAND/lt6AA.dds"
+				"gfx/interface/technologies/USA/LAND/lt6SPG.dds"
+				"gfx/interface/technologies/USA/LAND/p4.dds"
+			}
+			models = {
+				"USA_light_modern_tank_entity"
+			}
+		}
+	}
+	wheeled_tank_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/w2.dds"
+				"gfx/interface/technologies/USA/LAND/w2AA.dds"
+				"gfx/interface/technologies/USA/LAND/w2SPG.dds"
+				"gfx/interface/technologies/USA/LAND/w2.dds"
+			}
+		}
+	}
+	modern_tank_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/m1.dds"
+				"gfx/interface/technologies/USA/LAND/m1AA.dds"
+				"gfx/interface/technologies/USA/LAND/m1SPG.dds"
+				"gfx/interface/technologies/USA/LAND/m1.dds"
+			}
+			models = {
+				"USA_M48_entity"
+			}
+		}
+	}
+	modern_tank_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/m2.dds"
+				"gfx/interface/technologies/USA/LAND/m2AA.dds"
+				"gfx/interface/technologies/USA/LAND/m2SPG.dds"
+				"gfx/interface/technologies/USA/LAND/m2.dds"
+			}
+			models = {
+				"USA_M60_entity"
+			}
+		}
+	}
+	modern_tank_chassis_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/m3.dds"
+				"gfx/interface/technologies/USA/LAND/m3AA.dds"
+				"gfx/interface/technologies/USA/LAND/m3SPG.dds"
+				"gfx/interface/technologies/USA/LAND/m3.dds"
+			}
+			models = {
+				"USA_M60_entity"
+			}
+		}
+	}
+	modern_tank_chassis_4 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/m4.dds"
+				"gfx/interface/technologies/USA/LAND/m4AA.dds"
+				"gfx/interface/technologies/USA/LAND/m4SPG.dds"
+				"gfx/interface/technologies/USA/LAND/m4.dds"
+			}
+			models = {
+				"USA_M60_entity"
+			}
+		}
+	}
+	modern_tank_chassis_5 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/m5.dds"
+				"gfx/interface/technologies/USA/LAND/m5AA.dds"
+				"gfx/interface/technologies/USA/LAND/m5SPG.dds"
+				"gfx/interface/technologies/USA/LAND/m5.dds"
+			}
+			models = {
+				"M109_entity"
+				"USA_M60_entity"
+			}
+		}
+	}
+	modern_tank_chassis_6 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/m6.dds"
+				"gfx/interface/technologies/USA/LAND/m6AA.dds"
+				"gfx/interface/technologies/USA/LAND/m6SPG.dds"
+				"gfx/interface/technologies/USA/LAND/m6.dds"
+			}
+			models = {
+				"M109_entity"
+				"USA_M60_entity"
+			}
+		}
+	}
+	modern_tank_chassis_7 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/m7.dds"
+				"gfx/interface/technologies/USA/LAND/m7AA.dds"
+				"gfx/interface/technologies/USA/LAND/m7SPG.dds"
+				"gfx/interface/technologies/USA/LAND/m7.dds"
+			}
+			models = {
+				"M109_entity"
+				"USA_M1A1F_entity"
+				"USA_M1A1D_entity"
+			}
+		}
+	}
+	modern_tank_chassis_8 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/m8.dds"
+				"gfx/interface/technologies/USA/LAND/m8AA.dds"
+				"gfx/interface/technologies/USA/LAND/m8SPG.dds"
+				"gfx/interface/technologies/USA/LAND/m8.dds"
+			}
+			models = {
+				"M109_entity"
+				"USA_M1A1F_entity"
+				"USA_M1A1D_entity"
+			}
+		}
+	}
+	modern_tank_chassis_9 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/m9.dds"
+				"gfx/interface/technologies/USA/LAND/m9AA.dds"
+				"gfx/interface/technologies/USA/LAND/m9SPG.dds"
+				"gfx/interface/technologies/USA/LAND/m9.dds"
+			}
+			models = {
+				"M109_entity"
+				"USA_M1A2F_entity"
+				"USA_M1A2D_entity"
+			}
+		}
+	}
+}
+
+BRA = {
+
+	light_tank_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/BRA/lt1.dds" 
+			}
+			models = {
+			}
+		}
+	}
+
+	light_tank_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/LT2.dds"
+			}
+			models = {
+				"USA_light_armor_2_entity"
+				"USA_light_armor_0_entity"
+				"USA_light_tank_destroyer_brigade_1_entity"
+				"USA_light_tank_destroyer_brigade_2_entity"
+				"USA_light_tank_destroyer_brigade_0_entity"
+				"USA_light_sp_artillery_brigade_0_entity"
+				"USA_light_sp_artillery_brigade_1_entity"
+				"USA_light_sp_anti_air_brigade_1_entity"
+				"USA_light_sp_anti_air_brigade_2_entity"
+				"USA_light_armor_entity"
+			}
+		}
+	}
+
+	light_tank_chassis_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/BRA/lt3.dds" 
+			}
+			models = {
+				"USA_light_armor_entity"
+				"USA_light_armor_0_entity"
+				"USA_light_tank_destroyer_brigade_1_entity"
+				"USA_light_tank_destroyer_brigade_2_entity"
+				"USA_light_tank_destroyer_brigade_0_entity"
+				"USA_light_sp_artillery_brigade_0_entity"
+				"USA_light_sp_artillery_brigade_1_entity"
+				"USA_light_sp_anti_air_brigade_1_entity"
+				"USA_light_sp_anti_air_brigade_2_entity"
+				"USA_light_armor_2_entity"
+			}
+		}
+	}
+	light_tank_chassis_4 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/USA_lt1.dds"
+				"gfx/interface/technologies/USA/LAND/lt1AA.dds"
+				"gfx/interface/technologies/USA/LAND/lt1SPG.dds"
+				"gfx/interface/technologies/USA/LAND/USA_lt1.dds"
+			}
+			models = {
+				"USA_light_modern_tank_entity"
+			}
+		}
+	}
+
+	light_tank_chassis_5 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/BRA/lt5.dds" 
+				"gfx/interface/technologies/BRA/lt5AA.dds" 
+				"gfx/interface/technologies/BRA/lt5SPG.dds"  
+			}
+			models = {
+				"USA_light_modern_tank_entity"
+			}
+		}
+	}
+
+	light_tank_chassis_6 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/BRA/lt6.dds" 
+				"gfx/interface/technologies/BRA/lt6AA.dds" 
+				"gfx/interface/technologies/BRA/lt6SPG.dds"  
+			}
+			models = {
+				"USA_light_modern_tank_entity"
+			}
+		}
+	}
+
+	light_tank_chassis_7 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/BRA/lt7.dds" 
+				"gfx/interface/technologies/BRA/lt7AA.dds" 
+				"gfx/interface/technologies/BRA/lt7SPG.dds"  
+			}
+			models = {
+				"USA_light_modern_tank_entity"
+			}
+		}
+	}
+
+	light_tank_chassis_8 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/BRA/lt8.dds" 
+				"gfx/interface/technologies/BRA/lt8AA.dds" 
+				"gfx/interface/technologies/BRA/lt8SPG.dds"  
+			}
+			models = {
+				"USA_light_modern_tank_entity"
+			}
+		}
+	}
+
+	light_tank_chassis_9 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/BRA/lt9.dds" 
+				"gfx/interface/technologies/BRA/lt9AA.dds" 
+				"gfx/interface/technologies/BRA/lt9SPG.dds"  
+			}
+			models = {
+				"USA_light_modern_tank_entity"
+			}
+		}
+	}
+
+
+	medium_tank_chassis_0 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA_basic_main_tank.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_AAB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_AAB_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_AAC.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_AAC_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ABA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ABA_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ABB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ABB_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ABC.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ABC_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ACA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ACA_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ACB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ACB_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ACC.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_medium_ACC_camo.dds" 
+			}
+			models = {
+				"USA_medium_armor_2_entity"
+				"USA_medium_armor_entity"
+				"USA_medium_tank_destroyer_brigade_0_entity"
+				"USA_medium_tank_destroyer_brigade_1_entity"
+				"USA_medium_tank_destroyer_brigade_2_entity"
+				"USA_medium_sp_artillery_brigade_0_entity"
+				"USA_medium_sp_artillery_brigade_1_entity"
+				"USA_medium_sp_artillery_brigade_2_entity"
+				"USA_medium_sp_anti_air_brigade_1_entity"
+				"USA_medium_sp_anti_air_brigade_0_entity"
+				"USA_medium_armor_0_entity"
+			}
+		}
+	}
+	medium_tank_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/MT1.dds" 
+			}
+			models = {
+				"USA_medium_armor_2_entity"
+				"USA_medium_armor_entity"
+				"USA_medium_tank_destroyer_brigade_0_entity"
+				"USA_medium_tank_destroyer_brigade_1_entity"
+				"USA_medium_tank_destroyer_brigade_2_entity"
+				"USA_medium_sp_artillery_brigade_0_entity"
+				"USA_medium_sp_artillery_brigade_1_entity"
+				"USA_medium_sp_artillery_brigade_2_entity"
+				"USA_medium_sp_anti_air_brigade_1_entity"
+				"USA_medium_sp_anti_air_brigade_0_entity"
+				"USA_medium_armor_0_entity"
+			}
+		}
+	}
+
+	medium_tank_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/MT2.dds"
+			}
+			models = {
+				"USA_medium_armor_2_entity"
+				"USA_medium_armor_0_entity"
+				"USA_medium_tank_destroyer_brigade_0_entity"
+				"USA_medium_tank_destroyer_brigade_1_entity"
+				"USA_medium_tank_destroyer_brigade_2_entity"
+				"USA_medium_sp_artillery_brigade_0_entity"
+				"USA_medium_sp_artillery_brigade_1_entity"
+				"USA_medium_sp_artillery_brigade_2_entity"
+				"USA_medium_sp_anti_air_brigade_1_entity"
+				"USA_medium_sp_anti_air_brigade_0_entity"
+				"USA_medium_armor_entity"
+			}
+		}
+	}
+
+	medium_tank_chassis_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/MT3.dds" 
+			}
+			models = {
+				"USA_medium_armor_entity"
+				"USA_medium_armor_0_entity"
+				"USA_medium_tank_destroyer_brigade_0_entity"
+				"USA_medium_tank_destroyer_brigade_1_entity"
+				"USA_medium_tank_destroyer_brigade_2_entity"
+				"USA_medium_sp_artillery_brigade_0_entity"
+				"USA_medium_sp_artillery_brigade_1_entity"
+				"USA_medium_sp_artillery_brigade_2_entity"
+				"USA_medium_sp_anti_air_brigade_1_entity"
+				"USA_medium_sp_anti_air_brigade_0_entity"
+				"USA_medium_armor_2_entity"
+			}
+		}
+	}
+	heavy_tank_chassis_0 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA_basic_heavy_tank.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_AAB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_AAB_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_AAC.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_AAC_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ABA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ABA_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ABB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ABB_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ABC.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ABC_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ACA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ACA_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ACB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ACB_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ACC.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/USA/USA_heavy_ACC_camo.dds" 
+			}
+			models = {
+				"USA_heavy_armor_entity"
+				"USA_heavy_tank_destroyer_brigade_0_entity"
+				"USA_heavy_sp_artillery_brigade_1_entity"
+				"USA_heavy_armor_0_entity"
+			}
+		}
+	}
+	heavy_tank_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/HT1.dds"
+			}
+			models = {
+				"USA_heavy_armor_entity"
+				"USA_heavy_tank_destroyer_brigade_0_entity"
+				"USA_heavy_sp_artillery_brigade_1_entity"
+				"USA_heavy_armor_0_entity"
+			}
+		}
+	}
+
+	heavy_tank_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/HT2.dds"
+			}
+			models = {
+				
+				"USA_heavy_armor_0_entity"
+				"USA_heavy_tank_destroyer_brigade_0_entity"
+				"USA_heavy_sp_artillery_brigade_1_entity"
+				"USA_heavy_armor_entity"
+			}
+		}
+	}
+
+	heavy_tank_chassis_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/HT3.dds"
+			}
+			models = {
+				"USA_heavy_armor_entity"
+				"USA_heavy_tank_destroyer_brigade_0_entity"
+				"USA_heavy_sp_artillery_brigade_1_entity"
+				"USA_heavy_armor_0_entity"
+				
+			}
+		}
+	}
+	heavy_tank_chassis_4 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/hv4.dds"
+				"gfx/interface/technologies/USA/LAND/hv4AA.dds"
+				"gfx/interface/technologies/USA/LAND/hv4SPG.dds"
+				"gfx/interface/technologies/USA/LAND/hv4.dds"
+			}
+			models = {
+				"M103_entity"
+				
+			}
+		}
+	}	
+	heavy_tank_chassis_5 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/USA/LAND/hv5.dds"
+				"gfx/interface/technologies/USA/LAND/hv5AA.dds"
+				"gfx/interface/technologies/USA/LAND/hv5SPG.dds"
+				"gfx/interface/technologies/USA/LAND/hv5.dds"
+			}
+			models = {
+				"M103_entity"
+				
 			}
 		}
 	}	
@@ -2266,10 +2852,10 @@ USA = {
 	modern_tank_chassis_5 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/USA/LAND/m5.dds"
-				"gfx/interface/technologies/USA/LAND/m5AA.dds"
-				"gfx/interface/technologies/USA/LAND/m5SPG.dds"
-				"gfx/interface/technologies/USA/LAND/m5.dds"
+				"gfx/interface/technologies/BRA/m5.dds"
+				"gfx/interface/technologies/BRA/m5AA.dds"
+				"gfx/interface/technologies/BRA/m5SPG.dds"
+				"gfx/interface/technologies/BRA/m5.dds"
 			}
 			models = {
 				"USA_M48_entity"
@@ -2279,10 +2865,7 @@ USA = {
 	modern_tank_chassis_6 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/USA/LAND/m6.dds"
-				"gfx/interface/technologies/USA/LAND/m6AA.dds"
-				"gfx/interface/technologies/USA/LAND/m6SPG.dds"
-				"gfx/interface/technologies/USA/LAND/m6.dds"
+				"gfx/interface/technologies/BRA/m6.dds"
 			}
 			models = {
 				"USA_M48_entity"
@@ -2292,39 +2875,456 @@ USA = {
 	modern_tank_chassis_7 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/USA/LAND/m7.dds"
-				"gfx/interface/technologies/USA/LAND/m7AA.dds"
-				"gfx/interface/technologies/USA/LAND/m7SPG.dds"
-				"gfx/interface/technologies/USA/LAND/m7.dds"
+				"gfx/interface/technologies/BRA/m7.dds"
 			}
 			models = {
-				"USA_modern1_tank_entity"
+				"GER_modern_armor1_entity"
 			}
 		}
 	}
 	modern_tank_chassis_8 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/USA/LAND/m8.dds"
-				"gfx/interface/technologies/USA/LAND/m8AA.dds"
-				"gfx/interface/technologies/USA/LAND/m8SPG.dds"
-				"gfx/interface/technologies/USA/LAND/m8.dds"
+				"gfx/interface/technologies/BRA/m8.dds"
+				"gfx/interface/technologies/BRA/m8AA.dds"
+				"gfx/interface/technologies/BRA/m8SPG.dds"
+				"gfx/interface/technologies/BRA/m8.dds"
 			}
 			models = {
-				"USA_modern1_tank_entity"
+				"GER_modern_armor1_entity"
 			}
 		}
 	}
 	modern_tank_chassis_9 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/USA/LAND/m9.dds"
-				"gfx/interface/technologies/USA/LAND/m9AA.dds"
-				"gfx/interface/technologies/USA/LAND/m9SPG.dds"
-				"gfx/interface/technologies/USA/LAND/m9.dds"
+				"gfx/interface/technologies/BRA/m9.dds"
+				"gfx/interface/technologies/BRA/m9AA.dds"
+				"gfx/interface/technologies/BRA/m9SPG.dds"
+				"gfx/interface/technologies/BRA/m9.dds"
 			}
 			models = {
-				"USA_modern1_tank_entity"
+				"GER_modern_armor1_entity"
+			}
+		}
+	}
+}
+
+CZE = {
+
+	light_tank_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CZE/lt1AT.dds" 
+				"gfx/interface/technologies/CZE/lt1SPAA.dds" 
+				"gfx/interface/technologies/CZE/lt1SPG.dds" 
+				"gfx/interface/technologies/CZE/lt1.dds" 
+			}
+			models = {
+			}
+		}
+	}
+
+	light_tank_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CZE/lt2AT.dds" 
+				"gfx/interface/technologies/CZE/lt2SPAA.dds" 
+				"gfx/interface/technologies/CZE/lt2SPG.dds" 
+				"gfx/interface/technologies/CZE/lt2.dds" 
+			}
+			models = {
+				"USA_light_armor_2_entity"
+				"USA_light_armor_0_entity"
+				"USA_light_tank_destroyer_brigade_1_entity"
+				"USA_light_tank_destroyer_brigade_2_entity"
+				"USA_light_tank_destroyer_brigade_0_entity"
+				"USA_light_sp_artillery_brigade_0_entity"
+				"USA_light_sp_artillery_brigade_1_entity"
+				"USA_light_sp_anti_air_brigade_1_entity"
+				"USA_light_sp_anti_air_brigade_2_entity"
+				"USA_light_armor_entity"
+			}
+		}
+	}
+
+	light_tank_chassis_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CZE/lt3AT.dds" 
+				"gfx/interface/technologies/CZE/lt3SPAA.dds" 
+				"gfx/interface/technologies/CZE/lt3SPG.dds" 
+				"gfx/interface/technologies/CZE/lt3.dds" 
+			}
+			models = {
+				"USA_light_armor_entity"
+				"USA_light_armor_0_entity"
+				"USA_light_tank_destroyer_brigade_1_entity"
+				"USA_light_tank_destroyer_brigade_2_entity"
+				"USA_light_tank_destroyer_brigade_0_entity"
+				"USA_light_sp_artillery_brigade_0_entity"
+				"USA_light_sp_artillery_brigade_1_entity"
+				"USA_light_sp_anti_air_brigade_1_entity"
+				"USA_light_sp_anti_air_brigade_2_entity"
+				"USA_light_armor_2_entity"
+			}
+		}
+	}
+	light_tank_chassis_4 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/SOV/lt1AA.dds"
+				"gfx/interface/technologies/SOV/lt1SPG.dds"
+				"gfx/interface/technologies/SOV/lt1.dds"
+			}
+			models = {
+				"PT76_entity"
+			}
+		}
+	}
+
+	medium_tank_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CZE/MT1AT.dds" 
+				"gfx/interface/technologies/CZE/MT1.dds" 
+			}
+			models = {
+				"USA_medium_armor_2_entity"
+				"USA_medium_armor_entity"
+				"USA_medium_tank_destroyer_brigade_0_entity"
+				"USA_medium_tank_destroyer_brigade_1_entity"
+				"USA_medium_tank_destroyer_brigade_2_entity"
+				"USA_medium_sp_artillery_brigade_0_entity"
+				"USA_medium_sp_artillery_brigade_1_entity"
+				"USA_medium_sp_artillery_brigade_2_entity"
+				"USA_medium_sp_anti_air_brigade_1_entity"
+				"USA_medium_sp_anti_air_brigade_0_entity"
+				"USA_medium_armor_0_entity"
+			}
+		}
+	}
+
+	medium_tank_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CZE/MT2AT.dds" 
+				"gfx/interface/technologies/CZE/MT2.dds"
+			}
+			models = {
+				"USA_medium_armor_2_entity"
+				"USA_medium_armor_0_entity"
+				"USA_medium_tank_destroyer_brigade_0_entity"
+				"USA_medium_tank_destroyer_brigade_1_entity"
+				"USA_medium_tank_destroyer_brigade_2_entity"
+				"USA_medium_sp_artillery_brigade_0_entity"
+				"USA_medium_sp_artillery_brigade_1_entity"
+				"USA_medium_sp_artillery_brigade_2_entity"
+				"USA_medium_sp_anti_air_brigade_1_entity"
+				"USA_medium_sp_anti_air_brigade_0_entity"
+				"USA_medium_armor_entity"
+			}
+		}
+	}
+
+	medium_tank_chassis_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CZE/MT3AT.dds" 
+				"gfx/interface/technologies/CZE/MT3.dds"
+			}
+			models = {
+				"USA_medium_armor_entity"
+				"USA_medium_armor_0_entity"
+				"USA_medium_tank_destroyer_brigade_0_entity"
+				"USA_medium_tank_destroyer_brigade_1_entity"
+				"USA_medium_tank_destroyer_brigade_2_entity"
+				"USA_medium_sp_artillery_brigade_0_entity"
+				"USA_medium_sp_artillery_brigade_1_entity"
+				"USA_medium_sp_artillery_brigade_2_entity"
+				"USA_medium_sp_anti_air_brigade_1_entity"
+				"USA_medium_sp_anti_air_brigade_0_entity"
+				"USA_medium_armor_2_entity"
+			}
+		}
+	}
+	heavy_tank_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_CAB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_CAB_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_CAC.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_CAC_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_CBA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_CBA_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_CBB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_CBB_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_CBC.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_CBC_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_CCA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_CCA_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_CCB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_CCB_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_fixed_CFA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_fixed_CFB.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_fixed_CFC.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_AA_C.dds"  
+				"gfx/interface/technologies/ger_basic_heavy_tank.dds" 
+			}
+			models = {
+				"GER_heavy_armor_2_entity"
+				"GER_heavy_armor_entity"
+				"GER_heavy_sp_artillery_brigade_1_entity"
+				"GER_heavy_tank_destroyer_brigade_0_entity"
+				"GER_heavy_tank_destroyer_brigade_1_entity"
+				"GER_heavy_tank_destroyer_brigade_2_entity"
+				"GER_heavy_armor_0_entity"
+			}
+		}
+	}
+
+	heavy_tank_chassis_2 = {
+		pool = {
+			limit = { has_dlc = "Death or Dishonor" }
+			weight = 2
+			icons = {
+				"gfx/interface/technologies/ger_improved_heavy_td.dds" 
+			}
+		}
+		pool = {
+			icons = {
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_AAB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_AAB_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_AAC.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_AAC_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_ABA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_ABA_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_fixed_AFA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_fixed_AFB.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_fixed_AFC.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_ABC.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_ABC_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_ACA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_ACA_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_ACB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_ACB_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_ACC.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_ACC_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_AA_A.dds"  
+				"gfx/interface/technologies/ger_imp_heavy_tank.dds" 
+			}
+			models = {
+				"GER_heavy_armor_2_entity"
+				"GER_heavy_armor_0_entity"
+				"GER_heavy_sp_artillery_brigade_1_entity"
+				"GER_heavy_tank_destroyer_brigade_0_entity"
+				"GER_heavy_tank_destroyer_brigade_1_entity"
+				"GER_heavy_tank_destroyer_brigade_2_entity"
+				"GER_heavy_armor_entity"
+			}
+		}
+	}
+
+	heavy_tank_chassis_3 = {
+		pool = {
+			limit = { has_dlc = "Death or Dishonor" }
+			weight = 2
+			icons = {
+				"gfx/interface/technologies/ger_advanced_heavy_td.dds" 
+			}
+		}
+		pool = {
+			icons = {
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_BAB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_BAB_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_BAC.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_BAC_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_BBA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_BBA_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_fixed_BFA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_fixed_BFB.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_fixed_BFC.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_BBC.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_BBC_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_BCA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_BCA_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_BCB.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_BCB_camo.dds"
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_BAA.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_BAA_camo.dds" 
+				"gfx/interface/equipmentdesigner/tanks/designer/GER/GER_heavy_AA_B.dds"  
+				"gfx/interface/technologies/ger_adv_heavy_tank.dds" 
+			}
+			models = {
+				"GER_heavy_armor_entity"
+				"GER_heavy_armor_0_entity"
+				"GER_heavy_sp_artillery_brigade_1_entity"
+				"GER_heavy_tank_destroyer_brigade_0_entity"
+				"GER_heavy_tank_destroyer_brigade_1_entity"
+				"GER_heavy_tank_destroyer_brigade_2_entity"
+				"GER_heavy_armor_2_entity"
+			}
+		}
+	}
+	heavy_tank_chassis_4 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/GEN/hv1.dds"
+			}
+			models = {
+				"IS3_entity"
+			}
+		}
+	}	
+	heavy_tank_chassis_5 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/GEN/hv2.dds"
+			}
+			models = {
+				"IS4_entity"
+			}
+		}
+	}	
+	heavy_tank_chassis_6 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/SOV/hv3AA.dds"
+				"gfx/interface/technologies/SOV/hv3SPG.dds"
+				"gfx/interface/technologies/SOV/hv3AT.dds"
+				"gfx/interface/technologies/SOV/hv3.dds"
+			}
+			models = {
+				"IS4_entity"
+			}
+		}
+	}
+
+	amphibious_tank_chassis = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CZE/AMPHIB1.dds"
+			}
+		}
+	}
+	wheeled_tank_chassis_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CZE/w3SPG.dds"
+				"gfx/interface/technologies/CZE/w3SPAA.dds"
+				"gfx/interface/technologies/CZE/w3.dds"
+			}
+		}
+	}
+	modern_tank_chassis_1 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CZE/LAND/m1.dds"
+			}
+			models = {
+				"PRC_modern_tank1_entity"
+			}
+		}
+	}
+	modern_tank_chassis_2 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CZE/LAND/m2.dds"
+			}
+			models = {
+				"PRC_modern_tank1_entity"
+			}
+		}
+	}
+	modern_tank_chassis_3 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CZE/LAND/m3.dds"
+			}
+			models = {
+				"PRC_modern_tank1_entity"
+			}
+		}
+	}
+	modern_tank_chassis_4 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CZE/LAND/m4.dds"
+			}
+			models = {
+				"SOV_t64bv_entity"
+				"SOV_t64_entity"
+			}
+		}
+	}
+	modern_tank_chassis_5 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CZE/LAND/m5.dds"
+			}
+			models = {
+				"SOV_t64bv_entity"
+				"SOV_t64_entity"
+			}
+		}
+	}
+	modern_tank_chassis_6 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CZE/LAND/m6.dds"
+			}
+			models = {
+				"SOV_t64bv_entity"
+				"SOV_t64_entity"
+			}
+		}
+	}
+	modern_tank_chassis_7 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CZE/LAND/m7.dds"
+			}
+			models = {
+				"SOV_t72_entity"
+				"SOV_t72desert_entity"
+				"SOV_T72B3_entity"
+				"SOV_2S19_entity"
+			}
+		}
+	}
+	modern_tank_chassis_8 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CZE/LAND/m8.dds"
+				"gfx/interface/technologies/CZE/LAND/m8AA.dds"
+				"gfx/interface/technologies/CZE/LAND/m8SPG.dds"
+				"gfx/interface/technologies/CZE/LAND/m8.dds"
+			}
+			models = {
+				"SOV_t72_entity"
+				"SOV_t72desert_entity"
+				"SOV_T72B3_entity"
+				"SOV_T72B3obr16_entity"
+				"SOV_2S19_entity"
+				"SOV_t72bv_entity"
+			}
+		}
+	}
+	modern_tank_chassis_9 = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/CZE/LAND/m9.dds"
+				"gfx/interface/technologies/CZE/LAND/m9AA.dds"
+				"gfx/interface/technologies/CZE/LAND/m9SPG.dds"
+				"gfx/interface/technologies/CZE/LAND/m9.dds"
+			}
+			models = {
+				"SOV_t72_entity"
+				"SOV_T72B3_entity"
+				"SOV_T72B3obr16_entity"
+				"SOV_t72desert_entity"
+				"SOV_2S19_entity"
+				"SOV_t72bv_entity"
 			}
 		}
 	}
@@ -3161,6 +4161,9 @@ FRA = {
 			icons = {
 				"gfx/interface/technologies/FRA/lt1.dds"
 			}
+			models = {
+				"m24_entity"
+			}
 		}
 	}
 
@@ -3359,22 +4362,6 @@ FRA = {
 		pool = {
 			icons = {
 				"gfx/interface/technologies/FRA_adv_heavy_tank.dds" 
-				"gfx/interface/equipmentdesigner/tanks/designer/FRA/FRA_heavy_CAB.dds" 
-				"gfx/interface/equipmentdesigner/tanks/designer/FRA/FRA_heavy_CAB_camo.dds" 
-				"gfx/interface/equipmentdesigner/tanks/designer/FRA/FRA_heavy_CAC.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/FRA/FRA_heavy_CAC_camo.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/FRA/FRA_heavy_CBA.dds" 
-				"gfx/interface/equipmentdesigner/tanks/designer/FRA/FRA_heavy_CBA_camo.dds" 
-				"gfx/interface/equipmentdesigner/tanks/designer/FRA/FRA_heavy_CBB.dds" 
-				"gfx/interface/equipmentdesigner/tanks/designer/FRA/FRA_heavy_CBB_camo.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/FRA/FRA_heavy_CBC.dds" 
-				"gfx/interface/equipmentdesigner/tanks/designer/FRA/FRA_heavy_CBC_camo.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/FRA/FRA_heavy_CCA.dds" 
-				"gfx/interface/equipmentdesigner/tanks/designer/FRA/FRA_heavy_CCA_camo.dds" 
-				"gfx/interface/equipmentdesigner/tanks/designer/FRA/FRA_heavy_CCB.dds" 
-				"gfx/interface/equipmentdesigner/tanks/designer/FRA/FRA_heavy_CCB_camo.dds"
-				"gfx/interface/equipmentdesigner/tanks/designer/FRA/FRA_heavy_CAA.dds" 
-				"gfx/interface/equipmentdesigner/tanks/designer/FRA/FRA_heavy_CAA_camo.dds" 
 			}
 			models = {
 				"FRA_heavy_armor_entity"
@@ -3384,10 +4371,30 @@ FRA = {
 			}
 		}
 	}
+	heavy_tank_chassis_4 = {
+		pool = {
+			models = {
+				"M103_entity"
+				
+			}
+		}
+	}
 	heavy_tank_chassis_5 = {
 		pool = {
 			icons = {
 				"gfx/interface/technologies/FRA/hv2.dds"
+			}
+			models = {
+				"arl44_entity"
+				
+			}
+		}
+	}
+	heavy_tank_chassis_6 = {
+		pool = {
+			models = {
+				"arl44_entity"
+				
 			}
 		}
 	}
@@ -3413,7 +4420,7 @@ FRA = {
 				"gfx/interface/technologies/FRA/m1.dds"
 			}
 			models = {
-				"USA_modern5_tank_entity"
+				"USA_M48_entity"
 			}
 		}
 	}
@@ -3423,7 +4430,7 @@ FRA = {
 				"gfx/interface/technologies/FRA/m2.dds"
 			}
 			models = {
-				"USA_modern5_tank_entity"
+				"amx50_entity"
 			}
 		}
 	}
@@ -3433,7 +4440,7 @@ FRA = {
 				"gfx/interface/technologies/FRA/m3.dds"
 			}
 			models = {
-				"USA_modern5_tank_entity"
+				"amx50_entity"
 			}
 		}
 	}
@@ -3493,7 +4500,7 @@ FRA = {
 				"gfx/interface/technologies/GEN/m9.dds"
 			}
 			models = {
-				"FRA_modern_armor1_entity"
+				"LECLERC_entity"
 			}
 		}
 	}
@@ -3952,7 +4959,7 @@ JAP = {
 				"gfx/interface/technologies/JAP/m9.dds"
 			}
 			models = {
-				"JAP_modern1_armor_entity"
+				"TYPE90_entity"
 			}
 		}
 	}
@@ -4313,6 +5320,23 @@ ITA = {
 			}
 		}
 	}
+	modern_tank_chassis = {
+		pool = {
+			icons = {
+				"gfx/interface/technologies/ITA/m0fAT.dds"
+				"gfx/interface/technologies/ITA/m0fAA.dds"
+				"gfx/interface/technologies/ITA/m0dAT.dds"
+				"gfx/interface/technologies/ITA/m0dAA.dds"
+				"gfx/interface/technologies/ITA/m0d.dds"
+				"gfx/interface/technologies/ITA/m0AT.dds"
+				"gfx/interface/technologies/ITA/m0AA.dds"
+				"gfx/interface/technologies/ITA/m0.dds"
+			}
+			models = {
+				"USA_M48_entity"
+			}
+		}
+	}
 	modern_tank_chassis_1 = {
 		pool = {
 			icons = {
@@ -4339,7 +5363,7 @@ ITA = {
 				"gfx/interface/technologies/ITA/m3.dds"
 			}
 			models = {
-				"USA_M48_entity"
+				"USA_M60_entity"
 			}
 		}
 	}
@@ -4351,7 +5375,7 @@ ITA = {
 				"gfx/interface/technologies/ITA/m4.dds"
 			}
 			models = {
-				"USA_M48_entity"
+				"geo_leo1_entity"
 			}
 		}
 	}
@@ -4361,7 +5385,7 @@ ITA = {
 				"gfx/interface/technologies/ITA/m5.dds"
 			}
 			models = {
-				"USA_M48_entity"
+				"geo_leo1_entity"
 			}
 		}
 	}
@@ -4371,13 +5395,15 @@ ITA = {
 				"gfx/interface/technologies/ITA/m6.dds"
 			}
 			models = {
-				"USA_M48_entity"
+				"geo_leo1_entity"
 			}
 		}
 	}
 	modern_tank_chassis_7 = {
 		pool = {
 			icons = {
+				"gfx/interface/technologies/ITA/m7SPG.dds"
+				"gfx/interface/technologies/ITA/m7AA.dds"
 				"gfx/interface/technologies/ITA/m7.dds"
 			}
 			models = {
@@ -6227,47 +7253,6 @@ HUN = {
 	}
 }
 
-CZE = {
-	light_tank_chassis = {
-		pool = {
-			limit = {
-				has_dlc = "Death or Dishonor"
-			}
-			icons = {
-				"gfx/interface/technologies/cze_gwtank.dds" 
-				"gfx/interface/technologies/cze_basic_light_tank.dds" 
-				"gfx/interface/technologies/cze_imp_light_tank.dds" 
-				"gfx/interface/technologies/cze_adv_light_tank.dds" 
-			}
-		}
-	}
-
-	medium_tank_chassis = {
-		pool = {
-			limit = {
-				has_dlc = "Death or Dishonor"
-			}
-			icons = {
-				"gfx/interface/technologies/cze_basic_main_tank.dds" 
-				"gfx/interface/technologies/cze_imp_main_tank.dds" 
-				"gfx/interface/technologies/cze_adv_main_tank.dds" 
-			}
-		}
-	}
-	heavy_tank_chassis = {
-		pool = {
-			limit = {
-				has_dlc = "Death or Dishonor"
-			}
-			icons = {
-				"gfx/interface/technologies/cze_basic_heavy_tank.dds" 
-				"gfx/interface/technologies/cze_imp_heavy_tank.dds" 
-				"gfx/interface/technologies/cze_adv_heavy_tank.dds" 
-			}
-		}
-	}
-}
-
 ROM = {
 	light_tank_chassis = {
 		pool = {
@@ -6329,7 +7314,7 @@ YUG = {
 				"gfx/interface/technologies/YUG/lt2.dds" 
 			}
 			models = {
-				"PRC_modern_light_tank_entity"
+				"PT76_entity"
 			}
 		}
 	}
@@ -6340,7 +7325,7 @@ YUG = {
 				"gfx/interface/technologies/YUG/lt3.dds"
 			}
 			models = {
-				"PRC_modern_light_tank_entity"
+				"PT76_entity"
 			}
 		}
 	}
@@ -6565,7 +7550,7 @@ PRC = {
 				"gfx/interface/technologies/PRC/aph1.dds"
 			}
 			models = {
-				"PRC_modern_light_tank_entity"
+				"PT76_entity"
 			}
 		}
 	}
@@ -6575,7 +7560,7 @@ PRC = {
 				"gfx/interface/technologies/PRC/aph3.dds"
 			}
 			models = {
-				"PRC_modern_light_tank_entity"
+				"PT76_entity"
 			}
 		}
 	}
@@ -6585,7 +7570,7 @@ PRC = {
 				"gfx/interface/technologies/PRC/aph4.dds"
 			}
 			models = {
-				"PRC_modern_light_tank_entity"
+				"PT76_entity"
 			}
 		}
 	}
@@ -6678,8 +7663,7 @@ PRC = {
 				"gfx/interface/technologies/PRC/m9.dds"
 			}
 			models = {
-				"SOV_t72_entity"
-				"SOV_t72desert_entity"
+				"ZTZ96_entity"
 			}
 		}
 	}

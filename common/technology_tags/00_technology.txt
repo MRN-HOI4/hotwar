@@ -108,6 +108,8 @@ technology_categories = {
 	cat_armored_cars
 	cat_special_forces_generic
 	ship_modules_tech
+	category_militia
+	category_helicopter
 }
 
 technology_folders = {
@@ -141,6 +143,12 @@ technology_folders = {
 	air_bomber_techs_folder = {
 		available = {
 			not = { has_dlc = "By Blood Alone" }
+		}
+		ledger = air
+	}
+	bba_air_special_techs_folder = {
+		available = {
+			has_dlc = "By Blood Alone"
 		}
 		ledger = air
 	}

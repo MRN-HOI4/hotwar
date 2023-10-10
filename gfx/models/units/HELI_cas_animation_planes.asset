@@ -1,0 +1,17 @@
+animation = {
+	name = "MI24_idle_animation"
+	file = "mi_24_idle.anim"
+}
+animation = {
+	name = "AH1G_idle_animation"
+	file = "AH1G_idle.anim"
+}
+animation = {
+	name = "TB2_idle_animation"
+	file = "drone_idle.anim"
+}
+
+animation = {
+	name = "MI24_attack_animation"
+	file = "mi_24_attack.anim"
+}
