@@ -4,14 +4,25 @@ Support_vietnam_war_category = {
 	picture = GFX_decision_cat_picture_vietnam_war
 
 	allowed = {
-
-		NOT = {
+		AND = {
+			NOT = {
+				OR = {
+					original_tag = ROV
+					original_tag = VIN
+				}
+			}
 			OR = {
-				original_tag = ROV
-				original_tag = VIN
+				VIN = { has_war_with = ROV }
+				ROV = { has_war_with = VIN }
+			}
+		
+			NOT = {
+				OR = {
+					original_tag = ROV
+					original_tag = VIN
+				}
 			}
 		}
-		
 	}
 
 	visible = {

@@ -162,7 +162,7 @@ Support_vietnam_war_category = {
         }
 
         modifier = {
-            civilian_factory_use = 2
+            civilian_factory_use = 3
         }
         cost = 50
 
@@ -225,7 +225,7 @@ Support_vietnam_war_category = {
                 }
             }
         }
-        days_remove = 60
+        days_remove = 90
 
         days_re_enable = 30
 
