@@ -79,7 +79,7 @@ equipments = {
 			train
 		}
 		priority = 40
-
+		armor_value = 100
 		build_cost_ic = 55
 		resources = {
 			steel = 1
@@ -95,8 +95,8 @@ equipments = {
 			train
 		}
 		priority = 50
-
-		build_cost_ic = 65
+		armor_value = 125
+		build_cost_ic = 60
 		resources = {
 			steel = 1
 		}
@@ -111,8 +111,8 @@ equipments = {
 			train
 		}
 		priority = 60
-
-		build_cost_ic = 70
+		armor_value = 150
+		build_cost_ic = 65
 		resources = {
 			steel = 1
 		}
@@ -127,8 +127,8 @@ equipments = {
 			train
 		}
 		priority = 70
-
-		build_cost_ic = 80
+		armor_value = 175
+		build_cost_ic = 70
 		resources = {
 			steel = 1
 		}
@@ -143,8 +143,8 @@ equipments = {
 			train
 		}
 		priority = 80
-
-		build_cost_ic = 95
+		armor_value = 200
+		build_cost_ic = 75
 		resources = {
 			steel = 1
 		}
