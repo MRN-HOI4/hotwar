@@ -1,4 +1,4 @@
-capital = 64
+capital = 931
 
 oob = "DDR_1936"
 #기본 연구
