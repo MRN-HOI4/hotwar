@@ -36,7 +36,7 @@ ideas = {
     country = {
         JAP_peace_constituion_1 = {
 
-            picture = generic_constitutional_guarantees
+            picture = JAP_peace_constituion_1
 
             removal_cost = -1
 
@@ -50,7 +50,7 @@ ideas = {
         }
 		JAP_peace_constituion_2 = {
 
-            picture = generic_constitutional_guarantees
+            picture = JAP_peace_constituion_2
 
             removal_cost = -1
 
@@ -64,7 +64,7 @@ ideas = {
         }
 		JAP_peace_constituion_3 = {
 
-            picture = generic_constitutional_guarantees
+            picture = JAP_peace_constituion_3
 
             removal_cost = -1
 
@@ -78,7 +78,7 @@ ideas = {
         }
 		JAP_peace_constituion_4 = {
 
-            picture = generic_constitutional_guarantees
+            picture = JAP_peace_constituion_4
 
             removal_cost = -1
 
