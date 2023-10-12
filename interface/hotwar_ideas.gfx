@@ -75,4 +75,9 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/PRC/idea_PRC_Cultural_Revolution.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_Colt_Manufacturing"
+		texturefile = "gfx/interface/ideas/USA/colt.dds"
+	}
+
 }
