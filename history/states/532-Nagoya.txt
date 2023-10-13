@@ -22,6 +22,10 @@ state={
 		victory_points = {
 			10125 25
 		}
+
+		victory_points = {
+			10015 5
+		}
 		1939.1.1 = {
 			buildings = {
 				arms_factory = 2
@@ -32,7 +36,7 @@ state={
 	}
 
 	provinces={
-		4069 4172 7087 7157 7187 10100 10125 12072 12097 
+		4069 4172 7087 7157 7187 10015 10100 10125 12072 12097 
 	}
 
 	local_supplies=0.0 
