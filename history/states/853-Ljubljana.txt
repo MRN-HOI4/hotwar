@@ -14,7 +14,7 @@ state=
 			infrastructure = 3
 		}
 		victory_points = {
-			9627 3 
+			9627 15 
 		}
 		add_core_of = SLV
 	}

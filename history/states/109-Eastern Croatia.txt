@@ -12,7 +12,7 @@ state={
 
 		}
 		victory_points = {
-			11581 3 
+			11581 20 
 		}
 		add_core_of = CRO
 

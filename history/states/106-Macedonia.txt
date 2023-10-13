@@ -16,7 +16,7 @@ state={
 
 		}
 		victory_points = {
-			3882 5
+			3882 10
 		}
 		add_core_of = MAC
 	}

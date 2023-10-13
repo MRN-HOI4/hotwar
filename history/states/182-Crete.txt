@@ -8,7 +8,7 @@ state = {
 		owner = TUR
 		add_core_of = TUR
 		victory_points = {
-			9940 5
+			9940 15
 		}
 		victory_points = {
 			12058 3
