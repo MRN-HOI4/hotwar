@@ -419,7 +419,7 @@ ideas = {
 			picture = jap_hirohito
 			
 			modifier = {
-				stability_factor = 0.5
+				stability_factor = 0.2
 			}
 		}
 
