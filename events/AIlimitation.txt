@@ -1,0 +1,937 @@
+﻿# add_namespace = shackles
+
+# country_event = {
+# 	id = shackles.1
+	
+# 	title = shackles.1.t
+# 	desc = shackles.1.d
+# 	picture = GFX_report_event_shackles
+	
+# 	fire_only_once = yes
+	
+# 	#hidden = no
+	
+	
+# 	is_triggered_only = yes
+		
+# 	#Add shackles {
+# 	option = {
+# 		name = shackles.1.a
+# 		custom_effect_tooltip = shackles.1.b.d
+# 		set_global_flag = shackles_event_happened
+		
+# 		ALB = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		ARG = { 
+# 			add_ideas = {
+# 				uninterested
+				
+# 			}	
+# 		}
+		
+# 		ANG = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		ARM = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		AZR = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		BAH = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		BAN = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		BAS = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		BHU = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		BLZ = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		BOL = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		BOS = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		BOT = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		BRA = { 
+# 			add_ideas = {
+# 				uninterested
+				
+# 			}	
+# 		}
+				
+# 		BRD = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+				
+# 		BRM = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		CAM = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		CAR = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+		
+# 		CAY = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+				
+# 		CHA = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+				
+# 		CHL = { 
+# 			add_ideas = {
+# 				uninterested
+				
+# 			}	
+# 		}		
+		
+# 		CMR = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}		
+		
+# 		COG = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		COL = { 
+# 			add_ideas = {
+# 				uninterested
+				
+# 			}	
+# 		}
+		
+# 		COS = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		CRC = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		CRO = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+
+		
+# 		CYP = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		DAH = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		DEN = { 
+# 			add_ideas = {
+# 				uninterested
+				
+# 			}	
+# 		}
+		
+# 		DJI = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		DOM = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		ECU = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		EGY = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		ELS = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		EQG = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		ERI = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		ETH = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		FIJ = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		GAB = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		GAM = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		GDL = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		GEO = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		GHA = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		GNA = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		GNB = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		GUA = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		GYA = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		HAI = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		HON = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		ICE = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		INS = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		IRE = { 
+# 			add_ideas = {
+# 				uninterested
+				
+# 			}	
+# 		}
+		
+# 		ISR = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		IVO = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		JAM = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		JOR = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+
+# 		KEN = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		KOR = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		KUW = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		KYR = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		LAO = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+		
+# 		LBA = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		LEB = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		LIB = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		LIT = { 
+# 			add_ideas = {
+# 				uninterested
+				
+# 			}	
+# 		}
+		
+# 		LUX = { 
+# 			add_ideas = {
+# 				uninterested
+				
+# 			}	
+# 		}
+		
+# 		MAC = { 
+# 			add_ideas = {
+# 				uninterested
+				
+# 			}	
+# 		}
+		
+# 		MAD = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		MAL = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		MLD = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		MLI = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		MLT = { 
+# 			add_ideas = {
+# 				uninterested
+				
+# 			}	
+# 		}
+		
+# 		MLW = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		MNT = { 
+# 			add_ideas = {
+# 				uninterested
+				
+# 			}	
+# 		}
+		
+# 		MOL = { 
+# 			add_ideas = {
+# 				uninterested
+				
+# 			}	
+# 		}
+		
+# 		MRT = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		MZB = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		NEP = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		NGA = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		NGR = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		NIC = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		NIR = { 
+# 			add_ideas = {
+# 				uninterested
+				
+# 			}	
+# 		}
+		
+# 		NMB = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		NOR = { 
+# 			add_ideas = {
+# 				uninterested
+				
+# 			}	
+# 		}
+		
+# 		OMA = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		PAK = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		PAL = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		PAN = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		PAR = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		PER = { 
+# 			add_ideas = {
+# 				uninterested
+				
+# 			}	
+# 		}
+		
+# 		PHI = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		PNG = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		PRU = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		PUE = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		QAT = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		RAJ = { 
+# 			add_ideas = {
+# 				uninterested
+				
+# 			}	
+# 		}
+		
+# 		RCG = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		RWA = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		SAU = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		SEN = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		SIE = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		SLV = { 
+# 			add_ideas = {
+# 				uninterested
+				
+# 			}	
+# 		}
+		
+# 		SOM = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		SRL = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		SUD = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		SUR = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		SWE = { 
+# 			add_ideas = {
+# 				uninterested
+				
+# 			}	
+# 		}
+		
+# 		SWI = { 
+# 			add_ideas = {
+# 				uninterested
+				
+# 			}	
+# 		}
+		
+# 		SYR = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		TAJ = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		TAN = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		TIB = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		TMS = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		TOG = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		TRI = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		TUN = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+	
+		
+# 		TZN = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		UAE = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		UGA = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		URG = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+		
+# 		UZB = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		VEN = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		VIN = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		VOL = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		WES = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		YEM = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		ZAM = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+		
+# 		ZIM = { 
+# 			add_ideas = {
+# 				uninterested
+# 				unindustrialized
+# 			}	
+# 		}
+# 	}
+# 	#No shackles
+# 	option = {
+# 		name = shackles.1.b
+# 		custom_effect_tooltip = shackles.1.a.d
+# 		set_global_flag = shackles_event_happened
+# 	}	
+# }

@@ -162,6 +162,8 @@
  laserbomb_desc:0 ""
  laserbomb_1:0 "레이저 유도 미사일 II"
  laserbomb_1_desc:0 ""
+ heavy_bomb_locks:0 "대형 폭탄"
+ heavy_bomb_locks_desc:0 "Mountings for large bombs under the wings or the fuselage allow the plane to attack ground targets with great effect."
 
  torpedo_mounting:0 "어뢰 장착"
  torpedo_mounting_desc:0 "연료통 하부에 어뢰를 장착할 수 있는 하드포인트를 추가합니다. 비행기가 적 함선을 상대로 유효한 공격을 할 수 있게 됩니다."

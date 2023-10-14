@@ -1056,8 +1056,28 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_tech_engineers_medium"
 		texturefile = "gfx/interface/technologies/engineers.dds"
-	}				
-	
+	}	
+
+	SpriteType = {
+		name = "GFX_support_weapons9_medium"
+		texturefile = "gfx/interface/technologies/support_weapons9.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_support_weapons8_medium"
+		texturefile = "gfx/interface/technologies/support_weapons8.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_support_weapons7_medium"
+		texturefile = "gfx/interface/technologies/support_weapons7.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_support_weapons6_medium"
+		texturefile = "gfx/interface/technologies/support_weapons6.dds"
+	}	
+
 	SpriteType = {
 		name = "GFX_support_weapons5_medium"
 		texturefile = "gfx/interface/technologies/support_weapons5.dds"
@@ -1082,6 +1102,51 @@ spriteTypes = {
 		name = "GFX_support_weapons_medium"
 		texturefile = "gfx/interface/technologies/support_weapons.dds"
 	}		
+#SOV
+	SpriteType = {
+		name = "GFX_SOV_support_weapons9_medium"
+		texturefile = "gfx/interface/technologies/SW9.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_support_weapons8_medium"
+		texturefile = "gfx/interface/technologies/SW8.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_support_weapons7_medium"
+		texturefile = "gfx/interface/technologies/SW7.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_support_weapons6_medium"
+		texturefile = "gfx/interface/technologies/SW6.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_SOV_support_weapons5_medium"
+		texturefile = "gfx/interface/technologies/SW5.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_support_weapons4_medium"
+		texturefile = "gfx/interface/technologies/SW4.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_support_weapons3_medium"
+		texturefile = "gfx/interface/technologies/SW3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_support_weapons2_medium"
+		texturefile = "gfx/interface/technologies/SW2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_SOV_support_weapons_medium"
+		texturefile = "gfx/interface/technologies/SW1.dds"
+	}	
 	
 	SpriteType = {
 		name = "GFX_night_vision2_medium"
@@ -6089,5 +6154,35 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_ENG_super_heavy_tank_medium"
 		texturefile = "gfx/interface/technologies/ENG_superheavy_tank.dds"
+	}
+
+	### FIN ###
+	SpriteType = {
+		name = "GFX_FIN_basic_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/FIN/LAND/lt1chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_FIN_improved_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/FIN/LAND/lt2chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_FIN_advanced_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/FIN/LAND/lt3chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_FIN_modern_light_tank_1_medium"
+		texturefile = "gfx/interface/technologies/FIN/LAND/modern_light_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_FIN_basic_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/FIN/LAND/m1chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_FIN_improved_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/FIN/LAND/m2chassis.dds"
+	}
+	SpriteType = {
+		name = "GFX_FIN_advanced_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/FIN/LAND/m3chassis.dds"
 	}
 }

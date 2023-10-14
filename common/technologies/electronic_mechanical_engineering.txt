@@ -1726,7 +1726,27 @@ technologies = {
 		}
 		
 		ai_will_do = {
-			factor = 1
+			factor = 5
+			modifier = {
+				is_major = yes
+				factor = 10
+			}
+			modifier = {
+				num_of_military_factories < 10
+				factor = 0
+			}
+			modifier = {
+				date > "1944.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1945.1.1"
+				factor = 1.5
+			}
+			modifier = {
+				date > "1946.1.1"
+				factor = 30
+			}
 		}
 		
 		categories = {

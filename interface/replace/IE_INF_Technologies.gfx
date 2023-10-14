@@ -822,4 +822,42 @@ spriteTypes = {
 		name = "GFX_POL_infantry_cw5_medium"
 		texturefile = "gfx/interface/technologies/POL/LAND/INF9.dds"
 	}
+
+	###Finland###
+	SpriteType = {
+		name = "GFX_FIN_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/FIN/LAND/INF1.dds"
+	}
+	SpriteType = {
+		name = "GFX_FIN_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/FIN/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_FIN_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_FIN_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF2.dds"
+	}
+	SpriteType = {
+		name = "GFX_FIN_infantry_cw1_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF5.dds"
+	}
+	SpriteType = {
+		name = "GFX_FIN_infantry_cw2_medium"
+		texturefile = "gfx/interface/technologies/FIN/LAND/INF6.dds"
+	}
+	SpriteType = {
+		name = "GFX_FIN_infantry_cw3_medium"
+		texturefile = "gfx/interface/technologies/FIN/LAND/INF7.dds"
+	}
+	SpriteType = {
+		name = "GFX_FIN_infantry_cw4_medium"
+		texturefile = "gfx/interface/technologies/SOV/LAND/INF8.dds"
+	}
+	SpriteType = {
+		name = "GFX_FIN_infantry_cw5_medium"
+		texturefile = "gfx/interface/technologies/FIN/LAND/INF9.dds"
+	}
 }

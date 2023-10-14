@@ -565,7 +565,7 @@ technologies = {
 	kampfgruppe = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		
+		additional_brigade_column_size = 1
 
 		category_all_infantry = {
 			default_morale = 0.2
@@ -1476,7 +1476,7 @@ technologies = {
 	tactical_control = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		
+		additional_brigade_column_size = 1
 
 		land_reinforce_rate = 0.02
 	
@@ -1694,6 +1694,7 @@ technologies = {
 	advanced_firebases = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		additional_brigade_column_size = 1
 		
 
 		category_all_infantry = {
@@ -2023,6 +2024,7 @@ technologies = {
 	grand_mechanized_offensive = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		additional_brigade_column_size = 1
 		
 	
 		xor = {
@@ -2370,6 +2372,7 @@ technologies = {
 	infantry_offensive = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		additional_brigade_column_size = 1
 		
 	
 		xor = {
@@ -2844,7 +2847,7 @@ technologies = {
 	large_front_operations = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		
+		additional_brigade_column_size = 1
 
 		xor = {
 			peoples_army
@@ -3266,6 +3269,7 @@ technologies = {
 	peoples_army = {
 		xp_research_type = army
 		xp_unlock_cost = 100
+		additional_brigade_column_size = 1
 		
 	
 		xor = {

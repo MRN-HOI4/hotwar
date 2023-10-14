@@ -50,6 +50,36 @@ spriteTypes = {
 		name = "GFX_gw_artillery_medium"
 		texturefile = "gfx/interface/technologies/ENG/LAND/ART1.dds"
 	}
+
+	SpriteType = {
+		name = "GFX_infantry_aa1_medium"
+		texturefile = "gfx/interface/technologies/AA1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_infantry_aa2_medium"
+		texturefile = "gfx/interface/technologies/AA2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_infantry_aa3_medium"
+		texturefile = "gfx/interface/technologies/AA3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_infantry_aa1_medium"
+		texturefile = "gfx/interface/technologies/AA1SOV.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_infantry_aa2_medium"
+		texturefile = "gfx/interface/technologies/AA2SOV.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SOV_infantry_aa3_medium"
+		texturefile = "gfx/interface/technologies/AA3SOV.dds"
+	}
 	SpriteType = {
 		name = "GFX_antitank6_medium"
 		texturefile = "gfx/interface/technologies/USA/LAND/AT3.dds"
@@ -5266,4 +5296,58 @@ spriteTypes = {
 		name = "GFX_YUG_amphibious_mechanized_infantry_7_medium"
 		texturefile = "gfx/interface/technologies/SOV/LAND/LWS6.dds"
 	}
+
+		##FINLAND##
+		SpriteType = {
+			name = "GFX_FIN_motorised_infantry2_medium"
+			texturefile = "gfx/interface/technologies/FIN/LAND/TRUCK2.dds"
+		}
+		SpriteType = {
+			name = "GFX_FIN_motorised_infantry4_medium"
+			texturefile = "gfx/interface/technologies/FIN/LAND/TRUCK4.dds"
+		}
+		SpriteType = {
+			name = "GFX_FIN_mechanised_infantry5_medium"
+			texturefile = "gfx/interface/technologies/SOV/LAND/MECH5.dds"
+		}
+		SpriteType = {
+			name = "GFX_FIN_mechanised_infantry6_medium"
+			texturefile = "gfx/interface/technologies/FIN/LAND/MECH6.dds"
+		}
+		SpriteType = {
+			name = "GFX_FIN_mechanised_infantry7_medium"
+			texturefile = "gfx/interface/technologies/FIN/LAND/MECH7.dds"
+		}
+		SpriteType = {
+			name = "GFX_FIN_mechanised_infantry8_medium"
+			texturefile = "gfx/interface/technologies/FIN/LAND/MECH8.dds"
+		}
+		SpriteType = {
+			name = "GFX_FIN_armored_car1_medium"
+			texturefile = "gfx/interface/technologies/SOV/LAND/AC1.dds"
+		}
+		SpriteType = {
+			name = "GFX_FIN_armored_car2_medium"
+			texturefile = "gfx/interface/technologies/SOV/LAND/AC2.dds"
+		}
+		SpriteType = {
+			name = "GFX_FIN_armored_car3_medium"
+			texturefile = "gfx/interface/technologies/SOV/LAND/AC3.dds"
+		}
+		SpriteType = {
+			name = "GFX_FIN_armored_car4_medium"
+			texturefile = "gfx/interface/technologies/SOV/LAND/AC4.dds"
+		}
+		SpriteType = {
+			name = "GFX_FIN_armored_car5_medium"
+			texturefile = "gfx/interface/technologies/SOV/LAND/AC5.dds"
+		}
+		SpriteType = {
+			name = "GFX_FIN_armored_car6_medium"
+			texturefile = "gfx/interface/technologies/SOV/LAND/AC6.dds"
+		}
+		SpriteType = {
+			name = "GFX_FIN_armored_car_at_upgrade_medium"
+			texturefile = "gfx/interface/technologies/SOV/LAND/ACAT.dds"
+		}
 }

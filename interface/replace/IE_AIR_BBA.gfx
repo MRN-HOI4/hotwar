@@ -2530,10 +2530,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/bba_tech_survivability_studies.dds"
 	}
 	SpriteType = {
-		name = "GFX_early_bombs_medium"
-		texturefile = "gfx/interface/technologies/bba_tech_bombs.dds"
-	}
-	SpriteType = {
 		name = "GFX_medium_bombs_medium"
 		texturefile = "gfx/interface/technologies/BBA/BOMB2B.dds"
 	}

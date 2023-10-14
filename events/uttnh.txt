@@ -1,0 +1,20 @@
+﻿# add_namespace = uttnh
+
+# #Welcome event
+# country_event = {
+# 	id = uttnh.1
+	
+# 	title = uttnh.1.t
+# 	desc = uttnh.1.d
+# 	picture = GFX_report_event_uttnh
+	
+# 	fire_only_once = yes
+	
+# 	is_triggered_only = yes
+	
+# 	option = {
+# 		name = uttnh.1.a
+# 		set_global_flag = uttnh_event_happened	
+						
+# 	}		
+# }
