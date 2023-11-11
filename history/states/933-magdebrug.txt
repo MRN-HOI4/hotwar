@@ -1,0 +1,32 @@
+
+state={
+	id=933
+	name="STATE_933"
+	manpower = 2265029
+	buildings_max_level_factor = 1
+
+	state_category = megalopolis
+
+
+	history={
+		owner = DDR
+		add_core_of = DDR
+		add_claim_by = WGR
+		victory_points = {
+			3522 5 
+		}
+		buildings = {
+			infrastructure = 5
+			anti_air_building = 3
+            industrial_complex = 3
+            arms_factory = 3
+
+		}
+	}
+
+	provinces={
+		3522 6487 9375 9560 11359 11468 13257
+	}
+
+	local_supplies=0.0 
+}

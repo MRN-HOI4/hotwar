@@ -2,7 +2,7 @@
 state={
 	id=64
 	name="STATE_64"
-	manpower = 7265029
+	manpower = 5265029
 	buildings_max_level_factor = 1
 
 	state_category = megalopolis
@@ -26,7 +26,7 @@ state={
 	}
 
 	provinces={
-		375 478 3367 3499 3522 6487 9375 9428 9456 9496 9560 11219 11359 11415 11444 11468 11505 13257 
+		375 478 3367 3499 9428 9456 9496 11219 11415 11444 11468 11505 
 	}
 
 	local_supplies=0.0 
