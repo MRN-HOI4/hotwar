@@ -1,0 +1,31 @@
+
+state={
+	id=935
+	name="STATE_935"
+	manpower = 3592576
+	buildings_max_level_factor = 1
+
+	state_category = metropolis
+
+
+	history={
+		owner = WGR
+		add_core_of = DDR
+		add_claim_by = WGR
+		victory_points = {
+			6469 5 
+		}
+		buildings = {
+			infrastructure = 5
+            industrial_complex = 2
+            arms_factory = 3
+
+		}
+	}
+
+	provinces={
+		529 3512 6469 6570 9482
+	}
+
+	local_supplies=0.0 
+}
