@@ -2,7 +2,7 @@
 state={
 	id=65
 	name="STATE_65"
-	manpower = 3592576
+	manpower = 5592576
 	resources={
 		steel=53 # was: 90
 	}
@@ -22,12 +22,15 @@ state={
             arms_factory = 4
 		}
 		victory_points = {
+			514 5 
+		}
+		victory_points = {
 			3535 5 
 		}
 	}
 
 	provinces={
-		3535 6559 9441 9471 11481 11545 
+		514 573 3514 3535 6441 6559 9441 9471 9535 11481 11545 
 	}
 
 	local_supplies=0.0 
