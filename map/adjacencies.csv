@@ -168,4 +168,17 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 3401;6550;sea;7226;-1;-1;-1;-1;;Aegean
 8000;1966;sea;8788;-1;-1;-1;-1;;Socotra
 13017;13018;sea;2955;-1;-1;-1;-1;;Reunion
+4435;4900;impassable;-1;-1;-1;-1;-1;;Himalayas
+4435;2014;impassable;-1;-1;-1;-1;-1;;Himalayas
+4318;12789;impassable;-1;-1;-1;-1;-1;;Himalayas
+4996;12789;impassable;-1;-1;-1;-1;-1;;Himalayas
+4996;12898;impassable;-1;-1;-1;-1;-1;;Himalayas
+4996;10863;impassable;-1;-1;-1;-1;-1;;Himalayas
+4425;10863;impassable;-1;-1;-1;-1;-1;;Himalayas
+10920;10863;impassable;-1;-1;-1;-1;-1;;Himalayas
+12363;10863;impassable;-1;-1;-1;-1;-1;;Himalayas
+4210;10863;impassable;-1;-1;-1;-1;-1;;Himalayas
+4210;7976;impassable;-1;-1;-1;-1;-1;;Himalayas
+4210;5009;impassable;-1;-1;-1;-1;-1;;Himalayas
+12884;1961;impassable;-1;-1;-1;-1;-1;;Himalayas
 -1;-1;;-1;-1;-1;-1;-1;-1
