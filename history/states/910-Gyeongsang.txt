@@ -1,12 +1,9 @@
-state=
-{
+
+state={
 	id=910
 	name="STATE_910"
-	manpower = 9793000
 
-		state_category = city
-	history=
-	{
+	history={
 		owner = KOR
 		buildings = {
 			infrastructure = 4
@@ -17,24 +14,28 @@ state=
 			dockyard = 3
 			4056 = {
 				naval_base = 4
+
 			}
+
+		}
+		add_claim_by = PRK
+		add_core_of = KOR
+		victory_points = {
+			13260 10
 		}
 		victory_points = {
 			4086 10
 		}
 		victory_points = {
-			4056 20 
+			12089 10
 		}
-		victory_points = {
-			7121 9 
-		}
-		add_claim_by = PRK
-		add_core_of = KOR
+	}
 
-	}
 	provinces={
-		1081 4056 4086 4103 7121 11912 12060 12089 
+		1081 4086 4103 7121 10115 11912 12089 13260 
 	}
+	manpower=9793000
 	buildings_max_level_factor=1.000
+	state_category=city
 	local_supplies=0.000
 }

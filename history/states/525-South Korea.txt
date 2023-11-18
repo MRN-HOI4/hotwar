@@ -4,7 +4,7 @@ state=
 	name="STATE_525"
 	manpower = 9126000
 	
-		state_category = city
+	state_category = metropolis
 	history=
 	{
 		owner = KOR
@@ -15,25 +15,28 @@ state=
 			industrial_complex = 6
 			arms_factory = 2
 			dockyard = 2
-			7221 = {
-				naval_base = 3
+			13267 = {
+				naval_base = 10
 			}
-		}
-
-		victory_points = {
-			7125 25
-		}
-
-		victory_points = {
-			7221 9
 		}
 
 		add_core_of = KOR
 		add_claim_by = PRK
-
+		victory_points = {
+			13268 50
+		}
+		victory_points = {
+			13267 10
+		}
+		victory_points = {
+			7125 5
+		}
+		victory_points = {
+			7221 5
+		}
 	}
 	provinces={
-		7125 7221 10036
+		7125 7221 13266 13267 13268 13270
 	}
 
 	local_supplies=0.0 

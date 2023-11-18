@@ -1,3 +1,4 @@
+
 state={
 	id=914
 	name="STATE_914"
@@ -19,16 +20,15 @@ state={
 		add_core_of = PRK
 		add_claim_by = KOR
 		victory_points = {
-			11775 5 
+			11878 10
 		}
 		victory_points = {
-			3803 4 
+			3803 5
 		}
-
 	}
 
 	provinces={
-		906 3803 3904 6963 9899 11775 11828 11878
+		3803 3904 9899 11878 
 	}
 	manpower=1251841
 	buildings_max_level_factor=1.000

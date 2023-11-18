@@ -1,0 +1,24 @@
+state={
+	id=947
+	name="STATE_947"
+	history={
+		add_core_of = BAN
+		owner = AFG
+		add_core_of = AFG
+		victory_points = {
+			12010 10
+		}
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+
+	provinces={
+		7179 9991 11968 12010 
+	}
+	manpower=493332
+	state_category=city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

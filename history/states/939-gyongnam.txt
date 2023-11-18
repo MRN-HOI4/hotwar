@@ -1,0 +1,26 @@
+state={
+	id=939
+	name="STATE_939"
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 4
+			industrial_complex = 2
+			dockyard = {
+				12060 10
+			}
+		}
+		add_claim_by = PRK
+		add_core_of = KOR
+		victory_points = {
+			10260 5
+		}
+	}
+	provinces={
+		1054 10085 12060 
+	}
+	manpower=2628881
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

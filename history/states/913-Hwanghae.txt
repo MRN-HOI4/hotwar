@@ -1,7 +1,8 @@
+
 state={
 	id=913
 	name="STATE_913"
-	manpower=3096909
+
 	history={
 		owner = PRK
 		add_core_of = PRK
@@ -16,21 +17,21 @@ state={
 			1003 = {
 				naval_base = 2
 			}
+
 		}
 		victory_points = {
-			12040 9 
+			1003 10
 		}
 		victory_points = {
-			11915 8 
-		}
-		victory_points = {
-			1003 7 
+			7155 5
 		}
 	}
+
 	provinces={
-		1003 4107 7070 7155 9981 11915 12040 
+		1003 4107 7155 
 	}
-	state_category = town
+	manpower=3096909
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
 }

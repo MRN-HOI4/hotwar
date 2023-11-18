@@ -1,0 +1,33 @@
+state={
+	id=943
+	name="STATE_943"
+	history={
+		owner = PRK
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 3
+			dockyard = {
+				4052 10
+			}
+		}
+		add_claim_by = KOR
+		add_core_of = PRK
+		victory_points = {
+			4052 20
+		}
+		victory_points = {
+			10065 5
+		}
+		victory_points = {
+			13278 50
+		}
+	}
+	provinces={
+		4052 10065 13278 
+	}
+	manpower=5409281
+	state_category = metropolis
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

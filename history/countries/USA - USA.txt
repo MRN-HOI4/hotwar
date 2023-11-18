@@ -394,7 +394,6 @@ add_to_faction = CHI
 add_to_faction = WGR
 add_to_faction = SWE
 add_to_faction = KOR
-add_to_faction = PHI
 
 recruit_character = USA_Richard_Milhous_Nixon
 
