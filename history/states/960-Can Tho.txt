@@ -1,0 +1,24 @@
+state={
+	id=960
+	name="STATE_960"
+	history={
+		add_claim_by = VIN
+		add_core_of = ROV
+		owner = ROV
+		victory_points = {
+			12133 10 
+		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+			arms_factory = 2
+		}
+	}
+	provinces={
+		1423 4223 4284 4341 7303 7331 12133 
+	}
+	manpower=439838
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

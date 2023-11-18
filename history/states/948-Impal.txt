@@ -4,7 +4,7 @@ state={
 	history={
 		add_core_of = RAJ
 		owner = RAJ
-		add_claim_of = BRM
+		add_claim_by = BRM
 		buildings = {
 			infrastructure = 2
 		}

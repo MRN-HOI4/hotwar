@@ -1,0 +1,20 @@
+state={
+	id=962
+	name="STATE_962"
+	history={
+		add_claim_by = VIN
+		add_core_of = ROV
+		owner = ROV
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 1
+		}
+	}
+	provinces={
+		1620 4330 4596 7645 10204 12167 12260 12288 
+	}
+	manpower=498983
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
