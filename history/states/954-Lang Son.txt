@@ -1,30 +1,26 @@
-# muangssai
 state={
-	id=670
-	name="STATE_670"
-
+	id=954
+	name="STATE_954"
 	history={
 		owner = VIN
 		add_core_of = VIN
 		add_claim_by = ROV
 		victory_points = {
-			1464 8 
-		}
-		victory_points = {
-			10456 5 
+			4199 10
 		}
 		buildings = {
-			infrastructure = 1
+			infrastructure = 2
+			industrial_complex = 1
 
 		}
 
 	}
 
 	provinces={
-		4339 4568 4613 7075 7103 7218 9961 12392 12433 
+		1073 1157 4119 7015 7093 7518 9948 12008 12048 12065 
 	}
-	manpower=688000
+	manpower=2832921
+	state_category = town
 	buildings_max_level_factor=1.000
-	state_category=town
 	local_supplies=0.000
 }

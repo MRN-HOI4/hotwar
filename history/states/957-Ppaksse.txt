@@ -1,0 +1,25 @@
+state={
+	id=957
+	name="STATE_957"
+	history={
+		owner = VIN
+		add_core_of = VIN
+		add_claim_by = ROV
+		victory_points = {
+			4539 6
+		}
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+			air_base = 2
+		}
+
+	}
+	provinces={
+		1374 1563 1577 1592 4539 4554 7426 10195 10238 10453 12210 
+	}
+	manpower=789478
+	state_category = town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}
