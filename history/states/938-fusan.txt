@@ -1,0 +1,29 @@
+state={
+	id=938
+	name="STATE_938"
+	history={
+		owner = KOR
+		buildings = {
+			infrastructure = 5
+			air_base = 10
+			anti_air_building = 2
+			industrial_complex = 5
+			arms_factory = 2
+			dockyard = {
+				4056 10
+			}
+		}
+		add_claim_by = PRK
+		add_core_of = KOR
+		victory_points = {
+			4056 30
+		}
+	}
+	provinces={
+		4056 
+	}
+	manpower=3200000
+	state_category = large_city
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

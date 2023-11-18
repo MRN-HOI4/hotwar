@@ -1,0 +1,20 @@
+state={
+	id=948
+	name="STATE_948"
+	history={
+		add_core_of = RAJ
+		owner = RAJ
+		add_claim_of = BRM
+		buildings = {
+			infrastructure = 2
+		}
+
+	}
+	provinces={
+		1525 1553 1581 
+	}
+	manpower=293832
+	state_category=town
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

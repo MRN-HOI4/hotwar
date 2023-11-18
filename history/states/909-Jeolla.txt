@@ -1,11 +1,9 @@
+
 state={
 	id=909
 	name="STATE_909"
-	manpower = 6966000
 
-		state_category = town
-	history=
-	{
+	history={
 		owner = KOR
 		buildings = {
 			infrastructure = 3
@@ -16,25 +14,25 @@ state={
 			dockyard = 2
 			10110 = {
 				naval_base = 2
+
 			}
+
 		}
 		add_claim_by = PRK
 		add_core_of = KOR
-
 		victory_points = {
-			10110 9 
-		}
-
-		victory_points = {
-			10085 11 
+			13259 10
 		}
 		victory_points = {
-			11977 10 
+			13261 5
 		}
 	}
+
 	provinces={
-		1054 1177 4126 10085 10110 11948 11977 12085 
+		4126 11977 13259 13261 
 	}
+	manpower=6966000
 	buildings_max_level_factor=1.000
+	state_category=town
 	local_supplies=0.000
 }

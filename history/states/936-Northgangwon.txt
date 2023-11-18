@@ -1,0 +1,32 @@
+state={
+	id=936
+	name="STATE_936"
+	manpower=2259993
+	history={
+		owner = PRK
+		add_core_of = PRK
+		add_claim_by = KOR
+		buildings = {
+			infrastructure = 5
+			air_base = 6
+			anti_air_building = 1
+			industrial_complex = 2
+			naval_base = {
+				13273 10
+			}
+		
+		}
+		victory_points = {
+			13273 5
+		}
+		victory_points = {
+			9981 5
+		}
+	}
+	provinces={
+		848 4004 9981 11958 13273
+	}
+	buildings_max_level_factor=1.000
+	state_category = town
+	local_supplies=0.000
+}
