@@ -7,8 +7,8 @@ state={
 			infrastructure = 1
 			industrial_complex = 2
 			arms_factory = 1
-			dockyard = {
-				10110 10
+			naval_base = {
+				10110 5
 			}
 		}
 		add_claim_by = PRK
