@@ -996,7 +996,41 @@ spriteTypes = {
 		name = "GFX_FRA_iw_large_airframe_medium"
 		texturefile = "gfx/interface/technologies/FRA_heavy_plane_3.dds"
 	}
+#SWE 
 
+	SpriteType = {
+		name = "GFX_SWE_modern_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/SWE/AIR/FRJ1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SWE_modern_small_airframe_1_medium"
+		texturefile = "gfx/interface/technologies/SWE/AIR/FRJ2.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWE_modern_small_airframe_2_medium"
+		texturefile = "gfx/interface/technologies/SWE/AIR/FRJ3.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWE_modern_small_airframe_3_medium"
+		texturefile = "gfx/interface/technologies/SWE/AIR/FRJ4.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWE_modern_small_airframe_4_medium"
+		texturefile = "gfx/interface/technologies/SWE/AIR/FRJ5.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWE_modern_small_airframe_5_medium"
+		texturefile = "gfx/interface/technologies/SWE/AIR/FRJ6.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWE_modern_small_airframe_6_medium"
+		texturefile = "gfx/interface/technologies/SWE/AIR/FRJ7.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWE_modern_small_airframe_7_medium"
+		texturefile = "gfx/interface/technologies/SWE/AIR/FRJ8.dds"
+	}
 #USA
 	SpriteType = {
 		name = "GFX_USA_iw_small_airframe_medium"

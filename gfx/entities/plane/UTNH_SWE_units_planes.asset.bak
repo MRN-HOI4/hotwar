@@ -48,7 +48,7 @@ entity = {
 		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.300
+	scale = 0.144
 }
 
 entity = {
@@ -126,7 +126,7 @@ entity = {
 		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.300
+	scale = 0.144
 }
 
 entity = {
@@ -152,7 +152,7 @@ entity = {
 		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.300
+	scale = 0.144
 }
 entity = {
 	name = "SWE_jet_fighter_equipment_7_entity"
@@ -177,7 +177,7 @@ entity = {
 		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.300
+	scale = 0.144
 }
 
 entity = {
@@ -203,7 +203,7 @@ entity = {
 		event = { time = 0 particle = "vehicle_explode_effect" keep_particle = yes }
 		event = { trigger_once = yes sound = { soundeffect = "airplane_crash" } }
 	}
-	scale = 0.300
+	scale = 0.144
 }
 
 entity = {

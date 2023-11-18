@@ -3777,10 +3777,7 @@ SWE = {
 	modern_tank_chassis_6 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/GER/m6.dds"
-			}
-			models = {
-				"geo_leo1a5_entity"
+				"gfx/interface/technologies/GEN/m6.dds"
 			}
 		}
 	}
@@ -3788,9 +3785,6 @@ SWE = {
 		pool = {
 			icons = {
 				"gfx/interface/technologies/SWE/LAND/m7.dds"
-			}
-			models = {
-				"GER_modern_armor1_entity"
 			}
 		}
 	}
@@ -3807,10 +3801,7 @@ SWE = {
 	modern_tank_chassis_9 = {
 		pool = {
 			icons = {
-				"gfx/interface/technologies/GER/m9.dds"
-			}
-			models = {
-				"GER_leopard2A5_entity"
+				"gfx/interface/technologies/GEN/m9.dds"
 			}
 		}
 	}		

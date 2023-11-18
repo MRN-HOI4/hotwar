@@ -5540,12 +5540,20 @@ spriteTypes = {
 		texturefile = "gfx/interface/technologies/SWE/LAND/mbt_tank_chassis_5.dds"
 	}
 	SpriteType = {
+		name = "GFX_SWE_main_battle_tank_chassis_6_medium"
+		texturefile = "gfx/interface/technologies/GER/mbt_tank_chassis_6.dds"
+	}
+	SpriteType = {
 		name = "GFX_SWE_main_battle_tank_chassis_7_medium"
 		texturefile = "gfx/interface/technologies/SWE/LAND/mbt_tank_chassis_7.dds"
 	}
 	SpriteType = {
 		name = "GFX_SWE_main_battle_tank_chassis_8_medium"
 		texturefile = "gfx/interface/technologies/SWE/LAND/mbt_tank_chassis_8.dds"
+	}
+	SpriteType = {
+		name = "GFX_SWE_main_battle_tank_chassis_9_medium"
+		texturefile = "gfx/interface/technologies/GER/mbt_tank_chassis_9.dds"
 	}
 	SpriteType = {
 		name = "GFX_SWE_modern_light_tank_3_medium"
@@ -6176,13 +6184,5 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_FIN_basic_medium_tank_chassis_medium"
 		texturefile = "gfx/interface/technologies/FIN/LAND/m1chassis.dds"
-	}
-	SpriteType = {
-		name = "GFX_FIN_improved_medium_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/FIN/LAND/m2chassis.dds"
-	}
-	SpriteType = {
-		name = "GFX_FIN_advanced_medium_tank_chassis_medium"
-		texturefile = "gfx/interface/technologies/FIN/LAND/m3chassis.dds"
 	}
 }

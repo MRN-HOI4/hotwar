@@ -462,7 +462,8 @@
  SOV_cv_fighter_equipment_9:0 "Mikoyan-Gurevich MiG-23K"
  SOV_cv_fighter_equipment_9_short:0 "MiG-23K"
  SOV_cv_fighter_equipment_9_desc:0 "The Mikoyan-Gurevich MiG-23 (NATO reporting name Flogger) is a variable-geometry fighter aircraft, designed by the Mikoyan-Gurevich design bureau in the Soviet Union. It is a third-generation jet fighter, the world's most-produced variable-geometry aircraft, along with similar Soviet fighters such as the Su-15 "Flagon". It was the first Soviet fighter to field a look-down/shoot-down radar and one of the first to be armed with beyond visual range missiles."
- 
+ SOV_cv_fighter_equipment_11:0 "Sukhoi Su-33" 
+ SOV_cv_fighter_equipment_11_short:0 "Su-33" 
  
  SOV_heavy_fighter_equipment_4:0 "Mikoyan-Guerevich MiG-17"
  SOV_heavy_fighter_equipment_4_short:0 "MiG-17"
@@ -1030,7 +1031,7 @@
  GER_nav_bomber_equipment_3_short:0 "Ju 290"
  GER_nav_bomber_equipment_4:0 "Blohm & Voss BV 238"
  GER_nav_bomber_equipment_4_short:0 "BV 238"
- GER_nav_bomber_equipment_5:0 "Blohm & Voss BV 45"
+ GER_nav_bomber_equipment_5:0 "Blohm & Voss BV 245"
  GER_nav_bomber_equipment_5_short:0 "BV 245"
  GER_nav_bomber_equipment_6:0 "Blohm & Voss BV 300"
  GER_nav_bomber_equipment_6_short:0 "BV 300"
@@ -1531,10 +1532,10 @@
  JAP_transport_plane_equipment_3_short:0 "Ki-92"
  JAP_transport_plane_equipment_4:0 "Tachikawa Ki-92C"
  JAP_transport_plane_equipment_4_short:0 "Ki-92C"
- JAP_transport_plane_equipment_5:0 "Kawasaki C-1"
- JAP_transport_plane_equipment_5_short:0 "C-1"
- JAP_transport_plane_equipment_6:0 "C-130 Hercules"
- JAP_transport_plane_equipment_6_short:0 "C-130 Hercules"
+ JAP_transport_plane_equipment_5:0 "C-130 Hercules" 
+ JAP_transport_plane_equipment_5_short:0 "C-130" 
+ JAP_transport_plane_equipment_6:0 "Kawasaki C-1" 
+ JAP_transport_plane_equipment_6_short:0 "C-1" 
  JAP_transport_plane_equipment_7:0 "ShinMaywa US-2"
  JAP_transport_plane_equipment_7_short:0 "ShinMaywa US-2"
 
@@ -2403,7 +2404,7 @@
  SWI_tac_bomber_equipment_0:0 "K+W Thun Fokker C.V.-E"
  SWI_tac_bomber_equipment_0_short:0 "K+W C.V.-E"
  
- # Turkish planes, all fictional, licence, or fictional licence builds
+ #Turkish planes, all fictional, licence, or fictional licence builds
  
  TUR_fighter_equipment_0:0 "TamTAS Hawk II"
  TUR_fighter_equipment_0_short:0 "Hawk II"
