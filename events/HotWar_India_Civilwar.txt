@@ -1,0 +1,165 @@
+add_namespace = hotwar_india_civilwar
+
+news_event = {
+    id = hotwar_india_civilwar.1
+	title = hotwar_india_civilwar.1.t
+	desc = hotwar_india_civilwar.1.d
+	picture = GFX_end_biafra_war_event
+
+    major = yes
+
+    trigger = {
+        date > 1971.12.16
+        NOT = { has_global_flag = start_india_civilwar }
+	}
+
+    mean_time_to_happen = {
+		days = 1
+	}
+
+    immediate = {
+        hidden_effect = {
+            set_global_flag = start_india_civilwar
+            PAK = {
+                add_state_core = 443
+                add_state_core = 444
+                add_state_core = 428
+                add_state_core = 415
+                add_state_core = 267
+                add_state_core = 445
+                add_state_core = 442
+                add_state_core = 440
+                add_state_core = 441
+                add_state_core = 787
+                add_state_core = 427
+                add_state_core = 947
+                add_state_core = 950
+                add_state_core = 949
+                add_state_core = 953
+                add_state_core = 430
+                add_state_core = 432
+                add_state_core = 434
+                add_state_core = 952
+                add_state_core = 948
+                add_state_core = 435
+
+                every_core_state = {
+                    transfer_state_to = PAK
+                    remove_core_of = RAJ
+                    add_claim_by = RAJ
+                }
+                declare_war_on = {
+                    target = RAJ
+                    type = civil_war
+                }
+                add_civil_war_target = RAJ
+            
+            }
+            RAJ = {
+                transfer_units_fraction= {
+                    target = PAK
+                    size = 0.5
+                    stockpile_ratio = 0.5
+                    army_ratio = 0.5
+                    navy_ratio = 0.5
+                    air_ratio = 0.5
+                    keep_unit_leaders_trigger = { FROM }
+                }
+                remove_ideas = { RAJ_marginalized_muslim_community }
+                every_core_state = {
+                    remove_core_of = PAK
+                    add_claim_by = PAK
+                }
+                
+            }
+
+        }
+	}
+
+    option = {
+		name = hotwar_india_civilwar.1.a
+        trigger = {
+            NOT = {
+                OR = {
+                    TAG = RAJ
+                    TAG = PAK
+                }
+
+            }
+			
+		}
+	}
+    option = {
+        name = hotwar_india_civilwar.1.b
+        trigger = {
+			TAG = PAJ
+		}
+    }
+    option = {
+        name = hotwar_india_civilwar.1.c
+        trigger = {
+			TAG = PAK
+		}
+    }
+}
+
+#country_event = {
+#    id = hotwar_india_civilwar.3
+#	title = hotwar_india_civilwar.3.t
+#	desc = hotwar_india_civilwar.3.d
+#	#picture = GFX_end_biafra_war_event
+#
+#    trigger = {
+#        always = no
+#    }
+#
+#    immediate = {
+#        set_global_flag = arab_peace
+#    }
+#
+#    option = {
+#        name = hotwar_india_civilwar.3.a
+#        white_peace = ISR
+#        EGY = {
+#            transfer_state = 453
+#            transfer_state = 928
+#        }
+#        add_war_support = -0.1
+#
+#    }
+#    option = {
+#        name = hotwar_india_civilwar.3.b
+#        add_war_support = 0.1
+#
+#    }
+#
+#
+#}
+#
+#news_event = {
+#    id = hotwar_india_civilwar.2
+#
+#    hidden = yes
+#
+#    trigger = {
+#        NOT = { has_global_flag = arab_peace }
+#		EGY = {
+#            controls_state = 453
+#            controls_state = 928
+#        }
+#	}
+#
+#    mean_time_to_happen = {
+#		days = 1
+#	}
+#
+#    immediate = {
+#        EGY = { country_event = { id = hotwar_india_civilwar.3 } }
+#    }
+#
+#    option = {
+#		name = hotwar_india_civilwar.2.a
+#        EGY = { country_event = { id = hotwar_india_civilwar.3 } }
+#	}
+#}
+
