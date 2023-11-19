@@ -10,7 +10,7 @@ state={
 		owner = RAJ
 		add_core_of = RAJ
 		victory_points = {
-			10887 5
+			10887 10
 		}
 		buildings = {
 			infrastructure = 3 #was: 5

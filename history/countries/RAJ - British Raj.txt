@@ -4,6 +4,7 @@ oob = "RAJ_1936"
 
 add_ideas = {
 	AST_citizen_military_forces
+	RAJ_marginalized_muslim_community
 }
 
 set_research_slots = 4
