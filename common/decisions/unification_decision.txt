@@ -437,21 +437,66 @@ Unification_category = {
 				671 = { add_core_of = ROOT }
 				741 = { add_core_of = ROOT }
 				286 = { add_core_of = ROOT }
+                954 = { add_core_of = ROOT }
+                955 = { add_core_of = ROOT }
+                956 = { add_core_of = ROOT }
+                957 = { add_core_of = ROOT }
+                958 = { add_core_of = ROOT }
+                959 = { add_core_of = ROOT }
+                960 = { add_core_of = ROOT }
+                961 = { add_core_of = ROOT }
+                962 = { add_core_of = ROOT }
+                963 = { add_core_of = ROOT }
+                964 = { add_core_of = ROOT }
+
 
                 670 = { remove_claim_by = ROV }
 				671 = { remove_claim_by = ROV }
 				741 = { remove_claim_by = ROV }
 				286 = { remove_claim_by = ROV }
+                954 = { remove_claim_by = ROV }
+                955 = { remove_claim_by = ROV }
+                956 = { remove_claim_by = ROV }
+                957 = { remove_claim_by = ROV }
+                958 = { remove_claim_by = ROV }
+                959 = { remove_claim_by = ROV }
+                960 = { remove_claim_by = ROV }
+                961 = { remove_claim_by = ROV }
+                962 = { remove_claim_by = ROV }
+                963 = { remove_claim_by = ROV }
+                964 = { remove_claim_by = ROV }
 
                 670 = { remove_claim_by = VIN }
 				671 = { remove_claim_by = VIN }
 				741 = { remove_claim_by = VIN }
 				286 = { remove_claim_by = VIN }
+                954 = { remove_claim_by = VIN }
+                955 = { remove_claim_by = VIN }
+                956 = { remove_claim_by = VIN }
+                957 = { remove_claim_by = VIN }
+                958 = { remove_claim_by = VIN }
+                959 = { remove_claim_by = VIN }
+                960 = { remove_claim_by = VIN }
+                961 = { remove_claim_by = VIN }
+                962 = { remove_claim_by = VIN }
+                963 = { remove_claim_by = VIN }
+                964 = { remove_claim_by = VIN }
 
                 670 = { remove_core_of = VIN }
 				671 = { remove_core_of = VIN }
 				741 = { remove_core_of = VIN }
 				286 = { remove_core_of = VIN }
+                954 = { remove_core_of = VIN }
+                955 = { remove_core_of = VIN }
+                956 = { remove_core_of = VIN }
+                957 = { remove_core_of = VIN }
+                958 = { remove_core_of = VIN }
+                959 = { remove_core_of = VIN }
+                960 = { remove_core_of = VIN }
+                961 = { remove_core_of = VIN }
+                962 = { remove_core_of = VIN }
+                963 = { remove_core_of = VIN }
+                964 = { remove_core_of = VIN }
                 set_global_flag = vin_unification
                 set_cosmetic_tag = VIN_UNIFIED
                 if = {
@@ -500,21 +545,66 @@ Unification_category = {
 				671 = { add_core_of = ROOT }
 				741 = { add_core_of = ROOT }
 				286 = { add_core_of = ROOT }
+                954 = { add_core_of = ROOT }
+                955 = { add_core_of = ROOT }
+                956 = { add_core_of = ROOT }
+                957 = { add_core_of = ROOT }
+                958 = { add_core_of = ROOT }
+                959 = { add_core_of = ROOT }
+                960 = { add_core_of = ROOT }
+                961 = { add_core_of = ROOT }
+                962 = { add_core_of = ROOT }
+                963 = { add_core_of = ROOT }
+                964 = { add_core_of = ROOT }
 
                 670 = { remove_claim_by = ROV }
 				671 = { remove_claim_by = ROV }
 				741 = { remove_claim_by = ROV }
 				286 = { remove_claim_by = ROV }
+                954 = { remove_claim_by = ROV }
+                955 = { remove_claim_by = ROV }
+                956 = { remove_claim_by = ROV }
+                957 = { remove_claim_by = ROV }
+                958 = { remove_claim_by = ROV }
+                959 = { remove_claim_by = ROV }
+                960 = { remove_claim_by = ROV }
+                961 = { remove_claim_by = ROV }
+                962 = { remove_claim_by = ROV }
+                963 = { remove_claim_by = ROV }
+                964 = { remove_claim_by = ROV }
 
                 670 = { remove_claim_by = VIN }
 				671 = { remove_claim_by = VIN }
 				741 = { remove_claim_by = VIN }
 				286 = { remove_claim_by = VIN }
+                954 = { remove_claim_by = VIN }
+                955 = { remove_claim_by = VIN }
+                956 = { remove_claim_by = VIN }
+                957 = { remove_claim_by = VIN }
+                958 = { remove_claim_by = VIN }
+                959 = { remove_claim_by = VIN }
+                960 = { remove_claim_by = VIN }
+                961 = { remove_claim_by = VIN }
+                962 = { remove_claim_by = VIN }
+                963 = { remove_claim_by = VIN }
+                964 = { remove_claim_by = VIN }
 
                 670 = { remove_core_of = ROV }
 				671 = { remove_core_of = ROV }
 				741 = { remove_core_of = ROV }
 				286 = { remove_core_of = ROV }
+                954 = { remove_core_of = ROV }
+                955 = { remove_core_of = ROV }
+                956 = { remove_core_of = ROV }
+                957 = { remove_core_of = ROV }
+                958 = { remove_core_of = ROV }
+                959 = { remove_core_of = ROV }
+                960 = { remove_core_of = ROV }
+                961 = { remove_core_of = ROV }
+                962 = { remove_core_of = ROV }
+                963 = { remove_core_of = ROV }
+                964 = { remove_core_of = ROV }
+
                 set_province_name = { id = 4401 name = "호치민" }
                 set_global_flag = vin_unification
                 set_cosmetic_tag = VIN_UNIFIED
