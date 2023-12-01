@@ -65,20 +65,6 @@ characters={
 		}
 	}
 
-	HUN_matyas_rakosi={
-		name=HUN_matyas_rakosi
-		portraits={
-			civilian={
-				large="GFX_Portrait_hungary_matyas_rakosi"
-			}
-		}
-		country_leader={
-			ideology=stalinism
-			expire="1965.1.1.1"
-			id=-1
-		}
-	}
-
 	HUN_arpad_szakasits={
 		name=HUN_arpad_szakasits
 		portraits={
@@ -644,7 +630,34 @@ characters={
 			}
 		}
 	}
-	
+	# 핫워 신규 인물
+	HUN_jeno_fock = {
+		name = HUN_jeno_fock
+			portraits={
+			civilian={
+				large="GFX_Portrait_hungary_matyas_rakosi"
+			}
+		}
+		country_leader={
+			ideology=stalinism
+			traits = { dictator }
+			expire="1989.1.1.1"
+			id=-1
+		}
+	}
 
+	HUN_janos_kadar = {
+		name = HUN_janos_kadar
+		portraits = {
+			civilian = {
+				large = "GFX_Portrait_hungary_matyas_rakosi"
+			}
+		}
+		country_leader={
+			ideology=socialism
+			expire="1989.1.1.1"
+			id=-1
+		}
+	}
 	# Illusive Gentleman auto-generated
 }

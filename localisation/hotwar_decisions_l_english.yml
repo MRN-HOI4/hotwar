@@ -53,7 +53,7 @@
  FER_residential_improvements:0 "수감자 주거 시설 개선"
  FER_residential_improvements_desc:0 ""
  FER_stop_hardlabor:0 "수감자 중노동 중지"
- FER_stop_hardlabor_desc:0 ""
+ FER_stop_hardlabor_desc:0 "수감자들의 중노동을 중지시키면 그들의 불만을 잠재울수 있을것입니다."
  FER_MainCharacter_PrisonTransfer:0 "수감자 주요 인물 이감"
  FER_MainCharacter_PrisonTransfer_desc:0 ""
  
