@@ -1,0 +1,35 @@
+ideas = {
+    country = {
+        HUN_memory_of_buda = {
+
+            picture = generic_foreign_capital
+
+            removal_cost = -1
+
+            modifier = {
+                political_power_gain = -0.2
+                stability_factor = -0.05
+            }
+        }
+        HUN_unstable_economy = {
+
+            picture = generic_foreign_capital
+
+            removal_cost = -1
+
+            modifier = {
+                consumer_goods_factor = 0.2
+                fuel_gain = 30
+                weekly_manpower = -20
+
+            }
+
+        }
+        HUN_capitalism_birth = {
+
+            picture = generic_foreign_capital
+
+            removal_cost = -1
+        }
+    }
+}

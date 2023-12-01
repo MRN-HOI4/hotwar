@@ -1075,6 +1075,7 @@ add_to_faction = PRC
 add_to_faction = CUB
 add_to_faction = DDR
 add_to_faction = ETH
+add_to_faction = HUN
 add_to_faction = PRK
 
 set_autonomy = {
