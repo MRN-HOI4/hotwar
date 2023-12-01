@@ -2,13 +2,12 @@
 state = {
 	id=154
 	name="STATE_154"
-	manpower = 2735383
+	manpower = 3735383
 
 	state_category = city
 
 	history = {
-		owner = BUL
-		add_core_of = BUL
+		owner = HUN
 		buildings = {
 			infrastructure = 3 #was: 6
 			industrial_complex = 3
