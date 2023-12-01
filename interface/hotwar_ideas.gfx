@@ -76,8 +76,24 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_idea_Colt_Manufacturing"
-		texturefile = "gfx/interface/ideas/USA/colt.dds"
+		name = "JAP_peace_constituion_4"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_peace_constituion_4.dds"
 	}
+
+	spriteType = {
+		name = "JAP_peace_constituion_3"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_peace_constituion_3.dds"
+	}
+
+	spriteType = {
+		name = "JAP_peace_constituion_2"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_peace_constituion_2.dds"
+	}
+
+	spriteType = {
+		name = "JAP_peace_constituion_1"
+		texturefile = "gfx/interface/ideas/JAP/idea_JAP_peace_constituion_1.dds"
+	}
+
 
 }
