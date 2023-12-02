@@ -154,7 +154,7 @@ guiTypes = {
 			name = "TNO_youtube_button"
 			quadTextureSprite = "GFX_youtube_button"
 			position = { x = 563 y = 180 }
-			web_link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+			web_link = "https://youtu.be/mBw3qzf4s18?si=r4Qc8tILqpBLtsgs"
 		}
 		buttonType = {
 			name = "TNO_twitter_button"
