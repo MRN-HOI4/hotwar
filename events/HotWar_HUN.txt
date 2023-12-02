@@ -1,0 +1,48 @@
+add_namespace = hotwar_hun
+
+country_event = {
+	id = hotwar_hun.1
+    title = "hotwar_hun.1.t"
+    desc = "hotwar_hun.1.d"
+    picture = GFX_report_event_ast_army
+    
+    is_triggered_only = yes
+
+    trigger = {
+		date > 1970.1.10
+        has_global_flag = hun_56_demo_effect_redy
+        original_tag = HUN
+	}
+
+    immediate = {
+        set_global_flag = hun_56_demo_effect
+    }
+
+	option = {
+		name = hotwar_hun.1.a
+        ai_chance = { factor = 100 }
+        add_political_power = 20
+
+	}
+    
+}
+
+news_event = {
+    id = hotwar_hun.2
+
+    hidden = yes
+
+    is_triggered_only = yes
+    
+    fire_only_once = yes
+
+    trigger = {
+        date > 1970.1.10
+    }
+
+    immediate = {
+        set_global_flag = hun_56_demo_effect_redy
+    }
+}
+
+
