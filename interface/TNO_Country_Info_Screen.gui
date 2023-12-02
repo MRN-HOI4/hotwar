@@ -88,7 +88,7 @@ guiTypes = {
 		instantTextBoxType = {
 			name = "center_title"
 			position = { x = 195 y = 15 }
-			text = "== [CountryInfo_GET_Content_Country] =="
+			text = " [CountryInfo_GET_Content_Country] "
 			font = "hoi_36header"
 			maxwidth = 545
 			maxheight = 32
@@ -142,7 +142,7 @@ guiTypes = {
 			name = "TNO_discord_button"
 			quadTextureSprite = "GFX_discord_button"
 			position = { x = 207 y = 180 }
-			web_link = "https://discord.gg/KfWPUTgqGz"
+			web_link = "https://discord.gg/3CvgPRxUzf"
 		}
 		buttonType = {
 			name = "TNO_reddit_button"
@@ -154,7 +154,7 @@ guiTypes = {
 			name = "TNO_youtube_button"
 			quadTextureSprite = "GFX_youtube_button"
 			position = { x = 563 y = 180 }
-			web_link = "https://www.youtube.com/channel/UCd95MTGaqCDrk9vz8WS11BQ"
+			web_link = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 		}
 		buttonType = {
 			name = "TNO_twitter_button"

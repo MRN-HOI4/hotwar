@@ -43,6 +43,12 @@ news_event = {
     immediate = {
         set_global_flag = hun_56_demo_effect_redy
     }
+
+	option = {
+		name = hotwar_hun.2.a
+        ai_chance = { factor = 100 }
+
+	}
 }
 
 
