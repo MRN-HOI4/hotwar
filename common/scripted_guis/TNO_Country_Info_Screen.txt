@@ -11,12 +11,18 @@ scripted_gui = {
 				tag = DKG
 				tag = JAP
 				tag = CHI
-				tag = GER
+				tag = WGR
 				tag = SOV
 				tag = USA
 				tag = ENG
 				tag = FRA
 				tag = ITA
+				# 이 밑은 핫워 추가
+				tag = PRK
+				tag = PRC
+				tag = DDR
+				tag = POL
+				tag = HUN
 			}
 		}
 
@@ -49,7 +55,7 @@ scripted_gui = {
 				tag = DKG
 				tag = JAP
 				tag = CHI
-				tag = GER
+				tag = WGR
 				tag = SOV
 				tag = USA
 				tag = ENG

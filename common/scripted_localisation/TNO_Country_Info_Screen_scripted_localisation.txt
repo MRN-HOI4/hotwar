@@ -163,8 +163,8 @@ defined_text = {
 		localization_key = TNO_COUNTRY_INFO_BUTTON_TEXT_CHI
 	}
 	text = { 
-		trigger = { tag = GER }
-		localization_key = TNO_COUNTRY_INFO_BUTTON_TEXT_GER
+		trigger = { tag = WGR }
+		localization_key = TNO_COUNTRY_INFO_BUTTON_TEXT_WGR
 	}
 	text = { 
 		trigger = { tag = SOV }
@@ -213,7 +213,7 @@ defined_text = {
 		localization_key = "GFX_TNO_OpeningScreen_Poster_south_china"
 	}
 	text = {
-		trigger = { tag = GER }
+		trigger = { tag = WGR }
 		localization_key = "GFX_TNO_OpeningScreen_Poster_germany"
 	}
 	text = {
@@ -282,9 +282,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = GER
+			original_tag = WGR
 		}
-		localization_key = "[Get_FolderLoc_GER]"
+		localization_key = "[Get_FolderLoc_WGR]"
 	}
 	text = {
 		trigger = {
@@ -370,19 +370,19 @@ defined_text = {
 		}
 	}
 	defined_text = {
-		name = Get_FolderLoc_GER
+		name = Get_FolderLoc_WGR
 		
 		text = {
 			trigger = {
 				check_variable = { f = 101 }
 			}
-			localization_key = GER_CountryInfo_Folder.101
+			localization_key = WGR_CountryInfo_Folder.101
 		}
 		text = {
 			trigger = {
 				check_variable = { f = 102 }
 			}
-			localization_key = GER_CountryInfo_Folder.102
+			localization_key = WGR_CountryInfo_Folder.102
 		}
 	}
 	defined_text = {
@@ -531,9 +531,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = GER
+			original_tag = WGR
 		}
-		localization_key = "[Get_ContentLoc_GER]"
+		localization_key = "[Get_ContentLoc_WGR]"
 	}
 	text = {
 		trigger = {
@@ -742,42 +742,42 @@ defined_text = {
 		# }
 	}
 	defined_text = {
-		name = Get_ContentLoc_GER
+		name = Get_ContentLoc_WGR
 		text = {
 			trigger = {
 				check_variable = { f = 1 }
 			}
-			localization_key = GER_CountryInfo_Content.1
+			localization_key = WGR_CountryInfo_Content.1
 		}
 		text = {
 			trigger = {
 				check_variable = { f = 2 }
 			}
-			localization_key = GER_CountryInfo_Content.2
+			localization_key = WGR_CountryInfo_Content.2
 		}
 		text = {
 			trigger = {
 				check_variable = { f = 3 }
 			}
-			localization_key = GER_CountryInfo_Content.3
+			localization_key = WGR_CountryInfo_Content.3
 		}
 		text = {
 			trigger = {
 				check_variable = { f = 4 }
 			}
-			localization_key = GER_CountryInfo_Content.4
+			localization_key = WGR_CountryInfo_Content.4
 		}
 		text = {
 			trigger = {
 				check_variable = { f = 5 }
 			}
-			localization_key = GER_CountryInfo_Content.5
+			localization_key = WGR_CountryInfo_Content.5
 		}
 		text = {
 			trigger = {
 				check_variable = { f = 6 }
 			}
-			localization_key = GER_CountryInfo_Content.6
+			localization_key = WGR_CountryInfo_Content.6
 		}
 	}
 	defined_text = {
@@ -1026,9 +1026,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			original_tag = GER
+			original_tag = WGR
 		}
-		localization_key = "[Get_ContentLoc_desc_GER]"
+		localization_key = "[Get_ContentLoc_desc_WGR]"
 	}
 	text = {
 		trigger = {
@@ -1231,42 +1231,42 @@ defined_text = {
 		}
 	}
 	defined_text = {
-		name = Get_ContentLoc_desc_GER
+		name = Get_ContentLoc_desc_WGR
 		text = {
 			trigger = {
 				check_variable = { CountryInfo_Selected = 1 }
 			}
-			localization_key = GER_CountryInfo_Content_desc.1
+			localization_key = WGR_CountryInfo_Content_desc.1
 		}
 		text = {
 			trigger = {
 				check_variable = { CountryInfo_Selected = 2 }
 			}
-			localization_key = GER_CountryInfo_Content_desc.2
+			localization_key = WGR_CountryInfo_Content_desc.2
 		}
 		text = {
 			trigger = {
 				check_variable = { CountryInfo_Selected = 3 }
 			}
-			localization_key = GER_CountryInfo_Content_desc.3
+			localization_key = WGR_CountryInfo_Content_desc.3
 		}
 		text = {
 			trigger = {
 				check_variable = { CountryInfo_Selected = 4 }
 			}
-			localization_key = GER_CountryInfo_Content_desc.4
+			localization_key = WGR_CountryInfo_Content_desc.4
 		}
 		text = {
 			trigger = {
 				check_variable = { CountryInfo_Selected = 5 }
 			}
-			localization_key = GER_CountryInfo_Content_desc.5
+			localization_key = WGR_CountryInfo_Content_desc.5
 		}
 		text = {
 			trigger = {
 				check_variable = { CountryInfo_Selected = 6 }
 			}
-			localization_key = GER_CountryInfo_Content_desc.6
+			localization_key = WGR_CountryInfo_Content_desc.6
 		}
 	}
 	defined_text = {
@@ -1771,8 +1771,8 @@ defined_text = {
 		localization_key = TNO_COUNTRY_INFO_BUTTON_TT_CHI
 	}
 	text = {
-		trigger = { tag = GER }
-		localization_key = TNO_COUNTRY_INFO_BUTTON_TT_GER
+		trigger = { tag = WGR }
+		localization_key = TNO_COUNTRY_INFO_BUTTON_TT_WGR
 	}
 	text = {
 		trigger = { tag = ENG }
