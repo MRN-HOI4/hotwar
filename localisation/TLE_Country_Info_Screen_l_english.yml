@@ -100,8 +100,8 @@
  CountryInfo_tab_name_ending: "Afterthought"
 
  #일본 막부
- TNO_COUNTRY_INFO_BUTTON_TEXT_DKG:0 "반자이!"
- TNO_COUNTRY_INFO_BUTTON_TEXT_JAP:0 "반자이!"
+ TNO_COUNTRY_INFO_BUTTON_TEXT_DKG:0 "하잇!"
+ TNO_COUNTRY_INFO_BUTTON_TEXT_JAP:0 "하잇!"
  DKG_CountryInfo_Folder.101:0 "해가 뜨는 나라"
  DKG_CountryInfo_Folder.102:0 "권력의 전당"
 
