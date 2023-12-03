@@ -61,6 +61,12 @@ scripted_gui = {
 				tag = ENG
 				tag = FRA
 				tag = ITA
+				# 이 밑은 핫워 추가
+				tag = PRK
+				tag = PRC
+				tag = DDR
+				tag = POL
+				tag = HUN
 			}
 		}
 		dynamic_lists = {
