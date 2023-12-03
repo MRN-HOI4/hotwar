@@ -161,4 +161,8 @@ spriteTypes = {
 		name = "GFX_TNO_OpeningScreen_Poster_italy"
 		textureFile = "gfx/interface/opening_screen/TNO_OpeningScreen_Poster_italy.png" 
 	}
+	spriteType = { 
+		name = "GFX_TNO_OpeningScreen_Poster_hungary"
+		textureFile = "gfx/interface/opening_screen/TNO_OpeningScreen_Poster_hungary.png" 
+	}
 }
