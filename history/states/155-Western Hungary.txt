@@ -16,12 +16,13 @@ state={
 		buildings = {
 			infrastructure = 2 #was: 6
 			industrial_complex = 1
-			arms_factory = 1		}
+			arms_factory = 1		
+			}
 		add_core_of = HUN
 	}
 
 	provinces={
-		710 6703 9676 11663
+		6703 9676 11663
 	}
 
 	local_supplies=0.0 
