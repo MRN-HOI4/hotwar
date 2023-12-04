@@ -16,6 +16,7 @@
  TNO_COUNTRY_INFO_BUTTON_TT_USA: "§Y오, 그대는 보이는가, 이 새벽의 여명 속에서.§!"
  TNO_COUNTRY_INFO_BUTTON_TT_FRA: "§Y일어나라 조국의 자녀들아, 영광의 날이 왔도다!§!"
  TNO_COUNTRY_INFO_BUTTON_TT_ITA: "§Y하느님께서 승리의 여신을 로마의 종으로 지으셨으니.§!"
+ TNO_COUNTRY_INFO_BUTTON_TT_HUN: "§Y부다와 페스트의 청년이여, 나아가라!§!"
 
  
 ### COUNTRY OPENING ###
@@ -63,7 +64,7 @@
  CountryInfo_Tutorial_Content_desc.1: "두 강대국이 이념에 따라 세계를 양분했습니다. 유럽의 전통적 강대국 영국과 프랑스, 이탈리아와 서독은 미국의 편에 섰지만 폴란드와 체코, 헝가리는 소련의 편에 강제적으로 서게 되었습니다. 세계 각지에서 두 초강대국이 '영역권'을 확보하기 위해 분주하고, 이런 싸움은 지구 밖 우주에서 새로운 형태로 나타났습니다. 비록 우주의 경쟁이 미국의 승리로 끝났더라도, 아직 소련은 건재합니다. \n\n 사람들은 쿠바 위기 이후로 신경쓰지 않는것 같지만, 핵전쟁의 위협은 아직 존재합니다.\n\n\n두 독수리가 한 하늘을 이고 살수 없는 법이기에, 두 국가는 서로를 누르고 세계의 단 하나의 초강대국이 되고자 합니다.\n\n\n\n이 모드는 실제 역사의 냉전을 모티브로 제작되었으며, 각 국가에는 대체 역사적인 요소가 함유되어 있습니다. 가령 인도 내전이라던가, 헝가리 혁명같은 요소들로 기존 HOI4와는 다른 재미를 느껴보세요."
 
  CountryInfo_Tutorial_Content.3: "§W미합중국§!"
- CountryInfo_Tutorial_Content_desc.3: "§제 1세계의 수장인§!미합중국, 신대륙의 패권국이며, 전세계에 전구를 두는 세계 유이의 초강대국. 미국은 가장 자유로운 국가이며, 민주주의의 탄생지이며, 처음으로 사람을 달로 보낸 국가이기도 합니다. "
+ CountryInfo_Tutorial_Content_desc.3: "§제 1세계의 수장인 §!미합중국, 신대륙의 패권국이며, 전세계에 전구를 두는 세계 유이의 초강대국. 미국은 가장 자유로운 국가이며, 민주주의의 탄생지이며, 처음으로 사람을 달로 보낸 국가이기도 합니다. "
 
  CountryInfo_Tutorial_Content.4: "소비에트 연방"
  CountryInfo_Tutorial_Content_desc.4: "§W제§! 2세계의 수장, 인류 최초의 공산주의 국가 소련은 아직 생긴지 60년이 넘지 않은 국가입니다."
@@ -87,14 +88,14 @@
  CountryInfo_Development_Folder.101: "소셜 미디어"
  CountryInfo_Development_Content.1: "추가 정보"
  CountryInfo_Development_Content_desc.1: "\n§Y아래§!에서 다양한 소셜 미디어 페이지를 찾아볼 수 있습니다.\n\n우리의 최신 개발 소식을 빠르게 들어보세요!"
- CountryInfo_Development_Folder.102: "THE LAST EMPIRE 팀"
+ CountryInfo_Development_Folder.102: "HOT WAR : MAD"
  CountryInfo_Development_Content.2: "제작자의 말"
  CountryInfo_Development_Content.3: "제작진"
  CountryInfo_Development_Content.4: "감사한 분들"
  
- CountryInfo_Development_Content_desc.2: "안녕하세요, §PTHE LAST EMPIRE§!의 제작자 §fUKKRHEE§!입니다! 일단, 이 문구를 보신 모든 분께 이 모드를 플레이해주셔서 감사하다는 인사를 올리고 시작하겠습니다. \n\n§PTHE LAST EMPIRE§!는 "항상 역사책을 펴보면 답답하기 그지 없는 우리의 과거가 만약 일본제국 같은 동아시아의 열강이었다면 어떤 모습이었을까?" 라는 흥미로운 질문에서부터 시작된 모드입니다. 이 모드를 제작할 시점부터 많이 고민하였고, 어떻게 하면 보다 더 현실적이고 가능성 있는, 그리고 전달력 있는 스토리와 게임 플레이를 유저 분들께 전달할 수 있을지 생각하였습니다. 지금 시점에서 보면 노력을 통해 꽤나 성공적인 모습으로 구현한 것 같습니다.\n\n열화와 같은 성원에 제가 여러분들께 보답해줄 수 있는 것은 성실한 업데이트와 많은 컨텐츠 뿐일 것입니다. 계속 발전하는 §PTHE LAST EMPIRE§!가 되겠습니다, 감사합니다!"
- CountryInfo_Development_Content_desc.3: "Head Dev. \n§fUKKRHEE§! \n\n== Dev Team. ==\nKorhal, 정까치, Kimminsoo, Server, QingchangchongHassan, 트롯츠키, K-asche, Georgy, 지원(support), 백원스틱[100won], ImperiumGlory, Frosty, 티라미수, Gabriel Kim, weimer republic, 로시아, Vkdlsejghf, BOBK235, snowden, Friedrich_von_Ebert, King_Elessar, 바실리카, 봇치쨩 팬계정, Kudryavka\n\n== 무묘배향공신 ==\nREMY, 잉글란드, Piano_Man, 김낭만, ㄴㄴ, L2"
- CountryInfo_Development_Content_desc.4: "Team. PROJECT KOREA, kaiserreich03, 정백하, 제리코, 파란댕댕2, 팀러, FrEEsTaR, K-AKABANE, Marine418, Rheinlandpfalz, kkshunp, līmen, E-SENS, 별화, 어음, bmarx, 맑고고운버섯, ㅈㅅㅈ, Imika, Nev, Human.M, 켈리포늄, nxd.sxn, Shovel, LAX, 하프인큐버스(oixxta), 공돌이콩, DENEV, Kebab, 시바스, 먼닉, 히상병\n\n그리고, §P대한제국 인게임 설명창 국가 포스터§!를 제작해주신 §fPzKpfwI§!님과 많은 영감을 주신 §P폭군 고종대왕 일대기§!의 작가 §f리첼렌§! 님, §P조선, 혁명의 시대§!의 작가 §f태사령§! 님께 감사를 올리겠습니다!\n\n\n\nPs ㅡ §f공돌이콩§! 님과 함께 만드는 후속작 HOI4 모드 §B오얏꽃 필 무렵§! 또한 많은 관심 바랍니다!"
+ CountryInfo_Development_Content_desc.2: ""
+ CountryInfo_Development_Content_desc.3: ""
+ CountryInfo_Development_Content_desc.4: "
 
  ### COUNTRY ENDING ###
  CountryInfo_tab_name_ending: "Afterthought"
@@ -126,7 +127,7 @@
  DKG_CountryInfo_Content_desc.9:0 "§g일본§!에게 주어진 길은 얼마 남지 않았을 것입니다. 1920년대, 우리를 완전히 파괴한 §e관동대지진§!의 여파는 지금까지 남아있고, 외세의 위협은 아직까지도 이어지고 있는 상황입니다. §n경제§!는 §e바닥까지§! 쳐박혔습니다. 손에 남은 것은 동전 몇 푼과 수백 년간 쌓아온 권위 아래서 움직이는 이들, 체념한 채 살아가는 국민들 뿐일 것입니다. \n\n개혁? 말은 좋습니다. 그러나 우리가 개혁을 할 수 있을까요? 한바탕 큰 바람이 불지 않고서야 현 정부를 뒤엎는 것은 불가능에 가까울 것이고, 우리의 개혁을 지지할 이들은 없을 것입니다. 하늘에서 신이 직접 내려와 인세를 바꾸겠노라 한다면 변화가 일어날 수 있겠지만, 무기력하여 아무 것도 할 수 없다는 생각이 마음 속 깊은 곳에 자리잡힌 지금의 §g일본§!에는 그런 기적같은 일이 일어날 수 없을 것입니다.\n\n§e우리는 지금 저문 해 입니다. 수평선 너머 저 끝에 걸친 태양은 우리의 거울에 가깝습니다.§!"
  
  KR_SPLASH_TITLE:0 "환영합니다!"
- KR_SPLASH_CREDITS:0 "§YTHE LAST EMPIRE 제작자§!\nUKKRHEE\n\n§Y매우 고마운 사람들!§!\nKorhal, 정까치, Kimminsoo, Server, Friedrich_von_Ebert, Hassan, 트롯츠키, K-asche, Georgy, 지원(support), 백원스틱, POLSKA, 시아, Frosty, BOBK235, snowden, ImperiumGlory, DENEV\n§C카이저라이히, 팔년항전, Team. PROJECT KOREA, CBTS, Darkest Hour, TNO 제작진, 하인리히 뵐 기념사업회§!"
+ KR_SPLASH_CREDITS:0 "§5HOTWAR 개발자§!\nEldzntm, 베어, 달월묘, evon27(CI/CD)\n아이디어 제공 AlexeiStukov, df109, RuDolF\n\n\n§CThe New Order, 팔년항전, The Last Empire 제작진§!"
 
  ## 중화민국 국민정부 ##
  TNO_COUNTRY_INFO_BUTTON_TEXT_CHI:0 "완쑤이!"
@@ -270,3 +271,23 @@
  ITA_CountryInfo_Content_desc.4:0 "§j파시즘§!이란 것의 정의는 단 하나로 내리기 어렵습니다. §h전체적§!이고, §r군국적§!이며, §e극단적§!인 이 사상은 §V사회주의적§!이라고도 볼 수 있지만, 계급혁명에 대해 언급하지 않기에 §V적색§!으로 분류하기에는 어렵습니다. 그리하여 많은 이들이 이를 제3의 지대라고 부르고 있습니다.\n\n현재의 파시즘은 §n이탈리아§!의 두체 §Y베니토 무솔리니§!가 주창하였습니다. 본래 §P이탈리아 사회당(PSI)§!의 소속이던 §Y무솔리니§!가 최초의 §j파시스트§!가 된 것은 다름이 아닌 §e불구의 승리§! 이후입니다. \n\n§Y무솔리니§!가 참고한 파시즘의 이론은 §f조르주 소렐§!의 §V생디칼리즘§!, §f플라톤§!의 §g철인론§!, §f프리드리히 니체§!의 §k초인론§! 등이 있습니다. 1932년 발표한 §j파시즘의 이념§!이라는 저서는 그가 생각하는 §f파시즘§!이 무엇인가를 알려주었습니다.\n\n모호하기 짝이 없는 사상이지만, §j파시즘§!을 설명하는 가장 분명하고도 섬뜩한 문장이 하나 있습니다. 1925년 로마 행진 3주년 연설에서 §Y무솔리니§!가 한 말입니다.\n\n§c"모든 것은 국가에 있으며, 국가 외에는 어떤 것도 없으며, 국가에 반대하는 어떤 것도 존재하지 않는다."§!"
  ITA_CountryInfo_Content_desc.5:0 "§e가여운 이탈리아의 청년들이여!§! 지난 대전쟁에서 그들이 고귀한 목숨과 아름다운 젊음을 §n이탈리아§!에 바친 대가는 너무도 허무하게 되돌아왔습니다. \n\n대전쟁이 끝난 후 조국이 생제르맹 조약에 서명함으로서 얻어온 것은 '승리자'라는 유명무실한 석자 뿐이었고, §V불구의 승리§! 끝에 늘어난 것은 §f부강함과 풍요로움§!이 아닌, §E아들을 잃어 통곡하는 어머니들의 소리와 폭도들의 가두행진§!이 되었습니다.\n\n이 모든 광경을 분노하며 착실히 행동해온 한 남자가 로마에서 무혈 쿠데타를 성공시키기 전까지는 그러했습니다. 한 남자, §i베니토 무솔리니§!와 §q검은 셔츠단§!, 그리고 §j국가 파시스트당§!은 §r로마 진군§!이라는 이름의 무혈 쿠데타를 성공시킨 후 본격적인 성공가도를 달리기 시작했습니다. 총리직에 올라 §o파시즘§!을 이용해 국가를 규합시킨 그는 이제 전 이탈리아인의 영도자, 즉 두체로 군림하고 있습니다.\n\n§P사회주의자들§!, §e아나키스트들§!, §V생디칼리스트§!들, 또는 사회와 국가에 반하는 그 어떤 이들이라면 모두. 그들이 이 사회를 좀먹고 있다는 사실은 지난 세월에도 많은 이들이 동감해온 부분입니다. 그러나 이러한 내면의 이러한 미움을 가장 잘 활용한 첫 번째 지도자는 아마도 §K이탈리아인의 두체§! §i베니토 무솔리니§!일 것입니다."
  ITA_CountryInfo_Content_desc.6:0 "불안함 속에 삐걱거리며 시작을 끊은 것은 비단 §V리소르지멘토§!만이 아니었으며, 그 국왕인 §Y비토리오 에마누엘레 3세§! 폐하의 삶도 마찬가지였습니다. 폐하께 주어져 있던 통일된 §n이탈리아§!의 새 군주라는 미래는 물론 달콤했으나, 그 미래는 극단주의자의 총탄으로 아버지를 잃는 것으로 너무 갑작스럽게 현실이 되어 버렸습니다.이토록 갑작스럽게 왕위에 오른 폐하에게 §n이탈리아§!의 정치적 혼란은 감당하시기에 충분하지 아니하였고, 폐하는 종종 결정을 보류하시는 등 중립적 태도를 취하셨습니다. 괜찮습니다. 언젠가 의회가 해결할 것입니다. \n\n그런 폐하도 지난 대전쟁에서만큼은 달랐습니다. 폐하께서는 전에 본 적 없던 단호한 모습으로 §h참전§!을 명하셨습니다. 의회는 반대하였으나, 그 결정을 막을 수는 없었습니다. 수많은 피가 흐르고, 수많은 돈이 쓰였습니다. §n이탈리아§!의 청년들이 전선에서 그 소중한 목숨을 내어놓았습니다. 괜찮습니다. 전쟁이 끝나면 더 큰 것을 손에 쥐게 될 것입니다. \n\n이제 §n이탈리아§!의 모든 이들은 서로에게 묻습니다. 정말 괜찮았습니까? 아니오. 괜찮지 않습니다. 약속은 처참히 깨어졌고, 그 깨진 약속의 빼앗긴 결과물이 국민들의 분노로 돌아올 때까지, 우유부단하고 무능한 폐하께서는 모든 것을 그저 지켜만 보고 계십니다."
+
+ # 헝가리 인민공화국
+
+ TNO_COUNTRY_INFO_BUTTON_TEXT_HUN:0 "엘룰라그!"
+ HUN_CountryInfo_Folder.101:0 "§W이슈트반과 흐루쇼프가§!"
+ HUN_CountryInfo_Folder.102:0 "§W인민의 열망§!"
+
+ HUN_CountryInfo_Content.1:0 "두번째 인민공화국"
+ HUN_CountryInfo_Content.2:0 "§W부다페스트 폭동§!"
+ HUN_CountryInfo_Content.3:0 "§W구야시 사회주의§!"
+ HUN_CountryInfo_Content.4:0 "§W일자리§!"
+ HUN_CountryInfo_Content.5:0 "§W자유§!"
+ HUN_CountryInfo_Content.6:0 "§W미래§!"
+
+ HUN_CountryInfo_Content_desc.1:0 "헝가리와 판노니아에 인민의 정부가 세워진것은 이것이 두번째입니다. 오스트리아가 패배한 후 세워진 헝가리 평의회 공화국은 비록 미클로시의 쿠데타로 무너졌지만, 미클로시는 패배했고 다시 인민의 의한 정부가 수립되었습니다."
+ HUN_CountryInfo_Content_desc.2:0 ""
+ HUN_CountryInfo_Content_desc.3:0 ""
+ HUN_CountryInfo_Content_desc.4:0 ""
+ HUN_CountryInfo_Content_desc.5:0 ""
+ HUN_CountryInfo_Content_desc.6:0 ""

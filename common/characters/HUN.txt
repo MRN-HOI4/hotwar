@@ -635,12 +635,11 @@ characters={
 		name = HUN_jeno_fock
 			portraits={
 			civilian={
-				large="GFX_Portrait_hungary_matyas_rakosi"
+				large="GFX_Portrait_hungary_jeno_fock"
 			}
 		}
 		country_leader={
 			ideology=stalinism
-			traits = { dictator }
 			expire="1989.1.1.1"
 			id=-1
 		}
@@ -650,7 +649,7 @@ characters={
 		name = HUN_janos_kadar
 		portraits = {
 			civilian = {
-				large = "GFX_Portrait_hungary_matyas_rakosi"
+				large = "GFX_Portrait_hungary_janos_kadar"
 			}
 		}
 		country_leader={

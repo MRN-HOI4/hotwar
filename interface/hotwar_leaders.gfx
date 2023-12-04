@@ -1,0 +1,12 @@
+spriteTypes = {
+
+    spriteType = {
+        name = "GFX_Portrait_hungary_janos_kadar"
+        texturefile = "gfx/leaders/HUN/janos_kadar.png"
+    }
+
+    spriteType = {
+        name = "GFX_Portrait_hungary_jeno_fock"
+        texturefile = "gfx/leaders/HUN/jeno_fock.png"
+    }    
+}
