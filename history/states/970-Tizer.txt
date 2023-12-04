@@ -1,0 +1,17 @@
+state={
+	id=970
+	name="STATE_970"
+	history={
+		owner = HUN
+		buildings = {
+			infrastructure = 2 #was: 6		
+			}
+		add_core_of = HUN
+	}
+	provinces={
+		9706 
+	}
+	manpower=239022
+	buildings_max_level_factor=1.000
+	local_supplies=0.000
+}

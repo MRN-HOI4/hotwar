@@ -1,0 +1,27 @@
+add_namespace = hotwar_hun
+### "56년 시위의 여파"
+country_event = {
+	id = hotwar_hun.1
+    title = "hotwar_hun.1.t"
+    desc = "hotwar_hun.1.d"
+    picture = GFX_report_event_ast_army
+
+    is_triggered_only = yes
+
+    trigger = {
+        original_tag = HUN
+        NOT = { has_country_flag = hun_56_demo_effect}
+	}
+
+    immediate = {
+        set_country_flag = hun_56_demo_effect
+    }
+
+	option = {
+		name = hotwar_hun.1.a
+        ai_chance = { factor = 100 }
+        add_political_power = 20
+
+	}
+    
+}
