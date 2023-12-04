@@ -13167,11 +13167,9 @@ news_event = {
 # greifswald nuclear power plant accident
 news_event = {
 	id = nuclear_news.1
-	title = nuclear_news.1
-	desc = nuclear_news.1
+	title = nuclear_news.1.t
+	desc = nuclear_news.1.d
 	picture = 
-
-	major = { NOT = DDR }
 
 	major = yes
 
@@ -13182,7 +13180,7 @@ news_event = {
 	option = {
 		name = nuclear_news.1.a
 		trigger = {
-			NOT = { owns_province = { province = 3340 }}
+			NOT = { owned_province = { province = 3340 }}
 			NOT = { tag = DDR }
 			NOT = { has_government = socialism }
 
@@ -13191,7 +13189,7 @@ news_event = {
 	option = {
 		name = nuclear_news.1.b
 		trigger = {
-			owns_province = { province = 3340 }
+			owned_province = { province = 3340 }
 			NOT = { has_government = socialism }
 
 		}
@@ -13199,8 +13197,9 @@ news_event = {
 	option = {
 		name = nuclear_news.1.c
 		trigger = {
-			owns_province = { province = 3340 }
+			owned_province = { province = 3340 }
 			has_government = socialism
 	}
+	option = {}
 
 }
