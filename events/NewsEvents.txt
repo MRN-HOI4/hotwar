@@ -13171,6 +13171,8 @@ news_event = {
 	desc = nuclear_news.1.d
 	picture = 
 
+	trigger = date { month { 12 } day = { 7 } year { 12 }}
+
 	major = yes
 
 	is_triggered_only = yes
@@ -13202,4 +13204,5 @@ news_event = {
 	}
 	option = {}
 
+}
 }
