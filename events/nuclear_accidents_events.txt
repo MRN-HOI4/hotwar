@@ -1,0 +1,38 @@
+#####nuclaer accidents####
+
+#  grerifswald(wgr)
+
+country_event = {
+    name = grerifswald_wgr.1
+    title = grerifswald_wgr.1.t
+    desc = grerifswald_wgr.1.d
+    picture = 
+
+    trigger = {
+        tag = WGR
+        owned_province = { province  = 3340 }
+
+    }
+
+    option = { 
+        name = grerifswald_wgr.1.a
+        ##10%확률로 실패,70%확률로 성공,20%확률로 현상유지및 전쟁지지도,안정도 하락## 진압 시돚
+    }
+
+    option = {
+        name = grerifswald.1.b
+        ##10% 확률로 성공,20% 확률로 압도적 실패,70% 확률로 실패## 방치
+    }
+
+    option = {
+        name = grerifswald_wgr.1.c
+        ##20%확률로 뉴스 이벤트및 성공,60%확률로 안정도 및 전쟁지지도 하락후 성공,10%확률로 안정도 및 전쟁지지도 하락후 실패,10%확률로 안정도와 전쟁지지도 떨어지고 압도적 실패## 대대적으로 진압
+    }
+
+    option = {
+        name = grerifswald_wgr.1.d
+        ##동독한테 헬프##
+    }
+
+
+}
