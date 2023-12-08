@@ -66,39 +66,51 @@ news_event = {
 	desc = nuclear_news.1.d
 	picture = GFX_end_north_yemen_war_event
 
-	trigger = date { month = { 12 } day = { 7 } year = { 1975 }}
-
 	major = yes
 
 	is_triggered_only = yes
-
+# 재난이군, 일반 국가
 	option = {
 		name = nuclear_news.1.a
 		trigger = {
-			NOT = { owned_province = { province = 3340 }}
+			NOT = { controls_province = 3340 }
 			NOT = { original_tag = DDR }
 		}
 	}
+    # 염병 , 동독이 아닌 NATO 국가가 점령시
 	option = {
 		name = nuclear_news.1.b
 		trigger = {
-			owned_province = { province = 3340 }
+			controls_province = 3340
 			NOT = { original_tag = DDR }
+            has_idea = NATO
 
 		}
 	}
+    # 동독이 아닌 사회주의 국가가 점령시
 	option = {
 		name = nuclear_news.1.c
 		trigger = {
-			owned_province = { province = 3340 }
-			has_government = socialism
+			owned_province = 3340
+			has_idea = WTO
+            NOT = { original_tag = DDR }
 		}
 	}
+   # 동독이 점령하지 않을시 동독의 반응
 	option = {
-		name = nuclear_news.1.d
+		name = nuclear_news.1.e
 		trigger = {
-			NOT = { owned_province = { province = 3340 } }
-			TAG = DDR
+			NOT = { controls_province = 3340 }
+			original_tag = DDR
+
+		}
+	}
+   # 동독이 점령중일시 동독의 반응
+	option = {
+		name = nuclear_news.1.f
+		trigger = {
+			controls_province = 3340
+			original_tag = DDR
 
 		}
 	}
