@@ -364,6 +364,7 @@ set_technology = {
 add_ideas = {
 	german_advisors
 	NATO
+	CHI_TSMC
 	CHI_aggressive_investment
 }
 

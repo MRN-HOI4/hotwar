@@ -11,6 +11,9 @@ state={
 		victory_points = {
 			9388 1
 		}
+		victory_points = {
+			3340 1
+		}
 		owner = DDR
 		add_core_of = DDR
 		add_claim_by = WGR

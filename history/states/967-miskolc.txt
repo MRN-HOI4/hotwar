@@ -9,12 +9,14 @@ state={
 			arms_factory = 1		
 			}
 		add_core_of = HUN
+
 		victory_points = {
-			6176 5
+			6716 5
 		}
 		victory_points = {
 			3713 5
 		}
+		
 	}
 	provinces={
 		716 3713 3731 6716 6751 9690 11520 
