@@ -6,8 +6,12 @@ state={
 		buildings = {
 			infrastructure = 2 #was: 6
 			industrial_complex = 1
-			arms_factory = 1		}
+			arms_factory = 1		
+			}
 		add_core_of = HUN
+		victory_points = {
+			6700 5
+		}
 	}
 	provinces={
 		684 6670 6700 11625 

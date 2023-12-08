@@ -7,3 +7,13 @@ on_actions = {
         }
     }
 }
+
+on_actions = {
+    on_startup = {
+        effect = { 
+            every_county = {
+                news_event = { id = nuclear_news.1 date = 1975.12.7 }
+            }
+        }
+    }
+}

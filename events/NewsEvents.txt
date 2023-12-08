@@ -13165,47 +13165,4 @@ news_event = {
 }
 
 # greifswald nuclear power plant accident
-news_event = {
-	id = nuclear_news.1
-	title = nuclear_news.1.t
-	desc = nuclear_news.1.d
-	picture = 
 
-	trigger = date { month = { 12 } day = { 7 } year = { 1975 }}
-
-	major = yes
-
-	is_triggered_only = yes
-
-	immediate = 
-
-	option = {
-		name = nuclear_news.1.a
-		trigger = {
-			NOT = { owned_province = { province = 3340 }}
-			NOT = { tag = DDR }
-		}
-	}
-	option = {
-		name = nuclear_news.1.b
-		trigger = {
-			owned_province = { province = 3340 }
-			NOT = { TAG = DDR }
-
-		}
-	}
-	option = {
-		name = nuclear_news.1.c
-		trigger = {
-			owned_province = { province = 3340 }
-			has_government = socialism
-		}
-	}
-	option = {
-		name = nuclear_news.1.d
-		trigger = {
-			NOT = { owned_province = { province = 3340 } }
-			TAG = DDR
-
-		}
-	}
