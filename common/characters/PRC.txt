@@ -105,7 +105,7 @@ characters={
 		name=PRC_lin_biao
 		portraits={
 			army={
-				large="gfx/leaders/PRC/lin_biao_army.dds"
+				large="GFX_portrait_prc_lin_biao"
 				small=GFX_portrait_PRC_lin_biao_small
 			}
 		}
